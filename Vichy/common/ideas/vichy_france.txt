@@ -28,7 +28,14 @@ ideas = {
 				send_volunteers_tension = 0.20
 				guarantee_tension = 2.0
 				ai_get_ally_desire_factor = -500
+ 								
 			}
+			targeted_modifier = {
+				tag = Ger
+				extra_trade_to_target_factor = 1
+				trade_cost_for_target_factor = -0.6
+
+			} 
 		}
 	}
 	
@@ -39,7 +46,7 @@ ideas = {
 			picture = generic_political_advisor_europe_1
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 			
@@ -54,7 +61,7 @@ ideas = {
 			picture = generic_political_advisor_europe_2
 
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 			
@@ -66,7 +73,7 @@ ideas = {
 			picture = generic_political_advisor_europe_3
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 			
@@ -80,7 +87,7 @@ ideas = {
 					
 					
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 			
@@ -97,7 +104,7 @@ ideas = {
 					
 					
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 			
@@ -118,7 +125,7 @@ ideas = {
 			picture = generic_army_europe_1
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 			
@@ -134,7 +141,7 @@ ideas = {
 			picture = generic_army_europe_3
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 			
@@ -154,7 +161,7 @@ ideas = {
 			picture = generic_air_europe_2
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 						
@@ -170,7 +177,7 @@ ideas = {
 			picture = generic_air_europe_3
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 						
@@ -190,7 +197,7 @@ ideas = {
 			picture = generic_navy_europe_1
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 			
@@ -206,7 +213,7 @@ ideas = {
 			picture = generic_navy_europe_1
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 						
@@ -226,7 +233,7 @@ ideas = {
 			picture = generic_air_europe_1
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 						
@@ -242,7 +249,7 @@ ideas = {
 			picture = generic_navy_europe_2
 
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 						
@@ -258,7 +265,7 @@ ideas = {
 			picture = generic_navy_europe_1
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 						
@@ -274,7 +281,7 @@ ideas = {
 			picture = generic_air_europe_2
 			
 			allowed = {
-				original_tag =" EFR"
+				original_tag ="EFR"
 				
 			}
 						
