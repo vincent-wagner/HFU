@@ -1,0 +1,82 @@
+﻿capital = 295
+
+oob = "COG_1936"
+
+set_convoys = 5
+set_war_support = 0.1
+set_stability = 0.30 
+set_research_slots = 4
+
+# Starting tech
+set_technology = {
+	
+	infantry_weapons = 1
+}
+add_ideas = {
+	COG_colonial_conscription
+}
+
+set_cosmetic_tag = COG_BEL
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+
+
+
+create_country_leader = {
+	
+	name = "François Tolenga"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		compassionate_gentleman
+	}
+}
+create_country_leader = {
+	name = "Pierre Ryckmans"
+	desc = "Pierre Ryckmans, Governor General of the Belgian Congo"
+	picture = "gfx/leaders/COG/Pierre_Ryckmans.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	
+	name = "Albert Decoster"
+	picture = "gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+	}
+}
+create_country_leader = {
+	
+	name = "Raymond Cloquet"
+	picture = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+	}
+}
+#create_country_leader = { # Sadly I only have the initial, replaced a commander who was rumoured to be fascist by a journal editor (and architect who really was pro Rex/Axis)
+#	
+#	name = "N. Cools"
+#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+#	expire = "1965.1.1"
+#	ideology = fascism_ideology
+#	traits = {
+#		
+#	}
+#}
+

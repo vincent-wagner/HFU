@@ -1,0 +1,6 @@
+AST_annex = {
+	allowed = {
+		original_tag = AST
+	}
+
+}

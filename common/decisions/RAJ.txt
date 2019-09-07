@@ -1,0 +1,39 @@
+RAJ_subjects = {
+	RAJ_subjects_call_to_arms = {
+	icon = generic_operation
+	allowed = {
+		original_tag = RAJ
+	}
+	
+	available = {  
+		RAJ = { has_completed_focus = RAJ_himalayan_question_nepal }
+    JAP = { has_war_with = RAJ }
+	}
+	
+	visible = { 
+
+				
+		}
+	fire_only_once = yes
+	
+	
+	
+	complete_effect = { 
+	
+						JAP = {
+							declare_war_on = {
+								target = BHU
+								type = annex_everything
+							}
+						}
+						JAP = {
+							declare_war_on = {
+							target = NEP
+							type = annex_everything
+							}
+						}
+					}
+		
+		}
+	}
+

@@ -1,0 +1,11 @@
+FRA_war_measures = {
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_move_capital = {
+	allowed = {
+		original_tag = FRA
+	}
+}

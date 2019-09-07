@@ -1,0 +1,23 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+            log = "VPI loaded"
+            every_country = {
+                update_global_arrays = yes
+            }
+        }
+    }
+
+	on_annex = {
+		effect = {
+			FROM = { remove_from_global_arrays_on_annex = yes }
+        }
+    }
+
+    on_daily = {
+		effect = {
+			update_global_arrays = yes
+        }
+    }
+}

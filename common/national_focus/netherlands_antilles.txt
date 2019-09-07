@@ -1,0 +1,537 @@
+focus_tree = {
+	id = netherlands_antilles_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NDA
+			has_dlc = "Man the Guns"
+		}
+	}
+	
+	
+		focus = {
+		id = NDA_anti_meme
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 10
+		y = 0
+		cost = 28.5
+
+		available_if_capitulated = yes
+	
+		completion_reward = {
+		PRU = { set_rule = { can_join_factions = no }}
+		VEN = { set_rule = { can_join_factions = no }}
+		PAR = { set_rule = { can_join_factions = no }}
+		IRQ = { set_rule = { can_join_factions = no }}
+		PER = { set_rule = { can_join_factions = no }}
+		ELS = { set_rule = { can_join_factions = no }}
+		if = {
+		limit = { NOR = { is_ai = no }}
+		NOR = { set_rule = { can_join_factions = no }}
+		}
+		SPR = { country_event = { id = spain.1 } }
+		MEX = { country_event = mexico.15 }
+		
+		if = { 
+		 limit =  
+		{ ETH = 
+		{ is_subject = yes }
+		}
+		
+		
+		ETH = {   
+		retire_country_leader = yes
+		create_country_leader = {
+		name = "Radolfo Graziani"
+		desc = "POLITICS_RADOLFO_GRAZIANI_DESC"
+		picture = "portrait_italy_radolfo_graziani.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}		
+		}
+		}
+		}
+		}
+		}
+		
+		
+		
+			focus = {
+		id = NDA_resource4
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 0
+		y = 1
+		cost = 24
+		prerequisite = { focus = NDA_anti_meme }
+		relative_position_id = NDA_anti_meme
+		available_if_capitulated = yes
+	
+		completion_reward = {
+				MEX = { country_event = mexico.17 }
+		}
+		}
+		
+		focus = {
+		id = NDA_resource11
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 0
+		y = 1
+		cost = 1
+		prerequisite = { focus = NDA_resource4 }
+		relative_position_id = NDA_resource4
+		available_if_capitulated = yes
+	
+		completion_reward = {
+					SOV = { country_event = { id = soviet.18 days = 1 } }
+				if = { 
+				limit = { CHI = { is_ai = yes }}
+				CHI = { add_ideas = CHI_cheap_guns }
+				}
+		}
+		}
+		
+		focus = {
+		id = NDA_resource5
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = NDA_resource11 }
+		relative_position_id = NDA_resource11
+		available_if_capitulated = yes
+	
+		completion_reward = {
+		MEX = { country_event = mexico.27 }
+		}
+		}
+		
+		
+		focus = {
+		id = NDA_resource3
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 0
+		y = 1
+		cost = 40
+		prerequisite = { focus = NDA_resource5 }
+		relative_position_id = NDA_resource5
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			if = { 
+		 limit =  
+		{ ETH = 
+		{ is_subject = yes }
+		}
+		
+		
+		ETH = {   
+		retire_country_leader = yes
+		create_country_leader = {
+		name = "Prince Amedeo"
+		desc = "POLITICS_PRINCE_AMEDEO_DESC"
+		picture = "Portrait_Italy_Amedeo_Savoia_Aosta.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}		
+		}
+		}
+		}
+		}
+		}
+		
+			focus = {
+		id = NDA_resource1337
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 0
+		y = 1
+		cost = 37
+		prerequisite = { focus = NDA_resource3 }
+		relative_position_id = NDA_resource3
+		available_if_capitulated = yes
+	
+		completion_reward = {
+
+		if = { 
+		limit = {            
+		SOV = {
+		focus_progress = {
+    focus = SOV_great_purge
+    progress < 0.001
+}
+		
+		
+		}
+		
+		}
+		SOV = { add_ideas = SOV_purge_now_plz }
+		
+		}
+		
+		
+		}
+		}
+		
+	focus = {
+		id = NDA_resource1338
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = { focus = NDA_resource1337 }
+		relative_position_id = NDA_resource1337
+		available_if_capitulated = yes
+	
+		completion_reward = {
+
+		if = { 
+		limit = {            
+		SOV = {
+		focus_progress = {
+    focus = SOV_great_purge
+    progress > 0.001
+}
+		
+		
+		}
+		
+		}
+		SOV = { remove_ideas = SOV_purge_now_plz }
+		
+		}
+		
+		
+		}
+		}
+		
+		
+		
+		focus = {
+		id = NDA_resource2
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 0
+		y = 1
+		cost = 40
+		prerequisite = { focus = NDA_resource1338 }
+		relative_position_id = NDA_resource1338
+		available_if_capitulated = yes
+	
+		completion_reward = {
+		TUR = { country_event = turkey.1 }
+		country_event = MTG_naval_treaty.10
+		
+		
+		
+		}
+		}
+		
+					focus = {
+		id = NDA_resource20
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 0
+		y = 1
+		cost = 9
+		prerequisite = { focus = NDA_resource2 }
+		relative_position_id = NDA_resource2
+		available_if_capitulated = yes
+	
+		completion_reward = {
+		
+		}
+		}
+		
+		
+		
+		
+			focus = {
+		id = NDA_resource
+		icon = GFX_goal_generic_consumer_goods
+	
+		x = 0
+		y = 1
+		cost = 25.4
+		prerequisite = { focus = NDA_resource20 }
+		relative_position_id = NDA_resource20
+		available_if_capitulated = yes
+	
+		completion_reward = {
+		
+				 PAN = {
+					give_resource_rights = { receiver = NDA state = 304 }
+					
+					}
+						 COS = {
+					give_resource_rights = { receiver = NDA state = 316 }
+					
+					}
+						 NIC = {
+					give_resource_rights = { receiver = NDA state = 317 }
+					
+					}
+						 HON = {
+					give_resource_rights = { receiver = NDA state = 312 }
+					}
+						 ELS = {
+					give_resource_rights = { receiver = NDA state = 314 }
+					}
+						 GUA = {
+					give_resource_rights = { receiver = NDA state = 313 }
+					}					
+						 PAR = {
+					give_resource_rights = { receiver = NDA state = 688 }
+					}					
+						 URG = {
+					give_resource_rights = { receiver = NDA state = 300 }
+					}				
+						 PRU = {
+					give_resource_rights = { receiver = NDA state = 492 }
+					}				
+						 HAI = {
+					give_resource_rights = { receiver = NDA state = 318 }
+					}				
+						 DOM = {
+					give_resource_rights = { receiver = NDA state = 319 }
+					}
+									 ECU = {
+					give_resource_rights = { receiver = NDA state = 305 }
+					}
+								country_event = { id = mtg_netherlands.144 }
+				if = {
+				limit = { NOT = { country_exists = LIT } }
+				LIT = { remove_state_core = 11 
+					remove_state_core = 189 }
+				}
+						if = {
+				limit = { NOT = { country_exists = LAT } }
+								LAT = { remove_state_core = 12 
+					remove_state_core = 190 }
+				
+				}
+						if = {
+				limit = { NOT = { country_exists = EST } }
+				EST = { remove_state_core = 13 
+					remove_state_core = 191 }
+				
+				}
+						if = {
+				limit = { NOT = { country_exists = CZE } }
+				CZE = { remove_state_core = 73 
+				remove_state_core = 71 
+				remove_state_core = 664 
+				remove_state_core = 70
+remove_state_core = 72
+remove_state_core = 75
+remove_state_core = 69
+remove_state_core = 9
+remove_state_core = 74				
+				}
+				}
+				
+				
+					if = {
+				limit = { NOT = { country_exists = AUS } }
+					AUS = { remove_state_core = 152 
+					remove_state_core = 153
+					remove_state_core = 4
+					}
+				
+				}
+				
+					if = {
+				limit = { NOT = { country_exists = YUG } }
+				YUG = {
+				remove_state_core = 45
+				remove_state_core = 107
+				remove_state_core = 108
+				remove_state_core = 106
+				remove_state_core = 104
+				remove_state_core = 105
+				remove_state_core = 103
+				remove_state_core = 109
+				remove_state_core = 102
+				remove_state_core = 764
+				remove_state_core = 163
+				remove_state_core = 736
+				}
+				
+				}
+				
+					if = {
+				limit = { NOT = { country_exists = GRE } }
+				GRE = { 
+				remove_state_core = 184
+				remove_state_core = 731
+				remove_state_core = 3914
+				remove_state_core = 47
+				remove_state_core = 186
+				remove_state_core = 182
+				remove_state_core = 187
+				remove_state_core = 164
+				}
+				
+				}
+							
+						if = {
+				limit = { NOT = { country_exists = ETH } }
+				ETH = { 
+				remove_state_core = 271
+			
+				}
+				
+				}
+		}
+	
+		}
+		
+			focus = {
+		id = NDA_iraq
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = NDA_resource }
+		x = 0
+		y = 1
+		cost = 20
+		relative_position_id = NDA_resource
+		available_if_capitulated = yes
+	
+		completion_reward = {
+		
+		if = { 
+		limit = { NOT = { IRQ = { has_war_with = ITA  }}}
+		ENG = { diplomatic_relation = {
+    country = IRQ
+    relation = guarantee
+    active = no
+}}
+		IRQ = { country_event = { id = iraq.1 }}
+		IRQ = { set_country_flag = IRQ_fascism 
+				remove_ideas = IRQ_oil 
+				remove_ideas = IRQ_fasc }
+				}
+		
+		ENG = { remove_ideas = IRQ_oil2 }
+		SOV = { country_event = news.37 }
+		
+			if = {
+				limit = { NOT = { country_exists = MEN } }
+					MEN = { remove_state_core = 611 
+					remove_state_core = 612
+					}
+				
+				}
+			if = {
+				limit = { NOT = { country_exists = SHX } }
+					SHX = { remove_state_core = 621 
+					remove_state_core = 615
+					remove_state_core = 746
+					}
+				
+				}
+			if = {
+				limit = { NOT = { country_exists = PRC } }
+					PRC = { remove_state_core = 622 
+					remove_state_core = 153
+					remove_state_core = 4
+					}
+				
+				}
+				
+					if = {
+				limit = { NOT = { country_exists = XSM } }
+					XSM = { remove_state_core = 753 
+					remove_state_core = 283
+					remove_state_core = 616
+					remove_state_core = 754
+					remove_state_core = 604
+					remove_state_core = 755
+					remove_state_core = 756
+					}
+				
+				}
+				
+					if = {
+				limit = { NOT = { country_exists = SIK } }
+					SIK = { remove_state_core = 759 
+					remove_state_core = 760
+					remove_state_core = 287
+					remove_state_core = 617
+					remove_state_core = 619
+					remove_state_core = 618
+					}
+				
+				}
+				
+					if = {
+				limit = { NOT = { country_exists = YUN } }
+					YUN = { remove_state_core = 325 
+					remove_state_core = 747
+					}
+				
+				}
+				
+				
+									if = {
+				limit = { NOT = { country_exists = GXC } }
+					GXC = { remove_state_core = 599 
+					remove_state_core = 594
+					remove_state_core = 593
+					remove_state_core = 592
+					remove_state_core = 591
+					}
+				
+				}
+				
+									if = {
+				limit = { NOT = { country_exists = XIK } }
+					XIK = { remove_state_core = 751 
+					remove_state_core = 752
+					remove_state_core = 601
+					}
+				
+				}
+				
+				
+				
+				
+				
+				
+		}
+		}
+		
+	
+		focus = {
+		id = NDA_nothing
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = NDA_iraq }
+		x = 0
+		y = 1
+		cost = 126
+		relative_position_id = NDA_iraq
+		available_if_capitulated = yes
+	
+		completion_reward = {
+		if = { 
+		limit = { MEX = { has_government = democratic  } }
+		MEX = { country_event = mexico.32 } 
+		
+		
+		}
+		}
+	
+		}
+	
+}

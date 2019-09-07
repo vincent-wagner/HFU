@@ -1,0 +1,29 @@
+﻿division_template = {
+	name = "Juntuan"				
+	division_names_group = CHI_INF_01
+									
+	regiments = {					
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 1 
+}
+units = { 
+	division = {
+		name = "1 Fujian Jingbei"
+		location = 4999
+		division_template = "Juntuan"		# Garrison unit (poor equipment and training)
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2 Fujian Jingbei"
+		location = 4999
+		division_template = "Juntuan"		# Garrison unit (poor equipment and training)
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.1
+	}
+	}

@@ -1,0 +1,6 @@
+AFG_puppet = {
+	allowed = {
+		original_tag = AFG
+	}
+
+}

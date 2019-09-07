@@ -1,0 +1,6 @@
+RAJ_subjects = {
+	allowed = {
+		original_tag = RAJ
+	}
+
+}

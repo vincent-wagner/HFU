@@ -1,0 +1,6 @@
+ITA_annex = {
+	allowed = {
+		original_tag = ITA
+	}
+
+}

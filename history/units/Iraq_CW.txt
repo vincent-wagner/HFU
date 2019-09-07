@@ -1,0 +1,63 @@
+division_template = {
+	name = "Alfurqat Almasha"			# 
+	is_locked = no
+	division_names_group = IRQ_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "I Alfurqat Almasha"
+		location = 2097
+		division_template = "Alfurqat Almasha"
+	}
+	division = {
+		name = "III Alfurqat Almasha"
+	location = 2097
+		division_template = "Alfurqat Almasha"	}
+	division = {
+		name = "IV Alfurqat Almasha"
+			location = 2097
+		division_template = "Alfurqat Almasha"	}
+
+	division = {
+		name = "V Alfurqat Almasha"
+		location = 2097
+		division_template = "Alfurqat Almasha"	}
+	division = {
+		name = "VI Alfurqat Almasha"
+		location = 2097
+		division_template = "Alfurqat Almasha"	}
+
+	division = {
+		name = "VII Alfurqat Almasha"
+			location = 2097
+		division_template = "Alfurqat Almasha"	}
+
+	division = {
+		name = "VII Alfurqat Almasha"
+		location = 3795
+		division_template = "Alfurqat Almasha"	}
+	division = {
+		name = "IX Alfurqat Almasha"
+		location = 3795
+		division_template = "Alfurqat Almasha"	}
+	division = {
+		name = "X Alfurqat Almasha"
+			location = 3795
+		division_template = "Alfurqat Almasha"	}
+	division = {
+		name = "XI Alfurqat Almasha"
+		location = 12413
+		division_template = "Alfurqat Almasha"	}
+
+
+}
