@@ -2178,28 +2178,12 @@ date > 1941.6.1
 
 		available = {
 				ITA = {
-				has_full_control_of_state = 451
-				has_full_control_of_state = 448
-				has_full_control_of_state = 553
-				has_full_control_of_state = 446
-				has_full_control_of_state = 183
-				has_full_control_of_state = 164
-				has_full_control_of_state = 182
-				has_full_control_of_state = 458
 				has_full_control_of_state = 461
 				has_full_control_of_state = 118
-				has_full_control_of_state = 177
 				has_full_control_of_state = 116
 				has_full_control_of_state = 1
-				has_full_control_of_state = 2
-				has_full_control_of_state = 44
-				has_full_control_of_state = 114
-				has_full_control_of_state = 47
-				has_full_control_of_state = 103
-				has_full_control_of_state = 735
-				has_full_control_of_state = 21
-				has_full_control_of_state = 22
-				has_full_control_of_state = 31
+				has_full_control_of_state = 183
+				has_full_control_of_state = 455
 				}
 
 		}
@@ -2421,7 +2405,7 @@ date > 1941.6.1
 
 		will_lead_to_war_with = IRQ
 		prerequisite = { focus = ITA_pact_of_steel }
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_focus_ita_irq
 		x = 1
 		y = 3
 

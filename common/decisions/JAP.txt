@@ -1332,16 +1332,22 @@ JAP_southern_expansion = {
 	JAP_pressure_france = { 
 
 		available = {
+			16 = { NOT = { is_controlled_by = FRA } }
 			NOT = { has_war_with = FRA }
 			NOT = { is_in_faction_with = FRA }
-			16 = { NOT = { is_controlled_by = FRA } }
-			has_completed_focus = JAP_strike_south_doctrine
+			custom_trigger_tooltip = {
+				tooltip = demand_indochina_focus_tt
+				OR = {
+					286 = { is_fully_controlled_by = FRA }
+					670 = { is_fully_controlled_by = FRA }
+					671 = { is_fully_controlled_by = FRA }
+				}
+			}
 		}
 
 		visible = {
-			tag = JAP 
-			GER = {has_completed_focus = GER_danzig_or_war}
-			}
+			has_completed_focus = JAP_strike_south_doctrine
+		}
 
 		fire_only_once = yes
 
@@ -1350,7 +1356,7 @@ JAP_southern_expansion = {
 
 		}
 
-		cost = 0
+		cost = 75
 
 		ai_will_do = {
 			factor = 5
@@ -1372,10 +1378,7 @@ JAP_southern_expansion = {
 		}
 
 		complete_effect = {
-			transfer_state = 286
-			transfer_state = 670
-			transfer_state = 671
-			transfer_state = 741
+			FRA = { country_event = { id = france.1 } }
 		}
 
 	}

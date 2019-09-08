@@ -488,7 +488,7 @@
  FRA_war_measures:0 "War Measures"
  AFG_puppet:0 "Permit the Soviet Union to Puppet us (Autonomy Status: Puppet)"
  AFG_puppet_me:0 "Enable the 'Establish Afghanistan Soviet' focus in the Soviet focus tree"
- SOV_mrp:0 "Molotov-Ribbentrop Pact Annexation Decisions"
+ SOV_mrp:0 "Foreign Policy"
  SOV_mrp_estonia:0 "Oppress Estonia"
  SOV_mrp_latvia:0 "Oppress Latvia"
  SOV_mrp_lithuania:0 "Oppress Lithuania"
@@ -503,3 +503,6 @@
  SOV_surrender_fin:0 "Demand Surrender Terms from Finland"
  SOV_surrender_per:0 "Demand Surrender Terms from Persia"
  SOV_surrender_afg:0 "Demand Surrender Terms from Afghanistan"
+ ENG_annex_mal:0 "Annex British Malaya
+ SOV_attack_finland: "Liberate Finland"
+ NOR_allies:0 "Joining the Allies"

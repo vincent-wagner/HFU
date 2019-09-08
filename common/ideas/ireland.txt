@@ -1,5 +1,25 @@
 ideas = {
 
+country = {
+
+IRE_militarism = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				always = no
+				}
+
+				removal_cost = -1
+
+				modifier = {
+                conscription = 0.05
+				}
+
+		}
+
+}
+
 	political_advisor = {
 
 		IRE_sean_lemass = {

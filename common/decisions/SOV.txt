@@ -1,8 +1,4 @@
-### #  # ###  #  #  ### ### ###  #   #    ###  #### #     ##   ##   ##  ### ###  ##  #  #
- #  ## # #  # #  # #     #  #  #  # #     #  # #    #    #  # #  # #  #  #   #  #  # ## #
- #  # ## #  # #  #   #   #  ###    #      ###  ##   #    #  # #    ####  #   #  #  # # ##
- #  #  # #  # #  #    #  #  #  #   #      #  # #    #    #  # #  # #  #  #   #  #  # #  #
-### #  # ###   ##  ###   #  #  #   #      #  # #### ####  ##   ##  #  #  #  ###  ##  #  #
+
 
 #Category only allowed for SOV
 
@@ -35,6 +31,48 @@ visible = {		NOT = { OR = {
 
 complete_effect = {
 
+if = { 
+limit = { SOV = { has_country_flag = purged_party_members } }
+
+set_country_flag = purge_1_group_a
+set_country_flag = purge_2_group_a
+
+		custom_effect_tooltip = remove_theorist
+		show_ideas_tooltip = mikhail_tukhachevsky
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = alexander_yegorov
+		show_ideas_tooltip = vasily_blucher
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = pyotr_smirnov
+		show_ideas_tooltip = mikhail_frinovsky
+		remove_unit_leader = 401 #mikhail_tukhachevsky, field marshal
+
+		hidden_effect = {
+			remove_ideas = mikhail_tukhachevsky
+			remove_ideas = alexander_yegorov
+			remove_ideas = vasily_blucher
+			remove_ideas = pyotr_smirnov
+			remove_ideas = mikhail_frinovsky
+			remove_ideas = SOV_nikolai_yezhov
+			remove_ideas = yakov_smushkevich
+			remove_ideas = pavel_rychagov
+			remove_ideas = alexander_novikov
+			remove_ideas = gordey_levchenko
+		}
+			
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_nikolai_yezhov
+		custom_effect_tooltip = remove_chief_of_airforce
+		show_ideas_tooltip = yakov_smushkevich
+		show_ideas_tooltip = pavel_rychagov
+		show_ideas_tooltip = alexander_novikov
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = gordey_levchenko
+		remove_unit_leader = 406 #gordey_levchenko, naval commander
+
+
+}
+	else = { 
 set_country_flag = purged_khrushchev
 set_country_flag = purge_1_group_a
 set_country_flag = purge_2_group_a
@@ -77,7 +115,7 @@ set_country_flag = purge_2_group_a
 
 		
 		
-
+}
 }
 }
 
@@ -107,6 +145,52 @@ visible = {		NOT = { OR = {
 	}
 	complete_effect = { 
 	
+	
+	
+if = { 
+limit = { SOV = { has_country_flag = purged_party_members } }
+
+set_country_flag = purge_1_group_a
+set_country_flag = purge_2_group_a
+
+			custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = semyon_timoshenko
+		show_ideas_tooltip = kliment_voroshilov
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = ivan_yumashev
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = konstantin_rokossovsky
+		show_ideas_tooltip = vladimir_kasatonov
+		remove_unit_leader = 405 #kliment_voroshilov, field marshal
+		remove_unit_leader = 402 #konstantin_rokossovsky, general
+		remove_unit_leader = 404 #semyon_timoshenko, general
+		remove_unit_leader = 403 #vladimir_kasatonov, naval commander
+
+
+		hidden_effect = {
+	remove_ideas = semyon_timoshenko
+			remove_ideas = kliment_voroshilov
+			remove_ideas = ivan_yumashev
+			remove_ideas = konstantin_rokossovsky
+			remove_ideas = vladimir_kasatonov		
+			remove_ideas = SOV_nikolai_yezhov
+			remove_ideas = yakov_smushkevich
+			remove_ideas = pavel_rychagov
+			remove_ideas = alexander_novikov
+			remove_ideas = gordey_levchenko
+		}
+			
+custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_nikolai_yezhov
+		custom_effect_tooltip = remove_chief_of_airforce
+		show_ideas_tooltip = yakov_smushkevich
+		show_ideas_tooltip = pavel_rychagov
+		show_ideas_tooltip = alexander_novikov
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = gordey_levchenko
+		remove_unit_leader = 406 #gordey_levchenko, naval commander
+	
+	else = { 
 	set_country_flag = purged_khrushchev
 	set_country_flag = purge_1_group_b		
 	set_country_flag = purge_2_group_a
@@ -114,7 +198,9 @@ visible = {		NOT = { OR = {
 	show_ideas_tooltip = nikita_khrushchev
 	
 	
-		custom_effect_tooltip = remove_chief_of_army
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = nikita_khrushchev	
+			custom_effect_tooltip = remove_chief_of_army
 		show_ideas_tooltip = semyon_timoshenko
 		show_ideas_tooltip = kliment_voroshilov
 		custom_effect_tooltip = remove_chief_of_navy
@@ -129,7 +215,7 @@ visible = {		NOT = { OR = {
 
 		hidden_effect = {	
 			remove_ideas = nikita_khrushchev
-			remove_ideas = semyon_timoshenko
+	remove_ideas = semyon_timoshenko
 			remove_ideas = kliment_voroshilov
 			remove_ideas = ivan_yumashev
 			remove_ideas = konstantin_rokossovsky
@@ -141,7 +227,7 @@ visible = {		NOT = { OR = {
 			remove_ideas = gordey_levchenko
 		}	
 	
-		custom_effect_tooltip = remove_political_advisor
+custom_effect_tooltip = remove_political_advisor
 		show_ideas_tooltip = SOV_nikolai_yezhov
 		custom_effect_tooltip = remove_chief_of_airforce
 		show_ideas_tooltip = yakov_smushkevich
@@ -154,135 +240,75 @@ visible = {		NOT = { OR = {
 	
 	}
 }
-	
+	}
+}
 }
 
 
-
 SOV_mrp = {
+	
+		SOV_attack_finland = {
 
-#SOV_mrp_estonia = {
-#
-#			icon = generic_operation
-#
-#			allowed = {
-#				tag = SOV
-#			}
-#			
-#			available = {
-#			
-#							GER = { has_completed_focus = GER_mol_rib_pact } 
-#			
-#			}
-#
-#			fire_only_once = yes
-#
-#			cost = 40
-#
-#			visible = {
-#	country_exists = EST 
-#					}
-#
-#			complete_effect = {
-#				SOV = { 
-#					annex_country = {
-#						target = EST
-#					}
-#			}
-#		}
-#	}
-#
- #
- #SOV_mrp_latvia = {
-#
-#			icon = generic_operation
-#
-#			allowed = {
-#				tag = SOV
-#			}
-#			
-#			available = {
-#	GER = { has_completed_focus = GER_mol_rib_pact } 
-#			
-#			
-#}
-#fire_only_once = yes
-#
-#			cost = 40
-#
-#			visible = {
-#		country_exists = LAT 
-#
-#			complete_effect = {
-#				SOV = { 
-#					annex_country = {
-#						target = LAT
-#					}
-#			}
-#		}
-#	}
-#	
-#	SOV_mrp_lithuania = {
-#
-#			icon = generic_operation
-#
-#			allowed = {
-#				tag = SOV
-#			}
-#
-#			available = {
-#				GER = { has_completed_focus = GER_mol_rib_pact } 
-#				
-#			}
-#			
-#			
-#			fire_only_once = yes
-#
-#			cost = 40
-#
-#			visible = {
-#			country_exists = LIT 
-#					}
-#
-	#		complete_effect = {
-	#			SOV = { 
-	#				annex_country = {
-	#					target = LIT
-	#				}
-	#		}
-	#	}
-	#}
+		icon = generic_prepare_civil_war
+
+		available = {
+			date > 1948.1.1
+			}
+
+		cost = 0
+		fire_only_once = yes
+		days_remove = 60
+		visible = {
+			date > 1948.1.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+		complete_effect = {
+			add_named_threat = { threat = 7.5 name = Winter_War_Threat }
+		}
+		remove_effect = {
+			SOV = { create_wargoal = { type = puppet_wargoal_focus target = FIN } }
+		}
+	}
 	
 	
-	#	SOV_mrp_romania = {
-#
-#			icon = generic_operation
-#
-#			allowed = {
-	#			tag = SOV
-	#		}
-#
-	#		available = {
-	#			GER = { has_completed_focus = GER_mol_rib_pact } 
-	#			
-	#		}
-	#		
-	#		
-	#		fire_only_once = yes
-#
-	#		cost = 30
-#
-	#		visible = {
-	#		 ROM = { controls_state = 78} 
-	#				}
-#
-	#		complete_effect = {
-	#		transfer_state = 78 
-	#		transfer_state = 80
-	#		transfer_state = 766 
-	#		
-	#	}
-	#}
+		SOV_surrender_afg = {
+available = {
+			AFG = { surrender_progress > 0.1 }
+			
+			}
+
+			allowed = {
+				tag = SOV
+			}
+			
+			
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+		AFG = { has_war_with = SOV }
+		}
+		
+			complete_effect = {
+			   if = { 
+limit = { AFG = { is_ai = yes } }
+SOV = { country_event = { id = afghanistan.2 } }
+}
+
+else_if = { 
+SOV = { country_event = { id = afghanistan.3 } }
+}
+
+		}
+		
+				}
+	
 	
 	SOV_surrender_per = {
 available = {
@@ -305,8 +331,11 @@ available = {
 		
 			complete_effect = {
 			   
+			     SOV = { country_event = { id = iran.2}} 
+			   
+ENG = { country_event = { id = iran.3 } }
 
-PER = { country_event = { id = iran.1 } }
+
 
 		}
 		
@@ -343,47 +372,7 @@ SOV = { country_event = { id = finland.8 } }
 	
 	
 	
-	
-	SOV_mrp_all = {
-	
-	icon = generic_operation
 
-			allowed = {
-				tag = SOV
-			}
-
-			available = {
-							GER = { has_completed_focus = GER_mol_rib_pact } 
-			}
-			
-			fire_only_once = yes
-
-			cost = 120
-
-			visible = {
-				country_exists = LIT 
-				country_exists = EST 
-				country_exists = LAT 
-					}
-
-			complete_effect = {
-				SOV = { 
-					annex_country = {
-						target = LIT
-					}
-					
-						annex_country = {
-						target = EST
-					}
-					
-						annex_country = {
-						target = LAT
-					}
-			}
-			
-		}
-	}
-	
 	}
 
 
@@ -1425,8 +1414,6 @@ SOV_great_patriotic_war = {
 }
 
 SOV_great_patriotic_war = {
-
-
 
 	#217 "Stalingrad"
 	SOV_hold_stalingrad = {

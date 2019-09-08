@@ -54,3 +54,5 @@
  HOL_allied_research_desc:0 "Reduced research time for technologies researched by other Allied countries."
  HOL_europe_research_name:0 "The Continent's Best and Brightest"
  HOL_europe_research_desc:0 "Reduced research time for technologies researched by other faction members."
+ SIA_jap_naval_sharing:0 "IJN Naval Technological Exchange"
+ SIA_jap_naval_sharing_desc:0 "Reduced research time for naval equipment technologies researched by other faction members."

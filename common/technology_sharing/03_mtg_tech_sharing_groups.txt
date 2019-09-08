@@ -118,3 +118,18 @@ technology_sharing_group = {
 	}
 }
 
+
+technology_sharing_group = {
+    id = SIA_jap_naval_tech_group
+    name = SIA_jap_naval_sharing
+    desc = SIA_jap_naval_sharing_desc
+    picture = GFX_technology_sharing_default
+    research_sharing_per_country_bonus = 0.2
+
+    categories = { naval_equipment }
+
+    available = {
+                original_tag = SIA
+    }
+}
+

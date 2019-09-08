@@ -10,6 +10,14 @@ country_event = {
 	
 	option = { 
 	name = iraq.1.a
+	
+			if = {
+	
+limit = { 
+				original_tag = IRQ 
+			} 
+			
+	
 	IRQ = { 
 	load_oob = "Iraq_CW"
 	 start_civil_war = {
@@ -21,6 +29,7 @@ country_event = {
         states = {
             676
         }
+	}
 	}
 	}
 	}
@@ -40,7 +49,12 @@ country_event = {
 		
 				option = { 
 		name = iraq.4.b
-		
+				if = {
+	
+limit = { 
+				original_tag = GER 
+			} 
+			
 		IRQ = { 
 		add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 600 producer = GER }
 		 add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 100 producer = GER }
@@ -52,7 +66,7 @@ country_event = {
 		
 		
 		}
-		
+		}
 		
 		}
 		
@@ -84,6 +98,7 @@ country_event = {
 	
 		option = { 
 		name = iraq.6.a
+		
 		IRQ = { 
 			declare_war_on = { target = ENG type = annex_everything }
 			declare_war_on = { target = FRA type = annex_everything }

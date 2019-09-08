@@ -18,7 +18,9 @@ country_event = {
 	
 option = {
 name = afghanistan.1.a
-
+	ai_chance = {
+			factor = 2
+		}
 if = { 
 limit = { AFG = { is_ai = yes } }
 SOV = { country_event = { id = afghanistan.2 } }
@@ -71,8 +73,8 @@ white_peace = AFG
 	
 option = {
 name = afghanistan.3.a
-SOV = { white_peace = AFG }
-AFG = { white_peace = SOV }
+ white_peace = AFG 
+
 				SOV = { set_autonomy = {
 					target = AFG					
 					autonomy_state = autonomy_colony

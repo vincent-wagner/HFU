@@ -2262,4 +2262,23 @@ spriteTypes = {
     texturefile = "gfx/event_pictures/mussolini_executed.dds"
     }
 	
+	spriteType = {
+
+    name = "GFX_VolchovPock"
+    texturefile = "gfx/event_pictures/VolchovPock.dds"
+    }
+	
+	spriteType = {
+
+    name = "GFX_BandaKoch"
+    texturefile = "gfx/event_pictures/BandaKoch.dds"
+    }
+	
+		spriteType = {
+
+    name = "GFX_tora"
+    texturefile = "gfx/event_pictures/tora.dds"
+    }
+	
+	
 }

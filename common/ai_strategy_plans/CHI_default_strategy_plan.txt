@@ -198,7 +198,6 @@ CHI_war_measures = {
 	focus_factors = {
 		CHI_war_of_resistence = 20
 		CHI_military_affairs_commission = 20
-		CHI_industrial_evacuations = 30
 		CHI_scorched_earth_tactics = 30
 		CHI_democracy = 0 #can't have that nonsense right now
 		CHI_war_of_national_liberation = 20

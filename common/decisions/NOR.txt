@@ -1,16 +1,49 @@
 NOR_fork = {
 
+		NOR_allies = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			date > 1948.1.1
+			}
+
+		cost = 0
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			date > 1948.1.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			ENG = { country_event = { id = britain.1113 } }
+		}
+	}
+	
+	
+
+
+
+
+
 
 	op_fork2 = {
 
 		icon = generic_operation
 	
 		allowed = {
-			tag = ENG
+			tag = NOR
 		}
 		
 		available = {
-			tag = ENG
+			tag = NOR
 			has_government = democratic
 			has_war_with = GER
 			ICE = { exists = yes }
@@ -32,7 +65,7 @@ NOR_fork = {
 		}
 		
 		complete_effect = {
-					GER = { add_to_faction = ICE }
+			GER = { add_to_faction = ICE }
 			ICE = { declare_war_on = { target = ENG type = annex_everything }
 			declare_war_on = { target = FRA type = annex_everything }}
 			add_popularity = { ideology = democratic popularity = -0.05 }
@@ -52,7 +85,7 @@ NOR_fork = {
 			tag = NOR
 			has_government = democratic
 			has_war_with = GER
-			ICE = { exists = no }
+			ICE = { has_capitulated = yes }
 			NOR = { has_capitulated = yes }
 			NOR = { has_completed_focus = nor_norway_in_exile }
 		}

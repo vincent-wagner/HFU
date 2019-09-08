@@ -109,7 +109,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-
+navy_experience = 25
 			if = {
 				limit = {
 					capital_scope = {
@@ -752,12 +752,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = why_we_fight_focus
 			custom_effect_tooltip = why_we_fight_effect
-			hidden_effect = {
-				if = {
-					limit = { NOT = { has_idea = neutrality_idea } }
-					set_rule = { can_create_factions = yes }
-				}			
-			}
 		}
 	}
 

@@ -128,61 +128,6 @@ operations = {
 #Category only allowed for GER
 GER_military_buildup = {
 
-	GER_plan_z = {
-
-		icon = generic_naval
-
-			allowed = { 
-		original_tag = GeR
-		}
-		
-		available = {
-			has_navy_size = {
-				unit = battleship
-				size > 9
-			}
-			has_navy_size = {
-				unit = battle_cruiser
-				size > 2
-			}
-			has_navy_size = {
-				unit = carrier
-				size > 3
-			}
-			has_navy_size = {
-				unit = heavy_cruiser
-				size > 19
-			}
-			has_navy_size = {
-				unit = light_cruiser
-				size > 19
-			}
-			has_navy_size = {
-				unit = destroyer
-				size > 99
-			}
-		}
-
-		fire_only_once = yes
-		days_mission_timeout = 1800
-		is_good = no
-		activation = {
-			has_completed_focus = GER_plan_z
-		}
-
-		
-		visible = {
-			has_completed_focus = GER_plan_z
-		}
-
-		complete_effect = {
-			add_war_support = 0.05
-			navy_experience = 150
-		}
-
-		
-	}
-
 	GER_jaegernotprogramm = {
 
 		icon = generic_air
@@ -473,5 +418,4 @@ special_projects = {
 			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
 		}
 	}	
-
 }

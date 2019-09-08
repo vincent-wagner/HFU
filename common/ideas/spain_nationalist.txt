@@ -46,8 +46,8 @@ ideas = {
 			}
 			
 			modifier = {
-				send_volunteer_size = 30
-				send_volunteer_divisions_required = -0.96
+				send_volunteer_size = 100
+				send_volunteer_divisions_required = -1.0
 			}
 
 		}

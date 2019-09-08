@@ -280,6 +280,7 @@ country_event = {
 	
 	option = {
 		name = britain.1113.a
+		NOR = { set_rule = { can_join_factions = yes }}
 		add_to_faction = NOR
 		NOR = { country_event = { id = britain.1114} }
 	}

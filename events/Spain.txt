@@ -18,7 +18,11 @@ country_event = {
 	option = { # Support Nationalists
 		name = spain.1.a
 		trigger = { is_ai = no }
-		hidden_effect = {
+	
+
+if = { 
+limit = { original_tag = SPR }
+	hidden_effect = {
 			set_capital = 176
 			start_civil_war = {
 				ruling_party = fascism
@@ -49,6 +53,7 @@ country_event = {
 			set_equipment_fraction = 0.5
 			set_stability = 0.9
 			set_war_support = 0.8
+			army_experience = 30
 			
 			add_popularity = {
 				ideology = fascism
@@ -65,6 +70,7 @@ country_event = {
 			#country_event = { id = spain.2 days = 7 }
 		}
 		custom_effect_tooltip = nationalists_chosen
+		}
 	}
 
 }
@@ -94,10 +100,7 @@ country_event = {
 		name = spain.8.a
 		set_capital = 41
 	}
-	option = {
-		ai_chance = { factor = 0 }
-		name = spain.8.b
-	}
+
 }
 
 # Election of 1936
@@ -473,3 +476,49 @@ country_event = {
 
 }
 
+
+country_event = {
+	id = spain.29
+	title = spain.29.t
+	desc = spain.29.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	is_triggered_only = yes 
+	fire_only_once = yes
+
+	option = {
+		name = spain.29.a
+					create_wargoal = {
+					target = POR
+					type = annex_everything
+				}
+				add_ideas = SPA_scw_veterans
+	}
+
+	
+	
+	}
+	
+	
+	country_event = {
+	
+	id = spain.33
+	title = spain.33.t
+	desc = spain.33.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	is_triggered_only = yes 
+	fire_only_once = yes
+
+	option = {
+		name = spain.33.a
+		
+delete_unit_template_and_units = { division_template = "División de Infantería" }
+delete_unit_template_and_units = { division_template = "División de Caballería" }
+delete_unit_template_and_units = { division_template = "Brigada Montaña" }
+delete_unit_template_and_units = { division_template = "Brigada de Infantería" }
+
+	}
+
+	
+	
+	
+	}

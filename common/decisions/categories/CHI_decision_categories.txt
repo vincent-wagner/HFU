@@ -1,12 +1,3 @@
-CHI_anti_imperialism = {
-	icon = generic_independence
-	allowed = {
-		is_literally_china = yes
-	}
-	visible = {
-		always = yes
-	}
-}
 
 CHI_army_reform = {
 	icon = army_reform
@@ -18,16 +9,6 @@ CHI_army_reform = {
 	}
 }
 
-
-CHI_industrial_evacuations = {
-	allowed = {
-		is_literally_china = yes
-	}
-	icon = generic_industry
-	visible = {
-		has_completed_focus = CHI_industrial_evacuations
-	}
-}
 
 CHI_xian_incident = {
 	icon = power_struggle

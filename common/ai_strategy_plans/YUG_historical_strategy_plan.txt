@@ -35,7 +35,6 @@ YUG_historical = {
 		YUG_mountain_brigades
 		YUG_modernize_the_air_force
 		YUG_purchase_foreign
-		YUG_license_production 
 		YUG_rare_minerals_exploitation
 		YUG_traditional_values
 		YUG_concessions_for_macedonians

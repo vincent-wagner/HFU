@@ -833,6 +833,8 @@ save_admiral_pp_for_later = {
 	}
 }
 
+
+
 do_not_waste_pp_if_saving_for_manpower_laws = {
 
 	enable = {

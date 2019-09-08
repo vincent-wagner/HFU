@@ -133,7 +133,7 @@ focus_tree = {
 		id = USA_reach_out_to_the_ware_group
 		icon = GFX_goal_generic_propaganda
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = { focus = USA_suspend_the_presecution }
 		prerequisite = { focus = USA_agricultural_adjustment_act }
 		relative_position_id = USA_suspend_the_presecution
@@ -171,7 +171,7 @@ focus_tree = {
 		id = USA_us_ussr_economic_cooperation
 		icon = GFX_goal_generic_soviet_construction
 		x = 0
-		y = 2
+		y = 3
 		prerequisite = { focus = USA_reach_out_to_the_ware_group }
 		relative_position_id = USA_suspend_the_presecution
 		cost = 10
@@ -313,7 +313,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_federal_housing_act
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		x = 0
 		y = 3
 		prerequisite = { focus = USA_fair_labour_standards_act }
@@ -2435,7 +2435,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_combined_bomber_offensive
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_focus_USA_strat
 		prerequisite = { focus = USA_strategic_bombing }
 		available = {
 			has_war = yes

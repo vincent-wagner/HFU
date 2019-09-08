@@ -168,6 +168,57 @@ country_event = {
 	}
 }
 
+
+country_event = {
+	id = japan.144
+	title = japan.144.t
+	desc = japan.144.d
+	picture = GFX_tora
+
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.144.a
+		if = {
+limit = {		tag = JAP}
+			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+			declare_war_on = { target = ENG type = annex_everything }
+			declare_war_on = { target = FRA type = annex_everything }
+			declare_war_on = { target = INS type = annex_everything }
+			declare_war_on = { target = MAL type = annex_everything }
+			declare_war_on = { target = HOL type = annex_everything }
+			declare_war_on = { target = USA type = annex_everything }
+			declare_war_on = { target = PHI type = annex_everything }
+			declare_war_on = { target = AST type = annex_everything }
+			declare_war_on = { target = NZL type = annex_everything }
+			declare_war_on = { target = RAJ type = annex_everything }
+			declare_war_on = { target = SAF type = annex_everything }
+			declare_war_on = { target = CAN type = annex_everything }
+			declare_war_on = { target = NEP type = annex_everything }
+			declare_war_on = { target = BHU type = annex_everything }
+			declare_war_on = { target = BEL type = annex_everything }
+			declare_war_on = { target = COG type = annex_everything }
+			declare_war_on = { target = NDA type = annex_everything }
+			declare_war_on = { target = DEN type = annex_everything }
+			
+			if = {
+			limit = { BRA = { is_in_faction = yes}}
+			declare_war_on = { target = BRA type = annex_everything }
+			}
+				if = {
+			limit = { MEX = { is_in_faction = yes}}
+			declare_war_on = { target = MEX type = annex_everything }
+			}
+				if = {
+			limit = { IRE = { is_in_faction = yes}}
+			declare_war_on = { target = IRE type = annex_everything }
+			}
+			
+			}
+	}
+}
+
+
 country_event = {
    id = japan.145
    title = japan.145.t

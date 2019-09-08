@@ -96,7 +96,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_western_focus
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 80
@@ -129,6 +129,17 @@ focus_tree = {
 					modifier = large_increase
 				}
 			}
+			
+			if = {
+			limit = { is_ai = no}
+			add_ideas = YUG_dimitrije_ljotic
+			}
+			
+			if = {
+			limit = { has_idea = YUG_dimitrije_ljotic }
+			add_political_power = 187.5
+			}
+			
 		}
 	}
 
@@ -213,8 +224,7 @@ focus_tree = {
 		id = YUG_traditional_values
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = YUG_ban_slovene_nationalist_parties  }
-		mutually_exclusive = { focus = YUG_guarantee_religious_liberties }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = YUG_ban_slovene_nationalist_parties
 
@@ -249,7 +259,7 @@ focus_tree = {
 	focus = {
 		id = YUG_greater_yugoslavia
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = YUG_traditional_values focus = YUG_guarantee_religious_liberties }
+		prerequisite = { focus = YUG_traditional_values }
 		mutually_exclusive = { focus = YUG_concessions_for_macedonians }
 		x = 0
 		y = 2
@@ -406,51 +416,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YUG_claim_macedonia
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = YUG_invite_german_military_mission }
-		x = -1
-		y = 1
-		relative_position_id = YUG_invite_german_military_mission
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				limit = {
-					owns_state = 106
-				}
-				add_state_core = 731
-			}
-			news_event = { id = news.327 }
-		}
-	}
-
-	focus = {
 		id = YUG_invite_italian_naval_experts
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = YUG_invite_german_military_mission }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = YUG_invite_german_military_mission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -487,46 +460,14 @@ focus_tree = {
 	############################	
 
 	focus = {
-		id = YUG_guarantee_religious_liberties
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = YUG_ban_slovene_nationalist_parties }
-		mutually_exclusive = { focus = YUG_traditional_values }
-		x = -1
-		y = 1
-		relative_position_id = YUG_ban_slovene_nationalist_parties
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 40
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = YUG_idea_religious_freedoms_guaranteed
-		}
-	}
-
-	focus = {
 		id = YUG_concessions_for_macedonians
 		icon = GFX_focus_generic_concessions
-		prerequisite = { focus = YUG_guarantee_religious_liberties focus = YUG_traditional_values }
+		prerequisite = { focus = YUG_traditional_values }
 		x = 0
 		y = 2
 		relative_position_id = YUG_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -560,7 +501,7 @@ focus_tree = {
 	focus = {
 		id = YUG_industrialization_program
 		icon = GFX_goal_generic_construction
-		x = 8
+		x = 7
 		y = 0
 
 		cost = 10
@@ -1390,7 +1331,7 @@ focus_tree = {
 		x = 15
 		y = 0
 
-		cost = 10
+		cost = 9
 
 		ai_will_do = {
 			factor = 60
@@ -1757,7 +1698,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-				add_ideas = YUG_license_product
+				add_ideas = YUG_license_production 
 				GER = { country_event = DOD_yugoslavia.20 }
 				ITA = { country_event = DOD_yugoslavia.20 }
 				ENG = { country_event = DOD_yugoslavia.20 }
@@ -1773,7 +1714,7 @@ focus_tree = {
 	focus = {
 		id = YUG_army_modernization
 		icon = GFX_goal_generic_army_doctrines
-		x = 25
+		x = 23
 		y = 0
 
 		cost = 10
@@ -2510,7 +2451,7 @@ focus_tree = {
 		id = YUG_expand_the_split_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		mutually_exclusive = { focus = YUG_expand_the_serbian_shipyards }
-		x = 33
+		x = 31
 		y = 0
 
 		cost = 10
