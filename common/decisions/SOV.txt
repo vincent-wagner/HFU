@@ -160,69 +160,129 @@ visible = {		NOT = { OR = {
 
 
 SOV_mrp = {
+
+#SOV_mrp_estonia = {
+#
+#			icon = generic_operation
+#
+#			allowed = {
+#				tag = SOV
+#			}
+#			
+#			available = {
+#			
+#							GER = { has_completed_focus = GER_mol_rib_pact } 
+#			
+#			}
+#
+#			fire_only_once = yes
+#
+#			cost = 40
+#
+#			visible = {
+#	country_exists = EST 
+#					}
+#
+#			complete_effect = {
+#				SOV = { 
+#					annex_country = {
+#						target = EST
+#					}
+#			}
+#		}
+#	}
+#
+ #
+ #SOV_mrp_latvia = {
+#
+#			icon = generic_operation
+#
+#			allowed = {
+#				tag = SOV
+#			}
+#			
+#			available = {
+#	GER = { has_completed_focus = GER_mol_rib_pact } 
+#			
+#			
+#}
+#fire_only_once = yes
+#
+#			cost = 40
+#
+#			visible = {
+#		country_exists = LAT 
+#
+#			complete_effect = {
+#				SOV = { 
+#					annex_country = {
+#						target = LAT
+#					}
+#			}
+#		}
+#	}
+#	
+#	SOV_mrp_lithuania = {
+#
+#			icon = generic_operation
+#
+#			allowed = {
+#				tag = SOV
+#			}
+#
+#			available = {
+#				GER = { has_completed_focus = GER_mol_rib_pact } 
+#				
+#			}
+#			
+#			
+#			fire_only_once = yes
+#
+#			cost = 40
+#
+#			visible = {
+#			country_exists = LIT 
+#					}
+#
+	#		complete_effect = {
+	#			SOV = { 
+	#				annex_country = {
+	#					target = LIT
+	#				}
+	#		}
+	#	}
+	#}
 	
-		SOV_attack_finland = {
-
-		icon = generic_prepare_civil_war
-
-		available = {
-			date > 1948.1.1
-			}
-
-		cost = 0
-		fire_only_once = yes
-		days_remove = 60
-		visible = {
-			date > 1948.1.1
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		
-		complete_effect = {
-			add_named_threat = { threat = 7.5 name = Winter_War_Threat }
-		}
-		remove_effect = {
-			SOV = { create_wargoal = { type = puppet_wargoal_focus target = FIN } }
-		}
-	}
 	
-	
-		SOV_surrender_afg = {
-available = {
-			AFG = { surrender_progress > 0.1 }
-			
-			}
-
-			allowed = {
-				tag = SOV
-			}
-			
-			
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
-		AFG = { has_war_with = SOV }
-		}
-		
-			complete_effect = {
-			   if = { 
-limit = { AFG = { is_ai = yes } }
-SOV = { country_event = { id = afghanistan.2 } }
-}
-
-else_if = { 
-SOV = { country_event = { id = afghanistan.3 } }
-}
-
-		}
-		
-				}
-	
+	#	SOV_mrp_romania = {
+#
+#			icon = generic_operation
+#
+#			allowed = {
+	#			tag = SOV
+	#		}
+#
+	#		available = {
+	#			GER = { has_completed_focus = GER_mol_rib_pact } 
+	#			
+	#		}
+	#		
+	#		
+	#		fire_only_once = yes
+#
+	#		cost = 30
+#
+	#		visible = {
+	#		 ROM = { controls_state = 78} 
+	#				}
+#
+	#		complete_effect = {
+	#		transfer_state = 78 
+	#		transfer_state = 80
+	#		transfer_state = 766 
+	#		
+	#	}
+	#}
 	
 	SOV_surrender_per = {
 available = {
@@ -245,11 +305,8 @@ available = {
 		
 			complete_effect = {
 			   
-			     SOV = { country_event = { id = iran.2}} 
-			   
-ENG = { country_event = { id = iran.3 } }
 
-
+PER = { country_event = { id = iran.1 } }
 
 		}
 		
@@ -286,7 +343,47 @@ SOV = { country_event = { id = finland.8 } }
 	
 	
 	
+	
+	SOV_mrp_all = {
+	
+	icon = generic_operation
 
+			allowed = {
+				tag = SOV
+			}
+
+			available = {
+							GER = { has_completed_focus = GER_mol_rib_pact } 
+			}
+			
+			fire_only_once = yes
+
+			cost = 120
+
+			visible = {
+				country_exists = LIT 
+				country_exists = EST 
+				country_exists = LAT 
+					}
+
+			complete_effect = {
+				SOV = { 
+					annex_country = {
+						target = LIT
+					}
+					
+						annex_country = {
+						target = EST
+					}
+					
+						annex_country = {
+						target = LAT
+					}
+			}
+			
+		}
+	}
+	
 	}
 
 

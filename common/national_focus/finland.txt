@@ -1598,7 +1598,7 @@ focus_tree = {
 	
 		focus = {
 		id = fin_continuation_prep
-		icon = GFX_focus_FIN_sisu
+		icon = GFX_goal_generic_demand_territory
 		available = {
 		date > 1940.4.1
 		is_ai = no
@@ -1620,7 +1620,7 @@ focus_tree = {
 	
 	focus = {
 		id = fin_continuation
-		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		icon = GFX_goal_generic_demand_territory
 		available = {
 		date > 1941.6.22
 		is_ai = no

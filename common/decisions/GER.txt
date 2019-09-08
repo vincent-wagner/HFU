@@ -473,4 +473,5 @@ special_projects = {
 			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
 		}
 	}	
+
 }

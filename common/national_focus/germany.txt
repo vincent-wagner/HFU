@@ -1112,7 +1112,7 @@ focus_tree = {
 				has_dlc = "Death or Dishonor" 
 				is_subject = no
 			}
-			GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
+			set_autonomy = { target = FROM autonomy_state = autonomy_satellite }
 		}
 
 random_owned_controlled_state = {
@@ -1161,7 +1161,7 @@ random_owned_controlled_state = {
 				has_dlc = "Death or Dishonor" 
 				is_subject = no
 			}
-		GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
+			set_autonomy = { target = FROM autonomy_state = autonomy_satellite }
 		}
 				random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 2
@@ -1212,7 +1212,8 @@ random_owned_controlled_state = {
 				has_dlc = "Death or Dishonor" 
 				is_subject = no
 			}
-		GER =  { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }		}
+			set_autonomy = { target = FROM autonomy_state = autonomy_satellite }
+		}
 				random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
@@ -1674,11 +1675,95 @@ random_owned_controlled_state = {
 		}
 	}
 	
+	focus = { #should already be signed in 39
+		id = GER_mol_rib_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = GER_soviet_treaty }
+		available = {
+			is_puppet = no
+			has_government = fascism
+			has_army_manpower = { size > 849999 } #ca 90 div
+			date > 1939.5.30				
+			SOV = {
+				NOT = { has_war_with = GER }
+				country_exists = SOV
+			}
+
+		}
+		cancel = {
+			OR = {
+				has_war_with = SOV
+				NOT = { country_exists = SOV }
+			}
+		}
+		cancel_if_invalid = no
+		x = 2
+		y = 2
+		relative_position_id = GER_soviet_treaty
+		cost = 1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = GER_anti_comitern_pact }
+			}
+		}	
+		completion_reward = {
+			# REVISIT Rework event series to fit new design or retain old design
+			SOV = {
+				country_event = { id = germany.11 days = 1 }
+				custom_effect_tooltip = GER_mol_rib_pact_tt
+				custom_effect_tooltip = needs_approval
+			}
+			SOV = {
+			transfer_state = 78 
+			transfer_state = 80
+			transfer_state = 766 
+			add_political_power = -20 
+			}
+		}
+	}
+	
+	
+		focus = { 
+		id = GER_the_great_turn
+		icon = GFX_focus_GER_endsieg
+		prerequisite = { focus = GER_mol_rib_pact }
+		available = {
+		
+			date > 1942.1.1				
+			GER = { NOT ={
+			controls_state = 188
+				controls_state = 5
+					controls_state = 67
+						controls_state = 66
+							controls_state = 68
+								controls_state = 75
+									controls_state = 51
+			}}
+		FRA = { 	controls_state = 16  }
+		BEL = { controls_state = 6 }
+		HOL = { controls_state = 7 }
+		}
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_mol_rib_pact
+		cost = 1
+		
+	completion_reward = {
+	add_ideas = tot_economic_mobilisation
+	add_ideas = all_adults_serve
+	add_ideas = closed_economy
+	add_ideas = the_great_turn
+	
+	}	
+	}
 
 	focus = {
 		id = GER_rhineland
 		icon = GFX_focus_GER_rhineland
-		x = 19
+		x = 21
 		y = 0
 		cost = 10
 		available = {
@@ -1704,8 +1789,6 @@ random_owned_controlled_state = {
 		}	
 }		
 	}
-	
-	
 
 	focus = {
 		id = GER_anti_comitern_pact
@@ -1716,7 +1799,7 @@ random_owned_controlled_state = {
 		relative_position_id = GER_rhineland
 		cost = 1
 		available = {
-		    date > 1941.5.25					
+		    date > 1941.4.25					
 		}
 		ai_will_do = {
 			factor = 1
@@ -1766,7 +1849,7 @@ random_owned_controlled_state = {
 		y = 2
 
 available = {
-				date > 1941.6.1
+				date > 1941.5.1
 							}
 
 		relative_position_id = GER_anti_comitern_pact
@@ -1987,74 +2070,13 @@ available = {
 		}
 
 	}
-	
-			focus = { #should already be signed in 39
-		id = GER_mol_rib_pact
-		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = { focus = GER_anschluss }
-		available = {
-			is_puppet = no
-			has_government = fascism
-			has_army_manpower = { size > 849999 } #ca 90 div
-			date > 1939.5.30				
-			SOV = {
-				NOT = { has_war_with = GER }
-				country_exists = SOV
-			}
-
-		}
-		cancel = {
-			OR = {
-				has_war_with = SOV
-				NOT = { country_exists = SOV }
-			}
-		}
-		cancel_if_invalid = no
-		x = -1
-		y = 1
-		relative_position_id = GER_anschluss
-		cost = 1
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_completed_focus = GER_anti_comitern_pact }
-			}
-		}	
-		completion_reward = {
-			# REVISIT Rework event series to fit new design or retain old design
-			SOV = {
-				country_event = { id = germany.11 days = 1 }
-				custom_effect_tooltip = GER_mol_rib_pact_tt
-				custom_effect_tooltip = needs_approval
-			}
-			SOV = {
-			transfer_state = 78 
-			transfer_state = 80
-			transfer_state = 766 
-			annex_country = {
-						target = LIT
-					}
-					
-						annex_country = {
-						target = EST
-					}
-					
-						annex_country = {
-						target = LAT
-					}
-			add_political_power = -150
-			country_event = finland.20
-			}
-		}
-	}
 
 	focus = {
 		id = GER_demand_memel
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
 		available = { is_puppet = no }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 10
@@ -2093,7 +2115,6 @@ available = {
 		id = GER_danzig_or_war
 		icon = GFX_focus_GER_danzig
 		prerequisite = { focus = GER_demand_memel }
-		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
 		available = {
 			date > 1939.6.1
@@ -2105,7 +2126,7 @@ available = {
 
 		}
 		cancel_if_invalid = no
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = GER_demand_memel
 		cost = 10
@@ -2128,8 +2149,7 @@ available = {
 POL = {
 					country_event = { id = germany.86 }
 					}
-		hidden_effect = {
-		
+		hidden_effect = { 
 				ENG = {
 				add_war_support = 0.1 #just not cricket
 			}
@@ -2137,8 +2157,10 @@ POL = {
 				add_war_support = 0.1 #just not cricket
 			}
 		FIN = { country_event = finland.2 }
-			SAF = {	country_event = tfv_south_africa.133 }
-		ENG = { country_event = britain.24
+			SAF = {
+		country_event = tfv_south_africa.133 
+		ENG = {
+		country_event = britain.24
 		        125 = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -2157,12 +2179,10 @@ POL = {
 			}
 			set_state_flag = shadow_scheme_2AF
 		}
+		
 		}
 		
-		
-SPR = { country_event = spain.29 }
-		
-		
+		}
 		}
 			
 		}
@@ -2633,7 +2653,7 @@ SPR = { country_event = spain.29 }
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 25
+		x = 27
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -3107,7 +3127,7 @@ SPR = { country_event = spain.29 }
 			}
 		}
 		cancel_if_invalid = no
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_rhineland 
 		cost = 10
@@ -3147,42 +3167,6 @@ SPR = { country_event = spain.29 }
  			}
 		}
 	}	
-	
-		focus = { 
-		id = GER_the_great_turn
-		icon = GFX_focus_GER_endsieg
-		prerequisite = { focus = GER_rhineland }
-		available = {
-		
-			date > 1942.1.1				
-			GER = { NOT ={
-			controls_state = 188
-				controls_state = 5
-					controls_state = 67
-						controls_state = 66
-							controls_state = 68
-								controls_state = 75
-									controls_state = 51
-			}}
-		FRA = { 	controls_state = 16  }
-		BEL = { controls_state = 6 }
-		HOL = { controls_state = 7 }
-		}
-		
-		x = -1
-		y = 1
-		relative_position_id = GER_rhineland
-		cost = 1
-		
-	completion_reward = {
-	add_ideas = tot_economic_mobilisation
-	add_ideas = all_adults_serve
-	add_ideas = closed_economy
-	add_ideas = the_great_turn
-	
-	}	
-	}
-	
 	
 		focus = {
 		id = GER_atlantikwall

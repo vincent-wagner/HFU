@@ -9,7 +9,7 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 4
 set_stability = 0.5
 set_war_support = 0.8
 # Starting tech
@@ -266,7 +266,7 @@ if = {
 }
 
 
-set_convoys = 50
+set_convoys = 800
 
 set_politics = {
 	ruling_party = communism
@@ -289,6 +289,8 @@ add_to_faction = TAN
 add_ideas = {
 	trotskyite_plot
 	home_of_revolution
+	closed_economy 
+	
 }
 
 create_country_leader = {

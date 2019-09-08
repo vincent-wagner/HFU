@@ -38,44 +38,25 @@ autonomy_state = {
 	}
 	
 	can_take_level = {
-		if = { 
-		limit = { original_tag = RAJ }
-		
-		NOT = { has_idea = SAF_the_commonwealth }
-				}
-				
-					if = { 
-		limit = { original_tag = SAF }
-		
-		NOT = { has_idea = SAF_the_commonwealth }
-				}
-				
-					if = { 
-		limit = { original_tag = CAN }
-		
-		NOT = { has_idea = SAF_the_commonwealth }
-				}
-				
-					if = { 
-		limit = { original_tag = NZL }
-		
-		NOT = { has_idea = SAF_the_commonwealth }
-				}
-				
-					if = { 
-		limit = { original_tag = AST }
-		
-		NOT = { has_idea = SAF_the_commonwealth }
-				}
-				
-					if = { 
-		limit = { original_tag = IRE }
-		
-		NOT = { has_idea = SAF_the_commonwealth }
-				}
-				
 			
-}
+			RAJ = { NOT = 
+				{ has_idea = RAJ_the_commonwealth }
+				}
+			
+			CAN = { 
+			NOT = { has_idea = CAN_the_commonwealth }
+		}
+					SAF = { 
+			NOT = { has_idea = SAF_the_commonwealth }
+		}
+					AST = { 
+			NOT = { has_idea = AST_the_commonwealth }
+		}
+					NZL = { 
+			NOT = { has_idea = NZL_the_commonwealth }
+		}
+	}
+
 	can_lose_level = {
 		if = {
 			limit = {

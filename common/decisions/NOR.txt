@@ -6,11 +6,11 @@ NOR_fork = {
 		icon = generic_operation
 	
 		allowed = {
-			tag = NOR
+			tag = ENG
 		}
 		
 		available = {
-			tag = NOR
+			tag = ENG
 			has_government = democratic
 			has_war_with = GER
 			ICE = { exists = yes }
@@ -32,7 +32,7 @@ NOR_fork = {
 		}
 		
 		complete_effect = {
-			GER = { add_to_faction = ICE }
+					GER = { add_to_faction = ICE }
 			ICE = { declare_war_on = { target = ENG type = annex_everything }
 			declare_war_on = { target = FRA type = annex_everything }}
 			add_popularity = { ideology = democratic popularity = -0.05 }
@@ -52,7 +52,7 @@ NOR_fork = {
 			tag = NOR
 			has_government = democratic
 			has_war_with = GER
-			ICE = { has_capitulated = yes }
+			ICE = { exists = no }
 			NOR = { has_capitulated = yes }
 			NOR = { has_completed_focus = nor_norway_in_exile }
 		}

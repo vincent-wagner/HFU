@@ -32,7 +32,7 @@ SOV_mrp = {
 		original_tag = SOV
 	}
 	visible = {
-
+	NOT = { SOV = { has_completed_focus = SOV_lessons_of_war }}
 	}
 		
 }

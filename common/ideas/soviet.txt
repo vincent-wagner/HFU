@@ -1,5 +1,16 @@
 ideas = {
 	country = {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		militarized_schools = {
 		
 			removal_cost = -1
@@ -222,8 +233,11 @@ ideas = {
 			}
 			
 			modifier = {
-				drift_defence_factor = 0.5
-				surrender_limit = -0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+				consumer_goods_factor = -0.05
 			}
 			rule = {
 				can_create_factions = yes

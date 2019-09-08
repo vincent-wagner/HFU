@@ -1613,23 +1613,23 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 100000
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
 		}
 	}
 
 	focus = {
 		id = ire_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 17
+		x = 16
 		y = 0
 		cost = 10
 
 		available_if_capitulated = yes
 
-		ai_will_do = {
-			factor = 1000
-		}
-		
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -1655,7 +1655,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 9500
+			factor = 95
 			modifier = {
 				factor = 0.1
 				any_neighbor_country = {
@@ -1694,15 +1694,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = AUS
+			}
 		}
 
 		completion_reward = {
 			add_political_power = 150
-			remove_ideas = SAF_the_commonwealth
-			ENG = { set_autonomy = { target = IRE autonomy_state = autonomy_free } }
-			ENG = { remove_from_faction = IRE }
-			set_cosmetic_tag = IRR
+			remove_ideas = CAN_the_commonwealth
 		}
 	}
 
@@ -1714,7 +1715,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ire_neutrality_focus
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1722,50 +1723,12 @@ focus_tree = {
 			add_ideas = deterrence
 		}
 	}
-	
-		focus = {
-		id = ire_reaffirm_territorial_claims
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = ire_deterrence }
-		mutually_exclusive = { focus = ire_invite_british_investors  }
-		x = -1
-		y = 1
-		relative_position_id = ire_deterrence
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		119 = { add_core_of = IRE } 
-		}
-	}
-	
-		focus = {
-		id = ire_invite_british_investors
-		icon = GFX_focus_ENG_brittania
-		prerequisite = { focus = ire_deterrence }
-		mutually_exclusive = { focus = ire_reaffirm_territorial_claims  }
-		x = 1
-		y = 1
-		relative_position_id = ire_deterrence
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		113 = { add_extra_state_shared_building_slots = 3 }
-		134 = { add_extra_state_shared_building_slots = 2 }
-		135 = { add_extra_state_shared_building_slots = 2 } 
-		}
-	}
-	
-	
 
 
 	focus = {
 		id = ire_why_we_fight
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = ire_invite_british_investors focus = ire_reaffirm_territorial_claims	 }
+		prerequisite = { focus = ire_deterrence }
 		available = { 
 			OR = { 
 				threat > 0.75 

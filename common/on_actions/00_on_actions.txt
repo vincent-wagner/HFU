@@ -24,37 +24,11 @@ on_actions = {
 	# StartUp Event 
     on_startup = {
     effect = {
-	ROM = { country_event = { id = romania.145 }}
-	JAP = { country_event = { id = japan.145 }}	
-		ITA = { country_event = { id = italy.145 }}
-		ENG = { country_event = { id = britain.145 }}	
-		GER = { country_event = { id = germany.130 }}
-		SOV = { country_event = { id = soviet.140 }}
-		USA = { country_event = { id = usa.135 }}
-		FRA = { country_event = { id = france.145 }}
-		CHI = { country_event = { id = china.345 }}
-		SIA  = { country_event = { id = romania.145 }}
-		MAN = { country_event = { id = romania.145 }}
-		BUL = { country_event = { id = romania.145 }}
-		HUN = { country_event = { id = romania.145 }}
-		SPR = { country_event = { id = romania.145 }}
-		CAN = { country_event = { id = tfv_canada.145 }}
-		SAF = { country_event = { id = tfv_canada.145 }}
-		IRE = { country_event = { id = tfv_canada.145 }}
-		BRA = { country_event = { id = tfv_canada.145 }}
-		NZL = { country_event = { id = tfv_canada.145 }}
-		AST = { country_event = { id = tfv_canada.145 }}
-		RAJ = { country_event = { id = tfv_canada.145 }}
-		MEX = { country_event = { id = tfv_canada.145 }}
-		NOR = { country_event = { id = tfv_canada.145 }}
-		
-        every_country = { 
-            country_event = { 
-                id = political.30 }
-            }
-        }
-    }
 	
+		
+        
+    }
+	}
 
 	# Ace pilots
 	# country, FROM = ace
@@ -126,6 +100,12 @@ on_actions = {
 			1000 = soviet.32
 			1000 = soviet.33
 			1000 = soviet.34
+		}
+	}
+
+	on_wargoal_expire = {
+		random_events = {
+			100 = war_justification.301
 		}
 	}
 
@@ -485,6 +465,16 @@ on_actions = {
 			}
 
 
+
+			#Call Anti-Soviet pact members to war
+			if = {
+				limit = {
+					ROOT = { tag = SOV }
+				}
+				FROM = {
+					country_event = { id = germany.84 days = 1 }
+				}
+			}
 
 			#Remove MEFO bills if Germany goes to war
 			if = {
@@ -1338,6 +1328,27 @@ on_actions = {
 				country_event = { id = wtt_germany.6 }
 			}
 
+		}
+	}
+	
+	# From is owner country
+	on_army_leader_daily = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = { random < 0.02 }
+					NOT = { has_trait = sick }
+					set_temp_variable = { temp = sum_unit_terrain_modifier@sickness_chance }
+					divide_temp_variable = { temp = num_units }
+					check_variable = { temp > 0.75 }
+					NOT = { has_unit_leader_flag = recently_sick }
+				}
+				add_timed_unit_leader_trait = {
+					trait = sick
+					days = 30
+				}
+				unit_leader_event = { id = generic.17 }
+			}
 		}
 	}
 	

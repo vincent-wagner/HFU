@@ -40,7 +40,6 @@ FRA_historical_plan = {
 		FRA_improved_screen_ships #February 20 1938	
 		FRA_support_status_quo #April 30 1938	
 		FRA_go_with_britain #July 10 1938	
-		FRA_algerie_france #September 20 1938
 		FRA_colonial_industry #November 30 1938
 		FRA_colonial_military_factories #February 10 1939	
 		FRA_extra_research_slot #April 20 1939	
@@ -53,7 +52,7 @@ FRA_historical_plan = {
 		FRA_cas_focus #January 20 1941	
 		FRA_heavy_fighter_focus #March 30 1941	
 		FRA_air_doctrine #June 10 1941	
-		FRA_jet_effort #August 20 1941
+		
 		 #October 30 1941	
  		 #January 10
  		 #March 20 1942

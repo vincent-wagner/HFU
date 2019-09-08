@@ -10,7 +10,7 @@
 
 opinion_modifiers = {
 
-	chinese_united_front = {
+	chinese_united_front_opinion = {
 	value = 200
 	}
 

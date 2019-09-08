@@ -624,7 +624,10 @@ focus_tree = {
 
 
 		completion_reward = {
-					transfer_state = 664	
+					transfer_state = 664
+		
+			custom_effect_tooltip = HUN_demands_tt
+			
 			CZE = { country_event = { id = DOD_hungary.80 } }
 		}
 	}
@@ -723,7 +726,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_industrial_revitalization
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 70

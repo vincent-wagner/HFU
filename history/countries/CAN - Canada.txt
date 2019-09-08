@@ -60,7 +60,7 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_ideas = CAN_great_depression_1
 	add_ideas = CAN_conscription_crisis
-	add_ideas = SAF_the_commonwealth
+	add_ideas = CAN_the_commonwealth
 	set_cosmetic_tag = CAN_UK
 	
 
@@ -178,9 +178,7 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 98
-	fascism = 1
-	communism = 1
+	democratic = 100
 }
 
 create_country_leader = {

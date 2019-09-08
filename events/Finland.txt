@@ -120,42 +120,12 @@ country_event = {
 		transfer_state = 147
 	}
 
+	#Take it all
+	#option = {
+	#	name = finland.8.b
+	#	ai_chance = {
+	#		base = 0		
+	#	}
+	#	FIN = { country_event = { id = finland.9 } }
+	#}
 }
-
-country_event = {
-	id = finland.20
-	title = finland.20.t
-	desc = finland.20.d
-	picture = GFX_report_event_finnish_soldiers_snow
-	
-	is_triggered_only = yes
-
-
-	option = {
-				name = finland.20.a
-				set_country_flag = SOV_justify_finland
-activate_mission = SOV_attack_finland
-FIN = { country_event = finland.21 }
-	}
-
-}
-
-country_event = {
-	id = finland.21
-	title = finland.21.t
-	desc = finland.21.d
-	picture = GFX_report_event_finnish_soldiers_snow
-	
-	is_triggered_only = yes
-
-
-	option = {
-			name = finland.21.a
-	
-	}
-
-}
-
-
-
-

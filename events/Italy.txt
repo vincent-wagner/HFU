@@ -288,25 +288,9 @@ ITA = { country_event = { id = italy.144 } }
    id = italy.146
    title = italy.146.t
    desc = italy.146.d
-   picture = GFX_mussolini_arrest
-   
-   trigger = { 
-   tag = ITA 
-  AND = {
-  any_enemy_country = { has_full_control_of_state = 448 }
-      any_enemy_country = { has_full_control_of_state = 450 }
-	     any_enemy_country = { has_full_control_of_state = 449 }
-		    any_enemy_country = { has_full_control_of_state = 115 }
-			   any_enemy_country = { has_full_control_of_state = 117 }
-			      any_enemy_country = { has_full_control_of_state = 156 }
-				     any_enemy_country = { has_full_control_of_state = 114 }
-							}
-   }
-   
-   mean_time_to_happen = { days = 1 }
-   
+   picture = 
    fire_only_once = yes
-
+ is_triggered_only = yes
    option = {
    name = italy.146.a
    
@@ -318,12 +302,13 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
-
+		duke_addis
 	}
 }
 
+hidden_effect = {
 GER = { country_event = { id = italy.147 days = 3 } }
-
+}
    }
 }
 
@@ -331,10 +316,9 @@ GER = { country_event = { id = italy.147 days = 3 } }
    id = italy.147
    title = italy.147.t
    desc = italy.147.d
-   picture = GFX_VolchovPock
+   picture = 
    fire_only_once = yes
  is_triggered_only = yes
- 
    option = {
    name = italy.147.a
    
@@ -359,7 +343,7 @@ add_political_power = -50
    id = italy.148
    title = italy.148.t
    desc = italy.148.d
-   picture = GFX_student
+   picture = 
    fire_only_once = yes
  is_triggered_only = yes
    option = {
@@ -375,7 +359,7 @@ GER = { country_event = { id = italy.149 days = 21 } }
 
       option = {
    name = italy.148.b
-   add_political_power = 50
+   
    }
    }
    
@@ -384,13 +368,13 @@ GER = { country_event = { id = italy.149 days = 21 } }
    id = italy.149
    title = italy.149.t
    desc = italy.149.d
-   picture = GFX_gran_sasso
+   picture = 
    fire_only_once = yes
  is_triggered_only = yes
    
    
       option = {
-   name = italy.149.a
+   name = italy.149.b
    ITA = { retire_country_leader = yes
    create_country_leader = {
 	name = "Benito Mussolini"
@@ -402,66 +386,15 @@ GER = { country_event = { id = italy.149 days = 21 } }
 		lombardy
 	}
 }
-
-   GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } }
-   
-   	add_tech_bonus = {
-				bonus = 3.0
-				uses = 1
-				technology = paratroopers
-			}
-   }
-   
-   
-     hidden_effect = {
-ITA = { country_event = { id = italy.150 days = 21 } }
-ITA = { country_event = { id = italy.151 days = 1 } }
-}
-   
-   }
-   
-   }
-   
-       country_event = {
-   id = italy.150
-   title = italy.150.t
-   desc = italy.150.d
-   picture = GFX_BandaKoch
-   fire_only_once = yes
- is_triggered_only = yes
-   
-   
-      option = {
-   name = italy.150.a
-
-			add_popularity = { ideology = fascism popularity = 0.3 }
-			
-   			add_tech_bonus = {
-				bonus = 3.0
-				uses = 1
-				technology = tech_military_police
-			}
-   
+   set_cosmetic_tag =  RSI_fascism
    }
    }
    
-    country_event = {
-   id = italy.151
-   title = italy.151.t
-   desc = italy.151.d
-   picture = GFX_gran_sasso
-   fire_only_once = yes
- is_triggered_only = yes
    
    
-      option = {
-   name = italy.151.a
-
-   set_cosmetic_tag =  RSI
-   remove_ideas = victor_emmanuel
    
-   }
-   }
+   
+   
    
    
    

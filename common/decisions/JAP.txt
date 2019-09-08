@@ -1332,22 +1332,16 @@ JAP_southern_expansion = {
 	JAP_pressure_france = { 
 
 		available = {
-			16 = { NOT = { is_controlled_by = FRA } }
 			NOT = { has_war_with = FRA }
 			NOT = { is_in_faction_with = FRA }
-			custom_trigger_tooltip = {
-				tooltip = demand_indochina_focus_tt
-				OR = {
-					286 = { is_fully_controlled_by = FRA }
-					670 = { is_fully_controlled_by = FRA }
-					671 = { is_fully_controlled_by = FRA }
-				}
-			}
+			16 = { NOT = { is_controlled_by = FRA } }
+			has_completed_focus = JAP_strike_south_doctrine
 		}
 
 		visible = {
-			has_completed_focus = JAP_strike_south_doctrine
-		}
+			tag = JAP 
+			GER = {has_completed_focus = GER_danzig_or_war}
+			}
 
 		fire_only_once = yes
 
@@ -1356,7 +1350,7 @@ JAP_southern_expansion = {
 
 		}
 
-		cost = 75
+		cost = 0
 
 		ai_will_do = {
 			factor = 5
@@ -1378,7 +1372,10 @@ JAP_southern_expansion = {
 		}
 
 		complete_effect = {
-			FRA = { country_event = { id = france.1 } }
+			transfer_state = 286
+			transfer_state = 670
+			transfer_state = 671
+			transfer_state = 741
 		}
 
 	}
@@ -1435,43 +1432,6 @@ political_actions = {
 }
 
 operations = {
-	
-	JAP_tora_tora_tora = {
-		
-		allowed = {
-			original_tag = JAP
-		}
-
-		icon = decision_generic_naval
-
-		available = {
-			OR = {
-				has_war_with = HOL
-				has_war_with = ENG
-				has_war_with = USA
-				has_war_with = FRA
-			}
-		}
-
-		is_good = no
-	
-		fire_only_once = yes
-	
-		days_mission_timeout = 180
-	
-		activation = {
-			has_completed_focus = JAP_strike_on_the_southern_resource_area
-		}
-		
-		visible = {
-			has_completed_focus = JAP_strike_on_the_southern_resource_area
-		}
-	
-		complete_effect = {
-			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
-		}
-	}
-
 
 	#first border incident
 	JAP_test_the_soviets = {
@@ -2305,9 +2265,6 @@ prospect_for_resources = {
 #  # #  #  #  #  # #     # #       #  # #     # #  # #  # #  # #  # #     # 
  ##  #  # ### #  # ### ##  ###     #  # ### ##   ##   ##  #  #  ##  ### ##  
 
-#597:0 "Shandong"
-#621:0 "Suiyuan"
-
 	#Below is visible when JAP_develop_chinese_resources is completed
 	JAP_develop_shandong_aluminium_deposits = { #597
 		
@@ -2357,56 +2314,6 @@ prospect_for_resources = {
 				set_state_flag = shandong_aluminium_developed
 			}
 		}
-	}
-
-	JAP_develop_suiyuan_steel_deposits = { #621
-		
-		icon = steel
-
-		highlight_states = {
-			state = 621
-		}
-
-		allowed = {
-			original_tag = JAP
-		}
-
-		available = {
-			has_full_control_of_state = 621
-			has_tech = excavation2
-		}
-
-		visible = {
-			has_completed_focus = JAP_develop_chinese_resources
-			621 = {
-				NOT = {
-					has_state_flag = suiyuan_steel_developed
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		complete_effect = {
-			621 = {
-				add_resource = {
-					type = steel
-					amount = 8
-				}
-				set_state_flag = suiyuan_steel_developed
-			}
-		}	
 	}
 
 	JAP_develop_yunnan_aluminium_deposits = { #325

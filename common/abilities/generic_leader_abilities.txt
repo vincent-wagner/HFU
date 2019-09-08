@@ -1,6 +1,6 @@
 ability = {
 	force_attack = {
-		name = ABILITY_FORCE_ATTACK
+		name = AlexForceAttackAlex
 		desc = ABILITY_FORCE_ATTACK_DESC
 		
 		sound_effect = command_power_ability_offensive
@@ -29,8 +29,8 @@ ability = {
 			}
 		}
 		
-		cost = 0.22
-		duration = 168
+		cost = 4.0
+		duration = 1
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
@@ -38,7 +38,7 @@ ability = {
 				combat_breakthrough = 0.25
 				org_damage_multiplier = -1.0
 				combat_entrenchment = -1.0
-				combat_defense = -0.3
+				combat_defense = -0.25
 				str_damage_multiplier = 0.6
 				war_support_reduction_on_damage = 0.2
 				cannot_retreat_while_attacking = 1.0
@@ -65,8 +65,8 @@ ability = {
 			}
 		}
 		
-		cost = 0.22
-		duration = 168
+		cost = 4.0
+		duration = 1
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
@@ -255,7 +255,7 @@ ability = {
 			}
 		}
 		
-		cost = 0.1
+		cost = 0.05
 		duration = 168
 		
 		ai_will_do = {

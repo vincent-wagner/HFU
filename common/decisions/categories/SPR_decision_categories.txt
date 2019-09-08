@@ -1,0 +1,5 @@
+SPR_annex = {
+	allowed = { 
+		original_tag = SPR 
+		}
+	}

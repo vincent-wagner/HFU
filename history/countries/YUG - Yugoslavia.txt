@@ -96,6 +96,7 @@ if = {
 		complete_national_focus = YUG_modernize_the_air_force
 		complete_national_focus = YUG_develop_civilian_industry
 		complete_national_focus = YUG_purchase_foreign
+		complete_national_focus = YUG_license_production
 		complete_national_focus = YUG_rare_minerals_exploitation
 		complete_national_focus = YUG_traditional_values
 		complete_national_focus = YUG_greater_yugoslavia

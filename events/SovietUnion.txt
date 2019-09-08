@@ -256,40 +256,40 @@ country_event = {
 				SIK = {
 				add_opinion_modifier = {
 				target = CHI
-				modifier = chinese_united_front
+				modifier = chinese_united_front_opinion
 			}
 			}
 			
 				PRC = {
 				add_opinion_modifier = {
 				target = CHI
-				modifier = chinese_united_front
+				modifier = chinese_united_front_opinion
 			}
 			}
 			
 							XIK = {
 				add_opinion_modifier = {
 				target = CHI
-				modifier = chinese_united_front
+				modifier = chinese_united_front_opinion
 			}
 			}
 				
 								SHX = {
 				add_opinion_modifier = {
 				target = CHI
-				modifier = chinese_united_front
+				modifier = chinese_united_front_opinion
 			}
 			}
 								GXC = {
 				add_opinion_modifier = {
 				target = CHI
-				modifier = chinese_united_front
+				modifier = chinese_united_front_opinion
 			}
 			}
 								YUN = {
 				add_opinion_modifier = {
 				target = CHI
-				modifier = chinese_united_front
+				modifier = chinese_united_front_opinion
 			}
 			}
 			
@@ -297,7 +297,7 @@ country_event = {
 							XSM = {
 				add_opinion_modifier = {
 				target = CHI
-				modifier = chinese_united_front
+				modifier = chinese_united_front_opinion
 			}
 			}
 				news_event = { id = news.288 days = 1 }

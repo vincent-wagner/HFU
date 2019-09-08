@@ -741,7 +741,7 @@ focus_tree = {
 		x = 17
 		y = 0
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 8
@@ -814,7 +814,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -854,7 +854,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1804,7 +1804,8 @@ focus_tree = {
 		id = NZL_amend_the_maori_affairs_act
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = NZL_the_manpower_act }
-		x = 0
+		mutually_exclusive = { focus = NZL_waitangi_tribunal }
+		x = -1
 		y = 3
 		relative_position_id = NZL_ratana_alliance
 
@@ -1842,14 +1843,50 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NZL_maori_conscription
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = NZL_amend_the_maori_affairs_act }
-		x = 0
-		y = 4
+		id = NZL_waitangi_tribunal
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = NZL_the_manpower_act }
+		mutually_exclusive = { focus = NZL_amend_the_maori_affairs_act }
+		x = 1
+		y = 3
 		relative_position_id = NZL_ratana_alliance
 
 		cost = 10
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = NZL_waitangi_tribunal
+		}
+	}
+
+	focus = {
+		id = NZL_maori_conscription
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = NZL_amend_the_maori_affairs_act }
+		x = -1
+		y = 4
+		relative_position_id = NZL_ratana_alliance
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1873,6 +1910,61 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = NZL_maori_conscription
+		}
+	}
+
+	focus = {
+		id = NZL_maori_volunteers
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = NZL_waitangi_tribunal }
+		x = 1
+		y = 4
+		relative_position_id = NZL_ratana_alliance
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			division_template = {
+				is_locked = yes
+				name = "Maori Volunteers"
+				division_names_group = NZL_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 284 723 }
+				create_unit = {
+					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
+					owner = NZL
+				}
+			}
 		}
 	}
 

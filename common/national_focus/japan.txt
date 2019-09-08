@@ -177,10 +177,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		hidden_effect = { 
-			CHI = { add_to_faction = SIK }
-				CHI = { add_to_faction = PRC }
-		}
 				CHI = {
 					country_event = china.1
 				}
@@ -2719,7 +2715,7 @@ completion_reward = {
 		
 				focus = {
 		id = JAP_develop_siam
-		icon = GFX_focus_JAP_siam
+		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { focus = JAP_puppet_siam }
 
 
@@ -2746,18 +2742,18 @@ completion_reward = {
 		completion_reward = {
 		
 		670 = {
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				}
 				741 = {
-						add_extra_state_shared_building_slots = 3
+						add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-					type = industrial_complex
-					level = 3
+					type = dockyard
+					level = 2
 					instant_build = yes
 				}	
 						

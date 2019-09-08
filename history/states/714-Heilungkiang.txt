@@ -4,7 +4,7 @@ state={
 
 	
 		resources={
-		oil=2.000 #moved from Xikang
+		oil = 20
 	}
 	
 	history={

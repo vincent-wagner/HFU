@@ -422,7 +422,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_civil_works
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1

@@ -266,7 +266,7 @@ focus_tree = {
 	focus = {
 		id = MAN_law_university
 		icon = GFX_focus_research
-		prerequisite = { focus = MAN_collective_farms focus = MAN_mukden_military_academy focus = MAN_trade_delegation }
+		prerequisite = { focus = MAN_collective_farms focus = MAN_mukden_military_academy focus = MAN_expand_the_textile_industry }
 		x = 0
 		y = 1
 		relative_position_id = MAN_collective_farms
@@ -334,12 +334,52 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MAN_expand_the_textile_industry
-		icon = GFX_goal_generic_consumer_goods
+		id = MAN_trade_delegation
+		icon = GFX_goal_generic_trade
 		prerequisite = { focus = MAN_pacify_the_countryside }
 		x = 2
 		y = 1
 		relative_position_id = MAN_pacify_the_countryside
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MAN_trade_delegation
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = MAN_expand_the_textile_industry
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = MAN_trade_delegation }
+		x = 0
+		y = 1
+		relative_position_id = MAN_trade_delegation
 
 		cost = 10
 
@@ -373,7 +413,6 @@ focus_tree = {
 			}
 		}
 
-		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -391,47 +430,6 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = MAN_expand_the_textile_industry_IC
-			}
-		}
-	}
-	
-	
-			focus = {
-		id = MAN_trade_delegation
-		icon = GFX_goal_generic_trade
-		prerequisite = { focus = MAN_expand_the_textile_industry }
-		x = 0
-		y = 1
-		relative_position_id = MAN_expand_the_textile_industry
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = MAN_trade_delegation
-				bonus = 1.0
-				uses = 1
-				category = industry
 			}
 		}
 	}
@@ -592,7 +590,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = MAN_songgotu_zhanshan
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = MAN_songgotu_zhanshan
 			random_owned_controlled_state = {
 				prioritize = { 328 }
 				limit = {
@@ -681,7 +680,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { 610 = { is_fully_controlled_by = ROOT } }
-				715 = {
+				610 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -690,8 +689,8 @@ focus_tree = {
 				} 
 			}
 			if = {
-				limit = { 714 = { is_fully_controlled_by = ROOT } }
-				714 = {
+				limit = { 717 = { is_fully_controlled_by = ROOT } }
+				717 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -1149,11 +1148,11 @@ focus_tree = {
 	focus = {
 		id = MAN_assertiveness
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = MAN_expand_the_textile_industry }
+		prerequisite = { focus = MAN_trade_delegation }
 		mutually_exclusive = { focus = MAN_obedience }
 		x = 2
 		y = 4
-		relative_position_id = MAN_expand_the_textile_industry
+		relative_position_id = MAN_trade_delegation
 
 		cost = 15
 

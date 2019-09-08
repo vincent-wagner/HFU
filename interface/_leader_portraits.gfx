@@ -1082,11 +1082,7 @@ spriteTypes = {
 		name = "GFX_Portrait_Italy_Benito_Mussolini2"
 		texturefile = "gfx/leaders/ITA/Portrait_Italy_Benito_Mussolini2.dds"
 	}
-		
-		spriteType = {
-		name = "GFX_LIB_captain_alex"
-		texturefile = "gfx/leaders/LIB/Portrait_Liberia_Captain_Alex.dds"
-	}
+	
 	
 	
 	}

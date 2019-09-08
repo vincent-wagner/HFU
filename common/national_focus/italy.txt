@@ -2421,7 +2421,7 @@ date > 1941.6.1
 
 		will_lead_to_war_with = IRQ
 		prerequisite = { focus = ITA_pact_of_steel }
-		icon = GFX_focus_ita_irq
+		icon = GFX_goal_generic_military_deal
 		x = 1
 		y = 3
 

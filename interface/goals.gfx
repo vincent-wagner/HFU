@@ -1911,25 +1911,5 @@ SpriteType = {
 		name = "GFX_focus_SOV_purge"
 		texturefile = "gfx/interface/goals/focus_SOV_purge.dds"
 	}
-	
-		SpriteType = { 
-		name = "GFX_focus_USA_strat"
-		texturefile = "gfx/interface/goals/focus_USA_strat.dds"
-	}
 
-		SpriteType = { 
-		name = "GFX_focus_ita_irq"
-		texturefile = "gfx/interface/goals/focus_ita_irq.dds"
-	}
-	
-	SpriteType = { 
-		name = "GFX_focus_JAP_siam"
-		texturefile = "gfx/interface/goals/focus_JAP_siam.dds"
-	}
-	
-		SpriteType = { 
-		name = "GFX_focus_FIN_sisu"
-		texturefile = "gfx/interface/goals/focus_FIN_sisu.dds"
-	}
-	
 }

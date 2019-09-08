@@ -3,7 +3,7 @@
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.3
-# Starting tech
+set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -61,7 +61,7 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	add_ideas = AST_great_depression_1
-	add_ideas = SAF_the_commonwealth
+	add_ideas = AST_the_commonwealth
 	add_to_tech_sharing_group = commonwealth_research
 }
 
@@ -176,8 +176,8 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 98
-	communism = 2
+	democratic = 100
+	
 }
 
 create_country_leader = {

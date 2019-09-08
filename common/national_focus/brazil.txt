@@ -1308,48 +1308,6 @@ focus_tree = {
 		}
 	}
 
-	
-	focus = {
-		id = bra_rubber
-		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = bra_infrastructure_effort }
-		x = -3
-		y = 1
-		relative_position_id = bra_infrastructure_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 2
-		}
-
-
-		completion_reward = {
-		
-		497 = {
-					add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				
-					add_resource = {
-					type = rubber
-					amount = 6
-					}	
-		}
-add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = excavation_tech
-				}
-		
-		
-		
-		}
-	}
-	
 	focus = {
 		id = bra_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory

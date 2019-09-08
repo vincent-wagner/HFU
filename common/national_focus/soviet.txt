@@ -790,11 +790,20 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
+			
+		    add_tech_bonus = {
+				name = air_bonus
 				bonus = 1.0
 				uses = 1
-				category = air_doctrine
+				category = light_air
+				category = medium_air
+				category = heavy_air
+				category = naval_air
 			}
+		
+		
+		
+		
 		}
 	}
 

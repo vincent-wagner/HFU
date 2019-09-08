@@ -16,8 +16,6 @@ country = {
 	modifier = {
 	surrender_limit = -0.11
 	defensive_war_stability_factor = -0.20
-	industrial_capacity_dockyard = -0.80
-	conversion_cost_civ_to_mil_factor = 3.0
 	}
 	}
 	
@@ -25,12 +23,12 @@ country = {
 	nor_bad_debuffs2 = {
 		picture = chi_army_corruption
 	modifier = {
-	max_dig_in = -10
+	max_dig_in = -15
 	army_attack_factor = -0.25
-	army_defence_factor = -0.50
+	army_defence_factor = -0.25
 	max_command_power = -50
 	command_power_gain_mult = -0.35	
-	production_speed_naval_base_factor = -1.2
+	production_speed_naval_base_factor = -10.0
 	}
 	}
 

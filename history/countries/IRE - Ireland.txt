@@ -14,7 +14,7 @@ set_convoys = 10
 
 if = {
 	limit = { has_dlc = "Together for Victory" }
-	add_ideas = SAF_the_commonwealth
+	add_ideas = CAN_the_commonwealth
 }
 
 

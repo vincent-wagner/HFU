@@ -19,7 +19,7 @@ state={
 			}
 		}
 		add_core_of = ENG
-		add_claim_by = IRE
+		add_core_of = IRE
 	}
 
 	provinces={

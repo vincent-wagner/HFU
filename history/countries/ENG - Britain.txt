@@ -109,7 +109,7 @@ add_ideas = {
 }
 	
 
-set_convoys = 800
+set_convoys = 1200
 
 # DIPLOMACY
 if = {
@@ -135,13 +135,6 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
-	
-		set_autonomy = {
-		target = IRE
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-	
 		set_autonomy = {
 		target = NEP
 		autonomous_state = autonomy_dominion

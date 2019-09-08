@@ -1,0 +1,295 @@
+ideas = {
+
+	country = {
+		
+		EFR_neutrality_idea = {
+			
+			picture = neutrality_idea
+
+			allowed = {
+				tag = EFR
+			}
+			
+			removal_cost = -1
+			
+			cancel = {
+				has_war = yes
+			}
+
+			
+
+			cancel_if_invalid = yes
+			
+			modifier = {
+				justify_war_goal_time = 5.0 
+				enemy_justify_war_goal_time = 5.0
+				join_faction_tension = 2.00
+				lend_lease_tension = 2
+				send_volunteers_tension = 0.20
+				guarantee_tension = 2.0
+				ai_get_ally_desire_factor = -500
+ 								
+			}
+			targeted_modifier = {
+				tag = Ger
+				extra_trade_to_target_factor = 1
+				trade_cost_for_target_factor = -0.6
+
+			} 
+		}
+	}
+	
+	political_advisor = {
+
+		EFR_pierre_laval = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+			
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		EFR_marius_viple = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+		EFR_rene_bousquet = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+	}
+
+	theorist = {
+
+		EFR_charles_huntziger = {
+					
+					
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+			
+			picture = generic_army_europe_4
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+
+		EFR_lucien_lacaze = {
+					
+					
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+			
+			picture = generic_navy_europe_1
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+	}
+	# MILITARY
+	army_chief = {
+
+		EFR_eugene_bridoux = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+			
+			traits = { army_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EFR_maxime_weygand = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+			
+			traits = { army_chief_defensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+
+		EFR_jean_marie_bergeret = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+						
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EFR_jean_romatet = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		EFR_jean_francois_darlan = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EFR_jean_marie_abrial = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+						
+			traits = { navy_anti_submarine_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+
+		EFR_jean_francois_jannekeyn = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+						
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		EFR_jean_de_laborde = {
+			
+			picture = generic_navy_europe_2
+
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+						
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EFR_marcel_bruno_gensoul = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+						
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		EFR_pierre_le_gloan = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag ="EFR"
+				
+			}
+						
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
