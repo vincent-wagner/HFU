@@ -16,7 +16,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 6
+			arms_factory = 3
 			321 = {
 				naval_base = 6
 
@@ -24,7 +24,6 @@ state={
 			air_base = 3
 		}
 		add_core_of = GER
-		add_extra_state_shared_building_slots = 2
 	}
 
 	provinces={

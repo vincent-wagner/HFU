@@ -1,4 +1,4 @@
-ITA_annex = {
+foreign_politics = {
 ITA_surrender_eth = {
 available = {
 			ETH = { surrender_progress > 0.3 }

@@ -682,91 +682,13 @@ on_actions = {
 
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
-		effect = {
-			if = { # Reducing the Crisisjaren idea to level 1 when capitulated (in case player didn't manage to finish the mainland industrial focuses), but still needs Liberation to remove it fully
-				limit = {
-					original_tag = HOL
-					has_idea = HOL_de_crisisjaren_4
-				}
-				swap_ideas = {
-					remove_idea = HOL_de_crisisjaren_4
-					add_idea = HOL_de_crisisjaren_1
-				}
-			}
-			if = {
-				limit = {
-					original_tag = HOL
-					has_idea = HOL_de_crisisjaren_3
-				}
-				swap_ideas = {
-					remove_idea = HOL_de_crisisjaren_3
-					add_idea = HOL_de_crisisjaren_1
-				}
-			}
-			if = {
-				limit = {
-					original_tag = HOL
-					has_idea = HOL_de_crisisjaren_2
-				}
-				swap_ideas = {
-					remove_idea = HOL_de_crisisjaren_2
-					add_idea = HOL_de_crisisjaren_1
-				}
-			}
-			if = { # Only possible if Abandon the Gold Standard hasn't been taken yet, this can be taken later so should be reduced to level 2 rather than 1
-				limit = {
-					original_tag = HOL
-					has_idea = HOL_de_crisisjaren_5
-				}
-				swap_ideas = {
-					remove_idea = HOL_de_crisisjaren_5
-					add_idea = HOL_de_crisisjaren_2
-				}
-			}
-			if = {
-				limit = {
-					tag = GER
-					FROM = {
-						tag = HOL
-						has_completed_focus = HOL_wilhelminism
-					}
-				}
-				HOL = { country_event = { id = mtg_netherlands.76 } }
-			}
-		}
+	
 	}
 
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					original_tag = HOL
-					has_completed_focus = HOL_wilhelminism
-					FROM = {
-						original_tag = GER
-						has_government = fascism
-						has_civil_war = no
-					}
-					FROM.FROM = {
-						is_core_of = GER
-					}
-				}
-				FROM.FROM = { 
-					set_state_flag = HOL_german_states_kaiser
-				}
-				country_event = { id = mtg_netherlands.73 }
-			}
-			if = {
-				limit = {
-					FROM.FROM = { is_core_of = HOL }
-				}
-				FROM = {
-					set_country_flag = HOL_lost_starting_state
-				}
-			}
-		}
+
 	}
 
 	on_nuke_drop = {
@@ -785,32 +707,11 @@ on_actions = {
 
 	# FROM is the sinker, ROOT is the owner of the ship being sunk
 	on_pride_of_the_fleet_sunk = {
-		effect = {
-			if = {
-				limit = {
-					tag = ENG
-				}
-				FROM = { set_country_flag = achievements_pride_and_extreme_prejudice }
-			}
-		}
+	
 	}
 
 	on_leave_faction = {
-		effect = {
-			if = {
-				limit = { 
-					original_tag = HOL
-					has_country_flag = HOL_joined_germany_flag
-				}
-				FROM = {
-					create_wargoal = {
-						type = take_state_focus
-						target = ROOT
-						generator = { 7 }
-					}
-				}
-			}
-		}
+	
 	}
 
 	# ROOT is the new faction leader FROM is the old faction leader

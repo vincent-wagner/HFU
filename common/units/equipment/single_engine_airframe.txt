@@ -34,7 +34,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 16
 		
-		build_cost_ic = 25
+		build_cost_ic = 22
 		resources = {
 			#oil = 1
 			aluminium = 2
@@ -371,7 +371,7 @@ equipments = {
 		air_defence = 12		
 
 				
-		build_cost_ic = 31
+		build_cost_ic = 26
 		resources = {
 			#oil = 2
 			aluminium = 3
@@ -397,7 +397,7 @@ equipments = {
 		air_defence = 14	
 		
 				
-		build_cost_ic = 33
+		build_cost_ic = 28
 		resources = {
 			#oil = 2
 			aluminium = 4

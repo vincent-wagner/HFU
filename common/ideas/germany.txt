@@ -378,7 +378,6 @@ ideas = {
 			}
 		}
 
-		
 		GER_jaegernotprogramm = {
 			allowed = {
 				always = yes
@@ -387,7 +386,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_air_payment
+			picture = goe
 
 			
 

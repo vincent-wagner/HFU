@@ -1,16 +1,5 @@
 ideas = {
 	country = {
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		militarized_schools = {
 		
 			removal_cost = -1
@@ -239,6 +228,7 @@ ideas = {
 				research_speed_factor = 0.10
 				consumer_goods_factor = -0.05
 			}
+			
 			rule = {
 				can_create_factions = yes
 			}

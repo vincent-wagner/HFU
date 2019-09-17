@@ -8,7 +8,6 @@ state=
 	{
 		owner = JAP
 		buildings = {
-		    
 			infrastructure = 3
 			air_base = 1
 			4357 = {

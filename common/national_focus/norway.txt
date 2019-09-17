@@ -1390,10 +1390,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
-		#set_technology = { mountain_men = 1 } 
+if = {
+limit = { NOT = { NOR = { is_in_faction	= yes }}}
+		ENG = { country_event = { id = britain.1113 } }
+}
 		add_ideas = NOR_training
-			remove_ideas = nor_bad_debuffs2
+		remove_ideas = nor_bad_debuffs2
 		}
 		
 		}
@@ -1409,7 +1411,7 @@ focus_tree = {
 				bypass = {
 		AND = {
 		NOR = { controls_state = 110 }
-		date > 1940.5.1
+		date > 1940.7.1
 		}
 		}
 		relative_position_id = nor_winter_mountain_training
@@ -1473,7 +1475,7 @@ focus_tree = {
 		bypass = {
 		AND = {
 		NOR = { controls_state = 110 }
-		date > 1940.5.1
+		date > 1940.7.1
 		}
 		}		
 		relative_position_id = nor_norway_in_exile
@@ -1509,7 +1511,7 @@ focus_tree = {
 				bypass = {
 		AND = {
 		NOR = { controls_state = 110 }
-		date > 1940.5.1
+		date > 1940.7.1
 		}
 		}
 		
@@ -1539,7 +1541,7 @@ focus_tree = {
 				bypass = {
 		AND = {
 		NOR = { controls_state = 110 }
-		date > 1940.5.1
+		date > 1940.7.1
 		}
 		}
 		relative_position_id = nor_fleischers_plan
@@ -1578,7 +1580,7 @@ focus_tree = {
 		bypass = {
 		AND = {
 		NOR = { controls_state = 110 }
-		date > 1940.5.1
+		date > 1940.7.1
 		}
 		}		
 		relative_position_id = nor_ruges_plan
@@ -1611,7 +1613,7 @@ focus_tree = {
 		bypass = {
 		AND = {
 		NOR = { controls_state = 110 }
-		date > 1940.5.1
+		date > 1940.7.1
 		}
 		}
 		relative_position_id = nor_drill_exile_army

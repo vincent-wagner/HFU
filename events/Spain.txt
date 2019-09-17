@@ -491,7 +491,6 @@ country_event = {
 					target = POR
 					type = annex_everything
 				}
-				add_ideas = SPA_scw_veterans
 	}
 
 	

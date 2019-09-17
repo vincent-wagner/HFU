@@ -382,6 +382,7 @@ remove_state_core = 74
 				remove_state_core = 182
 				remove_state_core = 187
 				remove_state_core = 164
+				remove_state_core = 185
 				}
 				
 				}
@@ -411,17 +412,19 @@ remove_state_core = 74
 		completion_reward = {
 		
 		if = { 
-		limit = { NOT = { IRQ = { has_war_with = ITA  }}}
+		limit = { 
+		IRQ = { OR = { NOT = { has_idea = IRQ_ali_hussein } AND = { is_ai = yes is_subject = no }}}
+		}
 		ENG = { diplomatic_relation = {
     country = IRQ
     relation = guarantee
     active = no
 }}
 		IRQ = { country_event = { id = iraq.1 }}
-		IRQ = { set_country_flag = IRQ_fascism 
+				}
+						IRQ = { set_country_flag = IRQ_fascism 
 				remove_ideas = IRQ_oil 
 				remove_ideas = IRQ_fasc }
-				}
 		
 		ENG = { remove_ideas = IRQ_oil2 }
 		SOV = { country_event = news.37 }
@@ -505,7 +508,12 @@ remove_state_core = 74
 				}
 				
 				
+						if = {
+				limit = { NOT = { country_exists = ALB } }
+					ALB = { remove_state_core = 44 
+					}
 				
+				}
 				
 				
 				

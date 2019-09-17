@@ -55,7 +55,7 @@ if = {
 		ROM_king_carol_ii_hedonist
 	}
 }
-add_ideas = neutrality_idea
+
 
 #Kick off kings crazy life
 if = {
@@ -218,15 +218,13 @@ set_popularities = {
 	communism = 2
 	neutrality = 60
 }
+
+
 add_ideas = {
 	
 	partial_economic_mobilisation
+	
 }
-
-
-
-
-
 
 
 1939.1.1 = {

@@ -5,8 +5,8 @@ oob = "RAJ_1936"
 
 set_stability = 0.6
 set_war_support = 0.1
-
 set_research_slots = 3
+# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -30,7 +30,7 @@ if = {
 		RAJ_marginalized_muslim_community
 		RAJ_agrarian_society
 		RAJ_risk_of_famine
-		RAJ_the_commonwealth	
+		SAF_the_commonwealth	
 	}
 
 	add_to_tech_sharing_group = commonwealth_research

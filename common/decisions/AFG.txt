@@ -1,4 +1,4 @@
-AFG_puppet = {
+foreign_politics = {
 AFG_puppet_me = {
 icon = generic_operation
 

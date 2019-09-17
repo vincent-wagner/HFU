@@ -326,6 +326,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_plane3
+				option = HORST_ENABLE_PLANE3
+			}
+		}
+		
 		research_cost = 2
 		start_year = 1944
 
@@ -378,6 +386,14 @@ technologies = {
 
 		enable_equipments = {
 			cv_fighter_equipment_3
+		}
+		
+		
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_plane3
+				option = HORST_ENABLE_PLANE3
+			}
 		}
 	
 		research_cost = 1.0 #Carrier Variant
@@ -697,6 +713,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_plane3
+				option = HORST_ENABLE_PLANE3
+			}
+		}
+		
 		research_cost = 2
 		start_year = 1944
 		folder = {
@@ -746,6 +770,14 @@ technologies = {
 
 		enable_equipments = {
 			cv_CAS_equipment_3
+		}
+		
+		
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_plane3
+				option = HORST_ENABLE_PLANE3
+			}
 		}
 	
 		research_cost = 1.0 #Carrier Variant
@@ -1000,6 +1032,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_plane3
+				option = HORST_ENABLE_PLANE3
+			}
+		}
+		
 		research_cost = 2
 		start_year = 1944
 		folder = {
@@ -1050,6 +1090,14 @@ technologies = {
 
 		enable_equipments = {
 			cv_nav_bomber_equipment_3
+		}
+		
+		
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_plane3
+				option = HORST_ENABLE_PLANE3
+			}
 		}
 	
 		research_cost = 1.0 #Carrier Variant
@@ -1188,6 +1236,14 @@ technologies = {
 		#	leads_to_tech = jet_fighter1
 		#	research_cost_coeff = 1.2
 		#}
+		
+		
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_plane3
+				option = HORST_ENABLE_PLANE3
+			}
+		}
 
 		research_cost = 2
 		start_year = 1944
@@ -1325,6 +1381,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_plane3
+				option = HORST_ENABLE_PLANE3
+			}
+		}
+		
 		research_cost = 2
 		start_year = 1944
 		folder = {
@@ -1434,6 +1498,13 @@ technologies = {
 			leads_to_tech = strategic_bomber2
 			research_cost_coeff = 1
 		}
+		
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_strategic_bombers
+				option = HORST_ENABLE_STRATEGIC_BOMBERS
+			}
+		}
 
 		research_cost = 2
 		start_year = 1936
@@ -1472,6 +1543,13 @@ technologies = {
 		path = {
 			leads_to_tech = strategic_bomber3
 			research_cost_coeff = 1
+		}
+		
+		allow = {
+			has_game_rule = {
+				rule = horst_allow_strategic_bombers
+				option = HORST_ENABLE_STRATEGIC_BOMBERS
+			}
 		}
 		
 		research_cost = 2
@@ -1513,6 +1591,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+				allow = {
+			has_game_rule = {
+				rule = horst_allow_plane3
+				option = HORST_ENABLE_PLANE3
+			}
+		}
+		
 		research_cost = 2
 		start_year = 1944
 		folder = {

@@ -119,7 +119,7 @@ JAP_intervene_in_china = {
 	
 }
 
-JAP_annex = { 
+foreign_politics = { 
 
 JAP_annex_siam_rubber = {
 icon = generic_operation
@@ -1332,50 +1332,36 @@ JAP_southern_expansion = {
 	JAP_pressure_france = { 
 
 		available = {
+			16 = { NOT = { is_controlled_by = FRA } }
 			NOT = { has_war_with = FRA }
 			NOT = { is_in_faction_with = FRA }
-			16 = { NOT = { is_controlled_by = FRA } }
-			has_completed_focus = JAP_strike_south_doctrine
-		}
-
-		visible = {
-			tag = JAP 
-			GER = {has_completed_focus = GER_danzig_or_war}
-			}
-
-		fire_only_once = yes
-
-
-		modifier = {
-
-		}
-
-		cost = 0
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0
-				FRA = { has_war = no }
-			}			
-			modifier = {
-				factor = 3
-				FRA = { has_war = yes } 
+			custom_trigger_tooltip = {
+				tooltip = demand_indochina_focus_tt
 				OR = {
-					16 = { NOT = { is_controlled_by = FRA } } #Paris
-					strength_ratio = {
-						tag = FRA
-						ratio > 0.9
-					}
+					286 = { is_fully_controlled_by = FRA }
+					670 = { is_fully_controlled_by = FRA }
+					671 = { is_fully_controlled_by = FRA }
 				}
 			}
 		}
 
+		visible = {
+			has_completed_focus = JAP_strike_south_doctrine
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+
 		complete_effect = {
-			transfer_state = 286
-			transfer_state = 670
-			transfer_state = 671
-			transfer_state = 741
+			FRA = { country_event = { id = france.1 } }
+			
+				transfer_state = 286
+				transfer_state = 670
+				transfer_state = 671		
+				transfer_state = 741
+				transfer_state = 728
+				728 = { add_core_of = CHI }
 		}
 
 	}

@@ -1190,27 +1190,6 @@ ideas = {
 		
 		designer = yes
 		
-		MEX_tga = {
-		
-			cost = 75
-			
-			allowed = {
-				original_tag = MEX
-				has_dlc = "Man the Guns"
-			}
-			
-			available = {
-				has_completed_focus = MEX_focus_tank_workshops
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { tank_manufacturer }
-
-		}
-		
 		germano_mexican_tanks = {
 		
 			picture = porsche
@@ -1221,7 +1200,7 @@ ideas = {
 			}
 			
 			available = {
-				is_in_faction_with = GER
+				has_completed_focus = MEX_focus_tank_workshops
 			}
 			
 			research_bonus = {
@@ -1242,7 +1221,7 @@ ideas = {
 			}
 			
 			available = {
-				is_in_faction_with = SOV
+				has_completed_focus = MEX_focus_tank_workshops
 			}
 			
 			research_bonus = {
@@ -1266,7 +1245,7 @@ ideas = {
 			}
 			
 			available = {
-				is_in_faction_with = USA
+				has_completed_focus = MEX_focus_tank_workshops
 			}
 			
 			research_bonus = {

@@ -316,6 +316,26 @@ country_event = {
 	
 	option = {
 		name = soviet.24.a
+		
+		if = { 
+		limit = { SOV = {  has_completed_focus = SOV_positive_heroism} }
+		
+			set_country_flag = purged_khrushchev
+			remove_ideas = nikita_khrushchev
+			set_country_flag = purge_1_group_a	
+			set_country_flag = purge_2_group_a
+			remove_ideas = mikhail_tukhachevsky
+			remove_ideas = alexander_yegorov
+			remove_ideas = vasily_blucher
+			remove_ideas = pyotr_smirnov
+			remove_ideas = mikhail_frinovsky
+			remove_ideas = SOV_nikolai_yezhov
+			remove_ideas = yakov_smushkevich
+			remove_ideas = pavel_rychagov
+			remove_ideas = alexander_novikov
+			remove_ideas = gordey_levchenko
+		}
+		
 		hidden_effect = {
 		remove_ideas = SOV_purge_now_plz
 		}
