@@ -2370,6 +2370,18 @@ date > 1941.6.1
 			factor = 10
 		}	
 		completion_reward = {
+		
+		if = {
+		limit = { YUG = { is_ai = yes }}
+		YUG = { add_ideas = adjusted_surrender_limit  }
+		}
+		
+		
+		if = {
+		limit = { GRE = { is_ai = yes }}
+		GRE = { add_ideas = adjusted_surrender_limit    }
+		}
+		
 			create_wargoal = {
 				type = take_state_focus
 				target = GRE
@@ -2421,12 +2433,28 @@ date > 1941.6.1
 		ITA = { white_peace = IRQ }
 		
 		}
+		if = { 
+		limit = { IRQ = { is_ai = yes}}
 				ITA = { 
 				set_autonomy = {
 					target = IRQ
 					autonomy_state = autonomy_reichskommissariat
 				}
-			}	
+			}
+			}
+			
+			if = { 
+		limit = { IRQ = { is_ai = no } }
+				ITA = { 
+				set_autonomy = {
+					target = IRQ
+					autonomy_state = autonomy_satellite
+				}
+			}
+			}
+			
+			
+			
 			GER = { add_to_faction = IRQ }
 				 IRQ = {
 					add_popularity = { ideology = fascism popularity = 0.3 }

@@ -1932,4 +1932,10 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/focus_FIN_sisu.dds"
 	}
 	
+	SpriteType = { 
+		name = "GFX_focus_ALB_zog"
+		texturefile = "gfx/interface/goals/focus_ALB_zog.dds"
+	}
+	
+	
 }

@@ -38,8 +38,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_category_tooltip = HOL_obtain_foreign_colonial_investments
-			custom_effect_tooltip = HOL_obtain_foreign_colonial_investments_tt
 		}
 	}
 
@@ -753,8 +751,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			activate_decision = HOL_relocate_government_to_batavia
-			custom_effect_tooltip = HOL_continue_the_war_in_batavia_tt
 			effect_tooltip = {
 				remove_ideas = HOL_curtail_colonial_autonomy_overlord
 				INS = {
@@ -1917,8 +1913,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = HOL_prepare_the_inundation_lines
-			unlock_decision_category_tooltip = HOL_prepare_the_inundation_lines
-			custom_effect_tooltip = HOL_prepare_the_inundation_lines_tt
 		}
 	}
 
@@ -2288,8 +2282,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_category_tooltip = HOL_war_on_pacifism
-			custom_effect_tooltip = HOL_war_on_pacifism_tt
 		}
 	}
 
@@ -2499,8 +2491,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_category_tooltip = HOL_secret_staff_talks
-			custom_effect_tooltip = HOL_secret_staff_talks_tt
 		}
 	}
 
@@ -3263,8 +3253,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
-			unlock_decision_category_tooltip = HOL_gateway_to_europe_hol_category
-			custom_effect_tooltip = HOL_gateway_to_europe_tt
 		}
 	}
 
@@ -5686,8 +5674,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 60
-			unlock_decision_category_tooltip = HOL_request_allied_favors
-			custom_effect_tooltip = HOL_request_allied_favors_tt
 		}
 	}
 
@@ -6092,7 +6078,6 @@ focus_tree = {
 				}
 				remove_ideas = HOL_weak_government
 			}
-			unlock_decision_tooltip = HOL_propose_benelux_unification
 		}
 	}
 

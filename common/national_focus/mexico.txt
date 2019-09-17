@@ -3255,7 +3255,9 @@ focus_tree = {
 				category = armor
 			}
 			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = MEX_tga
+show_ideas_tooltip = american_mexican_tanks
+				show_ideas_tooltip = russo_mexican_tanks
+			show_ideas_tooltip = germano_mexican_tanks
 		}
 	}
 	

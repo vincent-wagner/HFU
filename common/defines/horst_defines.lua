@@ -14,14 +14,16 @@ NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                   --up from 10, sh
 ---------------------------------------------------------------
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
-NDefines.NDiplomacy.BASE_STAGE_COUP_DAILY_PP = 999	
 NDefines.NDiplomacy.GUARANTEE_COST = 1000
 NDefines.NDiplomacy.REVOKE_GUARANTEE_COST = 1000
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0						-- When you pass once you should get enough points to finish the peace deal
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 1				-- WAS 0.05 | Each army unit owned by the source country contributes this amount of volunteers to the limit.
+NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0				-- WAS 30 | This many divisons are required for the country to be able to send volunteers.
 ---------------------------------------------------------------
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST 
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000 
 ---------------------------------------------------------------
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 60					-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
@@ -102,17 +104,3 @@ NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
-
-
-NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.15
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.25
-NDefines.NMilitary.COMBAT_MINIMUM_TIME = 1.5
-
----AA Balance #values from spot
-NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003
-NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.025
-NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.075
-NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75
-
-ACE_DEATH_CHANCE_BASE = 0.002

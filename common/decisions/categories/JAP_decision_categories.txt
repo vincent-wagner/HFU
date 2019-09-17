@@ -18,9 +18,3 @@ JAP_interservice_rivalry = {
 		has_dlc = "Waking the Tiger"
 	}
 }
-
-JAP_annex = {
-	allowed = {
-		original_tag = JAP
-	}
-}

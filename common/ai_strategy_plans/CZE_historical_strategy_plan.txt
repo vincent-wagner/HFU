@@ -4,42 +4,18 @@ CZE_historical_strategy_plan = {
 
 	enable = {
 		original_tag = CZE
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = CZE_ai_behavior
-					option = DEFAULT
-				}
-			}
-			has_country_flag = CZE_AI_RANDOM_HISTORICAL
-			has_game_rule = {
-				rule = CZE_ai_behavior
-				option = HISTORICAL
-			}
-		}
 	}
 	abort = {
-		OR = {
 			GER = {
 				not = {
 					has_government = fascism
 				}
 			}
-			FRA = {
-				not = { has_government = democratic }
-			}
 		}
-		has_game_rule = {
-			rule = CZE_ai_behavior
-			option = DEFAULT
-		}
-	}
 
 	ai_national_focuses = {
 		CZE_fortification_studies
 		CZE_sudeten_1
-		CZE_industrial_legacy
 		CZE_political_direction
 		CZE_sudeten_2
 		CZE_democratic_bastion

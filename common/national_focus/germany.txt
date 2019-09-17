@@ -1285,22 +1285,8 @@ random_owned_controlled_state = {
 				category = battlefield_support_tree
 			}
 
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							air_base > 3
-							air_base < 9
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 5
-						}
-					}
+				42 = {
+
 					add_building_construction = {
 						type = air_base
 						level = 6
@@ -1308,44 +1294,6 @@ random_owned_controlled_state = {
 					}
 					set_state_flag = GER_air_innovation_6air
 				}				
-			}
-
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_air_innovation_2air
-			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_air_innovation_2air
-			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 2
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_air_innovation_2air
-			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
 		}
@@ -1782,6 +1730,15 @@ available = {
 				target = SOV
 			}
 			
+			
+			if = { 
+			limit = { has_game_rule = { 
+			rule = horst_barb_rebalance
+				option = HORST_ENABLE_BARB_REBALANCE
+			}}
+			
+			
+			
 			if = { 
 			limit = { SOV = {has_tech = improved_heavy_tank }}
 				GER = { 
@@ -1813,7 +1770,7 @@ available = {
 			
 			
 			}
-							
+			}				
 		}
 	}
 
@@ -1900,7 +1857,7 @@ available = {
 		prerequisite = { focus = GER_rhineland }
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 549999 }
+			has_army_manpower = { size > 499999 }
 	
 		}
 
@@ -2012,7 +1969,7 @@ available = {
 		available = {
 			is_puppet = no
 			has_government = fascism
-			has_army_manpower = { size > 849999 } #ca 90 div
+			has_army_manpower = { size > 499999 } #ca 90 div
 			date > 1939.5.30				
 			SOV = {
 				NOT = { has_war_with = GER }
@@ -2115,7 +2072,7 @@ available = {
 		available = {
 			date > 1939.6.1
 			is_puppet = no
-			has_army_manpower = { size > 949999 } #100 div			
+			has_army_manpower = { size > 499999 } #100 div			
 		}
 
 		bypass = {
@@ -2415,7 +2372,7 @@ SPR = { country_event = spain.29 }
 		will_lead_to_war_with = FRA
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 749999 } #80 div		
+			has_army_manpower = { size > 499999 } #80 div		
 			NOT = {
 				AND = {
 					CZE = { is_in_faction_with = GER }
@@ -2519,7 +2476,7 @@ SPR = { country_event = spain.29 }
 		prerequisite = { focus = GER_first_vienna_award }
 		available = { 
 			is_puppet = no
-			has_army_manpower = { size > 749999 }
+			has_army_manpower = { size > 499999 }
 			NOT = { has_war_with = CZE }
 		}
 

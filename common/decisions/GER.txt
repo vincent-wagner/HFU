@@ -133,10 +133,19 @@ GER_military_buildup = {
 		icon = generic_air
 
 			allowed = { 
-		original_tag = GeR
+		original_tag = GER
+		
+		
+		
 		}
 		
 		available = {
+		
+			has_game_rule = {
+				rule = HORST_ALLOW_JAEGERNOTPROGRAMM
+				option = HORST_ENABLE_JAEGERNOTPROGRAMM
+			}	
+		
 			has_war = yes
 			AND = {
 				has_deployed_air_force_size = {

@@ -822,7 +822,8 @@ navy_experience = 25
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = IRQ_opposition_purged
+			add_ideas = IRQ_opposition_purged 
+			add_ideas = tot_economic_mobilisation
 			add_popularity = { ideology = fascism popularity = 0.3 }
 			GER = { country_event = { id = iraq.4 }}
 			

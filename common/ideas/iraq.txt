@@ -83,7 +83,7 @@ ideas = {
 			
 	
 			modifier = {
-				conscription = 0.15
+				conscription = 0.05
 				army_morale_factor = 0.25
 				mobilization_speed = 0.5
 			}
@@ -107,7 +107,7 @@ ideas = {
 			
 	
 			modifier = {
-				stability_factor = 0.30
+				stability_factor = 0.1
 			}
 	}
 	
@@ -116,6 +116,22 @@ ideas = {
 
 	political_advisor = {
 
+	
+	IRQ_ali_hussein = {
+
+			picture = generic_political_advisor_arab_2
+
+			allowed = {
+				original_tag = IRQ
+			}
+			
+			traits = { fascist_demagogue }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
 		IRQ_ali_abn_hussein = {
 
 			picture = generic_political_advisor_arab_2

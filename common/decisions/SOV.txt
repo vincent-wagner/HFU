@@ -24,8 +24,7 @@ focus = SOV_great_purge
 visible = {		NOT = { OR = { 
 		SOV = { has_country_flag = purge_1_group_a }
 		SOV = { has_country_flag = purge_1_group_b }
-		}
-
+		}		
 	}
 }
 
@@ -139,10 +138,9 @@ focus = SOV_great_purge
 visible = {		NOT = { OR = { 
 		SOV = { has_country_flag = purge_1_group_a }
 		SOV = { has_country_flag = purge_1_group_b }
-		}
-
+		}   } 
 	}
-	}
+	
 	complete_effect = { 
 	
 	
@@ -214,8 +212,8 @@ custom_effect_tooltip = remove_political_advisor
 		remove_unit_leader = 403 #vladimir_kasatonov, naval commander
 
 		hidden_effect = {	
-			remove_ideas = nikita_khrushchev
-	remove_ideas = semyon_timoshenko
+		remove_ideas = nikita_khrushchev
+	        remove_ideas = semyon_timoshenko
 			remove_ideas = kliment_voroshilov
 			remove_ideas = ivan_yumashev
 			remove_ideas = konstantin_rokossovsky

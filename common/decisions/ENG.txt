@@ -1,4 +1,4 @@
-ENG_annex = {
+foreign_politics = {
 ENG_annex_ire = {
 	icon = generic_operation
 
@@ -32,6 +32,30 @@ ENG_annex_ire = {
 		}
 	}
 	
+	ENG_permit_france = {
+	icon = generic_operation
+
+			allowed = {
+				tag = ENG
+			}
+
+			available = {
+			}
+			
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+							FRA = { controls_state = 16 }
+				}
+
+			complete_effect = {
+			FRA = { set_country_flag = FRA_permitted }
+		}
+	
+	}
+	
 	ENG_annex_mal = {
 	icon = generic_operation
 
@@ -49,7 +73,7 @@ ENG_annex_ire = {
 
 			visible = {
 				
-				
+			MAL = { exists = yes }
 				}
 
 			complete_effect = {
@@ -61,16 +85,15 @@ ENG_annex_ire = {
 			}
 		}
 	}
-}
 	
-ENG_guarantee = { 
 ENG_guarantee_greece = {
 	allowed = {
 				tag = ENG
 			}
 			visible = {
 				date > 1938.4.1	
-				NOT = {	has_war_with = GER }				
+				NOT = {	ITA = { has_war_with = GER } }
+				GRE = { exists = yes }
 				}
 
 			fire_only_once = yes
@@ -269,44 +292,6 @@ ENG_imperial_conference_decision = {
 
 political_actions = {
 
-	#ENG_host_CZE_exile_government = {
-	#
-	#	icon = generic
-	#
-	#	allowed = {
-	#		has_dlc = "Man the Guns"
-	#		original_tag = ENG
-	#		
-	#	}
-	#	available = {
-	#		has_government = democratic
-	#	}
-	#	cost = 50
-	#	fire_only_once = yes
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#
-	#	visible = {
-	#		CZE = {
-	#			exists = no
-	#		}
-	#	
-	#		CZE = {
-	#			is_government_in_exile = no
-	#		}
-	#	
-	#		9 = { CONTROLLER = { has_war_with = ROOT } }
-	#	}
-	#	complete_effect = {
-	#		CZE = {
-	#			become_exiled_in = {
-	#				target = ROOT
-	#				legitimacy = 50
-	#			}
-	#		}
-	#	}
-	#}
 	hold_blood_toil_tears_sweat_speech = {
 
 		icon = generic_political_discourse
@@ -493,148 +478,6 @@ political_actions = {
 			
 		}
 	}
-
-	ENG_abdication_crisis = { # timer for the player to see when the event chain ends
-
-		icon = eng_abdication_crisis
-		
-		available = {
-			has_country_flag = ENG_abdication_crisis_changed_mind
-		}
-
-		days_mission_timeout = 200
-
-		fire_only_once = yes
-
-		activation = {
-			tag = ENG
-			OR = {
-				has_country_flag = ENG_abdication_crisis_normal_marriage
-				has_country_flag = ENG_abdication_crisis_morganatic_marriage
-			}
-		}
-
-		visible = {
-			tag = ENG
-			OR = {
-				has_country_flag = ENG_abdication_crisis_normal_marriage
-				has_country_flag = ENG_abdication_crisis_morganatic_marriage
-			}
-			NOT = { has_country_flag = edward_viii_married_wallis_simpson }
-		}
-
-		cancel_if_not_visible = yes
-
-		is_good = yes
-
-		complete_effect = {
-			
-		}
-
-		timeout_effect = {
-			country_event = { id = mtg_britain.5 }
-		}
-	}
-
-	ENG_britain_demands_treaty_compliance = { # ENG demanding scuttling of ships to maintain Washington Naval Treaty
-
-		icon = generic_naval
-		
-		available = {
-			if = {
-				limit = {
-					original_tag = USA
-				}
-				custom_trigger_tooltip = {
-					tooltip = ENG_britain_demands_treaty_compliance_tt_1
-					naval_strength_comparison = {
-						other = ENG
-						ratio < 1.01
-						sub_unit_def_weights = {
-							carrier = 1
-							battleship = 1
-							battle_cruiser = 1
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					original_tag = JAP
-				}
-				custom_trigger_tooltip = {
-					tooltip = ENG_britain_demands_treaty_compliance_tt_2
-					naval_strength_comparison = {
-						other = ENG
-						ratio < 0.66
-						sub_unit_def_weights = {
-							carrier = 1
-							battleship = 1
-							battle_cruiser = 1
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { original_tag = USA }
-					NOT = { original_tag = JAP }
-				}
-				custom_trigger_tooltip = {
-					tooltip = ENG_britain_demands_treaty_compliance_tt_3
-					naval_strength_comparison = {
-						other = ENG
-						ratio < 0.36
-						sub_unit_def_weights = {
-							carrier = 1
-							battleship = 1
-							battle_cruiser = 1
-						}
-					}
-				}
-			}
-		}
-
-		days_mission_timeout = 60
-
-		fire_only_once = no
-
-		activation = {
-			has_country_flag = ENG_demanding_ship_reduction_flag
-		}
-
-		visible = {
-			has_country_flag = ENG_demanding_ship_reduction_flag
-		}
-
-		cancel_if_not_visible = yes
-
-		is_good = no
-
-		complete_effect = {
-			clr_country_flag = ENG_demanding_ship_reduction_flag
-		}
-
-		timeout_effect = {
-			clr_country_flag = ENG_demanding_ship_reduction_flag
-			random_country = {
-				limit = {
-					original_tag = ENG
-				}
-				country_event = { id = mtg_britain.108 }
-			}
-			effect_tooltip = {
-				ENG = {
-					create_wargoal = {
-						target = ROOT
-						type = puppet_wargoal_focus
-						expire = 0
-					}
-				}
-			}
-		}
-	}
-
 
 }
 

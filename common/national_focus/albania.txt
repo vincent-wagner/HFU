@@ -512,6 +512,30 @@ focus_tree = {
 	}
 
 	focus = {
+		id = alb_zog_aces
+		icon = GFX_focus_ALB_zog
+		prerequisite = { focus = alb_rocket_effort }
+		
+		available = {
+		is_ai = no
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = alb_rocket_effort
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		add_ideas = alb_zog
+		}
+
+	}
+	
+	
+	
+	focus = {
 		id = alb_NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = alb_aviation_effort_2 }

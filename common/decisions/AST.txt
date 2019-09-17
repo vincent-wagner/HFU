@@ -1,4 +1,4 @@
-AST_annex = {
+foreign_politics = {
 AST_annex_nzl = {
 		icon = generic_operation
 

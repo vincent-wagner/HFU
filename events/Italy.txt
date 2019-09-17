@@ -222,9 +222,12 @@ ITA = { country_event = { id = italy.144 } }
 						target = ETH
 						transfer_troops = no 
 					}
+					add_threat = 0.7
 			}
    
    }
+   
+   
    
    option = { 
    name = italy.143.b
@@ -246,7 +249,8 @@ ITA = { country_event = { id = italy.144 } }
 					add_state_core = 550
 					}
    
-   }
+
+}
 }
 }
 
@@ -465,7 +469,153 @@ ITA = { country_event = { id = italy.151 days = 1 } }
    
    
    
+    country_event = {
+   id = italy.152
+   title = italy.152.t
+   desc = italy.152.d
+   picture = GFX_report_event_italy_startup
+   fire_only_once = yes
    
+trigger = {
+	tag = ITA
+	has_war_with = GRE 
+	GRE = { surrender_progress > 0.75 }
+}
+
+	mean_time_to_happen = { days = 1 }   
+	
+	option = {
+   name = italy.152.a
+   
+white_peace = GRE 
+
+
+GRE = { remove_ideas = adjusted_surrender_limit }
+
+  
+ITA = { country_event = { id = italy.153 } }
+
+   
+   }
+}
+   
+   
+    country_event = {
+   id = italy.153
+   title = italy.153.t
+   desc = italy.153.d
+   picture = GFX_report_event_italy_startup
+   fire_only_once = yes
+
+   is_triggered_only = yes 
+	
+	option = {
+   name = italy.153.a
+
+   
+ITA = { 
+					annex_country = {
+						target = GRE
+						transfer_troops = no 
+					}
+					add_threat = 4.6 
+			}
+			
+			   BUL = { transfer_state = 184 }
+
+   
+   }
+   
+	option = {
+   name = italy.153.b
+
+   
+ITA = { 
+					annex_country = {
+						target = GRE
+						transfer_troops = no 
+					}
+					add_threat = 4.6 
+			}
+   
+   }
+   
+}
+
+
+country_event = {
+   id = italy.154
+   title = italy.154.t
+   desc = italy.154.d
+   picture = GFX_report_event_italy_startup
+   fire_only_once = yes
+   
+trigger = {
+	tag = ITA
+	has_war_with = YUG 
+	YUG = { surrender_progress > 0.75 }
+}
+
+	mean_time_to_happen = { days = 1 }   
+	
+	option = {
+   name = italy.154.a
+   
+white_peace = YUG 
+
+
+YUG = { remove_ideas = adjusted_surrender_limit }
+
+  
+ITA = { country_event = { id = italy.155 } }
+
+   
+   }
+}
+
+  country_event = {
+   id = italy.155
+   title = italy.155.t
+   desc = italy.155.d
+   picture = GFX_report_event_italy_startup
+   fire_only_once = yes
+
+   is_triggered_only = yes 
+	
+	option = {
+   name = italy.155.a
+   
+  HUN = { transfer_state = 764 
+   transfer_state = 45 
+   }
+   
+ITA = { 
+					annex_country = {
+						target = YUG
+						transfer_troops = no 
+					}
+					add_threat = 6.2 
+			}
+   
+   }
+   
+	option = {
+   name = italy.155.b
+
+ 
+   
+ITA = { 
+					annex_country = {
+						target = YUG
+						transfer_troops = no 
+					}
+					 add_threat = 6.2 
+			}
+   
+   }
+   
+}
+
    
    
    

@@ -1362,35 +1362,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 438 439 431 435 445 442 }
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 0
-					}
-				}
+			435 = {
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = RAJ_expand_air_bases_AB1
-			}
-			random_owned_controlled_state = {
-				prioritize = { 438 439 431 435 445 442 }
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = RAJ_expand_air_bases_AB2
 			}
 		}
 	}

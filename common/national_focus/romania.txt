@@ -1360,23 +1360,10 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			random_state = {
-				limit = {
-					has_state_flag = ROM_expand_the_air_force_AB
-				}
+			46 = {
 				add_building_construction = {
 					type = air_base
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = ROM_expand_the_air_force_AB_2
-				}
-				add_building_construction = {
-					type = air_base
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -1384,35 +1371,12 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					free_building_slots = {
-						building = air_base
-						size > 2
-					}
-				}
+			46 = {
 				add_building_construction = {
 					type = air_base
-					level = 3
+					level = 6
 					instant_build = yes
 				}
-				set_state_flag = ROM_expand_the_air_force_AB
-			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					free_building_slots = {
-						building = air_base
-						size > 2
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = ROM_expand_the_air_force_AB_2
 			}
 		}
 	}
@@ -1870,7 +1834,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -2149,7 +2113,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

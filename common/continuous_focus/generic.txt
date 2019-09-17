@@ -36,8 +36,12 @@ continuous_focus_palette = {
 		id = continuous_air_production
 		
 		icon = GFX_goal_continuous_air_production
-		
-		available = {
+			
+			available = { 
+	has_game_rule = {
+			rule = HORST_ALLOW_AIR_PRODUCTION
+			option = HORST_ENABLE_AIR_PRODUCTION
+			}
 		}
 		
 		idea = continuous_air_production

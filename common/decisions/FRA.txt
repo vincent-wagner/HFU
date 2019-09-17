@@ -10,7 +10,7 @@ original_tag = FRA
 		}
 		visible = {
 		FRA = { controls_state = 461 }
-		
+		has_country_flag = casablanca_capital
 		}
 		
 		cost = 0
@@ -30,7 +30,7 @@ original_tag = FRA
 		}
 		visible = {
 		FRA = { controls_state = 539 }
-		
+		has_country_flag = gabon_capital
 		}
 		
 		cost = 0
@@ -39,4 +39,118 @@ original_tag = FRA
 		FRA = { set_capital = 539 }
 		}
 }
+}
+
+war_measures = {
+
+	FRA_scorched_earth_tactics = {
+		icon = generic_scorched_earth
+		
+		allowed = {
+original_tag = FRA
+}
+		
+		available = {
+			
+				735 = {
+					NOT = { is_fully_controlled_by = ROOT }
+					controller = { has_war_with = FRA }
+				}
+				
+				21 = {
+					NOT = { is_fully_controlled_by = ROOT }
+					controller = { has_war_with = FRA }
+				}
+				
+				22 = {
+					NOT = { is_fully_controlled_by = ROOT }
+					controller = { has_war_with = FRA }
+				}
+				
+				35 = {
+					NOT = { is_fully_controlled_by = ROOT }
+					controller = { has_war_with = FRA }
+				}
+				
+				
+			}
+
+		fire_only_once = yes
+		cost = 200
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {			
+			has_completed_focus = FRA_operation_dragoon
+		}
+
+		complete_effect = {
+		
+			735 = {
+				damage_building = {
+					type = infrastructure
+					type = air_base
+					type = coastal_bunker
+					damage = 3
+				}
+			}
+		
+					22 = {		
+				damage_building = {
+					type = infrastructure
+					type = air_base
+					type = coastal_bunker
+					damage = 3
+				}
+			}
+		
+					31 = {
+				damage_building = {
+					type = infrastructure
+					type = air_base
+					type = coastal_bunker
+					damage = 3
+				}
+			}
+			
+						32 = {	
+				damage_building = {
+					type = infrastructure
+					type = air_base
+					type = coastal_bunker
+					damage = 3
+				}
+			}
+		
+		}
+	}
+	
+	FRA_invade_italy = {
+		icon = generic_operation
+		
+		allowed = {
+original_tag = FRA
+}
+		
+		available = {
+			has_war_with = ITA
+		}
+		visible = {
+			has_completed_focus = FRA_operation_husky
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = ITA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+	}
+	
+	}
+	
 }

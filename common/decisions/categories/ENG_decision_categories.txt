@@ -9,17 +9,3 @@ ENG_imperial_conference_decision = {
 		original_tag = ENG
 	}
 }
-
-ENG_annex = {
-	allowed = {
-		original_tag = ENG
-	}
-
-}
-
-ENG_guarantee = { 
-allowed = {
-		original_tag = ENG
-	}
-
-}

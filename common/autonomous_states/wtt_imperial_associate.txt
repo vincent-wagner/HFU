@@ -67,6 +67,14 @@ autonomy_state = {
 		}
 	}
 	can_lose_level = {
-		#trigger here
-	}
+		MAN = { NOT = {
+				OR = { 
+				 has_idea = MAN_low_legitimacy_5 
+				has_idea = MAN_low_legitimacy_4 
+				 has_idea = MAN_low_legitimacy_3 
+			 has_idea = MAN_low_legitimacy_2 
+				has_idea = MAN_low_legitimacy_1 
+				}
+				}
+		}	}
 }

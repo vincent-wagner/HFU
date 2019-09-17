@@ -1,5 +1,25 @@
 ideas = {
 
+country = { 
+alb_zog = {
+
+	allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			modifier = { 
+			air_ace_generation_chance_factor = 0.01
+			
+		}
+
+}
+
+}
+
 	political_advisor = {
 
 		ALB_midhat_frasheri = {
@@ -12,6 +32,18 @@ ideas = {
 			
 			traits = { popular_figurehead }
 		}
+		
+			ALB_midhat_frasherii = {
+
+			picture = generic_political_advisor_arab_1
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			traits = { fascist_demagogue }
+		}
+
 
 		ALB_jocelyn_percy = {
 

@@ -295,6 +295,27 @@ ideas = {
 
 	political_advisor = {
 
+		NZL_robert_manion = {
+
+			allowed = {
+				original_tag = NZL
+				
+			}
+
+			available = {
+				
+
+			}
+			
+			picture = generic_democratic_reformer_commonwealth_2d
+			
+			traits = { democratic_reformer }
+			
+
+			
+		
+		}
+	
 		NZL_a_e_davy = {
 
 			picture = generic_political_advisor_europe_1
