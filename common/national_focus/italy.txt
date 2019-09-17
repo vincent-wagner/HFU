@@ -2059,6 +2059,11 @@ date > 1941.6.1
 			NOT = { country_exists = BUL }
 		}
 		completion_reward = {
+			
+			ALB = { country_event = { id = italy.3 } }
+		
+			
+			hidden_effect{
 			BUL = {
 				if = {
 					limit = { ROOT = { has_government = fascism } }
@@ -2074,34 +2079,11 @@ date > 1941.6.1
 				}
 				country_event = { id = generic.1 }
 			}
+			}
 		}
 	}
 
-	focus = {
-		id = ITA_albania_war_goal
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
-		will_lead_to_war_with = ALB
-		x = -2
-		y = 1
-		relative_position_id = ITA_slovenia_dalmatia_claims
-		
-		available = {
-			country_exists = ALB
-		}
-
-		cost = 10
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				date < 1937.1.1
-			}	
-		}	
-		completion_reward = {
-			ALB = { country_event = { id = italy.3 } }
-		}
-	}
+	
 
 	focus = {
 		id = ITA_pact_of_steel
