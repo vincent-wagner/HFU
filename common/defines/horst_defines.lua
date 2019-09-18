@@ -1,6 +1,14 @@
+--Horst defines:
+
+--------------------------------------------------------------
+--Performance
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 50
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 55
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 24
+NDefines.NCountry.EVENT_PROCESS_OFFSET = 25
+NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12
+
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 ---------------------------------------------------------------
@@ -19,6 +27,7 @@ NDefines.NDiplomacy.REVOKE_GUARANTEE_COST = 1000
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0						-- When you pass once you should get enough points to finish the peace deal
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 1				-- WAS 0.05 | Each army unit owned by the source country contributes this amount of volunteers to the limit.
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0				-- WAS 30 | This many divisons are required for the country to be able to send volunteers.
+NDefines.NDiplomacy.FRONT_IS_DANGEROUS = 0
 ---------------------------------------------------------------
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST 
 ---------------------------------------------------------------
@@ -104,3 +113,70 @@ NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
+
+
+--HFU defines:
+
+--industry
+NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --max building slots in a state
+BASE_RESEARCH_SLOTS = 0
+FUEL_LEASE_CONVOY_RATIO = 0.0004
+-------------------------------------
+--Combat
+COMBAT_MINIMUM_TIME = 4
+NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0 
+NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 0.0
+NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0 --0,1 in vanilla
+NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0 -- ratio deciding split of experience if more generals in a battle, 0,5 in vanilla
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0 -- Base xp gain for traits per hour for armies, 0,45 in vanilla
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
+NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.4    			
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0	
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0		
+NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0	
+NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20			
+NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20		
+-------------------------------------
+--Air changes
+
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.13						-- Vanilla 0,10
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2					        --Vanilla 3
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.50	-- Vanilla 0,75
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.15				--Vanilla 0,2
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.1					-- Vanilla 0,1
+NDefines.NNavy.ANTI_AIR_TARGETING = 0.7                         --Vanilla 0,9
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.23    --Vanilla 0.3
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.5          --Vanilla -0.35
+NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 400.0
+NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.6                --Vanilla 0.8
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

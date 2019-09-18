@@ -244,7 +244,7 @@ country_event = {
 				remove_ideas = CHI_division
 				set_rule = { can_create_factions = yes }
 				create_faction = chinese_united_front
-				add_to_faction = SIK 
+				 
 				add_to_faction = PRC 
 				add_to_faction = SHX 
 				add_to_faction = XSM 

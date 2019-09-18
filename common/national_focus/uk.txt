@@ -2630,7 +2630,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2741,7 +2741,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3063,7 +3063,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3222,7 +3222,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3390,7 +3390,7 @@ focus_tree = {
 		}
 
 		available = {
-	
+	    date > 1939.3.1
 		}
 
 		bypass = {

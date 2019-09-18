@@ -17,7 +17,7 @@ country = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = 0.19
+				surrender_limit = -0.20
 			}
 
 		}
