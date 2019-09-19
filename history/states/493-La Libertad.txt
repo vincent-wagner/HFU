@@ -12,12 +12,7 @@ state={
 	history={
 		owner = COL
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			air_base = 4
-			12790 = {
-				naval_base = 5
-			}
+			
 			8056 = {
 				naval_base = 1
 			}

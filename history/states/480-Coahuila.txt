@@ -2,7 +2,7 @@
 state={
 	id=480
 	name="STATE_480"
-	manpower = 827826
+	manpower = 1
 	
 	state_category = large_town
 	
@@ -13,11 +13,7 @@ state={
 
 	history={
 		owner = MEX
-		buildings = {
-			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 1
-		}
+		
 		add_core_of = MEX
 		victory_points = {
 			12835 10
