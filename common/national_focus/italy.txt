@@ -2378,6 +2378,7 @@ date > 1941.6.1
 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 } 
+			102 = {	add_claim_by  = GER}
 			}
 		}
 	}

@@ -178,7 +178,7 @@ focus_tree = {
 
 		completion_reward = {
 		hidden_effect = { 
-			CHI = { add_to_faction = SIK }
+			
 				CHI = { add_to_faction = PRC }
 		}
 				CHI = {
