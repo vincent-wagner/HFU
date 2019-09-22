@@ -29,83 +29,45 @@ country_event = {
 	title = france.10.t
 	desc = france.10.d
 	picture = GFX_report_event_german_parade_paris
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = FRA
 		has_war_with = GER
 		16 = { is_controlled_by = GER }
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
-		surrender_progress > 0.7
+		FRA = {has_capitulated = yes}
 		GER = {
-			OR = {
-				is_faction_leader = yes
-				has_government = neutrality
-			}
+			is_faction_leader = yes
 		}
-		has_civil_war = no
-		
-		#Don't fire if France has pushed pretty far into ITA or GER
 		NOT = {
-			any_state = {
-				is_on_continent = europe
-				NOT = { state = 158 }
-				NOT = { state = 114 }
-				NOT = { state = 50 }
-				NOT = { state = 42 }
-				is_controlled_by = ROOT
-				OR = {
-					is_owned_by = GER
-					AND = {
-						FRA = { has_War_with = ITA }
-						is_owned_by = ITA
-					}
-				}
-			}
-		}		
-
-		#Don't fire if any states in France are controlled by a different human player
-		NOT = {
-			any_enemy_country = {
-				is_ai = no
-				NOT = { tag = GER }
-				NOT = { is_in_faction_with = GER }
-				ROOT = {
-					any_owned_state = {
-						is_on_continent = europe
-						NOT = { state = 1 }
-						NOT = { state = 735 }
-						NOT = { state = 21 }
-						NOT = { state = 31 }
-						is_controlled_by = PREV.PREV
-					}
-				}
-			}
+			has_civil_war = yes
 		}
 	}
-	
+
 	mean_time_to_happen = {
-		days = 1
+		days = 2
 	}
 
 	immediate = {
 		set_global_flag = achievement_france_surrender
+		set_global_flag = fall_of_france
+		GER = { country_event = france.14 }
 	}
-	
-	
+
+
 	option = { # Become Free French
 		name = france.10.b
 		ai_chance = {
-			factor = 100
+			factor = 85
 		}
-		set_global_flag = fall_of_france
-		GER = { country_event = france.14 }
 		custom_effect_tooltip = france.10.b_tt
 	}
-	
 }
+
+
 
 # France wants Armistice (Germany)
 country_event = {
@@ -113,38 +75,179 @@ country_event = {
 	title = france.14.t
 	desc = france.14.d
 	picture = GFX_report_event_german_parade_paris
-	
-	is_triggered_only = yes
-	
 
-	option = { # Conquer everything!
-		name = france.14.b
-		ai_chance = { 
-			factor = 100 
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
+	is_triggered_only = yes
+
+	option = { # Agree
+		name = france.14.a
+
+				
+				set_global_flag = achievement_france_surrender
+				set_global_flag = fall_of_france
+				
+				          
+
+				
+				FRA = { news_event = { id = france.20 days = 1 } }
+				
+				FRA = {
+					start_civil_war = {
+						ideology = fascism
+						size = 0.9
+						capital = 26
+						states = { 26 }
+					
+					}
+					set_cosmetic_tag = FRA_FREE
+			
+					create_corps_commander = {
+						name = "Charles De Gaulle"
+						picture = "Portrait_France_Charles_De_Gaulle.dds"
+						traits = { armor_officer harsh_leader media_personality trait_reckless panzer_leader exiled_leader }
+						skill = 6
+						attack_skill = 5
+						defense_skill = 6
+						planning_skill = 3
+						logistics_skill = 4
+					}
+					create_field_marshal = {
+						name = "Philippe Leclerc"
+						picture = "portrait_france_philippe_leclerc.dds"
+						traits = { armor_officer trait_reckless career_officer politically_connected panzer_leader skilled_staffer organizer exiled_leader }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 3
+						planning_skill = 3
+						logistics_skill = 6
+					}
+					create_corps_commander = {
+						name = "Marie-Pierre Koenig"
+						picture = "Portrait_France_Marie_Pierre_Koenig.dds"
+						traits = { trickster trait_mountaineer infantry_leader infantry_officer career_officer harsh_leader exiled_leader }
+						skill = 5
+						attack_skill = 5
+						defense_skill = 3
+						planning_skill = 4
+						logistics_skill = 4
+					}
+					create_corps_commander = {
+						name = "Edgard de Larminat"
+						picture = "Portrait_France_Generic_land_4.dds"
+						traits = { desert_fox war_hero politically_connected trait_reckless cavalry_leader armor_officer exiled_leader }
+						skill = 4
+						attack_skill = 5
+						defense_skill = 3
+						planning_skill = 1
+						logistics_skill = 4
+					}
+					create_navy_leader = {
+						name = "Émile Muselier"
+						picture = "Portrait_France_Emile_Muselier.dds"
+						traits = { spotter }
+						skill = 3
+						attack_skill = 3
+						defense_skill = 3
+						maneuvering_skill = 3
+						coordination_skill = 3
+					}
+					set_country_flag = free_france
+					set_capital = 539
+				
+				}
+				
+				ITA = { transfer_state = 735}
+			    
+				EFR = {
+					transfer_state = 26
+					transfer_state = 22
+					transfer_state = 31
+					transfer_state = 25
+					transfer_state = 20
+					transfer_state = 33
+					transfer_state = 32
+					transfer_state = 21
+					#Northern Africa
+					transfer_state = 513
+					transfer_state = 458
+					transfer_state = 459
+					transfer_state = 460
+					transfer_state = 461
+					transfer_state = 462
+					transfer_state = 665
+					transfer_state = 514
+					set_capital = 26
+					add_ideas = EFR_neutrality_idea
+					diplomatic_relation = { country = ENG relation = non_aggression_pact }
+					diplomatic_relation = { country = USA relation = non_aggression_pact }
+					diplomatic_relation = { country = PHI relation = non_aggression_pact }
+					diplomatic_relation = { country = FRA relation = non_aggression_pact }
+					diplomatic_relation = { country = SAF relation = non_aggression_pact }
+					diplomatic_relation = { country = CAN relation = non_aggression_pact }
+					diplomatic_relation = { country = RAJ relation = non_aggression_pact }
+					diplomatic_relation = { country = AST relation = non_aggression_pact }
+					diplomatic_relation = { country = NZL relation = non_aggression_pact }
+					diplomatic_relation = { country = BRA relation = non_aggression_pact }
+					diplomatic_relation = { country = GER relation = non_aggression_pact }
+					every_state = {
+						limit = {
+							is_core_of = FRA
+							is_controlled_by = EFR
+						}
+						add_core_of = EFR
+					}
+					every_state = {
+						limit = {
+							NOT = {
+								is_core_of = FRA
+							}
+							is_controlled_by = EFR
+						}
+						add_claim_by  = FRA
+					}
+					28 = {
+						remove_core_of = EFR
+					}
+				
+					set_capital = 26
+					set_politics = {
+						ruling_party = fascism
+						elections_allowed = no                }
+
+                    set_popularities = {
+                        democratic = 18
+                        fascism = 70
+                        communism = 2
+                        neutrality = 10
+                    }
+				FRA = {
+					transfer_navy = { 
+						target = EFR 
+					}
+				}
+				destroy_ships = {
+                    type = ship_hull_light
+                    count = all
+                }
+                destroy_ships = {
+                    type = ship_hull_cruiser
+                    count = all
+                }
+                destroy_ships = {
+                    type = ship_hull_heavy
+                    count = all
+                }
+                destroy_ships = {
+                    type = ship_hull_carrier 
+                    count = all
+                }
+                destroy_ships = {
+                    type = ship_hull_submarine
+                    count = all
+                }
 			}
 		}
-		FRA = {
-			country_event = { hours = 6 id = france.15 }
-		}
 	}
-}
 
-# Germany refuses armistice! (France)
-country_event = {
-	id = france.15
-	title = france.15.t
-	desc = france.15.d
-	picture = GFX_report_event_french_resistance_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = france.15.a
-	}
-}
 
 #Capital captured by non french faction
 country_event = {

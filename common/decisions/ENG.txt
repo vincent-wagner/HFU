@@ -476,6 +476,7 @@ political_actions = {
 			ENG = { transfer_state = 698 }
 			
 			
+			
 		}
 	}
 

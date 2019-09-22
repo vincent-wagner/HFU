@@ -2059,28 +2059,15 @@ date > 1941.6.1
 			NOT = { country_exists = BUL }
 		}
 		completion_reward = {
-			
-			ALB = { country_event = { id = italy.3 } }
-		
-			
-			hidden_effect{
-			BUL = {
-				if = {
-					limit = { ROOT = { has_government = fascism } }
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-				}
-				if = {
-					limit = { ROOT = { has_government = democratic } }
-					add_timed_idea = { idea = democratic_influence days = 1095 }
-				}
-				if = {
-					limit = { ROOT = { has_government = communism } }
-					add_timed_idea = { idea = communist_influence days = 1095 }
-				}
-				country_event = { id = generic.1 }
+			GER = {
+				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
 			}
+			
+			hidden_effect = {
+				news_event = { hours = 6 id = news.184 }
 			}
 		}
+		
 	}
 
 	
@@ -2134,12 +2121,27 @@ date > 1941.6.1
 
 		}
 		completion_reward = {
-			GER = {
-				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
-			}
+			
+			ALB = { country_event = { id = italy.3 } }
+		
+			
+			hidden_effect{
 			add_threat = 7
-			hidden_effect = {
-				news_event = { hours = 6 id = news.184 }
+			BUL = {
+				if = {
+					limit = { ROOT = { has_government = fascism } }
+					add_timed_idea = { idea = fascist_influence days = 1095 }
+				}
+				if = {
+					limit = { ROOT = { has_government = democratic } }
+					add_timed_idea = { idea = democratic_influence days = 1095 }
+				}
+				if = {
+					limit = { ROOT = { has_government = communism } }
+					add_timed_idea = { idea = communist_influence days = 1095 }
+				}
+				country_event = { id = generic.1 }
+			}
 			}
 		}
 	}
@@ -2338,10 +2340,9 @@ date > 1941.6.1
 		icon = GFX_focus_ITA_balkan
 		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
-			NOT = { is_in_faction_with = GRE }
-			NOT = { has_war_with = GRE }
-			GRE = { NOT = { is_puppet_of = ITA } }
-			country_exists = GRE
+
+			FRA = { has_capitulated = yes }
+			
 		}
 		will_lead_to_war_with = GRE
 		x = 1
@@ -2377,6 +2378,7 @@ date > 1941.6.1
 
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 } 
+			102 = {	add_claim_by  = GER}
 			}
 		}
 	}

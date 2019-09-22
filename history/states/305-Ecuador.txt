@@ -12,12 +12,9 @@ state={
 	history={
 		owner = ECU
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 4
-			air_base = 1
+			
 			8252 = {
-				naval_base = 4
+				naval_base = 1
 			}
 		}
 		add_core_of = ECU

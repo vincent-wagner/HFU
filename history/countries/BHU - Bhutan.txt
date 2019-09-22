@@ -1,7 +1,7 @@
 ﻿capital = 324
 
 oob = "BHU_1936"
-
+set_research_slots = 0
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

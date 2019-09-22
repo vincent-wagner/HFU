@@ -486,7 +486,7 @@
 		id = SOV_collectivist_propaganda
 		icon = GFX_focus_SOV_worker_cluture
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_positive_heroism }
+		
 		x = -2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -576,7 +576,7 @@
 		id = SOV_positive_heroism
 		icon = GFX_focus_SOV_postive_heroism
 		prerequisite = { focus = SOV_stalin_constitution }
-		mutually_exclusive = { focus = SOV_collectivist_propaganda }
+		
 		x = 0
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -877,60 +877,24 @@
 	}
 
 
-	focus = {
-		id = SOV_annex_tannu_tuva
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = SOV_peoples_commissariat }
-		available = { is_puppet = no }
-		bypass = {
-			NOT = { country_exists = TAN }
-		}
-		x = 1
-		y = 1
-		relative_position_id = SOV_peoples_commissariat
-		cost = 20
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			TAN = {
-				country_event = { id = soviet.14 }
-			}	
-					
-					if = { 
-					limit = {
-					AFG = { is_subject = yes }
-					}
-									 AFG = {
-					give_resource_rights = { receiver = SOV state = 267 }
-					
-					}
-					
-					}
-			
-		}
-	}
-
+	
 
 
 	focus = {
 		id = SOV_southern_thrust
 		icon = GFX_focus_ENG_attack_iran
 		prerequisite = { focus = SOV_peoples_commissariat }
-		mutually_exclusive = { focus = SOV_invade_afghanistan		}
+		
 		x = 2
 		y = 2
 		relative_position_id = SOV_peoples_commissariat
 		cost = 1
 
 	available = {
-				date > 1941.1.1
+				date > 1940.1.1
 				
 				
-									AND = {
-		ENG = { controls_state = 446}
-		IRQ = { NOT = { controls_state = 291 }}
-				}
+		
 				
 							}
 
@@ -967,102 +931,10 @@
 		}
 	}
 
-	focus = {
-		id = SOV_invade_afghanistan
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = SOV_peoples_commissariat }
-		mutually_exclusive = { focus = SOV_southern_thrust focus = SOV_puppet_afghanistan }
-		x = 0
-		y = 2
-		relative_position_id = SOV_peoples_commissariat
-		cost = 1
-
-	available = {
-				OR = {  date > 1941.1.1  
-				ENG = { NOT = { controls_state = 446 } }
-				
-				}
-							}
-
-		will_lead_to_war_with = AFG
-		bypass = {
-			AFG = {
-				NOT = { owns_state = 267 }	
-				NOT = { owns_state = 415 }
-			}
-		}
-		completion_reward = {
-		custom_effect_tooltip = SOV_invade_afghanistan_tt
-			if = {
-				limit = { 
-					AFG = {
-						OR = {
-							owns_state = 267
-							owns_state = 415
-
-						}
-					} 
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = AFG
-					generator = { 267 415  }
-				}
-			}
-
-		}
-	}
 	
 	
-	focus = {
-		id = SOV_puppet_afghanistan
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = SOV_peoples_commissariat }
-		mutually_exclusive = { focus = SOV_invade_afghanistan }
-		x = -2
-		y = 2
-		relative_position_id = SOV_peoples_commissariat
-		cost = 1
+	
 
-	available = {
-				has_country_flag = SOV_permitted 
-							}
-							
-							
-					completion_reward = {
-					
-		SOV = { 
-				set_autonomy = {
-				
-					target = AFG
-					autonomy_state = autonomy_puppet
-				}
-			}
-
-		267 = { add_extra_state_shared_building_slots = 6
-		
-						add_building_construction = {
-						type = fuel_silo
-						level = 1
-						instant_build = yes
-					}
-		
-		}
-		415 = { add_extra_state_shared_building_slots = 6
-		
-				add_building_construction = {
-						type = fuel_silo
-						level = 1
-						instant_build = yes
-					}
-		
-		}	
-		}			
-							
-							
-							
-							
-			}	
 	
 	focus = {
 		id = SOV_great_purge
@@ -1370,7 +1242,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_lessons_of_war
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1398,7 +1270,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_research_city_experiment
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

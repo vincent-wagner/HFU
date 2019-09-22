@@ -1,5 +1,5 @@
 ﻿capital = 300
-
+set_research_slots = 0
 oob = "URG_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
