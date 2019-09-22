@@ -1,3 +1,4 @@
+#copied from spot mod
 ability = {
 	force_attack = {
 		name = ABILITY_FORCE_ATTACK
@@ -10,6 +11,13 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
+			OWNER = {
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					
+			}
 		}
 		
 		ai_will_do = {
@@ -29,18 +37,15 @@ ability = {
 			}
 		}
 		
-		cost = 4.0
-		duration = 1
+		cost = 0.11
+		duration = 168
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
 				combat_offense = 0.2
 				combat_breakthrough = 0.25
-				org_damage_multiplier = -1.0
-				combat_entrenchment = -1.0
-				combat_defense = -0.3
-				str_damage_multiplier = 0.6
-				war_support_reduction_on_damage = 0.2
+				org_damage_multiplier = -0.3
+				str_damage_multiplier = 0.3
 				cannot_retreat_while_attacking = 1.0
 				
 				days = 7
@@ -48,7 +53,7 @@ ability = {
 			}
 		}
 	}
-		
+	
 	last_stand = {
 		name = ABILITY_LAST_STAND
 		desc = ABILITY_LAST_STAND_DESC
@@ -60,21 +65,16 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
-			OWNER = {
-				NOT = { has_completed_focus = JAP_warrior_spirit }
-			}
 		}
-		
-		cost = 4.0
-		duration = 1
+		cost = 0.11
+		duration = 168
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
 				combat_defense = 0.2
 				combat_entrenchment = 0.25
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 1.2
-				war_support_reduction_on_damage = 0.4
+				org_damage_multiplier = -0.3
+				str_damage_multiplier = 0.6
 				cannot_retreat_while_defending = 1.0
 				
 				days = 7
@@ -112,7 +112,7 @@ ability = {
 			is_border_war = no
 		}
 		
-		cost = 0.12
+		cost = 0.06
 		duration = 168
 		
 		unit_modifiers = {
@@ -139,20 +139,19 @@ ability = {
 	siege_artillery = {
 		name = ABILITY_SIEGE_ARTILLERY
 		desc = ABILITY_SIEGE_ARTILLERY_DESC
-		
+
 		type = army_leader
-		
+
 		allowed = {
 			has_ability = siege_artillery
 			is_border_war = no
 		}
-		
+
 		unit_modifiers = {
-			fort = {
-				attack = 0.2
-			}
-			fortification_damage = 2.0
-			fortification_collateral_chance = 2.0
+			#fort = {
+			#	attack = 0.1
+			#}
+			fortification_damage = 0.25
 		}
 		cost = 0.1
 		duration = 168
@@ -193,7 +192,7 @@ ability = {
 			paratrooper_aa_defense = 0.5
 		}
 		
-		cost = 0.1
+		cost = 0.05
 		duration = 168
 	}
 	faster_naval_invasion_planning = {
@@ -211,7 +210,7 @@ ability = {
 			naval_invasion_prep_speed = 0.5
 		}
 		
-		cost = 0.1
+		cost = 0.05
 		duration = 168
 	}
 	
@@ -232,7 +231,7 @@ ability = {
 		}
 		
 		cancelable = yes
-		cost = 0.1
+		cost = 0.05
 		duration = -1
 	}
 	
@@ -249,13 +248,13 @@ ability = {
 		
 		
 		unit_modifiers = {
-			river_crossing_factor = -0.4
+			river_crossing_factor = -0.5
 			river = {
-				attack = 0.2
+				attack = 0.4
 			}
 		}
 		
-		cost = 0.1
+		cost = 0.05
 		duration = 168
 		
 		ai_will_do = {
@@ -290,7 +289,7 @@ ability = {
 			supply_units = 168
 		}
 		
-		cost = 0.2
+		cost = 0.1
 		duration = 168
 		cooldown = 504
 	}
@@ -310,7 +309,7 @@ ability = {
 			acclimatization_cold_climate_gain_factor = 0.5
 		}
 		
-		cost = 0.1
+		cost = 0.05
 		duration = 168
 		
 		
