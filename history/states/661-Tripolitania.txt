@@ -4,7 +4,9 @@ state={
 	manpower = 17617
 	
 	state_category = wasteland
-	
+	resources={
+		oil=35 # was: 70
+	}
 	history={
 		owner = ITA
 		buildings = {

@@ -124,11 +124,9 @@ FUEL_LEASE_CONVOY_RATIO = 0.0004
 -------------------------------------
 --Combat
 COMBAT_MINIMUM_TIME = 4
-NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0 
-NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 0.0
-NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0 --0,1 in vanilla
-NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0 -- ratio deciding split of experience if more generals in a battle, 0,5 in vanilla
-NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0 -- Base xp gain for traits per hour for armies, 0,45 in vanilla
+
+
+
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
