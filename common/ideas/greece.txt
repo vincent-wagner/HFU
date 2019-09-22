@@ -1,22 +1,28 @@
 ideas = {
-country=
-{
+country = {
 
-           anti_german_military = {
-			
-			picture = generic_fascism_banned
 
+push_on_limit = {
+
+			picture = chi_war_of_resistance
+		
 			allowed = {
-				always = yes
+				always = no
 			}
 
-			
+			allowed_civil_war = {
+				always = yes			
+			}
 
 			removal_cost = -1
 			
 			modifier = {
-				 resistance_tick_in_states_controlled_by_enemy = -0.1
+				surrender_limit = -0.20
+				 resistance_tick_in_states_controlled_by_enemy = -0.2
 			}
+
+		}
+		
 		}
 
 
@@ -33,7 +39,12 @@ country=
 
 
 
-}
+
+
+
+
+
+
 	political_advisor = {
 
 	GRE_damaskinos = {

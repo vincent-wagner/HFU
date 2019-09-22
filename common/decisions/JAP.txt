@@ -523,7 +523,7 @@ JAP_annex_manchukuo = {
 			
 			visible = {
 				OR = { 
-				country_exists = SIK  
+				
 				country_exists = XSM 
 				country_exists = SHX
 				country_exists = PRC  
@@ -535,9 +535,7 @@ JAP_annex_manchukuo = {
 
 			complete_effect = {
 				JAP = { 
-					annex_country = {
-						target = SIK
-					}
+					
 					
 										annex_country = {
 						target = YUN
@@ -592,9 +590,7 @@ JAP_annex_manchukuo = {
 
 			complete_effect = {
 				MAN = { 
-					annex_country = {
-						target = SIK
-					}
+					
 					
 					
 										annex_country = {

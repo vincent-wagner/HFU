@@ -27,7 +27,8 @@ country = {
 			tag = DOM
 			tag = MEX
 			tag = AFG
-			
+			tag = CUB
+			tag = SWI
 			
 			
 			

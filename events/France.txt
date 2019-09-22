@@ -91,13 +91,7 @@ country_event = {
 				FRA = { news_event = { id = france.20 days = 1 } }
 				
 				FRA = {
-					start_civil_war = {
-						ideology = fascism
-						size = 0.9
-						capital = 26
-						states = { 26 }
 					
-					}
 					set_cosmetic_tag = FRA_FREE
 			
 					create_corps_commander = {

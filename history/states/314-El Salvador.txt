@@ -11,14 +11,14 @@ state=
 	
 	history=
 	{
-		owner = ELS
+		owner = PAN
 		buildings = {
 			
 			12823 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = ELS
+		
 		victory_points = {
 			12823 3
 		}

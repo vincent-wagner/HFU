@@ -643,6 +643,7 @@ ideas = {
 			
 			enemy_justify_war_goal_time = 100.0
 			ai_get_ally_desire_factor = -100
+			consumer_goods_factor = 1
 			}
 		}
 	

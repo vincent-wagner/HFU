@@ -7,21 +7,9 @@ state={
 	state_category = rural
 
 	history={
-		owner = MEX
+	owner = PAN
 		
-		add_core_of = MEX
-		#victory_points = {
-		#	4977 3
-		#}
-		#victory_points = {
-		#	4908 1
-		#}
-		#victory_points = {
-		#	5071 1
-		#}
-		victory_points = {
-			10765 5
-		}
+		
 	}
 
 	provinces={

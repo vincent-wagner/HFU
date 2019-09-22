@@ -1300,7 +1300,14 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { fast_tank_manufacturer }
+			equipment_bonus = {
+				
+				medium_tank_equipment = {
+					reliability = 0.05
+					maximum_speed = 0.1
+				}
+				
+			}
 			
 			ai_will_do = {
 				factor = 1
@@ -1319,7 +1326,14 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { medium_tank_manufacturer }
+			equipment_bonus = {
+				
+				medium_tank_equipment = {
+					reliability = 0.05
+					soft_attack = 0.1
+				}
+				
+			}
 
 			ai_will_do = {
 				factor = 1
@@ -1387,7 +1401,9 @@ ideas = {
 			traits = { light_aircraft_manufacturer }
 			
 			equipment_bonus = {
-				
+				fighter_equipment = {
+					build_cost_ic = -0.25 instant = yes
+				}
 			}
 			
 			ai_will_do = {

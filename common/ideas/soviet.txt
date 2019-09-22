@@ -1447,7 +1447,13 @@ ideas = {
 			
 			traits = { fast_tank_manufacturer }
 			
-			modifier = {
+			equipment_bonus = {
+				
+				medium_tank_equipment = {
+					build_cost_ic = -0.15
+					
+				}
+				
 			}
 		}
 		
@@ -1466,7 +1472,13 @@ ideas = {
 			
 			traits = { medium_tank_manufacturer }
 			
-			modifier = {
+			equipment_bonus = {
+				
+				medium_tank_equipment = {
+					build_cost_ic = -0.15
+					
+				}
+				
 			}
 		}
 		

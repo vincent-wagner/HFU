@@ -10,20 +10,15 @@ state={
 	state_category = city
 
 	history={
-		owner = ECU
+		owner = PRU
 		buildings = {
 			
 			8252 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = ECU
-		victory_points = {
-			12798 5
-		}
-		victory_points = {
-			8252 1
-		}
+		
+		
 
 	}
 

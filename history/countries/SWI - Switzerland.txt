@@ -17,7 +17,7 @@ set_technology = {
 }
 
 add_ideas = {
-SWI_swiss_banking
+
 neutral_idea
 }
 

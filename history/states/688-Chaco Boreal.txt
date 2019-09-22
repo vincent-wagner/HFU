@@ -11,9 +11,8 @@ state={
 	}
 
 	history={
-		owner = PAR
+		owner = BRA
 		
-		add_core_of = PAR
 		
 	}
 	

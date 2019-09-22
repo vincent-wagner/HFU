@@ -12,6 +12,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
+	paratroopers = 1 
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -290,7 +291,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-	GER_jaegernotprogramm
+	
 }
 add_ideas = GER_mefo_bills_1
 

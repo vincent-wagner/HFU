@@ -50,9 +50,7 @@ set_stability = 0.8
 	}
 }
 
-add_ideas = {
-BHU_hermetic_kingdom
-}
+ 
 
 set_politics = {
 	ruling_party = neutrality

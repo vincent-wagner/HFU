@@ -12,21 +12,9 @@ state={
 	}
 
 	history={
-		owner = MEX
+		owner = PAN
 		
-		add_core_of = MEX
-		victory_points = {
-			12835 10
-		}
-		victory_points = {
-			10769 5
-		}
-		#victory_points = {
-		#	2060 3
-		#}
-		#victory_points = {
-		#	12811 1
-		#}
+		
 
 	}
 

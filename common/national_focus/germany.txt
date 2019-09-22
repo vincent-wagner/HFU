@@ -1612,13 +1612,9 @@ random_owned_controlled_state = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-				category = rocketry
-			}
+			set_technology = { 
+	        basic_heavy_tank = 1
+                            }
 		}
 	}
 	

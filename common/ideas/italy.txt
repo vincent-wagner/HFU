@@ -136,7 +136,7 @@ ideas = {
 				}
 			}
 			
-			traits = { fascist_demagogue }
+			traits = { silent_workhorse }
 
 			do_effect = {
 				NOT = {
@@ -636,7 +636,15 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { tank_manufacturer }
+			equipment_bonus = {
+				
+				medium_tank_equipment = {
+					reliability = 0.05
+					soft_attack = 0.1
+					
+				}
+				
+			}
 		}
 	}
 	

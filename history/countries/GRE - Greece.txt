@@ -13,7 +13,7 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
-	anti_german_military
+	push_on_limit
 }
 
 set_technology = {

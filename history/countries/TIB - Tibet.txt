@@ -48,7 +48,7 @@ set_technology = {
 }
 
 add_ideas = {
-BHU_hermetic_kingdom
+
 neutral_idea
 }
 

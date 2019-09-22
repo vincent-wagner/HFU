@@ -12,18 +12,9 @@ state={
 
 
 	history={
-		owner = MEX
+		owner = PAN
 		
-		add_core_of = MEX
-		victory_points = {
-			10730 5
-		}
-		victory_points = {
-			4887 3
-		}
-		victory_points = {
-			8032 1
-		}
+		
 	}
 
 	provinces={
