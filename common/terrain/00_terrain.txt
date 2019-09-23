@@ -127,7 +127,7 @@ categories =  {
 			#movement = -0.4
 		}
 		
-		sickness_chance = 1.0
+		
 	}
 	
 	desert = {
@@ -138,7 +138,7 @@ categories =  {
 		match_value = 8
 		sound_type = desert
 		
-		sickness_chance = 1.0
+		
 	}
 	
 	water_fjords = {

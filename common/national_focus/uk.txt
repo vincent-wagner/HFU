@@ -1085,6 +1085,15 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
+			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 6
+				category = air_doctrine
+			}
+			
+			
+			
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0

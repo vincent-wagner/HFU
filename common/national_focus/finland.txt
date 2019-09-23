@@ -1472,7 +1472,7 @@ focus_tree = {
 		id = fin_karelianism
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = fin_liberty_ethos }
-		mutually_exclusive = { focus = fin_neutrality_focus }
+		
 		available = {
 		is_ai = no
 		}
@@ -1488,11 +1488,8 @@ focus_tree = {
 		add_state_core = 213
 		add_state_core = 215
 		add_state_core = 216
-			swap_ideas = {		
-		add_idea = fin_sisu_attack
-		remove_idea = fin_sisu
-			}
-		add_popularity = { ideology = fascism popularity = 0.1 }
+
+		
 		}
 	}
 	
@@ -1500,7 +1497,7 @@ focus_tree = {
 		id = fin_soviet_threat
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = fin_karelianism }
-		mutually_exclusive = { focus = fin_neutrality_focus }
+	
 		available = {
 		is_ai = no
 		}
@@ -1516,14 +1513,14 @@ focus_tree = {
 			add_ideas = extensive_conscription
 			add_popularity = { ideology = fascism popularity = 0.1 }
 			add_manpower = 50000
-			remove_unit_leader = 58
+
 		}
 	}
 	
 	focus = {
 		id = fin_neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
-		mutually_exclusive = { focus = fin_karelianism }
+		
 		prerequisite = { focus = fin_liberty_ethos }
 
 		x = -1
