@@ -1281,10 +1281,18 @@ random_owned_controlled_state = {
 			add_tech_bonus = {
 				name = air_sup_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 6
 				category = battlefield_support_tree
 			}
-
+            add_tech_bonus = {
+				name = fighter_command_focus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
+			
+			
+			}
 				42 = {
 
 					add_building_construction = {
@@ -1389,7 +1397,7 @@ random_owned_controlled_state = {
 		x = -1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1491,7 +1499,7 @@ random_owned_controlled_state = {
 		x = 0
 		y = 2
 		relative_position_id = GER_strategic_air_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1573,7 +1581,7 @@ random_owned_controlled_state = {
 		x = 2
 		y = 1
 		relative_position_id = GER_extra_tech_slot
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1604,7 +1612,7 @@ random_owned_controlled_state = {
 		x = 0
 		y = 1
 		relative_position_id = GER_rocketry_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2368,7 +2376,7 @@ SPR = { country_event = spain.29 }
 		will_lead_to_war_with = FRA
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 499999 } #80 div		
+					
 			NOT = {
 				AND = {
 					CZE = { is_in_faction_with = GER }
@@ -2399,6 +2407,7 @@ SPR = { country_event = spain.29 }
 			factor = 10
 		}	
 		completion_reward = {
+				add_research_slot = 1
 				ENG = {
 					country_event = germany.40
 				}
@@ -2447,7 +2456,7 @@ SPR = { country_event = spain.29 }
 		x = 0
 		y = 1
 		relative_position_id = GER_demand_sudetenland
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -2472,7 +2481,7 @@ SPR = { country_event = spain.29 }
 		prerequisite = { focus = GER_first_vienna_award }
 		available = { 
 			is_puppet = no
-			has_army_manpower = { size > 499999 }
+			
 			NOT = { has_war_with = CZE }
 		}
 

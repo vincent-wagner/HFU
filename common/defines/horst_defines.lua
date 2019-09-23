@@ -14,9 +14,7 @@ NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to
 ---------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
-NDefines.NAir.AIR_NAVAL_KAMIKAZE_DAMAGE_MULT = 60.0				-- up from 20, making Kamikaze more useful in defending Japan | Balancing value to increase usual damage to Strength for Kamikaze   WAS 20
-NDefines.NAir.AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 1.0        			-- Down from 4, which previously killed Japans fighter count against AA ships | Balancing value to increase usual losses if Kamikaze participating in the battle   
-NDefines.NAir.BASE_KAMIKAZE_DAMAGE = 1.0                   				-- Base Kamikaze death rate	   WAS 2		        		
+
 ---------------------------------------------------------------
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                   --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 ---------------------------------------------------------------
@@ -40,18 +38,7 @@ NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- down from 7 |
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
 ---------------------------------------------------------------
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.001						-- down from 0.02 | Chances one ship get damage each hour while on training 		
-NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types   | Strikeforce/Naval Invasion Support now 0 supremacy to avoid free supremacy
-		0.0, -- HOLD
-		1.0, -- PATROL		
-		0.0, -- STRIKE FORCE 
-		0.5, -- CONVOY RAIDING
-		0.5, -- CONVOY ESCORT
-		0.0, -- MINES PLANTING	
-		0.0, -- MINES SWEEPING	
-		0.0, -- TRAIN
-		0.0, -- RESERVE_FLEET
-		0.0, -- NAVAL_INVASION_SUPPORT
-	}
+
 ---------------------------------------------------------------
 NDefines.NAI.DIPLOMACY_REJECTED_WAIT_MONTHS_BASE = 24                --up from 4 | should cut down on AI spam
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0	
@@ -123,7 +110,13 @@ BASE_RESEARCH_SLOTS = 0
 FUEL_LEASE_CONVOY_RATIO = 0.0004
 -------------------------------------
 --Combat
-COMBAT_MINIMUM_TIME = 4
+NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
+NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.5
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 18
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08
+NDefines.NBuildings.INFRA_TO_SUPPLY = 2.5
+NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 18
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.6
 
 
 
@@ -132,7 +125,7 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.4    			
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3    			
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0	
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0		
@@ -142,7 +135,7 @@ NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
 -------------------------------------
 --Air changes
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.13						-- Vanilla 0,10
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15						-- Vanilla 0,10
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2					        --Vanilla 3
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.50	-- Vanilla 0,75
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005

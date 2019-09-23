@@ -39,7 +39,7 @@ technologies = {
 			has_dlc = "Man the Guns"
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -76,7 +76,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		
 		start_year = 1936
 
@@ -121,7 +121,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -158,7 +158,7 @@ technologies = {
 			light_ship_engine_4
 		}
 		
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -190,7 +190,7 @@ technologies = {
 
 		naval_retreat_speed = 0.2
 		
-		research_cost = 0.75
+		research_cost = 0.5
 
 		start_year = 1922
 		
@@ -239,7 +239,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
 		start_year = 1922
 		
@@ -283,7 +283,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
 		start_year = 1936
 		
@@ -326,7 +326,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
 		start_year = 1940
 		
@@ -366,7 +366,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1.5
 
 		start_year = 1944
 		
@@ -405,7 +405,7 @@ technologies = {
 			leads_to_tech = improved_sonar
 			research_cost_coeff = 1
 		}
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1922
 		
@@ -441,7 +441,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = sonar_advice_tt
 		}
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1936
 		
@@ -500,7 +500,7 @@ technologies = {
 			has_dlc = "Man the Guns"
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -548,7 +548,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -590,7 +590,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -627,7 +627,7 @@ technologies = {
 		enable_equipment_modules = { 
 			cruiser_ship_engine_4
 		}
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -666,7 +666,7 @@ technologies = {
 		}
 
 
-		research_cost = 0.75
+		research_cost = 0.5
 
 		start_year = 1936
 		
@@ -714,7 +714,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -762,7 +762,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -804,7 +804,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -862,7 +862,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -912,7 +912,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -961,7 +961,7 @@ technologies = {
 			ship_armor_shbb
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -994,7 +994,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -1031,7 +1031,7 @@ technologies = {
 		enable_equipment_modules = { 
 			heavy_ship_engine_4
 		}
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -1080,7 +1080,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -1124,7 +1124,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -1180,7 +1180,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.75
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -1221,7 +1221,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -1262,7 +1262,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -1298,7 +1298,7 @@ early_ship_hull_carrier = {
 		enable_equipment_modules = { 
 			carrier_ship_engine_4
 		}
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -1334,7 +1334,7 @@ early_ship_hull_carrier = {
 
 	basic_torpedo = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1922
 
@@ -1392,7 +1392,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 
 		start_year = 1936
 
@@ -1456,7 +1456,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 
 		start_year = 1942
 		destroyer = {
@@ -1502,7 +1502,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 
 		start_year = 1940
 
@@ -1533,7 +1533,7 @@ early_ship_hull_carrier = {
 	}
 	improved_ship_torpedo_launcher = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1936
 
@@ -1571,7 +1571,7 @@ early_ship_hull_carrier = {
 	}
 	advanced_ship_torpedo_launcher = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1940
 
@@ -1609,7 +1609,7 @@ early_ship_hull_carrier = {
 	}
 	modern_ship_torpedo_launcher = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1944
 
@@ -1656,7 +1656,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.25
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -1701,7 +1701,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.25
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -1745,12 +1745,12 @@ early_ship_hull_carrier = {
 		
 		allow = {
 			has_game_rule = {
-				rule = horst_sub3_options
-				option = HORST_ENABLE_SUB3
+				rule = spot_sub3_options
+				option = spot_ENABLE_SUB3
 			}
 		}
 		
-		research_cost = 1.25
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -1787,14 +1787,14 @@ early_ship_hull_carrier = {
 			sub_ship_engine_4
 		}
 		
-				allow = {
+		allow = {
 			has_game_rule = {
-				rule = horst_sub4_options
-				option = HORST_ENABLE_SUB4
+				rule = spot_sub4_options
+				option = spot_ENABLE_SUB4
 			}
 		}
 		
-		research_cost = 1.25
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -1833,7 +1833,7 @@ early_ship_hull_carrier = {
 		on_research_complete = {
 			custom_effect_tooltip = snorkel_advice_tt
 		}
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1940
 		
@@ -1880,18 +1880,18 @@ early_ship_hull_carrier = {
 			leads_to_tech = improved_submarine_snorkel
 			research_cost_coeff = 1
 		}
-		
-			allow = {
+
+		allow = {
 			has_game_rule = {
-				rule = horst_snorkel_options
-				option = HORST_ENABLE_SNORKEL2
+				rule = spot_snorkel_options
+				option = spot_ENABLE_SNORKEL2
 			}
 		}
 		
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -1927,7 +1927,7 @@ early_ship_hull_carrier = {
 
 	basic_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1922
 
@@ -1984,7 +1984,7 @@ early_ship_hull_carrier = {
 
 	basic_light_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1936
 
@@ -2027,7 +2027,7 @@ early_ship_hull_carrier = {
 	}
 	improved_light_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1940
 
@@ -2065,7 +2065,7 @@ early_ship_hull_carrier = {
 	}
 	advanced_light_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1944
 
@@ -2101,7 +2101,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 
 		start_year = 1936
 
@@ -2157,7 +2157,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 
 		start_year = 1942
 		
@@ -2206,7 +2206,7 @@ early_ship_hull_carrier = {
 
 	basic_medium_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1936
 
@@ -2250,7 +2250,7 @@ early_ship_hull_carrier = {
 	}
 	improved_medium_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1940
 
@@ -2287,7 +2287,7 @@ early_ship_hull_carrier = {
 	}
 	advanced_medium_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1944
 
@@ -2318,7 +2318,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 
 		start_year = 1936
 
@@ -2358,9 +2358,9 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 
-		start_year = 1940
+		start_year = 1942
 		
 		
 		light_cruiser = {
@@ -2393,7 +2393,7 @@ early_ship_hull_carrier = {
 
 	basic_heavy_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1936
 
@@ -2442,7 +2442,7 @@ early_ship_hull_carrier = {
 	}
 	improved_heavy_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1940
 
@@ -2485,7 +2485,7 @@ early_ship_hull_carrier = {
 	}
 	advanced_heavy_battery = {
 		
-		research_cost = 1
+		research_cost = 0.75
 
 		start_year = 1944
 
@@ -2526,7 +2526,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 
 		start_year = 1938
 
@@ -2568,7 +2568,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 
 		start_year = 1942
 		
@@ -2725,7 +2725,7 @@ early_ship_hull_carrier = {
 
 	damage_control_1 = {
 		
-		research_cost = 2.5
+		research_cost = 2
 		path = {
 			leads_to_tech = damage_control_2
 			research_cost_coeff = 1
@@ -2764,7 +2764,7 @@ early_ship_hull_carrier = {
 
 	damage_control_2 = {
 		
-		research_cost = 2.5
+		research_cost = 2
 		path = {
 			leads_to_tech = damage_control_3
 			research_cost_coeff = 1
@@ -2803,7 +2803,7 @@ early_ship_hull_carrier = {
 
 	damage_control_3 = {
 		
-		research_cost = 2.5
+		research_cost = 2
 		critical_receive_chance = -0.1
 		naval_critical_effect_factor = -0.1
 		xp_research_type = navy
@@ -2846,7 +2846,7 @@ early_ship_hull_carrier = {
 
 	fire_control_methods_1 = {
 		
-		research_cost = 2.5
+		research_cost = 2
 		path = {
 			leads_to_tech = fire_control_methods_2
 			research_cost_coeff = 1
@@ -2888,7 +2888,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 2.5
+		research_cost = 2
 		path = {
 			leads_to_tech = fire_control_methods_3
 			research_cost_coeff = 1
@@ -2930,7 +2930,7 @@ early_ship_hull_carrier = {
 
 	fire_control_methods_3 = {
 		
-		research_cost = 2.5
+		research_cost = 2
 		battleship = {
 			lg_attack = 0.15
 			hg_attack = 0.15
@@ -2983,364 +2983,364 @@ early_ship_hull_carrier = {
 #   #  #  #  # #     # 
 #   # ### #  # ### ##  
 
-#	basic_naval_mines = {
-#		
-#		research_cost = 2
-#
-#		start_year = 1922
-#
-#		path = {
-#			leads_to_tech = improved_naval_mines 
-#			research_cost_coeff = 1
-#		}
-#
-#		path = {
-#			leads_to_tech = submarine_mine_laying
-#			research_cost_coeff = 1
-#		}
-#
-#		enable_equipment_modules = { 
-#			ship_mine_layer_1
-#		}
-#
-#		enable_equipment_modules = { 
-#			ship_mine_sweeper_1
-#		}
-#
-#		folder = {
-#			name = mtgnavalfolder
-#			position = { x = 0 y = 1 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				OR = {
-#					tag = GER
-#					tag = USA
-#					tag = ENG
-#					tag = SOV
-#				}
-#				factor = 6
-#			}
-#			modifier = {
-#				has_war = yes
-#				factor = 2
-#			}
-#			modifier = {
-#				is_major = no
-#				factor = 2
-#			}
-#		}
-#		
-#		categories = {
-#			naval_mines
-#			naval_minelaying
-#			naval_equipment
-#		}
-#	}
-#
-#	submarine_mine_laying = {
-#		
-#		research_cost = 2
-#
-#		start_year = 1922
-#
-#		path = {
-#			leads_to_tech = improved_submarine_mine_laying 
-#			research_cost_coeff = 1
-#		}
-#
-#		enable_equipment_modules = { 
-#			ship_mine_layer_sub
-#		}
-#
-#		folder = {
-#			name = mtgnavalfolder
-#			position = { x = 4 y = 1 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				OR = {
-#					tag = GER
-#					tag = USA
-#					tag = ENG
-#					tag = SOV
-#				}
-#				factor = 6
-#			}
-#		}
-#		
-#		categories = {
-#			naval_mines
-#			naval_minelaying
-#			naval_equipment
-#		}
-#	}
-#
-#	improved_submarine_mine_laying = {
-#		
-#		research_cost = 2
-#
-#		start_year = 1940
-#		
-#		submarine = {
-#			mines_planting = 0.2
-#		}
-#
-#		folder = {
-#			name = mtgnavalfolder
-#			position = { x = 4 y = 14 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1.5
-#			modifier = {
-#				OR = {
-#					tag = GER
-#					tag = USA
-#					tag = ENG
-#					tag = SOV
-#				}
-#				factor = 6
-#			}
-#		}
-#		
-#		categories = {
-#			naval_mines
-#			naval_minelaying
-#			naval_equipment
-#		}
-#	}
-#
-#	improved_naval_mines = {
-#		
-#		research_cost = 2
-#
-#		start_year = 1936
-#
-#		path = {
-#			leads_to_tech = advanced_naval_mines 
-#			research_cost_coeff = 1
-#		}
-#
-#		path = {
-#			leads_to_tech = degaussing
-#			research_cost_coeff = 1
-#		}
-#
-#		
-#		
-#		naval_mines_damage_factor = 0.2 # more boom for the boom box
-#		folder = {
-#			name = mtgnavalfolder
-#			position = { x = 0 y = 7 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				OR = {
-#					tag = GER
-#					tag = USA
-#					tag = ENG
-#					tag = SOV
-#				}
-#				factor = 6
-#			}
-#			modifier = {
-#				has_war = yes
-#				factor = 2
-#			}
-#			modifier = {
-#				is_major = no
-#				factor = 2
-#			}
-#		}
-#		
-#		categories = {
-#			naval_mines
-#			naval_minelaying
-#			naval_equipment
-#		}
-#	}
-#
-#	degaussing = {
-#		
-#		research_cost = 1
-#
-#		start_year = 1938
-#		
-#		naval_mines_effect_reduction = 0.5
-#		
-#		folder = {
-#			name = mtgnavalfolder
-#			position = { x = 2 y = 9 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				OR = {
-#					tag = GER
-#					tag = USA
-#					tag = ENG
-#					tag = SOV
-#				}
-#				factor = 5
-#			}
-#		}
-#		
-#		categories = {
-#			naval_mines
-#			naval_minesweeping
-#			naval_equipment
-#		}
-#	}
-#
-#	advanced_naval_mines = {
-#		
-#		research_cost = 2
-#
-#		start_year = 1942
-#
-#		path = {
-#			leads_to_tech = modern_naval_mines 
-#			research_cost_coeff = 1
-#		}
-#
-#		path = {
-#			leads_to_tech = airdrop_mines
-#			research_cost_coeff = 1
-#		}
-#
-#		naval_mines_damage_factor = 0.2 # more boom for the boom box
-#		folder = {
-#			name = mtgnavalfolder
-#			position = { x = 0 y = 14 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				OR = {
-#					tag = USA
-#					tag = ENG
-#				}
-#				factor = 5
-#			}
-#		}
-#		
-#		categories = {
-#			naval_mines
-#			naval_minelaying
-#			naval_equipment
-#		}
-#	}
-#
-#	airdrop_mines = {
-#		
-#		research_cost = 2
-#
-#		start_year = 1942
-#
-#		category_nav_bomber = { 
-#			mines_planting = 0.05 
-#		}
-#		category_tac_bomber = { 
-#			mines_planting = 0.08 
-#		}
-#		category_strat_bomber = { 
-#			mines_planting = 0.13 
-#		}
-#
-#		folder = {
-#			name = mtgnavalfolder
-#			position = { x = 2 y = 14 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				OR = {
-#					tag = GER
-#					tag = USA
-#					tag = ENG
-#				}
-#				factor = 7
-#			}
-#		}
-#		
-#		categories = {
-#			naval_mines
-#			naval_minelaying
-#			naval_equipment
-#		}
-#	}
-#
-#	modern_naval_mines = {
-#		
-#		research_cost = 2
-#
-#		start_year = 1945
-#
-#		path = {
-#			leads_to_tech = airsweep_mines
-#			research_cost_coeff = 1
-#		}
-#
-#		naval_mines_damage_factor = 0.2 # more boom for the boom box
-#		folder = {
-#			name = mtgnavalfolder
-#			position = { x = 0 y = 19 }
-#		}
-#		
-#		ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				tag = USA
-#				factor = 3
-#			}
-#		}
-#		
-#		categories = {
-#			naval_mines
-#			naval_minelaying
-#			naval_equipment
-#		}
-#	}
-#
-#	airsweep_mines = {
-#		
-#		research_cost = 2
-#
-#		start_year = 1944
-#
-#		category_nav_bomber = { 
-#			mines_sweeping = 0.1 
-#		}
-#		
-#		category_tac_bomber = { 
-#			mines_sweeping = 0.15 
-#		}
-#
-	#	folder = {
-	#		name = mtgnavalfolder
-	#		position = { x = 2 y = 19 }
-	#	}
-	#	
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#	
-	#	categories = {
-	#		naval_mines
-	#		naval_minesweeping
-	#		naval_equipment
-	#	}
-	#}
+	basic_naval_mines = {
+		
+		research_cost = 1
+
+		start_year = 1922
+
+		path = {
+			leads_to_tech = improved_naval_mines 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = submarine_mine_laying
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_mine_layer_1
+		}
+
+		enable_equipment_modules = { 
+			ship_mine_sweeper_1
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 6
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	submarine_mine_laying = {
+		
+		research_cost = 1
+
+		start_year = 1922
+
+		path = {
+			leads_to_tech = improved_submarine_mine_laying 
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_mine_layer_sub
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 6
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	improved_submarine_mine_laying = {
+		
+		research_cost = 1
+
+		start_year = 1940
+		
+		submarine = {
+			mines_planting = 0.2
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 6
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	improved_naval_mines = {
+		
+		research_cost = 1
+
+		start_year = 1936
+
+		path = {
+			leads_to_tech = advanced_naval_mines 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = degaussing
+			research_cost_coeff = 1
+		}
+
+		
+		
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 6
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	degaussing = {
+		
+		research_cost = 0.75
+
+		start_year = 1938
+		
+		naval_mines_effect_reduction = 0.5
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minesweeping
+			naval_equipment
+		}
+	}
+
+	advanced_naval_mines = {
+		
+		research_cost = 1
+
+		start_year = 1942
+
+		path = {
+			leads_to_tech = modern_naval_mines 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = airdrop_mines
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = USA
+					tag = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	airdrop_mines = {
+		
+		research_cost = 1
+
+		start_year = 1942
+
+		category_nav_bomber = { 
+			mines_planting = 0.05 
+		}
+		category_tac_bomber = { 
+			mines_planting = 0.08 
+		}
+		category_strat_bomber = { 
+			mines_planting = 0.13 
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+				}
+				factor = 7
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	modern_naval_mines = {
+		
+		research_cost = 1
+
+		start_year = 1945
+
+		path = {
+			leads_to_tech = airsweep_mines
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 3
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	airsweep_mines = {
+		
+		research_cost = 1
+
+		start_year = 1944
+
+		category_nav_bomber = { 
+			mines_sweeping = 0.1 
+		}
+		
+		category_tac_bomber = { 
+			mines_sweeping = 0.15 
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_mines
+			naval_minesweeping
+			naval_equipment
+		}
+	}
 
 	mtg_transport = { #WHEN BALANCING - ALSO FIX REGULAR NAVAL TREE
 
@@ -3352,7 +3352,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1922
 
 		folder = {
@@ -3405,12 +3405,12 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
-		start_year = 1940
+		research_cost = 1
+		start_year = 1939
 		
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 13 }
+			position = { x = 0 y = 11 }
 		}
 		
 		ai_will_do = {
@@ -3462,11 +3462,11 @@ early_ship_hull_carrier = {
 		amphibious_invasion_defence = 0.5
 		naval_invasion_capacity = 100
 
-		research_cost = 2
-		start_year = 1944
+		research_cost = 1
+		start_year = 1942
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 19 }
+			position = { x = 0 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -3509,7 +3509,7 @@ early_ship_hull_carrier = {
 			ship_hull_cruiser_panzerschiff
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 		start_year = 1936
 
 		#set at gamestart
@@ -3523,7 +3523,7 @@ early_ship_hull_carrier = {
 			ship_hull_torpedo_cruiser
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 		start_year = 1936
 
 		#set at gamestart
@@ -3537,7 +3537,7 @@ early_ship_hull_carrier = {
 			ship_hull_pre_dreadnought
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 		start_year = 1936
 
 		#set at gamestart
@@ -3551,7 +3551,7 @@ early_ship_hull_carrier = {
 			ship_hull_cruiser_coastal_defense_ship
 		}
 
-		research_cost = 1
+		research_cost = 0.75
 		start_year = 1936
 
 		#set at gamestart
@@ -3567,7 +3567,7 @@ early_ship_hull_carrier = {
 		enable_equipment_modules = { 
 			ship_extra_fuel_tank
 		}
-		research_cost = 1
+		research_cost = 0.75
 		start_year = 1936
 
 		#set at gamestart
