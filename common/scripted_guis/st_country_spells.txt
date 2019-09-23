@@ -1,0 +1,97 @@
+scripted_gui = {
+	
+	st_country_powers = {
+	
+		context_type = selected_country_context
+		
+		window_name = "st_subject_powers_container"
+		
+		visible = {
+			ROOT = {
+				has_country_flag = host
+				has_country_flag = transfer_enabled
+			}
+		}
+		
+		effects = {
+		
+			observer_click = {
+				set_temp_variable = { ROOT.marks = this}
+				DDR = {change_tag_from =var:marks
+					
+				}
+			}
+		
+			mark_colonial_states_click  = {
+				set_temp_variable = { ROOT.marks = this}
+				var:marks = {
+					declare_war_on = { target = BOL type = annex_everything }
+           				 every_enemy_country = { white_peace = PREV }
+					}
+				
+			}
+		
+			clear_all_markings_click = {
+				ROOT = { 
+					set_variable = { marked_states = 0 }
+				}
+				every_state = {
+					limit = {
+						has_state_flag = marked_for_transfer
+						is_owned_and_controlled_by = ROOT
+					}
+					clr_state_flag = marked_for_transfer
+					#set_demilitarized_zone = no
+				}
+			}
+			
+			award_states_click = {
+				ROOT = { 
+					set_variable = { marked_states = 0 }
+				}
+				set_temp_variable = { ROOT.taker = this}
+				every_state = {
+					limit = {
+						has_state_flag = marked_for_transfer
+						
+					}
+					var:taker = { transfer_state = PREV }
+					clr_state_flag = marked_for_transfer
+					#set_demilitarized_zone = no
+				}
+			}
+		}
+		
+		triggers = {
+		
+			observer_click_enabled = {
+				any_owned_state = {
+					NOT = { has_state_flag = marked_for_transfer }
+				}
+			}
+			
+			observer_visible = {
+				
+			}
+		
+			mark_colonial_states_click_enabled = {
+				
+			}
+			
+			mark_colonial_states_visible = {
+				
+			}
+			
+			clear_all_markings_click_enabled = {
+				check_variable = { ROOT.marked_states > 0 }
+			}
+		
+			award_states_click_enabled = {
+				check_variable = { ROOT.marked_states > 0 }
+			}
+		
+		}
+        
+	}
+}
+
