@@ -144,6 +144,32 @@ create_country_leader = {
 			#
 		}
 	}	
+    
+	create_corps_commander = {
+	name = "Plaek Phibunsongkhram"
+	portrait_path = "plaekphibunsongkhram.tga"
+	traits = { infantry_leader jungle_rat }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Phraya Phahon"
+	portrait_path = "Portrait_Siam_Phraya_Phahon.dds"
+	traits = { organizer }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+
+
+
 
 1939.1.1 = {
 	set_politics = {

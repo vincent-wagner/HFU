@@ -108,6 +108,7 @@ NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --max building slots in a state
 BASE_RESEARCH_SLOTS = 0
 FUEL_LEASE_CONVOY_RATIO = 0.0004
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 -------------------------------------
 --Combat
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
@@ -116,12 +117,13 @@ NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 18
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08
 NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
-NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 6
-NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 18
+NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
+NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 11
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.6
+NDefines.NMilitary.SLOWEST_SPEED = 3
 
-
-
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
@@ -137,15 +139,16 @@ NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
 -------------------------------------
 --Air changes
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15						-- Vanilla 0,10
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.18						-- Vanilla 0,10
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2					        --Vanilla 3
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.50	-- Vanilla 0,75
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
-NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.15				--Vanilla 0,2
-NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.1					-- Vanilla 0,1
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.7                         --Vanilla 0,9
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.23    --Vanilla 0.3
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.5          --Vanilla -0.35
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3    --Vanilla 0.3
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.65          --Vanilla -0.35
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 400.0
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.6                --Vanilla 0.8
 	

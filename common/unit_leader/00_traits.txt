@@ -267,10 +267,10 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			org_loss_when_moving = -0.30
+			org_loss_when_moving = -0.40
 		}
 		
-		attack_skill = 1
+		
 		
 		ai_will_do = {
 			factor = 1

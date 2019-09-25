@@ -37,14 +37,15 @@ sub_units = {
 		soft_attack = 0.5
 
 		forest = {
-		    attack = -0.3
+		    attack = -0.2
 			movement = -0.4
 		}
 		hills = 	{
 		    attack = -0.1
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.3
+			defence= -0.1
 		}
 		jungle = {
 		    attack = -0.4
