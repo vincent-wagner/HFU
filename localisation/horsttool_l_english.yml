@@ -14,7 +14,7 @@
  CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed\n\n"
  CLEAR_ALL_MARKINGS_DELAYED:0 ""
 
- TRANSFER_STATES:0 "§HTransfer States§!\nTransfer marked states to this country\n\n"
+ TRANSFER_STATES:0 "§HTransfer States§!\nTransfer ownership of marked states to this country\n\n"
  TRANSFER_STATES_DELAYED:0 ""
  
  ADD_CORES:0 "§HAdd cores§!\nAdd cores to marked states for this country\n\n"
