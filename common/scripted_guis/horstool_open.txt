@@ -1,16 +1,16 @@
 scripted_gui = {
 
-	st_open = {
+	tool_open= {
 		context_type = player_context
 
-		window_name = "st_open_container"
+		window_name = "horsttool_open_container"
 		visible = {
 		has_country_flag = host
 			NOT = { has_country_flag = hidden_switch }
 		}
 
 		effects = {
-			open_ST_click = {
+			tool_open_click = {
 				if = {
 					limit = { ROOT = { NOT = { has_country_flag = transfer_enabled } } }
 					ROOT = { set_country_flag = transfer_enabled }
@@ -21,23 +21,23 @@ scripted_gui = {
 			}
 		}
 		triggers = {
-			open_ST_click_enabled = {
+			tool_open_click_enabled = {
 				always = yes
 			}
 		}
 	}
 	
-	st_hide = {
+	tool_close = {
 		context_type = player_context
 
-		window_name = "st_hide_container"
+		window_name = "horsttool_close_container"
 
 		visible = {
 			always = yes
 		}
 
 		effects = {
-			hide_ST_click = {
+			tool_close_click = {
 				if = {
 					limit = { NOT = { has_country_flag = hidden_switch } }
 					set_country_flag = hidden_switch
@@ -48,7 +48,7 @@ scripted_gui = {
 			}
 		}
 		triggers = {
-			hide_ST_click_enabled = {
+			tool_close_click_enabled = {
 				always = yes
 			}
 		}
