@@ -3,7 +3,7 @@ fascism_on_the_rise = {
 	open_up_political_discourse_fascism = {
 
 		icon = generic_political_discourse
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		available = {
 			fascism < 0.9
 			democratic < 0.9
@@ -38,7 +38,7 @@ fascism_on_the_rise = {
 	hold_the_fascist_national_referendum = {
 
 		icon = generic_political_discourse
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		available = {
 			fascism > 0.5
 		}
@@ -80,7 +80,7 @@ fascism_on_the_rise = {
 democratic_on_the_rise = {
 
 	open_up_political_discourse_democratic = {
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		icon = generic_political_discourse
 
 		available = {
@@ -114,7 +114,7 @@ democratic_on_the_rise = {
 	}
 	
 	hold_the_democratic_national_referendum = {
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		icon = generic_political_discourse
 
 		available = {
@@ -156,11 +156,11 @@ democratic_on_the_rise = {
 }
 
 communism_on_the_rise = {
-
+	
 	open_up_political_discourse_communist = {
 
 		icon = generic_political_discourse
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		available = {
 			fascism < 0.9
 			democratic < 0.9
@@ -192,9 +192,9 @@ communism_on_the_rise = {
 	}
 	
 	hold_the_communist_national_referendum = {
-
+		
 		icon = generic_political_discourse
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		available = {
 			communism > 0.5
 		}
@@ -291,9 +291,9 @@ political_actions = {
 		}
     }
     give_refuge_ita = {
-
+	
     	icon = generic_research
-
+	
         allowed = {
             OR = {
                 original_tag = ENG
@@ -337,7 +337,7 @@ political_actions = {
     anti_fascist_raids = {
 
     	icon = generic_civil_support
-
+	allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
     	visible = {
 			NOT = { has_government = fascism }
 		}
@@ -381,7 +381,7 @@ political_actions = {
     anti_democratic_raids = {
 
     	icon = generic_civil_support
-
+	allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
     	visible = {
 			NOT = { has_government = democratic }
 		}
@@ -411,7 +411,7 @@ political_actions = {
     }
 
     anti_communist_raids = {
-
+	allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
     	icon = generic_civil_support
 
     	visible = {
@@ -445,7 +445,7 @@ political_actions = {
 	ban_fascist_party = {
 
 		icon = generic_civil_support
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		available = {
 			fascism < 0.2
 		}
@@ -495,7 +495,7 @@ political_actions = {
 	ban_democratic_party = {
 
 		icon = generic_civil_support
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		available = {
 			democratic < 0.2
 		}
@@ -545,7 +545,7 @@ political_actions = {
 	ban_communist_party = {
 
 		icon = generic_civil_support
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		available = {
 			communism < 0.2
 		}
@@ -599,7 +599,7 @@ political_actions = {
 	institute_press_censorship_fascist_state = {
 
 		icon = generic_political_discourse
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		visible = {
 			has_government = fascism
 		}
@@ -622,7 +622,7 @@ political_actions = {
 	institute_press_censorship_democratic_state = {
 
 		icon = generic_political_discourse
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		visible = {
 			has_government = democratic
 		}
@@ -645,7 +645,7 @@ political_actions = {
 	institute_press_censorship_communist_state = {
 
 		icon = generic_political_discourse
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		visible = {
 			has_government = communism
 		}
@@ -668,7 +668,7 @@ political_actions = {
 	institute_press_censorship_neutrality_state = {
 
 		icon = generic_political_discourse
-
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
 		visible = {
 			has_government = neutrality
 		}
