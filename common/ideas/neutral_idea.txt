@@ -1,4 +1,6 @@
-country={neutral_idea = {
+ideas={
+country={
+		neutral_idea = {
 			
 			
 			
@@ -24,4 +26,4 @@ country={neutral_idea = {
 			
 			}
 		}
-}
+}}

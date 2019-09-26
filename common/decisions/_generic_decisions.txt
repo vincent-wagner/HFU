@@ -64,7 +64,7 @@ political_actions = {
 	improved_worker_conditions = {
 
 		icon = generic_industry
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR} }
 		available = {
 			has_stability < 1.0
 		}
@@ -102,7 +102,7 @@ political_actions = {
 	promises_of_peace = {
 
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
 		available = {
 			has_war = no
 			has_war_support > 0.2
@@ -197,7 +197,7 @@ propaganda_efforts = {
 	war_propaganda = {
 
 		icon = generic_prepare_civil_war
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
 			threat > 0.5
@@ -308,7 +308,7 @@ propaganda_efforts = {
 
 	#Propaganda campaign against a neighbor
 	war_propaganda_against_warmonger_neighbor = {
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
 		icon = generic_prepare_civil_war
 
 		available = {
@@ -945,7 +945,7 @@ special_projects = {
 	rebuild_suez_canal = {
 
 		icon = GFX_decision_generic_special_project
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
 		available = {
 			has_full_control_of_state = 446
 			has_full_control_of_state = 453
@@ -1090,7 +1090,7 @@ special_projects = {
 war_measures = {
 	
 	emergency_factory_conversion_defensive = {
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
 		icon = generic_industry
 
 		available = {
@@ -1120,7 +1120,7 @@ war_measures = {
 	emergency_factory_conversion_offensive = {
 
 		icon = generic_industry
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
 		available = {
 			num_of_civilian_factories > 5 #Change this if amount of factories change
 		}
@@ -1148,7 +1148,7 @@ war_measures = {
 	desperate_defense = {
 
 		icon = generic_prepare_civil_war
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
 		available = {
 			surrender_progress > 0.5
 		}
@@ -1372,7 +1372,7 @@ economy_decisions = {
 
 		icon = generic_construction
 
-        allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+        allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
 
         cost = 100
         fire_only_once = no
@@ -1434,7 +1434,7 @@ economy_decisions = {
 
     	icon = generic_construction
 
-        allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU } }
+        allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
 
         cost = 50
         fire_only_once = no

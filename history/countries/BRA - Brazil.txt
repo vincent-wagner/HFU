@@ -169,7 +169,9 @@ create_country_leader = {
 	}
 }
 
-
+add_ideas = {
+neutral_idea
+}
 set_convoys = 40
 
 1939.1.1 = {

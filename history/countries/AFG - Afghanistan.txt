@@ -13,7 +13,7 @@ set_technology = {
 }
 
 add_ideas = {
-
+neutral_idea
 }
 
 1939.1.1 = {
