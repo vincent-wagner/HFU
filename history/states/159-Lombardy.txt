@@ -4,6 +4,21 @@ state={
 	name="STATE_159"
 	manpower = 5597704
 	state_category = metropolis
+   
+   
+    resources={
+		steel=25 # was: 12
+		tungsten = 20 # was: 20
+	}
+
+
+
+
+
+
+
+
+
 
 	history={
 		owner = ITA
