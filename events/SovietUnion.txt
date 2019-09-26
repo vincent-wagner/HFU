@@ -925,7 +925,7 @@ country_event ={
 	}
 	mean_time_to_happen = {days = 1}
 	immediate = {
-		sov = {
+		SOV = {
 			country_event = { id = soviet.1488 days = 10 } 
 		}
 	}

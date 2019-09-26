@@ -9,16 +9,16 @@ state={
 	history={
 		owner = BRA
 		add_core_of = BRA
-		
-		victory_points = {
-			10980 10
-		}
-	}
-buildings = {
+		buildings = {
 			infrastructure = 1
 			
 			
 		}
+		victory_points = {
+			10980 10
+		}
+	}
+	
 
 
 
