@@ -310,10 +310,10 @@ SOV = { country_event = { id = afghanistan.3 } }
 	
 	SOV_surrender_per = {
 			available = {
-			PER = { surrender_progress > 0.1 }
+			PER = { surrender_progress > 0.2 }
 			
 			}
-
+			
 			allowed = {
 				tag = SOV
 			}
@@ -322,10 +322,9 @@ SOV = { country_event = { id = afghanistan.3 } }
 			fire_only_once = yes
 
 			cost = 0
-
-			visible = {
-		PER = { has_war_with = SOV }
-		}
+			days_mission_timeout = 100   
+			#activation = {has_war_with = PER }
+		
 		
 			complete_effect = {
 			   
@@ -341,7 +340,7 @@ ENG = { country_event = { id = iran.3 } }
 				
 					SOV_surrender_fin = {
 available = {
-			FIN = { surrender_progress > 0.2 }
+			FIN = { surrender_progress > 0.8 }
 			date < 1940.5.1
 			}
 
@@ -361,7 +360,7 @@ available = {
 			complete_effect = {
 			      SOV = { white_peace = FIN }
 FIN = { white_peace = SOV }
-
+SOV={transfer_state = 146 transfer_state= 147}
 SOV = { country_event = { id = finland.8 } }
 
 		}

@@ -922,7 +922,7 @@
 		}
 		completion_reward = {
 				custom_effect_tooltip = SOV_southern_thrust_tt
-
+				activate_targeted_decision = { target = SOV decision = SOV_surrender_per }
 				create_wargoal = {
 					type = take_state_focus
 					target = PER
