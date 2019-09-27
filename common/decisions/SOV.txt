@@ -309,7 +309,7 @@ SOV = { country_event = { id = afghanistan.3 } }
 	
 	
 	SOV_surrender_per = {
-available = {
+			available = {
 			PER = { surrender_progress > 0.1 }
 			
 			}

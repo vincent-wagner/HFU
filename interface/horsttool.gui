@@ -252,7 +252,6 @@ guiTypes = {
 		instantTextboxType = {
 			name = "marking"
 			position = { x=174 y=20 }
-			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
 			text = "[This.mark_state_tooltip]"

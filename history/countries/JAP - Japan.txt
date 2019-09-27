@@ -28,7 +28,7 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	add_ideas = MTG_naval_treaty_adherent
+	
 }
 
 set_technology = {

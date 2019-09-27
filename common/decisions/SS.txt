@@ -18,12 +18,12 @@ SS_demands = {
 			create_field_marshal = {
 				name = "Heinrich Himmler"
 				picture = "Portrait_Germany_Heinrich_Himmler.dds"
-				traits = { politically_connected }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
+				traits = { politically_connected defective_geneseed }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 6
 			}
 		}
 	}
