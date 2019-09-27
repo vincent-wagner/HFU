@@ -34,7 +34,7 @@ focus_tree = {
 		NOR = { set_rule = { can_join_factions = no }}
 		}
 		SPR = { country_event = { id = spain.1 } }
-		MEX = { country_event = mexico.15 }
+		
 		
 		if = { 
 		 limit =  
@@ -73,9 +73,7 @@ focus_tree = {
 		relative_position_id = NDA_anti_meme
 		available_if_capitulated = yes
 	
-		completion_reward = {
-				MEX = { country_event = mexico.17 }
-		}
+		
 		}
 		
 		focus = {
@@ -109,9 +107,7 @@ focus_tree = {
 		relative_position_id = NDA_resource11
 		available_if_capitulated = yes
 	
-		completion_reward = {
-		MEX = { country_event = mexico.27 }
-		}
+		
 		}
 		
 		
@@ -534,7 +530,7 @@ remove_state_core = 74
 		completion_reward = {
 		if = { 
 		limit = { MEX = { has_government = democratic  } }
-		MEX = { country_event = mexico.32 } 
+		
 		
 		
 		}
