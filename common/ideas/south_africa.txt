@@ -547,7 +547,7 @@ ideas = {
 				original_tag = SAF
 			}
 			
-			traits = { backroom_backstabber }
+			traits = { war_industrialist }
 			ai_will_do = {
 				factor = 0
 			}

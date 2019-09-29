@@ -1272,7 +1272,7 @@ focus_tree = {
 		x = 22
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1313,7 +1313,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1357,7 +1357,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1394,7 +1394,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

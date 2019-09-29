@@ -421,7 +421,7 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 			
-			traits = { democratic_reformer }
+		traits = { captain_of_industry }
 		}
 
 
@@ -549,7 +549,7 @@ high_command = {
 				has_completed_focus = AST_australian_army_catering_corps
 			}
 
-		traits = { army_logistics_2 }
+		traits = { army_armored_2}
 		
 		ai_will_do = {
 			factor = 1

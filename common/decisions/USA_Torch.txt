@@ -3,18 +3,19 @@ operations = {
 		icon = generic_operation
 		available = {
 			has_war_with = GER
-			Date > 1941.1.1
-			#has_completed_focus = USA_Torch_Focus
+			Date > 1940.1.1
+			FRA = { has_capitulated = yes}
 		}
 		visible = {
-			tag = USA
-			Date > 1940.7.1
+			
+			tag = uk
+			Date > 1939.1.1
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		fire_only_once = yes
-		days_remove = 30
+		days_remove = 20
 		complete_effect = {declare_war_on = {
 				target = EFR
 				type = annex_everything
@@ -23,8 +24,14 @@ operations = {
 			
 		}
 		remove_effect = {
-			
+			ITA = { transfer_state = 665
+			        transfer_state = 1
+					transfer_state = 458
+					transfer_state = 32
+                    transfer_state = 21				
+					}
 			GER = { puppet = EFR }
+			EFR = { remove_ideas = EFR_neutrality_idea}
 		}
 	}
 }

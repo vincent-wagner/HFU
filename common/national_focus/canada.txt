@@ -70,7 +70,7 @@ focus_tree = {
 		x = 0
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 24
@@ -104,7 +104,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -142,7 +142,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 75
@@ -194,7 +194,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_national_housing_act_IC
@@ -535,7 +535,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -785,12 +785,12 @@ focus_tree = {
 			682 = {
 				add_resource = {
 					type = steel
-					amount = 4
+					amount = 20
 				}
 
 				add_resource = {
-					type = chromium
-					amount = 3
+					type = tungsten
+					amount = 15
 				}
 			}
 		}
@@ -2149,7 +2149,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = armor
 			}
 			add_tech_bonus = {
@@ -2173,7 +2173,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -2219,7 +2219,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 35
@@ -2342,7 +2342,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 35
@@ -2379,7 +2379,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2414,7 +2414,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2456,7 +2456,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2496,7 +2496,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2526,13 +2526,13 @@ focus_tree = {
 			466 = {
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 14
 				}
 			}
 			468 = {
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 14
 				}
 			}
 		}
@@ -3019,7 +3019,7 @@ focus_tree = {
 		x = 28
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9

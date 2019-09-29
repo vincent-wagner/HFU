@@ -310,7 +310,7 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.10
+				
 				defense_bonus_against = 0.05
 			}
 			targeted_modifier = {
@@ -335,7 +335,7 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.10
+				
 				defense_bonus_against = 0.05
 			}
 		}

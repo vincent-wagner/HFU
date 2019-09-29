@@ -1716,10 +1716,10 @@ focus_tree = {
 					}
 					not = { state = 674 }
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = AST_south_australian_housing_trust_IC
@@ -2084,7 +2084,7 @@ focus_tree = {
 		x = 22
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -2670,7 +2670,7 @@ focus_tree = {
 		x = 28
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2729,7 +2729,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2782,7 +2782,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2825,7 +2825,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2971,7 +2971,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

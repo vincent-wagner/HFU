@@ -287,7 +287,7 @@ equipments = {
 		air_attack = 36
 		air_defence = 13
 		
-		# build_cost_ic = 16
+		# build_cost_ic = 32
 		naval_strike_attack = 3
 		naval_strike_targetting = 6
 	}
@@ -305,7 +305,7 @@ equipments = {
 		air_attack = 46
 		air_defence = 15
 		
-		build_cost_ic = 30
+		build_cost_ic = 60
 		resources = {
 			#oil = 1			
 			aluminium = 3
@@ -328,7 +328,7 @@ equipments = {
 		air_attack = 54
 		air_defence = 18
 		
-		build_cost_ic = 32
+		build_cost_ic = 64
 		resources = {
 			#oil = 1			
 			aluminium = 4

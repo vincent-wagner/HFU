@@ -676,9 +676,7 @@
 				bonus = 1.0
 				uses = 2
 				category = light_air
-				category = medium_air
-				category = heavy_air
-				category = naval_air
+				
 			}
 		}
 	}
@@ -767,7 +765,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1.0
-				uses = 1
+				uses = 6
 				category = air_doctrine
 			}
 		}

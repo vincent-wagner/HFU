@@ -1060,11 +1060,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
-			OR = {
-				has_war = yes
-				has_war_support > 0.3
-			}
-			democratic > 0.95
+		date > 1940.1.1
 		}
 		continue_if_invalid = yes
 		x = 0
@@ -1110,7 +1106,10 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_the_giant_wakes
-		cost = 10
+		cost = 5
+		available = {
+		USA = {has_war = yes }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1122,6 +1121,7 @@ focus_tree = {
 			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
+			add_ideas = war_economy
 		}
 	}
 	

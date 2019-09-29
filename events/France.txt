@@ -93,47 +93,8 @@ country_event = {
 				FRA = {
 					
 					set_cosmetic_tag = FRA_FREE
-			
-					create_corps_commander = {
-						name = "Charles De Gaulle"
-						picture = "Portrait_France_Charles_De_Gaulle.dds"
-						traits = { armor_officer harsh_leader media_personality trait_reckless panzer_leader exiled_leader }
-						skill = 6
-						attack_skill = 5
-						defense_skill = 6
-						planning_skill = 3
-						logistics_skill = 4
-					}
-					create_field_marshal = {
-						name = "Philippe Leclerc"
-						picture = "portrait_france_philippe_leclerc.dds"
-						traits = { armor_officer trait_reckless career_officer politically_connected panzer_leader skilled_staffer organizer exiled_leader }
-						skill = 5
-						attack_skill = 4
-						defense_skill = 3
-						planning_skill = 3
-						logistics_skill = 6
-					}
-					create_corps_commander = {
-						name = "Marie-Pierre Koenig"
-						picture = "Portrait_France_Marie_Pierre_Koenig.dds"
-						traits = { trickster trait_mountaineer infantry_leader infantry_officer career_officer harsh_leader exiled_leader }
-						skill = 5
-						attack_skill = 5
-						defense_skill = 3
-						planning_skill = 4
-						logistics_skill = 4
-					}
-					create_corps_commander = {
-						name = "Edgard de Larminat"
-						picture = "Portrait_France_Generic_land_4.dds"
-						traits = { desert_fox war_hero politically_connected trait_reckless cavalry_leader armor_officer exiled_leader }
-						skill = 4
-						attack_skill = 5
-						defense_skill = 3
-						planning_skill = 1
-						logistics_skill = 4
-					}
+			        
+					
 					create_navy_leader = {
 						name = "Émile Muselier"
 						picture = "Portrait_France_Emile_Muselier.dds"
@@ -152,6 +113,10 @@ country_event = {
 				ITA = { transfer_state = 735}
 			    
 				EFR = {
+				
+				
+				    add_ideas = extensive_conscription
+					add_ideas = partial_economic_mobilisation
 					transfer_state = 26
 					transfer_state = 22
 					transfer_state = 31
@@ -160,6 +125,7 @@ country_event = {
 					transfer_state = 33
 					transfer_state = 32
 					transfer_state = 21
+					transfer_state = 1
 					#Northern Africa
 					transfer_state = 513
 					transfer_state = 458
@@ -169,6 +135,29 @@ country_event = {
 					transfer_state = 462
 					transfer_state = 665
 					transfer_state = 514
+					transfer_state = 776
+					transfer_state = 781
+					transfer_state = 777
+					transfer_state = 778
+					transfer_state = 556
+					transfer_state = 779
+					transfer_state = 298
+					transfer_state = 780
+					transfer_state = 272
+					transfer_state = 557
+					transfer_state = 268
+					transfer_state = 786
+					transfer_state = 782
+					transfer_state = 515
+					transfer_state = 775
+					transfer_state = 553
+					transfer_state = 554
+					transfer_state = 680
+					transfer_state = 677
+					transfer_state = 296
+					
+					
+					
 					set_capital = 26
 					add_ideas = EFR_neutrality_idea
 					diplomatic_relation = { country = ENG relation = non_aggression_pact }
