@@ -104,6 +104,18 @@ NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 
 --HFU defines:
 
+
+
+--genearls
+NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0
+NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 0.0
+NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0
+NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0000
+
+
+
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --max building slots in a state
 BASE_RESEARCH_SLOTS = 0
@@ -119,7 +131,7 @@ NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 11
-NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.6
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.3
 NDefines.NMilitary.SLOWEST_SPEED = 3
 
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999
@@ -140,7 +152,7 @@ NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
 --Air changes
 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.18						-- Vanilla 0,10
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.14						-- Vanilla 0,10
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2					        --Vanilla 3
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.50	-- Vanilla 0,75
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005

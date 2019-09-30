@@ -12,9 +12,9 @@ ideas = {
 		
 			modifier = {
 				consumer_goods_factor = 0.50
-				production_speed_industrial_complex_factor = 0.5
-				production_speed_arms_factory_factor = -0.5
-				production_speed_dockyard_factor = -0.5
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_arms_factory_factor = -0.8
+				production_speed_dockyard_factor = -0.4
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
@@ -28,8 +28,7 @@ ideas = {
 			
 			allowed_to_remove = {
 				OR = {
-					has_war_support > 0.5
-					has_war = yes
+					
 					has_completed_focus = USA_limited_intervention
 				}
 			}
@@ -95,6 +94,7 @@ ideas = {
 		low_economic_mobilisation = {
 			
 			available = {
+				NOT = {	tag = USA }
 				has_war_support > 0.15
 				if = {
 					limit = {
@@ -160,7 +160,9 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.25
-
+              
+				NOT = {	tag = USA }
+			
 				if = {
 					limit = {
 						original_tag = HUN
