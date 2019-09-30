@@ -94,11 +94,24 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+    immediate = {create_corps_commander = {
+	name = "Francisco Franco"
+	id = 1490
+		picture = "Portrait_Spain_Francisco_Franco.dds"
+	traits = {  panzer_leader panzer_expert  trickster expert_improviser  }
+	skill = 5
 
+	
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}}
 	option = {
 		ai_chance = { factor = 1 }
 		name = spain.8.a
 		set_capital = 41
+		
 	}
 
 }
