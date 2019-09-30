@@ -142,12 +142,7 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3    			
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0	
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0		
-NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0	
-NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20			
-NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20		
+		
 -------------------------------------
 --Air changes
 
@@ -156,9 +151,9 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.14						-- Vanilla 0,10
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2					        --Vanilla 3
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.50	-- Vanilla 0,75
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
-NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
-NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
-NDefines.NNavy.ANTI_AIR_TARGETING = 0.7                         --Vanilla 0,9
+#NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
+#NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
+#NDefines.NNavy.ANTI_AIR_TARGETING = 0.7                         --Vanilla 0,9
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3    --Vanilla 0.3
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.65          --Vanilla -0.35
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 400.0
