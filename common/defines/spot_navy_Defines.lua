@@ -87,7 +87,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		0.0, -- NAVAL_INVASION_SUPPORT
 	}
 
-NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 15.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
+
 
 
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
@@ -95,5 +95,8 @@ NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.5		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 	
+<<<<<<< HEAD
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
+=======
+>>>>>>> parent of b0f7033... navy
