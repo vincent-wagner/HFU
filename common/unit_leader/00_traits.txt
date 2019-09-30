@@ -529,7 +529,7 @@ leader_traits = {
 		}
 		logistics_skill_factor = 2
 		
-		gui_row = 14
+		gui_row = 15
 	}
 	trickster = { 
 		type = corps_commander
@@ -570,6 +570,37 @@ leader_traits = {
 		
 		trait_type = basic_terrain_trait
 		gui_row = 7
+	}
+
+	adaptable = { 
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 1000
+		modifier = {
+			terrain_penalty_reduction = 0.30
+			acclimatization_cold_climate_gain_factor = 0.1
+			acclimatization_hot_climate_gain_factor = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_terrain_trait
+		gui_row = 3
+				
+		parent = desert_fox
+		parent = swamp_fox
+		parent = trait_mountaineer
+		parent = hill_fighter
+		parent = jungle_rat
+		parent = ranger
+		parent = urban_assault_specialist
+		parent = winter_specialist
+		
+		num_parents_needed = 2
 	}
 
 	winter_expert = { 
@@ -630,8 +661,8 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
 		modifier = {
-			army_armor_speed_factor = 0.025 
-			army_armor_attack_factor = 0.05
+			army_armor_speed_factor = 0.05 
+			army_armor_attack_factor = 0.1 
 		}
 		
 		ai_will_do = {
@@ -867,8 +898,8 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			motorized_defence_factor = 0.075
-			mechanized_defence_factor = 0.075
+			motorized_defence_factor = 0.15
+			mechanized_defence_factor = 0.15
 		}
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
@@ -1095,7 +1126,8 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			air_superiority_bonus_in_combat = 0.25
+			cas_damage_reduction = 0.5
+			air_superiority_bonus_in_combat = -0.5
 		}
 		
 		ai_will_do = {
@@ -1108,6 +1140,56 @@ leader_traits = {
 		gui_row = 12
 	}
 	
+	expert_improviser = { 
+		type = corps_commander
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 500
+		modifier = {
+			desert = {
+				movement = 0.1
+			}
+			hills = {
+				movement = 0.1
+			}
+			forest = {
+				movement = 0.1
+			}
+			mountain = {
+				movement = 0.1
+			}
+			plains = {
+				movement = 0.1
+			}
+			urban = {
+				movement = 0.1
+			}
+			jungle = {
+				movement = 0.1
+			}
+			marsh = {
+				movement = 0.1
+			}
+		}
+		
+		override_effect_tooltip = expert_improviser_movement_bonus_on_land
+			
+		ai_will_do = {
+			factor = 1
+		}
+		
+		enable_ability = makeshift_bridges
+		
+		trait_type = assignable_trait
+		parent = trickster
+		prerequisites = {
+			check_variable = { num_terrain_traits > 0 }
+		}
+		custom_prerequisite_tooltip = needs_at_least_one_terrain
+		
+		gui_row = 13
+	}
 	
 	guerilla_fighter = { 
 		type = corps_commander
@@ -1126,7 +1208,7 @@ leader_traits = {
 		trait_type = assignable_trait
 		parent = trickster
 		
-		gui_row = 13
+		gui_row = 14
 	}
 	
 	
@@ -1198,7 +1280,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			naval_damage_factor = 0.05
+			positioning = 0.25
 		}
 		custom_gain_xp_trigger_tooltip = SUPERIOR_TACTICIAN_TRIGGER_TT
 		ai_will_do = {
@@ -1974,6 +2056,26 @@ leader_traits = {
 ##################################
 # status traits
 ##################################
+
+	sick = { 
+		type = all
+		trait_type = status_trait
+		
+		non_shared_modifier = {
+			skill_bonus_factor = -0.5
+			cannot_use_abilities = 1
+		}
+	}
+
+	wounded = { 
+		type = all
+		trait_type = status_trait
+		
+		non_shared_modifier = {
+			skill_bonus_factor = -0.5
+			cannot_use_abilities = 1
+		}
+	}
 	
 	disgruntled = { 
 		type = all

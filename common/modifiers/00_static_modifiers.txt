@@ -19,14 +19,14 @@ weather_rain_heavy = { # on Region
 	naval_detection = -0.2
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -1.0
+	carrier_traffic = -0.5
 	naval_strike = -0.4
 	air_accidents = 0.3
 	air_bombing_targetting = -0.5
 	local_org_regain = -0.2
 	air_mission_efficiency = -0.3
 	naval_retreat_speed = 0.1
-	positioning = -0.1
+	positioning = -0.2
 }
 weather_snow = { # on Region 
 	air_detection = -0.15
@@ -38,14 +38,14 @@ weather_snow = { # on Region
 	local_org_regain = -0.05
 	air_mission_efficiency = -0.1
 	naval_retreat_speed = 0.05
-	positioning = -0.1
+	positioning = -0.2
 }
 weather_blizzard = { # on Region 
 	air_detection = -0.3
 	naval_detection = -0.3
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
-	carrier_traffic = -1.0
+	carrier_traffic = -0.5
 	naval_strike = -0.4
 	air_accidents = 0.3
 	air_bombing_targetting = -0.7
@@ -65,7 +65,6 @@ weather_sandstorm = { # on Region
 
 weather_arctic_water = { # on Region 
 	navy_casualty_on_sink = 0.2
-	naval_attrition = 0.1
 	naval_retreat_speed = -0.05
 	positioning = -0.2
 }
@@ -115,7 +114,7 @@ flooded = { # on Province
 
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.25
-	carrier_traffic = -1.0
+	carrier_traffic = -0.8
 	air_bombing_targetting = -0.5
 	naval_retreat_speed = 0.1
 }
@@ -384,24 +383,24 @@ diff_strong_ai_generic = {
 }
 
 naval_mines_effect = {
-	naval_accidents_chance = 0.15
-	naval_speed_factor = -0.8
-	naval_invasion_penalty = 0.5
+	naval_accidents_chance = 0
+	naval_speed_factor = 0
+	naval_invasion_penalty = 0
 }
 
 air_wing_experience_bonus_max = {
-	air_attack_factor = 0.2
+	air_attack_factor = 0.1
 	#air_defence_factor = 0.2
-	air_agility_factor = 0.3
-	air_night_penalty = -0.2
+	air_agility_factor = 0.15
+	air_night_penalty = -0.1
 	#air_weather_penalty = -0.3
 }
 
 air_wing_experience_malus_min = {
-	air_attack_factor = -0.15
-	#air_defence_factor = -0.15
-	air_agility_factor = -0.15
-	air_night_penalty = 0.15
+	air_attack_factor = -0.05
+	#air_defence_factor = -0.05
+	air_agility_factor = -0.05
+	air_night_penalty = 0.05
 	#air_weather_penalty = 0.15
 }
 
@@ -435,7 +434,7 @@ pride_of_the_fleet_country = {
 
 pride_of_the_fleet_sunk_temporary = {
 	# country
-	war_support_factor = -0.10
+	war_support_factor = -0.01
 }
 
 water_modifier_shark_infested = {
