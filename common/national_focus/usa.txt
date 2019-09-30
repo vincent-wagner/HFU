@@ -1066,7 +1066,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_arsenal_of_democracy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1108,7 +1108,7 @@ focus_tree = {
 		relative_position_id = USA_the_giant_wakes
 		cost = 5
 		available = {
-		USA = {has_war = yes }
+		date > 1941.1.1
 		}
 		ai_will_do = {
 			factor = 1
@@ -1118,7 +1118,7 @@ focus_tree = {
 			democratic > 0.95
 		}
 		completion_reward = {
-			add_ideas = wartime_industry_focus
+			
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
 			add_ideas = war_economy

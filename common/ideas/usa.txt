@@ -972,7 +972,7 @@ ideas = {
 				drift_defence_factor = 0.2
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
 				
-				global_building_slots_factor = 0.5
+				global_building_slots_factor = 1
 			}
 		}
 
@@ -2147,7 +2147,7 @@ ideas = {
 			traits = { industrial_concern }
 			
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
 	}
