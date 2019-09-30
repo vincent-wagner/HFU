@@ -95,3 +95,10 @@ NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.5		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 	
+<<<<<<< HEAD
+=======
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0
+NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
+#NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
+#NDefines.NNavy.ANTI_AIR_TARGETING = 0.7                         --Vanilla 0,9
+>>>>>>> parent of a4d28db... asd4
