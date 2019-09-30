@@ -70,7 +70,7 @@ country_event = {
 	trigger = {
 		tag = FIN
 		has_war_with = SOV
-		surrender_progress > 0.25
+		surrender_progress > 0.5
 	}
 
 	mean_time_to_happen = { days = 1 }
@@ -122,23 +122,7 @@ country_event = {
 
 }
 
-country_event = {
-	id = finland.20
-	title = finland.20.t
-	desc = finland.20.d
-	picture = GFX_report_event_finnish_soldiers_snow
-	
-	is_triggered_only = yes
 
-
-	option = {
-				name = finland.20.a
-				set_country_flag = SOV_justify_finland
-activate_mission = SOV_attack_finland
-FIN = { country_event = finland.21 }
-	}
-
-}
 
 country_event = {
 	id = finland.21
