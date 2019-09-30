@@ -1,15 +1,4 @@
 NOR_fork = {
-
-		
-	}
-	
-	
-
-
-
-
-
-
 	op_fork2 = {
 
 		icon = generic_operation

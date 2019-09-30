@@ -1,0 +1,86 @@
+
+foreign_politics = {
+
+		FIN_Resistance= {
+		allowed = {
+			original_tag=FIN
+			}
+		icon = generic_naval
+		available = {NOT={
+			has_war_with=SOV
+					}}
+
+		days_mission_timeout = 15
+
+		fire_only_once = no
+		is_good = yes
+		activation = {
+			always=no}
+		
+		timeout_effect = {
+			random_owned_state={
+				limit={NOT={state=147 state=146}}
+				add_extra_state_shared_building_slots=1
+				add_building_construction = {
+   				 type = arms_factory
+   				 level = 1
+  				 instant_build = yes
+				 }				
+			}
+			add_manpower = 5000
+			add_war_support = 0.02
+			army_experience = 25
+		if={
+		limit={has_war_with=SOV check_variable = {resistance<11}} 
+		activate_mission=FIN_Resistance2
+		add_to_variable= {resistance = 1}
+		else={clear_variable=resistance}
+		}}
+		
+		complete_effect = {
+		
+		}
+	}
+	FIN_Resistance2= {
+		allowed = {
+			original_tag=FIN
+			}
+		icon = generic_naval
+		available = {NOT={
+			has_war_with=SOV
+			
+		}}
+
+		days_mission_timeout = 15
+
+		fire_only_once = no
+		is_good = yes
+		activation = {
+			always=no}
+		
+		timeout_effect = {
+			random_owned_state={
+				limit={NOT={state=147 state=146}}
+				add_extra_state_shared_building_slots=1
+				add_building_construction = {
+   				 type = arms_factory
+   				 level = 1
+  				 instant_build = yes
+				 }				
+			}
+			add_manpower = 5000
+			add_war_support = 0.02
+			army_experience = 25
+		if={
+		limit={has_war_with=SOV check_variable = {resistance<11}} 
+		activate_mission=FIN_Resistance
+		add_to_variable= {resistance = 1}
+		else={clear_variable=resistance}
+		}}
+		
+		complete_effect = {
+		
+		}
+	}
+}
+

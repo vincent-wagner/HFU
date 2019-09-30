@@ -245,21 +245,18 @@ custom_effect_tooltip = remove_political_advisor
 
 SOV_mrp = {
 	
-		SOV_attack_finland = {
+		SOV_prepare_finland = {
 
 		icon = generic_prepare_civil_war
-
+		allowed={tag=SOV}
 		available = {
 			date > 1948.1.1
 			}
-
+		fire_only_once = yes
 		cost = 0
 		fire_only_once = yes
 		days_remove = 60
-		visible = {
-			date > 1948.1.1
-		}
-		
+		visible={date > 1948.1.1}		
 		ai_will_do = {
 			factor = 1
 		}
@@ -269,68 +266,61 @@ SOV_mrp = {
 			add_named_threat = { threat = 7.5 name = Winter_War_Threat }
 		}
 		remove_effect = {
-			SOV = { create_wargoal = { type = puppet_wargoal_focus target = FIN } }
+			SOV = { set_country_flag=finland_prepared }
+		custom_effect_tooltip= "Preparations completed"
+		}
+	}
+	SOV_attack_finland = {
+
+		icon = generic_prepare_civil_war
+		allowed={tag=sov}
+		available = {
+			
+			custom_trigger_tooltip= {tooltip="Preparations completed" has_country_flag=finland_prepared}
+		}
+			
+		
+		
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			GER={has_completed_focus=GER_mol_rib_pact}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+		complete_effect = {
+			SOV = { declare_war_on = { type = puppet_wargoal_focus target = FIN }}
+			hidden_effect={FIN = {activate_mission=FIN_Resistance set_variable={resistance= 1}}}
+			
 		}
 	}
 	
-	
-		SOV_surrender_afg = {
-available = {
-			AFG = { surrender_progress > 0.1 }
-			
-			}
-
-			allowed = {
-				tag = SOV
-			}
-			
-			
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
-		AFG = { has_war_with = SOV }
-		}
 		
-			complete_effect = {
-			   if = { 
-limit = { AFG = { is_ai = yes } }
-SOV = { country_event = { id = afghanistan.2 } }
-}
-
-else_if = { 
-SOV = { country_event = { id = afghanistan.3 } }
-}
-
-		}
-		
-				}
 	
 	
 	SOV_surrender_per = {
 			available = {
-			PER = { surrender_progress > 0.2 }
 			
-			}
+			PER={surrender_progress> 0.2}}
 			
-			allowed = {
-				tag = SOV
+			allowed = {tag = SOV
 			}
 			
 			
 			fire_only_once = yes
 
-			cost = 0
 			days_mission_timeout = 100   
-			#activation = {has_war_with = PER }
-		
+			activation={always=no}
 		
 			complete_effect = {
 			   
 			     SOV = { country_event = { id = iran.2}} 
 			   
-ENG = { country_event = { id = iran.3 } }
+			ENG = { country_event = { id = iran.3 } }
 
 
 
@@ -338,10 +328,9 @@ ENG = { country_event = { id = iran.3 } }
 		
 				}
 				
-					SOV_surrender_fin = {
-available = {
-			FIN = { surrender_progress > 0.8 }
-			date < 1940.5.1
+	SOV_surrender_fin = {
+			available = {
+			FIN={surrender_progress> 0.4}
 			}
 
 			allowed = {
@@ -359,9 +348,9 @@ available = {
 		
 			complete_effect = {
 			      SOV = { white_peace = FIN }
-FIN = { white_peace = SOV }
-SOV={transfer_state = 146 transfer_state= 147}
-SOV = { country_event = { id = finland.8 } }
+			FIN = { white_peace = SOV }
+			SOV={transfer_state = 146 transfer_state= 147}
+			SOV = { country_event = { id = finland.8 } }
 
 		}
 		
