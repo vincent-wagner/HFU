@@ -2023,7 +2023,7 @@ available = {
 						target = LAT
 					}
 			add_political_power = -150
-			country_event = soviet.141
+			country_event = finland.20
 			}
 		}
 	}

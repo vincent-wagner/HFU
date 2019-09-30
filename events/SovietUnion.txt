@@ -996,22 +996,5 @@ country_event = {
    name = soviet.140.a
    }
    }
-   #Finland mission
-country_event = {
-	id = soviet.141
-	title = finland.20.t
-	desc = finland.20.d
-	picture = GFX_report_event_finnish_soldiers_snow
-	
-	is_triggered_only = yes
-
-
-	option = {
-				name = finland.141.a
-				set_country_flag = SOV_justify_finland
-		activate_decision = SOV_prepare_finland
-		FIN = { country_event = finland.21 }
-			}
-
-}
+   
    
