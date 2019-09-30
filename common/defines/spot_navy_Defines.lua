@@ -97,5 +97,3 @@ NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.5		-- Value used to scal
 	
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
-#NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
-#NDefines.NNavy.ANTI_AIR_TARGETING = 0.7                         --Vanilla 0,9
