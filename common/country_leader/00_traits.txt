@@ -1548,7 +1548,7 @@ leader_traits = {
 	
 	military_theorist = {
 		sprite = 14
-		experience_gain_army = 0.05
+		experience_gain_army = 0.2
 		
 		ai_will_do = {
 			factor = 500
@@ -1566,7 +1566,7 @@ leader_traits = {
 	
 	superior_firepower_expert = {
 		sprite = 14
-		experience_gain_army = 0.05
+		experience_gain_army = 0.2
 		
 		ai_will_do = {
 			factor = 500
@@ -1575,7 +1575,7 @@ leader_traits = {
 	
 	grand_battle_plan_expert = {
 		sprite = 14
-		experience_gain_army = 0.05
+		experience_gain_army = 0.2
 		
 		ai_will_do = {
 			factor = 500
@@ -1584,7 +1584,7 @@ leader_traits = {
 	
 	mass_assault_expert = {
 		sprite = 14
-		experience_gain_army = 0.05
+		experience_gain_army = 0.2
 		
 		ai_will_do = {
 			factor = 500
@@ -1687,7 +1687,7 @@ leader_traits = {
 				maximum_speed = 0.10
 			}
 		}
-		experience_gain_army = 0.05
+		experience_gain_army = 0.2
 		
 		ai_will_do = {
 			factor = 500

@@ -345,11 +345,12 @@
 		id = SOV_extra_tech_slot_early
 		icon = GFX_focus_research
 		text = extra_tech_slot
-		prerequisite = { focus = SOV_production_effort }
-		prerequisite = { focus = SOV_collectivist_propaganda }
+		relative_position_id = SOV_peoples_commissariat
+		prerequisite = { focus = SOV_peoples_commissariat }
+		
+		
 		x = 0
-		y = 1
-		relative_position_id = SOV_production_effort
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -365,10 +366,11 @@
 	focus = {
 		id = SOV_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SOV_extra_tech_slot_early }
+		prerequisite = { focus = SOV_production_effort }
+		relative_position_id = SOV_production_effort
 		x = 0
 		y = 1
-		relative_position_id = SOV_extra_tech_slot_early
+		
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -699,7 +701,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 120
+			add_ideas=SOV_realism
 		}
 	}
 
@@ -1286,25 +1288,5 @@
 	}
 
 
-	focus = {
-		id = SOV_closed_city_network
-		icon = GFX_focus_research
-		prerequisite = { focus = SOV_diversify_the_programme }
-		available = {
 
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_diversify_the_programme
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
 }

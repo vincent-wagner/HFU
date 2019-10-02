@@ -29,6 +29,7 @@ country = {
 			tag = AFG
 			tag = CUB
 			tag = SWI
+			tag = POR
 			
 			
 			

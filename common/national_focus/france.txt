@@ -972,10 +972,7 @@ focus = {
 			factor = 3
 		}
 
-		available = {
-
-			has_full_control_of_state = 543
-			}
+		
 		
 
 		bypass = {
@@ -1029,11 +1026,7 @@ focus = {
 			factor = 3
 		}
 
-		available = {
-
-			has_full_control_of_state = 556
-		
-			}
+	
 		
 
 		bypass = {
@@ -1148,11 +1141,7 @@ focus = {
 			factor = 3
 		}
 
-		available = {
-
-			has_full_control_of_state = 557
 		
-			}
 		
 
 		bypass = {
@@ -1195,11 +1184,7 @@ focus = {
 
 		cost = 5
 		
-		available = {
-
-			has_full_control_of_state = 556
-			has_full_control_of_state = 543
-			}
+		
 		
 
 
@@ -1326,7 +1311,7 @@ add_tech_bonus = {
 
 		available_if_capitulated = yes
 
-			available = { has_country_flag = gabon_capital 
+			available = { 
 					controls_state = 539
 		
 		}
@@ -1388,7 +1373,7 @@ add_tech_bonus = {
 
 		available_if_capitulated = yes
 		
-		available { has_country_flag = madagascar_capital 
+		available {  
 					controls_state = 543
 		
 		}
@@ -1916,7 +1901,7 @@ focus = {
 	available_if_capitulated = yes
 	available = {
 				FRA = { controls_state = 774 
-				controls_state = 557
+				
 				}
 		}
 	completion_reward = {

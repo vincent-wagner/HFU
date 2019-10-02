@@ -1,6 +1,16 @@
 ideas = {
 	country = {
-		militarized_schools = {
+	
+
+      SOV_hidden_problem = {
+           modifier = {
+                send_volunteer_size = 3
+           }
+      }
+ 
+
+
+	militarized_schools = {
 		
 			removal_cost = -1
 			
@@ -20,6 +30,27 @@ ideas = {
 				conscription = 0.005
 			}
 		}
+	
+	  SOV_realism = {
+	  
+	   removal_cost = -1
+	   allowed =
+	   {
+	   always = no
+	   }
+	   allowed_civil_war = {
+				has_government = communism
+			}
+	    picture = generic_production_bonus
+		
+		
+		modifier = {
+				
+				local_resources_factor = 0.10
+				MONTHLY_POPULATION = 0.10
+			}
+		
+	   }
 	
 		SOV_purge_now_plz = {
 		
@@ -1889,5 +1920,6 @@ ideas = {
 			traits = { rocket_scientist }
 		}
 	}
+	
 	
 }

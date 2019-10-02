@@ -270,7 +270,7 @@ leader_traits = {
 			org_loss_when_moving = -0.30
 		}
 		
-		attack_skill = 1
+		
 		
 		ai_will_do = {
 			factor = 1

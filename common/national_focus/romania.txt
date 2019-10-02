@@ -1002,12 +1002,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
-			GER = {
-				is_faction_leader = yes
-				has_government = fascism
-				NOT = { has_war_with = ROM }
-			}
+			
 		}
 
 		bypass = {
@@ -1091,35 +1086,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = { has_idea = ROM_the_sentinel_of_the_motherland }
-				swap_ideas = {
-					add_idea = ROM_iron_guard
-					remove_idea = ROM_the_sentinel_of_the_motherland
-				}
-				else = {
-					remove_ideas = ROM_the_sentinel_of_the_motherland
-					add_ideas = ROM_iron_guard
-				}
-			}
-			#Remove ideas or display tooltip warning that it will happen
-			if = {
-				limit = {
-					has_idea = ROM_securitate
-				}
-				remove_ideas = ROM_securitate
-				else = {
-					if = {
-						limit = {
-							has_idea = ROM_constitutional_guarantees
-						}
-						remove_ideas = ROM_constitutional_guarantees
-						else = {
-							custom_effect_tooltip = ROM_appoint_german_friendly_government_tooltip
-						}
-					}
-				}
-			}
+			add_ideas = ROM_iron_guard
+			
+
 		}
 	}
 
@@ -1144,7 +1113,7 @@ focus_tree = {
 				communism > 0.35
 				fascism > 0.35
 			}
-			is_subject = no
+			
 		}
 
 		bypass = {
@@ -1201,132 +1170,16 @@ focus_tree = {
 				remove_idea = ROM_king_carol_ii_hedonist
 			}
 			#add_political_power = -120
-			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 360 }
+			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 10 }
 			hidden_effect = {
 				news_event = { id = news.323 days = 1 }
 			}
 		}
 	}
 
-	focus = {
-		id = ROM_appoint_allied_friendly_government
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 1
-		y = 1
-		relative_position_id = ROM_flexible_foreign_policy
+	
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_war_with = ENG
-			}
-		}
-
-		available = {
-			is_subject = no
-			ENG = {
-				is_faction_leader = yes
-				has_government = democratic
-				NOT = { has_war_with = ROM }
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			#Remove ideas or display tooltip warning that it will happen
-			if = {
-				limit = {
-					has_idea = ROM_iron_guard
-				}
-				remove_ideas = ROM_iron_guard
-				else = {
-					if = {
-						limit = {
-							has_idea = ROM_securitate
-						}
-						remove_ideas = ROM_securitate
-						else = {
-							custom_effect_tooltip = ROM_appoint_allied_friendly_government_tooltip
-						}
-					}
-				}
-			}
-			if = {
-				limit = { NOT = { has_idea = ROM_flexible_foreign_policy_2 } }
-				swap_ideas = {
-					remove_idea = ROM_flexible_foreign_policy
-					add_idea = ROM_flexible_foreign_policy_2
-				}
-			}
-			add_popularity = {
-				popularity = 0.35
-				ideology = democratic
-			}
-			add_stability = -0.05
-			add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ENG }
-			ENG = { add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ROOT } }
-		}
-	}
-
-	focus = {
-		id = ROM_constitutional_guarantees
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = ROM_appoint_allied_friendly_government }
-		x = 0
-		y = 1
-		relative_position_id = ROM_appoint_allied_friendly_government
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = ROM_constitutional_guarantees
-			#Remove ideas or display tooltip warning that it will happen
-			if = {
-				limit = {
-					has_idea = ROM_iron_guard
-				}
-				remove_ideas = ROM_iron_guard
-				else = {
-					if = {
-						limit = {
-							has_idea = ROM_securitate
-						}
-						remove_ideas = ROM_securitate
-						else = {
-							custom_effect_tooltip = ROM_appoint_allied_friendly_government_tooltip
-						}
-					}
-				}
-			}
-		}
-	}
+	
 
 	
 
@@ -1520,7 +1373,7 @@ focus_tree = {
 				add_tech_bonus = {
 					name = ROM_iar_80
 					bonus = 1.0
-					ahead_reduction = 2
+					
 					uses = 1
 					category = light_fighter
 				}
@@ -1528,7 +1381,7 @@ focus_tree = {
 					add_tech_bonus = {
 						name = ROM_iar_80
 						bonus = 1.0
-						ahead_reduction = 2
+						
 						uses = 1
 						technology = fighter2
 					}

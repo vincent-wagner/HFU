@@ -1117,7 +1117,9 @@ technologies = {
 		
 		research_cost = 2
 		start_year = 1943
-		
+		allow = { 
+			date > 1940.1.1 
+		}
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 10 }
@@ -1769,7 +1771,9 @@ technologies = {
 		
 		research_cost = 2.5
 		start_year = 1943
-		
+		allow = { 
+			date > 1940.1.1 
+		}
 		folder = {
 			name = armour_folder
 			position = { x = 4 y = 10 }

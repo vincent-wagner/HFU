@@ -296,6 +296,7 @@ add_ideas = {
 	trotskyite_plot
 	home_of_revolution
 	closed_economy
+	SOV_hidden_problem
 }
 
 create_country_leader = {

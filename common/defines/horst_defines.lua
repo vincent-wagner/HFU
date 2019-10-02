@@ -105,6 +105,7 @@ NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 --HFU defines:
 
 
+NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
 
 --genearls
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0

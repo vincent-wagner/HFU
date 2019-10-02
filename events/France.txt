@@ -154,7 +154,7 @@ country_event = {
 					transfer_state = 554
 					transfer_state = 680
 					transfer_state = 677
-					transfer_state = 296
+					
 					
 					
 					
