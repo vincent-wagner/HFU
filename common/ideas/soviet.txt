@@ -41,12 +41,12 @@ ideas = {
 	   allowed_civil_war = {
 				has_government = communism
 			}
-	    picture = generic_production_bonus
+          picture = generic_wall_line
 		
 		
 		modifier = {
 				
-				local_resources_factor = 0.10
+				local_resources_factor = 0.2
 				MONTHLY_POPULATION = 0.10
 			}
 		

@@ -1334,9 +1334,9 @@ JAP_southern_expansion = {
 			custom_trigger_tooltip = {
 				tooltip = demand_indochina_focus_tt
 				OR = {
-					286 = { is_fully_controlled_by = FRA }
-					670 = { is_fully_controlled_by = FRA }
-					671 = { is_fully_controlled_by = FRA }
+					286 = { is_fully_controlled_by = EFR }
+					670 = { is_fully_controlled_by = EFR }
+					671 = { is_fully_controlled_by = EFR }
 				}
 			}
 		}
@@ -1347,17 +1347,17 @@ JAP_southern_expansion = {
 
 		fire_only_once = yes
 
-		cost = 75
+		cost = 50
 
 		complete_effect = {
-			FRA = { country_event = { id = france.1 } }
+			EFR = { country_event = { id = france.1 } }
 			
 				transfer_state = 286
 				transfer_state = 670
 				transfer_state = 671		
 				transfer_state = 741
 				transfer_state = 728
-				728 = { add_core_of = CHI }
+				
 		}
 
 	}

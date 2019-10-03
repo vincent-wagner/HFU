@@ -2292,8 +2292,8 @@ completion_reward = {
 						fixed_ship_secondaries_slot = ship_secondaries_2
 						fixed_ship_armor_slot = ship_armor_shbb
 						front_1_custom_slot = ship_anti_air_1
-						front_2_custom_slot = empty
-						mid_1_custom_slot = empty
+						front_2_custom_slot = ship_super_heavy_battery_1
+						mid_1_custom_slot = ship_anti_air_1
 						mid_2_custom_slot = ship_secondaries_2
 						mid_3_custom_slot = ship_secondaries_2
 						rear_1_custom_slot = ship_super_heavy_battery_1
@@ -2310,7 +2310,7 @@ completion_reward = {
 						}
 						name = "Yamato" 
 						requested_factories = 1
-						progress = 0.75
+						progress = 0.9
 						amount = 1
 					}
 					add_equipment_production = {
@@ -2321,7 +2321,7 @@ completion_reward = {
 						}
 						name = "Musashi" 
 						requested_factories = 1
-						progress = 0.5
+						progress = 0.9
 						amount = 1
 					}
 				}

@@ -4,7 +4,7 @@ state={
 	name="STATE_77"
 	manpower = 378000
 	
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		victory_points = {
@@ -13,10 +13,10 @@ state={
 		owner = ROM
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 2
+			
 		}
 		add_core_of = ROM
-		add_claim_by = BUL
+		add_core_of = BUL
 	}
 
 	provinces={

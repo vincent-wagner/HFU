@@ -133,7 +133,7 @@ GER_military_buildup = {
 		icon = generic_air
 
 			allowed = { 
-		original_tag = GER
+		
 		
 		
 		

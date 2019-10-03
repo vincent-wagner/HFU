@@ -140,16 +140,7 @@ if = {
 		freedom_level = 0.4
 	}
 	
-		set_autonomy = {
-		target = NEP
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-		set_autonomy = {
-		target = BHU
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
+		
 	set_autonomy = {
 		target = SAF
 		autonomous_state = autonomy_dominion
@@ -166,11 +157,7 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
-	set_autonomy = {
-	target = OMA
-	autonomous_state = autonomy_dominion
-	freedom_level = 0.9
-	}
+	
 	else = {
 		puppet = MAL
 		puppet = RAJ
