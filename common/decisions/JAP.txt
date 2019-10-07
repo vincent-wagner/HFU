@@ -236,6 +236,7 @@ JAP_annex_siam = {
 
 			available = {
 				SIA = { is_ai = yes }
+
 			}
 			
 			cost = 0
