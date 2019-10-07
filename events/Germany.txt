@@ -5,22 +5,6 @@
 add_namespace = germany
 
 
-news_event = {
-	id = germany.viennaa 
-	title = germany.viennaa.t
-    desc = germany.viennaa.d
-    picture = GFX_news_event_009
-	
-   major = yes
-	is_triggered_only = yes 
-
-	
-	option = { 
-		name = germany.viennaa.a
-	}
-        
-}
-
 
 
 
@@ -43,19 +27,19 @@ country_event = {
    immediate = {
    
    GER = {
-			news_event = { id = germany.viennaa  } 
+			news_event = { id = germany.rom  } 
 		}
    ITA = {
-			news_event = { id = germany.viennaa } 
+			news_event = { id = germany.rom } 
 		}
    HUN = {
-			news_event = { id = germany.viennaa  } 
+			news_event = { id = germany.rom  } 
 		}
 	ROM = {
-			news_event = { id = germany.viennaa  } 
+			news_event = { id = germany.rom  } 
 		}
 	BUL = {
-			news_event = { id = germany.viennaa  } 
+			news_event = { id = germany.rom  } 
 		}
    HUN = {transfer_state = 76
           transfer_state = 45
@@ -80,11 +64,45 @@ country_event = {
 		  transfer_state = 187
 		  }
     GER = {transfer_state = 102}
-   }
+   }	^
   
+	option = { 
+		name = germany.rom.a
+	}
+		
   
-  }
+ }
+
+
+
+
+
+
+
+
+
+
+news_event = {
+	id = germany.rom 
+	title = germany.rom.t
+    desc = germany.rom.d
+    picture = GFX_news_event_009
 	
+   major = yes
+	is_triggered_only = yes 
+
+	
+	option = { 
+		name = germany.rom.a
+	}
+        
+}
+
+
+
+
+
+
 
 
 
@@ -1597,95 +1615,6 @@ country_event = {
 			}
 		}
 	}
-}
 
-#Events in case of weirdness with German Czechoslovakia focus
-country_event = {
-	id = germany.122
-	title = germany.122.t
-	desc = germany.122.d
-	picture = GFX_report_event_german_speech
 
-	is_triggered_only = yes
 
-	option = {
-		name = germany.122.b
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				any_other_country = {
-					is_major = yes
-					has_guaranteed = CZE
-				}
-			}
-			modifier = {
-				factor = 0
-				any_other_country = {
-					is_major = yes
-					is_in_faction_with = CZE
-				}
-			}
-			modifier = {
-				factor = 0.8
-				any_other_country = {
-					is_major = no
-					has_guaranteed = CZE
-				}
-			}
-			modifier = {
-				factor = 0.8
-				is_in_faction = yes
-				NOT = {
-					any_other_country = {
-						is_major = yes
-						is_in_faction_with = CZE
-					}
-				}
-			}
-		}
-		effect_tooltip = {
-			GER = {
-				transfer_state = 69
-				transfer_state = 74
-			}
-		}
-		hidden_effect = {
-			GER = {
-				country_event = {
-					id = germany.124 days = 1
-				}
-			}
-		}
-	}
-}
-
-#Evnts in case of weirdness with German Czechoslovakia focus
-country_event = {
-	id = germany.124
-	title = germany.124.t
-	desc = germany.124.d
-	picture = GFX_report_event_german_reichstag_gathering
-
-	is_triggered_only = yes
-
-	option = {
-		name = germany.124.a
-		add_state_core = 69
-		transfer_state = 69
-		add_state_core = 74
-		transfer_state = 74
-	}
-}
-
-   country_event = {
-    id = germany.130
-    title = germany.130.t
-    desc = germany.130.d
-    picture = GFX_report_event_germany_startup
-    fire_only_once = yes
-	is_triggered_only = yes
-    option = {
-    name = germany.130.a
-    }
-}
