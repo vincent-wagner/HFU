@@ -353,6 +353,7 @@ ideas = {
 				foreign_subversive_activites = -0.2
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
+				conscription = 0.03
 			}
 		}
 
@@ -428,7 +429,7 @@ ideas = {
 			
 			modifier = {
 				
-				conscription = 0.04
+				conscription = 0.01
 			}
 		}
 

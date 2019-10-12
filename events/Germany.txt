@@ -25,22 +25,8 @@ country_event = {
    
    
    immediate = {
-   
-   GER = {
-			news_event = { id = germany.rom  } 
-		}
-   ITA = {
-			news_event = { id = germany.rom } 
-		}
-   HUN = {
-			news_event = { id = germany.rom  } 
-		}
-	ROM = {
-			news_event = { id = germany.rom  } 
-		}
-	BUL = {
-			news_event = { id = germany.rom  } 
-		}
+
+		
    HUN = {transfer_state = 76
           transfer_state = 45
 		  transfer_state = 764
@@ -64,10 +50,10 @@ country_event = {
 		  transfer_state = 187
 		  }
     GER = {transfer_state = 102}
-   }	^
+   }	
   
 	option = { 
-		name = germany.rom.a
+		
 	}
 		
   
@@ -82,21 +68,7 @@ country_event = {
 
 
 
-news_event = {
-	id = germany.rom 
-	title = germany.rom.t
-    desc = germany.rom.d
-    picture = GFX_news_event_009
-	
-   major = yes
-	is_triggered_only = yes 
 
-	
-	option = { 
-		name = germany.rom.a
-	}
-        
-}
 
 
 
