@@ -2930,25 +2930,25 @@ SPR = { country_event = spain.29 }
 		create_equipment_variant = {
 					name = "Bismarck-Klasse"
 					type = ship_hull_heavy_3
-					name_group = JAP_BB_HISTORICAL
+					name_group = GER_BB_HISTORICAL
 					parent_version = 0
 					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_2
-						fixed_ship_anti_air_slot = ship_anti_air_2
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_battery_slot = ship_heavy_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
 						fixed_ship_radar_slot = empty
 						fixed_ship_engine_slot = heavy_ship_engine_3
 						fixed_ship_secondaries_slot = ship_secondaries_2
-						fixed_ship_armor_slot = ship_armor_bb_2
-						front_1_custom_slot = ship__heavy_battery_2
-						front_2_custom_slot = ship__heavy_battery_2
-						mid_1_custom_slot = ship_anti_air_2
-						mid_2_custom_slot = ship_secondaries_2
-						mid_3_custom_slot = ship_secondaries_2
-						rear_1_custom_slot = ship_heavy_battery_2
+						fixed_ship_armor_slot = ship_armor_bb_3
+						front_1_custom_slot = ship_heavy_battery_3
+						mid_1_custom_slot = ship_anti_air_3
+						mid_2_custom_slot = ship_anti_air_3
+						mid_3_custom_slot = ship_heavy_battery_3
+						rear_1_custom_slot = ship_heavy_battery_3
 						
 					}
 				}
+						custom_effect_tooltip="Adds two Bismarck-Klasse Battleships to the production queue, at 85% and 90% complete, respectively."
 						hidden_effect = {
 					add_equipment_production = {
 						equipment = {
@@ -2969,7 +2969,7 @@ SPR = { country_event = spain.29 }
 						}
 						name = "Tirpitz" 
 						requested_factories = 1
-						progress = 0.9
+						progress = 0.85
 						amount = 1
 					}
 				}

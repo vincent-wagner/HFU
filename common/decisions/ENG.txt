@@ -7,9 +7,7 @@ ENG_annex_ire = {
 			}
 
 			available = {
-			IRE = { is_ai = yes
-				has_war_with = GER
-			}
+			IRE = { is_ai = yes}
 			date > 1940.1.1
 			}
 			

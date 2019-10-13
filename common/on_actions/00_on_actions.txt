@@ -275,13 +275,6 @@ on_actions = {
 				}				
 				FROM = { country_event = { id = usa.16 days = 1 } }
 			}
-			
-			if = { 
-			limit = { FROM = { original_tag = NOR } }
-		
-            NOR = { activate_mission = NOR_allies }
-			}
-			
 			## Soviet defensive war while having purge penalty
 			if = {
 				limit = {

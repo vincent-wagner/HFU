@@ -251,6 +251,7 @@ DIPLOMACY_MILACC_ENABLE_TRIGGER = {
 			}
 		}
 		always = yes
+		NOT={tag=EFR}
 	}
 	if = {
 		limit = {
@@ -320,6 +321,7 @@ DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 				option = FREE
 			}
 		}
+		NOT={tag=EFR}
 		always = yes
 	}
 	if = {

@@ -30,7 +30,7 @@ NDefines.NDiplomacy.FRONT_IS_DANGEROUS = 0
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST 
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
-NDefines.NProduction.BASE_LICENSE_IC_COST = 0                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
+NDefines.NProduction.BASE_LICENSE_IC_COST = 1                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000 
 ---------------------------------------------------------------
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 60					-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
@@ -169,8 +169,10 @@ NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.6                --Vanilla 0.8
 	
 
 
-
-
+--Paratrooper changes
+NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.50 -- 33% org on drop
+NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 72 -- 72hrs of org regen 'penalty'
+NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.50 -- +50% org regen, normal is -80%
 
 
 
