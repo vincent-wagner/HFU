@@ -170,7 +170,7 @@ NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.6                --Vanilla 0.8
 
 
 --Paratrooper changes
-NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.50 -- 33% org on drop
+NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.60 -- 33% org on drop
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 72 -- 72hrs of org regen 'penalty'
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.50 -- +50% org regen, normal is -80%
 
