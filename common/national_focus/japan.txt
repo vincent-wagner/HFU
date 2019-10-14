@@ -1494,8 +1494,8 @@ completion_reward = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 2.0
-				uses = 1
+				bonus = 1.0
+				uses = 3
 				category = armor	
 			}
 		}
