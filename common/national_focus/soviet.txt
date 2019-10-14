@@ -341,27 +341,7 @@
 		}
 	}
 
-	focus = {
-		id = SOV_extra_tech_slot_early
-		icon = GFX_focus_research
-		text = extra_tech_slot
-		relative_position_id = SOV_peoples_commissariat
-		prerequisite = { focus = SOV_peoples_commissariat }
-		
-		
-		x = 0
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
+	
 	
 	focus = {
 		id = SOV_infrastructure_effort
@@ -877,7 +857,27 @@
 	}
 
 
-	
+	focus = {
+		id = SOV_extra_tech_slot_early
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		relative_position_id = SOV_peoples_commissariat
+		prerequisite = { focus = SOV_peoples_commissariat }
+		
+		
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 
 	focus = {
@@ -886,7 +886,7 @@
 		prerequisite = { focus = SOV_peoples_commissariat }
 		
 		x = 2
-		y = 2
+		y = 1
 		relative_position_id = SOV_peoples_commissariat
 		cost = 1
 
