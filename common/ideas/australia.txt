@@ -457,7 +457,7 @@ theorist = {
 			air_doctrine = 0.10
 		}
 		
-		traits = { air_warfare_theorist }
+		traits = { military_theorist }
 	}
 
 	

@@ -1094,7 +1094,7 @@ focus_tree = {
 						has_country_flag = USA_the_giant_wakes_added_civ_eco
 					}
 				}
-				add_ideas = civilian_economy
+				add_ideas = low_economic_mobilisation
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
 			}
 		}
@@ -1108,7 +1108,7 @@ focus_tree = {
 		relative_position_id = USA_the_giant_wakes
 		cost = 5
 		available = {
-		date > 1941.1.1
+		date > 1940.10.10
 		}
 		ai_will_do = {
 			factor = 1
