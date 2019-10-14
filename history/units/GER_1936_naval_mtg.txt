@@ -35,6 +35,7 @@ units= {
 			ship = { name = "Iltis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
 			ship = { name = "Brummer" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Bremse Class" } } }			
 			ship = { name = "Bremse" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Bremse Class" } } }
+			# 1. Unterseebootsflottille
 			ship = { name = "U-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
 			ship = { name = "U-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
 			ship = { name = "U-9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
@@ -72,9 +73,9 @@ instant_effect = {
 			creator = "GER" 
 			version_name = "Type II Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.75
-		amount = 2
+		amount = 1
 	}
 	add_equipment_production = {
 		equipment = {
@@ -82,9 +83,9 @@ instant_effect = {
 			creator = "GER" 
 			version_name = "Type II Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.65
-		amount = 2
+		amount = 1
 	}
 	add_equipment_production = {
 		equipment = {
@@ -92,9 +93,9 @@ instant_effect = {
 			creator = "GER" 
 			version_name = "Type II Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.55
-		amount = 2
+		amount = 1
 	}
 	add_equipment_production = {
 		equipment = {
@@ -102,9 +103,9 @@ instant_effect = {
 			creator = "GER" 
 			version_name = "Type II Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.45
-		amount = 2
+		amount = 1
 	}
 	# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
 	add_equipment_production = {
@@ -113,9 +114,9 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934 Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.75
-		amount = 2
+		amount = 1
 	}
 	add_equipment_production = {
 		equipment = {
@@ -123,9 +124,9 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934 Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.65
-		amount = 2
+		amount = 1
 	}
 	
 	# CA: "Graf Spee"
@@ -135,7 +136,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Deutschland Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.95
 		amount = 1
 	}
@@ -146,7 +147,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Admiral Hipper Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.25
 		amount = 1
 	}
@@ -157,7 +158,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Scharnhorst Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.35
 		amount = 1
 	}
@@ -168,7 +169,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Scharnhorst Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.25
 		amount = 1
 	}
@@ -179,9 +180,9 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934A Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.25
-		amount = 4
+		amount = 1
 	}
 	# DD: 1934A class (x12) ("Z5"-"Z16")
 	add_equipment_production = {
@@ -190,9 +191,9 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934A Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.25
-		amount = 4
+		amount = 1
 	}
 	# DD: 1934A class (x12) ("Z5"-"Z16")
 	add_equipment_production = {
@@ -201,9 +202,9 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934A Class"
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.25
-		amount = 4
+		amount = 1
 	}
 }
 

@@ -55,7 +55,6 @@ equipments = {
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_anti_air
 					ship_light_battery
 					ship_medium_battery
 					ship_airplane_launcher
@@ -159,7 +158,6 @@ equipments = {
 				allowed_module_categories = {
 					ship_light_battery
 					ship_medium_battery
-					ship_anti_air
 				}
 			}
 			
@@ -180,7 +178,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_mine_layer
-					ship_anti_air
 					ship_airplane_launcher
 					ship_depth_charge
 					ship_light_battery
@@ -221,7 +218,6 @@ equipments = {
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_anti_air
 					ship_light_battery
 					ship_medium_battery
 				}
@@ -243,7 +239,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_mine_layer
-					ship_anti_air
 					ship_airplane_launcher
 					ship_depth_charge
 					ship_light_battery
@@ -254,7 +249,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_mine_layer
-					ship_anti_air
 					ship_airplane_launcher
 					ship_depth_charge
 					ship_light_battery
@@ -296,7 +290,6 @@ equipments = {
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_anti_air
 					ship_light_battery
 					ship_medium_battery
 				}
@@ -318,7 +311,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_mine_layer
-					ship_anti_air
 					ship_airplane_launcher
 					ship_depth_charge
 					ship_light_battery

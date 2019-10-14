@@ -619,12 +619,14 @@ equipment_modules = {
 		add_equipment_type = anti_air
 		
 		add_stats = {
-			anti_air_attack = 1.65
-			build_cost_ic = 90
+			anti_air_attack = 2
+			build_cost_ic = 10
 		}
+		
 		
 		multiply_stats = {
 			naval_speed = -0.01
+			build_cost_ic = 0.01
 		}
 
 		can_convert_from = {
@@ -640,12 +642,13 @@ equipment_modules = {
 		add_equipment_type = anti_air
 		
 		add_stats = {
-			anti_air_attack = 2.2
-			build_cost_ic = 120
+			anti_air_attack = 2.6
+			build_cost_ic = 20
 		}
 		
 		multiply_stats = {
 			naval_speed = -0.01
+			build_cost_ic = 0.01
 		}
 
 		can_convert_from = {
@@ -664,12 +667,13 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = anti_air
 		add_stats = {
-			anti_air_attack = 3.375
-			build_cost_ic = 150
+			anti_air_attack = 3.8
+			build_cost_ic = 30
 		}
 		
 		multiply_stats = {
 			naval_speed = -0.01
+			build_cost_ic = 0.01
 		}
 
 		can_convert_from = {
@@ -689,12 +693,13 @@ equipment_modules = {
 
 		add_equipment_type = anti_air
 		add_stats = {
-			anti_air_attack = 4.6
-			build_cost_ic = 190
+			anti_air_attack = 5
+			build_cost_ic = 40
 		}
 		
 		multiply_stats = {
 			naval_speed = -0.01
+			build_cost_ic = 0.01
 		}
 
 		can_convert_from = {
@@ -1922,8 +1927,8 @@ equipment_modules = {
 		gfx = ship_armor_1
 		
 		multiply_stats = {
-			build_cost_ic = -0.1
-			hg_armor_piercing = -0.4
+			build_cost_ic = -0.05
+			hg_armor_piercing = -0.5
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1960,9 +1965,9 @@ equipment_modules = {
 		gfx = ship_armor_2
 		
 		multiply_stats = {
-			build_cost_ic = -0.1
+			build_cost_ic = -0.05
 			max_strength = 0.05
-			hg_armor_piercing = -0.4
+			hg_armor_piercing = -0.5
 		}
 		build_cost_resources = {
 			steel = 1
@@ -1997,9 +2002,9 @@ equipment_modules = {
 		gfx = ship_armor_3
 		
 		multiply_stats = {
-			build_cost_ic = -0.1
+			build_cost_ic = -0.05
 			max_strength = 0.10
-			hg_armor_piercing = -0.4
+			hg_armor_piercing = -0.5
 		}
 		build_cost_resources = {
 			steel = 1

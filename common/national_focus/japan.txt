@@ -923,19 +923,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			hidden_effect = {
-				set_rule = {
-					can_use_kamikaze_pilots = yes
-				}
+			add_ideas= JAP_defense_of_homeland	
 			}
-			custom_effect_tooltip = kamikaze_focus_tooltip
-			if = { 
-				limit = {
-					has_dlc = "Waking the Tiger"
-				}
-				custom_effect_tooltip = cost_reduced_last_stand 
-			}
-		}
+		
 	}
 
 	focus = {
@@ -1797,7 +1787,8 @@ completion_reward = {
 				bonus = 1.0
 				uses = 1
 				category = cas_bomber
-				category = tactical_bomber					
+				category = tactical_bomber
+				category = naval_bomber				
 			}
 		}
 	}
