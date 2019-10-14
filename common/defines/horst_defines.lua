@@ -4,11 +4,11 @@
 --Performance
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 55
-NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 24
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 60
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 25
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12
-
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 ---------------------------------------------------------------
@@ -119,11 +119,11 @@ NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0000
 
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --max building slots in a state
-BASE_RESEARCH_SLOTS = 0
-FUEL_LEASE_CONVOY_RATIO = 0.0004
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 -------------------------------------
---Combat
+--Combat 
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.5
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 18
@@ -132,9 +132,9 @@ NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 11
-NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.3
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.1
 NDefines.NMilitary.SLOWEST_SPEED = 3
-
+NDefines.NMilitary.TRAINING_ATTRITION = 0.02
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
@@ -153,7 +153,7 @@ NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
 --Air changes
 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.14						-- Vanilla 0,10
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.17						-- Vanilla 0,10
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2					        --Vanilla 3
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.50	-- Vanilla 0,75
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
@@ -166,7 +166,7 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3    --Vanilla 0.3
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.65          --Vanilla -0.35
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 400.0
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.6                --Vanilla 0.8
-	
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.000 	
 
 
 --Paratrooper changes

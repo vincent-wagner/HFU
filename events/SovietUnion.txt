@@ -935,7 +935,7 @@ country_event ={
 	name = "Konstantin Rokossovsky"
 	id = 1488
 	picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-	traits = {    brilliant_strategist panzer_leader panzer_expert ranger organizer  logistics_wizard aggressive_assaulter organisational_leader inspirational_leader }
+	traits = {  winter_specialist  brilliant_strategist panzer_leader panzer_expert ranger organizer  logistics_wizard aggressive_assaulter organisational_leader inspirational_leader }
 	skill = 7
 	
 	attack_skill = 8

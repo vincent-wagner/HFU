@@ -24,12 +24,24 @@ operations = {
 			
 		}
 		remove_effect = {
-			ITA = { transfer_state = 665
+			if = {
+    limit = {
+        665 = {is_fully_controlled_by = EFR}
+		1 = {is_fully_controlled_by = EFR}
+		458 = {is_fully_controlled_by = EFR}
+		32 = {is_fully_controlled_by = EFR}
+		21 = {is_fully_controlled_by = EFR}
+		
+    }   
+    
+            ITA = { transfer_state = 665
 			        transfer_state = 1
 					transfer_state = 458
 					transfer_state = 32
                     transfer_state = 21				
 					}
+   }
+
 			GER = { puppet = EFR }
 			EFR = { remove_ideas = EFR_neutrality_idea}
 		}

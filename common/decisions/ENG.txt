@@ -67,7 +67,7 @@ ENG_annex_ire = {
 			
 			fire_only_once = yes
 
-			cost = 300
+			cost = 100
 
 			visible = {
 				
@@ -495,8 +495,8 @@ operations = {
 			has_government = democratic
 			has_war_with = GER
 			ICE = { exists = yes }
-			NOR = { has_capitulated = yes }
-			is_in_faction_with = NOR
+			
+			
 		}
 
 		cost = 50
@@ -509,15 +509,11 @@ operations = {
 			tag = ENG
 			has_war_with = GER
 			ICE = { exists = yes }
-			NOT = { ICE = { is_in_faction_with = ROOT } }
+			
 		}
 		
 		complete_effect = {
-					GER = { add_to_faction = ICE }
-			ICE = { declare_war_on = { target = ENG type = annex_everything }
-			declare_war_on = { target = FRA type = annex_everything }}
-			add_popularity = { ideology = democratic popularity = -0.05 }
-			ICE = { add_ideas = FRA_no_resistance }
+					ENG = { transfer_state = 100  }
 		}
 	}
 }

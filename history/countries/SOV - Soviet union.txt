@@ -341,7 +341,7 @@ create_corps_commander = {
 	name = "Georgy Zhukov"
 	id = 410
 		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { winter_specialist armor_officer media_personality war_hero panzer_leader }
+	traits = { winter_specialist armor_officer media_personality war_hero panzer_leader ranger }
 	skill = 5
 
 	
@@ -355,7 +355,7 @@ create_corps_commander = {
 	name = "Konstantin Rokossovsky"
 	id = 402
 		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-	traits = {  armor_officer trait_cautious brilliant_strategist panzer_leader }
+	traits = { winter_specialist armor_officer trait_cautious brilliant_strategist panzer_leader ranger }
 	skill = 4
 	
 	attack_skill = 3
@@ -368,7 +368,7 @@ create_corps_commander = {
 	name = "Aleksandr Vasilevsky"
 	id = 407
 		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
-	traits = { armor_officer politically_connected infantry_leader }
+	traits = { winter_specialist armor_officer politically_connected infantry_leader }
 	skill = 4
 
 	
@@ -381,7 +381,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Boris Shaposhnikov"
 		picture = "Portrait_Soviet_Boris_Shaposhnikov.dds"
-	traits = { trait_cautious career_officer infantry_leader }
+	traits = { winter_specialist trait_cautious career_officer infantry_leader }
 	skill = 3
 	
 	attack_skill = 2
@@ -393,7 +393,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nikolai Vatutin"
 		picture = "Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
-	traits = { infantry_officer trait_reckless infantry_leader }
+	traits = { winter_specialist infantry_officer trait_reckless infantry_leader }
 	skill = 3
 	
 	attack_skill = 1
@@ -406,7 +406,7 @@ create_corps_commander = {
 	name = "Ivan Konev"
 	id = 408
 		picture = "Portrait_Soviet_Ivan_Konev.dds"
-	traits = { armor_officer harsh_leader politically_connected cavalry_leader }
+	traits = { winter_specialist armor_officer harsh_leader politically_connected cavalry_leader }
 	skill = 5
 
 
@@ -421,7 +421,7 @@ create_corps_commander = {
 	name = "Semyon Timoshenko"
 	id = 404
 		picture = "Portrait_Soviet_Semyon_Timoshenko.dds"
-	traits = { cavalry_officer politically_connected career_officer }
+	traits = { winter_specialist cavalry_officer politically_connected career_officer }
 	skill = 3
 
 

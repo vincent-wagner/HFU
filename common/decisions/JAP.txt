@@ -622,7 +622,7 @@ JAP_annex_mengkukuo = {
 			
 			available = {
 			MAN = { is_ai = yes }
-				GER = { has_completed_focus = GER_danzig_or_war }
+				
 			
 			}
 
