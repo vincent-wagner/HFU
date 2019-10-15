@@ -1,6 +1,7 @@
 ﻿capital = 112
 
 oob = "POR_1936"
+set_research_slots = 0
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "POR_1936_naval_mtg"
@@ -11,6 +12,7 @@ if = {
 
 add_ideas = { 
 adjusted_surrender_limit
+neutral_idea
 }
 
 set_research_slots = 3

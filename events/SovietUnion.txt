@@ -936,9 +936,9 @@ country_event ={
 	id = 1488
 	picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
 	traits = {  winter_specialist  brilliant_strategist panzer_leader panzer_expert ranger organizer  logistics_wizard aggressive_assaulter organisational_leader inspirational_leader }
-	skill = 7
+	skill = 8
 	
-	attack_skill = 8
+	attack_skill = 9
 	defense_skill = 5
 	planning_skill = 2
 	logistics_skill = 4
@@ -947,11 +947,11 @@ create_corps_commander = {
 	name = "Georgy Zhukov"
 	id = 1489
 		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { winter_specialist panzer_leader panzer_expert winter_expert trickster expert_improviser scavenger }
-	skill = 5
+	traits = { winter_specialist panzer_leader panzer_expert winter_expert trickster expert_improviser scavenger ranger }
+	skill = 8
 
 	
-	attack_skill = 7
+	attack_skill = 8
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3

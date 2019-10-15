@@ -9,6 +9,7 @@ set_technology = {
 set_research_slots = 0
 add_ideas = {
 	limited_conscription
+	neutral_idea
 }
 
 1939.1.1 = {

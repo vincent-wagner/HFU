@@ -1,5 +1,5 @@
 ﻿capital = 613 # Nanjing
-
+set_research_slots = 0
 oob = "CHI_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
