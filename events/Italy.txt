@@ -227,32 +227,13 @@ ITA = { country_event = { id = italy.144 } }
    
    }
    
+   }
    
-   
-   option = { 
-   name = italy.143.b
-
-   
-   
-				ITA = { set_autonomy = {
-
-					target = ETH					
-					autonomy_state = autonomy_reichskommissariat
-
-					}
-					
-									ETH = {
-					give_resource_rights = { receiver = ITA state = 271 }
-					transfer_state = 559
-					add_state_core = 559
-					transfer_state = 550
-					add_state_core = 550
-					}
    
 
-}
-}
-}
+
+
+
 
 
  country_event = {

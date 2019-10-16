@@ -1175,7 +1175,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = CAN_the_plan
+			add_ideas = british_fighter_discount
 		}
 	}
 	focus = {

@@ -610,7 +610,7 @@ ideas = {
 			
 
 			
-			traits = { air_air_superiority_2}
+			traits = { air_air_superiority_1}
 			
 			ai_will_do = {
 				factor = 1
@@ -626,7 +626,7 @@ ideas = {
 			
 
 			
-			traits = { air_chief_safety_2 }
+			traits = { air_chief_safety_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -643,7 +643,7 @@ ideas = {
 			
 
 			
-			traits = { air_chief_reform_2}
+			traits = { air_chief_reform_1}
 			
 			ai_will_do = {
 				factor = 1
@@ -659,7 +659,7 @@ ideas = {
 			
 
 			
-			traits = { air_air_combat_training_2}
+			traits = { air_air_combat_training_1}
 			
 			ai_will_do = {
 				factor = 1

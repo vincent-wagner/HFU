@@ -12,14 +12,14 @@ ideas = {
 		
 			modifier = {
 				consumer_goods_factor = 0.50
-				production_speed_industrial_complex_factor = 0.3
-				production_speed_arms_factory_factor = -2
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = -1
 				production_speed_dockyard_factor = -0.4
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 0.20
-				lend_lease_tension = 0.50
+				lend_lease_tension = 0.40
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.75
 				max_fuel_factor = -0.45
