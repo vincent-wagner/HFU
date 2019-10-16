@@ -1294,11 +1294,12 @@ technologies = {
 	
 	main_battle_tank = { #E-50
 	    
-		allow = {
+		allow_branch = {
 			has_game_rule = {
 				rule = horst_tank_options
 				option = HORST_ENABLE_MODERN_TANK
 			}
+		always=no
 		}
 
 		enable_equipments = {

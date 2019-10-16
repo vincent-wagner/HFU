@@ -56,8 +56,7 @@ limit = {
 			} 
 			
 		IRQ = { 
-		add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 600 producer = GER }
-		 add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 100 producer = GER }
+		
 		 }
 		 
 		 
