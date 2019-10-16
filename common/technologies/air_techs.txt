@@ -1520,7 +1520,10 @@ technologies = {
 			air_equipment
 			cat_strategic_bomber
 		}
-		
+		allow_branch = {
+			
+		always=no
+		}
 		ai_will_do = {
 			factor = 1
 			

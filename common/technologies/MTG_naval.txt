@@ -184,6 +184,7 @@ technologies = {
 			naval_equipment
 			dd_tech
 		}
+		allow_branch = {always=no}
 	}
 
 	smoke_generator = {
@@ -304,7 +305,7 @@ technologies = {
 				anti_submarine_strategy_required_trigger = yes
 			}
 		}
-		
+		allow_branch = {always=no}
 		categories = {
 			naval_equipment
 			dd_tech
@@ -647,7 +648,7 @@ technologies = {
 				}
 			}
 		}
-		
+		allow_branch = {always=no}
 		categories = {
 			naval_equipment
 			cl_tech
@@ -825,7 +826,7 @@ technologies = {
 				}
 			}
 		}
-		
+		allow_branch = {always=no}
 		categories = {
 			naval_equipment
 			cl_tech
@@ -1053,7 +1054,7 @@ technologies = {
 				factor = 0
 			}
 		}
-		
+		allow_branch = {always=no}
 		categories = {
 			naval_equipment
 			bb_tech
@@ -1299,7 +1300,7 @@ early_ship_hull_carrier = {
 			carrier_ship_engine_4
 		}
 		research_cost = 1
-
+		
 		start_year = 1944
 		
 		folder = {
@@ -1319,7 +1320,7 @@ early_ship_hull_carrier = {
 				}
 			}
 		}
-		
+		allow_branch = {always=no}
 		categories = {
 			naval_equipment
 			cv_tech
@@ -1602,7 +1603,7 @@ early_ship_hull_carrier = {
 				factor = 5
 			}
 		}
-		
+		allow_branch = {always=no}
 		categories = {
 			naval_equipment
 		}
@@ -1743,11 +1744,9 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		allow = {
-			has_game_rule = {
-				rule = spot_sub3_options
-				option = spot_ENABLE_SUB3
-			}
+		allow_branch = {
+			
+		always=no
 		}
 		
 		research_cost = 1
@@ -1881,12 +1880,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		allow = {
-			has_game_rule = {
-				rule = spot_snorkel_options
-				option = spot_ENABLE_SNORKEL2
-			}
-		}
+		allow_branch = {always=no}
 		
 		xp_research_type = navy
 		xp_research_cost = 50
@@ -2090,7 +2084,7 @@ early_ship_hull_carrier = {
 				factor = 20
 			}
 		}
-		
+		allow_branch={always=no}
 		categories = {
 			naval_equipment
 		}
@@ -2308,7 +2302,7 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+		allow_branch={always=no}
 		categories = {
 			naval_equipment
 		}
@@ -2516,7 +2510,7 @@ early_ship_hull_carrier = {
 				factor = 2
 			}
 		}
-		
+		allow_branch={always=no}
 		categories = {
 			naval_equipment
 		}
@@ -3032,7 +3026,7 @@ early_ship_hull_carrier = {
 				factor = 2
 			}
 		}
-		
+		allow_branch={always=no}
 		categories = {
 			naval_mines
 			naval_minelaying
@@ -3232,7 +3226,7 @@ early_ship_hull_carrier = {
 				factor = 5
 			}
 		}
-		
+		allow_branch={always=no}
 		categories = {
 			naval_mines
 			naval_minelaying
@@ -3513,9 +3507,7 @@ early_ship_hull_carrier = {
 		start_year = 1936
 
 		#set at gamestart
-		allow = {
-			always = no
-		}
+		allow_branch = {always=no}
 	}
 	torpedo_cruiser_mtg = {
 
@@ -3527,9 +3519,7 @@ early_ship_hull_carrier = {
 		start_year = 1936
 
 		#set at gamestart
-		allow = {
-			always = no
-		}
+		allow_branch = {always=no}
 	}
 	pre_dreadnoughts = {
 
@@ -3541,9 +3531,7 @@ early_ship_hull_carrier = {
 		start_year = 1936
 
 		#set at gamestart
-		allow = {
-			always = no
-		}
+		allow_branch = {always=no}
 	}
 	coastal_defense_ships = {
 
@@ -3555,9 +3543,7 @@ early_ship_hull_carrier = {
 		start_year = 1936
 
 		#set at gamestart
-		allow = {
-			always = no
-		}
+		allow_branch = {always=no}
 	}
 	cruiser_submarines = {
 
@@ -3571,8 +3557,6 @@ early_ship_hull_carrier = {
 		start_year = 1936
 
 		#set at gamestart
-		allow = {
-			always = no
-		}
+		allow_branch = {always=no}
 	}
 }
