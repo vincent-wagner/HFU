@@ -631,7 +631,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = ship_anti_air
-			convert_cost_ic = 60
+			convert_cost_ic = 10
 		}
 	}
 
@@ -683,7 +683,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module = ship_anti_air_2
-			convert_cost_ic = 60
+			convert_cost_ic = 10
 		}
 	}
 	ship_anti_air_4 = {
@@ -709,7 +709,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module = ship_anti_air_3
-			convert_cost_ic = 50
+			convert_cost_ic = 10
 		}
 	}
 
