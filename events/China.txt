@@ -5,6 +5,44 @@
 add_namespace = china
 
 # Japanese Stage Border Incident
+
+
+
+
+
+
+country_event = {
+	id = china.187
+	title = china.187.t
+	desc = china.187.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	immediate = {load_OOB = "CHI_ching_chong"
+	
+	
+	
+	
+	
+	
+	 CHI ={ add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200000 }
+			}
+	
+	
+	
+	
+	}
+	
+	option = { 
+	
+	}
+}
+
+
+
+
 country_event = {
 	id = china.1
 	title = china.1.t

@@ -11,7 +11,7 @@ state=
 	}
 	history=
 	{
-		owner = CUB
+		owner = PAN
 		buildings = {
 			
 			7660 = {

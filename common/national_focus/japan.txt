@@ -115,7 +115,12 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
+            CHI = {
+					country_event = { id = china.187 }
+				}		
 		}
+	  
+	
 	}
 
 	focus = {
@@ -195,7 +200,7 @@ focus_tree = {
 	
 		hidden_effect = {
 			country_event = { days = 5 id = news.1 }
-		
+		CHI = {remove_ideas = CHI_nine_power_treaty}
 		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
 		if = {
 			limit = {

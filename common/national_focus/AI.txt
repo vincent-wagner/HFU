@@ -30,7 +30,7 @@ country = {
 			tag = CUB
 			tag = SWI
 			tag = POR
-			
+			tag = SIK
 			
 			
 			

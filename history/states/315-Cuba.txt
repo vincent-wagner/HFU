@@ -10,7 +10,7 @@ state= {
 	state_category = town
 
 	history= {
-		owner = CUB
+		owner = PAN
 		buildings = {
 			infrastructure = 4
 			
