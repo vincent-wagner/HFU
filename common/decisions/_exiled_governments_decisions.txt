@@ -390,6 +390,7 @@ governments_in_exile = {
 		available = {
 		    FROM = {
 		    	has_legitimacy > 0
+			NOT={tag=FRA}
 		    }
 		}
 		visible = {

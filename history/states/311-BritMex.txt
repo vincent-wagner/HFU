@@ -5,6 +5,10 @@ state=
 	manpower = 51000
 	
 	state_category = pastoral
+	resources={
+		oil=30
+		#steel=2 moved to Guerrero
+	}
 	history=
 	{
 		owner = ENG
