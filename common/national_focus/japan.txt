@@ -407,11 +407,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		JAP = { 
+						add_timed_idea = { idea = JAP_banzai days = 160 }
+					}
 		custom_effect_tooltip = tooltip_jap_war
 		country_event = { id = japan.144 }
+		ENG = {annex_country = { target = INS transfer_troops = yes }}
+		}
 		
-		
-			}
 	}
 
 	focus = {
