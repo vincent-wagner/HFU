@@ -29,7 +29,7 @@ NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                   --up from 10, sh
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
 NDefines.NDiplomacy.GUARANTEE_COST = 1000
-NDefines.NDiplomacy.REVOKE_GUARANTEE_COST = 1000
+NDefines.NDiplomacy.REVOKE_GUARANTEE_COST = 25
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0						-- When you pass once you should get enough points to finish the peace deal
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 1				-- WAS 0.05 | Each army unit owned by the source country contributes this amount of volunteers to the limit.
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0				-- WAS 30 | This many divisons are required for the country to be able to send volunteers.
@@ -41,7 +41,7 @@ NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 1                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000 
 ---------------------------------------------------------------
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 60					-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 1000					-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- down from 7 | why not allow Luxembourg to cap faster
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
 ---------------------------------------------------------------
@@ -78,10 +78,10 @@ NDefines_Graphics.NInterface.GRIDBOX_ELEMENTS_INTERPOLATION_SPEED = 0.25
 NDefines_Graphics.NGraphics.TREE_FADE_NEAR = 150.0
 NDefines_Graphics.NGraphics.TREE_FADE_FAR = 250.0
 NDefines_Graphics.NGraphics.RESOURCE_MAP_ICON_TEXT_CUTOFF = 400
-NDefines_Graphics.NGraphics.UNITS_DISTANCE_CUTOFF = 100
+NDefines_Graphics.NGraphics.UNITS_DISTANCE_CUTOFF = 100				--was 100
 NDefines_Graphics.NGraphics.SHIPS_DISTANCE_CUTOFF = 200
-NDefines_Graphics.NGraphics.UNIT_ARROW_DISTANCE_CUTOFF = 500
-NDefines_Graphics.NGraphics.UNITS_ICONS_DISTANCE_CUTOFF = 700
+NDefines_Graphics.NGraphics.UNIT_ARROW_DISTANCE_CUTOFF = 500   --was 500
+NDefines_Graphics.NGraphics.UNITS_ICONS_DISTANCE_CUTOFF = 700 	--was 700
 NDefines_Graphics.NGraphics.NAVAL_COMBAT_DISTANCE_CUTOFF = 1000
 NDefines_Graphics.NGraphics.ADJACENCY_RULE_DISTANCE_CUTOFF = 1300
 NDefines_Graphics.NGraphics.LAND_COMBAT_DISTANCE_CUTOFF = 1000
@@ -162,7 +162,6 @@ NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.17						-- Vanilla 0,10
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2					        --Vanilla 3
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.50	-- Vanilla 0,75
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
 

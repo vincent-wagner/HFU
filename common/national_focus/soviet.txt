@@ -340,7 +340,70 @@
 			}
 		}
 	}
+	focus = {
+		id = SOV_improve_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 9
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			229 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			
+			}
+			400 = {		
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			566 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_peoples_commissariat
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = SOV_improve_railway focus = SOV_transpolar_flights focus = SOV_ocean_going_navy}
+		x = 2
+		y = 1
+		relative_position_id = SOV_improve_railway
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = peoples_commissariat_focus
+		}
+	}
 	focus = {
 		id = SOV_extra_tech_slot_early
 		icon = GFX_focus_research
@@ -350,7 +413,7 @@
 		
 		
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -705,52 +768,7 @@
 		}
 	}
 
-	focus = {
-		id = SOV_improve_railway
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 9
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-			every_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		completion_reward = {
-			229 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			
-			}
-			400 = {		
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			566 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
+	
 
 	focus = {
 		id = SOV_transpolar_flights
@@ -857,24 +875,7 @@
 		}
 	}
 	
-	focus = {
-		id = SOV_peoples_commissariat
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = SOV_improve_railway focus = SOV_transpolar_flights focus = SOV_ocean_going_navy}
-		x = 2
-		y = 1
-		relative_position_id = SOV_improve_railway
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = peoples_commissariat_focus
-		}
-	}
 
 
 	
@@ -886,7 +887,7 @@
 		prerequisite = { focus = SOV_peoples_commissariat }
 		
 		x = 2
-		y = 2
+		y = 1
 		relative_position_id = SOV_peoples_commissariat
 		cost = 1
 
