@@ -251,7 +251,7 @@ DIPLOMACY_MILACC_ENABLE_TRIGGER = {
 			}
 		}
 		always = yes
-		NOT={tag=EFR}
+		FROM={NOT={OR{tag=EFR tag=SPR}}}
 	}
 	if = {
 		limit = {
@@ -287,6 +287,7 @@ DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
 			}
 		}
 		always = yes
+		NOT={OR{tag=EFR tag=SPR}}
 	}
 	if = {
 		limit = {
@@ -321,7 +322,7 @@ DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 				option = FREE
 			}
 		}
-		NOT={tag=EFR}
+		FROM={NOT={OR{tag=EFR tag=SPR}}}
 		always = yes
 	}
 	if = {
@@ -358,6 +359,7 @@ DIPLOMACY_OFFER_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 			}
 		}
 		always = yes
+		NOT={OR{tag=EFR tag=SPR}}
 	}
 	if = {
 		limit = {
