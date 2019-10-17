@@ -42,7 +42,27 @@ original_tag = FRA
 }
 
 war_measures = {
+	FRA_claim_vichy_territory = {
+icon = generic_operation
 
+allowed = {
+original_tag = FRA
+}
+		available = {EFR={any_owned_state={is_controlled_by=FRA}}
+		}
+		visible = {
+		tag=FRA
+		
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+		EFR={every_owned_state={
+		if={limit={is_controlled_by=FRA} FRA={set_state_owner=Prev}}
+		}
+		}}
+	}
 	FRA_scorched_earth_tactics = {
 		icon = generic_scorched_earth
 		

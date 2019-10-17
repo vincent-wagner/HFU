@@ -3008,12 +3008,7 @@ SPR = { country_event = spain.29 }
 				uses = 1
 				category = ss_tech
 			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
+			
 		}
 		
 		completion_reward = {
@@ -3041,12 +3036,7 @@ SPR = { country_event = spain.29 }
 				uses = 1
 				category = ss_tech
 			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
+			
 		}
 	}
 
@@ -3057,7 +3047,7 @@ SPR = { country_event = spain.29 }
 		x = 0
 		y = 1
 		relative_position_id = GER_u_boat_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3069,7 +3059,7 @@ SPR = { country_event = spain.29 }
 				name = ti_bonus
 				name = GER_trade_interdiction
 				bonus = 1.0
-				uses = 2
+				uses = 6
 				category = trade_interdiction_tree
 			}
 		}
@@ -3082,7 +3072,7 @@ SPR = { country_event = spain.29 }
 		x = 0
 		y = 1
 		relative_position_id = GER_trade_interdiction
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
