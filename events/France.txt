@@ -84,7 +84,7 @@ country_event = {
 				
 				set_global_flag = achievement_france_surrender
 				set_global_flag = fall_of_france
-				
+				add_political_power=150
 				          
 
 				
