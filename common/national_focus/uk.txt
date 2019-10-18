@@ -1688,7 +1688,7 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 
@@ -1717,7 +1717,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = uk_empire_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2018,8 +2018,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 10
-
+		cost = 5
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2595,7 +2594,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -3559,7 +3558,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_steady_as_she_goes
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -3772,7 +3771,7 @@ IRQ = { white_peace = ENG }
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -3798,7 +3797,7 @@ IRQ = { white_peace = ENG }
 		x = 0
 		y = 1
 		relative_position_id = ENG_issue_gasmasks
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -3829,7 +3828,7 @@ IRQ = { white_peace = ENG }
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	

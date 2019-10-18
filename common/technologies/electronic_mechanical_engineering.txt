@@ -1020,7 +1020,7 @@ technologies = {
 		
 		enable_equipments = {
 			rocket_interceptor_equipment_3
-			guided_missile_equipment_3
+			
 		}
 		
 		rocket_artillery = {

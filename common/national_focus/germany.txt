@@ -1020,7 +1020,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_align_hungary
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1621,7 +1621,13 @@ random_owned_controlled_state = {
 
 		completion_reward = {
 			set_technology = { 
-	        basic_heavy_tank = 1
+	        
+			advanced_rocket_engines = 1
+			super_heavy_tank = 1
+			
+			
+			
+			
                             }
 		}
 	}

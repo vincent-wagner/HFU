@@ -938,10 +938,10 @@ country_event ={
 	traits = {  winter_specialist  brilliant_strategist panzer_leader panzer_expert ranger organizer  logistics_wizard aggressive_assaulter organisational_leader inspirational_leader }
 	skill = 8
 	
-	attack_skill = 9
-	defense_skill = 5
+	attack_skill = 10
+	defense_skill = 6
 	planning_skill = 2
-	logistics_skill = 4
+	logistics_skill = 5
 }
 create_corps_commander = {
 	name = "Georgy Zhukov"
@@ -952,9 +952,9 @@ create_corps_commander = {
 
 	
 	attack_skill = 8
-	defense_skill = 3
+	defense_skill = 5
 	planning_skill = 3
-	logistics_skill = 3
+	logistics_skill = 5
 }
  remove_unit_leader = 410
  remove_unit_leader = 402
