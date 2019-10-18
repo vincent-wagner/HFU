@@ -36,7 +36,7 @@ categories =  {
 			#movement = -0.2
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.25
+		enemy_army_bonus_air_superiority_factor = -0.3
 	}
 
 	hills = {
