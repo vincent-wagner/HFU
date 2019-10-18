@@ -41,7 +41,7 @@ NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 1                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000 
 ---------------------------------------------------------------
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 60					-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 1000				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- down from 7 | why not allow Luxembourg to cap faster
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
 ---------------------------------------------------------------
