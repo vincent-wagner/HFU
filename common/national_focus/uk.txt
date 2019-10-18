@@ -157,10 +157,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -168,19 +168,19 @@ focus_tree = {
 
 		completion_reward = {
 			128 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
 			}
 			130 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
@@ -575,7 +575,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			custom_effect_tooltip = shadow_scheme_focus_tt
-			add_ideas = wartime_industry_focus	
+			
 		}
 	}
 
@@ -3632,8 +3632,8 @@ focus_tree = {
 		id = uk_iraq_focus
 		available = {
 								AND = {
-			date > 1940.8.15
-			ENG = { controls_state = 446 }
+			date > 1940.1.1
+			
 			OR = {
 			IRQ = { has_war = no }
 
@@ -3666,86 +3666,13 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			IRQ = { set_rule = { can_join_factions = yes }}
-			GER = { add_to_faction = IRQ }
-			IRQ = { declare_war_on = { target = ENG type = annex_everything }
-			declare_war_on = { target = FRA type = annex_everything }}
+			annex_country = { target = IRQ transfer_troops = yes }
 				
 		}
 	}
 	
 	
-		focus = {
-		id = uk_iraq_focus2
-		available = {
-							
-			ENG = { controls_state = 291 }
-				
-				
-			
-		} #UK at war with fascist/commie. iraq is fascist/commie
-
-		bypass = {
 		
-		}
-
-		prerequisite = { focus = uk_iraq_focus }
-		icon = GFX_focus_ENG_attack_iraq
-		x = 0
-		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
-		relative_position_id = uk_iraq_focus
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-		
-		
-IRQ = { white_peace = ENG }
-	ENG = { white_peace = IRQ
-	set_autonomy = {
-
-					target = IRQ					
-					autonomy_state = autonomy_integrated_puppet
-
-					}
-	}
-
-
-								 IRQ = {
-								 			retire_country_leader = yes	
-				create_country_leader = {
-					name = "King Faisal II"
-					desc = "POLITICS_REZA_DESC"
-					picture = "Faisal_II.dds"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						
-					}
-					}
-					give_resource_rights = { receiver = ENG state = 291 }
-										give_resource_rights = { receiver = ENG state = 676 }
-
-								set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-						add_popularity = { ideology = neutrality popularity = 1.0 }
-					}
-			ENG = { add_to_faction = IRQ }
-			IRQ = { declare_war_on = { target = GER type = annex_everything }
-			declare_war_on = { target = ITA type = annex_everything }}
-			country_event = { id = iraq.7 }
-		}
-	}
 	
 
 	focus = {

@@ -187,12 +187,35 @@
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 1822;5014;impassable;-1;-1;-1;-1;-1;;pamir mountains
 1822;6826;impassable;-1;-1;-1;-1;-1;;pamir mountains
+1822;4943;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3058;3082;impassable;-1;-1;-1;-1;-1;;norway
 3058;11130;impassable;-1;-1;-1;-1;-1;;norway
-1048;4135;impassable;-1;-1;-1;-1;-1;;gibraltar
-10094;4135;impassable;-1;-1;-1;-1;-1;;gibraltar
-7153;4135;impassable;-1;-1;-1;-1;-1;;gibraltar
 
+12861;4943;impassable;-1;-1;-1;-1;-1;;iran
+2071;4943;impassable;-1;-1;-1;-1;-1;;iran
+2071;10523;impassable;-1;-1;-1;-1;-1;;iran
+2071;9816;impassable;-1;-1;-1;-1;-1;;iran
+4553;10523;impassable;-1;-1;-1;-1;-1;;iran
+4553;7969;impassable;-1;-1;-1;-1;-1;;iran
+4609;7969;impassable;-1;-1;-1;-1;-1;;iran
+4637;7969;impassable;-1;-1;-1;-1;-1;;iran
+4580;7969;impassable;-1;-1;-1;-1;-1;;iran
+4580;10837;impassable;-1;-1;-1;-1;-1;;iran
+10768;10837;impassable;-1;-1;-1;-1;-1;;iran
+12818;10837;impassable;-1;-1;-1;-1;-1;;iran
+12818;10922;impassable;-1;-1;-1;-1;-1;;iran
+12818;5067;impassable;-1;-1;-1;-1;-1;;iran
+12818;4983;impassable;-1;-1;-1;-1;-1;;iran
+12704;4983;impassable;-1;-1;-1;-1;-1;;iran
+10873;10890;impassable;-1;-1;-1;-1;-1;;iran
+10873;4983;impassable;-1;-1;-1;-1;-1;;iran
+10873;1963;impassable;-1;-1;-1;-1;-1;;iran
+10873;10828;impassable;-1;-1;-1;-1;-1;;iran
+10873;10759;impassable;-1;-1;-1;-1;-1;;iran
+8009;10890;impassable;-1;-1;-1;-1;-1;;iran
+1888;10890;impassable;-1;-1;-1;-1;-1;;iran
+1888;7990;impassable;-1;-1;-1;-1;-1;;iran
+10806;7990;impassable;-1;-1;-1;-1;-1;;iran
 
 
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
