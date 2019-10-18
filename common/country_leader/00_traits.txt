@@ -1049,7 +1049,7 @@ leader_traits = {
 		sprite = 13
 		enemy_partisan_effect = -0.25
 		foreign_subversive_activites = -0.3
-		non_core_manpower = 0.2
+		non_core_manpower = 0.1
 		
 		ai_will_do = {
 			factor = 1
