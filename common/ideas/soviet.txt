@@ -200,7 +200,8 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.03
+			mobilization_speed = 0.15	
+			surrender_limit =0.15
 			}
 		}
 
