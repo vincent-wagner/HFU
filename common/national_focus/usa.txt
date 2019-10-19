@@ -2331,13 +2331,16 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 150
-			add_tech_bonus = {
-				name = USA_air_war_plans_division
+			 add_tech_bonus = {
+				name = fighter_command_focus
 				bonus = 1.0
-				uses = 2
-				category = air_doctrine
-			} # REVISIT May use modifier?
-			add_ideas = air_war_plans_division_focus
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
+			
+			
+			}
+			
 		}
 	}
 
