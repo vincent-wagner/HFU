@@ -597,7 +597,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			congress_high_support_trigger = yes 
-			has_government = democratic
+			date>1939.1.1
 			NOT = { has_idea_with_trait = fascist_demagogue }
 			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
@@ -1108,7 +1108,7 @@ focus_tree = {
 		relative_position_id = USA_the_giant_wakes
 		cost = 5
 		available = {
-		date > 1940.10.10
+		date > 1940.10.1
 		}
 		ai_will_do = {
 			factor = 1
