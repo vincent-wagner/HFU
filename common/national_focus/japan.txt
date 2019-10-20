@@ -2038,7 +2038,7 @@ completion_reward = {
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2121,7 +2121,7 @@ completion_reward = {
 		y = 2
 		relative_position_id = JAP_carrier_warfare_experiments
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
