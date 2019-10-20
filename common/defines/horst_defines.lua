@@ -150,8 +150,8 @@ NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0000
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 36
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 36
-NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 10
-NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 10
+NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0
+NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0
 
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40 --max building slots in a state
