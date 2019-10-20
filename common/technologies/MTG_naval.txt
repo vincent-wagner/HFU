@@ -1603,7 +1603,7 @@ early_ship_hull_carrier = {
 				factor = 5
 			}
 		}
-		allow_branch = {always=no}
+		
 		categories = {
 			naval_equipment
 		}
@@ -1635,7 +1635,7 @@ early_ship_hull_carrier = {
 				factor = 5
 			}
 		}
-		
+		allow_branch = {always=no}
 		categories = {
 			naval_equipment
 		}
