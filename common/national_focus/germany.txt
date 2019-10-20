@@ -1753,30 +1753,30 @@ available = {
 			if = { 
 			limit = { SOV = {has_tech = improved_heavy_tank }}
 				GER = { 
-						add_timed_idea = { idea = GER_barbarossa days = 365 }
+						add_timed_idea = { idea = GER_barbarossa days = 100 }
 					}
 					ROM = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 365 }
+						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
 					}
 						HUN = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 365 }
+						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
 					}
 						BUL = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 365 }
+						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
 					}
 			}
 			else = {
 				GER = { 
-						add_timed_idea = { idea = GER_barbarossa_minor_ger days = 365 }
+						add_timed_idea = { idea = GER_barbarossa_minor_ger days = 100 }
 					}
 					ROM = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 365 }
+						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
 					}
 						HUN = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 365 }
+						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
 					}
 						BUL = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 365 }
+						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
 					}
 			
 			
