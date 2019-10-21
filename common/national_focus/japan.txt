@@ -227,8 +227,9 @@ focus_tree = {
 		}
 
 		available = {
-			has_full_control_of_state = 605
-			has_full_control_of_state = 325
+			605={is_controlled_by_ROOT_or_ally = yes}
+			325={is_controlled_by_ROOT_or_ally = yes}
+			
 		}
 
 		bypass = {
@@ -434,12 +435,13 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_full_control_of_state = 333
-				has_full_control_of_state = 672
-				has_full_control_of_state = 334
+				333={is_controlled_by_ROOT_or_ally = yes}
+				672={is_controlled_by_ROOT_or_ally = yes}
+				334={is_controlled_by_ROOT_or_ally = yes}
+				
 			}
-			has_full_control_of_state = 336
-			has_full_control_of_state = 671
+			336={is_controlled_by_ROOT_or_ally = yes}
+			671={is_controlled_by_ROOT_or_ally = yes}
 		}
 
 		bypass = {
@@ -1078,7 +1080,7 @@ completion_reward = {
 			MAN = { has_focus_tree = generic_focus }
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1945,7 +1947,7 @@ completion_reward = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1955,7 +1957,7 @@ completion_reward = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -2195,7 +2197,7 @@ completion_reward = {
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2234,7 +2236,7 @@ completion_reward = {
 		y = 2
 		relative_position_id = JAP_supremacy_of_the_battlefleet
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

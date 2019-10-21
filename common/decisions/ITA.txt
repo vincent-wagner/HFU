@@ -40,8 +40,8 @@ ITA_annex_bul = {
 	
 			available = {
 			BUL = { is_ai = yes }
-			yug = { has_capitulated = yes }
-			gre = { has_capitulated = yes }
+			YUG = { has_capitulated = yes }
+			GRE = { has_capitulated = yes }
 			}
 	
 			allowed = {

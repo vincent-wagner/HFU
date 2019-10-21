@@ -668,7 +668,7 @@ DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
 				option = FREE
 			}
 		}
-		always = yes
+		always = no
 	}
 	if = {
 		limit = {
