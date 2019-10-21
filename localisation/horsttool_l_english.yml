@@ -14,7 +14,7 @@
  CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed\n\n"
  CLEAR_ALL_MARKINGS_DELAYED:0 ""
 
- TRANSFER_STATES:0 "§HTransfer States§!\nTransfer ownership of marked states to this country\n\n"
+ TRANSFER_STATES:0 "§HTransfer States§!\nTransfer marked states to this country\n\n"
  TRANSFER_STATES_DELAYED:0 ""
  
  ADD_CORES:0 "§HAdd cores§!\nAdd cores to marked states for this country\n\n"
@@ -28,18 +28,23 @@
  
  ADD_CHEAT:0 "§HCheat§!\nSelection is given to the selected country\n\n"
  ADD_CHEAT_DELAYED:0 ""
- 
+
  ST_TOOLTIP_on:0 "§HActivate 'Host Tool'§!"
  ST_TOOLTIP_off:0 "§HDeactivate 'Host Tool'§!"
 transfer_states_on:0 "Horst Tool: £trigger_no"
 transfer_states_off:0 "Horst Tool: £trigger_yes"
 
- CHEAT_SELECT:0   "Select Effect "
- CHEAT1:0   "Tank Bonus 100% "
-
- CHEAT2:0   "Tank bonus 200% "
- CHEAT3:0   "Tank bonus 2y"
- CHEAT4:0   "Plane Bonus 100% "
+ CHEAT_SELECT:0   "Select cheat"
+ CHEAT1:0   "Armor - 100%"
+ CHEAT2:0   "Armor - 200% "
+ CHEAT3:0   "Armor - 2y"
+ CHEAT4:0   "Fighters - 100%"
+ CHEAT5:0   "Industry - 100%"
+ CHEAT6:0   "Add 1 Off-Mil"
+ CHEAT7:0   "Remove 1 Off-Mil"
+ CHEAT8:0   "Add 1 Off-Civ"
+ CHEAT9:0   "Remove 1 Off-Civ"
+ CHEAT10:0  "Add 50 PP"
   
  mark_status_marked:0   "     Unmark State "
  mark_status_unmarked:0 "      Mark State  "

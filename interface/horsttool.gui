@@ -24,14 +24,11 @@ guiTypes = {
 		}
 
 	}
-	
-	
-	
 		
 	containerWindowType = {
 		name = "horsttool_container"
-		position = {x=1250 y=50}
-		size = { width=527 height=315}
+		position = {x=1200 y=20}
+		size = { width=650 height=600}
 		
 		fade_time = 300
 		fade_type = linear
@@ -45,7 +42,7 @@ guiTypes = {
 		
 		
 		instantTextboxType = {
-			name = "lel"
+			name = "why use lel lennard"
 			#position = {x=14 y=8}
 			position = {x=163.5 y=30}
 			font = "hoi_24header"
@@ -55,32 +52,36 @@ guiTypes = {
 			format = centre
 		}
 		
+#######################################################################
+		buttonType = {
+			name = "add_cheat" 
+			position = {x=160 y=120}
+			spriteType = "GFX_add_pol_idea_button"
+            		pdx_tooltip = "ADD_CHEAT"
+			pdx_tooltip_delayed = "ADD_CHEAT_DELAYED"
+		}
 		buttonType = {
 			name = "observer" 
-			position = {x=30 y=100}
+			position = {x=40 y=200}
 			spriteType = "GFX_observer_button"
          		pdx_tooltip = "OBSERVER"
 			pdx_tooltip_delayed = "OBSERVER_DELAYED"
 			scale = 0.70
 		}
-		
-		
-		
 		buttonType = {
 			name = "whitepeace"	
-			position = {x=110 y=100}
+			position = {x=110 y=200}
 			spriteType = "GFX_relation_truce"
             		scale=1.8
 			pdx_tooltip = "WHITEPEACE"
-			pdx_tooltip_delayed = "WHITEPEACE"
+			pdx_tooltip_delayed = "WHITEPEACE_DELAYED"
 			#scale = 0.95
 		}
-		
-		
-		
+	
+
 		buttonType = {
 			name = "award_states" 
-			position = {x=320 y=100}	
+			position = {x=250 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
             		frame = 13
 			pdx_tooltip = "TRANSFER_STATES"
@@ -88,14 +89,14 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "add_cores" 
-			position = {x=370 y=100}	
+			position = {x=310 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
             		frame = 6
 			pdx_tooltip = "ADD_CORES"
 			pdx_tooltip_delayed = "ADD_CORES_DELAYED"
 		}buttonType = {
 			name = "annex_country" 
-			position = {x=320 y=150}	
+			position = {x=370 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
             		frame = 2
 			pdx_tooltip = "ANNEX_COUNTRY"
@@ -103,52 +104,88 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "puppet_country" 
-			position = {x=370 y=150}	
+			position = {x=430 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
             		frame = 1
 			pdx_tooltip = "PUPPET_COUNTRY"
 			pdx_tooltip_delayed = "PUPPET_COUNTRY_DELAYED"
 		}
-		
-		buttonType = {
-			name = "add_cheat" 
-			position = {x=160 y=160}
-			spriteType = "GFX_add_pol_idea_button"
-            		
-			pdx_tooltip = "ADD_CHEAT"
-			pdx_tooltip_delayed = "ADD_CHEAT_DELAYED"
-		}
+####################################################################
+
+####################################################################
 		buttonType = {
 			name = "cheat1"
-			position = {x=30 y=150}
+			position = {x=40 y=90}
 			spriteType = "GFX_generic_box_125"
 			
 			
 		}
 		buttonType = {
 			name = "cheat2"
-			position = {x=30 y=176}
+			position = {x=40 y=116}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 			
 		}
 		buttonType = {
 			name = "cheat3"
-			position = {x=30 y=202}
+			position = {x=40 y=142}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 			
 		}
 		buttonType = {
 			name = "cheat4"
-			position = {x=30 y=228}
+			position = {x=40 y=168}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+			
+		}
+		buttonType = {
+			name = "cheat5"
+			position = {x=40 y=194}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+			
+		}
+		buttonType = {
+			name = "cheat6"
+			position = {x=40 y=220}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+			
+		}
+		buttonType = {
+			name = "cheat7"
+			position = {x=40 y=246}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+			
+		}
+		buttonType = {
+			name = "cheat8"
+			position = {x=40 y=272}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+			
+		}
+		buttonType = {
+			name = "cheat9"
+			position = {x=40 y=298}
+			spriteType = "GFX_generic_box_125"
+			scale= 1
+			
+		}
+		buttonType = {
+			name = "cheat10"
+			position = {x=40 y=324}
 			spriteType = "GFX_generic_box_125"
 			scale= 1
 			
 		}
 		instantTextboxType = {
 			name = "cheat1_text"
-			position = {x=40 y=155}
+			position = {x=45 y=95}
 			font = "hoi_18mbs"
 			text = "[cheat_selected]"
 			maxWidth = 340
@@ -159,7 +196,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cheat2_text"
-			position = {x=40 y=181}
+			position = {x=45 y=121}
 			font = "hoi_18mbs"
 			text = "CHEAT2"
 			maxWidth = 340
@@ -170,7 +207,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cheat3_text"
-			position = {x=40 y=207}
+			position = {x=45 y=147}
 			font = "hoi_18mbs"
 			text = "CHEAT3"
 			maxWidth = 340
@@ -181,7 +218,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cheat4_text"
-			position = {x=40 y=233}
+			position = {x=45 y=173}
 			font = "hoi_18mbs"
 			text = "CHEAT4"
 			maxWidth = 340
@@ -189,9 +226,70 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
+		instantTextboxType = {
+			name = "cheat5_text"
+			position = {x=45 y=199}
+			font = "hoi_18mbs"
+			text = "CHEAT5"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "cheat6_text"
+			position = {x=45 y=225}
+			font = "hoi_18mbs"
+			text = "CHEAT6"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "cheat7_text"
+			position = {x=45 y=251}
+			font = "hoi_18mbs"
+			text = "CHEAT7"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "cheat8_text"
+			position = {x=45 y=277}
+			font = "hoi_18mbs"
+			text = "CHEAT8"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "cheat9_text"
+			position = {x=45 y=303}
+			font = "hoi_18mbs"
+			text = "CHEAT9"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "cheat10_text"
+			position = {x=45 y=329}
+			font = "hoi_18mbs"
+			text = "CHEAT10"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+####################################################################
 		containerWindowType = {
 		name = "st_state_manager_powers_container"
-		position = {x=245 y=190}
+		position = {x=230 y=100}
 		size = { width=600 height=300}
 
 		fade_time = 300
@@ -252,15 +350,13 @@ guiTypes = {
 		instantTextboxType = {
 			name = "marking"
 			position = { x=174 y=20 }
+			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
 			text = "[This.mark_state_tooltip]"
 			maxWidth = 300
-			maxHeight = 100
+			maxHeight = 20
 		}
 	}
 	}
-
-
-
 }

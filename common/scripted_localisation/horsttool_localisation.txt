@@ -87,4 +87,40 @@ defined_text = { # global
 		}
 		localization_key = CHEAT4
 	}
+		text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=5}
+		}
+		localization_key = CHEAT5
+	}
+		text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=6}
+		}
+		localization_key = CHEAT6
+	}
+		text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=7}
+		}
+		localization_key = CHEAT7
+	}
+		text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=8}
+		}
+		localization_key = CHEAT8
+	}
+		text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=9}
+		}
+		localization_key = CHEAT9
+	}
+		text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=10}
+		}
+		localization_key = CHEAT10
+	}
 }
