@@ -1,7 +1,7 @@
 ﻿capital = 500
 
 
-oob = "BRA_1936"
+
 set_research_slots = 0
 # Starting tech
 set_technology = {

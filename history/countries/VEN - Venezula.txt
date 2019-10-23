@@ -1,6 +1,5 @@
 ﻿capital = 307
 
-oob = "VEN_1936"
 set_research_slots = 0
 # Starting tech
 set_technology = {
