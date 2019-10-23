@@ -1,5 +1,4 @@
 ﻿capital = 46
-
 oob = "ROM_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -71,7 +70,31 @@ if = {
 }
 
 
-
+add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 87
+         producer = ROM
+}
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 12355
+         producer = ROM
+}
+add_equipment_to_stockpile = {
+         type = motorized_equipment_1
+         amount = 100
+         producer = ROM
+}
+add_equipment_to_stockpile = {
+         type = support_equipment_1
+         amount = 300
+         producer = ROM
+}
+add_equipment_to_stockpile = {
+         type = fighter_equipment_0
+         amount = 72
+         producer = ROM
+}
 set_convoys = 10
 1939.1.1 = {
 	

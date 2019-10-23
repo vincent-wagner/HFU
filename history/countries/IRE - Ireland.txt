@@ -1,7 +1,5 @@
 ﻿capital = 113
-
 oob = "IRE_1936"
-
 set_research_slots = 3
 
 set_technology = {
@@ -11,7 +9,11 @@ set_technology = {
 }
 
 set_convoys = 10
-
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 300
+         producer = IRE
+}
 if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_ideas = SAF_the_commonwealth

@@ -37,7 +37,11 @@ if = {
 }
 
 set_convoys = 20
-
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 2975
+         producer = RAJ
+}
 set_cosmetic_tag = RAJ_UK # British Raj
 
 1939.1.1 = {
