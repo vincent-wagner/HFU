@@ -1,4 +1,5 @@
 ﻿capital = 361
+
 oob = "USA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -233,60 +234,8 @@ if = {
 
 
 set_convoys = 700
-add_equipment_to_stockpile = {
-         type = artillery_equipment_1
-         amount = 106
-         producer = USA
-}
 
-add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 11111
-         producer = USA
-}
 
-add_equipment_to_stockpile = {
-         type = support_equipment_1
-         amount = 344
-         producer = USA
-}
-
-add_equipment_to_stockpile = {
-         type = fighter_equipment_0
-         amount = 384
-         producer = USA
-}
-
-add_equipment_to_stockpile = {
-         type = nav_bomber_equipment_1
-         amount = 108
-         producer = USA
-}
-add_equipment_to_stockpile = {
-         type = tac_bomber_equipment_0
-         amount = 204
-         producer = USA
-}
-add_equipment_to_stockpile = {
-         type = CAS_equipment_1
-         amount = 96
-         producer = USA
-}
-add_equipment_to_stockpile = {
-         type = cv_fighter_equipment_0
-         amount = 68
-         producer = USA
-}
-add_equipment_to_stockpile = {
-         type = cv_CAS_equipment_1
-         amount = 72
-         producer = USA
-}
-add_equipment_to_stockpile = {
-         type = cv_nav_bomber_equipment_1
-         amount = 36
-         producer = USA
-}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1932.11.8"
