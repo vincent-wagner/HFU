@@ -36,7 +36,11 @@ if = {
 	}
 }
 set_convoys = 15
-
+add_equipment_to_stockpile = {
+         type = infantry_equipment_0
+         amount = 1800
+         producer = SIA
+}
 1939.1.1 = {
 
 	add_political_power = 1198

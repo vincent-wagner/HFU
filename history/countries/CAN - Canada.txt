@@ -1,5 +1,4 @@
 ﻿capital = 276
-
 oob = "CAN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -227,6 +226,11 @@ create_country_leader = {
 }
 
 set_convoys = 100
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 2700
+         producer = CAN
+}
 set_stability = 0.75
 
 create_corps_commander = {

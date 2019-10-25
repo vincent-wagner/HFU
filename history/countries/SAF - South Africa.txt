@@ -1,7 +1,5 @@
 ﻿capital = 275
-
 oob = "SAF_1936"
-
 set_stability = 0.6
 set_war_support = 0.1
 set_research_slots = 3
@@ -134,7 +132,11 @@ if = {
 }
 
 set_convoys = 25
-
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 815
+         producer = SAF
+}
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.5.17"

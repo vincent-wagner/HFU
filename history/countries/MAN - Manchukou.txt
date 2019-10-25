@@ -1,7 +1,5 @@
 ﻿capital = 328
-
 oob = "MAN_1936"
-
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
@@ -20,7 +18,11 @@ if = {
 }
 
 set_convoys = 40
-
+add_equipment_to_stockpile = {
+         type = infantry_equipment_0
+         amount = 4000
+         producer = MAN
+}
 1939.1.1 = {
 
 	add_to_war = {
