@@ -84,24 +84,6 @@ ENG_annex_ire = {
 		}
 	}
 	
-ENG_guarantee_greece = {
-	allowed = {
-				tag = ENG
-			}
-			visible = {
-				date > 1938.4.1	
-				NOT = {	ITA = { has_war_with = GER } }
-				GRE = { exists = yes }
-				}
-
-			fire_only_once = yes
-
-			cost = 25
-			
-				complete_effect = {
-				ENG = { give_guarantee = GRE }
-			}
-}
 }
 	
 

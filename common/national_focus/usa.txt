@@ -1059,8 +1059,8 @@ focus_tree = {
 		id = USA_the_giant_wakes
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = USA_arsenal_of_democracy }
-		available = {
-		date > 1940.1.1
+		available = {OR={
+		date > 1940.1.1 has_war=yes}
 		}
 		continue_if_invalid = yes
 		x = 0
@@ -1107,8 +1107,8 @@ focus_tree = {
 		y = 2
 		relative_position_id = USA_the_giant_wakes
 		cost = 5
-		available = {
-		date > 1940.10.1
+		available = {OR={
+		date > 1940.10.1 has_war=yes}
 		}
 		ai_will_do = {
 			factor = 1
@@ -2603,8 +2603,8 @@ focus = {
 			else = {
 				congress_low_support_trigger = yes
 			}
-			controls_state = 378
-			controls_state = 358
+			controls_state = 385
+			controls_state = 364
 		}
 		
 		bypass = {
@@ -2616,7 +2616,7 @@ focus = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			378 = { 
+			385 = { 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
@@ -2624,7 +2624,7 @@ focus = {
 					instant_build = yes
 				}
 			}
-			358 = { 
+			364 = { 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
@@ -2641,7 +2641,7 @@ focus = {
 				}
 				USA_congress_medium_opposition = yes
 			}
-				378 = { 
+				385 = { 
 					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = dockyard
@@ -2649,7 +2649,7 @@ focus = {
 						instant_build = yes
 					}
 				}
-				358 = { 
+				364 = { 
 					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = dockyard

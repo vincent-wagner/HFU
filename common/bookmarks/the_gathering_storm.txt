@@ -103,7 +103,6 @@ bookmarks = {
 			focuses = {
 				ITA_pact_of_steel
 				ITA_greece_war_goal
-				ITA_italia_irredenta
 			}		
 		}
 		"JAP"={
