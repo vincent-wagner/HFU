@@ -252,6 +252,8 @@
  inspirational_leader_desc:0 "§LA natural leader. Men will face their worst fears when backed by a powerful leader.§!"
  desert_fox:0 "Desert Fox"
  desert_fox_desc:0 "§LEntirely at home when fighting in a Desert.§!"
+ sand:0 "Hates Sand"
+ sand_desc:0 "I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere."
  swamp_fox:0 "Swamp Fox"
  swamp_fox_desc:0 "§LWhile somewhat soggy, the Swamp Fox knows his way around Swamps and Marshes.§!"
  trait_mountaineer:0 "Mountaineer"

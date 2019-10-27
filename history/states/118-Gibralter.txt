@@ -2,7 +2,7 @@ state=
 {
 	id=118
 	name="STATE_118"
-	manpower=21372
+	manpower=21372 
 	
 	state_category = enclave
 	history={
@@ -15,10 +15,14 @@ state=
 				naval_base = 5
 				coastal_bunker = 2
 			}
+			13219 = {
+				naval_base = 5
+				coastal_bunker = 2
+			}
 		}
 		add_claim_by = SPR
 	}
 	provinces={
-		4135
+		4135 13219 13220
 	}
 }
