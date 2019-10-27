@@ -1434,7 +1434,7 @@ add_tech_bonus = {
 		transfer_state=554 #Damascus
 		transfer_state=553 #Lebanon	
 		transfer_state=677 #Aleppo
-		transfer_state=554 #Damascus	
+		transfer_state=680 #Deir al sur	
 	}}
 
 focus = {
