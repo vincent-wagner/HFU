@@ -7,7 +7,11 @@ ideas = {
                 send_volunteer_size = 3
            }
       }
- 
+ 	Fast_Training = {
+           modifier = {
+                training_time_army_factor = -0.99
+           }
+      }
 
 
 	militarized_schools = {

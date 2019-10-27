@@ -1202,6 +1202,7 @@
 
 		completion_reward = {
 			army_experience = 20
+			add_ideas=Fast_Training
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0

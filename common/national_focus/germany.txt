@@ -1740,7 +1740,7 @@ available = {
 				type = annex_everything
 				target = SOV
 			}
-			
+			SOV={remove_ideas=Fast_Training }
 			
 			if = { 
 			limit = { has_game_rule = { 
@@ -2016,8 +2016,8 @@ available = {
 			SOV = {
 			transfer_state = 78 
 			transfer_state = 80
-			transfer_state = 766 
-			annex_country = {
+			transfer_state = 766
+						annex_country = {
 						target = LIT
 					}
 					
