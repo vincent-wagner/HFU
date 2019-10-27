@@ -159,7 +159,7 @@ country_event = {
 				transfer_state = 671		
 				transfer_state = 741
 				transfer_state = 728
-					
+				transfer_state=543 #Madagascar	
 					
 					
 					set_capital = 26

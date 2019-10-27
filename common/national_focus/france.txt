@@ -1358,28 +1358,24 @@ add_tech_bonus = {
 	}
 	
 	focus = {
-		id = FRA_madagascar_refuge
+		id = FRA_invade_madagascar
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = FRA_retreat_to_gabon }
 		relative_position_id = FRA_retreat_to_gabon
 		x = 0
 		y = 2
-		
-		bypass = {
-		543 = { NOT = { is_owned_and_controlled_by = FRA } }
-		}
+			
 
 		cost = 2
 
 		available_if_capitulated = yes
 		
-		available {  
-					controls_state = 543
+		available {date>1941.1.1
 		
 		}
 
 		completion_reward = {
-
+			transfer_state=543 #madagascar
 			543 = {
 
 				add_extra_state_shared_building_slots = 2
@@ -1419,44 +1415,27 @@ add_tech_bonus = {
 	}
 	
 		focus = {
-		id = FRA_the_long_voyage
+		id = FRA_retake_syria
 		icon = GFX_focus_generic_navy_battleship2
-		prerequisite = { focus = FRA_madagascar_refuge }
-		relative_position_id = FRA_madagascar_refuge
+		prerequisite = { focus = FRA_invade_madagascar }
+		relative_position_id = FRA_invade_madagascar
 		x = 1
 		y = 1
 
 		cost = 1
 
-		bypass = {
-		635 = { NOT = { is_owned_and_controlled_by = FRA } }
-		}
+		
 		
 		available_if_capitulated = yes
 		
-		available = { has_country_flag = caledonia_capital
-					  controls_state = 635}
+		available = {454={is_controlled_by=ENG} 455={is_controlled_by=ENG} date >1941.6.1}
 
 		completion_reward = {
-
-			635 = {
-
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-						type = naval_base
-						province = 5222
-						level = 3
-						instant_build = yes
-					}
-			}
-		}
-
-	}
+		transfer_state=554 #Damascus
+		transfer_state=553 #Lebanon	
+		transfer_state=677 #Aleppo
+		transfer_state=554 #Damascus	
+	}}
 
 focus = {
 	id = FRA_preparing_dragoon
@@ -1600,7 +1579,16 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			transfer_state=777#Togo
+			transfer_state=776 #Dahomey
+			transfer_state=778 #Upper Volta
+			transfer_state=779 #Ivory Coast
+			transfer_state=556 #Mali
+			transfer_state=557 #Mauritania
+			transfer_state=781 #Niger
+			transfer_state=780 #Guinea
+			transfer_state=272 #Senegal
+			transfer_state=298 #Liberia
 			665 = {	
 
 				add_state_modifier = {
