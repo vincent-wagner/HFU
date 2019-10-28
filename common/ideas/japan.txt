@@ -1724,6 +1724,26 @@ ideas = {
 			equipment_bonus = {
 				
 			}
+
+		}
+		kawasaki_dockyards = {
+			picture = generic_naval_manufacturer_3
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+
 		}	
 	}
 	

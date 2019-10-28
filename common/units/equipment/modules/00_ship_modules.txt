@@ -658,7 +658,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module = ship_anti_air_1
-			convert_cost_ic = 60
+			convert_cost_ic = 10
 		}
 	}
 	ship_anti_air_3 = {
