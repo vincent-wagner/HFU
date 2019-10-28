@@ -150,8 +150,7 @@ ideas = {
 			modifier = {
 				subversive_activites_upkeep = -0.5
 				land_reinforce_rate = 0.07
-				research_bonus = { rocketry  = 0.40 }
-			}
+				}
 		}
 		
 		comintern_influence = {
@@ -1723,6 +1722,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.15
 				mot_rockets = 0.50
+				rocketry = 0.25
 			}
 			
 			traits = { motorized_equipment_manufacturer }
