@@ -1664,7 +1664,7 @@ focus_tree = {
 		id = spr_collectivist_ethos
 		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = spr_political_effort }
-		mutually_exclusive = { focus = spr_liberty_ethos}
+		
 		available = {
 			OR = {
 				has_government = fascism

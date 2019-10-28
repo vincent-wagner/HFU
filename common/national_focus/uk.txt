@@ -2707,13 +2707,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_india_focus_2IC
 				}
-				119 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
+			
 				
 				
 				add_autonomy_ratio = {
@@ -2721,8 +2715,15 @@ focus_tree = {
 					localization = uk_india_focus
 				}
 			}
+		 119 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
 		}
-	}
+	}}
 	
 	
 	focus = {
@@ -2877,21 +2878,23 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_australia_focus_1dockyard
 				}
-				120 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
+				
 				
 				add_autonomy_ratio = {
 					value = -0.05
 					localization = uk_australia_focus
 				}
 			}
+		120 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+		
 		}
-	}
+	}}
 
 
 	focus = {
@@ -3047,20 +3050,23 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_new_zealand_focus_1dockyard
 				}
-				121 = {
+				
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_new_zealand_focus
+				}
+			}
+		121 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_new_zealand_focus
-				}
-			}
+		
 		}
-	}
+		
+	}}
 
 
 	focus = {
@@ -3214,21 +3220,24 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_canada_focus_1dockyard
 				}
-				122 = {
+				
+				
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_canada_focus
+				}
+			
+			}
+		122 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
-				
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_canada_focus
-				}
-			}
+		
 		}
-	}
+	}}
 
 	focus = {
 		id = uk_south_africa_focus
@@ -3381,21 +3390,24 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_south_africa_focus_1dockyard
 				}
-				123 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
+				
 				
 				add_autonomy_ratio = {
 					value = -0.05
 					localization = uk_south_africa_focus
 				}
 			}
+		123 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+		
+		
 		}
-	}
+	}}
 
 	focus = {
 		id = ENG_indian_autonomy
