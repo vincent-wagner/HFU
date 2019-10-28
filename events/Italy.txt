@@ -216,7 +216,7 @@ ITA = { country_event = { id = italy.144 } }
    option = {
    name = italy.143.a
    
-
+                ETH = { remove_state_core = 271}
 				ITA = { 
 					annex_country = {
 						target = ETH

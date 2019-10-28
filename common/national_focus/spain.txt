@@ -1743,50 +1743,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = spr_liberty_ethos
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = spr_political_effort }
-		mutually_exclusive = { focus = spr_collectivist_ethos }
-		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-		x = 1
-		y = 1
-		relative_position_id = spr_political_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 95
-			modifier = {
-				factor = 0.1
-				any_neighbor_country = {
-					is_major = yes
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-				NOT = {
-					any_neighbor_country = {
-						is_major = yes
-						has_government = democratic
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			add_ideas = liberty_ethos_focus
-		}
-	}
-
+	
 	focus = {
 		id = spr_militarism
 		icon = GFX_goal_generic_political_pressure
@@ -1810,30 +1767,7 @@ focus_tree = {
 	}
 
 
-	focus = {
-		id = spr_neutrality_focus
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = spr_liberty_ethos }
-
-		x = 0
-		y = 1
-		relative_position_id = spr_liberty_ethos
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				tag = AUS
-			}
-		}
-
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
+	
 
 
 	focus = {
@@ -1866,21 +1800,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = spr_deterrence
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = spr_neutrality_focus }
-		x = 0
-		y = 2
-		relative_position_id = spr_neutrality_focus
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = deterrence
-		}
-	}
+	
 
 	focus = {
 		id = spr_paramilitarism
@@ -1899,105 +1819,11 @@ focus_tree = {
 	}
 
 
-	focus = {
-		id = spr_why_we_fight
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = spr_deterrence }
-		available = { 
-			OR = { 
-				threat > 0.75 
-				has_defensive_war = yes 
-			}
-		}
+	
 
-		continue_if_invalid = yes
-		
-		x = 0
-		y = 2
-		relative_position_id = spr_deterrence 
-		cost = 10
+	
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = why_we_fight_focus
-		}
-	}
-
-	focus = {
-		id = spr_ideological_fanaticism
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = spr_paramilitarism }
-		x = 0
-		y = 1
-		relative_position_id = spr_paramilitarism
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = ideological_fanaticism_focus
-			set_rule = {
-				can_create_factions = yes
-			}
-		}
-	}
-
-	focus = {
-		id = spr_technology_sharing
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = spr_ideological_fanaticism focus = spr_why_we_fight }
-		available = {
-			has_war = yes
-			is_in_faction = yes
-			OR = {
-				num_of_factories > 50
-				any_other_country = {
-					is_in_faction_with = ROOT
-					num_of_factories > 50
-				}
-			}
-		}		
-		x = 1
-		y = 1
-		relative_position_id = spr_ideological_fanaticism
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = {
-					original_research_slots < 3
-				}
-				add_research_slot = 1
-			}
-			if = {
-				limit = {
-					original_research_slots > 2
-				}
-				add_tech_bonus = {
-					name = electronics_bonus
-					bonus = 1.0
-					uses = 1
-					category = electronics
-				}
-				add_tech_bonus = {
-					name = industrial_bonus
-					bonus = 1.0
-					uses = 1
-					category = industry
-				}	
-				add_tech_bonus = {
-					name = infantry_artillery_bonus #@#
-					bonus = 1.0
-					uses = 1
-					category = infantry_weapons
-					category = artillery
-				}				
-			}			
-		}
-	}	
+	
 	}
 		
 	
