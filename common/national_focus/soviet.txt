@@ -1143,6 +1143,9 @@
 
 		completion_reward = {
 			add_ideas = nkvd
+			set_technology{motorized_rocket_unit=1}
+			custom_effect_tooltip = "Five fully equipped Katyusha-Divisions will spawn in Moscow."
+			hidden_effect={load_oob="SOVrocket"}
 		}
 	}
 
