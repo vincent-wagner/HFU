@@ -1248,7 +1248,7 @@ ideas = {
 			
 
 			
-			traits = { army_regrouping_2 }
+			traits = { army_regrouping_3 }
 			
 			ai_will_do = {
 				factor = 1

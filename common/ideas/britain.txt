@@ -1081,7 +1081,7 @@ ideas = {
 				original_tag = ENG
 			}
 			
-			traits = { navy_chief_naval_aviation_2 }	
+			traits = { air_air_superiority_2 }	
 	
 		}
 	}
@@ -1096,7 +1096,7 @@ ideas = {
 			
 
 			
-			traits = { air_chief_reform_2 }
+			traits = { air_chief_reform_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1111,7 +1111,7 @@ ideas = {
 			
 
 			
-			traits = { air_chief_night_operations_2 }
+			traits = { air_chief_night_operations_3 }
 			# REVISIT Stratetic bombing as secondary trait?
 			
 			ai_will_do = {
@@ -1127,7 +1127,7 @@ ideas = {
 			
 
 			
-			traits = { air_chief_safety_2 }
+			traits = { air_chief_safety_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1192,7 +1192,7 @@ ideas = {
 			
 
 			
-			traits = { air_air_superiority_2 }
+			traits = { air_air_superiority_3 }
 			
 			ai_will_do = {
 				factor = 1

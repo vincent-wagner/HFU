@@ -1945,7 +1945,7 @@ ideas = {
 					has_completed_focus = GER_army_innovation
 				}
 			
-			traits = { army_armored_3 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 8
@@ -1959,7 +1959,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { army_regrouping_2 }
+			traits = { army_regrouping_3 }
 			
 			ai_will_do = {
 				factor = 1.5
