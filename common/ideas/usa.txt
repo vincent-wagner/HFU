@@ -328,7 +328,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_dockyard_factor = 0.1	
+				production_speed_dockyard_factor = 0.3	
 			}
 		}
 		USA_us_air_force = {
@@ -657,7 +657,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.2
+				min_export = -0.15
 			}
 		}
 	

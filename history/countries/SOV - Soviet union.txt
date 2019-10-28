@@ -470,7 +470,7 @@ create_corps_commander = {
 	name = "Semyon Timoshenko"
 	id = 404
 		picture = "Portrait_Soviet_Semyon_Timoshenko.dds"
-	traits = { winter_specialist cavalry_officer politically_connected career_officer }
+	traits = { winter_specialist infantry_leader cavalry_officer politically_connected career_officer }
 	skill = 3
 
 
@@ -485,8 +485,8 @@ create_field_marshal = {
 	name = "Kliment Voroshilov"
 	id = 405
 		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
-	traits = { old_guard politically_connected inflexible_strategist }
-	skill = 1
+	traits = { winter_specialist old_guard politically_connected inflexible_strategist }
+	skill = 2
 
 
 	
@@ -724,12 +724,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Markian Popov"
 		picture = "Portrait_Soviet_Matkian_Popov.dds"
-	traits = { winter_specialist infantry_officer brilliant_strategist }
-	skill = 2
+	traits = { infantry_leader cavalry_leader winter_specialist infantry_officer brilliant_strategist }
+	skill = 4
 
 	
-	attack_skill = 2
-	defense_skill = 1
+	attack_skill = 3
+	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 2
 }
@@ -737,7 +737,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nikolai Berzarin"
 		picture = "Portrait_Soviet_Nikolai_Berzarin.dds"
-	traits = { infantry_officer }
+	traits = { infantry_officer winter_specialist infantry_leader }
 	skill = 3
 	
 	attack_skill = 3
@@ -749,7 +749,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Alexander Gorbatov"
 		picture = "Portrait_Soviet_Alexander_Gorbatov.dds"
-	traits = { career_officer cavalry_officer }
+	traits = { career_officer cavalry_officer infantry_leader }
 	skill = 3
 	
 	attack_skill = 2
@@ -761,7 +761,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Kirill Moskalenko"
 		picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
-	traits = {  }
+	traits = { infantry_leader }
 	skill = 3
 	
 	attack_skill = 2
