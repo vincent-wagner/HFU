@@ -1944,11 +1944,11 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			capital_ship = {
-				armor_value = 0.15 
-				hg_attack = 0.15
+				armor_value = 0.20 
+				hg_attack = 0.20
 			}
 			screen_ship = {
-				torpedo_attack = 0.25
+				torpedo_attack = 0.20
 				sub_detection = -0.25
 			}
 		}
@@ -1984,7 +1984,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			screen_ship = {
-				naval_range = 0.3 sub_detection = 0.1 naval_speed = 0.1 build_cost_ic = 0.1
+				naval_range = 0.3 sub_detection = 0.1 naval_speed = -0.15 build_cost_ic = -0.15
 			}
 		}
 		
@@ -2005,9 +2005,7 @@ leader_traits = {
 			screen_ship = {
 				build_cost_ic = -0.20 naval_range = -0.5
 			}
-			submarine = {
-				build_cost_ic = -0.20 naval_range = -0.5
-			}
+			
 		}
 		
 		ai_will_do = {
