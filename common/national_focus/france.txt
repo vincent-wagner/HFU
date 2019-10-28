@@ -169,8 +169,9 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = FRA_military_factories_2MF
-				add_offsite_building = { type = arms_factory level = 2 }
+				
 			}
+		add_offsite_building = { type = arms_factory level = 2 }
 		}
 	}
 
