@@ -1122,6 +1122,7 @@ focus_tree = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
 			add_ideas = war_economy
+			add_ideas = wartime_industry_focus
 		}
 	}
 	
@@ -1955,7 +1956,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				technology = paratroopers
 				technology = paratroopers2
 				technology = tech_mountaineers
@@ -1999,7 +2000,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_louisiana_maneuvers
 				bonus = 1.0
-				uses = 1
+				uses = 3
 				category = land_doctrine
 			}
 		}
@@ -2105,6 +2106,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2586,7 +2588,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2667,7 +2669,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		relative_position_id = USA_two_ocean_navy_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

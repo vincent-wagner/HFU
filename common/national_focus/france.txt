@@ -20,7 +20,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}		
@@ -84,7 +84,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_metropolitan_france
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -114,14 +114,15 @@ focus_tree = {
 
 		completion_reward = {
 
-			18 = {
-				add_extra_state_shared_building_slots = 5
+			26 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
+		add_offsite_building = { type = industrial_complex level = 2 }
 		}
 	}
 
@@ -134,7 +135,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_industrial_expansion
-		cost = 10
+		cost = 5
 		
 		bypass = {
 			custom_trigger_tooltip = {
@@ -160,14 +161,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			17 = {
-				add_extra_state_shared_building_slots = 5
+			22 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = FRA_military_factories_2MF
+				add_offsite_building = { type = arms_factory level = 2 }
 			}
 		}
 	}
@@ -179,7 +181,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.2
 		}
@@ -390,7 +392,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_algerie_france
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -430,7 +432,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_colonial_industry
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -494,7 +496,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_extra_research_slot
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -522,7 +524,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_extra_research_slot
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -659,7 +661,7 @@ focus_tree = {
 
 		completion_reward = {
 		custom_effect_tooltip = tooltip_fra_dont_capitulate
-				add_stability = -0.025
+				
 
 			if = {
 				limit = { 772 = { is_fully_controlled_by = ROOT } }
@@ -898,7 +900,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = tooltip_fra_dont_capitulate
-			add_stability = -0.025
+			
 			680 = { add_extra_state_shared_building_slots = 1 }
 			677 = { add_extra_state_shared_building_slots = 1 }
 			

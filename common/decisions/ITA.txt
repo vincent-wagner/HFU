@@ -40,15 +40,14 @@ ITA_annex_bul = {
 	
 			available = {
 			BUL = { is_ai = yes }
-			YUG = { has_capitulated = yes }
-			GRE = { has_capitulated = yes }
+			
 			}
 	
 			allowed = {
 				tag = ITA
 			}
 
-			fire_only_once = yes
+			
 
 			cost = 0
 

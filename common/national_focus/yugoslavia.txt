@@ -504,10 +504,10 @@ focus_tree = {
 		x = 7
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 80
+			factor = 300
 		}
 
 		available = {
@@ -543,10 +543,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_industrialization_program
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 70
+			factor = 250
 		}
 
 		available = {
@@ -578,10 +578,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 60
+			factor = 250
 		}
 
 		available = {
@@ -638,10 +638,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_rare_minerals_exploitation
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 60
+			factor = 250
 		}
 
 		available = {
@@ -684,10 +684,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
 
-		cost = 10
+		cost = 3
 
 		ai_will_do = {
-			factor = 60
+			factor = 250
 		}
 
 		available = {
@@ -756,10 +756,10 @@ focus_tree = {
 		y = 3
 		relative_position_id = YUG_industrialization_program
 
-		cost = 10
+		cost = 3
 
 		ai_will_do = {
-			factor = 100
+			factor = 250
 		}
 
 		available = {
@@ -794,10 +794,10 @@ focus_tree = {
 		y = 2
 		relative_position_id = YUG_develop_civilian_industry
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
-			factor = 60
+			factor = 250
 		}
 
 		available = {
@@ -839,10 +839,10 @@ focus_tree = {
 		y = 3
 		relative_position_id = YUG_develop_civilian_industry
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
-			factor = 80
+			factor = 250
 		}
 
 		available = {
@@ -898,10 +898,10 @@ focus_tree = {
 		y = 4
 		relative_position_id = YUG_develop_civilian_industry
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
-			factor = 60
+			factor = 250
 		}
 
 		available = {
@@ -1022,10 +1022,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
-			factor = 40
+			factor = 250
 			modifier = {
 				factor = 2
 				is_in_faction_with = GER
@@ -1331,10 +1331,10 @@ focus_tree = {
 		x = 15
 		y = 0
 
-		cost = 9
+		cost = 5
 
 		ai_will_do = {
-			factor = 60
+			factor = 150
 			modifier = {
 				factor = 1.2
 				is_in_faction_with = GER
@@ -1675,10 +1675,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_modernize_the_air_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 60
+			factor = 250
 		}
 
 		available = {
