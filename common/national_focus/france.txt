@@ -15,9 +15,7 @@ focus_tree = {
  focus = {
 		id = FRA_metropolitan_france
 		icon = GFX_goal_generic_construct_infrastructure
-		available = {
-		has_country_flag = FRA_permitted
-		}
+		
 		x = 0
 		y = 0
 		cost = 5
@@ -1913,7 +1911,7 @@ focus = {
 	focus = {
 		id = FRA_defensive_focus
 		icon = GFX_goal_generic_defence
-		mutually_exclusive = { focus = FRA_aggressive_focus }
+		
 		x = 13
 		y = 0
 		cost = 10
@@ -1981,17 +1979,18 @@ focus = {
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
-				name = FRA_heavy_armor_focus
+				name = FRA_light_medium_armor
 				bonus = 1.0
 				uses = 1
-				category = cat_heavy_armor
+				category = cat_light_armor
+				category = cat_medium_armor
 			}
 		}
 	}
 	focus = {
 		id = FRA_aggressive_focus
 		icon = GFX_goal_generic_major_war
-		mutually_exclusive = { focus = FRA_defensive_focus }
+		
 		x = 15
 		y = 0
 		cost = 10
@@ -2057,7 +2056,7 @@ focus = {
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = cat_light_armor
 				category = cat_medium_armor
 			}
