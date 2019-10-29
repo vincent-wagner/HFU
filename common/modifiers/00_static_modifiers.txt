@@ -15,7 +15,7 @@ weather_rain_light = { # on Region
 	local_org_regain = -0.05
 }
 weather_rain_heavy = { # on Region 
-	air_detection = -0.2
+	air_detection = -0.3
 	naval_detection = -0.2
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
@@ -29,19 +29,19 @@ weather_rain_heavy = { # on Region
 	positioning = -0.2
 }
 weather_snow = { # on Region 
-	air_detection = -0.15
+	air_detection = -0.4
 	naval_detection = -0.15
 	naval_hit_chance = -0.05
 	naval_speed_factor = -0.05
 	naval_strike = -0.3
 	air_accidents = 0.1
-	local_org_regain = -0.05
-	air_mission_efficiency = -0.1
+	local_org_regain = -0.1
+	air_mission_efficiency = -0.2
 	naval_retreat_speed = 0.05
 	positioning = -0.2
 }
 weather_blizzard = { # on Region 
-	air_detection = -0.3
+	air_detection = -0.6
 	naval_detection = -0.3
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
@@ -49,7 +49,7 @@ weather_blizzard = { # on Region
 	naval_strike = -0.4
 	air_accidents = 0.3
 	air_bombing_targetting = -0.7
-	local_org_regain = -0.3
+	local_org_regain = -0.2
 	air_mission_efficiency = -0.3
 	naval_retreat_speed = 0.15
 	positioning = -0.2
@@ -75,7 +75,7 @@ weather_mud = { # on Province
 	army_attack_factor = -0.4
 }
 weather_extreme_cold = { # on Province
-	winter_attrition = 0.3
+	winter_attrition = 0.5
 	dig_in_speed_factor = -0.6
 	local_org_regain = -0.05
 	army_attack_factor = -0.3
@@ -96,14 +96,17 @@ weather_extreme_hot = { # on Province
 	army_attack_factor = -0.1
 }
 weather_ground_snow_medium = { # on Province
-	army_speed_factor = -0.1
 	army_attack_factor = -0.1
+	army_speed_factor = -0.05
+	winter_attrition = 0.2
+	attrition = 0.05
+	
 }
 weather_ground_snow_high = { # on Province
-	army_speed_factor = -0.25
-	local_org_regain = -0.05
-	army_attack_factor = -0.3
-	naval_retreat_speed = 0.1
+	army_speed_factor = -0.1
+	army_attack_factor = -0.2
+	winter_attrition = 0.5
+	attrition = 0.1
 }
 
 flooded = { # on Province

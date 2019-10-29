@@ -15,8 +15,9 @@ country_event = {
 	
 	option = {
 		name = wtt_denmark.1.a
-		release = ICE
-		ICE = { add_ideas = neutrality_idea }
+		USA = { transfer_state = 101}
+		ENG = { transfer_state =  100
+		        transfer_state = 337 }
 		hidden_effect = {
 			news_event = { id = news.331 days = 1 }
 		}
