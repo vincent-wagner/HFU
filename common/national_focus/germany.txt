@@ -697,7 +697,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_autarky
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -729,7 +729,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_coal_liquidization
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -784,7 +784,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_autarky
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -3176,36 +3176,24 @@ SPR = { country_event = spain.29 }
 	}	
 	
 		focus = { 
-		id = GER_the_great_turn
-		icon = GFX_focus_GER_endsieg
+		id = GER_SS
+		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_rhineland }
 		available = {
 		
-			date > 1942.1.1				
-			GER = { NOT ={
-			controls_state = 188
-				controls_state = 5
-					controls_state = 67
-						controls_state = 66
-							controls_state = 68
-								controls_state = 75
-									controls_state = 51
-			}}
-		FRA = { 	controls_state = 16  }
-		BEL = { controls_state = 6 }
-		HOL = { controls_state = 7 }
+			
+		
+		
 		}
 		
 		x = -1
 		y = 1
 		relative_position_id = GER_rhineland
-		cost = 1
+		cost = 5
 		
 	completion_reward = {
-	add_ideas = tot_economic_mobilisation
-	add_ideas = all_adults_serve
-	add_ideas = closed_economy
-	add_ideas = the_great_turn
+	
+	 add_ideas = GER_Waffen_SS
 	
 	}	
 	}
