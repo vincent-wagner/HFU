@@ -1699,7 +1699,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
-			
+			remove_ideas = SAF_the_commonwealth
+			ENG = { set_autonomy = { target = IRE autonomy_state = autonomy_free } }
+			ENG = { remove_from_faction = IRE }
+			set_cosmetic_tag = IRR
 		}
 	}
 
@@ -1746,13 +1749,30 @@ focus_tree = {
 		}
 	}
 	
+		focus = {
+		id = ire_reaffirm_territorial_claims
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ire_deterrence focus = IRE_emergency }
+		
+		x = -2
+		y = 1
+		relative_position_id = ire_deterrence
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
 	
 		focus = {
 		id = ire_invite_british_investors
 		icon = GFX_focus_ENG_brittania
 		prerequisite = { focus = ire_deterrence  focus = IRE_emergency }
-
-		x = -1
+		
+		x = 0
 		y = 1
 		relative_position_id = ire_deterrence
 		cost = 5
