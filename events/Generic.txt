@@ -101,7 +101,7 @@ unit_leader_event = {
 	desc = generic.17.d
 	
 	picture = GFX_report_event_military_planning
-
+	hidden=yes
 	is_triggered_only = yes
 
 	immediate = {
@@ -138,7 +138,7 @@ country_event = {
 	picture = GFX_report_event_military_planning
 
 	is_triggered_only = yes
-
+	hidden=yes
 	option = {
 		name = unfortunate
 		effect_tooltip = {

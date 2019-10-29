@@ -203,6 +203,7 @@ special_projects = {
 		available = {
 			#has_war = yes
 			controls_state = 28
+			NOT={has_idea=GER_dismantle_czechoslovakian_forts}
 		}
 
 		cost = 50
@@ -251,6 +252,7 @@ special_projects = {
 			controls_state = 74 # Eastern Sudetenland
 			controls_state = 9 # Bohemia
 			controls_state = 75 # Moravia
+			NOT={has_idea=GER_dismantle_maginot}
 		}
 
 		cost = 50

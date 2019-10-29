@@ -202,7 +202,7 @@ foreign_politics = {
 		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
 		activate_mission=FRA_Resistance2
 		add_to_variable= {resistance = 1}
-		else={clear_variable=resistance}
+		else={}
 		}}
 		
 		complete_effect = {
@@ -233,7 +233,7 @@ foreign_politics = {
 		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
 		activate_mission=FRA_Resistance3
 		add_to_variable= {resistance = 1}
-		else={clear_variable=resistance}
+		else={}
 		}}
 		
 		complete_effect = {
@@ -264,7 +264,7 @@ foreign_politics = {
 		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
 		activate_mission=FRA_Resistance4
 		add_to_variable= {resistance = 1}
-		else={clear_variable=resistance}
+		else={}
 		}}
 		
 		complete_effect = {
@@ -295,7 +295,7 @@ foreign_politics = {
 		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
 		activate_mission=FRA_Resistance5
 		add_to_variable= {resistance = 1}
-		else={clear_variable=resistance}
+		else={}
 		}}
 		
 		complete_effect = {
@@ -326,7 +326,7 @@ foreign_politics = {
 		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
 		activate_mission=FRA_Resistance
 		add_to_variable= {resistance = 1}
-		else={clear_variable=resistance}
+		else={}
 		}}
 		
 		complete_effect = {

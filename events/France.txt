@@ -165,12 +165,16 @@ country_event = {
 				
 				if = { limit = { Date < 1940.1.1}
 				
+				FRA={subtract_from_temp_variable = { resistancetemp = resistance }
+				add_offsite_building = { type = industrial_complex level = resistancetemp }
+				add_offsite_building = { type = arms_factory level = resistancetemp }
+				}
 				ITA = { transfer_state = 735
-				 transfer_state = 32
-				transfer_state = 21
-				 transfer_state = 1
-				 transfer_state = 458
-				transfer_state = 665}
+						transfer_state = 32
+						transfer_state = 21
+						transfer_state = 1
+						transfer_state = 458
+						transfer_state = 665}
 			
     			EFR = {
 				
@@ -282,8 +286,8 @@ country_event = {
 				
 		
 		
-	}
-
+	}}
+}
 
 
 #Capital captured by non french faction
