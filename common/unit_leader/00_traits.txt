@@ -651,7 +651,7 @@ leader_traits = {
 			factor = 1
 		}
 		
-		parent = winter_specialist
+		parent = winter_specialist 
 
 		trait_type = assignable_terrain_trait
 		gui_row = 7

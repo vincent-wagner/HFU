@@ -86,7 +86,29 @@ country_event = {
 				set_global_flag = fall_of_france
 				add_political_power=150
 				          
+                EFR = {transfer_state = 26
+				every_state = {
+						limit = {
+							is_core_of = FRA
+							
+						}
+						add_core_of = EFR
+					}
+					
+					
+			
+					set_capital = 26
+					set_politics = {
+						ruling_party = fascism
+						elections_allowed = no }
 
+                    set_popularities = {
+                        democratic = 18
+                        fascism = 70
+                        communism = 2
+                        neutrality = 10
+                    }
+					}
 				
 				FRA = { news_event = { id = france.20 days = 1 } }
 				
@@ -95,27 +117,16 @@ country_event = {
 					set_cosmetic_tag = FRA_FREE
 			        
 					
-					create_navy_leader = {
-						name = "Émile Muselier"
-						picture = "Portrait_France_Emile_Muselier.dds"
-						traits = { spotter }
-						skill = 3
-						attack_skill = 3
-						defense_skill = 3
-						maneuvering_skill = 3
-						coordination_skill = 3
-					}
+					
 					set_country_flag = free_france
 					set_capital = 539
-				
-				}
-				  
-					
-				FRA = {
-					transfer_navy = { 
+				    transfer_navy = { 
 						target = EFR 
 					}
 				}
+				  
+					
+				
 				EFR = { destroy_ships = {
                     type = ship_hull_light
                     count = all
@@ -137,7 +148,7 @@ country_event = {
                     count = all
                 }
 			
-					set_capital = 26
+					
 					add_ideas = EFR_neutrality_idea
 					diplomatic_relation = { country = ENG relation = non_aggression_pact }
 					diplomatic_relation = { country = USA relation = non_aggression_pact }
@@ -148,40 +159,8 @@ country_event = {
 					diplomatic_relation = { country = RAJ relation = non_aggression_pact }
 					diplomatic_relation = { country = AST relation = non_aggression_pact }
 					diplomatic_relation = { country = NZL relation = non_aggression_pact }
-					diplomatic_relation = { country = BRA relation = non_aggression_pact }
 					diplomatic_relation = { country = GER relation = non_aggression_pact }
-					every_state = {
-						limit = {
-							is_core_of = FRA
-							is_controlled_by = EFR
-						}
-						add_core_of = EFR
-					}
-					every_state = {
-						limit = {
-							NOT = {
-								is_core_of = FRA
-							}
-							is_controlled_by = EFR
-						}
-						add_claim_by  = FRA
-					}
-					28 = {
-						remove_core_of = EFR
-					}
-			
-					set_capital = 26
-					set_politics = {
-						ruling_party = fascism
-						elections_allowed = no       }
-
-                    set_popularities = {
-                        democratic = 18
-                        fascism = 70
-                        communism = 2
-                        neutrality = 10
-                    }
-					}
+					
 					
 				
 				if = { limit = { Date < 1940.1.1}
@@ -304,6 +283,7 @@ country_event = {
 		
 		
 	}
+
 
 
 #Capital captured by non french faction
