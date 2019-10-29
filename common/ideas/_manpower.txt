@@ -227,6 +227,13 @@ ideas = {
 					has_war_support > 0.6
 					surrender_progress > 0
 				}
+				
+				AND = {
+				
+				
+				not = {has_completed_focus = GER_endsieg}
+				
+				}
 
 				if = {
 					limit = {

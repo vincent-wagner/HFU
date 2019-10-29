@@ -1240,7 +1240,7 @@ random_owned_controlled_state = {
 		icon = GFX_focus_GER_air_inno_1
 		x = 12
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1316,7 +1316,7 @@ random_owned_controlled_state = {
 		x = 1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1347,7 +1347,7 @@ random_owned_controlled_state = {
 		x = -1
 		y = 1
 		relative_position_id = GER_tactical_air_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.1
 		}
@@ -1786,81 +1786,88 @@ available = {
 	}
 
 	focus = {
-		id = GER_turkey_friend
-		icon = GFX_focus_GER_collaboration_with_turkey
+		id = GER_endsieg
+		icon = GFX_praisegermania
 		prerequisite = { focus = GER_ussr_war_goal }
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 
 
 		available = { 
-			is_puppet = no 
-			NOT = { has_war_with = TUR }
-			TUR = {
-				exists = yes
-				is_puppet = no
-			}
-
-			TUR = {
-				custom_trigger_tooltip = {
-					tooltip = GER_alone_or_peace_faction_tt
-					is_alone_or_in_faction_at_peace_with_GER = yes
-				}
-			}
+			Date > 1941.6.1
+			15 = { is_controlled_by = FRA }
+			16 = { is_controlled_by = FRA }
+			29 = { is_controlled_by = FRA }
+			
+			
 		}
 
-		#bypass = {
-		#	OR = {
-		#		TUR = { is_in_faction_with = GER }
-		#		NOT = { country_exists = TUR }
-		#	}
-		#}
-		x = 1
+		
+		x = 2
 		y = 2
 		relative_position_id = GER_ussr_war_goal
-		cost = 20
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}	
 
 		available_if_capitulated = no
 		completion_reward = {
-			TUR = {
-				add_opinion_modifier = { target = GER modifier = ger_tur_diplomacy_focus }
-				if = {
-					limit = {
-						TUR = {
-							is_ai = yes
-							NOT = {
-								is_in_faction = yes
-							}
-							NOT = {
-								is_puppet = yes
-							}
-							has_government = ROOT
-						}
-						GER = { is_faction_leader = yes }
-					}
-					TUR = {
-						country_event = generic.5
-					}
-					add_ai_strategy = {
-						type = alliance
-						id = "GER"
-						value = 200
-					}
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-				}
-				country_event = { id = generic.1 }
-			}
+			add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 30000
+            producer = GER
+        }
+       add_ideas = all_adults_serve
+       add_ideas = tot_economic_mobilisation
 		}
 	}
+	
+	
+	
+	focus = {
+		id = GER_totaler_krieg
+		icon = goal_ger_heer
+		prerequisite = { focus = GER_ussr_war_goal }
+		prerequisite = { focus = GER_end_of_czechoslovakia }
+
+
+		available = { 
+			Date > 1942.1.1
+			
+		}
+
+		
+		x = 0
+		y = 2
+		relative_position_id = GER_ussr_war_goal
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = triumphant_will
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	focus = {
 		id = GER_anschluss
@@ -3093,59 +3100,7 @@ SPR = { country_event = spain.29 }
 
 
 
-	focus = {
-		id = GER_improve_national_spirit
-		prerequisite = { focus = GER_rhineland }
-		icon = GFX_goal_support_fascism
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_improve_national_spirit_tooltip
-				OR = {
-					GER = { controls_state = 126 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 126
-					}
-				}
-				OR = {
-					GER = { controls_state = 16 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 16
-					}
-				}
-			}
-		}
-		cancel = {
-			AND = {
-				has_war = no
-				126 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-				16 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-			}
-		}
-		cancel_if_invalid = no
-		x = 1
-		y = 1
-		relative_position_id = GER_rhineland 
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {
-			remove_ideas = sour_loser
-			add_ideas = triumphant_will
-		}
-	}
+	
 	
 		focus = {
 		id = GER_war_with_france

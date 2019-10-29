@@ -5,15 +5,33 @@ ideas = {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	   triumphant_will = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				
+			industry_repair_factor = 0.5
+			war_support_weekly = -0.01
+			mobilization_speed = 0.1
+			surrender_limit = 0.15
+			army_core_defence_factor = 0.1
+			training_time_factor = -0.5
+			production_speed_anti_air_building_factor = 0.5
+				
+				
+				
+			}
+			
+		}
+
 		
 		GER_Waffen_SS = { 
 		
@@ -104,25 +122,7 @@ ideas = {
 			}
 		}
 
-		triumphant_will = {
-			
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-			
-			modifier = {
-				political_power_gain = 1
-				drift_defence_factor = 0.5
-			}
-			rule = {
-				can_create_factions = yes
-			}
-		}
+		
 		
 		GER_air_innovations_2_idea = {
 			removal_cost = -1
