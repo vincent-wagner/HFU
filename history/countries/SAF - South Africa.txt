@@ -227,7 +227,16 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 1
 }
-
+create_corps_commander = {
+	name = "Jan Smuts"
+	gfx = "GFX_SAF_jan_smuts"
+	traits = { desert_fox panzer_leader ambusher }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 1
+}
 create_navy_leader = {
 	name = "Guy Hallifax"
 	gfx = "GFX_SAF_guy_halifax"

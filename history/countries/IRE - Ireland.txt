@@ -144,10 +144,19 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "James McDonalds"
-	traits = { organizer  }
+	traits = { organizer  panzer_leader infantry_leader ranger}
 	skill = 3
-	attack_skill = 2
-	defense_skill = 2
+	attack_skill = 4
+	defense_skill = 3
 	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ronald McDonald"
+	traits = { panzer_leader naval_invader engineer infantry_leader hill_fighter}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
 	logistics_skill = 2
 }

@@ -148,12 +148,12 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Nikola Totev Markov"
 	portrait_path = "gfx/leaders/BUL/Nikola_Totev_Markov.tga"
-	traits = { cavalry_leader commando panzer_leader infantry_leader }
+	traits = { cavalry_leader commando panzer_leader infantry_leader engineer}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 2
-	logistics_skill = 3
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -161,7 +161,7 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/BUL/Konstantin_Ivanov_Bekyarov.tga"
 	traits = { organizer panzer_leader  }
 	skill = 3
-	attack_skill = 2
+	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 4
