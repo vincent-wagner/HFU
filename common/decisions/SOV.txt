@@ -833,7 +833,7 @@ SOV_great_patriotic_war = {
 				is_major = yes
 			}
 			has_civil_war = no
-			surrender_progress > 0.15
+			surrender_progress > 0.20
 		}
 
 		cost = 50
