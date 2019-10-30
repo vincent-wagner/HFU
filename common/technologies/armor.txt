@@ -792,7 +792,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = improved_heavy_tank 
-			research_cost_coeff = 0.9
+			research_cost_coeff = 0.7
 		}
 				
 		research_cost = 2
@@ -1008,7 +1008,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = advanced_heavy_tank 
-			research_cost_coeff = 0.9
+			research_cost_coeff = 0.7
 		}
 		
 		research_cost = 2
@@ -1511,7 +1511,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = improved_medium_tank 
-			research_cost_coeff = 0.9
+			research_cost_coeff = 0.7
 		}
 		
 		path = {
@@ -1663,7 +1663,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = advanced_medium_tank 
-			research_cost_coeff = 0.9
+			research_cost_coeff = 0.7
 		}
 		
 		research_cost = 2.5
@@ -1884,7 +1884,7 @@ technologies = {
 			has_dlc = "Man the Guns"
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1940
 						
 		ai_will_do = {
@@ -1924,7 +1924,7 @@ technologies = {
 			amphibious_tank_equipment_2
 		}
 		
-		research_cost = 2
+		research_cost = 1
 		start_year = 1942
 			
 		ai_will_do = {
