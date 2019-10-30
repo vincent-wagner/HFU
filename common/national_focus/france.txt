@@ -987,9 +987,7 @@ focus = {
 		completion_reward = {
 
 			543 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
+				add_building_construction = {
 						type = infrastructure
 						level = 3
 						instant_build = yes
@@ -1005,7 +1003,7 @@ focus = {
 					amount = 30
 					}		
 				}		
-				}
+				
 			}
 			
 			

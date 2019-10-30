@@ -284,6 +284,7 @@ continuous_focus_palette = {
 
 		modifier = {
 		mobilization_speed = 1.0
+		MONTHLY_POPULATION =1.0
 		}
 		
 		

@@ -153,7 +153,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Ronald McDonald"
-	traits = { panzer_leader naval_invader engineer infantry_leader hill_fighter}
+	traits = { panzer_leader naval_invader trait_engineer infantry_leader hill_fighter}
 	skill = 4
 	attack_skill = 5
 	defense_skill = 4
