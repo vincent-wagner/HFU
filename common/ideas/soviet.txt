@@ -205,7 +205,7 @@ ideas = {
 			
 			modifier = {
 			mobilization_speed = 0.15	
-			surrender_limit =0.15
+			MONTHLY_POPULATION = 1.0
 			}
 		}
 
