@@ -1900,8 +1900,8 @@ leader_traits = {
 				max_strength = 0.1
 			}
 			capital_ship = {
-				armor_value = 0.1 
-				hg_attack = 0.1
+				armor_value = 0.15
+				hg_attack = 0.15
 			}
 			#screen_ship = {
 			#	
