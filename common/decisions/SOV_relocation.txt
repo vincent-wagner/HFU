@@ -1,0 +1,203 @@
+
+foreign_politics = {
+
+		SOV_relocation= {
+		allowed = {
+			original_tag=SOV
+			}
+		icon = generic_naval
+		available = {has_completed_focus=SOV_move_industry_to_urals
+			NOT={
+				focus_progress = {
+ 		   		focus = SOV_move_industry_to_urals
+   				progress > 0
+			}
+			
+					}}
+
+		days_mission_timeout = 7
+
+		fire_only_once = no
+		is_good = yes
+		activation = {
+			always=no}
+		
+		timeout_effect = {
+		SOV_relocate_mil=yes		
+		SOV_relocate_mil=yes
+		SOV_relocate_civ=yes
+		SOV_relocate_civ=yes
+		
+		
+		
+		if={
+		limit={check_variable = {relocation<15}} 
+		activate_mission=SOV_relocation2
+		add_to_variable= {relocation = 1}
+		else={clear_variable=relocation}
+		}}
+		complete_effect = {
+		
+		}
+	}
+	SOV_relocation2= {
+		allowed = {
+			original_tag=SOV
+			}
+		icon = generic_naval
+		available = {has_completed_focus=SOV_move_industry_to_urals
+			NOT={
+				focus_progress = {
+ 		   		focus = SOV_move_industry_to_urals
+   				progress > 0
+			}
+			
+					}}
+
+		days_mission_timeout = 7
+
+		fire_only_once = no
+		is_good = yes
+		activation = {
+			always=no}
+		
+		timeout_effect = {
+		SOV_relocate_mil=yes		
+		SOV_relocate_mil=yes
+		SOV_relocate_civ=yes
+		SOV_relocate_civ=yes
+		
+		
+		
+		if={
+		limit={check_variable = {relocation<15}} 
+		activate_mission=SOV_relocation3
+		add_to_variable= {relocation = 1}
+		else={clear_variable=relocation}
+		}}
+		
+		complete_effect = {
+		
+		}
+	}
+	SOV_relocation3= {
+		allowed = {
+			original_tag=SOV
+			}
+		icon = generic_naval
+		available = {has_completed_focus=SOV_move_industry_to_urals
+			NOT={
+				focus_progress = {
+ 		   		focus = SOV_move_industry_to_urals
+   				progress > 0
+			}
+			
+					}}
+
+		days_mission_timeout = 7
+
+		fire_only_once = no
+		is_good = yes
+		activation = {
+			always=no}
+		
+		timeout_effect = {
+		SOV_relocate_mil=yes		
+		SOV_relocate_mil=yes
+		SOV_relocate_civ=yes
+		SOV_relocate_civ=yes
+		
+		
+		
+		if={
+		limit={check_variable = {relocation<15}} 
+		activate_mission=SOV_relocation4
+		add_to_variable= {relocation = 1}
+		else={clear_variable=relocation}
+		}}
+		
+		complete_effect = {
+		
+		}
+	}
+	SOV_relocation4= {
+		allowed = {
+			original_tag=SOV
+			}
+		icon = generic_naval
+		available = {has_completed_focus=SOV_move_industry_to_urals
+			NOT={
+				focus_progress = {
+ 		   		focus = SOV_move_industry_to_urals
+   				progress > 0
+			}
+			
+					}}
+
+		days_mission_timeout = 7
+
+		fire_only_once = no
+		is_good = yes
+		activation = {
+			always=no}
+		
+		timeout_effect = {
+		SOV_relocate_mil=yes		
+		SOV_relocate_mil=yes
+		SOV_relocate_civ=yes
+		SOV_relocate_civ=yes
+		
+		
+		
+		if={
+		limit={check_variable = {relocation<15}} 
+		activate_mission=SOV_relocation5
+		add_to_variable= {relocation = 1}
+		else={clear_variable=relocation}
+		}}
+		
+		complete_effect = {
+		
+		}
+	}
+	SOV_relocation5= {
+		allowed = {
+			original_tag=SOV
+			}
+		icon = generic_naval
+		available = {has_completed_focus=SOV_move_industry_to_urals
+			NOT={
+				focus_progress = {
+ 		   		focus = SOV_move_industry_to_urals
+   				progress > 0
+			}
+			
+					}}
+
+		days_mission_timeout = 7
+
+		fire_only_once = no
+		is_good = yes
+		activation = {
+			always=no}
+		timeout_effect = {
+		SOV_relocate_mil=yes		
+		SOV_relocate_mil=yes
+		SOV_relocate_civ=yes
+		SOV_relocate_civ=yes
+		
+		
+		
+		if={
+		limit={check_variable = {relocation<15}} 
+		activate_mission=SOV_relocation
+		add_to_variable= {relocation = 1}
+		else={clear_variable=relocation}
+		}}
+		
+		complete_effect = {
+		
+		}
+	}
+}
+

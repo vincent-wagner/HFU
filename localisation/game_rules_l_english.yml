@@ -305,71 +305,9 @@
 
 ################################################################# HORSTORICAL
  HORST_GROUPKEY:0 "Horstorical Multiplayer"
-################################################################# SUB
- HORST_SUB3_OPTIONS:0 "Submarine 3 Settings"
- HORST_RULE_OPTION_SUB_ENABLE_SUB3:0 "Enable Sub 3 tech"
- HORST_RULE_OPTION_SUB_ENABLE_SUB3_DESC:0 "Clicking this option will enable all submarine technology"
- HORST_RULE_OPTION_DISABLE_SUB3:0 "Disable Sub 3 tech"
- HORST_RULE_OPTION_DISABLE_SUB3_DESC:0 "Clicking this option will disable Submarine 3s"
- HORST_SUB4_OPTIONS:0 "Submarine 4 Settings"
- HORST_RULE_OPTION_SUB_ENABLE_SUB4:0 "Enable Sub 4 tech"
- HORST_RULE_OPTION_SUB_ENABLE_SUB4_DESC:0 "Clicking this option will enable all submarine technology"
- HORST_RULE_OPTION_DISABLE_SUB4:0 "Disable Sub 4 tech"
- HORST_RULE_OPTION_DISABLE_SUB4_DESC:0 "Clicking this option will disable Submarine 4 tech, however Submarine 3s are still researchable"
-################################################################# SNORKEL
- HORST_SNORKEL_OPTIONS:0 "Snorkel Settings"
- HORST_RULE_OPTION_ENABLE_SNORKEL2:0 "Enable Snorkel 2"
- HORST_RULE_OPTION_ENABLE_SNORKEL2_DESC:0 "Clicking this option will enable snorkel lvl. 2 technology"
- HORST_RULE_OPTION_DISABLE_SNORKEL2:0 "Disable Snorkel 2"
- HORST_RULE_OPTION_DISABLE_SNORKEL2_DESC:0 "Clicking this option will disable Snorkel lvl. 2 technology"
-################################################################# TANKS
- HORST_TANK_OPTIONS:0 "Armor Settings"
- HORST_RULE_OPTION_ENABLE_MODERN_TANK:0 "Enable Modern Tanks"
- HORST_RULE_OPTION_ENABLE_MODERN_TANK_DESC:0 "Clicking this option will enable modern tank technology for research"
- HORST_RULE_OPTION_DISABLE_MODERN_TANK:0 "Disable Modern Tanks"
- HORST_RULE_OPTION_DISABLE_MODERN_TANK_DESC:0 "Clicking this option will disable modern tank technology for research"
- ################################################################ NUKES
- HORST_NUKE_OPTIONS:0 "Nuke Settings"
- HORST_RULE_OPTION_ENABLE_NUKES:0 "Enable Nukes"
- HORST_RULE_OPTION_ENABLE_NUKES_DESC:0 "Clicking this option will enable nukes for research"
- HORST_RULE_OPTION_DISABLE_NUKES:0 "Disable Nukes"
- HORST_RULE_OPTION_DISABLE_NUKES_DESC:0 "Clicking this option will disable nukes for research"
-################################################################# ADAPTABLE
- HORST_ALLOW_ADAPTABLE:0 "Adaptable Settings"
- HORST_RULE_OPTION_ENABLE_ADAPTABLE:0 "Enable Adaptable"
- HORST_RULE_OPTION_ENABLE_ADAPTABLE_DESC:0 "Clicking this option will enable the adaptable trait for generals."
- HORST_RULE_OPTION_DISABLE_ADAPTABLE:0 "Disable Adaptable"
- HORST_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Clicking this option will disable the adaptable trait for generals."
- ################################################################# STRATEGIC BOMBERS
- HORST_ALLOW_STRATEGIC_BOMBERS:0 "Strategic Bomber Settings"
- HORST_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS:0 "Enable Strategic Bombers"
- HORST_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will enable strategic bomber technology for research"
- HORST_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS:0 "Disable Strategic Bombers"
- HORST_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will disable strategic bomber technology for research
- ################################################################# AIR PRODUCTION
- HORST_ALLOW_AIR_PRODUCTION:0 "Air Production Settings"
- HORST_RULE_OPTION_ENABLE_AIR_PRODUCTION:0 "Enable Air Production"
- HORST_RULE_OPTION_ENABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will enable the Air Production continuous focus"
- HORST_RULE_OPTION_DISABLE_AIR_PRODUCTION:0 "Disable Air Production"
- HORST_RULE_OPTION_DISABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will disable the Air Production continuous focus"
- ################################################################# JAEGARNOTPROGRAMM
- HORST_ALLOW_JAEGERNOTPROGRAMM:0 "Jaegarnotprogramm Settings"
- HORST_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM:0 "Enable Jaegarnotprogramm"
- HORST_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will enable the Jaegarnotprogramm decision"
- HORST_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM:0 "Disable Jaegarnotprogramm"
- HORST_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will disable the Jaegarnotprogramm decision"
- ################################################################# 1944 PLANES
- HORST_ALLOW_PLANE3:0 "1944 Planes Settings"
- HORST_RULE_OPTION_ENABLE_PLANE3:0 "Enable 1944 Planes"
- HORST_RULE_OPTION_ENABLE_PLANE3_DESC:0 "Clicking this option will enable 1944 Plane research"
- HORST_RULE_OPTION_DISABLE_PLANE3:0 "Disable 1944 Planes"
- HORST_RULE_OPTION_DISABLE_PLANE3_DESC:0 "Clicking this option will disable 1944 Plane research"
- ################################################################# BARBAROSSA REBALANCE
- HORST_ALLOW_BARB_REBALANCE:0 "Barbarossa Rebalance Settings"
- HORST_RULE_OPTION_ENABLE_BARB_REBALANCE:0 "Enable Barbarossa Rebalance"
- HORST_RULE_OPTION_ENABLE_BARB_REBALANCE_DESC:0 "Clicking this option will enable Barbarossa rebalance"
- HORST_RULE_OPTION_DISABLE_BARB_REBALANCE:0 "Disable Barbarossa Rebalance"
- HORST_RULE_OPTION_DISABLE_BARB_REBALANCE_DESC:0 "Clicking this option will disable Barbarossa rebalance"
+
+
+
  
  
  

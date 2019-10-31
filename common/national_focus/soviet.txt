@@ -68,7 +68,7 @@
 		x = -1
 		y = 1
 		relative_position_id = SOV_finish_five_year_plan
-		cost = 5
+		cost = 20
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -78,25 +78,19 @@
 		}
 
 		available = {
-			has_war = yes
-			573 = {
-				is_owned_and_controlled_by = SOV
-			}
-			582 = {
-				is_owned_and_controlled_by = SOV
-			} 
+			has_war_with = GER
+			
 		}
 
 		bypass = {
-			NOT = { 219 = { is_owned_and_controlled_by = ROOT } }
-			NOT = { 195 = { is_owned_and_controlled_by = ROOT } }
-			NOT = { 242 = { is_owned_and_controlled_by = ROOT } }
+			
 		}
-
+		select_effect = {
+			custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural. Canceling the focus will cancel the relocation."
+			hidden_effect={activate_mission=SOV_relocation}
+		}
 		completion_reward = {
-			unlock_decision_tooltip = SOV_relocate_industry_from_moscow
-			unlock_decision_tooltip = SOV_relocate_industry_from_leningrad
-			unlock_decision_tooltip = SOV_relocate_industry_from_smolensk			
+						
 		}
 	}
 
