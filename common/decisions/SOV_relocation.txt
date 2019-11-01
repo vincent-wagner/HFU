@@ -15,7 +15,7 @@ foreign_politics = {
 			
 					}}
 
-		days_mission_timeout = 7
+		days_mission_timeout = 10
 
 		fire_only_once = no
 		is_good = yes
@@ -54,7 +54,7 @@ foreign_politics = {
 			
 					}}
 
-		days_mission_timeout = 7
+		days_mission_timeout = 10
 
 		fire_only_once = no
 		is_good = yes
@@ -94,7 +94,7 @@ foreign_politics = {
 			
 					}}
 
-		days_mission_timeout = 7
+		days_mission_timeout = 10
 
 		fire_only_once = no
 		is_good = yes
@@ -134,7 +134,7 @@ foreign_politics = {
 			
 					}}
 
-		days_mission_timeout = 7
+		days_mission_timeout = 10
 
 		fire_only_once = no
 		is_good = yes
@@ -174,7 +174,7 @@ foreign_politics = {
 			
 					}}
 
-		days_mission_timeout = 7
+		days_mission_timeout = 10
 
 		fire_only_once = no
 		is_good = yes

@@ -86,11 +86,11 @@
 			
 		}
 		select_effect = {
-			custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural. Canceling the focus will cancel the relocation."
 			hidden_effect={activate_mission=SOV_relocation}
 		}
 		completion_reward = {
-						
+			custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural. Canceling the focus will cancel the relocation."
+					
 		}
 	}
 
