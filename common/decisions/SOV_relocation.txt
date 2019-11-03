@@ -1,5 +1,5 @@
 
-foreign_politics = {
+SOV_industry_relocation = {
 
 		SOV_relocation= {
 		allowed = {

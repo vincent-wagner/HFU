@@ -138,8 +138,8 @@ NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 
 
 --HFU defines:
-
-
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 100
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
 
 --genearls

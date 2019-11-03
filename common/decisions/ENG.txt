@@ -30,29 +30,7 @@ ENG_annex_ire = {
 		}
 	}
 	
-	ENG_permit_france = {
-	icon = generic_operation
-
-			allowed = {
-				tag = ENG
-			}
-
-			available = {
-			}
-			
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
-							FRA = { controls_state = 16 }
-				}
-
-			complete_effect = {
-			FRA = { set_country_flag = FRA_permitted }
-		}
 	
-	}
 	
 	ENG_annex_mal = {
 	icon = generic_operation

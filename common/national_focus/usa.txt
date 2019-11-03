@@ -288,7 +288,7 @@ focus_tree = {
 		available = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
-			not = { has_country_flag = USA_depression_cooldown }
+			not = { has_country_flag = USA_great_depression_cooldownn }
 		}
 		
 		bypass = {

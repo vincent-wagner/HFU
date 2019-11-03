@@ -46,6 +46,7 @@ transfer_states_off:0 "Horst Tool: £trigger_yes"
  CHEAT9:0   "Remove 1 Off-Civ"
  CHEAT10:0  "Add 50 PP"
  CHEAT11:0  "Earrape"
+ CHEAT12:0  "Vape Nation"
  mark_status_marked:0   "     Unmark State "
  mark_status_unmarked:0 "      Mark State  "
  
