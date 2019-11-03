@@ -12,3 +12,4 @@
  DECISION_COST_NOT_ENOUGH:0 "It costs £pol_power $VAL|HR0$ to take the decision"
  ON_MAP_DECISION_NAME_DEFAULT:0 "Find decisions on the map."
  FRA_claim_vichy_territory:0 "Reclaim Vichy-Territory"
+ USA_execute_operation_torch:0 "Operation Torch"
