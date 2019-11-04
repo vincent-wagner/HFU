@@ -13,3 +13,8 @@
  ON_MAP_DECISION_NAME_DEFAULT:0 "Find decisions on the map."
  FRA_claim_vichy_territory:0 "Reclaim Vichy-Territory"
  USA_execute_operation_torch:0 "Operation Torch"
+ SOV_relocation:0 "Industry Relocation"
+ SOV_relocation2:0 "Industry Relocation"
+ SOV_relocation3:0 "Industry Relocation"
+ SOV_relocation4:0 "Industry Relocation"
+ SOV_relocation5:0 "Industry Relocation"
