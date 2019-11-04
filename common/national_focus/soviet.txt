@@ -737,6 +737,15 @@
 				category = light_air
 				
 			}
+		
+		add_tech_bonus = {
+				name = coastal_command_focus
+				bonus = 1.0
+				uses = 2
+				category = naval_bomber
+				category = cas_bomber
+			}
+		
 		}
 	}
 	
@@ -790,7 +799,7 @@
 		icon = GFX_goal_generic_navy_battleship
 		x = 13
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -815,7 +824,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_ocean_going_navy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1065,7 +1074,7 @@
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SOV_great_purge }
-		mutually_exclusive = { focus = SOV_nkvd_primacy }
+		
 		x = -1
 		y = 1
 		relative_position_id = SOV_great_purge
@@ -1119,11 +1128,11 @@
 		id = SOV_nkvd_primacy
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SOV_great_purge }
-		mutually_exclusive = { focus = SOV_rehabilitated_military }
+		
 		x = 1
 		y = 1
 		relative_position_id = SOV_great_purge
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1150,7 +1159,7 @@
 		x = 0
 		y = 1
 		relative_position_id = SOV_nkvd_primacy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {

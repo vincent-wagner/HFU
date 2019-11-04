@@ -1673,7 +1673,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_modernize_the_air_force
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 180
@@ -1696,11 +1696,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-				add_ideas = YUG_license_production 
-				GER = { country_event = DOD_yugoslavia.20 }
-				ITA = { country_event = DOD_yugoslavia.20 }
-				ENG = { country_event = DOD_yugoslavia.20 }
-				FRA = { country_event = DOD_yugoslavia.20 }
+				
 			
 		}
 	}
