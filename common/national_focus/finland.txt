@@ -502,13 +502,7 @@ focus_tree = {
 			}
 		}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.25
-				always = yes
-			}
-		}
+		
 	}
 
 	focus = {
@@ -589,18 +583,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -629,18 +612,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -664,18 +636,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -700,18 +661,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -737,18 +687,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -773,18 +712,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
+		
+	
 
 		completion_reward = {
 			navy_experience = 25
@@ -1412,10 +1341,13 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = 17
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
-
+        ai_will_do = {
+			factor = 2
+			
+		}
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -1441,23 +1373,8 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 95
-			modifier = {
-				factor = 0.1
-				any_neighbor_country = {
-					is_major = yes
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-				}
-				NOT = {
-					any_neighbor_country = {
-						is_major = yes
-						has_government = democratic
-					}
-				}
-			}
+			factor = 2
+			
 		}
 
 		completion_reward = {
@@ -1474,14 +1391,17 @@ focus_tree = {
 		prerequisite = { focus = fin_liberty_ethos }
 		
 		available = {
-		is_ai = no
+		
 		}
 		relative_position_id = fin_liberty_ethos
 		x = 1
 		y = 1
 	
 		cost = 10
-
+       ai_will_do = {
+			factor = 2
+			
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1499,16 +1419,19 @@ focus_tree = {
 		prerequisite = { focus = fin_karelianism }
 	
 		available = {
-		is_ai = no
+		
 		}
 		relative_position_id = fin_karelianism
 		x = 0
 		y = 1
 	
 		cost = 10
-
+        ai_will_do = {
+			factor = 2
+			
+		}
 		available_if_capitulated = yes
-
+       
 		completion_reward = {
 			add_ideas = extensive_conscription
 			add_popularity = { ideology = fascism popularity = 0.1 }
@@ -1527,16 +1450,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = fin_liberty_ethos
 		cost = 10
-
+       ai_will_do = {
+			factor = 2
+			
+		}
 		available_if_capitulated = yes
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				tag = AUS
-			}
-		}
+		
 
 		completion_reward = {
 			add_political_power = 150
@@ -1551,9 +1471,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = fin_neutrality_focus
 		cost = 10
-
+        ai_will_do = {
+			factor = 2
+			
+		}
 		available_if_capitulated = yes
-
+        
 		completion_reward = {
 			add_ideas = deterrence
 		}
@@ -1577,10 +1500,13 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = fin_deterrence 
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
-
+        ai_will_do = {
+			factor = 100
+			
+		}
 		completion_reward = {
 			add_ideas = why_we_fight_focus
 			custom_effect_tooltip = why_we_fight_effect
@@ -1597,7 +1523,7 @@ focus_tree = {
 		icon = GFX_focus_FIN_sisu
 		available = {
 		date > 1940.4.1
-		is_ai = no
+		
 		}
 				prerequisite = { focus = fin_why_we_fight }
 			relative_position_id = fin_why_we_fight
@@ -1607,7 +1533,10 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-
+        ai_will_do = {
+			factor = 100
+			
+		}
 		completion_reward = {
 			add_ideas = fin_continuation_war
 		}
@@ -1618,8 +1547,8 @@ focus_tree = {
 		id = fin_continuation
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		available = {
-		date > 1941.6.22
-		is_ai = no
+		date > 1941.6.1
+		
 		}
 				prerequisite = { focus = fin_continuation_prep }
 			relative_position_id = fin_continuation_prep
@@ -1627,14 +1556,20 @@ focus_tree = {
 		y = 1
 	
 		cost = 1
-
+        ai_will_do = {
+			factor = 200
+			
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SOV
-			}
+		
+		    if = { limit = { is_ai = yes}
+			     
+				 GER =  { set_autonomy = { target = FIN autonomy_state = autonomy_satellite } }
+				 
+				 }
+			GER = { add_to_faction = FIN }
 		}
 	}
 
