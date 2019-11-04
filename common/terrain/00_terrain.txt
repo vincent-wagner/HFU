@@ -23,6 +23,22 @@ categories =  {
 		sound_type = sea
 	}
 	
+	metropoliscity = {
+		color = { 0 0 255 }
+		movement_cost = 0.75
+		ai_terrain_importance_factor = 14.0
+		match_value = 4
+		sound_type = plains
+		dig_in_speed_factor = 0.50
+
+		units = {
+		#	attack = -0.65
+		#	defence = 0.3
+		#	#movement = -0.4
+		}
+        local_supplies = 0.6
+		enemy_army_bonus_air_superiority_factor = -0.55
+	}
 	
 	city = {
 		color = { 1 1 1 }
