@@ -27,7 +27,22 @@ SOV_industry_relocation = {
 		SOV_relocate_mil=yes
 		SOV_relocate_civ=yes
 		SOV_relocate_civ=yes
-		
+		if={limit={check_variable={relocatedciv=0}}
+		SOV_relocate_mil=yes		
+		SOV_relocate_mil=yes
+			else_if={limit={check_variable={relocatedciv=1}}
+				SOV_relocate_mil=yes
+			}
+		}	
+		if={limit={check_variable={relocatedmil=0}}
+		SOV_relocate_civ=yes		
+		SOV_relocate_civ=yes
+			else_if={limit={check_variable={relocatedmil=1}}
+				SOV_relocate_civ=yes
+			}
+		}
+		set_variable={reloceatedmil=0}
+		set_variable={reloceatedciv=0}
 		
 		
 		if={
