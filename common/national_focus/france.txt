@@ -466,14 +466,12 @@ focus_tree = {
 		icon = GFX_focus_research
 		available = {
 		}
-		prerequisite = {
-			focus = FRA_colonial_military_factories
-			focus = FRA_military_factories
-		}
+		prerequisite = {focus = FRA_colonial_military_factories}
+		prerequisite = {focus = FRA_military_factories}
 		x = -1
 		y = 1
 		relative_position_id = FRA_colonial_military_factories
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1982,6 +1980,7 @@ focus = {
 				uses = 1
 				category = cat_light_armor
 				category = cat_medium_armor
+				category = cat_heavy_armor
 			}
 		}
 	}
@@ -2057,6 +2056,7 @@ focus = {
 				uses = 2
 				category = cat_light_armor
 				category = cat_medium_armor
+				category = cat_heavy_armor
 			}
 		}
 	}
