@@ -1279,7 +1279,7 @@ ideas = {
 
 			
 			# Not purged, but tried and tortured, then released
-			traits = { army_armored_3 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1485,7 +1485,7 @@ ideas = {
 			equipment_bonus = {
 				
 				medium_tank_equipment = {
-					build_cost_ic = -0.05
+					
 					
 				}
 
@@ -1509,7 +1509,7 @@ ideas = {
 			equipment_bonus = {
 				
 				medium_tank_equipment = {
-					build_cost_ic = -0.05
+					
 					
 				}
 
@@ -1559,7 +1559,7 @@ ideas = {
 			equipment_bonus = {
 				
                     fighter_equipment = {
-					build_cost_ic = -0.1
+					
 					
 				}
 
