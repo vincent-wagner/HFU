@@ -243,7 +243,15 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		category_all_infantry = {
+		motorized = {
+			max_organisation = 10
+			
+		}
+		mechanized = {
+			max_organisation = 10
+		}
+		
+		amphibious_mechanized = {
 			max_organisation = 10
 		}	
 		
