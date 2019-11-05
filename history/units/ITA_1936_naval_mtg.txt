@@ -76,13 +76,26 @@ units= {
 			ship = { name = "RI Bartolomeo Colleoni" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
 			# III Divisione Incrociatori
 			ship = { name = "RI Bolzano" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Bolzano Class" } } } 
-		
+			ship = { name = "RI Spaghet" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Spaghet" } } } 
+			ship = { name = "RI Spaghet 2" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Spaghet" } } } 
+			ship = { name = "RI Spaghet 3" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Spaghet" } } } 
+			ship = { name = "RI Spaghet 4" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Spaghet" } } } 
+			ship = { name = "RI Spaghet 5" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Spaghet" } } } 
 			ship = { name = "RI Trento" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Bolzano Class" } } } 
 			ship = { name = "RI Trieste" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Bolzano Class" } } } 
 			# VI Divisione Incrociatori
 			ship = { name = "RI Emanuele Filiberto Duca d'Aosta" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } } 
 			ship = { name = "RI Muzio Attendolo" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } } 
 			ship = { name = "RI Raimondo Montecuccoli" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } } 
+			ship = { name = "RI Raimondo Montecuccoli 2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Raimondo Montecuccoli 3" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Raimondo Montecuccoli 4" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Raimondo Montecuccoli 5" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Raimondo Montecuccoli 6" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Raimondo Montecuccoli 7" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Raimondo Montecuccoli 8" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Raimondo Montecuccoli 9 " definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
+			ship = { name = "RI Raimondo Montecuccoli 10" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Montecuccoli Class" } } }
 
 			# X Squadriglia Cacciatorpediniere
 			ship = { name = "RCT Maestrale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
