@@ -928,6 +928,50 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = USA_lend_lease_act
+		icon = GFX_focus_generic_treaty
+		x = 2
+		y = 2
+		prerequisite = { focus = USA_neutrality_act focus = USA_limited_intervention }
+		relative_position_id = USA_limited_intervention
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			GER={has_completed_focus=GER_danzig_or_war}
+		}
+		
+		bypass = {
+		
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = USA_limited_intervention
+				}
+				swap_ideas = {
+					remove_idea = USA_limited_intervention
+					add_idea = USA_lend_lease_act_li
+				}
+			}
+			else_if = {
+				limit = { has_completed_focus = USA_neutrality_act }
+				swap_ideas = {
+					remove_idea = USA_neutrality_act
+					add_idea = USA_lend_lease_act_na
+				}
+			}
+			
+		}
+	}
 	
 	focus = {
 		id = USA_arsenal_of_democracy
@@ -2736,7 +2780,6 @@ focus = {
 		id = USA_battleship_primacy
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = USA_bureau_of_ships }
-		mutually_exclusive = { focus = USA_carrier_primacy }
 		x = -3
 		y = 1
 		relative_position_id = USA_bureau_of_ships
@@ -2838,7 +2881,6 @@ focus = {
 		id = USA_carrier_primacy
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = USA_bureau_of_ships }
-		mutually_exclusive = { focus = USA_battleship_primacy }
 		x = -1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
