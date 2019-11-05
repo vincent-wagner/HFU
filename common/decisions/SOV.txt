@@ -330,7 +330,7 @@ SOV_mrp = {
 				
 	SOV_surrender_fin = {
 			available = {
-			FIN={surrender_progress> 0.4}
+			FIN={surrender_progress> 0.1}
 			}
 
 			allowed = {

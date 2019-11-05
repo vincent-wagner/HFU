@@ -22,9 +22,8 @@ ideas = {
 				attrition = -0.1
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
-				enemy_justify_war_goal_time = -0.4
-				surrender_limit = 0.19
-				drift_defence_factor = 1.0
+				
+				
 			}
 		}
 		
