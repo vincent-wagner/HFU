@@ -1,22 +1,6 @@
 ideas = {
 
 	country = {
-		USA_depression_cooldown = {
-			picture = generic_goods_red_bonus
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			}
-		}
 		great_depression = {
 			picture = usa_great_depression_3
 			
