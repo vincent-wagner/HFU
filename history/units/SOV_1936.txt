@@ -4,19 +4,20 @@ division_template = {
 	division_names_group = SOV_INF_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
+	infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
 	}
 	support = {
 		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		#engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+		engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
 		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
 	}
 }
@@ -26,57 +27,30 @@ division_template = {
 	division_names_group = SOV_MNT_01
 
 	regiments = {
-		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }	
-		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+        mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }	
-		mountaineers = { x = 2 y = 1 }	
-		mountaineers = { x = 2 y = 2 }	
-		mountaineers = { x = 3 y = 0 }	
-		mountaineers = { x = 3 y = 1 }	
-		mountaineers = { x = 3 y = 2 }	
+		mountaineers = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+        mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+	mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 } 		# Engineer bn
-		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 122mm bn
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
 	}
-}
-
-division_template = {
-	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
-	division_names_group = SOV_MOT_01
-											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns) 
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-	}
-	support = {
-		#recon = { x = 0 y = 0 } 		# Recon bn had 16x L tanks, 45 ACs #Eng and recon removed and they seem rather OP. Could revisit if balance changes 
-		#engineer = { x = 0 y = 1 } 	# (mot) Engineer bn
-		#light_armor = { x = 0 y = 3 }	# Tank bn had 51 L tanks, 3 ACs - (removed)
-	}
-}
-
-division_template = {
-	name = "Kavaleriyskaya Diviziya" 	# Cavalry Division
-	division_names_group = SOV_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	#support = {
-	#	light_armor = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
-	#}
 }
 
 division_template = {
@@ -84,15 +58,16 @@ division_template = {
 	division_names_group = SOV_GAR_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }	
+	infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-	}
-	support = 	{
-		military_police = { x = 0 y = 0 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
 	}
 	priority = 0
 }
@@ -102,24 +77,31 @@ division_template = {
 												# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
 													# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
 	regiments = {
-		light_armor = { x = 0 y = 0 }
+	light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 1 y = 0 }		
-		light_armor = { x = 1 y = 1 }		
-		light_armor = { x = 1 y = 2 }		
-		motorized = { x = 2 y = 0 }		
-		motorized = { x = 2 y = 1 }	
-		motorized = { x = 2 y = 2 }		
-		motorized = { x = 2 y = 3 }		
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+	light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+	light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		light_armor = { x = 2 y = 3 }
+	motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+	motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
+		motorized = { x = 4 y = 3 }
 	}
-}
-division_template = {
-	name = "Vozdushno-Desantnaya Brigada"			# Airborne Brigade
-	division_names_group = SOV_PAR_01
-
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
+	support = {
+       	engineer = { x = 0 y = 0 }
+	recon = { x = 0 y = 1 }
+	artillery = { x = 0 y = 2 }
 	}
 }
 
@@ -136,10 +118,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 77
 		}
-		location = 4660
+		location = 6380
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}			
@@ -148,10 +130,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 77
 		}
-		location = 4660
+		location = 6380
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}
@@ -161,10 +143,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 50
 		}
-		location = 4660
+		location = 6380
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}
@@ -173,10 +155,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 51
 		}
-		location = 4660
+		location = 6380
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}	
@@ -187,10 +169,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 28
 		}
-		location = 9417
+		location = 6380
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}			
@@ -200,10 +182,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 68
 		}
-		location = 4923
+		location = 6380
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}			
@@ -212,10 +194,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 83
 		}
-		location = 12805
+		location = 6380
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}			
@@ -224,10 +206,10 @@ division= {	# "83ya 'Turkestan.' Gornostrelk. Div."
 			is_name_ordered = yes
 			name_order = 84
 		}
-		location = 12805
+		location = 6380
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		start_equipment_factor = 1
 
 	}
@@ -303,16 +285,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = strat_bomber_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.2
 		efficiency = 50
 	}
 }

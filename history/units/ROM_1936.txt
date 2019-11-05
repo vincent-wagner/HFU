@@ -8,20 +8,30 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+        infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+        infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+	infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
-		engineer = { x = 0 y = 1 }   
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	recon = { x = 0 y = 2 }
 	}
 }
 division_template = {
-	name = "Brigada de Munte"				# Mountain Brigade
+	name = "Divizia de Munte"				# Mountain Brigade
 
 	division_names_group = ROM_MTN_01
 
@@ -29,38 +39,61 @@ division_template = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+        mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+        mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+	mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	recon = { x = 0 y = 2 }
 	}
 }
-division_template = {
-	name = "Brigada de Cavalerie" 				# Cavalry Brigade
-	# Note: regiments within the brigade were battalion-sized units
 
-	division_names_group = ROM_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-	}
-}
 division_template = {
 	name = "Regimentul de Blindate" 				# Armor Regiment
 	# Note: 2nd regiment created and merged with motorized inf to create Armor Division in 1940
 	division_names_group = ROM_ARM_01
 	regiments = {
-		light_armor = { x = 0 y = 0 }
+	light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }           # added motorized not to make it a death trap
-		motorized = { x = 1 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+	light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+	light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		light_armor = { x = 2 y = 3 }
+	motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+	motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
+		motorized = { x = 4 y = 3 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+	recon = { x = 0 y = 1 }
+	artillery = { x = 0 y = 2 }
 	}
 }
-
 
 
 
