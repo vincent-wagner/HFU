@@ -129,7 +129,6 @@ icon = generic_operation
 			}
 			
 			available = {
-				SIA = { is_ai = yes }
 			}
 
 			cost = 0
@@ -168,11 +167,6 @@ icon = generic_operation
 			}
 			
 			available = {
-				SIA = { is_ai = yes }
-				OR = { 
-				MAN = { has_completed_focus = MAN_assertiveness }
-				MAN = { has_completed_focus = MAN_obedience }
-				}
 			}
 
 			cost = 0
@@ -206,26 +200,27 @@ icon = generic_operation
 JAP_permit_man = {
 icon = generic_operation
 
-			allowed = {
-				tag = JAP
-			}
-
-			fire_only_once = yes
-
-			cost = 1
-
-			visible = {
-			country_exists = MAN 
-			NOT = { MAN = { has_completed_focus = MAN_obedience }
-			}
-			}
-
-			complete_effect = {
-				MAN = {
-				set_country_flag = MAN_permitted 
-					}
+	allowed = {
+		tag = JAP
+	}
+	fire_only_once = yes
+	cost = 1
+	visible = {
+		country_exists = MAN
+	}
+	complete_effect = {
+		set_autonomy = {
+			target = MAN
+			autonomy_state = autonomy_wtt_imperial_associate 
+		}
+		MAN = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
 			}
 		}
+	}
+}
 JAP_annex_siam = {
 
 			icon = generic_operation
@@ -494,156 +489,9 @@ JAP_annex_manchukuo = {
 					
 					
 					
-					}
-	
-					
-					
-			
-		
-	
-
-
-	JAP_annex_china = {
-
-			icon = generic_operation
-
-			allowed = {
-				tag = JAP
-			}
-			
-			available = {
-			NOT = { country_exists = CHI }
-			date < 1940.10.30
-			}
-
-			fire_only_once = yes
-
-			cost = 0
-			
-			visible = {
-				OR = { 
-				
-				country_exists = XSM 
-				country_exists = SHX
-				country_exists = PRC  
-				country_exists = YUN
-				country_exists = GXC  	
-				country_exists = XIK
-				}	 
-				}
-
-			complete_effect = {
-				JAP = { 
-					
-					
-										annex_country = {
-						target = YUN
-					}
-					
-										annex_country = {
-						target = XSM
-					}
-					
-										annex_country = {
-						target = SHX
-					}
-					
-										annex_country = {
-						target = GXC
-					}
-					
-										annex_country = {
-						target = PRC
-					}
-									annex_country = {
-						target = XIK
-					}
-					
-			}
-		}
-	}
-	
-		JAP_annex_china_to_man = {
-
-			icon = generic_operation
-
-			allowed = {
-				tag = JAP
-			}
-			
-			available = {
-			NOT = { country_exists = CHI }
-			date < 1940.10.30
-			}
-
-			fire_only_once = yes
-
-			cost = 0
-			
-			visible = {
-					OR = { country_exists = SIK  
-				country_exists = XSM 
-				country_exists = SHX
-				country_exists = PRC  }	
-				}
-
-			complete_effect = {
-				MAN = { 
-					
-					
-					
-										annex_country = {
-						target = XSM
-					}
-					
-										annex_country = {
-						target = SHX
-					}
-		
-					
-										annex_country = {
-						target = PRC
-					}
-					
-			}
-		}
-	}
-	
-	
-JAP_annex_mengkukuo = {
-	
-
-			icon = generic_operation
-
-			allowed = {
-		
-				tag = JAP
-			}
-			
-			available = {
-			MAN = { is_ai = yes }
-				
-			
-			}
-
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
-				
-				}
-				
-			complete_effect = {
-				JAP = { 
-					annex_country = {
-						target = MEN
-						transfer_troops = yes 
-					}
-			}
-		}
-	}
 }
+}
+	
 
 
 JAP_interservice_rivalry = {
