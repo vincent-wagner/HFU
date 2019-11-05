@@ -159,7 +159,7 @@ if = {
 			fascist_sympathies
 			anti_communist
 		}
-		id = 500 #Horthy Neutral
+		id = 5000 #Horthy Neutral
 	}
 	
 		create_country_leader = {
@@ -172,7 +172,7 @@ if = {
 			fascist_sympathies
 			anti_communist
 		}
-		id = 500 #Horthy Neutral
+		id = 5001 #Horthy Neutral
 	}
 	
 	else = {

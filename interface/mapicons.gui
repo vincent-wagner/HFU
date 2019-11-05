@@ -962,7 +962,17 @@ guiTypes = {
 			format = left
 			spacing = 1.0
 		}
-			
+		
+		iconType = {
+			name ="more_ground_crews_bg"
+			spriteType = "GFX_mapicon_air_mission_bg_more_ground_crews"
+			position = { x=0 y=-10000 }
+		}
+		buttonType = {
+			name ="more_ground_crews_icon"
+			quadTextureSprite = "GFX_mapicon_air_mission_icon_more_ground_crews"
+			position = { x=0 y=-10000 }
+		}
 	}
 	
 	containerWindowType = {
