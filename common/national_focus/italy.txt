@@ -2224,7 +2224,7 @@ date > 1941.6.1
 		x = 1
 		y = 1
 		relative_position_id = ITA_pact_of_steel
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}	
@@ -2259,6 +2259,8 @@ date > 1941.6.1
 
 				ITA = {
 				has_full_control_of_state = 453
+				has_full_control_of_state = 454
+				has_full_control_of_state = 455
 				}
 				
 
@@ -2281,47 +2283,11 @@ date > 1941.6.1
 			factor = 1
 		}	
 		completion_reward = {
-		If = { 
-		limit = { IRQ = { has_war_with = GER } }
-		IRQ = { white_peace = ITA }
-		ITA = { white_peace = IRQ }
 		
-		}
-		if = { 
-		limit = { IRQ = { is_ai = yes}}
-				ITA = { 
-				set_autonomy = {
-					target = IRQ
-					autonomy_state = autonomy_reichskommissariat
-				}
-			}
-			}
-			
-			if = { 
-		limit = { IRQ = { is_ai = no } }
-				ITA = { 
-				set_autonomy = {
-					target = IRQ
-					autonomy_state = autonomy_satellite
-				}
-			}
-			}
-			
-			
-			
-			GER = { add_to_faction = IRQ }
-				 IRQ = {
-					add_popularity = { ideology = fascism popularity = 0.3 }
-					give_resource_rights = { receiver = ITA state = 291 }
-					give_resource_rights = { receiver = ITA state = 676 }
-					}
-											create_wargoal = {
-				type = take_state_focus
-				target = LIB
-				generator = { 298 }
-				expire = 0
-			}
-			
+			annex_country = {
+    target = IRQ
+    transfer_troops = yes
+}
 		}
 }
 }

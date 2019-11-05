@@ -1567,7 +1567,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1597,7 +1597,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_intervention_in_europe }
 		relative_position_id = USA_intervention_in_europe
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1632,7 +1632,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_intervention_in_europe
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1749,7 +1749,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_intervention_in_asia
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}

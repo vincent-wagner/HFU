@@ -2193,7 +2193,7 @@ SPR = { country_event = spain.29 }
 		x = 1
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 3
+		cost = 1
 		ai_will_do = {
 			factor = 10	
 			modifier = {
@@ -2248,7 +2248,7 @@ SPR = { country_event = spain.29 }
 		relative_position_id = GER_weserubung
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		
 		available = {
 		NOR = { has_capitulated = yes }
