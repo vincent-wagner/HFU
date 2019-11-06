@@ -1001,6 +1001,7 @@ technologies = {
 			advanced_medium_td
 			advanced_medium_art
 			advanced_medium_spaa
+			amphibious_tank_3
 		}
 		
 
@@ -1875,5 +1876,23 @@ technologies = {
 			tp_tech
 		}
 	}
+	amphibious_tank_3 = {
+
+		enable_equipments = {
+			amphibious_tank_equipment_3
+		}
+		
+		research_cost = 1
+		start_year = 1944
 	
+			
+		ai_will_do = {
+			factor = 0.5
+		}
+		
+		categories = {
+			armor
+			tp_tech
+		}
+	}
 }
