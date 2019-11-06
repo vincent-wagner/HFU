@@ -267,9 +267,7 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
+		
 	}
 
 	improved_light_tank = { #Panzer II
@@ -388,9 +386,7 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
+		
 	}
 	
 	improved_light_art = {
@@ -420,9 +416,7 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
+		
 	}
 	
 	improved_light_spaa = {
@@ -552,7 +546,7 @@ technologies = {
 		}
 		
 		categories = {
-			armor
+			
 		}
 	}
 	
@@ -569,9 +563,7 @@ technologies = {
 			factor = 0
 		}
 		
-		categories = {
-			armor
-		}
+		
 	}
 	
 	basic_medium_tank = { #Panzer III
@@ -698,9 +690,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	basic_medium_art = {
@@ -744,9 +733,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	basic_medium_spaa = {
@@ -775,9 +761,7 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
+		
 	}
 	
 	improved_medium_tank = { #Panzer IV
@@ -915,9 +899,7 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
+		
 	}
 	
 	improved_medium_art = {
@@ -960,9 +942,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	improved_medium_spaa = {
@@ -991,9 +970,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	advanced_medium_tank = { #Panther
@@ -1110,9 +1086,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	advanced_medium_art = {
@@ -1154,10 +1127,6 @@ technologies = {
 				factor = 1.1
 				date > "1946.1.1"
 			}
-		}
-		
-		categories = {
-			armor
 		}
 	}
 	
@@ -1268,10 +1237,6 @@ technologies = {
 				date > "1948.1.1"
 			}
 		}
-		
-		categories = {
-			armor
-		}
 	}
 	
 	modern_art = {
@@ -1300,10 +1265,6 @@ technologies = {
 				factor = 2
 				date > "1948.1.1"
 			}
-		}
-		
-		categories = {
-			armor
 		}
 	}
 	
@@ -1439,9 +1400,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	basic_heavy_art = {
@@ -1464,10 +1422,6 @@ technologies = {
 					is_researching_technology = improved_heavy_tank
 				}
 			}
-		}
-		
-		categories = {
-			armor
 		}
 	}
 
@@ -1494,9 +1448,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	improved_heavy_tank = { #Tiger
@@ -1590,10 +1541,6 @@ technologies = {
 				}
 			}
 		}
-		
-		categories = {
-			armor
-		}
 	}
 	
 	improved_heavy_art = {
@@ -1618,9 +1565,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 
 	
@@ -1646,9 +1590,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	advanced_heavy_tank = { #King Tiger
@@ -1728,10 +1669,6 @@ technologies = {
 				}
 			}
 		}
-		
-		categories = {
-			armor
-		}
 	}
 	
 	advanced_heavy_art = {
@@ -1755,10 +1692,6 @@ technologies = {
 				}
 			}
 		}
-		
-		categories = {
-			armor
-		}
 	}
 	
 	advanced_heavy_spaa = {
@@ -1781,10 +1714,6 @@ technologies = {
 					is_researching_technology = main_battle_tank
 				}
 			}
-		}
-		
-		categories = {
-			armor
 		}
 	}
 	
@@ -1829,10 +1758,6 @@ technologies = {
 		ai_will_do = {
 			factor = 0
 		}
-		
-		categories = {
-			armor
-		}
 	}
 	
 	super_heavy_art = {
@@ -1846,10 +1771,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 0
-		}
-		
-		categories = {
-			armor
 		}
 	}
 	
@@ -1866,9 +1787,6 @@ technologies = {
 			factor = 0
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	amphibious_tank = { #SchwimmPanzer II
 
