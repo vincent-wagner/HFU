@@ -348,7 +348,11 @@ on_actions = {
 				set_global_flag = GER_has_started_war
 			}
 
-
+			if = { 
+			limit = { FROM = { original_tag = CHI } }
+			JAP = { add_ideas = JAP_intervene_in_china_4 add_political_power = -25 }
+			USA = { add_war_support = 0.025 }
+			}
 
 			#Remove MEFO bills if Germany goes to war
 			if = {

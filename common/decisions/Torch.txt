@@ -16,10 +16,10 @@ operations = {
 		}
 		fire_only_once = yes
 		days_remove = 30
-		complete_effect = {declare_war_on = {
-				target = EFR
+		complete_effect = {EFR={declare_war_on = {
+				target = ENG
 				type = annex_everything
-			}
+			}}
 			
 			
 		}

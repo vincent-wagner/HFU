@@ -66,6 +66,10 @@ if = {
 	
 
 	add_to_tech_sharing_group = commonwealth_research
+	add_relation_modifier = {
+				target = ENG
+				modifier = commonwealth_naval_sharing
+			}
 }
 
 1939.1.1 = {

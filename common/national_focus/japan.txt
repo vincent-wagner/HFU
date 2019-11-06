@@ -196,7 +196,6 @@ focus_tree = {
   		}
 			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
 			unlock_decision_tooltip = JAP_china_step_up_war_effort
-			add_ideas = JAP_intervene_in_china_5
 	
 		hidden_effect = {
 			country_event = { days = 5 id = news.1 }
@@ -2159,7 +2158,7 @@ completion_reward = {
 		y = 1
 		relative_position_id = JAP_first_air_fleet
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

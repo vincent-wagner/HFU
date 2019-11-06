@@ -45,6 +45,10 @@ NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 1000				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- down from 7 | why not allow Luxembourg to cap faster
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
+
+NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0
+NDefines.NCountry.RESISTANCE_STRENGTH_FROM_UNIT = 0
+NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0
 ---------------------------------------------------------------
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.001						-- down from 0.02 | Chances one ship get damage each hour while on training 		
 
