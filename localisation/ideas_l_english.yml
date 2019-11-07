@@ -2643,4 +2643,6 @@
  Fast_Training:0 "Fast Training"
  USA_depression_cooldown:0 "Depression Cooldown"
  USA_depression_cooldown_desc:0 "You can select the next focus when this mission expires."
-  
+ USA_wasteful_military:0 "Wasteful military"
+ USA_wasteful_military_desc:0 "The US Military is wasteful and uses much more supply than is needed"
+ 

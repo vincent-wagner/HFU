@@ -7,7 +7,10 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
-
+add_timed_idea = {
+	idea = USA_wasteful_military
+    days = 1916
+}
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
