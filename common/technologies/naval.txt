@@ -698,7 +698,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1922
 		
 		folder = {
@@ -747,7 +747,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1939
 		
 		folder = {
@@ -806,8 +806,8 @@ technologies = {
 		amphibious_invasion_defence = 0.5
 		naval_invasion_capacity = 100
 
-		research_cost = 1.5
-		start_year = 1942
+		research_cost = 1
+		start_year = 1940
 		folder = {
 			name = naval_folder
 			position = { x = 0 y = 16 }
