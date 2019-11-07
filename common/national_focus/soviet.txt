@@ -124,6 +124,11 @@
 		}	
 		completion_reward = {
 			army_experience = 20
+			add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 30000
+         producer = SOV
+		}
 			219 = {
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
 				hidden_effect = {
@@ -181,6 +186,7 @@
 						province = 6380
 						instant_build = yes
 					}
+					
 				}
 			}
 		}

@@ -43,8 +43,8 @@ if = {
 	}
 }
 
-set_convoys = 5
-
+set_convoys = 25
+add_manpower=100000
 add_ideas = {
 	limited_conscription
 }
