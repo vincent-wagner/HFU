@@ -166,7 +166,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				
 			}
 		}
 
@@ -185,7 +185,7 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.25
+				
 			}
 		}
 
@@ -204,7 +204,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.05
+				
 			}
 		}
 
@@ -223,7 +223,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.03
+				
 			}
 		}
 
