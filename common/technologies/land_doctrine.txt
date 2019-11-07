@@ -3309,7 +3309,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		infantry = {
-			max_strength = 0.25
+			max_strength = 5
 		}
 
 		land_reinforce_rate = 0.15		
