@@ -1568,6 +1568,12 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
+			add_tech_bonus = {
+				name = rocketry
+				bonus = 1.0
+				uses = 1
+				category = rocketry
+			}
 		}
 	}
 

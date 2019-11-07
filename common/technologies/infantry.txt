@@ -1578,6 +1578,7 @@ technologies = {
 		
 		categories = {
 			mot_rockets
+			rocketry
 		}
 	}
 	
