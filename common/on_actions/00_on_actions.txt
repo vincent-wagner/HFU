@@ -26,11 +26,13 @@ on_actions = {
 	# Ace pilots
 	# country, FROM = ace
 	on_ace_promoted = {
+		if={limit={date>1938.1.1}
 		random_events = {
 			100 = ace_promoted.1
 			5 = ace_promoted.2
 		}
 	}
+		}
 	
 	# country, FROM = ace, PREV = enemy ace 
 	# This event fires twice, once for each ace.
