@@ -210,7 +210,7 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.45          --Vanilla -0.35
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 400.0
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.6                --Vanilla 0.8
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.000 	
-
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 2.0
 
 --Paratrooper changes
 NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.60 -- 33% org on drop
