@@ -145,7 +145,7 @@ NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 100
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
-NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED=0
+
 --genearls
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0
 NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 0.0
@@ -160,7 +160,6 @@ NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0
 
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
-NDefines.NBuildings.MAX_BUILDING_LEVELS=20
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 -------------------------------------
