@@ -40,6 +40,7 @@ ITA_annex_bul = {
 	
 			available = {
 			BUL = { is_ai = yes }
+			date>1939.1.1
 			
 			}
 	
@@ -52,7 +53,7 @@ ITA_annex_bul = {
 			cost = 0
 
 			visible = {
-		
+			BUL = { is_ai = yes }
 				}
 
 			complete_effect = {
