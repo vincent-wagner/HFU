@@ -4,6 +4,9 @@ state=
 	name="STATE_647"
 	state_category = small_island
 	manpower = 12100
+	resources={
+		oil = 10 #moved from Xikang
+	}
 	history=
 	{
 		owner = JAP

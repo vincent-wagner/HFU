@@ -1784,9 +1784,13 @@ available = {
 
 		available = { 
 			Date > 1941.6.1
-			15 = { is_controlled_by = FRA }
-			16 = { is_controlled_by = FRA }
-			29 = { is_controlled_by = FRA }
+	
+		    or = { 763 = { is_controlled_by = Sov  }
+			       15 = { is_controlled_by = FRA }
+			       16 = { is_controlled_by = FRA }
+			       29 = { is_controlled_by = FRA }
+			        2 = { not ={ is_controlled_by = ITA}}
+			     }
 			
 			
 		}
