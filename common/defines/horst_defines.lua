@@ -146,7 +146,8 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 100
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED=0
---genearls
+--generals
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0
 NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 0.0
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0
@@ -217,7 +218,7 @@ NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.60 -- 33% org on drop
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 72 -- 72hrs of org regen 'penalty'
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.50 -- +50% org regen, normal is -80%
 
-
+NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
 
 
 
