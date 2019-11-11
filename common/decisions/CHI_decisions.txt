@@ -13,9 +13,9 @@ CHI_army_reform = {
 			has_completed_focus = CHI_army_reform
 		}
 
-		cost = 0
+		cost = 100
 		ai_will_do = {
-			factor = 500
+			factor = 0
 		}
 		days_remove = 90
 
