@@ -2069,6 +2069,15 @@ completion_reward = {
 				uses = 2
 				category = cat_base_strike
 			}
+		      add_tech_bonus = {
+                name = JAP_carrier_warfare_experiments
+                bonus = 1.00
+                uses = 1
+                category = cv_tech
+        }
+		
+		
+		
 		}
 	}
 
