@@ -2224,7 +2224,7 @@ date > 1941.6.1
 		x = 1
 		y = 1
 		relative_position_id = ITA_pact_of_steel
-		cost = 3
+		cost = 1
 		ai_will_do = {
 			factor = 10
 		}	
