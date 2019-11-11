@@ -11,7 +11,7 @@ NDefines.NTechnology.MAX_SUBTECHS = 4
 --Performance
 
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
