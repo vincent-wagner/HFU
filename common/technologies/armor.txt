@@ -527,9 +527,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	advanced_light_art = {
@@ -1153,9 +1150,6 @@ technologies = {
 			}
 		}
 		
-		categories = {
-			armor
-		}
 	}
 	
 	main_battle_tank = { #E-50
