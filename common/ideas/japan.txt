@@ -20,6 +20,8 @@ ideas = {
 				land_reinforce_rate = 0.1
 				special_forces_attack_factor = 0.20
 				special_forces_defence_factor = 0.2
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
 		 
 		 
 		 }
