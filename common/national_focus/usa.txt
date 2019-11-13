@@ -837,21 +837,14 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = USA_limited_intervention
-				}
-				swap_ideas = {
-					remove_idea = USA_limited_intervention
-					add_idea = USA_lend_lease_act_li
-				}
-			}
-			else_if = {
-				limit = { has_completed_focus = USA_neutrality_act }
-				swap_ideas = {
-					remove_idea = USA_neutrality_act
-					add_idea = USA_lend_lease_act_na
-				}
+			
+		
+			
+			ENG = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = USA }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = USA }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = USA }
+				country_event = { id = wtt_britain.30 }
 			}
 			
 		}
@@ -2599,14 +2592,14 @@ focus = {
 		y = 1
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		relative_position_id = USA_two_ocean_navy_act
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+           date > 1940.1.1
 		}
 		
 		bypass = {

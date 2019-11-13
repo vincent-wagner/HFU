@@ -158,26 +158,7 @@ focus_tree = {
 		relative_position_id = NDA_resource3
 		available_if_capitulated = yes
 	
-		completion_reward = {
-
-		if = { 
-		limit = {            
-		SOV = {
-		focus_progress = {
-    focus = SOV_great_purge
-    progress < 0.001
-}
 		
-		
-		}
-		
-		}
-		SOV = { add_ideas = SOV_purge_now_plz }
-		
-		}
-		
-		
-		}
 		}
 		
 	focus = {
