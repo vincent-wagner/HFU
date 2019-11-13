@@ -6,9 +6,6 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = BRA
-		
-		add_core_of = BRA
 
 	}
 

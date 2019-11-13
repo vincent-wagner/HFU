@@ -4,20 +4,11 @@ state=
 	name="STATE_312"
 	manpower=1
 	resources={
-		chromium=1 # was: 1
 	}
 	
 	state_category = town
 	history=
 	{
-		owner = PAN
-		buildings = {
-			
-			
-			8017 = {
-				naval_base = 1
-			}
-		}
 		
 		victory_points = {
 			12865 3 

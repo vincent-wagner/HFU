@@ -2,19 +2,12 @@ state={
 	id=317
 	name="STATE_317"
 	resources={
-		chromium=1 # was: 1
 	}
 
 	state_category = town
 
 	history={
-		owner = PAN
 		buildings = {
-			
-			12738 = {
-				naval_base = 1
-
-			}
 
 		}
 		

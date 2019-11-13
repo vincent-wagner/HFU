@@ -7,18 +7,9 @@ state=
 	state_category = town
 	
 	resources={
-		chromium=1 # was: 1
 	}
 	history=
 	{
-		owner = PAN
-		buildings = {
-			
-			7660 = {
-				naval_base = 2
-			}
-		}
-		
 		victory_points = {
 			7660 5 
 		}

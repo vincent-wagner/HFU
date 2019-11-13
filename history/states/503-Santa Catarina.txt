@@ -7,9 +7,6 @@ state={
 	state_category = rural
 
 	history={
-		owner = BRA
-		
-		add_core_of = BRA
 	}
 
 	provinces={

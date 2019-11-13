@@ -6,13 +6,6 @@ state=
 	manpower=1
 	history=
 	{
-		owner = PRU
-		buildings = {
-			
-			5023 = {
-				naval_base = 1
-			}
-		}
 		
 	}
 	provinces= { 5023 }
