@@ -2,7 +2,245 @@
 
 #Category only allowed for SOV
 
+SOV_purge = {
 
+SOV_purge_3 = {
+
+icon = generic_operation
+
+			allowed = {
+				tag = SOV
+			}
+			
+			available = {
+focus_progress = { 
+focus = SOV_great_purge
+			progress > 0.0
+}
+}
+
+
+
+visible = {		NOT = { OR = { 
+		SOV = { has_country_flag = purge_1_group_a }
+		SOV = { has_country_flag = purge_1_group_b }
+		}		
+	}
+}
+
+complete_effect = {
+
+if = { 
+limit = { SOV = { has_country_flag = purged_party_members } }
+
+set_country_flag = purge_1_group_a
+set_country_flag = purge_2_group_a
+
+		custom_effect_tooltip = remove_theorist
+		show_ideas_tooltip = mikhail_tukhachevsky
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = alexander_yegorov
+		show_ideas_tooltip = vasily_blucher
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = pyotr_smirnov
+		show_ideas_tooltip = mikhail_frinovsky
+		remove_unit_leader = 401 #mikhail_tukhachevsky, field marshal
+
+		hidden_effect = {
+			remove_ideas = mikhail_tukhachevsky
+			remove_ideas = alexander_yegorov
+			remove_ideas = vasily_blucher
+			remove_ideas = pyotr_smirnov
+			remove_ideas = mikhail_frinovsky
+			remove_ideas = SOV_nikolai_yezhov
+			remove_ideas = yakov_smushkevich
+			remove_ideas = pavel_rychagov
+			remove_ideas = alexander_novikov
+			remove_ideas = gordey_levchenko
+		}
+			
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_nikolai_yezhov
+		custom_effect_tooltip = remove_chief_of_airforce
+		show_ideas_tooltip = yakov_smushkevich
+		show_ideas_tooltip = pavel_rychagov
+		show_ideas_tooltip = alexander_novikov
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = gordey_levchenko
+		remove_unit_leader = 406 #gordey_levchenko, naval commander
+
+
+}
+	else = { 
+set_country_flag = purged_khrushchev
+set_country_flag = purge_1_group_a
+set_country_flag = purge_2_group_a
+
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = nikita_khrushchev
+		custom_effect_tooltip = remove_theorist
+		show_ideas_tooltip = mikhail_tukhachevsky
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = alexander_yegorov
+		show_ideas_tooltip = vasily_blucher
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = pyotr_smirnov
+		show_ideas_tooltip = mikhail_frinovsky
+		remove_unit_leader = 401 #mikhail_tukhachevsky, field marshal
+
+		hidden_effect = {
+			remove_ideas = nikita_khrushchev
+			remove_ideas = mikhail_tukhachevsky
+			remove_ideas = alexander_yegorov
+			remove_ideas = vasily_blucher
+			remove_ideas = pyotr_smirnov
+			remove_ideas = mikhail_frinovsky
+			remove_ideas = SOV_nikolai_yezhov
+			remove_ideas = yakov_smushkevich
+			remove_ideas = pavel_rychagov
+			remove_ideas = alexander_novikov
+			remove_ideas = gordey_levchenko
+		}
+			
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_nikolai_yezhov
+		custom_effect_tooltip = remove_chief_of_airforce
+		show_ideas_tooltip = yakov_smushkevich
+		show_ideas_tooltip = pavel_rychagov
+		show_ideas_tooltip = alexander_novikov
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = gordey_levchenko
+		remove_unit_leader = 406 #gordey_levchenko, naval commander
+
+		
+		
+}
+}
+}
+
+SOV_purge_4 = {
+
+icon = generic_operation
+
+			allowed = {
+				tag = SOV
+			}
+			
+			available = {
+focus_progress = { 
+focus = SOV_great_purge
+			progress > 0.0
+}
+}
+
+
+
+visible = {		NOT = { OR = { 
+		SOV = { has_country_flag = purge_1_group_a }
+		SOV = { has_country_flag = purge_1_group_b }
+		}   } 
+	}
+	
+	complete_effect = { 
+	
+	
+	
+if = { 
+limit = { SOV = { has_country_flag = purged_party_members } }
+
+set_country_flag = purge_1_group_a
+set_country_flag = purge_2_group_a
+
+			custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = semyon_timoshenko
+		show_ideas_tooltip = kliment_voroshilov
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = ivan_yumashev
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = konstantin_rokossovsky
+		show_ideas_tooltip = vladimir_kasatonov
+		remove_unit_leader = 405 #kliment_voroshilov, field marshal
+		remove_unit_leader = 402 #konstantin_rokossovsky, general
+		remove_unit_leader = 404 #semyon_timoshenko, general
+		remove_unit_leader = 403 #vladimir_kasatonov, naval commander
+
+
+		hidden_effect = {
+	remove_ideas = semyon_timoshenko
+			remove_ideas = kliment_voroshilov
+			remove_ideas = ivan_yumashev
+			remove_ideas = konstantin_rokossovsky
+			remove_ideas = vladimir_kasatonov		
+			remove_ideas = SOV_nikolai_yezhov
+			remove_ideas = yakov_smushkevich
+			remove_ideas = pavel_rychagov
+			remove_ideas = alexander_novikov
+			remove_ideas = gordey_levchenko
+		}
+			
+custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_nikolai_yezhov
+		custom_effect_tooltip = remove_chief_of_airforce
+		show_ideas_tooltip = yakov_smushkevich
+		show_ideas_tooltip = pavel_rychagov
+		show_ideas_tooltip = alexander_novikov
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = gordey_levchenko
+		remove_unit_leader = 406 #gordey_levchenko, naval commander
+	
+	else = { 
+	set_country_flag = purged_khrushchev
+	set_country_flag = purge_1_group_b		
+	set_country_flag = purge_2_group_a
+	custom_effect_tooltip = remove_political_advisor
+	show_ideas_tooltip = nikita_khrushchev
+	
+	
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = nikita_khrushchev	
+			custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = semyon_timoshenko
+		show_ideas_tooltip = kliment_voroshilov
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = ivan_yumashev
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = konstantin_rokossovsky
+		show_ideas_tooltip = vladimir_kasatonov
+		remove_unit_leader = 405 #kliment_voroshilov, field marshal
+		remove_unit_leader = 402 #konstantin_rokossovsky, general
+		remove_unit_leader = 404 #semyon_timoshenko, general
+		remove_unit_leader = 403 #vladimir_kasatonov, naval commander
+
+		hidden_effect = {	
+		remove_ideas = nikita_khrushchev
+	        remove_ideas = semyon_timoshenko
+			remove_ideas = kliment_voroshilov
+			remove_ideas = ivan_yumashev
+			remove_ideas = konstantin_rokossovsky
+			remove_ideas = vladimir_kasatonov		
+			remove_ideas = SOV_nikolai_yezhov
+			remove_ideas = yakov_smushkevich
+			remove_ideas = pavel_rychagov
+			remove_ideas = alexander_novikov
+			remove_ideas = gordey_levchenko
+		}	
+	
+custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_nikolai_yezhov
+		custom_effect_tooltip = remove_chief_of_airforce
+		show_ideas_tooltip = yakov_smushkevich
+		show_ideas_tooltip = pavel_rychagov
+		show_ideas_tooltip = alexander_novikov
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = gordey_levchenko
+		remove_unit_leader = 406 #gordey_levchenko, naval commander
+
+	
+	}
+}
+	}
+}
+}
 
 
 SOV_mrp = {
@@ -126,7 +364,44 @@ SOV_mrp = {
 #Category only allowed for SOV
 SOV_great_patriotic_war = {
 
-	
+	SOV_order_227 = {
+
+		icon = generic_army_support
+
+		available = {
+			has_war = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+			has_civil_war = no
+			surrender_progress > 0.20
+		}
+
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+			#surrender_progress > 0
+		}
+
+		days_remove = 720
+
+		modifier = {
+			army_core_defence_factor = 0.25
+			mobilization_speed = 0.15
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				surrender_progress > 0.25
+				factor = 10
+			}
+		}
+	}
 	SOV_scorched_earth = {
 
 		icon = generic_scorched_earth

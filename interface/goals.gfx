@@ -1,27 +1,7 @@
 spriteTypes = {	
 
 	#### Generic continuous goal icons
-   SpriteType = { 
-		name = "GFX_Goal_Great_Purge2"
-		texturefile = "gfx/interface/goals/Goal_Great_Purge2.tga"
-	}
-   SpriteType = { 
-		name = "GFX_Goal_Positive_heroism"
-		texturefile = "gfx/interface/goals/Goal_Positive_heroism.tga"
-	}
-   SpriteType = {
-		name = "GFX_goal_wheat"
-		texturefile = "gfx/interface/goals/wheat_yields.tga"
-				
-	}
-   SpriteType = {
-		name = "GFX_anti_communism"
-		texturefile = "gfx/interface/goals/anti_communism.tga" 
-	}
-   SpriteType = {
-		name = "GFX_sov_stakhonovite"
-		texturefile = "gfx/interface/goals/sov_stakhonovite.tga"
-	}
+
    SpriteType = {
 	name = "GFX_praisegermania"
 	texturefile = "gfx/interface/goals/GFX_praisegermania.tga"			
