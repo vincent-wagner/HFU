@@ -2931,9 +2931,11 @@ SPR = { country_event = spain.29 }
 				uses = 1
 				category = cv_tech
 			}
+			set_technology = {
+				improved_ship_hull_heavy = 1
+			}
 		
-		
-		create_equipment_variant = {
+			create_equipment_variant = {
 					name = "Bismarck-Klasse"
 					type = ship_hull_heavy_3
 					name_group = GER_BB_HISTORICAL

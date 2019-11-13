@@ -376,7 +376,7 @@ instant_effect = {
 		equipment = {
 			type = ship_hull_cruiser_2
 			creator = "ENG" 
-			version_name = "Town Class"
+			version_name = "Leander Class"
 		}
 		requested_factories = 10
 		progress = 0.5
@@ -386,7 +386,7 @@ instant_effect = {
 		equipment = {
 			type = ship_hull_cruiser_2
 			creator = "ENG" 
-			version_name = "Town Class"
+			version_name = "Leander Class"
 		}
 		requested_factories = 10
 		progress = 0.5
@@ -396,7 +396,7 @@ instant_effect = {
 		equipment = {
 			type = ship_hull_cruiser_2
 			creator = "ENG" 
-			version_name = "Town Class"
+			version_name = "Leander Class"
 		}
 		requested_factories = 10
 		progress = 0.25
