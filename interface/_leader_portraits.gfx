@@ -159,7 +159,10 @@ spriteTypes = {
 		name = "GFX_SAF_moses_kotane"
 		textureFile = "gfx//leaders//Africa//Portrait_Africa_Generic_3.dds"
 	}		
-	
+	spriteType = {
+		name = "GFX_SAF_jan_smuts"
+		textureFile = "gfx//leaders//SAF//Portrait_SouthAfrica_Jan_Smuts.dds"
+	}
 	spriteType = {
 		name = "GFX_SAF_daniel_malan"
 		textureFile = "gfx//leaders//ENG//Portrait_Britain_Generic_2.dds"
