@@ -10,9 +10,6 @@ ability = {
 		
 		allowed = {
 			is_border_war = no
-			OWNER = {
-				has_technology = trench_warfare
-			}
 		}
 		
 		cost = 0.12
