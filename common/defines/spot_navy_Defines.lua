@@ -9,7 +9,7 @@ NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0		-- XP cost for conv
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0		-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 
 --- Navy
-NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0
+NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.5
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0
 
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.8 --- (0.2 -> 0.8)
@@ -21,7 +21,7 @@ NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR	= 0.3 -- if one side
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.7  -- maximum penalty to get from larger fleets
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.0  -- the accumulated penalty from new ships will be clamped to this value
 NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.8	-- damage penalty at 0% positioning
-NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.4   -- screening efficiency (screen to capital ratio) at 0% positioning
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.8   -- screening efficiency (screen to capital ratio) at 0% positioning
 
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 1.5 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0 -- cost to unassign/replace pride of the fleet

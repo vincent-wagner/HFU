@@ -14,31 +14,6 @@ ideas = {
       }
 
 
-	
-	Order_227 = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-
-			picture = generic_manpower_bonus
-			
-			modifier = {
-				
-			army_core_defence_factor = 0.20
-			army_core_attack_factor = 0.20
-		                   
-			           }
-		}
-	
 	militarized_schools = {
 		
 			removal_cost = -1
@@ -76,8 +51,7 @@ ideas = {
 		modifier = {
 				
 				local_resources_factor = 0.2
-				industry_air_damage_factor = -0.1
-				production_speed_air_base_factor = 0.1
+				MONTHLY_POPULATION = 0.10
 			}
 		
 	   }
@@ -231,7 +205,7 @@ ideas = {
 			
 			modifier = {
 			mobilization_speed = 0.15	
-			MONTHLY_POPULATION = 0.1
+			MONTHLY_POPULATION = 1.0
 			}
 		}
 
@@ -249,7 +223,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.2
 			}
 		}
 
@@ -340,17 +314,16 @@ ideas = {
 			}
 			
 			research_bonus = {
-				
+				land_doctrine = -0.10
+				naval_doctrine = -0.10
+				air_doctrine = -0.10
 			}
 
 			modifier = {
-				
-				air_range_factor = -0.5
-				
-				recon_factor = -0.05
-				decryption_factor = -0.05
-				encryption_factor = -0.05
-				max_dig_in = -1
+				army_org_factor = -0.5
+				send_volunteer_factor = -0.8
+				industrial_capacity_factory = -0.2
+				training_time_factor = 0.5
 			}
 		}
 
@@ -368,11 +341,16 @@ ideas = {
 			}
 			
 			research_bonus = {
-				
+				land_doctrine = -0.09
+				naval_doctrine = -0.09
+				air_doctrine = -0.09
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.4
+				army_org_factor = -0.45
+				send_volunteer_factor = -0.74
+				industrial_capacity_factory = -0.18
+				training_time_factor = 0.45
 			}
 		}
 		officers_purged_3 = {
@@ -389,14 +367,16 @@ ideas = {
 			}
 			
 			research_bonus = {
-								
+				land_doctrine = -0.08
+				naval_doctrine = -0.08
+				air_doctrine = -0.08				
 			}
 
 			modifier = {
-				
-				industrial_capacity_factory = -0.4
-				
-				
+				army_org_factor = -0.4
+				send_volunteer_factor = -0.68
+				industrial_capacity_factory = -0.16
+				training_time_factor = 0.4
 			}
 		}
 		officers_purged_4 = {
@@ -981,16 +961,55 @@ ideas = {
 			
 
 			
+			traits = { army_chief_drill_1 }
 			
-			modifier = { training_time_army_factor = -0.5}
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		
-		
-		
+		alexander_yegorov = {
 			
+			
+			allowed = {
+				original_tag = SOV
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purge_1_group_a }
+			}
+			
+
+			
+			# PURGED
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		vasily_blucher = {
+			
+			
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purge_1_group_a }
+			}
+			
+
+			
+			# PURGED
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 	}
 	navy_chief = {
 		
@@ -1085,7 +1104,26 @@ ideas = {
 	air_chief = {
 		
 		
-		
+		alexander_novikov = {
+						
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purge_2_group_a }
+			}
+			
+
+			
+			# Not Purged, but imprisoned
+			traits = { air_chief_reform_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 		konstantin_vershinin = {
 			
@@ -1108,8 +1146,49 @@ ideas = {
 			}
 		}
 		
-		
+		yakov_smushkevich = {
 			
+			
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purge_2_group_a }
+			}
+			
+
+			
+			# PURGED
+			traits = { air_chief_safety_2 } # Could also have reform
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		pavel_rychagov = {
+			
+			
+			allowed = {
+				original_tag = SOV
+
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purge_2_group_a }
+			}
+			
+
+			
+			# PURGED
+			traits = { air_chief_all_weather_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
 	}
 	
 	
@@ -1733,7 +1812,7 @@ ideas = {
 				has_completed_focus = SOV_positive_heroism
 			}
 			
-			cost = 100
+			cost = 250
 			
 			research_bonus = {
 				cat_mass_assault = 0.15

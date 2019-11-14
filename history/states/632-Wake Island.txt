@@ -4,9 +4,7 @@ state={
 	name="STATE_632"
 	manpower=150
 	state_category = tiny_island
-    resources={
-		oil = 15 #moved from Xikang
-	}
+
 	history={
 		owner = USA
 		buildings = {

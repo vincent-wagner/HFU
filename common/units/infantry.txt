@@ -158,12 +158,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 300
 		}
-        jungle = {
-		
-		attack = 0.15
-		
-		
-		}
+
 		marsh = {
 			attack = 0.3
 		}
@@ -225,17 +220,10 @@ sub_units = {
 			movement = 0.1
 		}
 		mountain = {
-			attack = 0.4
+			attack = 0.35
 			defence = 0.1
 			movement = 0.2
 		}
-	    urban = {
-		        
-			attack = 0.2	
-				
-				}
-	
-	
 	}
 
 	paratrooper = {
