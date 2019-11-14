@@ -290,6 +290,8 @@ ideas = {
 
 
 
+		
+			
 		GER_barbarossa = {
 			allowed = {
 				always = no
@@ -302,63 +304,21 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_acquire_tanks
-
+            modifier = {
+			planning_speed = 1
+			out_of_supply_factor = -0.05
+			supply_consumption_factor = -0.2
+			}
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.20
+				attack_bonus_against = 0.10
 				defense_bonus_against = 0.10
 			}
-			targeted_modifier = {
-			tag = GER
-			army_armor_speed_factor = 0.10			
-			}
+			
 
 		}
 		
-			GER_barbarossa_minor_ger = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-
-			targeted_modifier = {
-				tag = SOV
-				
-				defense_bonus_against = 0.05
-			}
-			targeted_modifier = {
-			tag = GER
-			army_armor_speed_factor = 0.10			
-			}
-
-		}
-		
-		GER_barbarossa_minor = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-
-			targeted_modifier = {
-				tag = SOV
-				
-				defense_bonus_against = 0.05
-			}
-		}
+			
 
 		GER_dismantle_maginot = {
 			allowed = {
