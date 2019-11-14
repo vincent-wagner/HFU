@@ -1730,50 +1730,37 @@ available = {
 				type = annex_everything
 				target = SOV
 			}
-			SOV={remove_ideas=Fast_Training }
-			
-			if = { 
-			limit = { has_game_rule = { 
-			rule = horst_barb_rebalance
-				option = HORST_ENABLE_BARB_REBALANCE
-			}}
-			
-			
-			
-			if = { 
-			limit = { SOV = {has_tech = improved_heavy_tank }}
-				GER = { 
+			            SOV={remove_ideas=Fast_Training }
+		
+				        GER = { 
 						add_timed_idea = { idea = GER_barbarossa days = 100 }
 					}
-					ROM = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
+					    ROM = { 
+						add_timed_idea = { idea = GER_barbarossa days = 100 }
 					}
 						HUN = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 100 }
 					}
 						BUL = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 100 }
 					}
-			}
-			else = {
-				GER = { 
-						add_timed_idea = { idea = GER_barbarossa_minor_ger days = 100 }
-					}
-					ROM = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
-					}
-						HUN = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
-					}
-						BUL = { 
-						add_timed_idea = { idea = GER_barbarossa_minor days = 100 }
+			            FIN = { 
+						add_timed_idea = { idea = GER_barbarossa days = 100 }
 					}
 			
 			
+			
+			
+			
+			
 			}
-			}				
+			
+			
+			
+			
+					
 		}
-	}
+	
 
 	focus = {
 		id = GER_endsieg
