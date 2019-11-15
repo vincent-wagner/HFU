@@ -1183,7 +1183,7 @@ leader_traits = {
 			
 		   
 		   river = {
-				attack = 0.2
+				attack = 0.07
 				
 		   }
 		}
