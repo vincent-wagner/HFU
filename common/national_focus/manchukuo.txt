@@ -167,7 +167,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		available = {
@@ -343,7 +343,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4
+			factor = 10
 		}
 
 		available = {
@@ -559,7 +559,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4
+			factor = 10
 		}
 
 		available = {
@@ -624,7 +624,7 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 4
+			factor = 9
 		}
 
 		available = {
@@ -712,7 +712,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		available = {
@@ -753,7 +753,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 4
+			factor = 10
 		}
 
 		available = {
@@ -924,7 +924,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		available = {
