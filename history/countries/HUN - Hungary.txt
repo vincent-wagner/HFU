@@ -174,7 +174,7 @@ if = {
 			fascist_sympathies
 			anti_communist
 		}
-		id = 500 #Horthy Neutral
+		id = 5000 #Horthy Neutral
 	}
 	
 	else = {

@@ -1170,96 +1170,6 @@ ideas = {
 	
 	
 	political_advisor = {
-		harry_white = {
-			
-			picture = USA_harry_white
-			allowed = {
-				original_tag = "USA"
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_reach_out_to_the_ware_group
-				}
-				not = { has_idea = USA_henry_morgenthau }
-			}
-			visible = { has_dlc = "Man the Guns" }
-			
-			traits = { financial_expert }
-			cost = 0
-			do_effect = {
-		
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		victor_perlo = {
-			
-			picture = generic_political_advisor_europe_1
-			allowed = {
-				original_tag = "USA"
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_reach_out_to_the_ware_group
-				}
-			}
-			visible = { has_dlc = "Man the Guns" }
-			
-			traits = { economist }
-			cost = 0
-			do_effect = {
-		
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		whittaker_chambers = {
-			
-			picture = USA_whittaker_chambers
-			allowed = {
-				original_tag = "USA"
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_reach_out_to_the_ware_group
-				}
-			}
-			visible = { has_dlc = "Man the Guns" }
-			
-			traits = { editor }
-			cost = 0
-			do_effect = {
-		
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		 
-
 		harold_ickes = {
 			
 			
@@ -1328,7 +1238,6 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				not = { has_idea = harry_white }
 			}
 			
 			traits = { financial_expert }
