@@ -6,10 +6,6 @@ state={
 	}
 
 	history={
-		owner = TIB
-		
-		add_core_of = TIB
-
 	}
 
 	provinces={
