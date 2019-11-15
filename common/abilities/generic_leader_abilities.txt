@@ -11,7 +11,7 @@ ability = {
 		allowed = {
 			is_border_war = no
 			OWNER = {
-				has_technology = trench_warfare
+				has_tech = trench_warfare
 			}
 		}
 		

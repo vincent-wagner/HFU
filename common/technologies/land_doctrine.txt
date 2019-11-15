@@ -1770,6 +1770,10 @@ technologies = {
 		max_dig_in = 10
 		dig_in_speed_factor = 0.25 #25% bonus
 		
+		on_research_complete = {
+			custom_effect_tooltip = "Enables the use of the staff office plan leader ability"
+		}
+		
 		
 		path = {
 			leads_to_tech = grand_battle_plan 
