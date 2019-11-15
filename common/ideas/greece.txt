@@ -18,7 +18,6 @@ push_on_limit = {
 			
 			modifier = {
 				surrender_limit = -0.20
-				 resistance_tick_in_states_controlled_by_enemy = -0.2
 			}
 
 		}
