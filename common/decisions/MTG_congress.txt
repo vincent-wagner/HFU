@@ -390,7 +390,6 @@ USA_congress = {
 			463 = {
 				not = { is_core_of = ROOT }
 			}
-			political_power_daily > 0.1
 		}
 		visible = {
 			463 = {
@@ -405,10 +404,9 @@ USA_congress = {
 			}
 		}
 		fire_only_once = yes
-		days_remove = 240
+		days_remove = 90
 		cost = 25
 		modifier = {
-			political_power_gain = -0.1
 		}
 		remove_effect = {
 			USA_congress_add_state = yes
@@ -422,7 +420,6 @@ USA_congress = {
 			629 = {
 				not = { is_core_of = ROOT }
 			}
-			political_power_daily > 0.1
 		}
 		visible = {
 			629 = {
@@ -437,10 +434,9 @@ USA_congress = {
 			}
 		}
 		fire_only_once = yes
-		days_remove = 240
+		days_remove = 90
 		cost = 25
 		modifier = {
-			political_power_gain = -0.1
 		}
 		remove_effect = {
 			USA_congress_add_state = yes
@@ -454,7 +450,6 @@ USA_congress = {
 			686 = {
 				not = { is_core_of = ROOT }
 			}
-			political_power_daily > 0.1
 		}
 		visible = {
 			686 = {
@@ -469,10 +464,9 @@ USA_congress = {
 			}
 		}
 		fire_only_once = yes
-		days_remove = 240
+		days_remove = 90
 		cost = 25
 		modifier = {
-			political_power_gain = -0.1
 		}
 		remove_effect = {
 			USA_congress_add_state = yes
@@ -480,6 +474,4 @@ USA_congress = {
 			USA_calc_stars = yes
 		}
 	}
-
-
 }

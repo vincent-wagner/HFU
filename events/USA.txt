@@ -223,7 +223,7 @@ country_event = {
 		remove_ideas = new_deal
 		add_ideas = wilkies_new_deal
 		set_variable = { election_factor = random }
-		add_to_variable = { election_factor = -0.6 }
+		add_to_variable = { election_factor = -1.0 }
 		add_political_power = 120
 		USA_election_senate = yes
 		USA_election_house = yes
