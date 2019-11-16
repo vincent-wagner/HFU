@@ -264,10 +264,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nikolai Vatutin"
 		picture = "Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
-	traits = { winter_specialist winter_expert infantry_officer trait_reckless infantry_leader }
-	skill = 3
+	traits = { winter_specialist winter_expert infantry_officer trait_reckless infantry_leader trait_engineer }
+	skill = 4
 	
-	attack_skill = 1
+	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
@@ -348,14 +348,14 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Ivan Chernyakhovsky"
 		picture = "Portrait_Soviet_Ivan_Chernyakhovsky.dds"
-	traits = { winter_specialist winter_expert armor_officer }
-	skill = 1 
+	traits = { winter_specialist winter_expert infantry_leader infantry_expert trickster }
+	skill = 4
 
 	
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 5
 }
 
 create_corps_commander = {

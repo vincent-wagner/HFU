@@ -92,11 +92,13 @@ SOV_mrp = {
 				
 	SOV_surrender_fin = {
 			available = {
-			FIN={surrender_progress> 0.1}
+			FIN={surrender_progress> 0.25}
 			}
 
 			allowed = {
-				tag = SOV
+				
+				
+			          tag = SOV
 			}
 			
 			
@@ -108,10 +110,11 @@ SOV_mrp = {
 		FIN = { has_war_with = SOV }
 		}
 		
-			complete_effect = {
-			      SOV = { white_peace = FIN }
+        complete_effect = {
+			SOV = { white_peace = FIN }
 			FIN = { white_peace = SOV }
-			SOV={transfer_state = 146 transfer_state= 147}
+			SOV = {transfer_state = 146 
+			       transfer_state= 147}
 			SOV = { country_event = { id = finland.8 } }
 
 		}

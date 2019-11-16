@@ -342,10 +342,18 @@ ideas = {
 			research_bonus = {
 				
 			}
-
+ equipment_bonus = {
+				fighter_equipment = {
+					air_agility = -0.1
+					air_attack = -0.1
+					instant = yes
+				}
+				
+			}	
 			modifier = {
 				
-				air_range_factor = -0.5
+				air_range_factor = -0.25
+				air_superiority_efficiency = -0.25
 				
 				recon_factor = -0.05
 				decryption_factor = -0.05
@@ -372,7 +380,7 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.3
+				industrial_capacity_factory = 0.3
 			}
 		}
 		officers_purged_3 = {
@@ -967,16 +975,7 @@ ideas = {
 			}
 			available = 
 			{
-				NOT = { has_country_flag = purge_1_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 405
-						} 
-					}
-				}
+				date>1941.1.1
 			}
 			
 
@@ -1101,7 +1100,7 @@ ideas = {
 			
 
 			
-			traits = { air_chief_ground_support_2 }
+			traits = { air_air_superiority_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1138,7 +1137,7 @@ ideas = {
 			
 
 			
-			traits = { army_concealment_2 }
+			traits = { army_infantry_2 }
 			# Almost certainly a psychopath
 			
 			ai_will_do = {
@@ -1519,7 +1518,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { heavy_aircraft_manufacturer }
+			traits = { CAS_manufacturer }
 			
 			modifier = {
 			}

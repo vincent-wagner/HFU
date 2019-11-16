@@ -75,7 +75,7 @@
 		x = 12
 		y = 3
 		
-		cost = 2
+		cost = 1
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -95,7 +95,9 @@
 		
 		completion_reward = {
 			
-			add_ideas = tot_economic_mobilisation		
+			add_ideas = tot_economic_mobilisation	
+			add_political_power = 100
+            			
 		}
 	}
     
@@ -106,7 +108,7 @@
 		x = 12
 		y = 4
 		prerequisite = { focus = SOV_great_patriotic_war_187 }
-		cost = 12
+		cost = 10
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -197,7 +199,7 @@
 			 
 			 
 			
-             remove_ideas = officers_purged_2
+             add_ideas = officers_purged_2
              
 		}
 	}
@@ -1128,7 +1130,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_ocean_going_navy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1261,7 +1263,7 @@ focus = {
 			remove_ideas = trotskyite_plot
 			add_ideas = trotskyite_plot_purged
 			add_ideas = officers_purged
-			add_ideas = officers_purged_2
+			
 
 		}
 	}
