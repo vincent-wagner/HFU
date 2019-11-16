@@ -14,6 +14,22 @@ ideas = {
 				supply_consumption_factor = 1.0
 			}
 		}
+		
+		USA_wasteful_navy = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				production_speed_dockyard_factor = -0.9
+			}
+		}
+		
 		great_depression = {
 			picture = usa_great_depression_3
 			
@@ -341,8 +357,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_dockyard_factor = 0.5
-                industrial_capacity_dockyard = 0.1				
+				production_speed_dockyard_factor = 1
+                industrial_capacity_dockyard = 0.15			
 			}
 		}
 		USA_us_air_force = {
