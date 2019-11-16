@@ -319,7 +319,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 11
-			surface_visibility = 10
+			surface_visibility = 8.5
 		}
 		can_convert_from = {
 			module_category = ship_light_battery
@@ -347,7 +347,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 12
-			surface_visibility = 10
+			surface_visibility = 8.5
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
@@ -375,7 +375,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 13
-			surface_visibility = 10
+			surface_visibility = 8.5
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
@@ -403,7 +403,7 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 14
-			surface_visibility = 10
+			surface_visibility = 8.5
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
