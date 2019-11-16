@@ -25,6 +25,16 @@ SS_demands = {
 				planning_skill = 4
 				logistics_skill = 6
 			}
-		}
+			create_corps_commander = {
+				name = "Reinhard Heydrich"
+				gfx = "GFX_portrait_ger_reinhard_heydrich"
+				traits = { cavalry_leader trait_engineer politically_connected defective_geneseed }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 5
+				logistics_skill = 3
+			}
+		}		
 	}
 }

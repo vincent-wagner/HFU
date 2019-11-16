@@ -13,6 +13,10 @@ spriteTypes = {
 		name = "GFX_portrait_ger_fritz_kuhn"
 		texturefile = "gfx/leaders/GER/Portrait_Germany_Generic_land_4.dds"		
 	}
+	spriteType = {
+		name = "GFX_portrait_ger_reinhard_heydrich"
+		texturefile = "gfx/leaders/GER/heydrich.dds"		
+	}
 
 
 	#### USA
