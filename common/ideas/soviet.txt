@@ -344,8 +344,8 @@ ideas = {
 			}
  equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.1
-					air_attack = -0.1
+					air_agility = -0.15
+					air_attack = -0.2
 					instant = yes
 				}
 				

@@ -290,7 +290,7 @@ instant_effect = {
     add_equipment_production = {
 		equipment = {
 			type = CAS_equipment_1
-			creator = "GER" 
+			creator = "SOV" 
 		}
 		requested_factories = 5
 		progress = 0.2

@@ -1,5 +1,25 @@
 ideas = {
+country={
+wartime_economy = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
 
+			allowed_civil_war = {
+				always=no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+			}
+			
+			
+		}}
 	economy = { 
 		law = yes
 		undisturbed_isolation = {
@@ -14,7 +34,6 @@ ideas = {
 				consumer_goods_factor = 0.50
 				production_speed_industrial_complex_factor = 0.3
 				production_speed_arms_factory_factor = -1
-				production_speed_dockyard_factor = -0.8
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
@@ -345,7 +364,7 @@ ideas = {
 			removal_cost = -1
 			
 			available = {
-				NOT = {	tag = SOV }
+			always=yes
 			}
 			
 			modifier = {
@@ -392,7 +411,7 @@ ideas = {
 			available = {
 			
 			
-                NOT = {	tag = SOV }
+                
 				if = {
 					limit = {
 						original_tag = CHI
@@ -445,7 +464,7 @@ ideas = {
 			
 			available = {
 			
-			NOT = {	tag = SOV }
+			
 			
 				OR = {
 					AND = {
@@ -552,7 +571,12 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-
+			allowed_to_remove = {
+				NOT = {OR={
+					tag=SOV
+					has_idea = wartime_economy
+				}}
+			}
 			ai_will_do = {
    				factor = 1
 
