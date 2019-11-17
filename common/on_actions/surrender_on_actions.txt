@@ -1,0 +1,17 @@
+on_actions = {on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					OR={
+					tag=BEL
+					tag=HOL
+					tag=DEN
+					tag=POL
+					tag=NOR
+				}}
+				country_event={id=surrender.1 days=2}
+			}
+					
+			}
+		}
+	}
