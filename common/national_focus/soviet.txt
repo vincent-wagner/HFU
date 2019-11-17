@@ -144,7 +144,7 @@
 		x = 14
 		y = 4
 		prerequisite = { focus = SOV_great_patriotic_war_187 }
-		cost = 20
+		cost = 2
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -177,7 +177,7 @@
 		x = 14
 		y = 5
 		prerequisite = { focus = SOV_great_patriotic_general }
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -211,7 +211,7 @@
 		x = 10
 		y = 5
 		prerequisite = { focus = SOV_great_patriotic_general }
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -246,7 +246,7 @@
 		x = 12
 		y = 6
 		prerequisite = { focus = SOV_great_patriotic_general }
-		cost = 4
+		cost = 6
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -414,7 +414,7 @@ focus = {
 		x = 10
 		y = 4
 		
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 100
 		}	

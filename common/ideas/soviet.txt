@@ -33,8 +33,8 @@ ideas = {
 			
 			modifier = {
 				
-			army_core_defence_factor = 0.20
-			army_core_attack_factor = 0.20
+			army_core_defence_factor = 0.15
+			army_core_attack_factor = 0.10
 		                   
 			           }
 		}
@@ -344,16 +344,16 @@ ideas = {
 			}
  equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.15
-					air_attack = -0.2
+					air_agility = -0.35
+					
 					instant = yes
 				}
 				
 			}	
 			modifier = {
 				
-				air_range_factor = -0.25
-				air_superiority_efficiency = -0.25
+				
+				
 				
 				recon_factor = -0.05
 				decryption_factor = -0.05
@@ -813,7 +813,7 @@ ideas = {
 				original_tag = SOV
 			}
 			
-			traits = { smooth_talking_charmer }
+			traits = { silent_workhorse }
 		}
 
 		SOV_nikolai_voznesensky = {
@@ -1401,10 +1401,12 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { fast_tank_manufacturer }
+			
 			equipment_bonus = {
 				
 				medium_tank_equipment = {
+					build_cost_ic = -0.15
+					reliability = 0.15
 					
 					
 				}
