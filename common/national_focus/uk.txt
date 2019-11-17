@@ -3763,12 +3763,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_military_training_act
-		available = {
-			OR = {
-				threat > 0.5
-				has_war = yes
-			}
-		}
+		
 
 		available_if_capitulated = yes
 
