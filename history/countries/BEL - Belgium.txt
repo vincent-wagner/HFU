@@ -102,18 +102,7 @@ set_popularities = {
 	}
 }
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = COG
-		autonomous_state = autonomy_integrated_puppet
-	}
-}
+
 
 set_convoys = 80
 set_stability = 0.75

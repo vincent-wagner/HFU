@@ -353,8 +353,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bypass_the_philippines
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 2
 				category = tp_tech
 			}
 		}
@@ -409,6 +409,7 @@ focus_tree = {
 		completion_reward = {
 		JAP = { 
 						add_timed_idea = { idea = JAP_banzai days = 160 }
+						add_ideas = closed_economy
 					}
 		custom_effect_tooltip = tooltip_jap_war
 		country_event = { id = japan.144 }
