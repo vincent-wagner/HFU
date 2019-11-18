@@ -56,7 +56,6 @@ SOV_mrp = {
 		
 		complete_effect = {
 			SOV = { declare_war_on = { type = puppet_wargoal_focus target = FIN }}
-			hidden_effect={FIN = {activate_mission=FIN_Resistance set_variable={resistance= 1}}}
 			
 		}
 	}

@@ -70,24 +70,6 @@ if = {
 	}
 }
 
-	set_autonomy = {
-		target = MON
-		autonomous_state = autonomy_colony
-		freedom_level = 0.5
-	}
-
-	set_autonomy = {
-		target = TAN
-		autonomous_state = autonomy_colony
-		freedom_level = 0.5
-	}
-	
-	set_autonomy = {
-		target = SIK
-		autonomous_state = autonomy_colony
-		freedom_level = 0.5
-	}
-
 1939.1.1 = {
 
 	
