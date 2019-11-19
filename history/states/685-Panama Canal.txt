@@ -16,8 +16,11 @@ state={
 			7617 = {
 				naval_base = 3
 			}
+			4624 = {
+				naval_base = 1
+			}
 		}
 	}
 	
-	provinces={ 7617 }
+	provinces={ 4624 7617 }
 }
