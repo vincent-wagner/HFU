@@ -69,7 +69,7 @@
     
 
      focus = {
-		id = SOV_great_patriotic_war_187
+		id = SOV_move_industry_to_urals
 		icon = GFX_sov_stakhonovite
 		
 		x = 12
@@ -92,7 +92,13 @@
 		bypass = {
 			
 		}
-		
+		select_effect = {
+			hidden_effect={activate_mission=SOV_relocation}
+		}
+		completion_reward = {
+			custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural. Canceling the focus will cancel the relocation."
+					
+		}
 		completion_reward = {
 			
 			add_ideas = tot_economic_mobilisation	
@@ -107,7 +113,7 @@
 		
 		x = 12
 		y = 4
-		prerequisite = { focus = SOV_great_patriotic_war_187 }
+		prerequisite = { focus = SOV_move_industry_to_urals }
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -137,38 +143,7 @@
 		         }
 	}
   }
-	focus = {
-		id = SOV_move_industry_to_urals
-		icon = GFX_goal_generic_construct_civilian
-		
-		x = 14
-		y = 4
-		prerequisite = { focus = SOV_great_patriotic_war_187 }
-		cost = 2
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
-		}
-
-		available = {
-			has_war_with = GER
-			
-		}
-
-		bypass = {
-			
-		}
-		select_effect = {
-			hidden_effect={activate_mission=SOV_relocation}
-		}
-		completion_reward = {
-			custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural. Canceling the focus will cancel the relocation."
-					
-		}
-	}
+	
    
     focus = {
 		id = SOV_great_industry
@@ -407,7 +382,7 @@ focus = {
 	focus = {
 		id = SOV_defense_of_moscow
 		icon = GFX_focus_SOV_defense_of_moscow
-		prerequisite = { focus = SOV_great_patriotic_war_187 }
+		prerequisite = { focus = SOV_move_industry_to_urals }
 		available = {
 			
 		}

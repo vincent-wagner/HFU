@@ -7,7 +7,7 @@ country = {
             add = 20
             OR = { 
             tag = TUR
-            tag = SWE
+            
             tag = SWI
             tag = SAU
 			tag = TIB

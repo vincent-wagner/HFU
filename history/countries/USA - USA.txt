@@ -14,7 +14,7 @@ add_timed_idea = {
 
 add_timed_idea = {
 	idea = USA_wasteful_navy
-    days = 1460
+    days = 1200
 }
 
 

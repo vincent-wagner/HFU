@@ -33,8 +33,8 @@ ideas = {
 			
 			modifier = {
 				
-			army_core_defence_factor = 0.15
-			army_core_attack_factor = 0.10
+			army_core_defence_factor = 0.1
+			army_core_attack_factor = 0.05
 		                   
 			           }
 		}
@@ -175,7 +175,7 @@ ideas = {
 			
 			modifier = {
 				subversive_activites_upkeep = -0.5
-				land_reinforce_rate = 0.07
+				land_reinforce_rate = 0.08
 				}
 		}
 		
@@ -284,11 +284,13 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
 				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
 			}
 			
 			rule = {
@@ -339,26 +341,13 @@ ideas = {
 				has_government = communism
 			}
 			
+			
+			
 			research_bonus = {
 				
-			}
- equipment_bonus = {
-				fighter_equipment = {
-					air_agility = -0.35
-					
-					instant = yes
-				}
-				
-			}	
-			modifier = {
-				
-				
-				
-				
-				recon_factor = -0.05
-				decryption_factor = -0.05
-				encryption_factor = -0.05
-				max_dig_in = -1
+		      land_doctrine = -0.1
+				air_doctrine = -0.1
+			
 			}
 		}
 
@@ -380,7 +369,7 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = 0.3
+				industrial_capacity_factory = 0.1
 			}
 		}
 		officers_purged_3 = {

@@ -190,7 +190,7 @@ limit = {		tag = JAP}
 			declare_war_on = { target = BHU type = annex_everything }
 			declare_war_on = { target = BEL type = annex_everything }
 			declare_war_on = { target = COG type = annex_everything }
-			declare_war_on = { target = NDA type = annex_everything }
+			
 			declare_war_on = { target = DEN type = annex_everything }
 			
 			if = {

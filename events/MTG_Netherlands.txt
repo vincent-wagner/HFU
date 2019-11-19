@@ -64,40 +64,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = mtg_netherlands.144
-	title = mtg_netherlands.144.t
-	desc = mtg_netherlands.144.d
-	picture = GFX_report_event_hol_cabinet_gerbrandy
 
-	is_triggered_only = yes
-	
-	# Ok
-	option = {
-		name = mtg_netherlands.144.a
-		add_popularity = {
-		    ideology = democratic
-		    popularity = -0.05
-		}
-		retire_country_leader = yes
-		create_country_leader = {
-			name = "Pieter Sjoerds Gerbrandy"
-			desc = "POLITICS_PIETER_SJOERDS_GERBRANDY_DESC"
-			picture = "portrait_nda_pieter_sjoerds_gerbrandy.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				little_churchill
-			}
-		}
-		if = {
-			limit = {
-				has_idea = HOL_weak_government
-			}
-			remove_ideas = HOL_weak_government
-		}
-	}
-}
 
 # Event for INS informing of NL preparing to integrate
 country_event = {
