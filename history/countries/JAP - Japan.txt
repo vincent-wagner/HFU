@@ -687,7 +687,7 @@ create_navy_leader = {
 	name = "Isoroku Yamamoto"
 		picture = "Portrait_Japan_Isoroku_Yamamoto.dds"
 	traits = { aviation_enthusiast bold air_controller flight_deck_manager superior_tactician spotter }
-	skill = 5
+	skill = 6
 	attack_skill = 5
 	defense_skill = 2
 	maneuvering_skill = 3
@@ -731,12 +731,12 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Nobutake Kondō"
 		picture = "Portrait_Japan_Nobutake_Kondo.dds"
-	traits = { battleship_adherent naval_lineage fly_swatter }
-	skill = 3
+	traits = { battleship_adherent naval_lineage fly_swatter superior_tactician}
+	skill = 4
 	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
 }
 
 create_navy_leader = {
@@ -753,11 +753,11 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Soemu Toyoda"
 		picture = "Portrait_Japan_Soemu_Toyoda.dds"
-	traits = { bold ironside old_guard_navy }
-	skill = 3
+	traits = { bold ironside old_guard_navy fleet_protector }
+	skill = 5
 	attack_skill = 5
 	defense_skill = 1
-	maneuvering_skill = 2
+	maneuvering_skill = 4
 	coordination_skill = 2
 }
 
@@ -797,12 +797,12 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Tadashige Daigo"
 		picture = "Portrait_Japan_Tadashige_Daigo.dds"
-	traits = { navy_career_officer seawolf }
-	skill = 1
-	attack_skill = 1
+	traits = { navy_career_officer seawolf superior_tactician }
+	skill = 5
+	attack_skill = 6
 	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 6
 }
 
 create_navy_leader = {

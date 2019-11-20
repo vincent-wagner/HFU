@@ -421,12 +421,12 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "François Darlan"
 		picture = "Portrait_France_Francois_Darlan.dds"
-	traits = { naval_lineage bold superior_tactician }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 3
+	traits = { spotter blockade_runner bold superior_tactician }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 6
+	coordination_skill = 6
 }
 
 create_navy_leader = {

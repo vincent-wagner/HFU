@@ -745,7 +745,7 @@ create_navy_leader = {
 	name = "James Fownes Somerville" # Aristocrat
 	id = 983
 		picture = "Portrait_Britain_James_Fownes_Somerville.dds"
-	traits = { superior_tactician aviation_enthusiast navy_career_officer }
+	traits = { superior_tactician aviation_enthusiast navy_career_officer air_controller}
 	skill = 5
 	attack_skill = 4
 	defense_skill = 3
@@ -785,8 +785,8 @@ create_navy_leader = {
 	skill = 4
 	attack_skill = 3
 	defense_skill = 2
-	maneuvering_skill = 4
-	coordination_skill = 4
+	maneuvering_skill = 6
+	coordination_skill = 6
 }
 
 create_navy_leader = {
@@ -829,11 +829,11 @@ create_navy_leader = {
 	name = "Charles Forbes"
 	id = 990
 		picture = "Portrait_Britain_Charles_Forbes.dds"
-	traits = { gunnery_expert fly_swatter }
-	skill = 3
-	attack_skill = 3
+	traits = { gunnery_expert fly_swatter superior_tactician }
+	skill = 4
+	attack_skill = 5
 	defense_skill = 2
-	maneuvering_skill = 2
+	maneuvering_skill = 5
 	coordination_skill = 3
 }
 
@@ -841,10 +841,10 @@ create_navy_leader = {
 	name = "Algernon Willis"
 	id = 991
 		picture = "Portrait_Britain_Algernon_Willis.dds"
-	traits = { battleship_adherent spotter }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
+	traits = { battleship_adherent spotter ironside}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
 	maneuvering_skill = 3
 	coordination_skill = 2
 }

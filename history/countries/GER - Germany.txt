@@ -752,22 +752,22 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Karl Dönitz"
 	picture = "Portrait_Germany_Karl_Donitz.dds"
-	traits = { navy_career_officer seawolf }
-	skill = 7
+	traits = { navy_career_officer seawolf spotter }
+	skill = 5
 	id = 26
-	attack_skill = 7
-	defense_skill = 5
-	maneuvering_skill = 5
-	coordination_skill = 5
+	attack_skill = 5
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 8
 }
 
 create_navy_leader = {
 	name = "Erich Raeder"
 		picture = "Portrait_Germany_Erich_Raeder.dds"
 	traits = { naval_lineage battleship_adherent ironside air_controller }
-	skill = 6
+	skill = 5
 	id = 27
-	attack_skill = 6
+	attack_skill = 4
 	defense_skill = 4
 	maneuvering_skill = 5
 	coordination_skill = 6
@@ -776,12 +776,12 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Alfred Saalwächter"
 		picture = "Portrait_Germany_Alfred_Saalwachter.dds"
-	traits = { old_guard_navy bold}
+	traits = { old_guard_navy bold superior_tactician}
 	skill = 4
 	id = 28
 	attack_skill = 4
 	defense_skill = 2
-	maneuvering_skill = 3
+	maneuvering_skill = 7
 	coordination_skill = 4
 }
 
@@ -812,13 +812,13 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Günther Lütjens"
 		picture = "Portrait_Germany_Gunter_Lutjens.dds"
-	traits = { gentlemanly navy_career_officer superior_tactician }
-	skill = 3
+	traits = { gentlemanly navy_career_officer superior_tactician fly_swatter blockade_runner }
+	skill = 5
 	id = 31
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 6
 }
 
 if = {

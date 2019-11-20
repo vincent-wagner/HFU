@@ -222,10 +222,10 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Herbert Fitzherbert"
 	gfx = "GFX_RAJ_herbert_fitzherbert"
-	traits = { old_guard_navy }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 1
-	coordination_skill = 2
+	traits = { spotter blockade_runner bold }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 6
+	coordination_skill = 6
 }

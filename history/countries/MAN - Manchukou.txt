@@ -180,6 +180,16 @@ create_corps_commander = {
 	logistics_skill = 2
 	female = yes
 }
+create_navy_leader = {
+	name = "Tadashige Daigo"
+		picture = "Portrait_Japan_Tadashige_Daigo.dds"
+	traits = { navy_career_officer seawolf superior_tactician }
+	skill = 5
+	attack_skill = 6
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 6
+}
 
 1939.1.1 = {
 }

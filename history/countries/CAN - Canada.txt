@@ -296,12 +296,12 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "H.T. Baillie-Grohman"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { spotter }
-	skill = 4
+	traits = { spotter blockade_runner bold }
+	skill = 5
 	attack_skill = 3
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 4
+	defense_skill = 1
+	maneuvering_skill = 6
+	coordination_skill = 6
 }
 create_navy_leader = {
 	name = "James D. Prentice"

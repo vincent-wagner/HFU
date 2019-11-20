@@ -648,20 +648,20 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "William Halsey, Jr."
 		picture = "Portrait_USA_William_Halsey_Jr.dds"
-	traits = { bold aviation_enthusiast superior_tactician spotter }
-	skill = 4
+	traits = { bold aviation_enthusiast superior_tactician spotter air_controller }
+	skill = 6
 	attack_skill = 5
 	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 3
 }
 
 create_navy_leader = {
 	name = "Frank Jack Fletcher"
 		picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
-	traits = { gunnery_expert superior_tactician spotter }
-	skill = 3
-	attack_skill = 2
+	traits = { gunnery_expert superior_tactician spotter ironside }
+	skill = 5
+	attack_skill = 4
 	defense_skill = 2
 	maneuvering_skill = 3
 	coordination_skill = 3
@@ -670,10 +670,10 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Raymond A. Spruance"
 		picture = "Portrait_USA_Raymond_A_Spruance.dds"
-	traits = { navy_career_officer gentlemanly superior_tactician }
+	traits = { navy_career_officer gentlemanly superior_tactician fly_swatter }
 	skill = 4
 	attack_skill = 4
-	defense_skill = 3
+	defense_skill = 5
 	maneuvering_skill = 3
 	coordination_skill = 3
 }
@@ -681,22 +681,22 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Harold Rainsford Stark"
 		picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
-	traits = { cuts_corners blockade_runner spotter }
-	skill = 2
-	attack_skill = 2
+	traits = { cuts_corners blockade_runner spotter seawolf }
+	skill = 4
+	attack_skill = 4
 	defense_skill = 1
 	maneuvering_skill = 2
-	coordination_skill = 2
+	coordination_skill = 5
 }
 
 create_navy_leader = {
 	name = "Arleigh Burke"
 		picture = "Portrait_USA_Arleigh_Burke.dds"
 	traits = { bold fleet_protector old_guard_navy superior_tactician }
-	skill = 4
-	attack_skill = 3
+	skill = 5
+	attack_skill = 4
 	defense_skill = 3
-	maneuvering_skill = 3
+	maneuvering_skill = 5
 	coordination_skill = 4
 }
 
