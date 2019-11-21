@@ -7,8 +7,6 @@ state={
 		
 		owner = NOR
 	
-		add_core_of = NOR
-
 	}
 	provinces={
 		3059 3093 6114 6136 6204 6216 9032 9047 9135 9170 9227 11037 

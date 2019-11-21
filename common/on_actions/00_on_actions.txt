@@ -336,19 +336,7 @@ on_actions = {
 				}
 			}
 			#Germany has started a war - allies should try to contain Germany
-			if = {
-				limit = {
-					ROOT = {
-						TAG = GER
-					}
-					NOT = {
-						has_global_flag = GER_has_started_war
-					}
-				}
-				FRA={activate_mission=FRA_Resistance}
-				set_global_flag = GER_has_started_war
-			}
-
+		
 			if = { 
 			limit = { FROM = { original_tag = CHI } }
 			JAP = { add_ideas = JAP_intervene_in_china_4 add_political_power = -25 }
@@ -486,13 +474,7 @@ on_actions = {
 				}
 				remove_ideas = YUG_idea_economic_aid
 			}
-			if = {
-				limit = {
-					original_tag = DEN
-				}
-				country_event = { id = wtt_denmark.1 days = 1 }
 			}
-		}
 	}
 
 	# ROOT is previously capitulated country

@@ -1,0 +1,72 @@
+on_actions = {
+	on_capitulation = {
+			effect = {
+				if = {
+					limit = {
+						OR={
+						tag=BEL
+						tag=HOL
+						tag=DEN
+						tag=POL
+						tag=NOR
+						tag=LUX
+					}}
+					country_event={id=surrender.1 days=2}
+				}
+						
+				}
+			}
+
+	on_declare_war={
+		effect={
+			if = {
+						limit = {
+							ROOT = {
+								TAG = GER
+							}
+							NOT = {
+								has_global_flag = GER_has_started_war
+							}
+						}
+						FRA={activate_mission=FRA_Resistance}
+						set_global_flag = GER_has_started_war
+					}
+
+
+
+			if = {
+						limit = {
+							FROM = {
+								OR={
+									tag=BEL
+									tag=DEN
+									tag=POL
+									tag=NOR
+									tag=LUX
+									tag=GRE
+									tag=YUG
+							
+								}
+							}
+						}
+						ENG={add_to_faction=FROM}
+					}
+			else_if = {
+						limit = {
+							FROM = {
+								tag=HOL				
+								
+							}
+						}
+						ENG={add_to_faction=FROM}
+						GER={
+							declare_war_on = {
+								target = INS
+								type = annex_everything
+							}
+						}
+				}
+
+		}
+	}
+}
