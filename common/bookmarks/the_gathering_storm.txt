@@ -261,21 +261,6 @@ bookmarks = {
 
 			}
 		}
-		"PRC"={
-			minor = yes
-			history = "PRC_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				PRC_the_long_march_1
-				PRC_low_popular_support_3
-				PRC_power_struggles
-			}
-			focuses = {
-							PRC_maoism
-				PRC_peoples_war
-				PRC_peoples_liberation_army
-			}
-		}
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
@@ -292,20 +277,6 @@ bookmarks = {
 		}
 		
 		
-		"MEX"={
-			minor = yes
-			history = "MEXICO_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				MEX_church_power_2
-				MEX_politicised_army
-				MEX_oil_concessions
-			}
-			focuses = {
-				MEX_focus_reform_the_cristero_guard
-				MEX_focus_aztec_eagles
-				MEX_focus_support_general_cedillo			}
-		}
 
 		
 		effect = {

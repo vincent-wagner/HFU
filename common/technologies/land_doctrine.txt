@@ -2792,12 +2792,6 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 			modifier = {
@@ -3201,12 +3195,6 @@ technologies = {
 
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 

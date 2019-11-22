@@ -1,4 +1,5 @@
 ﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
 # If we run out of all historical names, the names will be assigned in the old way.
 #
 # Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
@@ -78,7 +79,7 @@ HOL_CAV_01 =
 {
 	name = "Cavalry Division"
 
-	for_countries = { HOL INS }
+	for_countries = { HOL }
 
 	can_use = { always = yes }
 
@@ -110,7 +111,7 @@ HOL_MOT_01 =
 {
 	name = "Motorized Division"
 
-	for_countries = { HOL INS }
+	for_countries = { HOL }
 
 	can_use = { always = yes }
 
@@ -143,7 +144,7 @@ HOL_MEC_01 =
 {
 	name = "Mechanized Division"
 
-	for_countries = { HOL INS }
+	for_countries = { HOL }
 
 	can_use = { always = yes }
 
@@ -176,7 +177,7 @@ HOL_ARM_01 =
 {
 	name = "Armored Division"
 
-	for_countries = { HOL INS }
+	for_countries = { HOL }
 
 	can_use = { always = yes }
 
@@ -208,7 +209,7 @@ HOL_PAR_01 =
 {
 	name = "Paratrooper Division"
 
-	for_countries = { HOL INS }
+	for_countries = { HOL }
 
 	can_use = { always = yes }
 
@@ -240,7 +241,7 @@ HOL_MAR_01 =
 {
 	name = "Marine Division"
 
-	for_countries = { HOL INS }
+	for_countries = { HOL }
 
 	can_use = { always = yes }
 
@@ -272,7 +273,7 @@ HOL_MNT_01 =
 {
 	name = "Mountain Division"
 
-	for_countries = { HOL INS }
+	for_countries = { HOL }
 
 	can_use = { always = yes }
 
@@ -341,7 +342,7 @@ INS_INF_01 =
 {
 	name = "Colonial Division"
 
-	for_countries = { HOL INS }
+	for_countries = { HOL  }
 
 	can_use = { always = yes }
 
@@ -372,7 +373,7 @@ INS_GAR_01 =
 {
 	name = "Colonial Garrison"
 
-	for_countries = { HOL INS }
+	for_countries = { HOL }
 
 	can_use = { always = yes }
 

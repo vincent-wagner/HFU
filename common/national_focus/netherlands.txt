@@ -4295,62 +4295,8 @@ focus_tree = {
 		id = HOL_decolonization
 		available = {
 			has_government = communism
-			OR = {
-				CRC = { is_subject_of = HOL }
-				695 = { is_fully_controlled_by = HOL }
-				SUR = { is_subject_of = HOL }
-				309 = { is_fully_controlled_by = HOL }
-				custom_trigger_tooltip = {
-					tooltip = HOL_decolonization_tt2
-					AND = {
-						672 = { is_fully_controlled_by = HOL }
-						335 = { is_fully_controlled_by = HOL }
-						334 = { is_fully_controlled_by = HOL }
-						667 = { is_fully_controlled_by = HOL }
-						673 = { is_fully_controlled_by = HOL }
-						668 = { is_fully_controlled_by = HOL }
-						738 = { is_fully_controlled_by = HOL }
-						669 = { is_fully_controlled_by = HOL }
-					}
-				}
-				AND = {
-					INS = { is_subject_of = HOL }
-					custom_trigger_tooltip = {
-						tooltip = HOL_decolonization_tt1
-						672 = { is_fully_controlled_by = INS }
-						335 = { is_fully_controlled_by = INS }
-						334 = { is_fully_controlled_by = INS }
-						667 = { is_fully_controlled_by = INS }
-						673 = { is_fully_controlled_by = INS }
-						668 = { is_fully_controlled_by = INS }
-						738 = { is_fully_controlled_by = INS }
-						669 = { is_fully_controlled_by = INS }
-					}
-				}
-			}
 		}
 		bypass = {
-			NOT = {
-				OR = {
-					672 = { is_owned_by = HOL }
-					335 = { is_owned_by = HOL }
-					334 = { is_owned_by = HOL }
-					667 = { is_owned_by = HOL }
-					673 = { is_owned_by = HOL }
-					668 = { is_owned_by = HOL }
-					738 = { is_owned_by = HOL }
-					669 = { is_owned_by = HOL }
-					695 = { is_owned_by = HOL }
-					309 = { is_owned_by = HOL }
-				}
-			}
-			NOT = {
-				OR = {
-					CRC = { is_subject_of = HOL }
-					SUR = { is_subject_of = HOL }
-					INS = { is_subject_of = HOL }
-				}
-			}
 		}
 		prerequisite = { focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
@@ -4362,131 +4308,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = {
-					672 = { is_fully_controlled_by = HOL }
-					335 = { is_fully_controlled_by = HOL }
-					334 = { is_fully_controlled_by = HOL }
-					667 = { is_fully_controlled_by = HOL }
-					673 = { is_fully_controlled_by = HOL }
-					668 = { is_fully_controlled_by = HOL }
-					738 = { is_fully_controlled_by = HOL }
-					669 = { is_fully_controlled_by = HOL }
-				}
-				INS = {
-					every_unit_leader = {
-						set_nationality = HOL
-					}
-				}
-				release = INS
-				hidden_effect = {
-					INS = {
-						drop_cosmetic_tag = yes
-						retire_country_leader = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					INS = { is_subject_of = HOL }
-					672 = { is_fully_controlled_by = INS }
-					335 = { is_fully_controlled_by = INS }
-					334 = { is_fully_controlled_by = INS }
-					667 = { is_fully_controlled_by = INS }
-					673 = { is_fully_controlled_by = INS }
-					668 = { is_fully_controlled_by = INS }
-					738 = { is_fully_controlled_by = INS }
-					669 = { is_fully_controlled_by = INS }
-				}
-				hidden_effect = {
-					INS = {
-						drop_cosmetic_tag = yes
-						retire_country_leader = yes
-					}
-				}
-				set_autonomy = {
-				    target = INS
-				    autonomy_state = autonomy_free
-				}
-			}
-			set_province_name = { id = 7381 name = "Jakarta" }
-			set_province_name = { id = 4608 name = "Surabaya" }
-			if = {
-				limit = {
-					OR = {
-						CRC = { is_subject_of = HOL }
-						695 = { is_fully_controlled_by = HOL }
-					}
-				}
-				release = CRC
-			}
-			if = {
-				limit = {
-					OR = {
-						SUR = { is_subject_of = HOL }
-						309 = { is_fully_controlled_by = HOL }
-					}
-				}
-				release = SUR
-			}
-			add_stability = -0.1
-			add_political_power = 150
-			add_manpower = 150000
-			add_timed_idea = { idea = HOL_redirected_investments days = 365 }
-			custom_effect_tooltip = HOL_decolonization_tt
-			hidden_effect = {
-				division_template = {
-					name = "KNIL Divisie"
-					priority = 1
-					division_names_group = INS_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 2 y = 0 }
-						infantry = { x = 2 y = 1 }
-						infantry = { x = 2 y = 2 }
-					}
-				}
-				7 = {
-					create_unit = {
-						division = "name = \"1. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-					create_unit = {
-						division = "name = \"2. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-					create_unit = {
-						division = "name = \"3. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-					create_unit = {
-						division = "name = \"4. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-					create_unit = {
-						division = "name = \"5. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-					create_unit = {
-						division = "name = \"6. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-					create_unit = {
-						division = "name = \"7. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-					create_unit = {
-						division = "name = \"8. KNIL Divisie 'Celebes'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
-						owner = HOL
-					}
-				}
-			}
-			hidden_effect = { news_event = { id = mtg_news.50 days = 1 } }
 		}
 	}
 
@@ -5685,10 +5506,8 @@ focus_tree = {
 			has_government = democratic
 			is_in_faction_with = ENG
 			is_in_faction_with = AST
-			is_in_faction_with = MAL
 			NOT = { has_war_with = USA }
 			OR = {
-				MAL = { has_full_control_of_state = 336 }
 				ENG = { has_full_control_of_state = 336 }
 			}
 		}

@@ -230,21 +230,6 @@ bookmarks = {
 				CHI_war_of_resistance
 			}
 		}
-		"PRC"={
-			minor = yes
-			history = "PRC_BLITZKRIEG_DESC"
-			ideology = communism
-			ideas = {
-				PRC_the_long_march_1
-				PRC_low_popular_support_1
-				PRC_power_struggles
-			}
-			focuses = {
-				PRC_maoism
-				PRC_peoples_war
-				PRC_peoples_liberation_army
-			}
-		}
 		"MAN"={
 			minor = yes
 			history = "MAN_BLITZKRIEG_DESC"
@@ -258,22 +243,6 @@ bookmarks = {
 				MAN_obedience
 				MAN_develop_aluminum_sources
 				MAN_assertiveness
-			}
-		}
-
-		"MEX"={
-			minor = yes
-			history = "MEXICO_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				MEX_church_power_1
-				MEX_politicised_army
-				MEX_capital_reserves
-			}
-			focuses = {
-				MEX_focus_reform_the_cristero_guard
-				MEX_focus_aztec_eagles
-				MEX_focus_support_general_cedillo
 			}
 		}
 

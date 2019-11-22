@@ -109,135 +109,6 @@ news_event = {
 		}
 	}
 }
-
-# PRC - PRC declared
-news_event = {
-	id = wtt_news.37
-	title = wtt_news.37.t
-	desc = wtt_news.37.desc
-	picture = GFX_news_event_prc_declared
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_news.37.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.37.b
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				original_tag = PRC
-			}
-		}
-	}
-	option = {
-		name = wtt_news.37.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = PRC
-				is_literally_china = yes
-			}
-		}
-	}
-}
-
-# PRC - Wang Ming wins power struggle
-news_event = {
-	id = wtt_news.38
-	title = wtt_news.38.t
-	desc = wtt_news.38.desc
-	picture = GFX_news_event_generic_communist_congress
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_news.38.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.38.b
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				original_tag = PRC
-			}
-		}
-	}
-	option = {
-		name = wtt_news.38.c
-		trigger = {
-			original_tag = SOV
-		}
-	}
-	option = {
-		name = wtt_news.38.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = PRC
-				original_tag = SOV
-				is_literally_china = yes
-			}
-		}
-	}
-}
-# PRC - Japan goes to war following provocations
-news_event = {
-	id = wtt_news.39
-	title = wtt_news.39.t
-	desc = wtt_news.39.desc
-	picture = GFX_news_event_050
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wtt_news.39.a
-		trigger = {
-			original_tag = PRC
-		}
-	}
-	option = {
-		name = wtt_news.39.b
-		trigger = {
-			is_literally_china = yes
-			NOT = {
-				original_tag = PRC
-				original_tag = CHI
-			}
-		}
-	}
-	option = {
-		name = wtt_news.39.c
-		trigger = {
-			original_tag = CHI
-		}
-	}
-	option = {
-		name = wtt_news.39.e
-		trigger = {
-			original_tag = JAP
-		}
-	}
-	option = {
-		name = wtt_news.39.d
-		trigger = {
-			NOT = {
-				original_tag = CHI
-				original_tag = PRC
-				original_tag = JAP
-				is_literally_china = yes
-			}
-		}
-	}
-}
-
 # Canals - Suez Canal Blown
 news_event = {
 	id = wtt_news.40
@@ -989,7 +860,6 @@ news_event = {
 		trigger = {
 			OR = {
 				original_tag = INS
-				original_tag = MAL
 			}
 			NOT = { has_war_with = FROM }
 		}
@@ -998,7 +868,6 @@ news_event = {
 		name = wtt_news.69.b
 		trigger = {
 			NOT = { original_tag = INS }
-			NOT = { original_tag = MAL }
 			NOT = { has_war_with = FROM }
 		}
 	}

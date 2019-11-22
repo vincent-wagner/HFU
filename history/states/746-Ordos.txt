@@ -23,10 +23,6 @@ state={
 		}
 		
 		1939.1.1 = {
-			
-			owner = PRC
-			controller = MEN
-
 		}
 	}
 	manpower=500000

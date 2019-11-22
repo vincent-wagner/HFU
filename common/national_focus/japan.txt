@@ -144,22 +144,22 @@ focus_tree = {
 					608 = {
 						NOT = {
 							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
+ 
+ 
 						}
 					}
 					597 = {
 						NOT = {
 							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
+ 
+ 
 						}
 					}
 					614 = {
 						NOT = {
 							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
+ 
+ 
 						}
 					}
 				}
@@ -183,8 +183,6 @@ focus_tree = {
 
 		completion_reward = {
 		hidden_effect = { 
-			
-				CHI = { add_to_faction = PRC }
 		}
 				CHI = {
 					country_event = china.1
@@ -369,7 +367,6 @@ focus_tree = {
 		relative_position_id = JAP_strike_south_doctrine
 
 		will_lead_to_war_with = ENG
-		will_lead_to_war_with = MAL
 		will_lead_to_war_with = INS
 
 		cost = 0.1

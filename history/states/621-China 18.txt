@@ -18,9 +18,6 @@ state={
 				level = 1
 
 			}
-			owner = PRC
-			controller = MEN
-
 		}
 
 	}

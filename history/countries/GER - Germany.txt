@@ -172,12 +172,6 @@ set_war_support = 0.3
 	
 	oob = "GER_1939"
 	
-	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_puppet
-	}
-	
-	give_military_access = SLO
 	create_wargoal = {
 		type = take_state_focus
 		target = POL

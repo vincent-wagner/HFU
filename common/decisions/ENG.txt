@@ -413,40 +413,5 @@ political_actions = {
 }
 
 operations = {
-
-	op_fork = {
-
-		icon = generic_operation
-	
-		allowed = {
-			tag = ENG
-		}
-		
-		available = {
-			tag = ENG
-			has_government = democratic
-			has_war_with = GER
-			ICE = { exists = yes }
-			
-			
-		}
-
-		cost = 50
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		visible = {
-			tag = ENG
-			has_war_with = GER
-			ICE = { exists = yes }
-			
-		}
-		
-		complete_effect = {
-					ENG = { transfer_state = 100  }
-		}
-	}
 }
 

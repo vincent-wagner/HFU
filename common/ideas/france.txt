@@ -14,8 +14,6 @@ ideas = {
 		original_tag = BEL
 		original_tag = NOR
 		original_tag = RAJ
-		original_tag = BHU
-		original_tag = NEP
 		}
 		}
 		

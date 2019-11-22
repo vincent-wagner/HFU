@@ -24,9 +24,6 @@ war_measures = {
 
 		visible = {
 			has_defensive_war = yes
-			CSA = {
-				exists = no
-			}
 		}
 
 		complete_effect = {
@@ -177,7 +174,7 @@ foreign_support = {
 			}
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+		targets = { CHI D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
 
 		target_root_trigger = {
 		has_completed_focus = USA_limited_intervention
@@ -261,7 +258,7 @@ foreign_support = {
 			}
 		}
 
-		targets = { CHI PRC GXC YUN SHX XSM SIK D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+		targets = { CHI D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
 
 		target_trigger = {
 			FROM = {
@@ -370,11 +367,6 @@ USA_war_plans = {
 		}
 		targeted_modifier = {
 			tag = MAN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
-		}
-		targeted_modifier = {
-			tag = MEN
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}

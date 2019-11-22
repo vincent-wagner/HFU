@@ -182,7 +182,6 @@ country_event = {
 	
 	option = {
 		name = soviet.16.a
-		annex_country = { target = TAN }
 		hidden_effect = {
 			SOV = {
 				country_event = { days = 1 id = news.14 }
@@ -205,7 +204,6 @@ country_event = {
 	# Enter negotiations with Communist China
 	option = {
 		name = soviet.18.a
-		PRC = { country_event = { id = soviet.19 days = 1 } }
 	}
 }
 
@@ -223,7 +221,6 @@ country_event = {
 		name = soviet.19.a
 		remove_opinion_modifier = { target = CHI modifier = hostile_status }
 		CHI = {
-			remove_opinion_modifier = { target = PRC modifier = hostile_status }
 			country_event = { id = soviet.21 days = 1 }
 		}
 	}
@@ -245,55 +242,10 @@ country_event = {
 				set_rule = { can_create_factions = yes }
 				create_faction = chinese_united_front
 				 
-				add_to_faction = PRC 
-				add_to_faction = SHX 
-				add_to_faction = XSM 
-				add_to_faction = YUN 
-				add_to_faction = GXC 
-
-				}
-				SIK = {
-				add_opinion_modifier = {
-				target = CHI
-				modifier = chinese_united_front
-			}
-			}
 			
-				PRC = {
-				add_opinion_modifier = {
-				target = CHI
-				modifier = chinese_united_front
-			}
-			}
-				
-								SHX = {
-				add_opinion_modifier = {
-				target = CHI
-				modifier = chinese_united_front
-			}
-			}
-								GXC = {
-				add_opinion_modifier = {
-				target = CHI
-				modifier = chinese_united_front
-			}
-			}
-								YUN = {
-				add_opinion_modifier = {
-				target = CHI
-				modifier = chinese_united_front
-			}
-			}
-			
-			
-							XSM = {
-				add_opinion_modifier = {
-				target = CHI
-				modifier = chinese_united_front
-			}
-			}
 				news_event = { id = news.288 days = 1 }
-				}
+			}
+		}
 }
 
 

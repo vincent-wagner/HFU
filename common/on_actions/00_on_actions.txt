@@ -544,8 +544,6 @@ on_actions = {
 			if = {
 				limit = {
 					OR = {
-						original_tag = DDR
-						original_tag = WGR
 						original_tag = GER
 					}
 					has_government = communism
@@ -569,8 +567,6 @@ on_actions = {
 			if = {
 				limit = {
 					OR = {
-						original_tag = DDR
-						original_tag = WGR
 						original_tag = GER
 					}
 					has_government = communism

@@ -355,12 +355,6 @@ remove_state_core = 74
 		SOV = { country_event = news.37 }
 		
 			if = {
-				limit = { NOT = { country_exists = MEN } }
-					MEN = { remove_state_core = 611 
-					remove_state_core = 612
-					}
-				
-				}
 			
 				
 				
@@ -376,7 +370,7 @@ remove_state_core = 74
 				
 		}
 		}
-		
+		}
 	
 		focus = {
 		id = NDA_nothing

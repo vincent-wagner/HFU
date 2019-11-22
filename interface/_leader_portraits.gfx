@@ -502,50 +502,6 @@ spriteTypes = {
 		name = "GFX_portrait_chi_wang_jingwei"
 		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
 	}
-	
-	##### ICE #####
-	
-	spriteType = {
-		name = "GFX_portrait_ice_sveinn_bjornsson"
-		texturefile = "gfx/leaders/Asia/portrait_ice_sveinn_bjornsson.dds"
-	}
-	
-	##### XSM #####
-
-	spriteType = {
-		name = "GFX_portrait_xsm_ma_bufang"
-		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	}
-	
-	
-	##### YUN #####
-
-	spriteType = {
-		name = "GFX_portrait_yun_long_yun"
-		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
-	}
-
-	##### GXC #####
-
-	spriteType = {
-		name = "GFX_portrait_li_zongren"
-		texturefile = "gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.dds"
-	}
-
-	##### SHX #####
-
-	spriteType = {
-		name = "GFX_portrait_yan_xishan"
-		texturefile = "gfx/leaders/SHX/portrait_shx_yan_xishan.dds"
-	}
-	
-	##### SIK #####
-
-	spriteType = {
-		name = "GFX_portrait_sheng_shicai"
-		texturefile = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
-	}
-	
 	##### FRA ###
 	
 	spriteType = {
@@ -625,25 +581,6 @@ spriteTypes = {
 		name = "GFX_Portrait_estonia_konstantin_pats"
 		texturefile = "gfx/leaders/EST/portrait_est_konstantin_pats.dds"		
 	}
-
-	spriteType = {
-		name = "GFX_Portrait_columbia_alfonso_lopez"
-		texturefile = "gfx/leaders/COL/portrait_col_alfonso_lopez_pumarejo.dds"		
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_paraguay_rafael_franco"
-		texturefile = "gfx/leaders/PAR/portrait_par_rafael_franco.dds"		
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_peru_oscar_benavides"
-		texturefile = "gfx/leaders/PRU/portrait_per_oscar_benavides.dds"		
-	}
-	spriteType = {
-		name = "GFX_Portrait_chile_arturo_alessandri"
-		texturefile = "gfx/leaders/CHL/portrait_chl_arturo_alessandri.dds"		
-	}
 	spriteType = {
 		name = "GFX_Portrait_kyuichi_tokuda"
 		texturefile = "gfx/leaders/JAP/portrait_jap_kyuichi_tokuda.dds"		
@@ -653,11 +590,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/JAP/portrait_jap_tetsu_katayama.dds"		
 	}
 	spriteType = {
-		name = "GFX_Portrait_ecuador_federico_paez"
-		texturefile = "gfx/leaders/ECU/portrait_ecu_federico_paez.dds"		
-	}
-
-	spriteType = {
 		name = "GFX_portrait_italy_ferruccio_parri"
 		texturefile = "gfx/leaders/ITA/portrait_ita_ferruccio_parri.dds"		
 	}
@@ -665,7 +597,6 @@ spriteTypes = {
 		name = "GFX_portrait_italy_victor_emmanuel_iii"
 		texturefile = "gfx/leaders/ITA/Portrait_Italy_Victor_Emmanuel_III.dds"		
 	}
-	
 	spriteType = {
 		name = "GFX_portrait_oman_said_bin_taimur"
 		texturefile = "gfx/leaders/OMA/portrait_oma_said_bin_taimur.dds"		
@@ -675,72 +606,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/IRQ/portrait_irq_ghazi.dds"		
 	}
 	spriteType = {
-		name = "GFX_portrait_dominca_rafael_trujillo"
-		texturefile = "gfx/leaders/DOM/portrait_dom_rafael_trujillo.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_yemen_imam_yahya"
-		texturefile = "gfx/leaders/YEM/portrait_yem_imam_yaha.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_haiti_stenio_vincent"
-		texturefile = "gfx/leaders/HAI/portrait_hai_stenio_vincent.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_cuba_jose_barnet"
-		texturefile = "gfx/leaders/CUB/portrait_cub_jose_barnet.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_panama_harmodio_arias_madrid"
-		texturefile = "gfx/leaders/PAN/portrait_pan_harmodio_arias_madrid.dds"		
-	}
-	spriteType = {
 		name = "GFX_portrait_indonesia_at_van_starkenborgh"
 		texturefile = "gfx/leaders/INS/portrait_ins_at_van_starkenborgh.dds"		
 	}
 	spriteType = {
-		name = "GFX_portrait_malaya_shenton_thomas"
-		texturefile = "gfx/leaders/MAL/portrait_mal_shenton_thomas.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_buthan_jigme_wangchuk"
-		texturefile = "gfx/leaders/BHU/portrait_bhu_jigme_wangchuk.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_el_salvador_maximiliano_hernandez_martinez"
-		texturefile = "gfx/leaders/ELS/portrait_els_maximiliano_hernandez_martinez.dds"		
-	}
-	spriteType = {
 		name = "GFX_portrait_luxembourg_joseph_bech"
 		texturefile = "gfx/leaders/LUX/portrait_lux_joseph_bech.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
-		texturefile = "gfx/leaders/COS/portrait_cos_ricardo_jiminez_oreamuno.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_guatemala_jorge_ubico"
-		texturefile = "gfx/leaders/GUA/portrait_gua_jorge_ubico.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_honduras_portrait_tiburcio_carias_andino"
-		texturefile = "gfx/leaders/HON/portrait_hon_tiburcio_carias_andino.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_nepal_portrait_juddah_rana"
-		texturefile = "gfx/leaders/NEP/portrait_nep_juddah_rana.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
-		texturefile = "gfx/leaders/NIC/portrait_nic_anastasio_somoza_garcia.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_uruguay_portrait_gabriel_terra"
-		texturefile = "gfx/leaders/URG/portrait_urg_gabriel_terra.dds"		
-	}
-	spriteType = {
-		name = "GFX_portrait_shanxi_portrait_yan_xishan"
-		texturefile = "gfx/leaders/SHX/portrait_shx_yan_xishan.dds"		
 	}
 
 	##### WTT #####
@@ -752,34 +623,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_aleksandr_cherepanov"
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	}
-
-	spriteType = {
-		name = "GFX_portrait_men_demchugdongrub"
-		texturefile = "gfx/leaders/MEN/portrait_men_demchugdongrub.dds"
-	}
-	
-
-	##### YUN #####
-
-	spriteType = {
-		name = "GFX_portrait_yun_long_yun"
-		texturefile = "gfx/leaders/YUN/portrait_yun_long_yun.dds"
-	}
-	
-
-	##### XSM #####
-
-	spriteType = {
-		name = "GFX_portrait_xsm_ma_bufang"
-		texturefile = "gfx/leaders/XSM/portrait_xsm_ma_bufang.dds"
-	}
-	
-	##### MON #####
-	
-	spriteType = {
-		name = "GFX_portrait_mon_anandyn_amar"
-		texturefile = "gfx/leaders/MON/portrait_mon_anandyn_amar.dds"
 	}
 	
 	#### FIN ####
@@ -1090,10 +933,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ITA/Portrait_Italy_Benito_Mussolini2.dds"
 	}
 		
-		spriteType = {
-		name = "GFX_LIB_captain_alex"
-		texturefile = "gfx/leaders/LIB/Portrait_Liberia_Captain_Alex.dds"
-	}
 	
 	
 	}

@@ -33,12 +33,6 @@ country_event = {
 		}
 
 		if = {
-			limit = { ROOT = { tag = ENG }
-			}
-			FROM = { puppet = MAL }
-		}
-
-		if = {
 			limit = { ROOT = { tag = FRA } }
 			if = {
 				limit = {
