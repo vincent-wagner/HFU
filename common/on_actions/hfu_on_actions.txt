@@ -1,4 +1,113 @@
 on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = JAP
+					}
+					FROM.FROM = {
+						AND = {
+							NOT = { has_state_flag = rubber_state_transfered } 
+							OR = {
+								state = 623
+								state = 327
+								state = 625
+								state = 627
+								state = 333
+								state = 334
+								state = 672
+								state = 733
+								state = 422
+								state = 335
+								state = 667
+								state = 721
+								state = 673
+								state = 668
+								state = 669
+								state = 523
+								state = 737
+								state = 634
+								state = 635
+								state = 626
+								state = 628
+								state = 336
+								state = 624
+							}
+							USA = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							NZL = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							AST = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							RAJ = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							SAF = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							CAN = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							ENG = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							FRA = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							IRE = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+						}
+					}
+				}
+				FROM.FROM = {
+					set_state_flag = rubber_state_transfered
+				}
+				JAP = { set_state_controller = FROM.FROM }
+			}
+		}
+	}
 	on_capitulation = {
 			effect = {
 				if = {
