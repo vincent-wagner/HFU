@@ -40,6 +40,16 @@ set_technology = {
 	interwar_antiair = 1
 	superior_firepower = 1
 }
+add_timed_idea = { idea = no_training days= 730 }
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 2700
+}
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 175
+}
+add_manpower = 175000
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

@@ -27,6 +27,12 @@ set_technology = {
 	marines = 1
 }
 
+add_timed_idea = { idea = no_training days= 730 }
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 3600
+}
+add_manpower = 55000
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

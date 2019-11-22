@@ -250,7 +250,6 @@ country_event = {
 				add_to_faction = XSM 
 				add_to_faction = YUN 
 				add_to_faction = GXC 
-				add_to_faction = XIK 
 
 				}
 				SIK = {
@@ -261,13 +260,6 @@ country_event = {
 			}
 			
 				PRC = {
-				add_opinion_modifier = {
-				target = CHI
-				modifier = chinese_united_front
-			}
-			}
-			
-							XIK = {
 				add_opinion_modifier = {
 				target = CHI
 				modifier = chinese_united_front

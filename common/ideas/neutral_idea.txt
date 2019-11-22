@@ -26,4 +26,16 @@ country={
 			
 			}
 		}
-}}
+		no_training = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+            picture = neutrality_idea
+
+            modifier = {
+				training_time_factor = 1000
+            }
+		}
+}

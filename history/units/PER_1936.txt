@@ -29,50 +29,9 @@ division_template = {
 
 
 units = {
-	######## LAND OOB ########
-	##### Royal Iranian Army #####
-	division = {
-		name = "Persian Cossack Brigade"
-		location = 1896
-		division_template = "Cavalry Brigade"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "South Persia Rifles"
-		location = 10913
-		division_template = "Infantry Brigade"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "Imperial Gendarmerie"
-		location = 10837
-		division_template = "Infantry Brigade"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-
-	######## No Naval OOB ########
 }
 
 air_wings = {
-	### Royal Iranian Air Force ###
-	417 = {
-		# 1st Air Group -- Hawker Furys
-		fighter_equipment_0 =  {
-			owner = "PER" 
-			amount = 72
-		}
-		# 2nd, 3rd Air Groups -- Hawker Hinds, Audaxes
-		CAS_equipment_1 =  {
-			owner = "PER" 
-			amount = 48
-		}
-	}
 }
 
 

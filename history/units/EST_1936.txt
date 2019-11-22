@@ -1,7 +1,7 @@
 ﻿division_template = {
-	name = "División de Infanteria"				# Mandated to be at reserve levels following the Chaco War
-	division_names_group = SPAN_INF_01
-
+	name = "Jalaväediviisi"				# Infantry Division	
+	division_names_group = EST_INF_01
+	# Note: Divisions were nowhere near full strength until mobilized
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -12,15 +12,21 @@
 	}
 }
 
+units = {
+}
 
+air_wings = {
+}
+
+### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
-			creator = "PAR"
+			type = infantry_equipment_1
+			creator = "EST"
 		}
 		requested_factories = 1
-		progress = 0.73
+		progress = 0.88
 		efficiency = 100
 	}
 }
