@@ -64,7 +64,7 @@ ideas = {
 			
 
 			
-			traits = { army_chief_drill_2 }
+			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -160,7 +160,7 @@ ideas = {
 				original_tag = BUL
 			}
 			
-			traits = { air_air_combat_training_2 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
