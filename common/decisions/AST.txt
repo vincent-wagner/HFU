@@ -7,6 +7,7 @@ AST_annex_nzl = {
 			}
 
 			available = {
+				tag = AST
 				NZL = { is_ai = yes }
 				GER = { has_completed_focus = GER_danzig_or_war }
 			}
