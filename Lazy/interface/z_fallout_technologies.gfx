@@ -1,0 +1,3444 @@
+spriteTypes = {
+	# debug_technology_icon_normal.dds needs to be replaced with a suitable icon
+
+	#-----------------------------
+	# Technologies
+	#-----------------------------
+	#----------------------------- Infantry
+	spriteType = {
+		name = "GFX_unit_training_tech_1_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_2_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_3_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_4_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_5_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_6_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_7_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_unit_training_tech_8_medium"
+		texturefile = "gfx/interface/technologies/unit_training_tech_icon_8.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_standard_weaponry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/basic_ballistic_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+
+	#Infantry Equipment
+
+	spriteType = {
+		name = "GFX_basic_infantry_equipment_medium"
+		texturefile = "gfx/interface/equipment/generic/basic_ballistic_weaponry_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_melee_weaponry_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/melee_weaponry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_melee_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/melee_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_melee_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/melee_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_melee_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/melee_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_weaponry_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_weaponry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ballistic_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_weaponry_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_weaponry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	#Power Armour
+
+	spriteType = {
+		name = "GFX_stripped_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/stripped_power_armour_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_scav_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/scav_power_armour_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_t45d_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/t_45_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_c_t45d_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/c_t_45_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_t51b_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/t_51_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_c_t51b_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/c_t_51_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_h_t51b_pa_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/h_t_51_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_power_armour_enclave_1_medium"
+		texturefile = "gfx/interface/equipment/generic/apa_armour_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_power_armour_enclave_2_medium"
+		texturefile = "gfx/interface/equipment/generic/apa_mk2_armour_icon.dds"
+		alwaystransparent = yes
+	}
+
+	#Armour Tech
+
+	spriteType = {
+		name = "GFX_spec_ops_equipment_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_spec_ops_equipment_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_spec_ops_equipment_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_spec_ops_equipment_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_spec_ops_equipment_tech_5_medium"
+		texturefile = "gfx/interface/equipment/generic/spec_ops_equipment_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_hardening_armour_tech_medium"
+		texturefile = "gfx/interface/technologies/hardening_armour_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fibre_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fibre_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_stealth_boy_tech_medium"
+		texturefile = "gfx/interface/technologies/stealth_boy_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_night_vision_tech_medium"
+		texturefile = "gfx/interface/technologies/night_vision_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_thermal_vision_tech_medium"
+		texturefile = "gfx/interface/technologies/thermal_vision_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_simple_servo_tech_medium"
+		texturefile = "gfx/interface/technologies/simple_servo_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_servo_tech_medium"
+		texturefile = "gfx/interface/technologies/advanced_servo_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_high_pressure_hydraulics_tech_medium"
+		texturefile = "gfx/interface/technologies/high_pressure_hydraulics_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_simple_servo_tech_medium"
+		texturefile = "gfx/interface/technologies/simple_servo_icon.dds"
+		alwaystransparent = yes
+	}
+
+	# Unique guns
+	spriteType = {
+		name = "GFX_gauss_weaponry_1_medium"
+		texturefile = "gfx/interface/equipment/generic/gauss_weaponry_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_gauss_weaponry_2_medium"
+		texturefile = "gfx/interface/equipment/generic/gauss_weaponry_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_plasma_weaponry_1_medium"
+		texturefile = "gfx/interface/equipment/generic/plasma_weaponry_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_plasma_weaponry_2_medium"
+		texturefile = "gfx/interface/equipment/generic/plasma_weaponry_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_warrior_equipment_medium"
+		texturefile = "gfx/interface/technologies/warrior_equipment_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_overcharged_ammunition_medium"
+		texturefile = "gfx/interface/technologies/overcharged_ammunition_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_custom_built_capacitors_medium"
+		texturefile = "gfx/interface/technologies/custom_capacitors_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_infantry_equipment_medium"
+		texturefile = "gfx/interface/technologies/basic_infantry_equipment_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_prewar_infantry_kit_medium"
+		texturefile = "gfx/interface/technologies/prewar_infantry_kit_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_binoculars_medium"
+		texturefile = "gfx/interface/technologies/binoculars_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flare_guns_medium"
+		texturefile = "gfx/interface/technologies/flare_guns_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_portable_radio_medium"
+		texturefile = "gfx/interface/technologies/portable_radio_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_smoke_grenades_medium"
+		texturefile = "gfx/interface/technologies/smoke_grenades_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_automatic_distress_beacon_medium"
+		texturefile = "gfx/interface/technologies/automatic_distress_beacon_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_herbal_bandages_medium"
+		texturefile = "gfx/interface/technologies/herbal_bandages_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_sterile_medical_equipment_medium"
+		texturefile = "gfx/interface/technologies/sterile_medical_equipment_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_medic_bags_medium"
+		texturefile = "gfx/interface/technologies/medic_bags_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_med_x_auto_injectors_medium"
+		texturefile = "gfx/interface/technologies/med_x_auto_injectors_icon.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Support
+	spriteType = {
+		name = "GFX_support_weaponry_medium"
+		texturefile = "gfx/interface/equipment/generic/support_equipment_fallout.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fireteam_weaponry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/fireteam_weaponry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_fireteam_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_high_caliber_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_high_caliber_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_low_caliber_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_low_caliber_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_fireteam_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_cooling_jacket_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_cooling_jacket_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_tri_barrel_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_tri_barrel_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_hepta_barrel_tech_medium"
+		texturefile = "gfx/interface/technologies/ballistic_fireteam_hepta_barrel_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ballistic_fireteam_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/ballistic_fireteam_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_fireteam_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_heat_lens_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_heat_lens_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_focus_lens_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_focus_lens_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_fireteam_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_cooling_jacket_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_cooling_jacket_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/energy_fireteam_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_rapid_charge_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_rapid_charge_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_energy_fireteam_over_charge_tech_medium"
+		texturefile = "gfx/interface/technologies/energy_fireteam_over_charge_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	# demolitions
+	spriteType = {
+		name = "GFX_demolitions_weaponry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/demolitions_weaponry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/flamer_demolitions_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_sustained_pressure_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_sustained_pressure_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_high_pressure_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_high_pressure_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/flamer_demolitions_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_cooling_jacket_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_cooling_jacket_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/flamer_demolitions_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_longevity_focus_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_longevity_focus_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_demolitions_temperature_focus_tech_medium"
+		texturefile = "gfx/interface/technologies/flamer_demolitions_temperature_focus_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_weaponry_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/explosive_demolitions_weaponry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_operational_security_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_operational_security_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_volatility_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_volatility_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_weaponry_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/explosive_demolitions_weaponry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_propulsion_charge_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_propulsion_charge_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_weaponry_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/explosive_demolitions_weaponry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_cyclic_fire_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_cyclic_fire_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_demolitions_rapid_fire_tech_medium"
+		texturefile = "gfx/interface/technologies/explosive_demolitions_rapid_fire_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	# dog
+	spriteType = {
+		name = "GFX_dog_equipment_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/dog_equipment_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_tech_1_medium"
+		texturefile = "gfx/interface/technologies/dog_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_equipment_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/dog_equipment_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_tech_2_medium"
+		texturefile = "gfx/interface/technologies/dog_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_tech_3_medium"
+		texturefile = "gfx/interface/technologies/dog_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_dog_equipment_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/dog_equipment_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	# anti_tank
+	spriteType = {
+		name = "GFX_anti_tank_equipment_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/anti_tank_equipment_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_anti_tank_equipment_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/anti_tank_equipment_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_anti_tank_equipment_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/anti_tank_equipment_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_anti_tank_tech_1_medium"
+		texturefile = "gfx/interface/technologies/anti_tank_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_anti_tank_tech_2_medium"
+		texturefile = "gfx/interface/technologies/anti_tank_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	# Chems
+
+	spriteType = {
+		name = "GFX_med_company_tech_1_medium"
+		texturefile = "gfx/interface/technologies/med_company_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_med_company_tech_2_medium"
+		texturefile = "gfx/interface/technologies/med_company_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_med_company_tech_3_medium"
+		texturefile = "gfx/interface/technologies/med_company_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_med_company_tech_4_medium"
+		texturefile = "gfx/interface/technologies/med_company_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_med_company_tech_5_medium"
+		texturefile = "gfx/interface/technologies/med_company_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_med_company_tech_6_medium"
+		texturefile = "gfx/interface/technologies/med_company_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	# recon
+	spriteType = {
+		name = "GFX_recon_company_tech_1_medium"
+		texturefile = "gfx/interface/technologies/recon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_recon_company_tech_2_medium"
+		texturefile = "gfx/interface/technologies/recon2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_recon_company_tech_3_medium"
+		texturefile = "gfx/interface/technologies/recon3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_recon_company_tech_4_medium"
+		texturefile = "gfx/interface/technologies/recon4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_recon_company_tech_5_medium"
+		texturefile = "gfx/interface/technologies/recon5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_recon_company_tech_6_medium"
+		texturefile = "gfx/interface/technologies/recon6.dds"
+		alwaystransparent = yes
+	}
+
+	# logistics
+	spriteType = {
+		name = "GFX_logistics_company_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_logistics_company_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_logistics_company_tech_3_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_logistics_company_tech_4_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_logistics_company_tech_5_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_logistics_company_tech_6_medium"
+		texturefile = "gfx/interface/technologies/tech_logistics_company6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_1_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_2_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_3_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_4_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_5_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_maintenance_company_tech_6_medium"
+		texturefile = "gfx/interface/technologies/tech_maintenance_company6.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Vehicle
+	spriteType = {
+		name = "GFX_vehicle_restoration_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_pilot_training_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bike_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/bikes_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bike_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/bikes_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_car_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/car_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_car_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/car_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_car_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/car_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tank_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/tank_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tank_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/tank_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tank_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/tank_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_truck_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/trucks_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_truck_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/trucks_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_apc_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/apc_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_apc_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/apc_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_apc_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/apc_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_super_mutant_behemoth_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_armoured_super_mutant_behemoth_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_siege_super_mutant_behemoth_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tires_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/tyre_profile_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tires_vehicle_tech_1_medium"
+		textureFile = "gfx/interface/technologies/rubber_refinement_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_plating_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/plating_addon_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bumper_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/impact_bumpers_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_gasoline_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/volatile_fuels_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_sealed_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/environment_sealing_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_armoured_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/armour_reinforcement_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_storage_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/additional_storage_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_overclock_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/engine_overclocking_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_gunport_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/gunports_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_high_tech_fuel_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/advanced_fuels_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tracks_vehicle_tech_1_medium"
+		textureFile = "gfx/interface/technologies/return_rollers_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_tracks_vehicle_tech_medium"
+		textureFile = "gfx/interface/technologies/simple_tracks_icon.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Naval
+
+	spriteType = {
+		name = "GFX_nautics_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/nautics_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_nautics_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/nautics_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_nautics_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/nautics_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_nautics_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/nautics_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_nautics_tech_5_medium"
+		texturefile = "gfx/interface/technologies/naval/nautics_tech_5_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_navy_hull_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_navy_hull_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_navy_hull_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_navy_hull_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_light_navy_hull_tech_5_medium"
+		texturefile = "gfx/interface/equipment/generic/light_hull_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_medium_navy_hull_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_medium_navy_hull_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_medium_navy_hull_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_medium_navy_hull_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_medium_navy_hull_tech_5_medium"
+		texturefile = "gfx/interface/equipment/generic/medium_hull_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_navy_hull_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_navy_hull_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_navy_hull_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_navy_hull_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_heavy_navy_hull_tech_5_medium"
+		texturefile = "gfx/interface/equipment/generic/heavy_hull_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_super_heavy_navy_hull_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/super_heavy_hull_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_invasion_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_invasion_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_invasion_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_invasion_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_invasion_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_invasion_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_waterproof_sealing_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/waterproof_sealing_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_multi_deck_construction_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/multi_deck_construction_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_outrigger_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/outrigger_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_proper_rigging_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/proper_rigging_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_grappling_harpoon_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/grappling_harpoon_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_metal_bows_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/metal_bows_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_manuals_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_manuals_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_armor_reinforcement_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_armor_reinforcement_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_secondary_engines_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_secondary_engines_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_emergency_sealing_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_emergency_sealing_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_wonders_of_the_past_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_wonders_of_the_past_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Naval Modules
+	spriteType = {
+		name = "GFX_naval_module_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_module_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_weapons_module_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_weapons_module_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_support_module_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_support_module_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_hard_point_tech_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_hard_point_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_subsurface_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_subsurface_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_subsurface_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_subsurface_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_subsurface_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_subsurface_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_subsurface_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_subsurface_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_special_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_special_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_special_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_special_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_special_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_special_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_special_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_special_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_light_weapon_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_light_weapon_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_light_weapon_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_light_weapon_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_light_weapon_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_light_weapon_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_light_weapon_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_light_weapon_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_light_weapon_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_light_weapon_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_light_weapon_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_light_weapon_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_light_weapon_module_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_light_weapon_module_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_medium_weapon_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_medium_weapon_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_medium_weapon_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_medium_weapon_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_medium_weapon_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_medium_weapon_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_medium_weapon_module_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_medium_weapon_module_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_heavy_weapon_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_heavy_weapon_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_heavy_weapon_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_heavy_weapon_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_heavy_weapon_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_heavy_weapon_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_heavy_weapon_module_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_heavy_weapon_module_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_super_heavy_weapon_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_super_heavy_weapon_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_super_heavy_weapon_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_super_heavy_weapon_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_super_heavy_weapon_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_super_heavy_weapon_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_super_heavy_weapon_module_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_super_heavy_weapon_module_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_pd_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_pd_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_pd_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_pd_module_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_pd_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_pd_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_pd_module_tech_5_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_5_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_pd_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_pd_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_pd_module_tech_6_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_6_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_pd_module_tech_7_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_pd_module_tech_7_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_detection_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_detection_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_detection_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_detection_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_detection_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_detection_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_detection_module_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_detection_module_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_detection_module_tech_5_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_detection_module_tech_5_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_communications_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_communications_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_communications_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_communications_module_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_communications_module_tech_5_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_communications_module_tech_5_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_command_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_command_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_command_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_command_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_damage_protection_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_damage_protection_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_damage_protection_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_damage_protection_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_command_module_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_command_module_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_command_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_command_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_command_module_tech_5_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_command_module_tech_5_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_carrier_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_carrier_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_carrier_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_carrier_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_carrier_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_carrier_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_carrier_module_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_carrier_module_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_storage_module_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_storage_module_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_fire_protection_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_fire_protection_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_fire_protection_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_fire_protection_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_fire_protection_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_fire_protection_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_storage_module_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_storage_module_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_armour_tech_1_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_armour_tech_1_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_armour_tech_2_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_armour_tech_2_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_armour_tech_3_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_armour_tech_3_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_armour_tech_4_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_armour_tech_4_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_naval_armour_tech_5_medium"
+		texturefile = "gfx/interface/technologies/naval/naval_armour_tech_5_icon.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Robotics
+	spriteType = {
+		name = "GFX_robot_automation_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_automation_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_gutsy_hardening_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_gutsy_hardening_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_fuel_refinement_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_fuel_refinement_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_flamethrower_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_flamethrower_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_antigrav_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_antigrav_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_alloy_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_alloy_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_precision_motor_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_precision_motor_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_cooling_systems_tech_1_medium"
+		texturefile = "gfx/interface/technologies/robot_cooling_systems_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_cooling_systems_tech_2_medium"
+		texturefile = "gfx/interface/technologies/robot_cooling_systems_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_impact_chassi_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_impact_chassi_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_organic_processor_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_organic_processor_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_scurry_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_scurry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_humanoid_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_humanoid_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_pacification_bot_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_pacification_bot_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_behemoth_robot_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_behemoth_robot_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_securitron_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_securitron_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_securitron_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_securitron_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_thrusters_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_thrusters_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_hardware_tech_medium"
+		texturefile = "gfx/interface/technologies/robot_hardware_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_makeshift_automatons_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_makeshift_automatons_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_eyebot_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_eyebot_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_protectron_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_protectron_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_protectron_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_protectron_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_heavy_lifter_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_heavy_lifter_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_handy_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_handy_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_gutsy_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_gutsy_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_robobrain_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_robobrain_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_sentrybot_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_sentrybot_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_sentrybot_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_sentrybot_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_robot_assaultron_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/robot_assaultron_icon.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Air
+	spriteType = {
+		name = "GFX_glider_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/glider_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/fighter_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/fighter_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/fighter_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/fighter_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_1_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_2_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_3_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_4_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_5_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_6_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_aerodynamics_tech_7_medium"
+		texturefile = "gfx/interface/technologies/aerodynamics_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_fighter_engine_tech_medium"
+		texturefile = "gfx/interface/technologies/fighter_engine_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_defence_tech_medium"
+		texturefile = "gfx/interface/technologies/cas_defence_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_offence_tech_medium"
+		texturefile = "gfx/interface/technologies/cas_offence_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_internal_tech_medium"
+		texturefile = "gfx/interface/technologies/strat_internal_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_external_tech_medium"
+		texturefile = "gfx/interface/technologies/strat_external_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_air_drop_tank_tech_medium"
+		texturefile = "gfx/interface/technologies/air_drop_tank_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_air_refuling_tech_medium"
+		texturefile = "gfx/interface/technologies/air_refuling_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_inert_blimp_tech_medium"
+		texturefile = "gfx/interface/technologies/inert_blimp_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamable_blimp_tech_medium"
+		texturefile = "gfx/interface/technologies/flamable_blimp_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_air_armor_tech_medium"
+		texturefile = "gfx/interface/technologies/air_armor_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_bomber_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/cas_bomber_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_bomber_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/cas_bomber_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_bomber_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/cas_bomber_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cas_bomber_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/cas_bomber_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_high_fighter_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/high_fighter_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_high_cas_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/high_cas_tech.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_bomber_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/strat_bomber_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_bomber_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/strat_bomber_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_bomber_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/strat_bomber_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_strat_bomber_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/strat_bomber_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cargo_plane_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/cargo_plane_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cargo_plane_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/cargo_plane_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cargo_plane_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/cargo_plane_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_blimp_tech_1_medium"
+		texturefile = "gfx/interface/equipment/generic/blimp_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_blimp_tech_2_medium"
+		texturefile = "gfx/interface/equipment/generic/blimp_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_blimp_tech_3_medium"
+		texturefile = "gfx/interface/equipment/generic/blimp_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_blimp_tech_4_medium"
+		texturefile = "gfx/interface/equipment/generic/blimp_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_vertibird_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/vertibird_transport_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_vertibird_cas_tech_medium"
+		texturefile = "gfx/interface/equipment/generic/vertibird_gunship_icon.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Industry
+
+	spriteType = {
+		name = "GFX_basic_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/basic_industry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_generalized_industry_tech_7_medium"
+		texturefile = "gfx/interface/technologies/generalized_industry_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_specialized_industry_tech_7_medium"
+		texturefile = "gfx/interface/technologies/specialized_industry_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_pre_recycling_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/pre_recycling_industry_tech_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_recycling_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/recycling_industry_tech_icon_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_recycling_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/recycling_industry_tech_icon_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_recycling_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/recycling_industry_tech_icon_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_recycling_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/recycling_industry_tech_icon_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tool_engineering_medium"
+		texturefile = "gfx/interface/technologies/tool_engineering_tech_icon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_3_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_4_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_maketool_engineering_5_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_maketool_engineering_6_medium"
+		texturefile = "gfx/interface/technologies/maketool_tech_icon_6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_scavtool_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/scavtool_tech_icon_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_scavtool_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/scavtool_tech_icon_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_scavtool_engineering_3_medium"
+		texturefile = "gfx/interface/technologies/scavtool_tech_icon_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_extraction_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/extraction_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_pre_construction_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/pre_construction_industry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_construction_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/construction_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_habitation_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/habitation_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_pre_agriculture_industry_tech_medium"
+		texturefile = "gfx/interface/technologies/pre_agriculture_industry_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_1_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_2_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_3_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_4_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_5_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_6_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_6.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_agriculture_industry_tech_7_medium"
+		texturefile = "gfx/interface/technologies/agriculture_industry_tech_icon_7.dds"
+		alwaystransparent = yes
+	}
+
+	# circuitry
+	SpriteType = {
+		name = "GFX_communication_engineering_medium"
+		texturefile = "gfx/interface/technologies/combat_speech_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/smoke_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/radio.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_3_medium"
+		texturefile = "gfx/interface/technologies/ham_radio.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_4_medium"
+		texturefile = "gfx/interface/technologies/radio_tower_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_communication_engineering_5_medium"
+		texturefile = "gfx/interface/technologies/matrix_numbers.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_medium"
+		texturefile = "gfx/interface/technologies/ohm_symbol.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/resistor.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/electronic_mechanical_engineering.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_3_medium"
+		texturefile = "gfx/interface/technologies/circuit.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_4_medium"
+		texturefile = "gfx/interface/technologies/circuit_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_5_medium"
+		texturefile = "gfx/interface/technologies/terminal.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_6_medium"
+		texturefile = "gfx/interface/technologies/pip.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_engineering_7_medium"
+		texturefile = "gfx/interface/technologies/zax_engineering_research.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_1_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_2_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_3_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_4_medium"
+		texturefile = "gfx/interface/technologies/encryption_icon_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_1_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_2_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_3_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_4_medium"
+		texturefile = "gfx/interface/technologies/decryption_icon_4.dds"
+	}
+
+	#resource creation
+	spriteType = {
+		name = "GFX_resource_generator_tech_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_tech_icon.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_1_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_2_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_3_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_4_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_water_tech_5_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_water_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_1_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_2_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_3_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_4_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_power_tech_5_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_power_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_1_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_2_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_3_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_4_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_4.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_resource_generator_metal_tech_5_medium"
+		texturefile = "gfx/interface/technologies/resource_generator_metal_tech_icon_5.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_oil_well_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_oil_well_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_oil_refinery_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_oil_refinery_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_autonomous_refinery_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_laboratory_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_laboratory_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_fabrication_centre_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_fabrication_centre_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_autonomous_fabrication_centre_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_farmstead_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_farmstead_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_basic_hydroponics_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_advanced_hydroponics_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_autonomous_hydroponics_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Civilization
+	spriteType = {
+		name = "GFX_tribal_civilization_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_settled_civilization_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_scientific_civilization_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_scientific_civilization_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_super_mutant_civilization_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_political_furor1_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_political_furor2_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_political_furor3_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_political_furor4_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_political_furor5_medium"
+		texturefile = "gfx/interface/technologies/debug_technology_icon_normal.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Air Doctrine
+	spriteType = {
+		name = "GFX_evasive_tactics_medium"
+		texturefile = "gfx/interface/technologies/formation_flying.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ground_targeting_tactics_medium"
+		texturefile = "gfx/interface/technologies/direct_ground_support.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_sweeping_tactics_medium"
+		texturefile = "gfx/interface/technologies/dispersed_fighting.dds"
+		alwaystransparent = yes
+	}
+	#----------------------------- Air Equipment
+
+	#-----------------------------
+	# Technology Icon Override
+	#-----------------------------
+	# Infantry
+	spriteType = {
+		name = "GFX_technology_fallout_infantry_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_infantry_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_infantry_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_infantry_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_infantry_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Support
+	spriteType = {
+		name = "GFX_technology_fallout_support_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_support_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_support_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_support_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_support_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Vehicle
+	spriteType = {
+		name = "GFX_technology_fallout_vehicle_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_vehicle_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_vehicle_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_vehicle_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Robotics
+	spriteType = {
+		name = "GFX_technology_fallout_robotics_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_robotics_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_robotics_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_robotics_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Air
+	spriteType = {
+		name = "GFX_technology_fallout_air_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_air_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_air_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_air_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_air_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Naval
+	spriteType = {
+		name = "GFX_technology_fallout_naval_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_naval_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_naval_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_naval_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Naval modules
+	spriteType = {
+		name = "GFX_technology_fallout_naval_modules_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_naval_modules_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_naval_modules_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_naval_modules_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Naval without mtg
+	spriteType = {
+		name = "GFX_technology_fallout_naval_non_mtg_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_naval_non_mtg_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_naval_non_mtg_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_naval_non_mtg_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Land Doctrine
+
+	spriteType = {
+		name = "GFX_technology_fallout_land_doctrine_folder_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_land_doctrine_folder_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_land_doctrine_folder_branch_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_branch_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_industry_folder_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_land_doctrine_folder_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_land_doctrine_folder_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Air Doctrine
+	spriteType = {
+		name = "GFX_technology_fallout_air_doctrine_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_air_doctrine_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_air_doctrine_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_air_doctrine_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_air_doctrine_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Industry
+	spriteType = {
+		name = "GFX_technology_fallout_industry_folder_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_industry_folder_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_industry_folder_branch_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_branch_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_industry_folder_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_industry_folder_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_industry_folder_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Engineering
+	spriteType = {
+		name = "GFX_technology_fallout_engineering_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_engineering_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_engineering_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_engineering_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Education
+	spriteType = {
+		name = "GFX_technology_fallout_education_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_education_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_education_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_education_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	# Focus Tree
+	spriteType = {
+		name = "GFX_technology_fallout_focus_tree_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_focus_tree_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_focus_tree_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_focus_tree_folder_small_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_focus_tree_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	###### TRANSPOSED FROM VANILLA FILES ########
+	SpriteType = {
+		name = "GFX_electronic_mechanical_engineering_medium"
+		texturefile = "gfx/interface/technologies/electronic_mechanical_engineering.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_radio_medium"
+		texturefile = "gfx/interface/technologies/radio.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_radio_detection_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_decimetric_radar_medium"
+		texturefile = "gfx/interface/technologies/decimetric_radar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_improved_decimetric_radar_medium"
+		texturefile = "gfx/interface/technologies/improved_decimetric_radar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_centimetric_radar_medium"
+		texturefile = "gfx/interface/technologies/centimetric_radar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_improved_centimetric_radar_medium"
+		texturefile = "gfx/interface/technologies/improved_centimetric_radar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_centimetric_radar_medium"
+		texturefile = "gfx/interface/technologies/advanced_centimetric_radar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mechanical_computing_medium"
+		texturefile = "gfx/interface/technologies/mechanical_computing.dds"
+	}
+
+	#-----------------------------
+	# Behemoth
+	#-----------------------------
+	spriteType = {
+		name = "GFX_super_mutant_behemoth_medium"
+		textureFile = "gfx/interface/equipment/generic/behemoth_icon.dds"
+		alwaystransparent = yes
+	}
+
+	#-----------------------------
+	# UI
+	#-----------------------------
+	corneredTileSpriteType = {
+		name = "GFX_orange_tiled_research_bg"
+		size = { x=96 y=96 }
+		textureFile = "gfx/interface/tiled_research_bg.dds"
+		borderSize = { x=32 y=32 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		allwaystransparent = yes
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_blue_tiled_research_bg"
+		size= { x=96 y=96 }
+		textureFile = "gfx/interface/blue_tiled_research_bg.dds"
+		borderSize = { x=32 y=32 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		allwaystransparent = yes
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_yellow_tiled_research_bg"
+		size= { x=96 y=96 }
+		textureFile = "gfx/interface/yellow_tiled_research_bg.dds"
+		borderSize = { x=32 y=32 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		allwaystransparent = yes
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_green_tiled_research_bg"
+		size= { x=96 y=96 }
+		textureFile = "gfx/interface/green_tiled_research_bg.dds"
+		borderSize = { x=32 y=32 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		allwaystransparent = yes
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_red_tiled_research_bg"
+		size= { x=96 y=96 }
+		textureFile = "gfx/interface/red_tiled_research_bg.dds"
+		borderSize = { x=32 y=32 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		allwaystransparent = yes
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_purple_tiled_research_bg"
+		size= { x=96 y=96 }
+		textureFile = "gfx/interface/purple_tiled_research_bg.dds"
+		borderSize = { x=32 y=32 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		allwaystransparent = yes
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_lime_tiled_research_bg"
+		size= { x=96 y=96 }
+		textureFile = "gfx/interface/lime_tiled_research_bg.dds"
+		borderSize = { x=32 y=32 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_subtech_icon"
+		textureFile = "gfx/interface/sub_tech_unlock_icon.dds"
+	}
+
+	#-----------------------------------------------
+	# Folder Icons
+	#-----------------------------------------------
+	spriteType = {
+		name = "GFX_techtree_robotics_tab"
+		textureFile = "gfx/interface/techtree/techtree_engineering_tab.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_techtree_political_tab"
+		textureFile = "gfx/interface/techtree/techtree_engineering_tab.dds"
+		noOfFrames = 2
+	}
+
+	#-----------------------------------------------
+	# unused Icons
+	#-----------------------------------------------
+
+	spriteType = {
+		name = "GFX_laser_tech_6_medium"
+		texturefile = "gfx/interface/technologies/precision_aiming_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_tech_3_medium"
+		texturefile = "gfx/interface/technologies/mortar.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_explosive_tech_5_medium"
+		texturefile = "gfx/interface/technologies/howitzer.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_tech_2_medium"
+		texturefile = "gfx/interface/technologies/potent_fuel_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_tech_4_medium"
+		texturefile = "gfx/interface/technologies/potent_fuel_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_flamer_tech_6_medium"
+		texturefile = "gfx/interface/technologies/potent_fuel_3.dds"
+		alwaystransparent = yes
+	}
+}

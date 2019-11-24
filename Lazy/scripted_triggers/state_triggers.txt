@@ -1,0 +1,76 @@
+is_diablo_state = {
+	OR = {
+		state = 312
+		state = 606
+		state = 433
+		state = 558
+	}
+}
+
+is_expanded_san_francisco_state = {
+	OR = {
+		state = 163
+		state = 474
+		state = 511
+		state = 473
+		state = 104
+		state = 132
+	}
+}
+
+is_expanded_umbra_state = {
+	OR = {
+		state = 239
+		state = 353
+		state = 39
+		state = 340
+		state = 548
+		state = 216
+		state = 441
+		state = 56
+		state = 182
+	}
+}
+
+is_on_haida_gwaii = {
+	OR = {
+		state = 594
+		state = 9
+		state = 398
+	}
+}
+
+is_on_vancouver_island = {
+	OR = {
+		state = 461
+		state = 28
+		state = 370
+		state = 607
+		state = 514
+		state = 420
+		state = 738
+	}
+}
+
+is_on_mainland = {
+	is_on_haida_gwaii = no
+	is_on_vancouver_island = no
+}
+
+are_on_same_landmass = {
+	OR = {
+		AND = {
+			THIS = { is_on_haida_gwaii = yes }
+			PREV = { is_on_haida_gwaii = yes }
+		}
+		AND = {
+			THIS = { is_on_vancouver_island = yes }
+			PREV = { is_on_vancouver_island = yes }
+		}
+		AND = {
+			THIS = { is_on_mainland = yes }
+			PREV = { is_on_mainland = yes }
+		}
+	}
+}
+# vim: set ft=pdx ts=2 sw=2 tw=79 :

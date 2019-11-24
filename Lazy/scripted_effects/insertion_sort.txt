@@ -1,0 +1,32 @@
+insertion_sort = {
+	for_loop_effect = {
+		start = 1
+		end = sort_arr^num
+		value = i
+		set_temp_variable = { var = j value = i }
+		set_temp_variable = { var = j_minus value = j }
+		subtract_from_temp_variable = { var = j_minus value = 1 }
+		while_loop_effect = {
+			limit = {
+				AND = {
+					check_variable = { j > 0 }
+					check_variable = { sort_arr^j_minus > sort_arr^j }
+				}
+			}
+
+			# swap j-1 with j if value of j-1 > j
+			set_temp_variable = { var = temp value = sort_arr^j }
+			set_variable = { var = sort_arr^j value = sort_arr^j_minus }
+			set_variable = { var = sort_arr^j_minus value = temp }
+			subtract_from_temp_variable = { var = j value = 1 }
+			subtract_from_temp_variable = { var = j_minus value = 1 }
+		}
+	}
+	# print array
+	for_each_loop = {
+		array = sort_arr
+		index = q
+		value = val
+		log = "At [?q]: [?val]"
+	}
+ }

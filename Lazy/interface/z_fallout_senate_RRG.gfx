@@ -1,0 +1,108 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_senate_RRG_button"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_senate_RRG_bg"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_background.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_senate_RRG_bg_pre_election"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_pre_election_background.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_senate_RRG_bg_post_election"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_post_election_background.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
+		name = "GFX_senate_RRG_bg_overlay"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_background_overlay.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_senate_RRG_bg_pre_election_overlay"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_pre_election_background_overlay.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_senate_RRG_bg_post_election_overlay"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_post_election_background_overlay.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_senate_RRG_progressbar"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_progressbar.dds"
+	}
+	spriteType = {
+		name = "GFX_senate_RRG_state_bg_green"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_state_bg_green.dds"
+	}
+	spriteType = {
+		name = "GFX_senate_RRG_state_bg_red"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_state_bg_red.dds"
+	}
+
+	spriteType = {
+		name = "GFX_senate_RRG_candidate_1_color"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_candidate_1_color.dds"
+	}
+	spriteType = {
+		name = "GFX_senate_RRG_candidate_2_color"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_candidate_2_color.dds"
+	}
+	spriteType = {
+		name = "GFX_senate_RRG_candidate_3_color"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_candidate_3_color.dds"
+	}
+	spriteType = {
+		name = "GFX_senate_RRG_no_candidate_color"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_no_candidate_color.dds"
+	}
+
+	spriteType = {
+		name = "GFX_senate_RRG_seats_transparent_overlay"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_seats_transparent_overlay.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_senate_senate_RRG_seat"
+		textureFile = "gfx/interface/senate_rrg/senate_senate_rrg_seat.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_senate_house_RRG_seat"
+		textureFile = "gfx/interface/senate_rrg/senate_house_rrg_seat.dds"
+		noOfFrames = 4
+	}
+
+	# Portraits:
+	spriteType = {
+		name = "GFX_Leonardo_Mora_Portrait"
+		textureFile = "gfx/leaders/RRG/portrait_leonardo_mora.dds"
+	}
+	spriteType = {
+		name = "GFX_Dante_Guerra_Portrait"
+		textureFile = "gfx/leaders/RRG/portrait_dante_guerra.dds"
+	}
+	spriteType = {
+		name = "GFX_Valentina_Rosado_Portrait"
+		textureFile = "gfx/leaders/RRG/portrait_valentina_rosado.dds"
+	}
+
+	#test stuff
+	spriteType = {
+		name = "GFX_senate_senate_guide"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_senate_guide.dds"
+	}
+	spriteType = {
+		name = "GFX_senate_house_guide"
+		textureFile = "gfx/interface/senate_rrg/senate_rrg_house_guide.dds"
+	}
+}

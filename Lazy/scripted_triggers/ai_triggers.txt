@@ -1,0 +1,19 @@
+# Used to help New Reno.
+should_ignore_ncr = {
+	NOT = { has_wargoal_against = NCR }
+	NOT = { is_justifying_wargoal_against = NCR }
+	NCR = {
+		NOT = { has_war_with = ROOT }
+		NOT = { has_wargoal_against = ROOT }
+		NOT = { is_justifying_wargoal_against = ROOT }
+		any_other_country = {
+			OR = {
+				has_war_with = ROOT
+				has_wargoal_against = ROOT
+				is_justifying_wargoal_against = ROOT
+				ROOT = { has_wargoal_against = NCR }
+				ROOT = { is_justifying_wargoal_against = NCR }
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+remove_hea_conversions = {
+	random_owned_state = {
+		limit = { has_state_flag = hea_converted }
+		clr_state_flag = hea_converted
+	}
+	subtract_from_variable = { var = ROOT.hea_states_to_remove value = 1 }
+	if = {
+		limit = { check_variable = { var = ROOT.hea_states_to_remove value = 1 compare = greater_than_or_equals } }
+		set_country_flag = convert_remove_repeat
+	}
+	if = {
+		limit = { has_country_flag = convert_remove_repeat }
+		clr_country_flag = convert_remove_repeat
+		remove_hea_conversions = yes
+	}
+}
+
+remove_ncn_conversions = {
+	random_owned_state = {
+		limit = { has_state_flag = ncn_converted }
+		clr_state_flag = ncn_converted
+	}
+	subtract_from_variable = { var = ROOT.ncn_states_to_remove value = 1 }
+	if = {
+		limit = { check_variable = { var = ROOT.ncn_states_to_remove value = 1 compare = greater_than_or_equals } }
+		set_country_flag = convert_remove_repeat
+	}
+	if = {
+		limit = { has_country_flag = convert_remove_repeat }
+		clr_country_flag = convert_remove_repeat
+		remove_ncn_conversions = yes
+	}
+}
+
+success_coup_convert_rest_of_states = {
+	if = {
+		limit = {
+			is_puppet_of = NCN
+		}
+		every_owned_state = {
+			limit = {
+				is_owned_by = PREV
+				NOT = { has_state_flag = ncn_converted }
+				NOT = { has_state_flag = is_impassable }
+			}
+			set_state_flag = ncn_converted
+		}
+	}
+	if = {
+		limit = {
+			is_puppet_of = HEA
+		}
+		every_owned_state = {
+			limit = {
+				is_owned_by = PREV
+				NOT = { has_state_flag = hea_converted }
+				NOT = { has_state_flag = is_impassable }
+			}
+			set_state_flag = hea_converted
+		}
+	}
+}

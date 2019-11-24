@@ -1,0 +1,35 @@
+defined_text = {
+	name = itz_harvest_forecast
+	text = {
+		trigger = { check_variable = { itz_harvest_prediction = 0 } }
+		localization_key = itz_disastrous_forcast
+	}
+	text = {
+		trigger = { check_variable = { itz_harvest_prediction = 1 } }
+		localization_key = itz_poor_forcast
+	}
+	text = {
+		trigger = { check_variable = { itz_harvest_prediction = 2 } }
+		localization_key = itz_moderate_forcast
+	}
+	text = {
+		trigger = { check_variable = { itz_harvest_prediction = 3 } }
+		localization_key = itz_good_forcast
+	}
+	text = {
+		trigger = { check_variable = { itz_harvest_prediction = 4 } }
+		localization_key = itz_abundant_forcast
+	}
+}
+
+definied_text = {
+	name = flw_enemy
+	text = {
+		trigger = { original_tag = ITZ }
+		localization_key = flw_ate_name
+	}
+	text = {
+		trigger = { original_tag = ATE }
+		localization_key = flw_itz_name
+	}
+}

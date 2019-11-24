@@ -1,0 +1,48 @@
+# For Determining Nation Categories in Script
+# EX: National focuses, technologies etc.|
+is_mexican = {
+	custom_trigger_tooltip = {
+		tooltip = is_mexican_tt
+		OR = {
+			is_north_mexican = yes
+			is_south_mexican = yes
+		}
+		NOT = { has_country_flag = not_mexican }
+	}
+}
+is_north_mexican = {
+	custom_trigger_tooltip = {
+		tooltip = is_north_mexican_tt
+		OR = {
+			original_tag = ARM
+			original_tag = BLO
+			original_tag = FFI
+			original_tag = GDS
+			original_tag = TLA
+			original_tag = TVR
+			original_tag = LGS
+			original_tag = PET
+			original_tag = RRG
+			original_tag = SIN
+			original_tag = TVR
+			original_tag = TLA
+			has_country_flag = is_north_mexican
+		}
+		NOT = { has_country_flag = not_north_mexican }
+	}
+}
+is_south_mexican = {
+	custom_trigger_tooltip = {
+		tooltip = is_south_mexican_tt
+		OR = {
+			original_tag = ATE
+			original_tag = CAF
+			original_tag = GRH
+			original_tag = ITZ
+			original_tag = TDT
+			has_country_flag = is_south_mexican
+		}
+		NOT = { has_country_flag = not_south_mexican }
+	}
+}
+# vim: set ft=pdx ts=2 sw=2 tw=79 :

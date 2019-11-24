@@ -1,0 +1,55 @@
+spriteTypes = {
+	bitmapfont = {
+		name = "pipboy_16"
+		path = "gfx/fonts/pipboy_16"
+		color = 0xff3cf800
+		textcolors = {
+			B = { 38 78 213 }
+			G = { 0 108 0 }
+			H = { 252 124 0 }
+			R = { 224 0 0 }
+			W = { 252 252 252 }
+			Y = { 226 221 29 }
+			P = { 145 0 145 }
+		}
+	}
+
+	bitmapfont = {
+		name = "pipboy_32"
+		path = "gfx/fonts/pipboy_32"
+		color = 0xff3cf800
+		textcolors = {
+			B = { 38 78 213 }
+			G = { 0 108 0 }
+			H = { 252 124 0 }
+			R = { 224 0 0 }
+			W = { 252 252 252 }
+			Y = { 226 221 29 }
+			P = { 145 0 145 }
+		}
+	}
+
+	bitmapfont = {
+		name = "pipboy_shadow_green_32"
+		path = "gfx/fonts/pipboy_shadow_green_32"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "fallout_decayed_20"
+		path = "gfx/fonts/fallout_decayed_20"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "futura_pt_cond_bold_24"
+		path = "gfx/fonts/futura_pt_cond_bold_24"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "futura_pt_cond_bold_yellow_24"
+		path = "gfx/fonts/futura_pt_cond_bold_yellow_24"
+		color = 0xffffffff
+	}
+}

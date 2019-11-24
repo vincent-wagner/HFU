@@ -1,0 +1,90 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_flag_ARZ_texticon"
+		texturefile = "gfx/texticons/flag_arz.dds"
+		legacy_lazy_load = no
+	}
+
+	# Aztlan
+	spriteType = {
+		name = "GFX_flag_ATS_texticon"
+		texturefile = "gfx/flags/small/ATS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_flag_NCR_texticon"
+		texturefile = "gfx/flags/small/NCR.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_NEV_texticon"
+		texturefile = "gfx/texticons/flag_nev.dds"
+		legacy_lazy_load = no
+	}
+
+	# Synthetic Dawn Maya Flag
+	spriteType = {
+		name = "GFX_flag_MAYA_texticon"
+		texturefile = "gfx/flags/small/MAYA.tga"
+		legacy_lazy_load = no
+	}
+
+	# Vault City flags
+	# Added so we can reference them in game rules before they're actually applied
+	spriteType = {
+		name = "GFX_flag_VLT_elites_texticon"
+		texturefile = "gfx/texticons/flag_vlt_elites.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_VLT_intellectuals_texticon"
+		texturefile = "gfx/texticons/flag_vlt_intellectuals.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_VLT_people_texticon"
+		texturefile = "gfx/texticons/flag_vlt_people.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_VLT_ruler_texticon"
+		texturefile = "gfx/texticons/flag_vlt_ruler.dds"
+		legacy_lazy_load = no
+	}
+
+	# Vegas flag
+	spriteType = {
+		name = "GFX_flag_VEG_elites_texticon"
+		texturefile = "gfx/flags/small/VEG_elites.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_VEG_intellectuals_texticon"
+		texturefile = "gfx/flags/small/VEG_intellectuals.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_VEG_people_texticon"
+		texturefile = "gfx/flags/small/VEG_people.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_VEG_ruler_texticon"
+		texturefile = "gfx/flags/small/VEG_ruler.tga"
+		legacy_lazy_load = no
+	}
+
+	# Caesar's Legion
+	spriteType = {
+		name = "GFX_flag_BOM_flag_texticon"
+		texturefile = "gfx/flags/small/BOM.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_flag_CES_flag_texticon"
+		texturefile = "gfx/flags/small/CES.tga"
+		legacy_lazy_load = no
+	}
+}
+# vim: set ft=pdx tw=79 :

@@ -1,0 +1,317 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_BOS_generic1"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic2"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic3"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic4"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic5"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic6"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic7"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic7.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic8"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic8.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic9"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic9.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic10"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic10.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic11"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic11.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOS_generic12"
+		texturefile = "gfx/interface/ideas/ministers/bos_generic12.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_advisor1"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor2"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor3"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor4"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor5"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor6"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor7"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor7.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor8"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor8.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor9"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor9.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor10"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor10.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_advisor11"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor11.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor12"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor12.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor13"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor13.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor14"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor14.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor15"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor15.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor16"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor16.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor17"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor17.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor18"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor18.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor19"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor19.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor20"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor20.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_advisor21"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor21.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor22"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor22.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor23"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor23.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor24"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor24.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor25"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor25.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor26"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor26.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor27"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor27.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor28"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor28.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor29"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor29.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor30"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor30.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor31"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor31.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor32"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor32.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor33"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor33.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor34"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor34.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor35"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor35.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor36"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor36.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor37"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor37.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor38"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor38.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor39"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor39.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor40"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor40.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor41"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor41.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor42"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor42.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor43"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor43.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor44"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor44.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_advisor45"
+		texturefile = "gfx/interface/ideas/ministers/generic_advisor45.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mexico_advisor1"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor2"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor3"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor4"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor5"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor6"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor7"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor7.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor8"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor8.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor9"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor9.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor10"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor10.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mexico_advisor11"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor11.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor12"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor12.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor13"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor13.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor14"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor14.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor15"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor15.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor16"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor16.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor17"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor17.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor18"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor18.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor19"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor19.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico_advisor20"
+		texturefile = "gfx/interface/ideas/ministers/mexico_advisor20.dds"
+	}
+
+}

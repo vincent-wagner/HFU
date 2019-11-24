@@ -1,0 +1,127 @@
+@MAX_INT = 2147483
+@BASE_COST = 25
+@STATE_POP_DIVISOR = 0.15
+@CORED_POP_DIVISOR = 1
+@DISTANCE_DIVISOR = 5
+@CLAIM_MULTIPLIER = 0.75
+
+add_core_effect = {
+	# States population.
+	set_temp_variable = { coring_var_state_pop = state_population_k }
+	# ROOT's cored population.
+	set_temp_variable = { coring_var_cored_pop = 0 }
+	ROOT = {
+		every_owned_state = {
+			limit = { is_core_of = ROOT }
+			add_to_temp_variable = { coring_var_cored_pop = state_population_k }
+		}
+	}
+	# If coring_var_cored_pop overflows assign max int value to it.
+	if = {
+		limit = { check_variable = { coring_var_cored_pop < 0 } }
+		set_temp_variable = { coring_var_cored_pop = @MAX_INT }
+	}
+
+	# Distance from ROOT's capital.
+	set_temp_variable = { coring_var_distance = 0 }
+	capital_scope = {
+		set_temp_variable = { coring_var_distance = THIS.distance_to@PREV }
+	}
+
+	if = {
+		limit = { has_global_flag = debug_coring_gui }
+		set_temp_variable = { BASE_COST = @BASE_COST }
+		set_temp_variable = { STATE_POP_DIVISOR = @STATE_POP_DIVISOR }
+		set_temp_variable = { CORED_POP_DIVISOR = @CORED_POP_DIVISOR }
+		set_temp_variable = { DISTANCE_DIVISOR = @DISTANCE_DIVISOR }
+		log = "([GetDateText]) \"[Root.GetName]\" is coring \"[This.GetName]\""
+		log = "([GetDateText]) base_value: [?BASE_COST], state_pop:[?coring_var_state_pop]/[?STATE_POP_DIVISOR], cored_pop:[?coring_var_cored_pop]/[?CORED_POP_DIVISOR], dist:[?coring_var_distance]/[?DISTANCE_DIVISOR]"
+	}
+
+	# Cost divisors.
+	divide_temp_variable = { coring_var_state_pop = @STATE_POP_DIVISOR }
+	divide_temp_variable = { coring_var_cored_pop = @CORED_POP_DIVISOR }
+	divide_temp_variable = { coring_var_distance = @DISTANCE_DIVISOR }
+
+	# Round floats into integers.
+	round_temp_variable = coring_var_state_pop
+	round_temp_variable = coring_var_cored_pop
+	round_temp_variable = coring_var_distance
+
+	# Sum up the coring cost values.
+	set_temp_variable = { coring_var_coring_cost = @BASE_COST } # Base value
+	add_to_temp_variable = { coring_var_coring_cost = coring_var_state_pop }
+	add_to_temp_variable = { coring_var_coring_cost = coring_var_cored_pop }
+	add_to_temp_variable = { coring_var_coring_cost = coring_var_distance }
+
+	# Claim multiplier.
+	if = {
+		limit = { is_claimed_by = ROOT }
+		set_temp_variable = { coring_var_claim = @CLAIM_MULTIPLIER }
+		multiply_temp_variable = { coring_var_coring_cost = coring_var_claim }
+		round_temp_variable = coring_var_coring_cost
+	}
+
+	# Limit the cost to 0-2000 range.
+	if = {
+		limit = { check_variable = { coring_var_coring_cost < 0 } }
+		set_temp_variable = { coring_var_coring_cost = 0 }
+	} else_if = {
+		limit = { check_variable = { coring_var_coring_cost > 2000 } }
+		set_temp_variable = { coring_var_coring_cost = 2000 }
+	}
+
+	set_temp_variable = { coring_var_coring_cost_negative = coring_var_coring_cost }
+	subtract_from_temp_variable = { coring_var_coring_cost_negative = coring_var_coring_cost }
+	subtract_from_temp_variable = { coring_var_coring_cost_negative = coring_var_coring_cost }
+
+	ROOT = {
+		add_political_power = coring_var_coring_cost_negative
+	}
+	add_core_of = ROOT
+	ROOT = {
+		add_ideas = coring_manpower_fix
+		country_event = fix_coring_manpower.1
+	}
+
+	if = {
+		limit = { has_global_flag = debug_coring_gui }
+		log = "([GetDateText]) Cored for [?coring_var_coring_cost] PP (state_pop:[?coring_var_state_pop] + total_pop:[?coring_var_cored_pop] + dist:[?coring_var_distance])"
+	}
+	if = {
+		limit = {
+			is_in_array = { ROOT.uncored_states_array = THIS.id }
+		}
+		remove_from_array = { ROOT.uncored_states_array = THIS.id }
+	}
+}
+
+add_core_tlaloc_effect = {
+	set_temp_variable = { coring_var_energy_cost = 10 }
+	if = {
+		limit = {
+			ROOT = {
+				tag = RRG
+				has_cosmetic_tag = RRG_rosado
+			}
+		}
+		add_to_temp_variable = { coring_var_energy_cost = 20 }
+	}
+	# Additional cost from coring, so you core a state and "lose" the amount of energy that you paid
+	add_to_temp_variable = { coring_var_energy_cost = ROOT.coring_var_energy_cost_from_coring }
+
+	ROOT = {
+		add_to_variable = { coring_var_energy_cost_from_coring = coring_var_energy_cost }
+	}
+	add_core_of = ROOT
+	ROOT = {
+		add_ideas = coring_manpower_fix
+		country_event = fix_coring_manpower.1
+	}
+	if = {
+		limit = {
+			is_in_array = { ROOT.uncored_states_array = THIS.id }
+		}
+		remove_from_array = { ROOT.uncored_states_array = THIS.id }
+	}
+}

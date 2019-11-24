@@ -1,0 +1,284 @@
+is_new_thesis_state = {
+	OR = {
+		region = 52
+		region = 32
+		region = 3
+	}
+}
+
+is_CES_civil_war_non_eligable = {
+	OR = {
+		state = 388
+		state = 604
+		state = 349
+		state = 483
+		state = 520
+	}
+}
+
+is_boneyard_state = {
+	OR = {
+		state = 350
+		state = 591
+		state = 19
+		state = 180
+		state = 396
+		state = 292
+	}
+}
+
+is_pecos_state = {
+	OR = {
+		state = 31
+		state = 255
+		state = 200
+		state = 545
+	}
+}
+
+is_dayglow_state = {
+	OR = {
+		state = 205
+		state = 63
+		state = 866
+		state = 80
+		state = 4
+		state = 583
+	}
+}
+
+is_baudelio_state = {
+	OR = {
+		state = 528
+		state = 377
+		state = 559
+		state = 579
+		state = 479
+		state = 229
+		state = 15
+	}
+}
+
+is_utah_state = {
+	OR = {
+		region = 38
+		region = 39
+		region = 40
+		region = 5
+		region = 41
+	}
+}
+
+is_colorado_state = {
+	OR = {
+		region = 6
+		region = 44
+		region = 42
+		region = 43
+	}
+}
+
+is_new_mexico_state = {
+	OR = {
+		region = 45
+		region = 47
+		region = 15
+		region = 46
+	}
+}
+
+is_arizona_state = {
+	OR = {
+		region = 31
+		region = 30
+		region = 2
+		region = 28
+		region = 29
+	}
+}
+
+is_mexico_state = {
+	OR = {
+		is_baja_california_state = yes
+		is_north_mexico_state = yes
+		is_south_mexico_state = yes
+	}
+}
+
+is_north_mexico_state = {
+	OR = {
+		region = 92
+		region = 116
+		region = 119
+		region = 93
+		region = 117
+		region = 118
+		region = 120
+		region = 121
+		region = 97
+	}
+}
+
+is_south_mexico_state = {
+	OR = {
+		region = 13
+		region = 50
+		region = 48
+		region = 94
+		region = 143
+		region = 98
+		region = 113
+		region = 91
+		region = 115
+		region = 96
+		region = 95
+		region = 142
+		region = 114
+	}
+}
+
+is_baja_california_state = {
+	OR = {
+		state = 651
+		state = 650
+		state = 41
+		state = 174
+		state = 158
+		state = 136
+		state = 481
+		state = 176
+		state = 325
+		state = 97
+	}
+}
+
+is_california_state = {
+	OR = {
+		region = 52
+		region = 7
+		region = 51
+		region = 54
+		region = 53
+	}
+}
+
+is_baron_state = {
+	OR = {
+		state = 135
+		state = 60
+		state = 584
+		state = 168
+		state = 421
+		state = 543
+		state = 162
+		state = 369
+		state = 141
+		state = 182
+		state = 56
+		state = 441
+		state = 511
+	}
+}
+
+is_sac_to_hub_state = {
+	OR = {
+		state = 489
+		state = 455
+		state = 214
+		state = 529
+		state = 605
+		state = 190
+		state = 60
+	}
+}
+
+is_new_vegas_state = {
+	OR = {
+		state = 47
+		state = 137
+		state = 417
+		state = 46
+		state = 573
+		state = 380
+		state = 613
+		state = 252
+		state = 380
+		state = 211
+		state = 313
+		state = 344
+		state = 154
+		state = 552
+	}
+}
+
+is_new_vegas = {
+	state = 211
+}
+
+is_colorado_river_state = {
+	OR = {
+		state = 173
+		state = 99
+		state = 500
+		state = 147
+		state = 469
+		state = 107
+		state = 613
+		state = 252
+		state = 137
+		state = 47
+	}
+}
+
+is_ncr_founder_state = {
+	OR = {
+		state = 253
+		state = 489
+		state = 1
+		state = 350
+	}
+}
+
+is_nevada_state = {
+	OR = {
+		region = 56
+		region = 57
+		region = 12
+		region = 55
+	}
+}
+
+is_oregon_state = {
+	OR = {
+		region = 58
+		region = 59
+		region = 11
+	}
+}
+
+is_idaho_state = {
+	OR = {
+		region = 4
+		region = 35
+		region = 34
+		region = 33
+	}
+}
+
+is_washington_state = {
+	OR = {
+		region = 10
+		region = 36
+		region = 37
+	}
+}
+
+is_columbia_state = {
+	OR = {
+		region = 60
+		region = 61
+		region = 14
+		region = 62
+	}
+}
+# vim: set ft=pdx ts=2 sw=2 tw=79 :

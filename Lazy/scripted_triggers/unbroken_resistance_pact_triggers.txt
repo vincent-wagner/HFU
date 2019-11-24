@@ -1,0 +1,68 @@
+is_unbroken_resistance_pact_member = {
+	custom_trigger_tooltip = {
+		tooltip = is_unbroken_resistance_pact_member_tt
+		OR = {
+			has_idea = unbroken_resistance_pact_member
+			has_idea = unbroken_resistance_pact_defender
+			has_idea = unbroken_resistance_pact_obligated
+			has_idea = unbroken_resistance_pact_supporter
+		}
+	}
+}
+
+is_not_unbroken_resistance_pact_member = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_unbroken_resistance_pact_member_tt
+		NOT = { is_unbroken_resistance_pact_member = yes }
+	}
+}
+
+is_unbroken_resistance_pact_enemy = {
+	OR = {
+		AND = {
+			OR = {
+				tag = BRK
+				is_in_faction_with = BRK
+			}
+			BRK = {
+				is_subject = no
+				is_puppet = no
+			}
+		}
+	}
+}
+
+has_triggered_unbroken_resistance_pact = {
+	custom_trigger_tooltip = {
+		tooltip = has_triggered_unbroken_resistance_pact_tt
+		has_idea = unbroken_resistance_pact_defender
+	}
+}
+
+has_not_triggered_unbroken_resistance_pact = {
+	custom_trigger_tooltip = {
+		tooltip = has_not_triggered_unbroken_resistance_pact_tt
+		NOT = { has_triggered_unbroken_resistance_pact = yes }
+	}
+}
+
+is_potential_unbroken_resistance_pact_member = {
+	AND = {
+		NOT = {
+			OR = {
+				is_in_faction_with = BRK
+				is_puppet_of = BRK
+				is_subject_of = BRK
+			}
+		}
+		OR = {
+			original_tag = ISN
+			original_tag = DRE
+			original_tag = KAM
+			original_tag = WHI
+			original_tag = BEL
+			original_tag = VIC
+			original_tag = HAI
+		}
+	}
+}

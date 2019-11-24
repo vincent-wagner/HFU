@@ -1,0 +1,55 @@
+TDT_lost_any_original_states = {
+	TDT = {
+		OR = {
+			NOT = {
+				831 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			NOT = {
+				832 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			NOT = {
+				833 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			NOT = {
+				834 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+	}
+}
+
+TDT_owns_all_original_states = {
+	831 = { is_owned_and_controlled_by = TDT }
+	832 = { is_owned_and_controlled_by = TDT }
+	833 = { is_owned_and_controlled_by = TDT }
+	834 = { is_owned_and_controlled_by = TDT }
+}
+
+TDT_owns_northern_states = {
+	831 = { is_owned_and_controlled_by = TDT }
+	832 = { is_owned_and_controlled_by = TDT }
+}
+
+TDT_owns_southern_states = {
+	833 = { is_owned_and_controlled_by = TDT }
+	834 = { is_owned_and_controlled_by = TDT }
+}
+
+TDT_at_war_with_mexican_neighbor = {
+	custom_trigger_tooltip = {
+		tooltip = tdt_at_war_with_mexican_neighbor_tt
+		tag = TDT
+		any_enemy_country = {
+			has_war_with = TDT
+			is_neighbor_of = TDT
+			is_mexican = yes
+		}
+	}
+}

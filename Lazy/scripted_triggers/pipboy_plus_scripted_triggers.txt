@@ -1,0 +1,26 @@
+uses_spanish_welcome_messages = {
+	OR = {
+		original_tag = ARM
+		original_tag = ATE
+		original_tag = BLO
+		original_tag = BLP
+		original_tag = BVC
+		original_tag = CAF
+		original_tag = FFI
+		original_tag = GDH
+		original_tag = GRH
+		original_tag = ITZ
+		original_tag = LGS
+		original_tag = PEC
+		original_tag = PET
+		original_tag = RBD
+		original_tag = RRG
+		original_tag = SIN
+		original_tag = TDT
+		original_tag = TLA
+		original_tag = TLO
+		original_tag = TON
+		original_tag = TVR
+		original_tag = TWO
+	}
+}

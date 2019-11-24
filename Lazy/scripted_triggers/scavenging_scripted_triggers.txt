@@ -1,0 +1,239 @@
+has_scavenge_equipment = {
+	has_manpower > 50
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = melee_weaponry_tech_1
+				NOT = { has_tech = melee_weaponry_tech_2 }
+				NOT = { has_tech = standard_weaponry_tech }
+			}
+		}
+		has_equipment = { melee_equipment_1 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = standard_weaponry_tech
+				NOT = { has_tech = ballistic_weaponry_tech_1 }
+				NOT = { has_tech = energy_weaponry_tech_1 }
+				NOT = { has_tech = melee_weaponry_tech_2 }
+			}
+		}
+		has_equipment = { infantry_equipment_1 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = melee_weaponry_tech_2
+				NOT = { has_tech = melee_weaponry_tech_3 }
+				NOT = { has_tech = ballistic_weaponry_tech_1 }
+				NOT = { has_tech = energy_weaponry_tech_1 }
+			}
+		}
+		has_equipment = { melee_equipment_2 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = ballistic_weaponry_tech_1
+				NOT = { has_tech = melee_weaponry_tech_3 }
+				NOT = { has_tech = ballistic_weaponry_tech_2 }
+				NOT = { has_tech = energy_weaponry_tech_1 }
+			}
+		}
+		has_equipment = { ballistic_equipment_1 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = melee_weaponry_tech_3
+				NOT = { has_tech = ballistic_weaponry_tech_2 }
+				NOT = { has_tech = energy_weaponry_tech_1 }
+				NOT = { has_tech = melee_weaponry_tech_4 }
+			}
+		}
+		has_equipment = { melee_equipment_3 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = energy_weaponry_tech_1
+				NOT = { has_tech = ballistic_weaponry_tech_2 }
+				NOT = { has_tech = energy_weaponry_tech_2 }
+				NOT = { has_tech = melee_weaponry_tech_4 }
+			}
+		}
+		has_equipment = { energy_equipment_1 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = melee_weaponry_tech_4
+				NOT = { has_tech = ballistic_weaponry_tech_2 }
+				NOT = { has_tech = energy_weaponry_tech_2 }
+			}
+		}
+		has_equipment = { melee_equipment_4 > 49}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = ballistic_weaponry_tech_2
+				NOT = { has_tech = ballistic_weaponry_tech_3 }
+				NOT = { has_tech = energy_weaponry_tech_2 }
+			}
+		}
+		has_equipment = { ballistic_equipment_2 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = energy_weaponry_tech_2
+				NOT = { has_tech = ballistic_weaponry_tech_3 }
+				NOT = { has_tech = energy_weaponry_tech_3 }
+			}
+		}
+		has_equipment = { energy_equipment_2 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = ballistic_weaponry_tech_3
+				NOT = { has_tech = ballistic_weaponry_tech_4 }
+				NOT = { has_tech = energy_weaponry_tech_3 }
+			}
+		}
+		has_equipment = { ballistic_equipment_3 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = energy_weaponry_tech_3
+				NOT = { has_tech = ballistic_weaponry_tech_4 }
+				NOT = { has_tech = energy_weaponry_tech_4 }
+			}
+		}
+		has_equipment = { energy_equipment_3 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = ballistic_weaponry_tech_4
+				NOT = { has_tech = energy_weaponry_tech_4 }
+			}
+		}
+		has_equipment = { ballistic_equipment_4 > 49 }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_tech = energy_weaponry_tech_4
+			}
+		}
+		has_equipment = { energy_equipment_4 > 49 }
+	}
+}
+has_scavenge_pa = {
+	if = {
+		limit = {
+			has_tech = stripped_pa_tech
+			NOT = { has_tech = scav_pa_tech }
+			NOT = { has_tech = power_armour_enclave_1 }
+			NOT = { has_tech = power_armour_enclave_2 }
+		}
+		has_equipment = { power_armor_equipment_1 > 49 }
+	}
+	if = {
+		limit = {
+			has_tech = scav_pa_tech
+			NOT = { has_tech = t45d_pa_tech }
+			NOT = { has_tech = power_armour_enclave_1 }
+			NOT = { has_tech = power_armour_enclave_2 }
+		}
+		has_equipment = { power_armor_equipment_2 > 49 }
+	}
+	if = {
+		limit = {
+			has_tech = t45d_pa_tech
+			NOT = { has_tech = c_t45d_pa_tech }
+			NOT = { has_tech = t51b_pa_tech }
+			NOT = { has_tech = power_armour_enclave_1 }
+			NOT = { has_tech = power_armour_enclave_2 }
+		}
+		has_equipment = { power_armor_equipment_3 > 49 }
+	}
+	if = {
+		limit = {
+			has_tech = c_t45d_pa_tech
+			NOT = { has_tech = t51b_pa_tech }
+			NOT = { has_tech = power_armour_enclave_1 }
+			NOT = { has_tech = power_armour_enclave_2 }
+		}
+		has_equipment = { power_armor_equipment_3_light > 49 }
+	}
+	if = {
+		limit = {
+			has_tech = t51b_pa_tech
+			NOT = { has_tech = c_t51b_pa_tech }
+			NOT = { has_tech = power_armour_enclave_1 }
+			NOT = { has_tech = power_armour_enclave_2 }
+		}
+		has_equipment = { power_armor_equipment_4 > 49 }
+	}
+	if = {
+		limit = {
+			has_tech = c_t51b_pa_tech
+			NOT = { has_tech = h_t51b_pa_tech }
+			NOT = { has_tech = power_armour_enclave_1 }
+			NOT = { has_tech = power_armour_enclave_2 }
+		}
+		has_equipment = { power_armor_equipment_4_light > 49 }
+	}
+	if = {
+		limit = {
+			has_tech = h_t51b_pa_tech
+			NOT = { has_tech = power_armour_enclave_1 }
+			NOT = { has_tech = power_armour_enclave_2 }
+		}
+		has_equipment = { power_armor_equipment_5 > 49 }
+	}
+	if = {
+		limit = {
+			has_tech = power_armour_enclave_1
+			NOT = { has_tech = power_armour_enclave_2 }
+		}
+		has_equipment = { enclave_power_armour_equipment_1 > 49 }
+	}
+	if = {
+		limit = {
+			has_tech = power_armour_enclave_2
+		}
+		has_equipment = { enclave_power_armour_equipment_2 > 49 }
+	}
+}
+has_scavenge_fly = {
+	has_equipment = { vb_transport_plane_equipment > 2 }
+}
+has_scavenge_vehicle = {
+	if = {
+		limit = {
+			has_tech = bike_tech_1
+			NOT = { has_tech = truck_tech_1 }
+			NOT = { has_tech = truck_tech_2 }
+		}
+		has_equipment = { motorbike_equipment_1 > 49 }
+	}
+	if = {
+		limit = {
+			has_tech = truck_tech_1
+			NOT = { has_tech = truck_tech_2 }
+		}
+		has_equipment = { truck_equipment_1 > 9 }
+	}
+	if = {
+		limit = {
+			has_tech = truck_tech_2
+		}
+		has_equipment = { truck_equipment_2 > 9 }
+	}
+}

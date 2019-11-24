@@ -1,0 +1,73 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_ARM_Santa_Anna_animated"
+		texturefile = "gfx/leaders/ARM/portrait_arm_santa_anna_animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_House_animated"
+		texturefile = "gfx/leaders/VEG/portrait_house_animated.dds"
+		noOfFrames = 60
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_TLA_Tlaloc_animated"
+		texturefile = "gfx/leaders/TLA/portrait_tla_tlaloc_animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_MAX_Maximilian_animated"
+		texturefile = "gfx/leaders/MAX/portrait_max_maximilian_animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_MOC_Moctezuma_animated"
+		texturefile = "gfx/leaders/MOC/portrait_moc_moctezuma_animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_Zap_Zapata_animated"
+		texturefile = "gfx/leaders/ZAP/portrait_zap_zapata_animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_TLA_Ollin_animated"
+		texturefile = "gfx/leaders/TLA/portrait_tla_ollin_animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_RRG_Valentina_Rosado_animated"
+		texturefile = "gfx/leaders/RRG/portrait_rrg_valentina_rosado_animated.dds"
+		noOfFrames = 30
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}

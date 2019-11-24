@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tlaloc_memory_capacity_icon"
+		textureFile = "gfx/interface/tlaloc_memory_capacity_icon.dds"
+	}
+}

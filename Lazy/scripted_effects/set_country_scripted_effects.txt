@@ -1,0 +1,53 @@
+set_supermutant_nation = {
+	set_country_flag = is_super_mutant_nation
+	every_other_country = {
+		limit = { is_super_mutant_nation = yes }
+		remove_opinion_modifier = {
+			target = PREV
+			modifier = non_supermutants
+		}
+		remove_opinion_modifier = {
+			target = PREV
+			modifier = non_supermutants_trade
+		}
+		PREV = {
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = supermutants
+			}
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = supermutants_trade
+			}
+		}
+	}
+	every_other_country = {
+		limit = {
+			NOT = { is_super_mutant_nation = yes }
+		}
+		reverse_add_opinion_modifier = {
+			target = PREV
+			modifier = non_supermutants
+		}
+		reverse_add_opinion_modifier = {
+			target = PREV
+			modifier = non_supermutants_trade
+		}
+		add_opinion_modifier = {
+			target = PREV
+			modifier = supermutants
+		}
+		add_opinion_modifier = {
+			target = PREV
+			modifier = supermutants_trade
+		}
+	}
+	if = {
+		limit = { NOT = { has_tech = super_mutant_civilization } }
+		set_technology = { super_mutant_civilization = 1 }
+	}
+	if = {
+		limit = { NOT = { has_tech = super_mutant_behemoth } }
+		set_technology = { super_mutant_behemoth = 1 }
+	}
+}

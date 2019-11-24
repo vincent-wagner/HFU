@@ -1,0 +1,13 @@
+has_bittersprings_massacre_occurred = {
+	custom_trigger_tooltip = {
+		tooltip = bitter_springs_occurred
+		has_country_flag = bitter_springs_occurred
+	}
+}
+
+has_avoided_bittersprings_massacre = {
+	custom_trigger_tooltip = {
+		tooltip = kha_avoided_ncr_bloodshed_tt
+		has_bittersprings_massacre_occurred = no
+	}
+}

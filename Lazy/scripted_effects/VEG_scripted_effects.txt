@@ -1,0 +1,165 @@
+setup_house_rebellion = {
+	if = {
+		limit = {
+			has_idea = consigs
+		}
+		remove_ideas = consigs
+	}
+	if = {
+		limit = {
+			has_idea = consigs2
+		}
+		remove_ideas = consigs2
+	}
+	if = {
+		limit = {
+			has_idea = consigs3
+		}
+		remove_ideas = consigs3
+	}
+	if = {
+		limit = {
+			has_idea = false_khaganate
+		}
+		remove_ideas = false_khaganate
+	}
+	if = {
+		limit = {
+			has_idea = false_khaganate2
+		}
+		remove_ideas = false_khaganate2
+	}
+	if = {
+		limit = {
+			has_idea = false_khaganate3
+		}
+		remove_ideas = false_khaganate3
+	}
+	if = {
+		limit = {
+			has_idea = potentialcoup
+		}
+		remove_ideas = potentialcoup
+	}
+	if = {
+		limit = {
+			has_idea = theking
+		}
+		remove_ideas = theking
+	}
+	if = {
+		limit = {
+			has_idea = freesidesupport
+		}
+		remove_ideas = freesidesupport
+	}
+	if = {
+		limit = {
+			has_idea = thejoker
+		}
+		remove_ideas = thejoker
+	}
+	if = {
+		limit = {
+			has_idea = emilyortal
+		}
+		remove_ideas = emilyortal
+	}
+	if = {
+		limit = {
+			has_idea = threefamilies
+		}
+		remove_ideas = threefamilies
+	}
+	if = {
+		limit = {
+			has_idea = repaiddebt
+		}
+		remove_ideas = repaiddebt
+	}
+	if = {
+		limit = {
+			has_idea = narcissism
+		}
+		remove_ideas = narcissism
+	}
+	if = {
+		limit = {
+			has_idea = threefamilies2
+		}
+		remove_ideas = threefamilies2
+	}
+	if = {
+		limit = {
+			has_idea = cultofpersonality
+		}
+		remove_ideas = cultofpersonality
+	}
+	if = {
+		limit = {
+			has_idea = followeradvisors
+		}
+		remove_ideas = followeradvisors
+	}
+	if = {
+		limit = {
+			has_idea = unifiedvegas
+		}
+		remove_ideas = unifiedvegas
+	}
+	if = {
+		limit = {
+			has_idea = middleclassclientele
+		}
+		remove_ideas = middleclassclientele
+	}
+	if = {
+		limit = {
+			has_idea = wealthyclientele2
+		}
+		remove_ideas = wealthyclientele2
+	}
+	if = {
+		limit = {
+			has_idea = middleclassclientele2
+		}
+		remove_ideas = middleclassclientele2
+	}
+	if = {
+		limit = {
+			has_idea = whitegloves3
+		}
+		remove_ideas = whitegloves3
+	}
+	if = {
+		limit = {
+			has_idea = kings
+		}
+		remove_ideas = kings
+	}
+	if = {
+		limit = {
+			has_idea = unstableOS
+		}
+		remove_ideas = unstableOS
+		add_ideas = stableOS
+	}
+	unlock_national_focus = veg_judgement
+	unlock_national_focus = veg_software
+	unlock_national_focus = veg_families
+	unlock_national_focus = veg_newvegas
+	unlock_national_focus = veg_ultraluxe
+	complete_national_focus = veg_whitegloves
+	complete_national_focus = veg_wealthycontacts
+	complete_national_focus = veg_abandon
+	unlock_national_focus = veg_gomorrah
+	complete_national_focus = veg_omertas
+	complete_national_focus = veg_addiction
+	complete_national_focus = veg_mobsters
+	unlock_national_focus = veg_tops
+	complete_national_focus = veg_chairmen
+	complete_national_focus = veg_arms
+	complete_national_focus = veg_newdeal
+	complete_national_focus = veg_lucky38
+	complete_national_focus = veg_oldauthority
+}

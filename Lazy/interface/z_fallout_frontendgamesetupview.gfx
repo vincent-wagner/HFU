@@ -1,0 +1,33 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bookmark_selection_bg"
+		texturefile = "gfx/interface/bookmark_selection_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_bookmark_selection_entry_bg"
+		texturefile = "gfx/interface/bookmark_selection_entry_bg.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_bookmark_selection_entry_west_coast"
+		texturefile = "gfx/interface/bookmark_selection_entry_west_coast.dds"
+	}
+	spriteType = {
+		name = "GFX_bookmark_selection_entry_mexico"
+		texturefile = "gfx/interface/bookmark_selection_entry_mexico.dds"
+	}
+	spriteType = {
+		name = "GFX_bookmark_selection_button_back"
+		texturefile = "gfx/interface/bookmark_selection_button_back.dds"
+	}
+	spriteType = {
+		name = "GFX_bookmark_selection_button_select"
+		texturefile = "gfx/interface/bookmark_selection_button_select.dds"
+	}
+	spriteType = {
+		name = "GFX_bookmark_selection_overlay"
+		texturefile = "gfx/interface/bookmark_selection_overlay.dds"
+	}
+}

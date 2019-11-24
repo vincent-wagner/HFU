@@ -1,0 +1,9 @@
+choose_mechanical_superiority = {
+  custom_effect_tooltip = choose_mechanical_superiority_tt
+  set_variable = { equation_of_war = 0 }
+}
+
+choose_human_flexibility = {
+  custom_effect_tooltip = choose_human_flexibility_tt
+  set_variable = { equation_of_war = 1 }
+}

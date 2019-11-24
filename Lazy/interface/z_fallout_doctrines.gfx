@@ -1,0 +1,941 @@
+spriteTypes = {
+	# Backgrounds
+	SpriteType = {
+		name = "GFX_automated_warfare_bg"
+		texturefile = "gfx/interface/techtree/techtree_bg_doctrine_automated_warfare.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_elite_army_bg"
+		texturefile = "gfx/interface/techtree/techtree_bg_doctrine_elite_army.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_grand_army_bg"
+		texturefile = "gfx/interface/techtree/techtree_bg_doctrine_grand_army.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_terror_tactics_bg"
+		texturefile = "gfx/interface/techtree/techtree_bg_doctrine_terror_tactics.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_outsider_warfare_bg"
+		texturefile = "gfx/interface/techtree/techtree_bg_doctrine_outsider_warfare.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_special_forces_doctrine_bg"
+		texturefile = "gfx/interface/techtree/techtree_bg_doctrine_special_forces.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_air_doctrine_bg"
+		texturefile = "gfx/interface/techtree/techtree_bg_doctrine_air.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_navy_doctrine_bg"
+		texturefile = "gfx/interface/techtree/techtree_bg_doctrine_navy.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_combat_protocols_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_combat_protocols.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_field_maintenance_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_field_maintenance.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_advanced_combat_protocols_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_advanced_combat_protocols.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_self_replicating_machinery_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_self_replicating_machinery.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_the_flesh_is_weak_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_the_flesh_is_weak.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_non_discriminatory_targeting_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_non_discrim_targeting.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_age_of_the_machine_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_age_of_the_machine.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_standardised_blueprints_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_blueprint_standard.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_automated_distribution_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_automated_distribution.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_offensive_protocols_doctrine_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_offensive_protocols.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_refined_construction_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_refined_construction.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_rushed_production_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_rushed_production.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_internal_replicators_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_internal_replicators.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_speed_of_movement_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_rapid_deployment.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_networked_ai_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_networked_ai.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_walking_fire_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_marching_fire.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_automated_warfare_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_automated_warfare.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_combat_simulations_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_combat_simulations.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_iron_fist_medium"
+		texturefile = "gfx/interface/technologies/automated_warfare_iron_fist.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_elite_army_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_refined_warfare.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_concentration_of_force_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_concentration_of_force.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_ranger_infiltration_medium"
+		texturefile = "gfx/interface/technologies/ranger_infiltration.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_brigades_of_steel_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_champions_of_virtue.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_walking_tanks_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_walking_tanks.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_warrior_code_doctrine_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_warrior_code.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_shock_and_awe_doctrine_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_shock_and_awe.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_grand_battle_plan_owb_medium"
+		texturefile = "gfx/interface/technologies/grand_battle_plan_owb.dds"
+		alwaystransparent = yes
+	}
+
+	# Land Doctrines
+	SpriteType = {
+		name = "GFX_summa_bellum_medium"
+		texturefile = "gfx/interface/technologies/summa_bellum.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_grand_assault_doctrine_medium"
+		texturefile = "gfx/interface/technologies/grand_assault.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_old_world_thunder_medium"
+		texturefile = "gfx/interface/technologies/old_world_thunder.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_old_world_tactics_medium"
+		texturefile = "gfx/interface/technologies/old_world_tactics.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_adaptive_chain_of_command_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_adaptive_c_o_c.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_airborne_assaults_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_airborne_assaults.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_concentration_of_firepower_medium"
+		texturefile = "gfx/interface/technologies/concentration_of_firepower.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_grand_army_medium"
+		texturefile = "gfx/interface/technologies/fortified_positions.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_scorched_earth_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_scorched_earth.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_recon_in_depth_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_recon_infiltration.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_trench_warfare_medium"
+		texturefile = "gfx/interface/technologies/prepared_defense.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_fortified_positions_doctrine_medium"
+		texturefile = "gfx/interface/technologies/prepared_defense.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_combined_arms_doctrine_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_combined_arms.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_hit_and_run_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_hit_and_run.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_hold_the_line_medium"
+		texturefile = "gfx/interface/technologies/hold_the_line.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_integrated_support_doctrine_medium"
+		texturefile = "gfx/interface/technologies/elite_forces_intergrated_support.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mechanized_offensive_doctrine_medium"
+		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mechanized_onslaught_medium"
+		texturefile = "gfx/interface/technologies/mechanised_onslaught.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_new_world_tactics_medium"
+		texturefile = "gfx/interface/technologies/new_world_tactics.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_send_in_the_next_wave_medium"
+		texturefile = "gfx/interface/technologies/send_in_the_next_wave.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_old_world_lightning_medium"
+		texturefile = "gfx/interface/technologies/old_world_lightning.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_assault_concentration_doctrine_medium"
+		texturefile = "gfx/interface/technologies/assault_concentration.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_mass_conscription_medium"
+		texturefile = "gfx/interface/technologies/mass_conscription.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_terror_tactics_medium"
+		texturefile = "gfx/interface/technologies/mass_assault.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_pocket_defence_doctrine_medium"
+		texturefile = "gfx/interface/technologies/pocket_defence.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_terror_tactics_actual_medium"
+		texturefile = "gfx/interface/technologies/improvised_obstructions.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_the_wolf_pack_medium"
+		texturefile = "gfx/interface/technologies/wolfpack.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_the_dog_barks_medium"
+		texturefile = "gfx/interface/technologies/dogs_bark.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_tribal_wisdom_doctrine_medium"
+		texturefile = "gfx/interface/technologies/tribal_wisdom.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_divide_et_vincet_medium"
+		texturefile = "gfx/interface/technologies/divide_et_vincet.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_invisibilia_mortem_medium"
+		texturefile = "gfx/interface/technologies/invisibilia_mortem.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_exitum_medium"
+		texturefile = "gfx/interface/technologies/exitum.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_prae_timore_mortis_medium"
+		texturefile = "gfx/interface/technologies/prae_timore_mortis.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_decimato_doctrine_medium"
+		texturefile = "gfx/interface/technologies/decimatio.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_ego_gloriam_nominis_medium"
+		texturefile = "gfx/interface/technologies/ego_gloriam_nominis.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_the_nightstalkers_bite_medium"
+		texturefile = "gfx/interface/technologies/nightstalker_bite.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_the_cazadores_speed_medium"
+		texturefile = "gfx/interface/technologies/cazadores_speed.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_the_deathclaws_might_medium"
+		texturefile = "gfx/interface/technologies/deathclaws_might.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_the_mirelurk_pincer_medium"
+		texturefile = "gfx/interface/technologies/mirelurk_pincer.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Special Doctrines
+
+	spriteType = {
+		name = "GFX_special_forces_doctrine_medium"
+		texturefile = "gfx/interface/technologies/special_forces_doctrine_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_light_wet_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_light_wet_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_light_mountain_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_light_mountain_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_light_plains_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_light_plains_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_heavy_mountain_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_heavy_mountain_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_heavy_plains_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_heavy_plains_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_heavy_urban_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_heavy_urban_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_special_divisions_medium"
+		texturefile = "gfx/interface/technologies/spec_force_special_divisions_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_cap_medium"
+		texturefile = "gfx/interface/technologies/spec_force_cap_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_cap_1_medium"
+		texturefile = "gfx/interface/technologies/spec_force_cap_1_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_cap_2_medium"
+		texturefile = "gfx/interface/technologies/spec_force_cap_2_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_environment_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_environment_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_defense_medium"
+		texturefile = "gfx/interface/technologies/spec_force_defense.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_offence_medium"
+		texturefile = "gfx/interface/technologies/spec_force_offence_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_recovery_medium"
+		texturefile = "gfx/interface/technologies/spec_force_recovery.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_organisation_medium"
+		texturefile = "gfx/interface/technologies/spec_force_organisation.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_marine_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_marine_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_maintenance_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_maintenance_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_assault_training_medium"
+		texturefile = "gfx/interface/technologies/spec_force_assault_training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_heavy_infantry_focus_medium"
+		texturefile = "gfx/interface/technologies/spec_force_heavy_infantry_focus.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_light_infantry_focus_medium"
+		texturefile = "gfx/interface/technologies/spec_force_light_infantry_focus.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_spec_force_elite_forces_medium"
+		texturefile = "gfx/interface/technologies/spec_force_elite_forces.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Air Doctrines
+	SpriteType = {
+		name = "GFX_formation_flying_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_formation_flying.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_fighter_sweeps_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_fighter_sweeps.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_formation_fighting_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_formation_fighting.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_forward_interception_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_forward_interception.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_layered_airzones_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_layered_airzones.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_multirole_bombers_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_multirole_bombers.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_detection_avoidance_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_detection_avoidance.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_infrastructure_destruction_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_infrastructure_destruction.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_operational_destruction_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_operational_destruction.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_priority_targeting_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_priority_targeting.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_strategic_destruction_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_strategic_destruction.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_day_bombing_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_day_bombing.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_night_bombing_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_night_bombing.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_future_airforce_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_future_airforce.dds	"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_dive_bombing_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_dive_bombing.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_hunt_and_destroy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_hunt_and_destroy.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_direct_ground_support_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_direct_ground_support.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_dynamic_target_assignment_doctrine_medium"
+		texturefile = "gfx/interface/technologies/air_doctrine_dynamic_target_assignment.dds"
+		alwaystransparent = yes
+	}
+
+	#----------------------------- Naval Doctrines
+	SpriteType = {
+		name = "GFX_pacific_fleet_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_munition_storage.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_river_fleet_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_river_fleet.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_coastal_patrols_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_costal_patrols.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_raiding_flotillas_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_raiding_flotillas.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_assault_parties_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_aggressive_moves.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_suicide_runs_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_suicide.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_terrain_exploitation_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_terrain_exploration.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_force_concentration_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_capital_ship.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_area_denial_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_area_denial.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_focus_fire_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_focus_fire.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_ship_of_the_line_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_ship_of_the_line.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_wave_supremacy_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_carrier_escort.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_barge_focus_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_bear_packs_1.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_destroyer_focus_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_bear_packs_2.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_carrier_focus_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_carrier_focus.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_dispersed_formations_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_dispersed_navy.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_wolfpacks_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_spearhead.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_convoy_interdiction_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_convoy_raiding.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_decoy_tactics_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_decoy_tactics.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_swimming_bait_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_goliath.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_force_projection_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_force_projection.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_rapid_redeployment_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_rapid_redeployment.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_sail_focus_navy_doctrine_medium"
+		texturefile = "gfx/interface/technologies/naval_doctrine_grand_floatila.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_education_theory_medium"
+		texturefile = "gfx/interface/technologies/education_theory_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_education_theory_1_medium"
+		texturefile = "gfx/interface/technologies/education_theory_1_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_education_theory_2_medium"
+		texturefile = "gfx/interface/technologies/education_theory_2_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_education_theory_3_medium"
+		texturefile = "gfx/interface/technologies/education_theory_3_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_education_theory_4_medium"
+		texturefile = "gfx/interface/technologies/education_theory_4_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_education_theory_5_medium"
+		texturefile = "gfx/interface/technologies/education_theory_5_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_education_theory_6_medium"
+		texturefile = "gfx/interface/technologies/education_theory_6_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_education_theory_7_medium"
+		texturefile = "gfx/interface/technologies/education_theory_7_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_education_theory_8_medium"
+		texturefile = "gfx/interface/technologies/education_theory_8_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_food_theory_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_food_theory_1_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_food_theory_2_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_food_theory_3_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_food_theory_4_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_teaching_methods_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_teaching_methods_1_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_teaching_methods_2_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_teaching_methods_3_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_teaching_methods_4_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_teaching_methods_5_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_teaching_methods_6_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_teaching_methods_7_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_1_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_2_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_3_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_4_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_5_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_6_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_7_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_8_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_9_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_medic_methods_10_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_primitive_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_mechanical_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_bionics_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_logic_coprocessor_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_ar_scanner_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_bionic_eye_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_razor_nails_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_monocyte_breeder_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_kinetic_accelerator_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_shock_absorber_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_implant_tread_damper_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_rite_of_passage_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_rite_of_hunt_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_rite_of_plunder_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_rite_of_ancestry_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_rite_of_creation_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_rite_of_fertility_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_rite_of_war_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_rite_of_unity_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_rite_of_commitment_medium"
+		texturefile = "gfx/interface/technologies/basic_decryption.dds"
+	}
+
+	# new tab
+	spriteType = {
+		name = "GFX_technology_fallout_education_folder_small_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_education_folder_small_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_fallout_education_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_fallout_education_folder_small_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+}

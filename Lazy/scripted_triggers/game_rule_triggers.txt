@@ -1,0 +1,515 @@
+ATE_has_ai_behavior_eagle = {
+	is_ai = yes
+	OR = {
+		has_country_flag = ATE_ai_behavior_eagle
+		has_game_rule = {
+			rule = ATE_ai_behavior
+			option = EAGLE
+		}
+	}
+}
+
+ATE_has_ai_behavior_jaguar = {
+	is_ai = yes
+	OR = {
+		has_country_flag = ATE_ai_behavior_jaguar
+		has_game_rule = {
+			rule = ATE_ai_behavior
+			option = JAGUAR
+		}
+	}
+}
+
+ATE_has_ai_behavior_kinkaid = {
+	is_ai = yes
+	OR = {
+		has_country_flag = ATE_ai_behavior_kinkaid
+		has_game_rule = {
+			rule = ATE_ai_behavior
+			option = KINKAID
+		}
+	}
+}
+
+ATE_has_ai_behavior_speaker = {
+	is_ai = yes
+	OR = {
+		has_country_flag = ATE_ai_behavior_speaker
+		has_game_rule = {
+			rule = ATE_ai_behavior
+			option = SPEAKER
+		}
+	}
+}
+
+BRK_has_ai_behavior_historic = {
+	is_ai = yes
+	is_historical_focus_on = yes
+	has_game_rule = {
+		rule = BRK_ai_behavior
+		option = DEFAULT
+	}
+}
+
+BRK_has_ai_behavior_graven = {
+	is_ai = yes
+	OR = {
+		has_country_flag = BRK_ai_behavior_graven
+		has_game_rule = {
+			rule = BRK_ai_behavior
+			option = GRAVEN
+		}
+	}
+}
+
+BRK_has_ai_behavior_ragnar = {
+	is_ai = yes
+	OR = {
+		has_country_flag = BRK_ai_behavior_ragnar
+		has_game_rule = {
+			rule = BRK_ai_behavior
+			option = RAGNAR
+		}
+	}
+}
+
+CAF_has_ai_behavior_loyalty = {
+	is_ai = yes
+	OR = {
+		has_country_flag = CAF_ai_behavior_loyalty
+		has_game_rule = {
+			rule = CAF_ai_behavior
+			option = LOYALTY
+		}
+	}
+}
+
+CAF_has_ai_behavior_independence = {
+	is_ai = yes
+	OR = {
+		has_country_flag = CAF_ai_behavior_independence
+		has_game_rule = {
+			rule = CAF_ai_behavior
+			option = INDEPENDENCE
+		}
+	}
+}
+
+DES_has_ai_behavior_nevada_pact = {
+	is_ai = yes
+	OR = {
+		has_country_flag = DES_ai_behavior_nevada_pact
+		has_game_rule = {
+			rule = DES_ai_behavior
+			option = NEVADA_PACT
+		}
+	}
+}
+
+DES_has_ai_behavior_bos = {
+	is_ai = yes
+	OR = {
+		has_country_flag = DES_ai_behavior_bos
+		has_game_rule = {
+			rule = DES_ai_behavior
+			option = BOS
+		}
+	}
+}
+
+DES_has_ai_behavior_ncr = {
+	is_ai = yes
+	OR = {
+		has_country_flag = DES_ai_behavior_ncr
+		has_game_rule = {
+			rule = DES_ai_behavior
+			option = NCR
+		}
+	}
+}
+
+FFI_has_ai_behavior_el_santo = {
+	is_ai = yes
+	OR = {
+		has_country_flag = FFI_ai_behavior_el_santo
+		has_game_rule = {
+			rule = FFI_ai_behavior
+			option = EL_SANTO
+		}
+	}
+}
+
+FFI_has_ai_behavior_blue_demon = {
+	is_ai = yes
+	OR = {
+		has_country_flag = FFI_ai_behavior_blue_demon
+		has_game_rule = {
+			rule = FFI_ai_behavior
+			option = BLUE_DEMON
+		}
+	}
+}
+
+FFI_has_ai_behavior_mil_mascaras = {
+	is_ai = yes
+	OR = {
+		has_country_flag = FFI_ai_behavior_mil_mascaras
+		has_game_rule = {
+			rule = FFI_ai_behavior
+			option = MIL_MASCARAS
+		}
+	}
+}
+
+ITZ_has_ai_behavior_carlos = {
+	is_ai = yes
+	OR = {
+		has_country_flag = ITZ_ai_behavior_carlos
+		has_game_rule = {
+			rule = ITZ_ai_behavior
+			option = CARLOS
+		}
+	}
+}
+
+ITZ_has_ai_behavior_clara = {
+	is_ai = yes
+	OR = {
+		has_country_flag = ITZ_ai_behavior_clara
+		has_game_rule = {
+			rule = ITZ_ai_behavior
+			option = CLARA
+		}
+	}
+}
+
+ITZ_has_ai_behavior_kalomte = {
+	is_ai = yes
+	OR = {
+		has_country_flag = ITZ_ai_behavior_kalomte
+		has_game_rule = {
+			rule = ITZ_ai_behavior
+			option = KALOMTE
+		}
+	}
+}
+
+KHA_has_ai_behavior_papa = {
+	is_ai = yes
+	OR = {
+		has_country_flag = KHA_ai_behavior_papa
+		has_game_rule = {
+			rule = KHA_ai_behavior
+			option = PAPA
+		}
+	}
+}
+
+KHA_has_ai_behavior_regis = {
+	is_ai = yes
+	OR = {
+		has_country_flag = KHA_ai_behavior_regis
+		has_game_rule = {
+			rule = KHA_ai_behavior
+			option = REGIS
+		}
+	}
+}
+
+MOJ_has_ai_behavior_elijah = {
+	is_ai = yes
+	OR = {
+		has_country_flag = MOJ_ai_behavior_elijah
+		has_game_rule = {
+			rule = MOJ_ai_behavior
+			option = ELIJAH
+		}
+	}
+}
+
+MOJ_has_ai_behavior_hardin = {
+	is_ai = yes
+	OR = {
+		has_country_flag = MOJ_ai_behavior_hardin
+		has_game_rule = {
+			rule = MOJ_ai_behavior
+			option = HARDIN
+		}
+	}
+}
+
+MOJ_has_ai_behavior_mcnamara = {
+	is_ai = yes
+	OR = {
+		has_country_flag = MOJ_ai_behavior_mcnamara
+		has_game_rule = {
+			rule = MOJ_ai_behavior
+			option = MCNAMARA
+		}
+	}
+}
+
+NEW_has_ai_behavior_neutrality = {
+	is_ai = yes
+	OR = {
+		has_country_flag = NEW_ai_behavior_neutrality
+		has_game_rule = {
+			rule = NEW_ai_behavior
+			option = NEUTRALITY
+		}
+	}
+}
+
+NEW_has_ai_behavior_nevada_pact = {
+	is_ai = yes
+	OR = {
+		has_country_flag = NEW_ai_behavior_nevada_pact
+		has_game_rule = {
+			rule = NEW_ai_behavior
+			option = NEVADA_PACT
+		}
+	}
+}
+
+NEW_has_ai_behavior_ncr = {
+	is_ai = yes
+	OR = {
+		has_country_flag = NEW_ai_behavior_ncr
+		has_game_rule = {
+			rule = NEW_ai_behavior
+			option = NCR
+		}
+	}
+}
+
+NEW_has_ai_behavior_enclave = {
+	is_ai = yes
+	OR = {
+		has_country_flag = NEW_ai_behavior_enclave
+		has_game_rule = {
+			rule = NEW_ai_behavior
+			option = ENCLAVE
+		}
+	}
+}
+
+NEW_has_ai_behavior_thradd = {
+	is_ai = yes
+	OR = {
+		has_country_flag = NEW_ai_behavior_thradd
+		has_game_rule = {
+			rule = NEW_ai_behavior
+			option = THRADD
+		}
+	}
+}
+
+RRG_has_ai_behavior_guerra = {
+	is_ai = yes
+	OR = {
+		has_country_flag = RRG_ai_behavior_guerra
+		has_game_rule = {
+			rule = RRG_ai_behavior
+			option = GUERRA
+		}
+	}
+}
+
+RRG_has_ai_behavior_mora = {
+	is_ai = yes
+	OR = {
+		has_country_flag = RRG_ai_behavior_mora
+		has_game_rule = {
+			rule = RRG_ai_behavior
+			option = MORA
+		}
+	}
+}
+
+RRG_has_ai_behavior_rosado = {
+	is_ai = yes
+	OR = {
+		has_country_flag = RRG_ai_behavior_rosado
+		has_game_rule = {
+			rule = RRG_ai_behavior
+			option = ROSADO
+		}
+	}
+}
+
+TLA_has_ai_behavior_maximilian = {
+	is_ai = yes
+	OR = {
+		has_country_flag = TLA_ai_behavior_maximilian
+		has_game_rule = {
+			rule = TLA_ai_behavior
+			option = MAXIMILIAN
+		}
+	}
+}
+
+TLA_has_ai_behavior_moctezuma = {
+	is_ai = yes
+	OR = {
+		has_country_flag = TLA_ai_behavior_moctezuma
+		has_game_rule = {
+			rule = TLA_ai_behavior
+			option = MOCTEZUMA
+		}
+	}
+}
+
+TLA_has_ai_behavior_zapata = {
+	is_ai = yes
+	OR = {
+		has_country_flag = TLA_ai_behavior_zapata
+		has_game_rule = {
+			rule = TLA_ai_behavior
+			option = ZAPATA
+		}
+	}
+}
+
+TDT_has_ai_behavior_fox = {
+	is_ai = yes
+	OR = {
+		has_country_flag = TDT_ai_behavior_fox
+		has_game_rule = {
+			rule = TDT_ai_behavior
+			option = FOX
+		}
+	}
+}
+
+TDT_has_ai_behavior_servant = {
+	is_ai = yes
+	OR = {
+		has_country_flag = TDT_ai_behavior_servant
+		has_game_rule = {
+			rule = TDT_ai_behavior
+			option = SERVANT
+		}
+	}
+}
+
+VEG_has_ai_behavior_house = {
+	is_ai = yes
+	OR = {
+		has_country_flag = VEG_ai_behavior_house
+		has_game_rule = {
+			rule = VEG_ai_behavior
+			option = HOUSE
+		}
+	}
+}
+
+VEG_has_ai_behavior_joker = {
+	is_ai = yes
+	OR = {
+		has_country_flag = VEG_ai_behavior_joker
+		has_game_rule = {
+			rule = VEG_ai_behavior
+			option = JOKER
+		}
+	}
+}
+
+VEG_has_ai_behavior_king = {
+	is_ai = yes
+	OR = {
+		has_country_flag = VEG_ai_behavior_king
+		has_game_rule = {
+			rule = VEG_ai_behavior
+			option = KING
+		}
+	}
+}
+
+VEG_has_ai_behavior_ncr = {
+	is_ai = yes
+	OR = {
+		has_country_flag = VEG_ai_behavior_ncr
+		has_game_rule = {
+			rule = VEG_ai_behavior
+			option = NCR
+		}
+	}
+}
+
+TRL_has_ai_behavior_betty = {
+	is_ai = yes
+	OR = {
+		has_country_flag = TRL_ai_behavior_betty
+		has_game_rule = {
+			rule = TRL_ai_behavior
+			option = BETTY
+		}
+	}
+}
+
+TRL_has_ai_behavior_bonesnarl = {
+	is_ai = yes
+	OR = {
+		has_country_flag = TRL_ai_behavior_bonesnarl
+		has_game_rule = {
+			rule = TRL_ai_behavior
+			option = BONESNARL
+		}
+	}
+}
+
+TRL_has_ai_behavior_pittman = {
+	is_ai = yes
+	OR = {
+		has_country_flag = TRL_ai_behavior_pittman
+		has_game_rule = {
+			rule = TRL_ai_behavior
+			option = PITTMAN
+		}
+	}
+}
+
+VLT_has_ai_behavior_the_brain = {
+	is_ai = yes
+	OR = {
+		has_country_flag = VLT_ai_behavior_the_brain
+		has_game_rule = {
+			rule = VLT_ai_behavior
+			option = THE_BRAIN
+		}
+	}
+}
+
+VLT_has_ai_behavior_lynette = {
+	is_ai = yes
+	OR = {
+		has_country_flag = VLT_ai_behavior_lynette
+		has_game_rule = {
+			rule = VLT_ai_behavior
+			option = LYNETTE
+		}
+	}
+}
+
+VLT_has_ai_behavior_wallace = {
+	is_ai = yes
+	OR = {
+		has_country_flag = VLT_ai_behavior_wallace
+		has_game_rule = {
+			rule = VLT_ai_behavior
+			option = WALLACE
+		}
+	}
+}
+
+VLT_has_ai_behavior_festus = {
+	is_ai = yes
+	OR = {
+		has_country_flag = VLT_ai_behavior_festus
+		has_game_rule = {
+			rule = VLT_ai_behavior
+			option = FESTUS
+		}
+	}
+}
+# vim: set ft=pdx tw=79 :

@@ -1,0 +1,424 @@
+# Joins the pseudo-faction 'Unbroken Resistance Pact'. Member states will send
+# each other volunteers and material when declared on by the Broken Coast, but
+# will not otherwise protect each other.
+join_unbroken_resistance_pact = {
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] join_unbroken_resistance_pact entered"
+	}
+
+	add_ideas = unbroken_resistance_pact_member
+	every_country = {
+		limit = {
+			NOT = { tag = PREV }
+			is_unbroken_resistance_pact_member = yes
+		}
+
+		diplomatic_relation = {
+			country = PREV
+			relation = non_aggression_pact
+			active = yes
+		}
+
+		add_opinion_modifier = {
+			target = PREV
+			modifier = unbroken_resistance_pact_member
+		}
+
+		add_opinion_modifier = {
+			target = PREV
+			modifier = unbroken_resistance_pact_member_trade
+		}
+
+		reverse_add_opinion_modifier = {
+			target = PREV
+			modifier = unbroken_resistance_pact_member
+		}
+
+		reverse_add_opinion_modifier = {
+			target = PREV
+			modifier = unbroken_resistance_pact_member_trade
+		}
+
+		add_ai_strategy = {
+			type = pp_spend_priority
+			id = relation
+			value = -500
+		}
+		add_ai_strategy = {
+			type = befriend
+			id = PREV
+			value = 200
+		}
+		PREV = {
+			add_ai_strategy = {
+				type = befriend
+				id = PREV
+				value = 200
+			}
+		}
+	}
+
+	every_country = {
+		limit = { is_unbroken_resistance_pact_enemy = yes }
+		PREV = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = unbroken_resistance_pact_enemy_trade
+			}
+		}
+	}
+
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] join_unbroken_resistance_pact exited"
+	}
+}
+
+# The issue with simply removing all non-aggression pacts from member countries
+# is that it would incorrectly remove a non-aggression pact set between two
+# Unbroken Resistance Pact member countries if they signed it before the pact,
+# where leaving the Unbroken Resistance Pact should only remove the
+# non-aggression pacts that exist as a consequence of the pact.
+#
+# Thankfully this is a rare case.
+leave_unbroken_resistance_pact = {
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] leave_unbroken_resistance_pact entered"
+	}
+
+	if = {
+		limit = {
+			has_triggered_unbroken_resistance_pact = yes
+		}
+		untrigger_unbroken_resistance_pact = yes
+	}
+
+	if = {
+		limit = { has_idea = unbroken_resistance_pact_member }
+		remove_ideas = { unbroken_resistance_pact_member }
+	}
+	else_if = {
+		limit = { has_idea = unbroken_resistance_pact_obligated }
+		remove_ideas = { unbroken_resistance_pact_obligated }
+	}
+	else_if = {
+		limit = { has_idea = unbroken_resistance_pact_defender }
+		remove_ideas = { unbroken_resistance_pact_defender }
+	}
+	else_if = {
+		limit = { has_idea = unbroken_resistance_pact_supporter }
+		remove_ideas = { unbroken_resistance_pact_supporter }
+	}
+
+	every_country = {
+		limit = {
+			NOT = { tag = PREV }
+			is_unbroken_resistance_pact_member = yes
+		}
+
+		diplomatic_relation = {
+			country = PREV
+			relation = non_aggression_pact
+			active = no
+		}
+
+		PREV = {
+			diplomatic_relation = {
+				country = PREV
+				relation = non_aggression_pact
+				active = no
+			}
+		}
+
+		remove_opinion_modifier = {
+			target = PREV
+			modifier = unbroken_resistance_pact_member
+		}
+
+		remove_opinion_modifier = {
+			target = PREV
+			modifier = unbroken_resistance_pact_member_trade
+		}
+
+		PREV = {
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = unbroken_resistance_pact_member
+			}
+
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = unbroken_resistance_pact_member_trade
+			}
+		}
+
+		add_ai_strategy = {
+			type = pp_spend_priority
+			id = relation
+			value = 500
+		}
+
+		add_ai_strategy = {
+			type = befriend
+			id = PREV
+			value = -200
+		}
+		PREV = {
+			add_ai_strategy = {
+				type = befriend
+				id = PREV
+				value = -200
+			}
+		}
+	}
+
+	every_country = {
+		limit = { is_unbroken_resistance_pact_enemy = yes }
+		PREV = {
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = unbroken_resistance_pact_enemy_trade
+			}
+		}
+	}
+
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] leave_unbroken_resistance_pact exited"
+	}
+}
+
+# This is where a country actually calls for aid from other Unbroken Resistance
+# Pact countries. We could set these AI strategies all the time, but that would
+# mean we'd have the Unbroken Resistance Pact protecting each other from
+# threats outside of the Broken Coast - which is not the intent of the pact.
+#
+# This does mean that if the Broken Coast is in a war with a member country at
+# the same time that a non-Broken Coast country is at war with the member
+# country, the pact will support them against both - but there's not much we
+# can do about that, and it's a fairly uncommon case.
+#
+# We cannot do this in common/ai_strategy because it doesn't allow dynamic
+# relationships.
+trigger_unbroken_resistance_pact = {
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact entered"
+	}
+
+	if = {
+		limit = { has_idea = unbroken_resistance_pact_member }
+		if = {
+			limit = { has_global_flag = debug_logs }
+			log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact - swapping member for defender..."
+		}
+		swap_ideas = {
+			remove_idea = unbroken_resistance_pact_member
+			add_idea = unbroken_resistance_pact_defender
+		}
+		if = {
+			limit = { has_global_flag = debug_logs }
+			log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact - swapped member for defender"
+		}
+	}
+	else_if = {
+		limit = { has_idea = unbroken_resistance_pact_supporter }
+		if = {
+			limit = { has_global_flag = debug_logs }
+			log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact - swapping supporter for defender..."
+		}
+		swap_ideas = {
+			remove_idea = unbroken_resistance_pact_supporter
+			add_idea = unbroken_resistance_pact_defender
+		}
+		if = {
+			limit = { has_global_flag = debug_logs }
+			log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact - swapped supporter for defender"
+		}
+	}
+	else_if = {
+		limit = { has_idea = unbroken_resistance_pact_obligated }
+		if = {
+			limit = { has_global_flag = debug_logs }
+			log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact - swapping obligated for defender..."
+		}
+		swap_ideas = {
+			remove_idea = unbroken_resistance_pact_obligated
+			add_idea = unbroken_resistance_pact_defender
+		}
+		if = {
+			limit = { has_global_flag = debug_logs }
+			log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact - swapped obligated for defender"
+		}
+	}
+
+	every_country = {
+		limit = {
+			NOT = { tag = PREV }
+			is_unbroken_resistance_pact_member = yes
+		}
+
+		add_ai_strategy = {
+			type = send_volunteers_desire
+			id = PREV
+			value = 9999
+		}
+
+		if = {
+			limit = {
+				is_unbroken_resistance_pact_member = yes
+				NOT = { has_defensive_war = yes }
+			}
+
+			if = {
+				limit = { num_divisions > 5 }
+				activate_targeted_decision = {
+					target = PREV
+					decision = unbroken_resistance_pact_obligations
+				}
+			}
+
+			swap_ideas = {
+				remove_idea = unbroken_resistance_pact_member
+				add_idea = unbroken_resistance_pact_obligated
+			}
+		}
+
+		if = {
+			limit = { has_war_with = BRK }
+			give_military_access = PREV
+			PREV = { give_military_access = PREV }
+		}
+	}
+
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact exited"
+	}
+}
+
+# Called when wars between the Broken Coast and member states end.
+untrigger_unbroken_resistance_pact = {
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] untrigger_unbroken_resistance_pact entered"
+	}
+
+	every_country = {
+		limit = {
+			NOT = { tag = PREV }
+			is_unbroken_resistance_pact_member = yes
+		}
+
+		if = {
+			limit = { has_global_flag = debug_logs }
+			log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact - swapping supporter for member..."
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						is_unbroken_resistance_pact_member = yes
+						has_defensive_war_with = BRK
+					}
+				}
+			}
+			swap_ideas = {
+				remove_idea = unbroken_resistance_pact_supporter
+				add_idea = unbroken_resistance_pact_member
+			}
+		}
+
+		if = {
+			limit = { has_global_flag = debug_logs }
+			log = "[GetDateText]: [This.GetName] trigger_unbroken_resistance_pact - swapped supporter for member"
+		}
+
+		add_ai_strategy = {
+			type = send_volunteers_desire
+			id = PREV
+			value = -9999
+		}
+	}
+
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] untrigger_unbroken_resistance_pact exited"
+	}
+}
+
+cancel_unbroken_resistance_pact_obligations = {
+	# Remove their obligated status.
+	swap_ideas = {
+		remove_idea = unbroken_resistance_pact_obligated
+		add_idea = unbroken_resistance_pact_member
+	}
+
+	# All 'defender' countries - those in defensive wars against enemies of
+	# the pact - will cancel their missions asking for aid.
+	every_country = {
+		limit = {
+			NOT = { tag = PREV }
+			has_idea = unbroken_resistance_pact_defender
+		}
+		PREV = {
+			remove_targeted_decision = {
+				target = PREV
+				decision = unbroken_resistance_pact_obligations
+			}
+		}
+	}
+}
+
+break_unbroken_resistance_pact = {
+	leave_unbroken_resistance_pact = yes
+	every_country = {
+		if = {
+			limit = {
+				NOT = { tag = PREV }
+				is_unbroken_resistance_pact_member = yes
+			}
+			add_opinion_modifier = {
+				target = PREV
+				modifier = unbroken_resistance_pact_breaker
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { tag = PREV }
+				has_idea = unbroken_resistance_pact_breaker
+			}
+			PREV = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = unbroken_resistance_pact_breaker
+				}
+			}
+		}
+	}
+	add_ideas = unbroken_resistance_pact_breaker
+}
+
+# Kicks everybody out of the pool; called when the Broken Coast goes down for
+# good.
+dismantle_unbroken_resistance_pact = {
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] dismantle_unbroken_resistance_pact entered"
+	}
+
+	every_country = {
+		limit = {
+			is_unbroken_resistance_pact_member = yes
+		}
+		leave_unbroken_resistance_pact = yes
+	}
+
+	if = {
+		limit = { has_global_flag = debug_logs }
+		log = "[GetDateText]: [This.GetName] dismantle_unbroken_resistance_pact exited"
+	}
+}

@@ -1,0 +1,122 @@
+tampico_station_rebuilt = {
+	custom_trigger_tooltip = {
+    tooltip = tampico_station_rebuilt_tt
+    OR = {
+      has_variable = tampico_station_rebuilt
+      770 = { infrastructure > 9 }
+    }
+  }
+}
+
+extended_tracks_into_la_pesca = {
+	custom_trigger_tooltip = {
+    tooltip = extended_tracks_into_la_pesca_tt
+    OR = {
+      has_variable = extended_tracks_into_la_pesca
+      759 = { infrastructure > 9 }
+    }
+  }
+}
+
+extended_tracks_into_ciudad_valles = {
+	custom_trigger_tooltip = {
+    tooltip = extended_tracks_into_ciudad_valles_tt
+    OR = {
+      has_variable = extended_tracks_into_ciudad_valles
+      771 = { infrastructure > 9 }
+    }
+  }
+}
+
+extended_tracks_into_ciudad_victoria = {
+	custom_trigger_tooltip = {
+    tooltip = extended_tracks_into_ciudad_victoria_tt
+    OR = {
+      has_variable = extended_tracks_into_ciudad_victoria
+      764 = { infrastructure > 9 }
+    }
+  }
+}
+
+is_not_extending_tracks_south = {
+  custom_trigger_tooltip = {
+    tooltip = is_not_extending_tracks_south_tt
+    NOT = { has_variable = is_extending_tracks_south }
+  }
+}
+
+completed_southern_railway_reconstruction = {
+  custom_trigger_tooltip = {
+    tooltip = completed_southern_railway_reconstruction_tt
+    AND = {
+      tampico_station_rebuilt = yes
+      extended_tracks_into_la_pesca = yes
+      extended_tracks_into_ciudad_valles = yes
+      extended_tracks_into_ciudad_victoria = yes
+    }
+  }
+}
+
+reynosa_station_rebuilt = {
+	custom_trigger_tooltip = {
+    tooltip = reynosa_station_rebuilt_tt
+    OR = {
+      has_variable = reynosa_station_rebuilt
+      755 = { infrastructure > 9 }
+    }
+  }
+}
+
+extended_tracks_into_san_carlos = {
+	custom_trigger_tooltip = {
+    tooltip = extended_tracks_into_san_carlos_tt
+    OR = {
+      has_variable = extended_tracks_into_san_carlos
+      754 = { infrastructure > 9 }
+    }
+  }
+}
+
+extended_tracks_into_forlorn_slipway = {
+	custom_trigger_tooltip = {
+    tooltip = extended_tracks_into_forlorn_slipway_tt
+    OR = {
+      has_variable = extended_tracks_into_forlorn_slipway
+      758 = { infrastructure > 9 }
+    }
+  }
+}
+
+is_not_extending_tracks_north = {
+  custom_trigger_tooltip = {
+    tooltip = is_not_extending_tracks_north_tt
+    NOT = { has_variable = is_extending_tracks_north }
+  }
+}
+
+completed_northern_railway_reconstruction = {
+  custom_trigger_tooltip = {
+    tooltip = completed_northern_railway_reconstruction_tt
+    AND = {
+      reynosa_station_rebuilt = yes
+      extended_tracks_into_san_carlos = yes
+      extended_tracks_into_forlorn_slipway = yes
+    }
+  }
+}
+
+chose_mechanical_superiority = {
+  custom_trigger_tooltip = {
+    tooltip = chose_mechanical_superiority_tt
+    has_variable = equation_of_war
+    check_variable = { equation_of_war = 0 }
+  }
+}
+
+chose_human_flexibility = {
+  custom_trigger_tooltip = {
+    tooltip = chose_human_flexibility_tt
+    has_variable = equation_of_war
+    check_variable = { equation_of_war = 1 }
+  }
+}

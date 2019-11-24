@@ -1,0 +1,7 @@
+reno_kill_ministers = {
+	custom_trigger_tooltip = {
+		tooltip = killed_off
+		NOT = { has_cosmetic_tag = ENC_cosmetic_tag }
+		NOT = { has_cosmetic_tag = THR_cosmetic_tag }
+	}
+}

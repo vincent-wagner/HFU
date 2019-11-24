@@ -1,0 +1,2880 @@
+guiTypes = {
+	containerWindowType = {
+		name = "senate_RRG_screen_button_container"
+		position = { x = 0 y = 0 }
+		size = { width = 50 height = 50 }
+
+		buttonType = {
+			name = "senate_RRG_button"
+			spriteType = "GFX_senate_RRG_button"
+			position = { x = 370 y = 12 }
+			pdx_tooltip = "SENATE_RRG_MENU"
+		}
+	}
+
+	containerWindowType = {
+		name = "senate_RRG_screen_button_decision_container"
+		position = { x = 0 y = 0 }
+		size = { width = 100%% height = 50 }
+
+		buttonType = {
+			name = "senate_RRG_button"
+			spriteType = "GFX_tiled_decisions_bg_small"
+			position = { x = 130 y = 5 }
+			size = { x = 250 y = 40 }
+			buttonFont = "hoi_18mbs"
+			buttonText = "GO_TO_SENATE_RRG_BUTTON"
+			pdx_tooltip = "SENATE_RRG_MENU"
+			pdx_tooltip_delayed = "SENATE_RRG_MENU_DECISION_TT"
+		}
+	}
+
+	containerWindowType = {
+		name = "senate_RRG_container"
+		position = { x = -600 y = -350 }
+		size = { width = 1208 height = 708 }
+		orientation = center
+
+		fade_type = linear
+		fade_time = 300
+		moveable = yes
+
+		show_sound = menu_open_window
+		hide_sound = menu_close_window
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_senate_RRG_bg"
+		}
+
+		containerWindowType = {
+			name = "state_list"
+			size = { width = 685 height = 635 }
+			position = { x = 31 y = 31 }
+
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			gridboxtype = {
+				name = "senate_RRG_states_gridbox"
+				position = { x = 10 y = 5 }
+				size = { width = 100% height = 100% }
+				slotsize = { width = 168 height = 158 }
+				add_horizontal = yes
+				max_slots_horizontal = 4
+				format = "UPPER_LEFT"
+			}
+		}
+
+		buttonType = {
+			name = "close_button"
+			spriteType = "GFX_closebutton"
+			position = { x = 5 y = 7 }
+			scale = 0.75
+			pdx_tooltip = "DIPLOMACY_CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		iconType = {
+			name = "senate_RRG_bg_overlay"
+			quadTextureSprite = "GFX_senate_RRG_bg_overlay"
+			position = { x = 4 y = 4 }
+		}
+	}
+
+	containerWindowType = {
+		name = "senate_RRG_states_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 160 height = 150 }
+
+		buttonType = {
+			name = "entry_background"
+			spriteType = "GFX_senate_RRG_state_bg_green"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "SENATE_RRG_SENATORS_AND_DEPUTIRES_COLORS_TT"
+			pdx_tooltip_delayed = "SENATE_RRG_CLICK_TO_GO_TO_STATE"
+		}
+		buttonType = {
+			name = "entry_background_exiled"
+			spriteType = "GFX_senate_RRG_state_bg_red"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "SENATE_RRG_SENATORS_AND_DEPUTIRES_COLORS_TT"
+			pdx_tooltip_delayed = "SENATE_RRG_SENATORS_AND_DEPUTIRES_ARE_EXILED"
+		}
+
+		instantTextBoxType = {
+			name = "entry_name"
+			position = { x = 5 y = 0 }
+			font = "pipboy_16"
+			text = "[This.GetName]"
+			format = center
+			maxWidth = 150
+			multiline = no
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "state_senator_entries"
+			position = { x = 0 y = 12 }
+			size = { width = 160 height = 60 }
+
+			instantTextBoxType = {
+				name = "entry_senators_title"
+				position = { x = 5 y = 0 }
+				font = "pipboy_16"
+				text = "SENATE_RRG_SENATORS"
+				format = left
+				maxWidth = 150
+				multiline = no
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_senator_1_vote"
+				position = { x = 15 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_senator_2_vote"
+				position = { x = 50 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_senator_3_vote"
+				position = { x = 85 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_senator_4_vote"
+				position = { x = 120 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "state_deputy_entries"
+			position = { x = 0 y = 52 }
+			size = { width = 160 height = 90 }
+
+			instantTextBoxType = {
+				name = "entry_deputies_title"
+				position = { x = 5 y = 0 }
+				font = "pipboy_16"
+				text = "SENATE_RRG_DEPUTIES"
+				format = left
+				maxWidth = 150
+				multiline = no
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_1_vote"
+				position = { x = 7 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_2_vote"
+				position = { x = 32 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_3_vote"
+				position = { x = 57 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_4_vote"
+				position = { x = 82 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_5_vote"
+				position = { x = 107 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_6_vote"
+				position = { x = 132 y = 20 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_7_vote"
+				position = { x = 7 y = 45 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_8_vote"
+				position = { x = 32 y = 45 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_9_vote"
+				position = { x = 57 y = 45 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_10_vote"
+				position = { x = 82 y = 45 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_11_vote"
+				position = { x = 107 y = 45 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_12_vote"
+				position = { x = 132 y = 45 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_13_vote"
+				position = { x = 32 y = 70 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_14_vote"
+				position = { x = 57 y = 70 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_15_vote"
+				position = { x = 82 y = 70 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "state_deputy_16_vote"
+				position = { x = 107 y = 70 }
+				spriteType = "GFX_senate_RRG_no_candidate_color"
+				alwaystransparent = yes
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "candidates_info_pre_election_window"
+		size = { width = 462 height = 700 }
+		position = { x = 742 y = 4 }
+
+		background = {
+			name = "background"
+			spriteType = "GFX_senate_RRG_bg_pre_election"
+		}
+
+		containerWindowType = {
+			name = "candidate_1_info"
+			size = { width = 146 height = 700 }
+			position = { x = -9 y = 0 }
+
+			containerWindowType = {
+				name = "candidate_1_senator_votes_bar"
+				size = { width = 35 height = 390 }
+				position = { x = 47 y = 35 }
+
+				background = {
+					name = "background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+				}
+
+				iconType = {
+					name = "candidate_1_senator_votes_bar"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_senate_RRG_progressbar"
+					pdx_tooltip = "SENATE_RRG_CANDIDATE_1_SENATOR_VOTES_TT"
+				}
+			}
+
+			instantTextBoxType = {
+				name = "candidate_1_senator_votes_bar_title"
+				position = { x = 25 y = 430 }
+				font = "pipboy_32"
+				text = "S"
+				format = center
+				maxWidth = 80
+				multiline = no
+				pdx_tooltip = "SENATE_RRG_CANDIDATE_1_SENATOR_VOTES_TT"
+			}
+			instantTextBoxType = {
+				name = "candidate_1_senator_votes_bar_text"
+				position = { x = 25 y = 450 }
+				font = "pipboy_16"
+				text = "[?candidate_1_senator_votes_percentage|0%]"
+				format = center
+				maxWidth = 80
+				multiline = no
+			}
+
+			containerWindowType = {
+				name = "candidate_1_deputy_votes_bar"
+				size = { width = 35 height = 390 }
+				position = { x = 97 y = 35 }
+
+				background = {
+					name = "background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+				}
+
+				iconType = {
+					name = "candidate_1_deputy_votes_bar"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_senate_RRG_progressbar"
+					pdx_tooltip = "SENATE_RRG_CANDIDATE_1_DEPUTY_VOTES_TT"
+				}
+			}
+
+			instantTextBoxType = {
+				name = "candidate_1_deputy_votes_bar_title"
+				position = { x = 75 y = 430 }
+				font = "pipboy_32"
+				text = "D"
+				format = center
+				maxWidth = 80
+				multiline = no
+				pdx_tooltip = "SENATE_RRG_CANDIDATE_1_DEPUTY_VOTES_TT"
+			}
+			instantTextBoxType = {
+				name = "candidate_1_deputy_votes_bar_text"
+				position = { x = 75 y = 450 }
+				font = "pipboy_16"
+				text = "[?candidate_1_deputy_votes_percentage|0%]"
+				format = center
+				maxWidth = 80
+				multiline = no
+			}
+
+			iconType = {
+				name = "candidate_1_portrait"
+				position = { x = 39 y = 514 }
+				spriteType = "GFX_Leonardo_Mora_Portrait"
+				scale = 0.65
+				pdx_tooltip = "LEONARDO_MORA"
+				pdx_tooltip_delayed = "LEONARDO_MORA_DESC"
+			}
+			instantTextBoxType = {
+				name = "candidate_1_name"
+				position = { x = 41 y = 655 }
+				font = "pipboy_32"
+				text = "LEONARDO_MORA_COLORED"
+				format = center
+				maxWidth = 100
+				multiline = no
+				pdx_tooltip = "LEONARDO_MORA"
+				pdx_tooltip_delayed = "LEONARDO_MORA_DESC"
+			}
+		}
+
+		containerWindowType = {
+			name = "candidate_2_info"
+			size = { width = 146 height = 700 }
+			position = { x = 137 y = 0 }
+
+			containerWindowType = {
+				name = "candidate_2_senator_votes_bar"
+				size = { width = 35 height = 390 }
+				position = { x = 47 y = 35 }
+
+				background = {
+					name = "background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+				}
+
+				iconType = {
+					name = "candidate_2_senator_votes_bar"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_senate_RRG_progressbar"
+					pdx_tooltip = "SENATE_RRG_CANDIDATE_2_SENATOR_VOTES_TT"
+				}
+			}
+
+			instantTextBoxType = {
+				name = "candidate_2_senator_votes_bar_title"
+				position = { x = 25 y = 430 }
+				font = "pipboy_32"
+				text = "S"
+				format = center
+				maxWidth = 80
+				multiline = no
+				pdx_tooltip = "SENATE_RRG_CANDIDATE_2_SENATOR_VOTES_TT"
+			}
+			instantTextBoxType = {
+				name = "candidate_2_senator_votes_bar_text"
+				position = { x = 25 y = 450 }
+				font = "pipboy_16"
+				text = "[?candidate_2_senator_votes_percentage|0%]"
+				format = center
+				maxWidth = 80
+				multiline = no
+			}
+
+			containerWindowType = {
+				name = "candidate_2_deputy_votes_bar"
+				size = { width = 35 height = 390 }
+				position = { x = 97 y = 35 }
+
+				background = {
+					name = "background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+				}
+
+				iconType = {
+					name = "candidate_2_deputy_votes_bar"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_senate_RRG_progressbar"
+					pdx_tooltip = "SENATE_RRG_CANDIDATE_2_DEPUTY_VOTES_TT"
+				}
+			}
+
+			instantTextBoxType = {
+				name = "candidate_2_deputy_votes_bar_title"
+				position = { x = 75 y = 430 }
+				font = "pipboy_32"
+				text = "D"
+				format = center
+				maxWidth = 80
+				multiline = no
+				pdx_tooltip = "SENATE_RRG_CANDIDATE_2_DEPUTY_VOTES_TT"
+			}
+			instantTextBoxType = {
+				name = "candidate_2_deputy_votes_bar_text"
+				position = { x = 75 y = 450 }
+				font = "pipboy_16"
+				text = "[?candidate_2_deputy_votes_percentage|0%]"
+				format = center
+				maxWidth = 80
+				multiline = no
+			}
+
+			iconType = {
+				name = "candidate_2_portrait"
+				position = { x = 39 y = 514 }
+				spriteType = "GFX_Dante_Guerra_Portrait"
+				scale = 0.65
+				pdx_tooltip = "DANTE_GUERRA"
+				pdx_tooltip_delayed = "DANTE_GUERRA_DESC"
+			}
+			instantTextBoxType = {
+				name = "candidate_2_name"
+				position = { x = 41 y = 655 }
+				font = "pipboy_32"
+				text = "DANTE_GUERRA_COLORED"
+				format = center
+				maxWidth = 100
+				multiline = no
+				pdx_tooltip = "DANTE_GUERRA"
+				pdx_tooltip_delayed = "DANTE_GUERRA_DESC"
+			}
+		}
+
+		containerWindowType = {
+			name = "candidate_3_info"
+			size = { width = 146 height = 700 }
+			position = { x = 282 y = 0 }
+
+			containerWindowType = {
+				name = "candidate_3_senator_votes_bar"
+				size = { width = 35 height = 390 }
+				position = { x = 47 y = 35 }
+
+				background = {
+					name = "background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+				}
+
+				iconType = {
+					name = "candidate_3_senator_votes_bar"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_senate_RRG_progressbar"
+					pdx_tooltip = "SENATE_RRG_CANDIDATE_3_SENATOR_VOTES_TT"
+				}
+			}
+
+			instantTextBoxType = {
+				name = "candidate_3_senator_votes_bar_title"
+				position = { x = 25 y = 430 }
+				font = "pipboy_32"
+				text = "S"
+				format = center
+				maxWidth = 80
+				multiline = no
+				pdx_tooltip = "SENATE_RRG_CANDIDATE_3_SENATOR_VOTES_TT"
+			}
+			instantTextBoxType = {
+				name = "candidate_3_senator_votes_bar_text"
+				position = { x = 25 y = 450 }
+				font = "pipboy_16"
+				text = "[?candidate_3_senator_votes_percentage|0%]"
+				format = center
+				maxWidth = 80
+				multiline = no
+			}
+
+			containerWindowType = {
+				name = "candidate_3_deputy_votes_bar"
+				size = { width = 35 height = 390 }
+				position = { x = 97 y = 35 }
+
+				background = {
+					name = "background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+				}
+
+				iconType = {
+					name = "candidate_3_deputy_votes_bar"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_senate_RRG_progressbar"
+					pdx_tooltip = "SENATE_RRG_CANDIDATE_3_DEPUTY_VOTES_TT"
+				}
+			}
+
+			instantTextBoxType = {
+				name = "candidate_3_deputy_votes_bar_title"
+				position = { x = 75 y = 430 }
+				font = "pipboy_32"
+				text = "D"
+				format = center
+				maxWidth = 80
+				multiline = no
+				pdx_tooltip = "SENATE_RRG_CANDIDATE_3_DEPUTY_VOTES_TT"
+			}
+			instantTextBoxType = {
+				name = "candidate_3_deputy_votes_bar_text"
+				position = { x = 75 y = 450 }
+				font = "pipboy_16"
+				text = "[?candidate_3_deputy_votes_percentage|0%]"
+				format = center
+				maxWidth = 80
+				multiline = no
+			}
+
+			iconType = {
+				name = "candidate_3_portrait"
+				position = { x = 39 y = 514 }
+				spriteType = "GFX_Valentina_Rosado_Portrait"
+				scale = 0.65
+				pdx_tooltip = "VALENTINA_ROSADO"
+				pdx_tooltip_delayed = "VALENTINA_ROSADO_DESC"
+			}
+			instantTextBoxType = {
+				name = "candidate_3_name"
+				position = { x = 41 y = 655 }
+				font = "pipboy_32"
+				text = "VALENTINA_ROSADO_COLORED"
+				format = center
+				maxWidth = 100
+				multiline = no
+				pdx_tooltip = "VALENTINA_ROSADO"
+				pdx_tooltip_delayed = "VALENTINA_ROSADO_DESC"
+			}
+		}
+
+		iconType = {
+			name = "senate_RRG_bg_pre_election_overlay"
+			spriteType = "GFX_senate_RRG_bg_pre_election_overlay"
+		}
+	}
+
+	containerWindowType = {
+		name = "candidates_info_post_election_window"
+		size = { width = 462 height = 700 }
+		position = { x = 742 y = 4 }
+
+		background = {
+			name = "background"
+			spriteType = "GFX_senate_RRG_bg_post_election"
+		}
+
+		containerWindowType = {
+			name = "senate_seats_window"
+			size = { width = 395 height = 195 }
+			position = { x = 33 y = 10 }
+
+			# iconType = {
+			# 	name = "senate_seats_senate_guide"
+			# 	spriteType = "GFX_senate_senate_guide"
+			# 	position = { x = 5 y = 27 }
+			# 	pdx_tooltip = "SENATE_RRG_SEATS_TT"
+			# }
+
+			iconType = {
+				name = "senate_seat_1"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 12 y = 186 }
+			}
+			iconType = {
+				name = "senate_seat_2"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 34 y = 186 }
+			}
+			iconType = {
+				name = "senate_seat_3"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 56 y = 186 }
+			}
+			iconType = {
+				name = "senate_seat_4"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 77 y = 186 }
+			}
+			iconType = {
+				name = "senate_seat_5"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 99 y = 186 }
+			}
+			iconType = {
+				name = "senate_seat_6"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 17 y = 155 }
+			}
+			iconType = {
+				name = "senate_seat_7"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 40 y = 156 }
+			}
+			iconType = {
+				name = "senate_seat_8"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 62 y = 156 }
+			}
+			iconType = {
+				name = "senate_seat_9"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 85 y = 157 }
+			}
+			iconType = {
+				name = "senate_seat_10"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 110 y = 153 }
+			}
+			iconType = {
+				name = "senate_seat_11"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 28 y = 126 }
+			}
+			iconType = {
+				name = "senate_seat_12"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 52 y = 127 }
+			}
+			iconType = {
+				name = "senate_seat_13"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 76 y = 128 }
+			}
+			iconType = {
+				name = "senate_seat_14"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 45 y = 100 }
+			}
+			iconType = {
+				name = "senate_seat_15"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 71 y = 102 }
+			}
+			iconType = {
+				name = "senate_seat_16"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 67 y = 77 }
+			}
+			iconType = {
+				name = "senate_seat_17"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 101 y = 130 }
+			}
+			iconType = {
+				name = "senate_seat_18"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 97 y = 105 }
+			}
+			iconType = {
+				name = "senate_seat_19"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 95 y = 81 }
+			}
+			iconType = {
+				name = "senate_seat_20"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 94 y = 59 }
+			}
+			iconType = {
+				name = "senate_seat_21"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 125 y = 44 }
+			}
+			iconType = {
+				name = "senate_seat_22"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 125 y = 65 }
+			}
+			iconType = {
+				name = "senate_seat_23"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 125 y = 86 }
+			}
+			iconType = {
+				name = "senate_seat_24"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 125 y = 109 }
+			}
+			iconType = {
+				name = "senate_seat_25"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 135 y = 127 }
+			}
+			iconType = {
+				name = "senate_seat_26"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 156 y = 36 }
+			}
+			iconType = {
+				name = "senate_seat_27"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 156 y = 56 }
+			}
+			iconType = {
+				name = "senate_seat_28"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 156 y = 76 }
+			}
+			iconType = {
+				name = "senate_seat_29"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 156 y = 96 }
+			}
+			iconType = {
+				name = "senate_seat_30"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 170 y = 112 }
+			}
+			iconType = {
+				name = "senate_seat_31"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 189 y = 32 }
+			}
+			iconType = {
+				name = "senate_seat_32"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 189 y = 52 }
+			}
+			iconType = {
+				name = "senate_seat_33"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 189 y = 72 }
+			}
+			iconType = {
+				name = "senate_seat_34"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 189 y = 92 }
+			}
+			iconType = {
+				name = "senate_seat_35"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 209 y = 113 }
+			}
+			iconType = {
+				name = "senate_seat_36"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 223 y = 96 }
+			}
+			iconType = {
+				name = "senate_seat_37"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 223 y = 76 }
+			}
+			iconType = {
+				name = "senate_seat_38"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 223 y = 56 }
+			}
+			iconType = {
+				name = "senate_seat_39"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 223 y = 36 }
+			}
+			iconType = {
+				name = "senate_seat_40"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 243 y = 127 }
+			}
+			iconType = {
+				name = "senate_seat_41"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 253 y = 110 }
+			}
+			iconType = {
+				name = "senate_seat_42"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 254 y = 88 }
+			}
+			iconType = {
+				name = "senate_seat_43"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 254 y = 66 }
+			}
+			iconType = {
+				name = "senate_seat_44"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 254 y = 44 }
+			}
+			iconType = {
+				name = "senate_seat_45"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 285 y = 58 }
+			}
+			iconType = {
+				name = "senate_seat_46"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 283 y = 81 }
+			}
+			iconType = {
+				name = "senate_seat_47"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 312 y = 77 }
+			}
+			iconType = {
+				name = "senate_seat_48"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 281 y = 105 }
+			}
+			iconType = {
+				name = "senate_seat_49"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 308 y = 103 }
+			}
+			iconType = {
+				name = "senate_seat_50"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 333 y = 100 }
+			}
+			iconType = {
+				name = "senate_seat_51"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 277 y = 130 }
+			}
+			iconType = {
+				name = "senate_seat_52"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 302 y = 127 }
+			}
+			iconType = {
+				name = "senate_seat_53"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 326 y = 127 }
+			}
+			iconType = {
+				name = "senate_seat_54"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 350 y = 126 }
+			}
+			iconType = {
+				name = "senate_seat_55"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 269 y = 153 }
+			}
+			iconType = {
+				name = "senate_seat_56"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 294 y = 156 }
+			}
+			iconType = {
+				name = "senate_seat_57"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 317 y = 156 }
+			}
+			iconType = {
+				name = "senate_seat_58"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 339 y = 156 }
+			}
+			iconType = {
+				name = "senate_seat_59"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 361 y = 156 }
+			}
+			iconType = {
+				name = "senate_seat_60"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 366 y = 186 }
+			}
+			iconType = {
+				name = "senate_seat_61"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 344 y = 186 }
+			}
+			iconType = {
+				name = "senate_seat_62"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 323 y = 186 }
+			}
+			iconType = {
+				name = "senate_seat_63"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 301 y = 186 }
+			}
+			iconType = {
+				name = "senate_seat_64"
+				spriteType = "GFX_senate_senate_RRG_seat"
+				frame = 4
+				position = { x = 280 y = 186 }
+			}
+			iconType = {
+				name = "senate_seats_overlay"
+				spriteType = "GFX_senate_RRG_seats_transparent_overlay"
+				position = { x = 5 y = 27 }
+				pdx_tooltip = "SENATE_RRG_SEATS_TT"
+			}
+		}
+
+		instantTextBoxType = {
+			name = "senate_support_text"
+			position = { x = 131 y = 180 }
+			font = "pipboy_32"
+			text = "SENATE_RRG_SUPPORT_TEXT"
+			format = center
+			maxWidth = 200
+			multiline = no
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "house_seats_window"
+			size = { width = 395 height = 195 }
+			position = { x = 33 y = 275 }
+
+			# iconType = {
+			# 	name = "senate_seats_overlay_house_guide"
+			# 	spriteType = "GFX_senate_house_guide"
+			# 	position = { x = 5 y = 10 }
+			# 	pdx_tooltip = "SENATE_RRG_SEATS_TT"
+			# }
+
+			iconType = {
+				name = "house_seat_1"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 11 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_2"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 23 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_3"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 35 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_4"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 47 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_5"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 59 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_6"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 71 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_7"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 83 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_8"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 95 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_9"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 107 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_10"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 12 y = 163 }
+			}
+			iconType = {
+				name = "house_seat_11"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 24 y = 163 }
+			}
+			iconType = {
+				name = "house_seat_12"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 36 y = 163 }
+			}
+			iconType = {
+				name = "house_seat_13"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 48 y = 163 }
+			}
+			iconType = {
+				name = "house_seat_14"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 60 y = 163 }
+			}
+			iconType = {
+				name = "house_seat_15"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 73 y = 163 }
+			}
+			iconType = {
+				name = "house_seat_16"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 85 y = 163 }
+			}
+			iconType = {
+				name = "house_seat_17"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 97 y = 163 }
+			}
+			iconType = {
+				name = "house_seat_18"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 109 y = 163 }
+			}
+			iconType = {
+				name = "house_seat_19"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 14 y = 150 }
+			}
+			iconType = {
+				name = "house_seat_20"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 27 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_21"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 39 y = 150 }
+			}
+			iconType = {
+				name = "house_seat_22"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 51 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_23"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 63 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_24"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 75 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_25"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 88 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_26"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 100 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_27"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 113 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_28"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 18 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_29"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 31 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_30"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 43 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_31"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 55 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_32"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 68 y = 135 }
+			}
+			iconType = {
+				name = "house_seat_33"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 81 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_34"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 94 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_35"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 107 y = 137 }
+			}
+			iconType = {
+				name = "house_seat_36"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 121 y = 137 }
+			}
+			iconType = {
+				name = "house_seat_37"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 22 y = 123 }
+			}
+			iconType = {
+				name = "house_seat_38"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 35 y = 123 }
+			}
+			iconType = {
+				name = "house_seat_39"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 48 y = 124 }
+			}
+			iconType = {
+				name = "house_seat_40"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 61 y = 123 }
+			}
+			iconType = {
+				name = "house_seat_41"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 74 y = 123 }
+			}
+			iconType = {
+				name = "house_seat_42"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 87 y = 124 }
+			}
+			iconType = {
+				name = "house_seat_43"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 102 y = 124 }
+			}
+			iconType = {
+				name = "house_seat_44"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 115 y = 125 }
+			}
+			iconType = {
+				name = "house_seat_45"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 28 y = 111 }
+			}
+			iconType = {
+				name = "house_seat_46"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 41 y = 111 }
+			}
+			iconType = {
+				name = "house_seat_47"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 54 y = 111 }
+			}
+			iconType = {
+				name = "house_seat_48"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 68 y = 111 }
+			}
+			iconType = {
+				name = "house_seat_49"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 82 y = 111 }
+			}
+			iconType = {
+				name = "house_seat_50"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 96 y = 113 }
+			}
+			iconType = {
+				name = "house_seat_51"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 111 y = 113 }
+			}
+			iconType = {
+				name = "house_seat_52"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 35 y = 99 }
+			}
+			iconType = {
+				name = "house_seat_53"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 49 y = 99 }
+			}
+			iconType = {
+				name = "house_seat_54"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 62 y = 100 }
+			}
+			iconType = {
+				name = "house_seat_55"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 77 y = 100 }
+			}
+			iconType = {
+				name = "house_seat_56"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 92 y = 101 }
+			}
+			iconType = {
+				name = "house_seat_57"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 105 y = 102 }
+			}
+			iconType = {
+				name = "house_seat_58"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 43 y = 88 }
+			}
+			iconType = {
+				name = "house_seat_59"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 57 y = 88 }
+			}
+			iconType = {
+				name = "house_seat_60"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 70 y = 89 }
+			}
+			iconType = {
+				name = "house_seat_61"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 86 y = 90 }
+			}
+			iconType = {
+				name = "house_seat_62"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 102 y = 90 }
+			}
+			iconType = {
+				name = "house_seat_63"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 51 y = 77 }
+			}
+			iconType = {
+				name = "house_seat_64"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 67 y = 77 }
+			}
+			iconType = {
+				name = "house_seat_65"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 80 y = 80 }
+			}
+			iconType = {
+				name = "house_seat_66"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 97 y = 80 }
+			}
+			iconType = {
+				name = "house_seat_67"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 61 y = 66 }
+			}
+			iconType = {
+				name = "house_seat_68"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 77 y = 68 }
+			}
+			iconType = {
+				name = "house_seat_69"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 91 y = 70 }
+			}
+			iconType = {
+				name = "house_seat_70"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 71 y = 57 }
+			}
+			iconType = {
+				name = "house_seat_71"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 88 y = 59 }
+			}
+			iconType = {
+				name = "house_seat_72"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 83 y = 49 }
+			}
+			iconType = {
+				name = "house_seat_73"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 95 y = 41 }
+			}
+			iconType = {
+				name = "house_seat_74"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 101 y = 51 }
+			}
+			iconType = {
+				name = "house_seat_75"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 103 y = 63 }
+			}
+			iconType = {
+				name = "house_seat_76"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 109 y = 72 }
+			}
+			iconType = {
+				name = "house_seat_77"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 114 y = 82 }
+			}
+			iconType = {
+				name = "house_seat_78"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 117 y = 93 }
+			}
+			iconType = {
+				name = "house_seat_79"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 122 y = 104 }
+			}
+			iconType = {
+				name = "house_seat_80"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 125 y = 116 }
+			}
+			iconType = {
+				name = "house_seat_81"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 131 y = 126 }
+			}
+			iconType = {
+				name = "house_seat_82"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 108 y = 34 }
+			}
+			iconType = {
+				name = "house_seat_83"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 114 y = 44 }
+			}
+			iconType = {
+				name = "house_seat_84"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 115 y = 55 }
+			}
+			iconType = {
+				name = "house_seat_85"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 121 y = 65 }
+			}
+			iconType = {
+				name = "house_seat_86"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 127 y = 74 }
+			}
+			iconType = {
+				name = "house_seat_87"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 129 y = 85 }
+			}
+			iconType = {
+				name = "house_seat_88"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 135 y = 95 }
+			}
+			iconType = {
+				name = "house_seat_89"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 137 y = 107 }
+			}
+			iconType = {
+				name = "house_seat_90"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 142 y = 117 }
+			}
+			iconType = {
+				name = "house_seat_91"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 121 y = 28 }
+			}
+			iconType = {
+				name = "house_seat_92"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 127 y = 38 }
+			}
+			iconType = {
+				name = "house_seat_93"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 129 y = 49 }
+			}
+			iconType = {
+				name = "house_seat_94"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 135 y = 59 }
+			}
+			iconType = {
+				name = "house_seat_95"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 141 y = 68 }
+			}
+			iconType = {
+				name = "house_seat_96"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 142 y = 79 }
+			}
+			iconType = {
+				name = "house_seat_97"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 148 y = 89 }
+			}
+			iconType = {
+				name = "house_seat_98"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 150 y = 100 }
+			}
+			iconType = {
+				name = "house_seat_99"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 156 y = 110 }
+			}
+			iconType = {
+				name = "house_seat_100"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 135 y = 24 }
+			}
+			iconType = {
+				name = "house_seat_101"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 141 y = 33 }
+			}
+			iconType = {
+				name = "house_seat_102"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 142 y = 45 }
+			}
+			iconType = {
+				name = "house_seat_103"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 149 y = 54 }
+			}
+			iconType = {
+				name = "house_seat_104"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 155 y = 63 }
+			}
+			iconType = {
+				name = "house_seat_105"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 156 y = 75 }
+			}
+			iconType = {
+				name = "house_seat_106"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 163 y = 84 }
+			}
+			iconType = {
+				name = "house_seat_107"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 163 y = 95 }
+			}
+			iconType = {
+				name = "house_seat_108"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 170 y = 105 }
+			}
+			iconType = {
+				name = "house_seat_109"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 149 y = 20 }
+			}
+			iconType = {
+				name = "house_seat_110"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 156 y = 30 }
+			}
+			iconType = {
+				name = "house_seat_111"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 156 y = 41 }
+			}
+			iconType = {
+				name = "house_seat_112"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 163 y = 51 }
+			}
+			iconType = {
+				name = "house_seat_113"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 163 y = 18 }
+			}
+			iconType = {
+				name = "house_seat_114"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 171 y = 27 }
+			}
+			iconType = {
+				name = "house_seat_115"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 171 y = 38 }
+			}
+			iconType = {
+				name = "house_seat_116"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 170 y = 61 }
+			}
+			iconType = {
+				name = "house_seat_117"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 171 y = 72 }
+			}
+			iconType = {
+				name = "house_seat_118"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 178 y = 16 }
+			}
+			iconType = {
+				name = "house_seat_119"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 178 y = 49 }
+			}
+			iconType = {
+				name = "house_seat_120"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 178 y = 81 }
+			}
+			iconType = {
+				name = "house_seat_121"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 178 y = 92 }
+			}
+			iconType = {
+				name = "house_seat_122"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 185 y = 27 }
+			}
+			iconType = {
+				name = "house_seat_123"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 185 y = 37 }
+			}
+			iconType = {
+				name = "house_seat_124"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 185 y = 59 }
+			}
+			iconType = {
+				name = "house_seat_125"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 185 y = 70 }
+			}
+			iconType = {
+				name = "house_seat_126"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 185 y = 102 }
+			}
+			iconType = {
+				name = "house_seat_127"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 193 y = 15 }
+			}
+			iconType = {
+				name = "house_seat_128"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 193 y = 48 }
+			}
+			iconType = {
+				name = "house_seat_129"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 193 y = 80 }
+			}
+			iconType = {
+				name = "house_seat_130"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 193 y = 91 }
+			}
+			iconType = {
+				name = "house_seat_131"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 200 y = 26 }
+			}
+			iconType = {
+				name = "house_seat_132"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 200 y = 37 }
+			}
+			iconType = {
+				name = "house_seat_133"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 200 y = 58 }
+			}
+			iconType = {
+				name = "house_seat_134"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 200 y = 69 }
+			}
+			iconType = {
+				name = "house_seat_135"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 200 y = 102 }
+			}
+			iconType = {
+				name = "house_seat_136"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 208 y = 16 }
+			}
+			iconType = {
+				name = "house_seat_137"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 208 y = 48 }
+			}
+			iconType = {
+				name = "house_seat_138"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 208 y = 81 }
+			}
+			iconType = {
+				name = "house_seat_139"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 208 y = 92 }
+			}
+			iconType = {
+				name = "house_seat_140"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 215 y = 27 }
+			}
+			iconType = {
+				name = "house_seat_141"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 215 y = 38 }
+			}
+			iconType = {
+				name = "house_seat_142"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 215 y = 60 }
+			}
+			iconType = {
+				name = "house_seat_143"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 215 y = 71 }
+			}
+			iconType = {
+				name = "house_seat_144"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 222 y = 18 }
+			}
+			iconType = {
+				name = "house_seat_145"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 237 y = 20 }
+			}
+			iconType = {
+				name = "house_seat_146"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 230 y = 30 }
+			}
+			iconType = {
+				name = "house_seat_147"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 229 y = 41 }
+			}
+			iconType = {
+				name = "house_seat_148"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 223 y = 51 }
+			}
+			iconType = {
+				name = "house_seat_149"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 251 y = 23 }
+			}
+			iconType = {
+				name = "house_seat_150"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 244 y = 33 }
+			}
+			iconType = {
+				name = "house_seat_151"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 243 y = 44 }
+			}
+			iconType = {
+				name = "house_seat_152"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 237 y = 54 }
+			}
+			iconType = {
+				name = "house_seat_153"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 230 y = 64 }
+			}
+			iconType = {
+				name = "house_seat_154"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 230 y = 75 }
+			}
+			iconType = {
+				name = "house_seat_155"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 223 y = 84 }
+			}
+			iconType = {
+				name = "house_seat_156"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 223 y = 95 }
+			}
+			iconType = {
+				name = "house_seat_157"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 216 y = 105 }
+			}
+			iconType = {
+				name = "house_seat_158"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 265 y = 29 }
+			}
+			iconType = {
+				name = "house_seat_159"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 259 y = 38 }
+			}
+			iconType = {
+				name = "house_seat_160"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 257 y = 49 }
+			}
+			iconType = {
+				name = "house_seat_161"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 251 y = 59 }
+			}
+			iconType = {
+				name = "house_seat_162"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 245 y = 68 }
+			}
+			iconType = {
+				name = "house_seat_163"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 243 y = 79 }
+			}
+			iconType = {
+				name = "house_seat_164"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 237 y = 89 }
+			}
+			iconType = {
+				name = "house_seat_165"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 236 y = 100 }
+			}
+			iconType = {
+				name = "house_seat_166"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 230 y = 110 }
+			}
+			iconType = {
+				name = "house_seat_167"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 278 y = 34 }
+			}
+			iconType = {
+				name = "house_seat_168"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 272 y = 44 }
+			}
+			iconType = {
+				name = "house_seat_169"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 270 y = 55 }
+			}
+			iconType = {
+				name = "house_seat_170"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 264 y = 65 }
+			}
+			iconType = {
+				name = "house_seat_171"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 258 y = 74 }
+			}
+			iconType = {
+				name = "house_seat_172"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 257 y = 86 }
+			}
+			iconType = {
+				name = "house_seat_173"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 251 y = 96 }
+			}
+			iconType = {
+				name = "house_seat_174"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 249 y = 107 }
+			}
+			iconType = {
+				name = "house_seat_175"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 243 y = 117 }
+			}
+			iconType = {
+				name = "house_seat_176"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 291 y = 41 }
+			}
+			iconType = {
+				name = "house_seat_177"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 285 y = 51 }
+			}
+			iconType = {
+				name = "house_seat_178"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 283 y = 62 }
+			}
+			iconType = {
+				name = "house_seat_179"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 277 y = 72 }
+			}
+			iconType = {
+				name = "house_seat_180"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 271 y = 82 }
+			}
+			iconType = {
+				name = "house_seat_181"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 269 y = 93 }
+			}
+			iconType = {
+				name = "house_seat_182"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 263 y = 103 }
+			}
+			iconType = {
+				name = "house_seat_183"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 261 y = 115 }
+			}
+			iconType = {
+				name = "house_seat_184"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 255 y = 126 }
+			}
+			iconType = {
+				name = "house_seat_185"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 303 y = 49 }
+			}
+			iconType = {
+				name = "house_seat_186"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 297 y = 59 }
+			}
+			iconType = {
+				name = "house_seat_187"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 294 y = 70 }
+			}
+			iconType = {
+				name = "house_seat_188"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 289 y = 80 }
+			}
+			iconType = {
+				name = "house_seat_189"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 283 y = 91 }
+			}
+			iconType = {
+				name = "house_seat_190"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 280 y = 103 }
+			}
+			iconType = {
+				name = "house_seat_191"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 274 y = 113 }
+			}
+			iconType = {
+				name = "house_seat_192"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 270 y = 125 }
+			}
+			iconType = {
+				name = "house_seat_193"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 314 y = 57 }
+			}
+			iconType = {
+				name = "house_seat_194"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 309 y = 68 }
+			}
+			iconType = {
+				name = "house_seat_195"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 305 y = 79 }
+			}
+			iconType = {
+				name = "house_seat_196"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 300 y = 90 }
+			}
+			iconType = {
+				name = "house_seat_197"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 294 y = 101 }
+			}
+			iconType = {
+				name = "house_seat_198"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 290 y = 113 }
+			}
+			iconType = {
+				name = "house_seat_199"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 284 y = 124 }
+			}
+			iconType = {
+				name = "house_seat_200"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 325 y = 67 }
+			}
+			iconType = {
+				name = "house_seat_201"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 319 y = 77 }
+			}
+			iconType = {
+				name = "house_seat_202"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 315 y = 89 }
+			}
+			iconType = {
+				name = "house_seat_203"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 309 y = 100 }
+			}
+			iconType = {
+				name = "house_seat_204"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 303 y = 111 }
+			}
+			iconType = {
+				name = "house_seat_205"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 298 y = 124 }
+			}
+			iconType = {
+				name = "house_seat_206"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 335 y = 77 }
+			}
+			iconType = {
+				name = "house_seat_207"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 329 y = 88 }
+			}
+			iconType = {
+				name = "house_seat_208"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 324 y = 100 }
+			}
+			iconType = {
+				name = "house_seat_209"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 318 y = 112 }
+			}
+			iconType = {
+				name = "house_seat_210"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 311 y = 123 }
+			}
+			iconType = {
+				name = "house_seat_211"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 343 y = 88 }
+			}
+			iconType = {
+				name = "house_seat_212"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 337 y = 99 }
+			}
+			iconType = {
+				name = "house_seat_213"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 331 y = 112 }
+			}
+			iconType = {
+				name = "house_seat_214"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 325 y = 123 }
+			}
+			iconType = {
+				name = "house_seat_215"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 351 y = 99 }
+			}
+			iconType = {
+				name = "house_seat_216"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 344 y = 111 }
+			}
+			iconType = {
+				name = "house_seat_217"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 338 y = 123 }
+			}
+			iconType = {
+				name = "house_seat_218"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 358 y = 111 }
+			}
+			iconType = {
+				name = "house_seat_219"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 350 y = 123 }
+			}
+			iconType = {
+				name = "house_seat_220"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 363 y = 123 }
+			}
+			iconType = {
+				name = "house_seat_221"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 368 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_222"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 356 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_223"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 343 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_224"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 331 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_225"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 318 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_226"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 305 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_227"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 292 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_228"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 279 y = 136 }
+			}
+			iconType = {
+				name = "house_seat_229"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 265 y = 137 }
+			}
+			iconType = {
+				name = "house_seat_230"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 371 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_231"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 359 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_232"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 347 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_233"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 335 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_234"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 322 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_235"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 310 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_236"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 298 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_237"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 285 y = 149 }
+			}
+			iconType = {
+				name = "house_seat_238"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 272 y = 148 }
+			}
+			iconType = {
+				name = "house_seat_239"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 374 y = 162 }
+			}
+			iconType = {
+				name = "house_seat_240"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 362 y = 162 }
+			}
+			iconType = {
+				name = "house_seat_241"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 350 y = 162 }
+			}
+			iconType = {
+				name = "house_seat_242"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 338 y = 162 }
+			}
+			iconType = {
+				name = "house_seat_243"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 326 y = 162 }
+			}
+			iconType = {
+				name = "house_seat_244"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 314 y = 162 }
+			}
+			iconType = {
+				name = "house_seat_245"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 302 y = 162 }
+			}
+			iconType = {
+				name = "house_seat_246"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 289 y = 162 }
+			}
+			iconType = {
+				name = "house_seat_247"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 277 y = 162 }
+			}
+			iconType = {
+				name = "house_seat_248"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 375 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_249"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 363 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_250"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 351 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_251"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 339 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_252"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 327 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_253"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 315 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_254"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 303 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_255"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 291 y = 176 }
+			}
+			iconType = {
+				name = "house_seat_256"
+				spriteType = "GFX_senate_house_RRG_seat"
+				frame = 4
+				scale = 1
+				position = { x = 279 y = 176 }
+			}
+
+			iconType = {
+				name = "house_seats_overlay"
+				spriteType = "GFX_senate_RRG_seats_transparent_overlay"
+				position = { x = 5 y = 7 }
+				pdx_tooltip = "HOUSE_RRG_SEATS_TT"
+			}
+		}
+
+		instantTextBoxType = {
+			name = "house_support_text"
+			position = { x = 131 y = 437 }
+			font = "pipboy_32"
+			text = "HOUSE_RRG_SUPPORT_TEXT"
+			format = center
+			maxWidth = 200
+			multiline = no
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "leader_portrait"
+			position = { x = 31 y = 514 }
+			spriteType = "GFX_leader_unknown"
+			scale = 0.65
+			pdx_tooltip = "RRG_CURRENT_LEADER"
+			pdx_tooltip_delayed = "RRG_CURRENT_LEADER_DESC"
+		}
+
+		instantTextBoxType = {
+			name = "leader_name"
+			position = { x = 177 y = 525 }
+			font = "pipboy_32"
+			text = "RRG_CURRENT_LEADER"
+			format = left
+			maxWidth = 260
+			multiline = no
+		}
+
+		instantTextBoxType = {
+			name = "leader_attitude"
+			position = { x = 177 y = 547 }
+			font = "pipboy_16"
+			text = "RRG_CURRENT_LEADER_ATTITUDE"
+			format = left
+			maxWidth = 260
+			maxHeight = 130
+			fixedsize = yes
+		}
+
+		iconType = {
+			name = "senate_RRG_bg_post_election_overlay"
+			spriteType = "GFX_senate_RRG_bg_post_election_overlay"
+		}
+	}
+}

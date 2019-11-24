@@ -1,0 +1,252 @@
+is_allowed_tribal_generic_political_advisors = {
+	hidden_trigger = {
+		OR = {
+			is_tribal_nation = yes
+			has_country_flag = give_tribal_generic_political_advisors
+		}
+
+	}
+}
+
+is_allowed_tribal_generic_high_command = {
+	hidden_trigger = {
+		OR = {
+			is_tribal_nation = yes
+			has_country_flag = give_tribal_generic_high_command
+		}
+	}
+}
+
+is_allowed_tribal_generic_chiefs = {
+	hidden_trigger = {
+		OR = {
+			is_tribal_nation = yes
+			has_country_flag = give_tribal_generic_chiefs
+		}
+	}
+}
+
+is_allowed_tribal_generic_theorists = {
+	hidden_trigger = {
+		OR = {
+			is_tribal_nation = yes
+			has_country_flag = give_tribal_generic_theorists
+		}
+	}
+}
+
+is_allowed_raider_generic_political_advisors = {
+	hidden_trigger = {
+		OR = {
+			is_raider_nation = yes
+			has_country_flag = give_raider_generic_political_advisors
+		}
+	}
+}
+
+is_allowed_raider_generic_high_command = {
+	hidden_trigger = {
+		OR = {
+			is_raider_nation = yes
+			has_country_flag = give_raider_generic_high_command
+		}
+	}
+}
+
+is_allowed_raider_generic_chiefs = {
+	hidden_trigger = {
+		OR = {
+			is_raider_nation = yes
+			has_country_flag = give_raider_generic_chiefs
+		}
+	}
+}
+
+is_allowed_raider_generic_theorists = {
+	hidden_trigger = {
+		OR = {
+			is_raider_nation = yes
+			has_country_flag = give_raider_generic_theorists
+		}
+	}
+}
+
+is_allowed_settler_generic_political_advisors = {
+	hidden_trigger = {
+		OR = {
+			is_settler_nation =  yes
+			has_country_flag = give_settler_generic_political_advisors
+		}
+	}
+}
+
+is_allowed_settler_generic_high_command = {
+	hidden_trigger = {
+		OR = {
+			is_settler_nation =  yes
+			has_country_flag = give_settler_generic_high_command
+		}
+	}
+}
+
+is_allowed_settler_generic_chiefs = {
+	hidden_trigger = {
+		OR = {
+			is_settler_nation =  yes
+			has_country_flag = give_settler_generic_chiefs
+		}
+	}
+}
+
+is_allowed_settler_generic_theorists = {
+	hidden_trigger = {
+		OR = {
+			is_settler_nation =  yes
+			has_country_flag = give_settler_generic_theorists
+		}
+	}
+}
+
+is_allowed_mormon_generic_political_advisors = {
+	hidden_trigger = {
+		OR = {
+			is_mormon_nation = yes
+			has_country_flag = give_mormon_generic_political_advisors
+		}
+	}
+}
+
+is_allowed_mormon_generic_high_command = {
+	hidden_trigger = {
+		OR = {
+			is_mormon_nation = yes
+			has_country_flag = give_mormon_generic_high_command
+		}
+	}
+}
+
+is_allowed_mormon_generic_chiefs = {
+	hidden_trigger = {
+		OR = {
+			is_mormon_nation = yes
+			has_country_flag = give_mormon_generic_chiefs
+		}
+	}
+}
+
+is_allowed_mormon_generic_theorists = {
+	hidden_trigger = {
+		OR = {
+			is_mormon_nation = yes
+			has_country_flag = give_mormon_generic_theorists
+		}
+	}
+}
+
+is_allowed_super_mutant_generic_political_advisors = {
+	hidden_trigger = {
+		OR = {
+			is_super_mutant_nation = yes
+			has_country_flag = give_super_mutant_generic_advisors
+		}
+	}
+}
+
+is_allowed_super_mutant_generic_high_command = {
+	hidden_trigger = {
+		OR = {
+			is_super_mutant_nation = yes
+			has_country_flag = give_super_mutant_generic_high_command
+		}
+	}
+}
+
+is_allowed_super_mutant_generic_chiefs = {
+	hidden_trigger = {
+		OR = {
+			is_super_mutant_nation = yes
+			has_country_flag = give_super_mutant_generic_chiefs
+		}
+	}
+}
+
+is_allowed_super_mutant_generic_theorists = {
+	hidden_trigger = {
+		OR = {
+			is_super_mutant_nation = yes
+			has_country_flag = give_super_mutant_generic_theorists
+		}
+	}
+}
+
+is_allowed_ghoul_generic_political_advisors = {
+	hidden_trigger = {
+		OR = {
+			is_ghoul_nation = yes
+			has_country_flag = give_ghoul_generic_political_advisors
+		}
+	}
+}
+
+is_allowed_ghoul_generic_high_command = {
+	hidden_trigger = {
+		OR = {
+			is_ghoul_nation = yes
+			has_country_flag = give_ghoul_generic_high_command
+		}
+	}
+}
+
+is_allowed_ghoul_generic_chiefs = {
+	hidden_trigger = {
+		OR = {
+			is_ghoul_nation = yes
+			has_country_flag = give_ghoul_generic_chiefs
+		}
+	}
+}
+
+is_allowed_ghoul_generic_theorists = {
+	hidden_trigger = {
+		OR = {
+			is_ghoul_nation = yes
+			has_country_flag = give_ghoul_generic_theorists
+		}
+	}
+}
+
+is_allowed_brotherhood_generic_political_advisors = {
+	hidden_trigger = {
+		OR = {
+			is_brotherhood_nation = yes
+			has_country_flag = give_brotherhood_generic_political_advisors
+		}
+	}
+}
+
+is_allowed_brotherhood_generic_high_command = {
+	hidden_trigger = {
+		OR = {
+			is_brotherhood_nation = yes
+			has_country_flag = give_brotherhood_generic_high_command
+		}
+	}
+}
+
+is_allowed_brotherhood_generic_chiefs = {
+	hidden_trigger = {
+		OR = {
+			is_brotherhood_nation = yes
+			has_country_flag = give_brotherhood_generic_chiefs
+		}
+	}
+}
+
+is_allowed_brotherhood_generic_theorists = {
+	hidden_trigger = {
+		OR = {
+			is_brotherhood_nation = yes
+			has_country_flag = give_brotherhood_generic_theorists
+		}
+	}
+}

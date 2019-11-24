@@ -1,0 +1,460 @@
+scripted_gui = {
+	pipboy_plus_toggle_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_toggle_container"
+
+		visible = {
+			is_ai = no
+		}
+
+		effects = {
+			open_pipboy_plus_click = {
+				if = {
+					limit = {
+						NOT = { has_variable = pipboy_plus }
+					}
+					set_variable = { pipboy_plus = 1.5 }
+					set_variable = { pipboy_plus_random_welcome_message = random }
+					multiply_variable = { pipboy_plus_random_welcome_message = 10 }
+					round_variable = pipboy_plus_random_welcome_message
+				}
+				else = {
+					clear_variable = pipboy_plus
+					clear_variable = pipboy_plus_selected_country
+					clear_variable = pipboy_plus_selected_region
+					clear_variable = pipboy_plus_selected_mechanic
+					clear_variable = pipboy_plus_selected_changelog
+					clear_variable = pipboy_plus_selected_credits
+					clear_variable = pipboy_plus_random_welcome_message
+					clear_array = pipboy_plus_country_list
+					clear_array = pipboy_plus_changelog_minor_list
+				}
+			}
+		}
+	}
+
+	pipboy_plus_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			has_variable = pipboy_plus
+		}
+
+		effects = {
+			close_button_click = {
+				clear_variable = pipboy_plus
+				clear_variable = pipboy_plus_selected_country
+				clear_variable = pipboy_plus_selected_region
+				clear_variable = pipboy_plus_selected_mechanic
+				clear_variable = pipboy_plus_selected_changelog
+				clear_variable = pipboy_plus_selected_credits
+				clear_variable = pipboy_plus_random_welcome_message
+				clear_array = pipboy_plus_country_list
+				clear_array = pipboy_plus_changelog_minor_list
+			}
+			select_tab_region_click = {
+				set_variable = { pipboy_plus = 1.5 }
+			}
+			select_tab_mechanic_click = {
+				set_variable = { pipboy_plus = 2.5 }
+			}
+			select_tab_changelog_click = {
+				set_variable = { pipboy_plus = 4 }
+				populate_pipboy_with_major_updates = yes
+			}
+			select_tab_credits_click = {
+				set_variable = { pipboy_plus = 5 }
+			}
+			back_button_click = {
+				if = {
+					limit = {
+						check_variable = { pipboy_plus = 3 }
+					}
+					# set back to major patch version
+					divide_variable = { pipboy_plus_selected_changelog = 100 }
+					multiply_variable = { pipboy_plus_selected_changelog = 100 }
+				}
+				add_to_variable = { pipboy_plus = 0.5 }
+			}
+		}
+
+		triggers = {
+			startup_header_visible = {
+				check_variable = { pipboy_plus = -1 }
+			}
+			tab_region_on_visible = {
+				check_variable = { pipboy_plus = 1.5 }
+			}
+			select_tab_region_visible = {
+				NOT = { check_variable = { pipboy_plus = 1.5 } }
+			}
+			tab_mechanic_on_visible = {
+				check_variable = { pipboy_plus = 2.5 }
+			}
+			select_tab_mechanic_visible = {
+				NOT = { check_variable = { pipboy_plus = 2.5 } }
+			}
+			tab_changelog_on_visible = {
+				check_variable = { pipboy_plus = 4 }
+			}
+			select_tab_changelog_visible = {
+				NOT = { check_variable = { pipboy_plus = 4 } }
+			}
+			tab_credits_on_visible = {
+				check_variable = { pipboy_plus = 5 }
+			}
+			select_tab_credits_visible = {
+				NOT = { check_variable = { pipboy_plus = 5 } }
+			}
+			nation_header_visible = {
+				has_variable = pipboy_plus_selected_country
+				check_variable = { pipboy_plus = 0.5 }
+			}
+			nation_list_header_visible = {
+				OR = {
+					check_variable = { pipboy_plus = 0.5 }
+					check_variable = { pipboy_plus = 1 }
+				}
+			}
+			nation_list_header_underline_visible = {
+				OR = {
+					check_variable = { pipboy_plus = 0.5 }
+					check_variable = { pipboy_plus = 1 }
+				}
+			}
+			region_header_visible = {
+				check_variable = { pipboy_plus = 1 }
+			}
+			region_list_header_visible = {
+				check_variable = { pipboy_plus = 1.5 }
+			}
+			region_list_header_underline_visible = {
+				check_variable = { pipboy_plus = 1.5 }
+			}
+			mechanic_header_visible = {
+				check_variable = { pipboy_plus = 2 }
+			}
+			mechanic_list_header_visible = {
+				OR = {
+					check_variable = { pipboy_plus = 2 }
+					check_variable = { pipboy_plus = 2.5 }
+				}
+			}
+			mechanic_list_header_underline_visible = {
+				OR = {
+					check_variable = { pipboy_plus = 2 }
+					check_variable = { pipboy_plus = 2.5 }
+				}
+			}
+			changelog_list_header_visible = {
+				OR = {
+					check_variable = { pipboy_plus = 3 }
+					check_variable = { pipboy_plus = 3.5 }
+					check_variable = { pipboy_plus = 4 }
+				}
+			}
+			changelog_list_header_underline_visible = {
+				OR = {
+					check_variable = { pipboy_plus = 3 }
+					check_variable = { pipboy_plus = 3.5 }
+					check_variable = { pipboy_plus = 4 }
+				}
+			}
+			changelog_major_header_visible = {
+				check_variable = { pipboy_plus = 3.5 }
+			}
+			changelog_header_visible = {
+				check_variable = { pipboy_plus = 3 }
+			}
+			credits_header_visible = {
+				check_variable = { pipboy_plus = 5 }
+			}
+			back_button_visible = {
+				OR = {
+					check_variable = { pipboy_plus = 0.5 }
+					check_variable = { pipboy_plus = 1 }
+					check_variable = { pipboy_plus = 2 }
+					check_variable = { pipboy_plus = 3 }
+					check_variable = { pipboy_plus = 3.5 }
+				}
+			}
+			back_button_text_visible = {
+				OR = {
+					check_variable = { pipboy_plus = 0.5 }
+					check_variable = { pipboy_plus = 1 }
+					check_variable = { pipboy_plus = 2 }
+					check_variable = { pipboy_plus = 3 }
+					check_variable = { pipboy_plus = 3.5 }
+				}
+			}
+		}
+	}
+
+	pipboy_plus_startup_screen_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_startup_screen_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = -1 }
+		}
+	}
+
+	pipboy_plus_nation_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_nation_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = 0.5 }
+		}
+	}
+
+	pipboy_plus_nation_list_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_nation_list_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = 1 }
+		}
+
+		effects = {
+			country_list_button_click = {
+				ROOT = {
+					set_variable = { pipboy_plus = 0.5 }
+					set_variable = { pipboy_plus_selected_country = PREV.id }
+				}
+			}
+			country_list_button_right_click = {
+				capital_scope = {
+					ROOT = {
+						goto_state = PREV
+					}
+				}
+			}
+		}
+
+		triggers = {
+			pipboy_plus_country_list_no_entries_info_visible = {
+				check_variable = { pipboy_plus_country_list^num < 1 }
+			}
+			pipboy_plus_country_list_no_entries_info_dots_visible = {
+				check_variable = { pipboy_plus_country_list^num < 1 }
+			}
+		}
+
+		dynamic_lists = {
+			pipboy_plus_country_list_gridbox = {
+				array = pipboy_plus_country_list
+				entry_container = pipboy_plus_country_list_entry
+				change_scope = yes
+			}
+		}
+	}
+
+	pipboy_plus_region_list_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_region_list_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = 1.5 }
+		}
+
+		effects = {
+			regions_list_button_click = {
+				set_variable = { pipboy_plus_selected_region = v }
+				clear_array = pipboy_plus_country_list
+				meta_effect = {
+					text = {
+						for_each_loop = {
+							array = global.pipboy_plus_country_list_[REGION]
+							add_to_array = { pipboy_plus_country_list = v }
+						}
+					}
+					REGION = "[?pipboy_plus_selected_region]"
+				}
+				set_variable = { pipboy_plus = 1 }
+			}
+			regions_list_button_right_click = {
+				if = {
+					limit = {
+						check_variable = { v = 1 }
+					}
+					goto_state = 48
+				}
+				else_if = {
+					limit = {
+						check_variable = { v = 2 }
+					}
+					goto_state = 214
+				}
+				else_if = {
+					limit = {
+						check_variable = { v = 3 }
+					}
+					goto_state = 371
+				}
+				else_if = {
+					limit = {
+						check_variable = { v = 4 }
+					}
+					goto_state = 50
+				}
+				else_if = {
+					limit = {
+						check_variable = { v = 5 }
+					}
+					goto_state = 392
+				}
+				else_if = {
+					limit = {
+						check_variable = { v = 6 }
+					}
+					goto_state = 31
+				}
+				else_if = {
+					limit = {
+						check_variable = { v = 7 }
+					}
+					goto_state = 773
+				}
+			}
+		}
+
+		dynamic_lists = {
+			pipboy_plus_regions_list_gridbox = {
+				array = global.pipboy_plus_regions_list
+				entry_container = pipboy_plus_regions_list_entry
+			}
+		}
+	}
+
+	pipboy_plus_mechanic_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_mechanic_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = 2 }
+		}
+	}
+
+	pipboy_plus_mechanic_list_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_mechanic_list_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = 2.5 }
+		}
+
+		effects = {
+			mechanics_list_button_click = {
+				set_variable = { pipboy_plus = 2 }
+				set_variable = { pipboy_plus_selected_mechanic = v }
+			}
+		}
+
+		dynamic_lists = {
+			pipboy_plus_mechanics_list_gridbox = {
+				array = global.pipboy_plus_mechanics_list
+				entry_container = pipboy_plus_mechanics_list_entry
+			}
+		}
+	}
+
+	pipboy_plus_changelog_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_changelog_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = 3 }
+		}
+	}
+
+	pipboy_plus_changelog_major_list_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_changelog_major_list_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = 4 }
+		}
+
+		effects = {
+			changelog_major_list_button_click = {
+				set_variable = { pipboy_plus_selected_changelog = v }
+				populate_pipboy_with_minor_updates = yes
+				set_variable = { pipboy_plus = 3.5 }
+			}
+		}
+
+		dynamic_lists = {
+			pipboy_plus_changelog_major_list_gridbox = {
+				array = global.pipboy_plus_changelog_major_list
+				entry_container = pipboy_plus_changelog_major_list_entry
+			}
+		}
+	}
+
+	pipboy_plus_changelog_minor_list_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_changelog_minor_list_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = 3.5 }
+		}
+
+		effects = {
+			changelog_minor_list_button_click = {
+				set_variable = { pipboy_plus_selected_changelog = v }
+				set_variable = { pipboy_plus = 3 }
+			}
+		}
+
+		dynamic_lists = {
+			pipboy_plus_changelog_minor_list_gridbox = {
+				array = pipboy_plus_changelog_minor_list
+				entry_container = pipboy_plus_changelog_minor_list_entry
+			}
+		}
+	}
+
+	pipboy_plus_credits_container = {
+		context_type = player_context
+
+		window_name = "pipboy_plus_credits_container"
+		parent_window_name = "pipboy_plus_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { pipboy_plus = 5 }
+		}
+	}
+}

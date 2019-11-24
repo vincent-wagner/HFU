@@ -1,0 +1,123 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_pipboy_plus_bg"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_help_button_hint"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_help_button_hint.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_pipboy_plus_screen_transparent_tile"
+		size = { x = 192 y = 192 }
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_screen_transparent_tile.dds"
+		borderSize = { x = 64 y = 64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_button"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_screen_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_button_small"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_screen_button_small.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_button_large"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_screen_button_large.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_slider_track"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_slider_track.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_slider_thumb"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_slider_thumb.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_scroll_up"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_screen_scroll_up.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_scroll_down"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_screen_scroll_down.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_overlay"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_screen_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_logo"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_screen_logo.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_green_line_48px"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_screen_green_line_48px.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_green_line_49px"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_screen_green_line_49px.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_green_line_50px"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_screen_green_line_50px.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_green_line_64px"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_screen_green_line_64px.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_screen_green_line_69px"
+		texturefile = "gfx/interface/pipboy_plus/pipboy_plus_screen_green_line_69px.dds"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_button_01_regions"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_button_01_regions.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_button_02_mechanics"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_button_02_mechanics.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_button_03_changelog"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_button_03_changelog.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_button_04_credits"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_button_04_credits.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_pipboy_plus_button_05_close"
+		textureFile = "gfx/interface/pipboy_plus/pipboy_plus_button_05_close.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_pipboy_plus_red_dots_blinking"
+		texturefile = "gfx//interface//pipboy_plus//pipboy_plus_red_dots_blinking.dds"
+		noOfFrames = 3
+		legacy_lazy_load = no
+		transparencecheck = yes
+		animation_rate_fps = 2
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.2
+	}
+}

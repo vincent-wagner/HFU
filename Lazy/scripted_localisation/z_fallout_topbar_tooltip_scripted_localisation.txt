@@ -1,0 +1,127 @@
+# General
+defined_text = {
+	name = GetToolbarDropDownButtonTooltipDelayed
+
+	text = {
+		trigger = {
+			OR = {
+				add_core_visibility_trigger = yes
+				add_core_tlaloc_visibility_trigger = yes
+			}
+		}
+		localization_key = ""
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = string_fallout_toolbar_drop_down_button_tt_invalid
+	}
+}
+
+defined_text = {
+	name = GetToolbarTabButtonTooltip
+
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+		}
+		localization_key = string_fallout_tab_button_tt_1
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetToolbarTabButtonIcon
+
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+		}
+		localization_key = "GFX_topbar_coring_tab_button"
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}
+
+# Coring Button Tab
+defined_text = {
+	name = GetCoringTabTitle
+
+	text = {
+		trigger = {
+			OR = {
+				tag = TLA
+				tag = ARM
+				tag = MAX
+				tag = MOC
+				tag = ZAP
+			}
+		}
+		localization_key = string_fallout_tlaloc_coring_tab_title
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = string_fallout_coring_tab_title
+	}
+}
+
+defined_text = {
+	name = GetCoringTabDesc
+
+	text = {
+		trigger = {
+			OR = {
+				tag = TLA
+				tag = ARM
+				tag = MAX
+				tag = MOC
+				tag = ZAP
+			}
+		}
+		localization_key = string_fallout_tlaloc_coring_tab_desc
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = string_fallout_coring_tab_desc
+	}
+}
+
+defined_text = {
+	name = GetCoringTabNoStatesInfo
+
+	text = {
+		trigger = {
+			OR = {
+				tag = TLA
+				tag = ARM
+				tag = MAX
+				tag = MOC
+				tag = ZAP
+			}
+		}
+		localization_key = string_fallout_tlaloc_coring_tab_no_states_info
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = string_fallout_coring_tab_no_states_info
+	}
+}

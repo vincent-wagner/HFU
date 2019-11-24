@@ -1,0 +1,153 @@
+populate_pipboy_with_major_updates = {
+	# add new majors updates here
+	if = {
+		limit = {
+			NOT = { is_in_array = { global.pipboy_plus_changelog_major_list = 2 } }
+		}
+		add_to_array = { global.pipboy_plus_changelog_major_list = 2 }
+	}
+	if = {
+		limit = {
+			NOT = { is_in_array = { global.pipboy_plus_changelog_major_list = 1.3 } }
+		}
+		add_to_array = { global.pipboy_plus_changelog_major_list = 1.3 }
+	}
+	if = {
+		limit = {
+			NOT = { is_in_array = { global.pipboy_plus_changelog_major_list = 1.2 } }
+		}
+		add_to_array = { global.pipboy_plus_changelog_major_list = 1.2 }
+	}
+	if = {
+		limit = {
+			NOT = { is_in_array = { global.pipboy_plus_changelog_major_list = 1.1 } }
+		}
+		add_to_array = { global.pipboy_plus_changelog_major_list = 1.1 }
+	}
+	if = {
+		limit = {
+			NOT = { is_in_array = { global.pipboy_plus_changelog_major_list = 1 } }
+		}
+		add_to_array = { global.pipboy_plus_changelog_major_list = 1 }
+	}
+}
+
+populate_pipboy_with_minor_updates = {
+	clear_array = pipboy_plus_changelog_minor_list
+	if = {
+		limit = {
+			check_variable = { v = 1 }
+		}
+		add_to_array = { pipboy_plus_changelog_minor_list = 1 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.001 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.002 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.003 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.004 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.005 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.006 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.007 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.008 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.009 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.010 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.011 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.012 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.013 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.014 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.015 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.016 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.017 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.018 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.019 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.020 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.021 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.022 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.023 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.024 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.025 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.026 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.027 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.028 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.029 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 1.1 }
+		}
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.1 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.101 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.102 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.103 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.104 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.105 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.106 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.107 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.108 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.109 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.110 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.111 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.112 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.113 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.114 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.115 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 1.2 }
+		}
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.2 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.201 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.202 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 1.3 }
+		}
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.3 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.301 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.302 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.303 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.304 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.305 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.306 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 1.307 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 2 }
+		}
+		add_to_array = { pipboy_plus_changelog_minor_list = 2 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.001 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.002 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.003 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.004 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.005 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.006 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.007 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.008 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.009 }
+		add_to_array = { pipboy_plus_changelog_minor_list = 2.010 }
+	}
+	# add new updates here
+
+	# sort newest to oldest
+	for_loop_effect = {
+		start = 1
+		end = pipboy_plus_changelog_minor_list^num
+		value = v
+		set_temp_variable = { var = j value = v }
+		set_temp_variable = { var = j_minus value = j }
+		subtract_from_temp_variable = { var = j_minus value = 1 }
+		while_loop_effect = {
+			limit = {
+				check_variable = { j > 0 }
+				check_variable = { pipboy_plus_changelog_minor_list^j_minus < pipboy_plus_changelog_minor_list^j }
+			}
+			# swap j-1 with j if value of j-1 < j
+			set_temp_variable = { var = temp value = pipboy_plus_changelog_minor_list^j }
+			set_variable = { var = pipboy_plus_changelog_minor_list^j value = pipboy_plus_changelog_minor_list^j_minus }
+			set_variable = { var = pipboy_plus_changelog_minor_list^j_minus value = temp }
+			subtract_from_temp_variable = { var = j value = 1 }
+			subtract_from_temp_variable = { var = j_minus value = 1 }
+		}
+	}
+}
