@@ -9,7 +9,6 @@ CHI_army_reform = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			tag = CHI
 			has_army_experience > 99.99
 			has_completed_focus = CHI_army_reform
 		}
@@ -66,7 +65,6 @@ CHI_army_reform = {
 	CHI_lessons_of_war = {
 		icon = generic_army_support
 		available = {
-			tag = CHI
 			has_army_experience > 199
 			has_idea = CHI_incompetent_officers
 			if = {
@@ -118,7 +116,6 @@ CHI_army_reform = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			tag = CHI
 			num_divisions > 60
 			has_army_manpower = { size > 549999 }
 		}
@@ -180,7 +177,6 @@ economy_decisions = {
 
 		available = {
 			has_hyper_inflation = yes
-			tag = CHI
 		}
 
 		cost = 100
@@ -226,7 +222,6 @@ war_measures = {
 	CHI_scorched_earth_tactics = {
 		icon = generic_scorched_earth
 		available = {
-			tag = CHI
 			any_owned_state = {
 				is_controlled_by = ROOT
 				infrastructure > 0
@@ -281,7 +276,6 @@ foreign_support = {
 	CHI_flying_tigers = {
 		icon = generic_air
 		available = {
-			tag = USA
 			has_equipment = { fighter_equipment > 149 }
 		}
 		visible = {
@@ -316,7 +310,6 @@ foreign_support = {
 	CHI_soviet_volunteer_group = {
 		icon = generic_air
 		available = {
-			tag = SOV
 			has_equipment = { fighter_equipment > 99 }
 			has_equipment = { tac_bomber_equipment > 49 }
 		}
@@ -732,7 +725,6 @@ political_actions = {
 	CHI_suspend_the_inter_party_coordination_council = {
 		icon = oppression
 		available = {
-			tag = CHI
 			has_idea = CHI_inter_party_coordination_council
 		}
 		visible = {
@@ -754,7 +746,6 @@ political_actions = {
 	CHI_reinstate_the_inter_party_coordination_council = {
 		icon = generic_political_discourse
 		available = {
-			tag = CHI
 			NOT = { has_idea = CHI_inter_party_coordination_council }
 			NOT = {
 				has_government = democratic
@@ -779,7 +770,6 @@ political_actions = {
 			has_dlc = "Waking the Tiger"
 		}
 		available = {
-			tag = CHI
 			has_war = no
 			OR = {
 				has_full_control_of_state = 608
@@ -823,10 +813,10 @@ political_actions = {
 prestigious_projects = {
 	CHI_build_a_carrier = {
 		allowed = {
+			is_literally_china = yes
 		}
 		icon = generic_naval
 		available = {
-			tag = MAN
 			has_navy_size = { unit = carrier size > 0 }
 		}
 
