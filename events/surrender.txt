@@ -11,6 +11,12 @@ country_event = {
 
 	is_triggered_only = yes
 	immediate = {
+		if={limit={INS={has_war=no}}
+		GER={declare_war_on = {
+    target = INS
+    type = annex_everything
+	}}		
+		}
 		ENG={
 		add_offsite_building = { type = arms_factory level = 1 }
 		add_offsite_building = { type = industrial_complex level = 1 }

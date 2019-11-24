@@ -2232,7 +2232,7 @@ SPR = { country_event = spain.29 }
 		cost = 5
 		
 		available = {
-		NOR = { has_capitulated = yes }
+		NOR_axis=yes
 		}
 		
 		completion_reward = {

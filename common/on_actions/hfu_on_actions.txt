@@ -121,6 +121,7 @@ on_actions = {
 						tag=LUX
 					}}
 					country_event={id=surrender.1 days=2}
+					if={limit={tag=POL}GER={country_event={id=germany.14 days=3}}}
 				}
 						
 				}

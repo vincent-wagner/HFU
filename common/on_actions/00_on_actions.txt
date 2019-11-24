@@ -459,6 +459,7 @@ on_actions = {
 					original_tag = POL
 					has_government = neutrality
 				}
+				set_global_flag = fall_of_poland
 				retire_country_leader = yes
 			}if = {
 				limit = { 

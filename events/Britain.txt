@@ -41,7 +41,7 @@ country_event = {
 		tag = ENG
 		has_war = yes
 		has_government = democratic
-		POL = { has_capitulated = yes }
+		has_global_flag = fall_of_poland
 		OR = {
 			has_global_flag = fall_of_france
 			FRA = { surrender_progress > 0.1 }

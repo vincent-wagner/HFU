@@ -290,69 +290,8 @@ country_event = {
 	picture = GFX_report_event_german_troops
 	
 	fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		has_global_flag = sov_yes_pact
-		SOV = { exists = yes }
-		NOT =  { has_war_with = SOV }
-		OR = {
-			OR = {
-				owns_state = 96
-				owns_state = 95
-				owns_state = 94
-				owns_state = 93
-				owns_state = 91
-				owns_state = 97
-				owns_state = 89
-				owns_state = 784
-			}
-			AND = {
-				POL = { has_capitulated = yes }
-				OR = {
-					controls_state = 96
-					controls_state = 95
-					controls_state = 94
-					controls_state = 93
-					controls_state = 91
-					controls_state = 97
-					controls_state = 89
-					controls_state = 784
-				}
-			}
-			OR = {
-				any_allied_country = {
-					ROOT = {
-						is_faction_leader = yes
-					}
-					OR = {
-						owns_state = 96
-						owns_state = 95
-						owns_state = 94
-						owns_state = 93
-						owns_state = 91
-						owns_state = 97
-						owns_state = 89
-						owns_state = 784
-						AND = {
-							POL = { has_capitulated = yes }
-							OR = {
-								controls_state = 96
-								controls_state = 95
-								controls_state = 94
-								controls_state = 93
-								controls_state = 91
-								controls_state = 97
-								controls_state = 89
-								controls_state = 784
-							}
-						}		
-					}
-				}
-			}
-		}
-	}
-	
+	is_triggered_only = yes
+		
 	mean_time_to_happen = {
 		days = 1
 	}
