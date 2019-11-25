@@ -133,37 +133,6 @@ leader_traits = {
 		logistics_skill_factor = 1
 	}
     
-	sand = {
-	
-	type = land
-	trait_type = personality_trait
-		
-		modifier = {
-			desert = {
-				movement = -0.3
-				attack = -0.3
-				defence = -0.3
-			}
-		}
-		
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	trait_cautious = { 
