@@ -1379,7 +1379,7 @@ focus = {
 			add_ideas=Fast_Training
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				category = armor
 			}
