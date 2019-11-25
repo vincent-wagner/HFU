@@ -640,9 +640,9 @@ country_event ={
 	traits = {  winter_specialist  brilliant_strategist panzer_leader panzer_expert ranger organizer  logistics_wizard aggressive_assaulter organisational_leader inspirational_leader }
 	skill = 8
 	
-	attack_skill = 8
+	attack_skill = 10
 	defense_skill = 6
-	planning_skill = 5
+	planning_skill = 2
 	logistics_skill = 5
 }
 create_corps_commander = {
@@ -653,7 +653,7 @@ create_corps_commander = {
 	skill = 8
 
 	
-	attack_skill = 7
+	attack_skill = 8
 	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 5

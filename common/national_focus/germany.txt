@@ -1552,7 +1552,7 @@ random_owned_controlled_state = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
-				bonus = 1.5
+				bonus = 1.0
 				uses = 1
 				name = mech_army_bonus
 				technology = basic_medium_tank
@@ -1762,39 +1762,6 @@ available = {
 		}
 	
 
-	
-	
-	
-	
-	
-	#focus = {
-	#	id = GER_blau
-	#	
-	#	prerequisite = { focus = GER_ussr_war_goal }
-	#	
-	#	available = { 
-	#		Date > 1942.3.1
-	# 
-	#		
-	#	}
-	#	
-	#	x = 15
-	#	y = 6
-	#	
-	#	cost = 1
-	#	ai_will_do = {
-	#		factor = 1
-	#	}	
-    #
-	#	available_if_capitulated = no
-	#	completion_reward = {
-	#		
-    #    }
-    #   }
-	#
-	
-	
-	
 	focus = {
 		id = GER_endsieg
 		icon = GFX_praisegermania
