@@ -21,14 +21,14 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.65
+		maximum_speed = 5
+		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 36
 		hardness = 0.95
-		armor_value = 60
+		armor_value = 70
 
 		#Offensive Abilities
 		soft_attack = 12
@@ -39,7 +39,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 30 
+		build_cost_ic = 25 
 		resources = {
 			#oil = 1
 			steel = 3
@@ -70,19 +70,19 @@ equipments = {
 		is_convertable = yes
 		
 		#Misc Abilities
-		maximum_speed = 5
+		maximum_speed = 6
 
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 52
-		armor_value = 95
+		armor_value = 110
 
 		#Offensive Abilities
 		soft_attack = 22
 		hard_attack = 30
 		ap_attack = 111
 		
-		build_cost_ic = 34
+		build_cost_ic = 31
 		resources = {
 #			oil = 1
 			steel = 3
@@ -101,19 +101,19 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 5
+		maximum_speed = 6
 
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 67
-		armor_value = 110
+		armor_value = 130
 
 		#Offensive Abilities
 		soft_attack = 28
 		hard_attack = 40
 		ap_attack = 131
 		
-		build_cost_ic = 37
+		build_cost_ic = 34
 		resources = {
 			#oil = 1
 			steel = 4
@@ -145,8 +145,8 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.65
+		maximum_speed = 5
+		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 4
@@ -160,7 +160,7 @@ equipments = {
 		ap_attack = 8
 		air_attack = 0
 		
-		build_cost_ic = 30
+		build_cost_ic = 25
 		resources = {
 			#oil = 1
 			steel = 3
@@ -195,7 +195,7 @@ equipments = {
 		visual_level = 1
 
 		#Misc Abilities
-		maximum_speed = 4
+		maximum_speed = 6
 
 		#Defensive Abilities
 		defense = 6
@@ -206,7 +206,7 @@ equipments = {
 		soft_attack = 97
 		hard_attack = 2
 		
-		build_cost_ic = 34
+		build_cost_ic = 27
 		resources = {
 			#oil = 1
 			steel = 4
@@ -228,18 +228,18 @@ equipments = {
 		visual_level = 2
 
 		#Misc Abilities
-		maximum_speed = 5
+		maximum_speed = 6
 
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 3.5
-		armor_value = 85
+		armor_value = 90
 
 		#Offensive Abilities
 		soft_attack = 117
 		hard_attack = 2.5
 		
-		build_cost_ic = 37
+		build_cost_ic = 30
 		resources = {
 			#oil = 1
 			steel = 5
@@ -271,14 +271,14 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.65
+		maximum_speed = 5
+		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 1
 		hardness = 0.95
-		armor_value = 60
+		armor_value = 70
 
 		#Offensive Abilities
 		soft_attack = 6
@@ -286,7 +286,7 @@ equipments = {
 		ap_attack = 96
 		air_attack = 0
 		
-		build_cost_ic = 30
+		build_cost_ic = 25
 		resources = {
 			#oil = 1
 			steel = 3
@@ -321,12 +321,12 @@ equipments = {
 		visual_level = 1
 
 		#Misc Abilities
-		maximum_speed = 4
+		maximum_speed = 6
 
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 1.5
-		armor_value = 95
+		armor_value = 110
 
 		#Offensive Abilities
 		soft_attack = 8
@@ -334,7 +334,7 @@ equipments = {
 		ap_attack = 140
 		air_attack = 0
 		
-		build_cost_ic = 34
+		build_cost_ic = 27
 		resources = {
 			#oil = 1
 			steel = 4
@@ -356,12 +356,12 @@ equipments = {
 		visual_level = 2
 		
 		#Misc Abilities
-		maximum_speed = 5
+		maximum_speed = 6
 
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
-		armor_value = 110
+		armor_value = 130
 
 		#Offensive Abilities
 		soft_attack = 10
@@ -369,7 +369,7 @@ equipments = {
 		ap_attack = 160
 		air_attack = 0
 		
-		build_cost_ic = 37
+		build_cost_ic = 30
 		resources = {
 			#oil = 2
 			steel = 4
@@ -401,8 +401,8 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.65
+		maximum_speed = 5
+		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 2
@@ -416,7 +416,7 @@ equipments = {
 		ap_attack = 25
 		air_attack = 17
 		
-		build_cost_ic = 30
+		build_cost_ic = 25
 		resources = {
 			#oil = 1
 			steel = 3
@@ -451,7 +451,7 @@ equipments = {
 		visual_level = 1
 
 		#Misc Abilities
-		maximum_speed = 4
+		maximum_speed = 6
 
 		#Defensive Abilities
 		defense = 3
@@ -464,7 +464,7 @@ equipments = {
 		ap_attack = 60
 		air_attack = 25
 		
-		build_cost_ic = 34
+		build_cost_ic = 27
 		resources = {
 			#oil = 1
 			steel = 3
@@ -486,14 +486,14 @@ equipments = {
 		visual_level = 2
 		
 		#Misc Abilities
-		maximum_speed = 5
-		reliability = 0.65
+		maximum_speed = 6
+		reliability = 0.8
 
 		
 		#Defensive Abilities
 		defense = 3.5
 		breakthrough = 3.5
-		armor_value = 80
+		armor_value = 90
 
 		#Offensive Abilities
 		soft_attack = 7.5
@@ -501,7 +501,7 @@ equipments = {
 		ap_attack = 88
 		air_attack = 30
 		
-		build_cost_ic = 37
+		build_cost_ic = 30
 		resources = {
 			#oil = 1
 			steel = 4
