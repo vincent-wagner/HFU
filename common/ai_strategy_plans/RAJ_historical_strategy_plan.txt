@@ -41,8 +41,7 @@ RAJ_historical = {
 		RAJ_assam_oil										
 		RAJ_indian_institute_of_science						
 		RAJ_east_india_railways								
-		RAJ_integrate_princely_railways						
-		RAJ_clamp_down_on_corruption						
+		RAJ_integrate_princely_railways												
 		RAJ_royal_indian_navy								
 		RAJ_lions_of_the_great_war							
 		RAJ_cripps_mission									
