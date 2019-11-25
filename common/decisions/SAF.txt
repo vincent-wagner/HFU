@@ -35,6 +35,7 @@ original_tag = SAF
 		has_completed_focus = SAF_secure_interests_in_africa
 		770 = { is_fully_controlled_by = ENG }
 		771 = { is_fully_controlled_by = ENG }
+		544 = { is_fully_controlled_by = ENG }
 		545 = { is_fully_controlled_by = SAF }
 		542 = { is_fully_controlled_by = SAF }
 		}
@@ -46,7 +47,8 @@ original_tag = SAF
 		
 		complete_effect = {
 		SAF = { transfer_state = 770 
-				transfer_state = 771 }
+				transfer_state = 771
+				transfer_state = 544 }
 		}
 
 

@@ -96,17 +96,8 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			has_government = neutrality
-			GER = { has_government = ROOT }
-			GER_will_support = yes
-		}
 		NOT = {
 			has_war_with = GER
-		}
-	
-		OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
 		}
 	}
 
@@ -164,10 +155,8 @@ shared_focus = {
 
 	available = {
 		
-		OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
-		}
-		GER_will_support = yes
+
+		
 	}
 
 	bypass = {
@@ -219,23 +208,6 @@ shared_focus = {
 
 	available = {
 		NOT = { has_idea = CHI_incompetent_officers }
-		
-		OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
-		}
-		if = {
-			limit = {
-				NOT = {
-					OR = {
-						has_government = neutrality
-						GER = {
-							has_government = ROOT
-						}
-					}
-				}
-			}
-			GER_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -270,10 +242,8 @@ shared_focus = {
 
 	available = {
 		
-		OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
-		}
-		GER_will_support = yes
+
+		
 	}
 
 	bypass = {
@@ -317,10 +287,8 @@ shared_focus = {
 	available = {
 		NOT = { has_war_with = GER }
 	
-		OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
-		}
-		GER_will_support = yes
+
+		
 	}
 
 	bypass = {
@@ -355,10 +323,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			GER_will_support = yes
-			SOV_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -412,7 +376,7 @@ shared_focus = {
 	}
 
 	available = {
-		GER_will_support = yes
+		
 	}
 
 	bypass = {
@@ -427,7 +391,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = CHI_chinese_panzers
 			bonus = 1.0
-			uses = 1
+			uses = 2
 			category = armor
 		}
 		custom_effect_tooltip = available_designer
@@ -450,7 +414,7 @@ shared_focus = {
 	}
 
 	available = {
-		GER_will_support = yes
+		
 	}
 
 	bypass = {
@@ -517,10 +481,6 @@ shared_focus = {
 	available = {
 		capital_scope = { is_fully_controlled_by = ROOT }
 		has_tech = motorised_infantry
-		OR = {
-			GER_will_support = yes
-			SOV_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -603,10 +563,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			GER_will_support = yes
-			SOV_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -643,7 +599,7 @@ shared_focus = {
 	}
 
 	available = {
-		SOV_will_support = yes
+		
 	}
 
 	bypass = {
@@ -658,7 +614,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = CHI_hire_soviet_designer
 			bonus = 1.0
-			uses = 1
+			uses = 2
 			category = armor
 		}
 		custom_effect_tooltip = available_designer
@@ -681,7 +637,7 @@ shared_focus = {
 	}
 
 	available = {
-		SOV_will_support = yes
+		
 	}
 
 	bypass = {
@@ -717,11 +673,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			has_government = neutrality
-			SOV = { has_government = ROOT }
-			SOV_will_support = yes
-		}
 		not = {
 			has_War_with = SOV
 		}
@@ -781,7 +732,7 @@ shared_focus = {
 	}
 
 	available = {
-		SOV_will_support = yes
+		
 	}
 
 	bypass = {
@@ -823,7 +774,7 @@ shared_focus = {
 	}
 
 	available = {
-		SOV_will_support = yes	
+			
 	}
 
 	bypass = {
@@ -874,7 +825,7 @@ shared_focus = {
 	}
 
 	available = {
-		SOV_will_support = yes
+		
 	}
 
 	bypass = {
@@ -911,11 +862,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			has_government = neutrality
-			FRA = { has_government = ROOT }
-			FRA_will_support = yes
-		}
 		not = {
 			has_war_with = FRA
 		}
@@ -974,7 +920,7 @@ shared_focus = {
 	}
 
 	available = {
-		FRA_will_support = yes
+		
 	}
 
 	bypass = {
@@ -1016,10 +962,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			FRA_will_support = yes
-			SOV_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -1082,10 +1024,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			FRA_will_support = yes
-			SOV_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -1129,7 +1067,7 @@ shared_focus = {
 
 	available = {
 		all_other_country = { NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route } }
-		FRA_will_support = yes
+		
 		325 = { #Yunnan
 			CONTROLLER = {
 				OR = {
@@ -1185,10 +1123,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			FRA_will_support = yes
-			ENG_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -1225,7 +1159,7 @@ shared_focus = {
 	}
 
 	available = {
-		FRA_will_support = yes
+		
 	}
 
 	bypass = {
@@ -1320,7 +1254,7 @@ shared_focus = {
 	}
 
 	available = {
-		FRA_will_support = yes
+		
 	}
 
 	bypass = {
@@ -1358,10 +1292,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			FRA_will_support = yes
-			ENG_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -1515,11 +1445,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			has_government = neutrality
-			ENG = { has_government = ROOT }
-			ENG_will_support = yes
-		}
 		not = {
 			has_War_with = ENG
 		}
@@ -1591,12 +1516,8 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			is_subject = no
-			is_subject_of = ENG
-		}
 		all_other_country = { NOT = { has_completed_focus = CHI_burma_road } }
-		ENG_will_support = yes
+		
 		325 = { #Yunnan
 			CONTROLLER = {
 				OR = {
@@ -1683,7 +1604,7 @@ shared_focus = {
 			is_subject_of = ENG
 		}
 		all_other_country = { NOT = { has_completed_focus = CHI_ledo_road } }
-		ENG_will_support = yes
+		
 		325 = { #Yunnan
 			CONTROLLER = {
 				OR = {
@@ -1758,11 +1679,11 @@ shared_focus = {
 		OR = {
 			AND = {
 				has_completed_focus = CHI_british_cooperation
-				ENG_will_support = yes
+	
 			}
 			AND = {
 				has_completed_focus = CHI_mission_to_the_us
-				USA_will_support = yes
+	
 			}
 		}
 	}
@@ -1826,11 +1747,11 @@ shared_focus = {
 		OR = {
 			AND = {
 				has_completed_focus = CHI_british_cooperation
-				ENG_will_support = yes
+	
 			}
 			AND = {
 				has_completed_focus = CHI_mission_to_the_us
-				USA_will_support = yes
+	
 			}
 		}
 		is_subject = no
@@ -1952,11 +1873,11 @@ shared_focus = {
 		OR = {
 			AND = {
 				has_completed_focus = CHI_british_cooperation
-				ENG_will_support = yes
+	
 			}
 			AND = {
 				has_completed_focus = CHI_mission_to_the_us
-				USA_will_support = yes
+	
 			}
 		}
 		601 = { #Xikang
@@ -2058,15 +1979,9 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			USA_will_support = yes
-			has_government = neutrality
-			USA = { has_government = ROOT }
-		}
 	}
 
 	bypass = {
-	original_tag = MAN
 	}
 
 	cancel_if_invalid = yes
@@ -2079,29 +1994,7 @@ shared_focus = {
 				target = ROOT
 				modifier = CHI_mission_to_the_us
 			}
-			add_ai_strategy = {
-				type = alliance
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = protect
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = support
-				id = "ROOT"
-				value = 100
-			}
 		}
-		USA = { unlock_decision_tooltip = USA_support_the_anti_fascist_war }
-		custom_effect_tooltip = CHI_mission_to_the_us_soong_us_decision
 	}
 }
 
@@ -2124,7 +2017,7 @@ shared_focus = {
 	}
 
 	available = {
-		USA_will_support = yes
+		
 		is_subject = no
 	}
 
@@ -2163,7 +2056,7 @@ shared_focus = {
 	}
 
 	available = {
-		USA_will_support = yes
+		
 		is_subject = no
 	}
 
@@ -2205,7 +2098,7 @@ shared_focus = {
 	}
 
 	available = {
-		USA_will_support = yes
+		
 	}
 
 	bypass = {
@@ -2243,7 +2136,7 @@ shared_focus = {
 	}
 
 	available = {
-		USA_will_support = yes
+		
 	}
 
 	bypass = {
@@ -2279,7 +2172,7 @@ shared_focus = {
 	}
 
 	available = {
-		USA_will_support = yes
+		
 	}
 
 	bypass = {
@@ -2315,10 +2208,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			USA_will_support = yes
-			JAP_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -2355,10 +2244,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			USA_will_support = yes
-			JAP_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -2397,10 +2282,6 @@ shared_focus = {
 		any_state = {
 			is_controlled_by = ROOT
 			is_coastal = yes
-		}
-		OR = {
-			USA_will_support = yes
-			JAP_will_support = yes
 		}
 	}
 
@@ -2456,10 +2337,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			USA_will_support = yes
-			JAP_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -2495,10 +2372,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			USA_will_support = yes
-			JAP_will_support = yes
-		}
 	}
 
 	bypass = {
@@ -2540,10 +2413,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			JAP = { has_government = ROOT }
-			JAP_will_support = yes
-		}
 		NOT = { has_wargoal_against = JAP }
 		NOT = { has_war_with = JAP }
 	}
@@ -2602,7 +2471,7 @@ shared_focus = {
 	}
 
 	available = {
-		JAP_will_support = yes
+		
 	}
 
 	bypass = {
@@ -2638,7 +2507,7 @@ shared_focus = {
 	}
 
 	available = {
-		JAP_will_support = yes
+		
 	}
 
 	bypass = {

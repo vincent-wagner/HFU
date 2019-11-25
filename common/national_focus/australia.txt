@@ -451,7 +451,6 @@ focus_tree = {
 		id = AST_airborne_defence
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = AST_specialize_equipment }
-		prerequisite = { focus = AST_volunteer_air_observers_corps }
 		x = 2
 		y = 4
 		relative_position_id = AST_additional_militia_training
@@ -1220,7 +1219,7 @@ focus_tree = {
 		x = 11
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1289,7 +1288,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1327,7 +1326,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1363,7 +1362,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1400,7 +1399,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1468,7 +1467,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_cockatoo_island_shipyards
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

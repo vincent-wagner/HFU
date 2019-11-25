@@ -171,9 +171,7 @@ ideas = {
 			
 			modifier = {
 				lend_lease_tension = -1
-				join_faction_tension = 0.25
-				send_volunteers_tension = 0.5
-				guarantee_tension = 0.5
+				join_faction_tension = -1
 			}
 		}
 		USA_lend_lease_act_dummy = { #dummy version to show effects

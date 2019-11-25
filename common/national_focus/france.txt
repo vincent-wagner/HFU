@@ -1874,38 +1874,7 @@ focus = {
 
 	}
 	}
-   
-   focus = {
-	id = FRA_colonies_for_guarentees
-	icon = GFX_focus_FRA_colony
-	prerequisite = { focus = FRA_new_native_policy }
-	cost = 5
-	relative_position_id = FRA_new_native_policy
-	x = 1
-	y = 1
-	available_if_capitulated = yes
-	available = {
-				FRA = { controls_state = 774 
-				
-				}
-		}
-	completion_reward = {
-			custom_effect_tooltip = tooltip_fra_guarentee
-			
-			FRA = { country_event = france.144 }
-			
-			transfer_state = 295
-			transfer_state = 718
-			transfer_state = 538
-			transfer_state = 768
-			transfer_state = 769
 
-
-			
-	}
-	}
-	
-	
 	focus = {
 		id = FRA_defensive_focus
 		icon = GFX_goal_generic_defence

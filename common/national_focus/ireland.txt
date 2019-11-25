@@ -1695,9 +1695,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
-			remove_ideas = SAF_the_commonwealth
 			ENG = { set_autonomy = { target = IRE autonomy_state = autonomy_free } }
-			ENG = { remove_from_faction = IRE }
 			set_cosmetic_tag = IRR
 		}
 	}

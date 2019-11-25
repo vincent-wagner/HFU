@@ -617,91 +617,6 @@ country_event = {
 	}
 }
 
-country_event = {
-   id = france.144
-   title = france.144.t
-   desc = france.144.d
-   picture = GFX_report_event_fra_por_colony
-   fire_only_once = yes
-   is_triggered_only = yes
-
-   option = {
-   name = france.144.a
-   transfer_state = 296
-   296 = {
-   add_extra_state_shared_building_slots = 1
-   }
-   transfer_state = 540
-   540 = {
-   add_extra_state_shared_building_slots = 1
-   }
-   
-    transfer_state = 544
-     544 = {
-   add_extra_state_shared_building_slots = 1
-   }
-   
-   transfer_state = 702
-   transfer_state = 321
-   
-   if = {
-   limit = { POR = { has_full_control_of_state = 721 }}
-   transfer_state = 721
-   }
-   
-   }
-   
-      option = {
-   name = france.144.b
-      296 = {
-   add_extra_state_shared_building_slots = 1
-   }
-   transfer_state = 540
-   540 = {
-   add_extra_state_shared_building_slots = 1
-   }
-   
-    transfer_state = 544
-     544 = {
-   add_extra_state_shared_building_slots = 1
-   }
-   
-   ENG = {
-    country_event = france.149
-   }  
-   }
-   
-      option = {
-   name = france.144.c
-   transfer_state = 296
-         296 = {
-   add_extra_state_shared_building_slots = 1
-   }
-   transfer_state = 540
-   540 = {
-   add_extra_state_shared_building_slots = 1
-   }
-   
-   SAF = {
-     country_event = france.147
-	}
-    ENG = {
-	country_event = france.148
-   }
-   
-   RAJ = {
-	country_event = france.146
-   }
-   
-    INS = { 
-	  if = {
-   limit = { POR = { has_full_control_of_state = 721 }}
-   transfer_state = 721
-   }
-   } 
-   }  
-}
-
 
 country_event = {
    id = france.145
@@ -763,31 +678,5 @@ country_event = {
       ENG = {
    transfer_state = 702
    }
-   }
-   }
-   
-   
-   country_event = {
-   id = france.149
-   title = france.149.t
-   desc = france.149.d
-   picture = GFX_report_event_fra_por_colony
-   fire_only_once = yes
-   is_triggered_only = yes
-
-   option = {
-   name = france.149.a
-      ENG = {
-   transfer_state = 702
-   transfer_state = 321
-   }
-   
-       INS = { 
-	  if = {
-   limit = { POR = { has_full_control_of_state = 721 }}
-   transfer_state = 721
-   }
-   } 
-   
    }
    }

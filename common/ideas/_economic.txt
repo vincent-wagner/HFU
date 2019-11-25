@@ -46,10 +46,7 @@ wartime_economy = {
 			}
 			
 			allowed_to_remove = {
-				OR = {
-					
-					has_completed_focus = USA_limited_intervention
-				}
+				always = no
 			}
 			
 			cancel_if_invalid = no
@@ -81,8 +78,7 @@ wartime_economy = {
 			allowed_to_remove = {
 				OR = {
 					has_war_support > 0.75
-					has_war = yes
-					has_completed_focus = USA_limited_intervention					
+					has_war = yes				
 				}
 			}
 			
@@ -121,24 +117,6 @@ wartime_economy = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					has_war_support > 0.3
-					congress_high_support_trigger = yes
-				}	
-			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
 				}
 			}
 			
@@ -192,14 +170,6 @@ wartime_economy = {
 						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
 				}
-				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					has_war_support > 0.5
-					congress_high_support_trigger = yes
-				}
 			}
 
 			cost = 150
@@ -215,14 +185,6 @@ wartime_economy = {
 			
 			cancel_if_invalid = no
 			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
 			}
 			ai_will_do = {
    				factor = 2
@@ -262,14 +224,6 @@ wartime_economy = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					has_war_support > 0.75
-					congress_high_support_trigger = yes
 				}		
 			}
 		
@@ -285,14 +239,6 @@ wartime_economy = {
 			
 			cancel_if_invalid = no
 			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
 			}
 			ai_will_do = {
    				factor = 5

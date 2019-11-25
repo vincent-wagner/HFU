@@ -150,44 +150,6 @@ country_event = {
 	
 }
 
-
-country_event = {
-
-id = spain.12
-title = spain.12.t
-desc = spain.12.d
-picture = GFX_report_event_spain_civil_war_soldiers
-	
-fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 1	
-	}
-
-trigger = {
-tag = SPR 
-POR = { has_war_with = SPR }
-SPR = { has_full_control_of_state = 112}
-}
- 
- option = {
- name = spain.12.a
- 
-SPR = { white_peace = POR }
-POR = { white_peace = SPR }
- 729 = { remove_core_of = POR }
- SPR = { 
- transfer_state = 179
- transfer_state = 180
- transfer_state = 181
- transfer_state = 112
- }
- SPR = { add_threat = 50 }
- POR = { add_ideas = attrition }
- }
-}
-
-
 country_event = {
 
 id = spain.13

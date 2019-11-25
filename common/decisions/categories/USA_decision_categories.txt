@@ -40,18 +40,6 @@ USA_war_plans = {
 		has_completed_focus = USA_war_plans_division
 	}
 }
-USA_intervention_mandate = {
-	icon = usa_intervention_mandate
-	allowed = {
-		original_tag = USA
-	}
-	visible = {
-		OR = {
-			has_completed_focus = USA_focus_on_europe
-			has_completed_focus = USA_focus_on_asia
-		}
-	}
-}
 
 USA_puppet_minor = {
 	

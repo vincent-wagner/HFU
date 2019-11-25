@@ -117,7 +117,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NZL_form_the_rnzn
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -250,7 +250,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_form_the_rnzn
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -288,7 +288,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = NZL_form_the_rnzn
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -325,7 +325,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_form_the_rnzn
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -362,7 +362,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = NZL_form_the_rnzn
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

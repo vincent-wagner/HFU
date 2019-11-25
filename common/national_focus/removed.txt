@@ -145,5 +145,27 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	focus = {
+		id = USA_limited_intervention
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = {}
+		mutually_exclusive = { }
+		continue_if_invalid = yes
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available = {
+		}
+		bypass = {
+			
+		}
+
+		completion_reward = {
+		}
+	}
 	
 }

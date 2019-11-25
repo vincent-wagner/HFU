@@ -13,8 +13,6 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
-	nor_bad_debuffs
-	nor_bad_debuffs2
 }
 
 set_stability = 0.9
