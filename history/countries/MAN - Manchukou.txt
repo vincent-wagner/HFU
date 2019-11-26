@@ -10,7 +10,7 @@ set_technology = {
 	tech_mountaineers = 1
 	
 }
-
+add_ideas = MAN_faction_trade
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
 	set_country_flag = MAN_northern_bandits

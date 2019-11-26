@@ -44,8 +44,8 @@ AUS = {
 	color_ui = rgb { 255 255 255 }
 }
 LAT = {
-	color = rgb { 145 184 201 }
-	color_ui = rgb { 151 190 207 }
+	color = rgb { 95 142 163 }
+	color_ui = rgb { 95 142 163 }
 }
 SPR = {
 	color = rgb { 242 205 94 }

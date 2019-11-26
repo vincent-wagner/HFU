@@ -2110,6 +2110,9 @@ available = {
 
 		}	
 		completion_reward = {
+			GER = {
+				remove_resource_rights = 724
+			}
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 				
 					GER = {

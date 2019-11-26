@@ -51,6 +51,10 @@ ideas = {
 			modifier = {
 				industry_air_damage_factor = -0.1
 				army_morale_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
 			}
 		}
 	

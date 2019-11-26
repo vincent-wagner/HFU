@@ -518,10 +518,13 @@ wartime_economy = {
 			
 			cancel_if_invalid = no
 			allowed_to_remove = {
-				NOT = {OR={
-					tag=SOV
-					has_idea = wartime_economy
-				}}
+				NOT = {
+					OR={
+						tag=SOV
+						tag=JAP
+						has_idea = wartime_economy
+					}
+				}
 			}
 			ai_will_do = {
    				factor = 1

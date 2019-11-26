@@ -184,4 +184,11 @@ on_actions = {
 
 		}
 	}
+	on_startup = {
+		effect = {
+			SIA = {
+				give_resource_rights = { receiver = GER state = 724 }
+			}
+		}
+	}
 }
