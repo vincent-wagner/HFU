@@ -966,7 +966,7 @@ country_event = {
 					state_event = { id = usa.61 trigger_for = controller }
 				}
 			}
-			25 = {
+			1000 = {
 				modifier = {
 					NOT = {
 						any_owned_state = {
@@ -985,6 +985,10 @@ country_event = {
 					has_completed_focus = USA_military_construction
 					factor = 2
 				}
+				modifier = {
+					NOT = { has_completed_focus = USA_the_giant_wakes }
+					factor = 0
+				}
 				random_owned_state = {
 					limit = {
 						is_core_of = ROOT
@@ -999,7 +1003,7 @@ country_event = {
 					state_event = { id = usa.62 trigger_for = controller }
 				}
 			}
-			25 = { 
+			100 = { 
 				modifier = {
 					NOT = {
 						any_owned_state = {
@@ -1013,6 +1017,10 @@ country_event = {
 							}
 						}
 					}
+					factor = 0
+				}
+				modifier = {
+					has_idea = USA_wasteful_navy
 					factor = 0
 				}
 				random_owned_state = {
