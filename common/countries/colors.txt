@@ -155,6 +155,10 @@ MAN = {
 	color = rgb { 255  120  71 }
 	color_ui = rgb { 255  120  71 }
 }
+SWI = {
+	color = rgb { 224 5 5 }
+	color_ui = rgb { 193 81 81 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
