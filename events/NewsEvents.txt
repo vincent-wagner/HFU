@@ -583,7 +583,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
-				TAG = LIT
+				TAG = LAT
 				is_in_faction_with = GER
 			}
 		}
@@ -594,14 +594,14 @@ news_event = {
 	}
 	option = {
 		name = news.19.c
-		trigger = { TAG = LIT }
+		trigger = { TAG = LAT }
 	}
 	option = {
 		name = news.19.e
 		trigger = {
 			NOT = {
 				TAG = GER
-				TAG = LIT
+				TAG = LAT
 			}
 			is_in_faction_with = GER
 		}
@@ -624,7 +624,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				TAG = GER
-				TAG = LIT
+				TAG = LAT
 				is_in_faction_with = GER
 			}
 		}
@@ -635,14 +635,14 @@ news_event = {
 	}
 	option = {
 		name = news.20.c
-		trigger = { TAG = LIT }
+		trigger = { TAG = LAT }
 	}
 	option = {
 		name = news.20.b
 		trigger = {
 			NOT = {
 				TAG = GER
-				TAG = LIT
+				TAG = LAT
 			}
 			is_in_faction_with = GER
 		}
@@ -2329,30 +2329,12 @@ news_event = {
 	
 	immediate = {
 		if = {
-			limit = { FROM = { tag = LIT } }
-		 	SOV = {
-		 		annex_country = {
-				target = LIT
-				transfer_troops = yes } 
-				add_named_threat = { threat = 2 name = soviet.35_threat_LIT }
-			}
-		}
-		if = {
 			limit = { FROM = { tag = FIN } }
 		 	SOV = { 
 		 		annex_country = {
 				target = FIN
 				transfer_troops = yes } 
 				add_named_threat = { threat = 5 name = soviet.35_threat_FIN }
-			}
-		}
-		if = {
-			limit = { FROM = { tag = EST } }
-		 	SOV = { 
-		 		annex_country = {
-				target = EST
-				transfer_troops = yes } 
-				add_named_threat = { threat = 2 name = soviet.35_threat_EST }
 			}
 		}
 		if = {

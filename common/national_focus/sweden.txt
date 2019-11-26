@@ -249,8 +249,8 @@ focus_tree = {
 				
 			
 				if = {
-				limit = { NOT = { country_exists = LIT } }
-				LIT = { remove_state_core = 11 
+				limit = { NOT = { country_exists = LAT } }
+				LAT = { remove_state_core = 11 
 					remove_state_core = 189 }
 				}
 						if = {
@@ -260,8 +260,8 @@ focus_tree = {
 				
 				}
 						if = {
-				limit = { NOT = { country_exists = EST } }
-				EST = { remove_state_core = 13 
+				limit = { NOT = { country_exists = LAT } }
+				LAT = { remove_state_core = 13 
 					remove_state_core = 191 }
 				
 				}

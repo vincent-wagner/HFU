@@ -43,17 +43,9 @@ AUS = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
 }
-LIT = {
-	color = rgb { 219 219 119 }
-	color_ui = rgb { 255 255 155 }
-}
-EST = {
-	color = rgb { 50 135 175 }
-	color_ui = rgb { 99 204 254 }
-}
 LAT = {
-	color = rgb { 75 77 186 }
-	color_ui = rgb { 124 125 184 }
+	color = rgb { 145 184 201 }
+	color_ui = rgb { 151 190 207 }
 }
 SPR = {
 	color = rgb { 242 205 94 }
@@ -70,10 +62,6 @@ ROM = {
 YUG = {
 	color = rgb { 72 73 126 }
 	color_ui = rgb { 94 95 164 }
-}
-SWI = {
-	color = rgb { 224 5 5 }
-	color_ui = rgb { 193 81 81 }
 }
 TUR = {
 	color = rgb { 171 190 152 }

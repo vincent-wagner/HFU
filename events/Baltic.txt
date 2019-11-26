@@ -3,25 +3,6 @@
 ###########################
 
 add_namespace = baltic
-
-# Soviet Ultimatum (Estonia)
-country_event = {
-	id = baltic.1
-	title = baltic.1.t
-	desc = baltic.1.d
-	picture = GFX_report_event_soviet_soldiers
-	
-	is_triggered_only = yes
-	
-	option = { # Accept demands
-		name = baltic.1.a
-		SOV = {
-			country_event = { days = 5 id = soviet.6 }
-		}
-		custom_effect_tooltip = GAME_OVER_TT
-	}
-}
-
 # Soviet Ultimatum (Latvia)
 country_event = {
 	id = baltic.2
@@ -39,25 +20,6 @@ country_event = {
 		}
 	}
 }
-
-# Soviet Ultimatum (Lithuania)
-country_event = {
-	id = baltic.3
-	title = baltic.1.t
-	desc = baltic.1.d
-	picture = GFX_report_event_soviet_soldiers
-	
-	is_triggered_only = yes
-	
-	option = { # Accept demands
-		name = baltic.1.a
-
-		SOV = {
-			country_event = { days = 5 id = soviet.10 }
-		}
-	}
-}
-
 # Germany Claims Memel (Lithuania)
 country_event = {
 	id = baltic.4
