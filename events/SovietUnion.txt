@@ -107,6 +107,20 @@ limit = {
 	}
 }
 
+# Estonia Surrenders
+country_event = {
+	id = soviet.6
+	title = soviet.6.t
+	desc = soviet.6.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.6.a
+		annex_country = { target = EST }
+	}
+}
 # Latvia Surrenders
 country_event = {
 	id = soviet.8
@@ -122,6 +136,20 @@ country_event = {
 	}
 }
 
+# Lithuania Surrenders
+country_event = {
+	id = soviet.10
+	title = soviet.10.t
+	desc = soviet.10.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.10.a
+		annex_country = { target = LIT }
+	}
+}
 country_event = {
 	id = soviet.21
 	title = soviet.21.t
@@ -146,7 +174,36 @@ country_event = {
 
 
 
+# Oppress Estonia
+country_event = {
+	id = soviet.32
+	title = soviet.32.t
+	desc = soviet.32.d
+	picture = GFX_report_event_soviet_in_riga
 
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+		FROM = {
+			tag = EST
+			any_owned_state = { is_claimed_by = SOV }
+		}
+		NOT = { has_country_flag = estonia_demand }
+	}
+	
+	immediate = { set_country_flag = estonia_demand } 
+		
+	option = {
+		name = soviet.32.a
+		EST = { country_event = { days = 2 id = baltic.1 } }
+	}
+	option = {
+		name = soviet.32.b
+		ai_chance = { factor = 0 }
+		#
+	}
+}
 # Oppress Latvia
 country_event = {
 	id = soviet.33
@@ -173,6 +230,36 @@ country_event = {
 	}
 	option = {
 		name = soviet.33.b
+		ai_chance = { factor = 0 }
+		#
+	}
+}
+# Oppress Lithuania 
+country_event = {
+	id = soviet.34
+	title = soviet.34.t
+	desc = soviet.34.d
+	picture = GFX_report_event_soviet_in_riga
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+		FROM = {
+			tag = LIT
+			any_owned_state = { is_claimed_by = SOV }
+		}
+		NOT = { has_country_flag = lithuania_demand }
+	}
+	
+	immediate = { set_country_flag = lithuania_demand } 
+		
+	option = {
+		name = soviet.34.a
+		LIT = { country_event = { days = 2 id = baltic.3 } }
+	}
+	option = {
+		name = soviet.34.b
 		ai_chance = { factor = 0 }
 		#
 	}

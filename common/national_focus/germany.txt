@@ -2039,6 +2039,12 @@ available = {
 			transfer_state = 80
 			transfer_state = 766
 			annex_country = {
+				target = LIT
+			}
+			annex_country = {
+				target = EST
+			}
+			annex_country = {
 				target = LAT
 			}
 			add_political_power = -150
@@ -2079,7 +2085,7 @@ available = {
 				add_state_core = 188
 			}
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
-			LAT = {
+			LIT = {
 				country_event = { id = baltic.4 }
 			}
 			

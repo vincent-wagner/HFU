@@ -635,7 +635,7 @@ news_event = {
 	}
 	option = {
 		name = news.20.c
-		trigger = { TAG = LAT }
+		trigger = { TAG = LIT }
 	}
 	option = {
 		name = news.20.b
@@ -2329,12 +2329,30 @@ news_event = {
 	
 	immediate = {
 		if = {
+			limit = { FROM = { tag = LIT } }
+		 	SOV = {
+		 		annex_country = {
+				target = LIT
+				transfer_troops = yes } 
+				add_named_threat = { threat = 2 name = soviet.35_threat_LIT }
+			}
+		}
+		if = {
 			limit = { FROM = { tag = FIN } }
 		 	SOV = { 
 		 		annex_country = {
 				target = FIN
 				transfer_troops = yes } 
 				add_named_threat = { threat = 5 name = soviet.35_threat_FIN }
+			}
+		}
+		if = {
+			limit = { FROM = { tag = EST } }
+		 	SOV = { 
+		 		annex_country = {
+				target = EST
+				transfer_troops = yes } 
+				add_named_threat = { threat = 2 name = soviet.35_threat_EST }
 			}
 		}
 		if = {
