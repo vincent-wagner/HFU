@@ -1,102 +1,15 @@
 on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
-	on_daily={
-	effect={
-	every_country={
-	set_temp_variable={currentfuel=fuel_k}
-	set_temp_variable={currentfuelmax=max_fuel_k}
-	divide_temp_variable={currentfuel=currentfuelmax}
-	set_variable={countryfuel=currentfuel}
-	subtract_from_temp_variable={currentfuel=1}
-	multiply_temp_variable={currentfuel = 88}
-	set_variable={fuel_bar_fuel=currentfuel}
-	}
-	
-	
-	every_country={
-	limit={
-	#tag=GER
-	has_country_flag=fuel_system_enabled
-	}
-	
-	for_each_scope_loop={
-	array = THIS.faction_members_array
-	if={
-	limit={check_variable={send_fuel_enabled >1}}
-	set_variable={fuelbedarf=min_fuel}
-	subtract_from_variable={fuelbedarf=countryfuel}
-	set_variable={fuelbedarfanteil=fuelbedarf}
-	multiply_variable={fuelbedarf=max_fuel_k}
-	set_variable={fuelbedarfvorzeichen=fuelbedarf}
-	multiply_variable={fuelbedarfvorzeichen=-1}
-	multiply_variable={fuelbedarfvorzeichen=1000}
-	multiply_variable={fuelbedarf=1000}
-	#log=" [THIS.GetName] [?fuel_k]wow"
-	#log=" [THIS.GetName]  [?fuelnegativ]wow"
-	PREV={
-		set_variable={fuelbedarf=min_fuel}
-		subtract_from_variable={fuelbedarf=countryfuel}
-		set_variable={fuelbedarfanteil=fuelbedarf}
-		multiply_variable={fuelbedarf=max_fuel_k}
-		set_variable={fuelbedarfvorzeichen=fuelbedarf}
-		multiply_variable={fuelbedarfvorzeichen=-1}
-		multiply_variable={fuelbedarfvorzeichen=1000}
-		multiply_variable={fuelbedarf=1000}
-		set_variable={free_stockpile=max_fuel_k}
-		subtract_from_variable={free_stockpile=fuel_k}
-		multiply_variable={free_stockpile=1000}
-	}
-	set_variable={countryfuelplus5=countryfuel}
-	add_to_variable={countryfuelplus5=0.05}
-	if={limit={ #fuel von prev zu this
-	check_variable={PREV.fuelbedarf <0} #hat prev mehr fuel als minimum?
-	check_variable={min_fuel > countryfuelplus5} # braucht this überhaupt fuel?
-	}
-	
-		if={
-		limit={
-		check_variable={fuelbedarf >0}
-		check_variable={PREV.fuelbedarfvorzeichen >fuelbedarf}
-		}
-		GER={add_fuel=PREV.fuelbedarfvorzeichen}
-		add_fuel=fuelbedarf
-		}
-		else={
-		GER={add_fuel=fuelbedarf}
-		add_fuel=PREV.fuelbedarfvorzeichen
-		}
-	}
-	else_if={ #fuel von this zu prev
-		limit={
-		check_variable={fuelbedarf <0} #hat this mehr fuel als minimum?
-		#check_variable={min_fuel <countryfuelplus5} # hat THIS fuel?
-		}
-		if={
-			limit={
-			check_variable={fuelbedarfvorzeichen <PREV.free_stockpile} # ist this free fuel kleiner als prev free stockpile?
-			}
-			GER={add_fuel=PREV.fuelbedarfvorzeichen}
-			add_fuel=fuelbedarf
-		}
-		else={
-			
-			GER={add_fuel=free_stockpile}
-			add_fuel=PREV.free_stockpile
-		}
-	}
-	
-	}
-	}}
-	}
-	
-	}
-	
 	on_state_control_changed = {
 		effect = {
 			if = {
 				limit = {
 					ROOT = {
-						tag = JAP
+						OR = {
+							tag = JAP
+							tag = MAN
+							tag = SIA
+						}
 					}
 					FROM.FROM = {
 						AND = {
@@ -125,6 +38,7 @@ on_actions = {
 								state = 628
 								state = 336
 								state = 624
+								state = 738
 							}
 							USA = {
 								divisions_in_state = {
@@ -268,6 +182,13 @@ on_actions = {
 						}
 				}
 
+		}
+	}
+	on_startup = {
+		effect = {
+			SIA = {
+				give_resource_rights = { receiver = GER state = 724 }
+			}
 		}
 	}
 }
