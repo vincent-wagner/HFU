@@ -75,6 +75,17 @@ scripted_gui = {
 								add_to_array = { ROOT.faction_members_array = THIS.id }
 							}
 						}
+			if = {
+							limit = {
+								any_of_scopes={array=ROOT.faction_members_array NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}
+								}
+							}
+							for_each_scope_loop={
+								array=ROOT.faction_members_array
+								if={limit={NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+								add_to_array={GLOBAL.fuel_countries=THIS.id}}
+								}
+				}
 			}
 			close_button_click = {
 				clear_variable = show_fuel_system_window
