@@ -2,8 +2,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "horsttool_open_container"
-		position = { x = 1330 y = 2 }
-
+		position = { x = -600 y = 2 }
+		Orientation = UPPER_RIGHT
 		buttonType = {
 			name = "tool_open"
 			quadTextureSprite = "GFX_generic_text_bg_203"
