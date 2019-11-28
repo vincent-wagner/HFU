@@ -82,13 +82,7 @@ ideas = {
 					}
 					has_completed_focus = CAN_commit_to_the_war
 				}
-				if = {
-					limit = {
-						original_tag = RAJ
-						has_dlc = "Together for Victory"
-					}
-					compare_autonomy_state > autonomy_dominion
-				}
+				
 
 				if = {
 					limit = {
@@ -156,13 +150,7 @@ ideas = {
 					has_completed_focus = CAN_commit_to_the_war
 					has_completed_focus = CAN_if_day
 				}
-				if = {
-					limit = {
-						original_tag = RAJ
-						has_dlc = "Together for Victory"
-					}
-					is_subject = no
-				}
+				
 
 				if = {
 					limit = {

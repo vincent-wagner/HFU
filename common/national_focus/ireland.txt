@@ -1695,8 +1695,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
-			ENG = { set_autonomy = { target = IRE autonomy_state = autonomy_free } }
-			set_cosmetic_tag = IRR
+			
 		}
 	}
 

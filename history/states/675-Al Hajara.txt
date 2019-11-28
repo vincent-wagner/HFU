@@ -6,11 +6,11 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = IRQ
+		owner = ENG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
-		add_core_of = IRQ
+		
 	}
 	
 	provinces={

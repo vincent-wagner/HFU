@@ -196,7 +196,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -219,7 +219,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_motorized_focus
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}

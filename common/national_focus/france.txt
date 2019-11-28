@@ -1702,7 +1702,7 @@ focus = {
 		x = -2		
 		y = 2
 			
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 		
