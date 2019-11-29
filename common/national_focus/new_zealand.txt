@@ -1615,6 +1615,12 @@ focus_tree = {
 				uses = 1
 				technology = super_heavy_tank
 			}
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 
