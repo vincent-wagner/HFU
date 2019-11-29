@@ -1,32 +1,33 @@
 on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_startup={
+		effect{
+			every_country={
+				limit={	has_country_flag=fuel_system_enabled}
+				add_to_array={GLOBAL.fuel_system_manager=THIS.id}
+			}
+		}
+	}
 	on_daily={
 	effect={
+	if={limit={tag=SWE}
 	for_each_scope_loop={
 	array=GLOBAL.fuel_countries
-	#set_temp_variable={currentfuel=fuel_k}
-	#set_temp_variable={currentfuelmax=max_fuel_k}
-	#divide_temp_variable={currentfuel=currentfuelmax}
-	set_variable={countryfuel=fuel_ratio}
-	set_temp_variable={currentfuel=countryfuel}
+	set_temp_variable={currentfuel=fuel_ratio}
 	subtract_from_temp_variable={currentfuel=1}
 	multiply_temp_variable={currentfuel = 88}
 	set_variable={fuel_bar_fuel=currentfuel}
 	}
-	
-	
-	every_country={
-	limit={
-	#tag=GER
-	has_country_flag=fuel_system_enabled
-	}
+		
 	
 	for_each_scope_loop={
+	array=GLOBAL.fuel_system_manager
+		for_each_scope_loop={
 	array = THIS.faction_members_array
 	if={
 	limit={check_variable={send_fuel_enabled >1}}
 	set_variable={fuelbedarf=min_fuel}
-	subtract_from_variable={fuelbedarf=countryfuel}
+	subtract_from_variable={fuelbedarf=fuel_ratio}
 	set_variable={fuelbedarfanteil=fuelbedarf}
 	multiply_variable={fuelbedarf=max_fuel_k}
 	set_variable={fuelbedarfvorzeichen=fuelbedarf}
@@ -49,7 +50,7 @@ on_actions = {
 		subtract_from_variable={free_stockpile=fuel_k}
 		multiply_variable={free_stockpile=1000}
 	}
-	set_variable={countryfuelplus5=countryfuel}
+	set_variable={countryfuelplus5=fuel_ratio}
 	add_to_variable={countryfuelplus5=0.05}
 	if={limit={ #fuel von prev zu this
 	check_variable={PREV.fuelbedarf <0} #hat prev mehr fuel als minimum?
@@ -61,37 +62,50 @@ on_actions = {
 		check_variable={fuelbedarf >0}
 		check_variable={PREV.fuelbedarfvorzeichen >fuelbedarf}
 		}
-		GER={add_fuel=PREV.fuelbedarfvorzeichen}
+		PREV={add_fuel=PREV.fuelbedarfvorzeichen}
 		add_fuel=fuelbedarf
+		log="CASE 1[GLOBAL.GetDateText][PREV.GetName] [?fuelbedarf] to[THIS.GetName]"
 		}
 		else={
-		GER={add_fuel=fuelbedarf}
+		PREV={add_fuel=fuelbedarf}
 		add_fuel=PREV.fuelbedarfvorzeichen
+		log="CASE 2[GLOBAL.GetDateText][PREV.GetName] [?PREV.fuelbedarfvorzeichen] to[THIS.GetName]"
 		}
 	}
 	else_if={ #fuel von this zu prev
 		limit={
 		check_variable={fuelbedarf <0} #hat this mehr fuel als minimum?
-		#check_variable={min_fuel <countryfuelplus5} # hat THIS fuel?
+		check_variable={PREV.fuel_ratio <0.95} # hat PREV full_stockpile?
 		}
-		log="2[THIS.GetName]"
 		if={
 			limit={
 			check_variable={fuelbedarfvorzeichen <PREV.free_stockpile} # ist this free fuel kleiner als prev free stockpile?
 			}
-			GER={add_fuel=PREV.fuelbedarfvorzeichen}
+			PREV={add_fuel=PREV.fuelbedarfvorzeichen}
 			add_fuel=fuelbedarf
+			log="CASE 3[GLOBAL.GetDateText][PREV.GetName] [?fuelbedarf] to[THIS.GetName]"
 		}
-		else={
-			
-			GER={add_fuel=free_stockpile}
+		else_if={limit={check_variable={PREV.free_stockpile>1000}}#no need to transfer fuel <1k
+			PREV={add_fuel=free_stockpile}
 			add_fuel=PREV.free_stockpile
+			log="CASE 4[GLOBAL.GetDateText][PREV.GetName] [?PREV.free_stockpile] to[THIS.GetName]"
 		}
 	}
-	
+	else_if={
+		limit={
+			check_variable={fuel_ratio <0.95} #hat this free stockpile
+			check_variable={PREV.fuel_ratio >0.95} # hat PREV full_stockpile?
+			}
+		set_temp_variable={free_stockpile=max_fuel_k}
+		subtract_from_temp_variable={free_stockpile=fuel_k}
+		multiply_temp_variable={free_stockpile=1000}
+		PREV={add_fuel=PREV.free_stockpile}
+		add_fuel=free_stockpile
+		log="CASE 5[GLOBAL.GetDateText][PREV.GetName] [?free_stockpile] to[THIS.GetName]"	
+	}
 	}
 	}}
-	}
+	}}
 	
 	}
 	
