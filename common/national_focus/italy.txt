@@ -2252,42 +2252,4 @@ date > 1941.6.1
 			}
 		}
 	}
-	
-	focus = {
-		id = ITA_align_iraq
-		available = {
-
-				ITA = {
-				has_full_control_of_state = 453
-				has_full_control_of_state = 454
-				has_full_control_of_state = 455
-				}
-				
-
-			}
-		 
-
-		bypass = {
-			IRQ = { exists = no }
-		}
-
-		will_lead_to_war_with = IRQ
-		prerequisite = { focus = ITA_pact_of_steel }
-		icon = GFX_focus_ita_irq
-		x = 1
-		y = 3
-
-		relative_position_id = ITA_bulgaria_friend
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-		
-			annex_country = {
-    target = IRQ
-    transfer_troops = yes
-}
-		}
-}
 }

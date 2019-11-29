@@ -3677,50 +3677,6 @@ focus_tree = {
 	}
 
 	# START IRAQ/IRAN/USSR INTERVENTION #
-
-	focus = {
-		id = uk_iraq_focus
-		available = {
-								AND = {
-			date > 1940.1.1
-			
-			OR = {
-			IRQ = { has_war = no }
-
-			}
-				}
-				
-			
-		} #UK at war with fascist/commie. iraq is fascist/commie
-
-		bypass = {
-			IRQ = { exists = no }
-			IRQ = { has_war_with = ENG }
-		}
-
-		will_lead_to_war_with = IRQ
-		prerequisite = { focus = ENG_home_defence }
-		icon = GFX_focus_ENG_attack_iraq
-		x = 0
-		y = 3
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
-		relative_position_id = ENG_home_defence
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			annex_country = { target = IRQ transfer_troops = yes }
-				
-		}
-	}
-	
 	
 		
 	
