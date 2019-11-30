@@ -95,7 +95,7 @@ add_equipment_to_stockpile = {
          amount = 72
          producer = ROM
 }
-set_convoys = 10
+set_convoys = 100
 1939.1.1 = {
 	
 	remove_ideas = neutrality_idea

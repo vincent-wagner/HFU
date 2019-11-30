@@ -21,7 +21,7 @@ set_technology = {
 	motorised_infantry = 1
 }
 
-set_convoys = 50
+set_convoys = 100
 add_equipment_to_stockpile = {
          type = infantry_equipment_1
          amount = 4732

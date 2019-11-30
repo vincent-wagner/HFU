@@ -1,11 +1,39 @@
 ideas = {
 
 	country = {
-	
-	
-		
+		SPR_no_armada = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
 			
-			SPA_preparing_for_war = {
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = 1000 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = 1000 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = 1000 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = 1000 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = 1000 instant = yes
+				}
+			}
+		}
+		
+		SPA_preparing_for_war = {
 
 			allowed = {
 				always = yes
@@ -22,8 +50,7 @@ ideas = {
 				modifier = {
 			production_speed_fuel_silo_factor = 0.25
 			}
-			
-			}
+		}
 			
 			
 	

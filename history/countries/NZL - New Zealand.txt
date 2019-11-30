@@ -202,8 +202,7 @@ create_country_leader = {
 		#
 	}
 }
-
-set_convoys = 70
+set_convoys = 100
 add_equipment_to_stockpile = {
          type = infantry_equipment_1
          amount = 650

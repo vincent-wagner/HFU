@@ -35,7 +35,7 @@ if = {
 		coastal_defense_ships = 1
 	}
 }
-set_convoys = 15
+set_convoys = 100
 add_equipment_to_stockpile = {
          type = infantry_equipment_0
          amount = 1800

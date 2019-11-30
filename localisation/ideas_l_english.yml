@@ -1857,4 +1857,9 @@
  SIA_faction_trade:0 "Co-Prosperity Trade Union"
  MAN_faction_trade:0 "Co-Prosperity Trade Union"
  JAP_faction_trade:0 "Co-Prosperity Trade Union"
+ JAP_faction_trade_desc:0 "The Co-Prosperity Sphere can trade with each other while on closed"
+ SIA_faction_trade_desc:0 "The Co-Prosperity Sphere can trade with each other while on closed"
+ MAN_faction_trade_desc:0 "The Co-Prosperity Sphere can trade with each other while on closed"
+ SPR_no_armada:0 "No Spanish Armada"
+ SPR_no_armada_desc:0 "The embarrassment of losing the new world has left its scars and Spain is no longer willing to invest in a navy"
   
