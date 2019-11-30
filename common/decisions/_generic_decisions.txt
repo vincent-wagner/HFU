@@ -687,7 +687,7 @@ war_measures = {
 	desperate_defense = {
 
 		icon = generic_prepare_civil_war
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR tag=SOV}}
 		available = {
 			surrender_progress > 0.5
 		}
