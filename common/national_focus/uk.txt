@@ -2906,7 +2906,6 @@ focus_tree = {
 		bypass = {
 			OR = {
 				NZL = { exists = no }
-				NZL = { is_ai = yes }
 				NZL = {
 					custom_trigger_tooltip = {
 						tooltip = construction_effort_tt
@@ -3455,42 +3454,10 @@ focus_tree = {
 		}
 
 		available = {
-	    date > 1938.3.1
+			date > 1938.3.1
 		}
 
 		bypass = {
-			CAN = {
-				exists = no
-			}
-			SAF = {
-				exists = no
-			}
-			RAJ = {
-				OR = {
-					exists = no
-					NOT = { is_subject_of = ENG }
-				}
-			}
-			AST = {
-				exists = no
-			}
-			NZL = {
-				exists = no
-			}
-			NOT = {
-				any_state = {
-					OR = {
-						is_core_of = ENG
-						is_core_of = CAN
-						is_core_of = SAF
-						is_core_of = AST
-						is_core_of = NZL
-					}
-					OWNER = {
-						NOT = { tag = ENG }
-					}
-				}
-			}
 		}
 
 		continue_if_invalid = no
@@ -3503,12 +3470,8 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-			#modifier = {
-			#	factor = 0
-			#}
 		}	
 		completion_reward = {
-			add_political_power = 120
 			every_country = {
 				limit = {
 					OR = {
@@ -3535,11 +3498,48 @@ focus_tree = {
 						}
 					}
 				}
-				country_event = { id = mtg_britain.82 hours = 6 }
 				hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 			}
-			custom_effect_tooltip = ENG_imperial_conference_tt
-			custom_effect_tooltip = ENG_indian_autonomy_tt
+			ENG = { 
+				add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 }
+				add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
+				add_war_support = 0.15
+			}
+			RAJ = {
+				add_political_power = -60
+				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
+				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
+				country_event = { id = mtg_britain.88 hours = 12 }
+				add_war_support = 0.1
+			}
+			AST = { 
+				add_political_power = -60
+				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
+				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }	
+				country_event = { id = mtg_britain.88 hours = 12 }
+				add_war_support = 0.1
+			}	
+			NZL = {
+				add_political_power = -60
+				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
+				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
+				country_event = { id = mtg_britain.88 hours = 12 }
+				add_war_support = 0.1
+			}
+			CAN = {
+				add_political_power = -60
+				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
+				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }	
+				country_event = { id = mtg_britain.88 hours = 12 }
+				add_war_support = 0.1
+			}
+			SAF = {
+				add_political_power = -60
+				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
+				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }	
+				country_event = { id = mtg_britain.88 hours = 12 }
+				add_war_support = 0.1
+			}
 		}
 	}
 
