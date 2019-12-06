@@ -2692,19 +2692,19 @@ SPR = { country_event = spain.29 }
 		complete_tooltip = {
 			every_state = {
 				limit = {	has_state_flag = GER_naval_rearmament_2dockyards }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			every_state = {
 				limit = {	has_state_flag = GER_naval_rearmament_1dockyard }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2720,10 +2720,10 @@ SPR = { country_event = spain.29 }
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = GER_naval_rearmament_2dockyards
@@ -2737,10 +2737,10 @@ SPR = { country_event = spain.29 }
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = GER_naval_rearmament_1dockyard
