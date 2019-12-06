@@ -64,11 +64,11 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.1
+			attack = -0.125
 			#movement = -0.2
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.2
+		enemy_army_bonus_air_superiority_factor = -0.1
 	}
 
 	hills = {

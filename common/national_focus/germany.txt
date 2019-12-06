@@ -1552,7 +1552,7 @@ random_owned_controlled_state = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
-				bonus = 1.5
+				bonus = 2
 				uses = 1
 				name = mech_army_bonus
 				technology = basic_medium_tank
@@ -1733,25 +1733,25 @@ available = {
 			            SOV={remove_ideas=Fast_Training }
 		
 				        GER = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 					    ROM = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 						HUN = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 						BUL = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 			            FIN = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 			            ITA = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 			            SPR = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 			
 			
@@ -1771,38 +1771,60 @@ available = {
 	
 	
 	
-	#focus = {
-	#	id = GER_blau
-	#	
-	#	prerequisite = { focus = GER_ussr_war_goal }
-	#	
-	#	available = { 
-	#		Date > 1942.3.1
-	# 
-	#		
-	#	}
-	#	
-	#	x = 15
-	#	y = 6
-	#	
-	#	cost = 1
-	#	ai_will_do = {
-	#		factor = 1
-	#	}	
-    #
-	#	available_if_capitulated = no
-	#	completion_reward = {
-	#		
-    #    }
-    #   }
-	#
+	focus = {
+		id = GER_blau
+		
+		prerequisite = { focus = GER_ussr_war_goal }
+		icon = GFX_focus_ger_reichskommisariats
+		available = { 
+			Date > 1942.5.1
+	 
+			
+		}
+
+		x = 17
+		y = 6
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}	
+    
+		available_if_capitulated = no
+		completion_reward = {
+			
+			GER = { 
+						add_timed_idea = { idea = GER_blau days = 100 }
+					}
+					    ROM = { 
+						add_timed_idea = { idea = GER_blau days = 100 }
+					}
+						HUN = { 
+						add_timed_idea = { idea = GER_blau days = 100 }
+					}
+						BUL = { 
+						add_timed_idea = { idea = GER_blau days = 100 }
+					}
+			            FIN = { 
+						add_timed_idea = { idea = GER_blau days = 100 }
+					}
+			            ITA = { 
+						add_timed_idea = { idea = GER_blau days = 100 }
+					}
+			            SPR = { 
+						add_timed_idea = { idea = GER_blau days = 100 }
+					}
+			
+       }
+       }
+	
 	
 	
 	
 	focus = {
 		id = GER_endsieg
 		icon = GFX_praisegermania
-		prerequisite = { focus = GER_ussr_war_goal }
+		
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 
 
@@ -1845,9 +1867,8 @@ available = {
 	focus = {
 		id = GER_totaler_krieg
 		icon = goal_ger_heer
-		prerequisite = { focus = GER_ussr_war_goal }
-		prerequisite = { focus = GER_end_of_czechoslovakia }
-
+		prerequisite = { focus = GER_rhineland }
+		
 
 		available = { 
 			Date > 1941.6.1
@@ -1855,9 +1876,9 @@ available = {
 		}
 
 		
-		x = 0
-		y = 2
-		relative_position_id = GER_ussr_war_goal
+		x = 20
+		y = 1
+		
 		cost = 5
 		ai_will_do = {
 			factor = 1

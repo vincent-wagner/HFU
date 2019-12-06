@@ -1394,8 +1394,9 @@ ideas = {
 			equipment_bonus = {
 				
 				medium_tank_equipment = {
-					build_cost_ic = -0.1
-					reliability = 0.15
+					
+					reliability = 0.35
+					build_cost_ic = -0.05
 					
 					
 				}
@@ -1420,9 +1421,9 @@ ideas = {
 			equipment_bonus = {
 				
 				medium_tank_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = 0.1
 					maximum_speed = 0.1
-					
+					soft_attack = 0.05
 				}
 
 			}
@@ -1445,8 +1446,8 @@ ideas = {
 			equipment_bonus = {
 				
 				medium_tank_equipment = {
-					soft_attack = 0.05
-					hard_attack = 0.05
+					
+					hard_attack = 0.1
 					maximum_speed = 0.05
 					
 				}
@@ -1482,7 +1483,8 @@ ideas = {
                     fighter_equipment = {
 					
 					build_cost_ic = -0.1
-					reliability = 0.1
+					
+					air_agility = -0.05
 				}
 
 			}

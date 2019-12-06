@@ -15,6 +15,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_degauss_ship_hulls.dds"
 	}		
 	
+	SpriteType = {
+		name = "GFX_idea_daimler_Benz_AG"
+		texturefile = "gfx/interface/ideas/idea_daimler_Benz_AG.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_idea_generic_agrarian_society"
 		texturefile = "gfx/interface/ideas/idea_generic_agrarian_society.dds"
