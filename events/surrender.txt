@@ -59,6 +59,8 @@ country_event = {
 			set_state_controller=538#congo sometimes goes to GER on cap
 			set_state_controller=718
 			set_state_controller=295
+			set_state_controller=768
+			set_state_controller=769
 			}
 			
 		}
