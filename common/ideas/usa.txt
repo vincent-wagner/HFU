@@ -11,7 +11,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				supply_consumption_factor = 1.0
+				supply_consumption_factor = 0.01
 			}
 		}
 		
