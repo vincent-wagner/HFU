@@ -3,8 +3,7 @@ scripted_gui = {
 		context_type = player_context
 
 		window_name = "fuel_tool_topbar_win"
-		parent_window_token = top_bar
-
+		parent_window_token = logistics_tab
 		visible = {
 			has_country_flag=fuel_system_enabled
 			
@@ -44,7 +43,7 @@ scripted_gui = {
 	}
 	fuel_system_window = {
 		context_type = player_context
-		#parent_window_token = logistics_tab
+		parent_window_token = logistics_tab
 		window_name = "fuel_system_window"
 
 		visible = {

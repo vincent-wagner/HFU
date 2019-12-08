@@ -4,8 +4,13 @@ guiTypes = {
 		buttonType ={
 			name ="fuel_value_button"
 			#spriteType = "GFX_generic_text_bg_203"
-			spriteType = "GFX_button_transparent"
-			position = { x=491 y=5 }
+			spriteType = "GFX_division_designer_button"
+			#spriteType = "GFX_button_transparent"
+			buttonFont = "hoi_18mbs"
+			buttonText = "Fuel Distribution"
+			#frame=0
+			#quadTextureSprite = "GFX_military_deployment_add_line_btn"
+			position = { x=270 y=12}
 			Orientation = "UPPER_LEFT"
 			#alwaystransparent = yes
 		}
@@ -15,8 +20,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "fuel_system_window"
-		position = { x = -606 y = 78 }
-		show_position = { x = -6 y = 78 }
+		position = { x = -606 y = 0 }
+		show_position = { x = 0 y = 0 }
 		size = { width = 550 height = 100%% }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated

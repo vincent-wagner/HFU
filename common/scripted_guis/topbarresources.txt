@@ -1,0 +1,40 @@
+scripted_gui = {
+
+	topbar_resource= {
+		context_type = player_context
+		window_name = "topbar_resource_container"
+		visible = {
+		check_variable={resources_disabled=0}
+		}
+
+		effects = {
+		toogle_button_click={
+		if={limit={check_variable={resources_disabled=0}}
+		set_variable={resources_disabled=1}}
+		else={clear_variable=resources_disabled}
+		}
+		}
+		triggers = {
+			
+		}
+	}
+		topbar_resource2= {
+		context_type = player_context
+		window_name = "topbar_resource2_container"
+		visible = {
+		#check_variable={resources_disabled=1}
+		always=yes
+		}
+
+		effects = {
+		toogle_button2_click={
+		if={limit={check_variable={resources_disabled=0}}
+		set_variable={resources_disabled=1}}
+		else={clear_variable=resources_disabled}
+		}
+		}
+		triggers = {
+			
+		}
+	}
+}

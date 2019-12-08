@@ -31,8 +31,8 @@
 
  ST_TOOLTIP_on:0 "§HActivate 'Host Tool'§!"
  ST_TOOLTIP_off:0 "§HDeactivate 'Host Tool'§!"
-transfer_states_on:0 "Horst Tool: £trigger_no"
-transfer_states_off:0 "Horst Tool: £trigger_yes"
+transfer_states_on:0 "Host Tool:£trigger_no"
+transfer_states_off:0 "Host Tool:£trigger_yes"
 
  CHEAT_SELECT:0   "Select cheat"
  CHEAT1:0   "Armor - 100%"
@@ -51,5 +51,6 @@ transfer_states_off:0 "Horst Tool: £trigger_yes"
  CHEAT14:0  "100 Air xp"
  mark_status_marked:0   "     Unmark State "
  mark_status_unmarked:0 "      Mark State  "
- 
+ disable_resources:0 "Press this button or use the following shortcut to enable or disable topbar resources"
+
  
