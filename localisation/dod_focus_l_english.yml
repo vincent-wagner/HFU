@@ -758,3 +758,12 @@
  YUG_expand_the_submarine_fleet_desc:1 "Rather than challenge the enemy head-on with our inferior navy, we should focus on submarines to harass the enemy and target their merchant shipping."
  panslavic_workers_congress:0 "Pan-Slavic Worker's Congress"
 
+ 
+ ROM_army_maneuvers2:0 "Joint Exercises with Germany"
+ ROM_army_maneuvers2_desc:0 "The Wehrmacht is the most advanced army in Europe - we can learn army doctrine from training with them."
+ ROM_foreign_equipment:0 "Modernized Support Equipment"
+ ROM_foreign_equipment_desc:0 "An army is only as strong as the men and equipment supporting it."
+ ROM_foreign_equipment1:0 "The Burileanu II"
+ ROM_foreign_equipment1_desc:0 "Our anti-aircraft batteries are pathetically outdated. We need a successor to the Burileanu immediately."
+ ROM_transports:0 "The Siebel Ferry"
+ ROM_transports_desc:0 "Our infantry relies on our merchant marine to be transported in the Black Sea. If build new landing craft we can multiple the power of our marine corps."
