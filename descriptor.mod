@@ -3,5 +3,4 @@ tags={
 	"Balance"
 }
 replace_path = "history/countries"
-replace_path = "history/states"
-name="HFUlocal"
+name="HFU"
