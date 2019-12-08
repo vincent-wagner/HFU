@@ -1079,6 +1079,10 @@ ideas = {
 			}
 		}
 		
+		
+	}
+	
+	air_chief = {
 		andrew_cunningham = {
 			
 			allowed = {
@@ -1088,10 +1092,6 @@ ideas = {
 			traits = { air_air_superiority_2 }	
 	
 		}
-	}
-	
-	air_chief = {
-
 		cyril_newall = {
 			
 			allowed = {
