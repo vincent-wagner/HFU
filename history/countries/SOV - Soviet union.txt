@@ -618,14 +618,14 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Vasily Chuikov"
 		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
-	traits = { winter_specialist winter_expert brilliant_strategist career_officer }
+	traits = { winter_specialist winter_expert infantry_leader skilled_staffer }
 	skill = 1
 
 	
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_navy_leader = {

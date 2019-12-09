@@ -300,8 +300,6 @@ ideas = {
 
 			picture = generic_acquire_tanks
             modifier = {
-			planning_speed = 3
-			supply_consumption_factor = -0.3
 			army_armor_speed_factor = 0.1
 			}
 			
