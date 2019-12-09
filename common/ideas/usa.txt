@@ -686,7 +686,7 @@ ideas = {
 			modifier = {
 				min_export = -0.15
 			
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
 	

@@ -773,7 +773,7 @@ technologies = {
 		
 
 		
-		conscription = 0.01
+		conscription = 0.005
 		
 		path = {
 			leads_to_tech = nd_conscription 
@@ -826,7 +826,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		conscription = 0.01
+		conscription = 0.005
 
 		path = {
 			leads_to_tech = werwolf_guerillas 
@@ -873,7 +873,7 @@ technologies = {
 		#Increased Partisan effect on your land occupied by others
 		partisan_effect = 0.1 #10% more partisan effects
 		
-		enable_tactic = tactic_guerrilla_tactics
+		conscription = 0.005
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -2747,8 +2747,10 @@ technologies = {
 		}
 
 
-
-		supply_consumption_factor = -0.20
+        category_all_infantry = {
+			default_morale = 0.05
+		}
+		
 
 		enable_tactic = tactic_relentless_assault
 		enable_tactic = tactic_human_wave_tactics
@@ -2808,7 +2810,11 @@ technologies = {
 	
 	deep_operations = {
 		category_tanks = {
-			max_organisation = 5
+			max_organisation = 2
+		}
+		
+		category_all_armor = {
+			default_morale = 0.1
 		}
 		xp_research_type = army
 		xp_research_cost = 100
@@ -2863,9 +2869,12 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 5
 		}
-		
+		category_all_infantry = {
+			default_morale = 0.05
+		}
+		land_reinforce_rate = 0.05
 		enable_tactic = tactic_elastic_defense
 		enable_tactic = tactic_default_elastic_defense
 		
@@ -2974,8 +2983,8 @@ technologies = {
 			breakthrough = 0.10
 		}
 		category_all_infantry = {
-			max_organisation = 5
-			breakthrough = 0.20
+			max_organisation = 10
+			breakthrough = 0.10
 		}
 		enable_tactic = tactic_breakthrough
 		enable_tactic = tactic_default_breakthrough
@@ -3093,9 +3102,11 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		org_loss_when_moving = -0.40
+		org_loss_when_moving = -0.3
 		land_reinforce_rate = 0.05
-		
+		category_army = {
+			default_morale = 0.10
+		}
 		enable_tactic = tactic_backhand_blow
 
 		doctrine = yes	

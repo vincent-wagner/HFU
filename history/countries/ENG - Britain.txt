@@ -608,12 +608,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Thomas Jacomb Hutton"
 		picture = "Portrait_Britain_Thomas_Jacomb_Hutton.dds"
-	traits = { old_guard }
+	traits = { infantry_leader skilled_staffer }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 2
-	logistics_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
