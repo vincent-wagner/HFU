@@ -619,9 +619,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		xor={
-			volkssturm
-		}
+		
 		
 		category_all_infantry = {
 			max_organisation = 10
@@ -772,12 +770,10 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		xor={
-			firebrigades
-		}
+		
 
 		
-		conscription = 0.02
+		conscription = 0.01
 		
 		path = {
 			leads_to_tech = nd_conscription 
@@ -830,7 +826,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		conscription = 0.03
+		conscription = 0.01
 
 		path = {
 			leads_to_tech = werwolf_guerillas 
@@ -926,6 +922,7 @@ technologies = {
 		category_front_line = {
 			 soft_attack = 0.2
 		}
+		supply_consumption_factor = 0.10
 		
 		enable_tactic = tactic_barrage
 			
@@ -2751,10 +2748,10 @@ technologies = {
 
 
 
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.20
 
 		enable_tactic = tactic_relentless_assault
-		
+		enable_tactic = tactic_human_wave_tactics
 		path = {
 			leads_to_tech = deep_operations
 			research_cost_coeff = 1
@@ -2811,13 +2808,13 @@ technologies = {
 	
 	deep_operations = {
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 5
 		}
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		enable_tactic = tactic_blitz
-		
+		enable_tactic = tactic_default_blitz
 		
 		path = {
 			leads_to_tech = operational_concentration
@@ -2865,10 +2862,12 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		max_planning = 0.10
-		land_reinforce_rate = 0.05
-
+		category_all_infantry = {
+			max_organisation = 10
+		}
+		
 		enable_tactic = tactic_elastic_defense
+		enable_tactic = tactic_default_elastic_defense
 		
 		path = {
 			leads_to_tech = vast_offensives
@@ -2918,12 +2917,11 @@ technologies = {
 		xp_research_bonus = 1.00
 		supply_consumption_factor = -0.10
 		
-		infantry = {
-			combat_width = -0.4
-		}
+		
 
 		
 		enable_tactic = tactic_overwhelming_fire
+		enable_tactic = tactic_default_overwhelming_fire
 		
 		path = {
 			leads_to_tech = breakthrough_priority
@@ -2977,11 +2975,10 @@ technologies = {
 		}
 		category_all_infantry = {
 			max_organisation = 5
-			breakthrough = 0.10
+			breakthrough = 0.20
 		}
-		
 		enable_tactic = tactic_breakthrough
-		
+		enable_tactic = tactic_default_breakthrough
 		path = {
 			leads_to_tech = mechanized_wave
 			research_cost_coeff = 1
@@ -3028,6 +3025,7 @@ technologies = {
 		category_tanks = {
 			max_organisation = 2
 		}
+		
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -3095,7 +3093,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		org_loss_when_moving = -0.25
+		org_loss_when_moving = -0.40
 		land_reinforce_rate = 0.05
 		
 		enable_tactic = tactic_backhand_blow
@@ -3147,8 +3145,8 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		
-		#Increased Partisan effect on your land occupied by others
-		partisan_effect = 0.1 #10% more partisan effects
+		
+		
 		#Land Units take less attrition
 		attrition = -0.2 #take 10% less attrition losses
 		
