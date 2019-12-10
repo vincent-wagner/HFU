@@ -1611,8 +1611,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_develop_tanks
-				ahead_reduction = 2
-				uses = 1
+				bonus = 1.0
+				uses = 2
 				category = armor
 			}
 		}
