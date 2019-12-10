@@ -697,10 +697,10 @@ on_actions = {
 	
 	on_army_leader_promoted = {
 		effect = {
-			add_timed_unit_leader_trait = {
-				trait = recently_promoted
-				days = 100
-			}
+			# add_timed_unit_leader_trait = {
+			#	trait = recently_promoted
+			#	days = 100
+			#}
 		}
 	}
 	
