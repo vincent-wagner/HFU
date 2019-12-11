@@ -15,8 +15,13 @@ operations = {
 			factor = 1
 		}
 		fire_only_once = yes
-		days_remove = 30
-		complete_effect = {EFR={declare_war_on = {
+		days_remove = 23
+		complete_effect = {
+		
+		FRA = {transfer_state = 461
+		       transfer_state = 462
+			  }
+		EFR={declare_war_on = {
 				target = ENG
 				type = annex_everything
 			}}
