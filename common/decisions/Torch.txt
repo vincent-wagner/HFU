@@ -2,6 +2,7 @@ operations = {
 	USA_execute_operation_torch = {
 		icon = generic_operation
 		available = {
+			tag = ENG
 			has_war_with = GER
 			Date > 1940.1.1
 			FRA = { has_capitulated = yes}

@@ -98,6 +98,7 @@ operations = {
 	
 	
 	available = {
+			tag = GER
 			EFR = { has_war_with = ENG }
 			Date > 1941.6.1
 			
