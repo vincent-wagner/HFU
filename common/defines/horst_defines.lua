@@ -222,6 +222,7 @@ NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.30 -- 33% org on drop
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 72 -- 72hrs of org regen 'penalty'
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.50 -- +50% org regen, normal is -80%
 NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 2
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 1
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
 
 

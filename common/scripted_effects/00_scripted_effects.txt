@@ -145,49 +145,6 @@ get_best_alliance_match_communism_effect = { #arguably a trigger, but it does st
 	get_best_alliance_match_effect = yes
 }
 
-get_best_alliance_match_effect = {
-	set_temp_variable = { best_leader = 0 }
-	set_temp_variable = { best_leader_score = 0 }
-	for_each_scope_loop = {
-		array = global.majors
-		if = {
-			limit = {
-				is_faction_leader = yes
-				has_government = ROOT
-				not = { has_war_with = ROOT }
-			}
-			set_temp_variable = { THIS.leader_score = num_of_factories }
-			add_to_temp_variable = { THIS.leader_score = num_battalions }
-			every_other_country = {
-				limit = { is_in_faction_with = PREV }
-				add_to_temp_variable = { PREV.leader_score = num_of_factories }
-				add_to_temp_variable = { PREV.leader_score = num_battalions }
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						is_on_continent = ROOT
-					}
-				}
-				multiply_temp_variable = { leader_score = 2 }
-			}
-			if = {
-				limit = {
-					is_neighbor_of = ROOT
-				}
-				multiply_temp_variable = { leader_score = 1.25 }
-			}
-			if = {
-				limit = {
-					check_variable = { ROOT.best_leader_score < leader_score }
-				}
-				set_temp_variable = { ROOT.best_leader = THIS }
-				set_temp_variable = { ROOT.best_leader_score = leader_score }
-			}
-		}
-	}
-}
-
 remove_naval_treaty_effect = {
 	if = {
 		limit = {
