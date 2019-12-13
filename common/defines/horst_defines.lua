@@ -165,11 +165,12 @@ NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 -------------------------------------
 --Combat 
+NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.7 }
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.06
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.6
 NDefines.NMilitary.RECON_SKILL_IMPACT = 7
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.5
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 18
@@ -178,7 +179,7 @@ NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 10
-NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.1
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 4 --back to 4
 NDefines.NMilitary.TRAINING_ATTRITION = 0.02
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999
@@ -206,7 +207,10 @@ NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
 
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
-NDefines.NNavy.ANTI_AIR_TARGETING = 0.7                         --Vanilla 0,9
+NDefines.NNavy.ANTI_AIR_TARGETING = 0.7 
+                       
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.07
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3    --Vanilla 0.3
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.45          --Vanilla -0.35
@@ -216,13 +220,13 @@ NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.000
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.5                --Vanilla 0.8	
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 2.0
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.55	-- Vanilla 0,75
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 1
 
 --Paratrooper changes
 NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.30 -- 33% org on drop
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 72 -- 72hrs of org regen 'penalty'
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.50 -- +50% org regen, normal is -80%
 NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 2
-NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 1
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
 
 
