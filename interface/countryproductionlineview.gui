@@ -2444,7 +2444,7 @@ guiTypes = {
 		iconType = {
 			name ="equipment_role"
 			spriteType = "GFX_naval_equipment_role_icons"
-			position = { x = 10 y = 49 }
+			position = { x = 30 y = 49 }
 			alwaystransparent = yes
 		}
 
