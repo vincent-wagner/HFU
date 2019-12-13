@@ -1,22 +1,25 @@
 ideas = {
 
 	country = {
-		USA_wasteful_military = {
-			picture = generic_war_preparation
+		USA_naval_neutrality = {
+			picture = generic_the_london_naval_treaty
 			
 			allowed = {
 				always = no
+			}
+			cancel = {
+				has_war = yes
 			}
 
 			removal_cost = -1
 			
 			modifier = {
-				supply_consumption_factor = 0.01
+				navy_max_range_factor = -1.00
 			}
 		}
 		
 		USA_wasteful_navy = {
-			picture = generic_war_preparation
+			picture = escort_effort_focus
 			
 			allowed = {
 				always = no

@@ -133,18 +133,6 @@ print_variable_log_effect = {
 	}
 }
 
-get_best_alliance_match_democratic_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
-	get_best_alliance_match_effect = yes
-}
-
-get_best_alliance_match_fascism_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
-	get_best_alliance_match_effect = yes
-}
-
-get_best_alliance_match_communism_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
-	get_best_alliance_match_effect = yes
-}
-
 remove_naval_treaty_effect = {
 	if = {
 		limit = {
