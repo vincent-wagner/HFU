@@ -42,8 +42,6 @@ tech_mountaineers = 1
 	CAS1 = 1
 	tactical_bomber1 = 1
 	
-	trench_warfare = 1
-
 	
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1

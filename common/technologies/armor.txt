@@ -18,7 +18,7 @@ technologies = {
 						has_tech = motorised_infantry
 					}
 
-					load_oob = "unlock_tanks_mot"
+					load_oob = "unlock_tanks"
 				}
 				if = {
 					limit = {
@@ -97,7 +97,7 @@ technologies = {
 						has_tech = motorised_infantry
 					}
 
-					load_oob = "unlock_tanks_mot"
+					load_oob = "unlock_tanks"
 				}
 				if = {
 					limit = {
@@ -567,6 +567,30 @@ technologies = {
 
 		enable_equipments = {
 			medium_tank_equipment_1 
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {	has_template_containing_unit = medium_armor }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_medium"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks_medium"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		
 		path = {
@@ -1289,9 +1313,7 @@ technologies = {
 
 		on_research_complete = {
 			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
 				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
 			}
 			hidden_effect = {
 				if = {
@@ -1299,14 +1321,14 @@ technologies = {
 						has_tech = motorised_infantry
 					}
 
-					load_oob = "unlock_tanks_mot"
+					load_oob = "unlock_tanks_heavy"
 				}
 				if = {
 					limit = {
 						NOT = { has_tech = motorised_infantry }
 					}
 
-					load_oob = "unlock_tanks"
+					load_oob = "unlock_tanks_heavy"
 				}
 			}
 
@@ -1449,6 +1471,30 @@ technologies = {
 
 		enable_equipments = {
 			heavy_tank_equipment_2 
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {	has_template_containing_unit = heavy_armor }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_heavy"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks_heavy"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		
 		path = {
