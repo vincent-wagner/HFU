@@ -347,7 +347,7 @@ ideas = {
                     fighter_equipment = {
 					
 					
-					air_agility = -0.4
+					air_agility = -0.2
 				}
 
 			}
