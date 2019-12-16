@@ -21,7 +21,7 @@ country = {
 			tag = PRU
 			tag = ECU
 			tag = COL
-			tag = VEN
+			
 			tag = PAN
 			tag = CUB
 			tag = DOM

@@ -3108,7 +3108,9 @@ technologies = {
 			default_morale = 0.10
 		}
 		enable_tactic = tactic_backhand_blow
-
+        infantry = {
+			max_strength = 5
+		}
 		doctrine = yes	
 		research_cost = 4.5
 		
@@ -3156,10 +3158,10 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		
-		
-		
+		#Increased Partisan effect on your land occupied by others
+		partisan_effect = 0.1 #10% more partisan effects
 		#Land Units take less attrition
-		attrition = -0.2 #take 10% less attrition losses
+		attrition = -0.1 #take 10% less attrition losses
 		
 		enable_tactic = tactic_human_wave_tactics
 		
@@ -3204,6 +3206,12 @@ technologies = {
 
 				OR = {
 					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
 				}
 			}
 
@@ -3310,7 +3318,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		infantry = {
-			max_strength = 5
+			combat_width = -0.4
 		}
 
 		land_reinforce_rate = 0.15		
@@ -3354,9 +3362,9 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		out_of_supply_factor = -0.50
+		out_of_supply_factor = -0.30
 		category_army = {
-			default_morale = 0.25
+			default_morale = 0.2
 		}
 		
 		partisan_effect = 0.2
