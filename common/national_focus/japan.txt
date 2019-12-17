@@ -115,9 +115,7 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
-            CHI = {
-					country_event = { id = china.187 }
-				}		
+            		
 		}
 	  
 	
@@ -174,7 +172,7 @@ focus_tree = {
          transfer_state = 749		
 		 transfer_state = 600
 		 transfer_state = 599
-		 
+		 add_threat = 7
 				
 					
 		
@@ -298,7 +296,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+          add_threat = 5
           CHI = {set_equipment_fraction = 0}
 		  annex_country = {
           target = CHI
