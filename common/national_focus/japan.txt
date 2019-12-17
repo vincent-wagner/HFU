@@ -188,8 +188,8 @@ focus_tree = {
 		        army_experience = 950
 		        air_experience = 600}
 		
-		SOV = { army_experience = 100
-		        air_experience = 250}
+		SOV = { army_experience = 150
+		        air_experience = 200}
 		
 		USA = { add_war_support = 0.1
 		        army_experience = 100
@@ -228,31 +228,31 @@ focus_tree = {
 		        air_experience = 200}
 		
 		GER = { 
-		        army_experience = 100
+		        army_experience = 150
 		        air_experience = 250}
 		
 		ITA = { 
-		        army_experience = 100
+		        army_experience = 150
 		        air_experience = 200}
 		
 		HUN = { 
-		        army_experience = 100
+		        army_experience = 150
 		        air_experience = 200}
 		
 		SPR = { 
-		        army_experience = 100
+		        army_experience = 150
 		        air_experience = 200}
 		
 		BUL = { 
-		        army_experience = 100
+		        army_experience = 150
 		        air_experience = 200}
 		
 		FIN = { 
-		        army_experience = 100
+		        army_experience = 150
 		        air_experience = 200}
 		
 		ROM = { 
-		        army_experience = 100
+		        army_experience = 150
 		        air_experience = 200}
 		
 		MAN = { 
@@ -260,7 +260,7 @@ focus_tree = {
 		        air_experience = 200}
 		
 		SIA = { 
-		        army_experience = 100
+		        army_experience = 150
 		        air_experience = 200}
 		
 		
