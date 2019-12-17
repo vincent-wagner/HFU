@@ -271,18 +271,18 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Edmund Rupert Drummond"
 	gfx = "GFX_NZL_edmund_drummond"
-	traits = { spotter blockade_runner bold }
+	traits = { spotter blockade_runner }
 	skill = 5
-	attack_skill = 3
+	attack_skill = 5
 	defense_skill = 1
-	maneuvering_skill = 6
+	maneuvering_skill = 9
 	coordination_skill = 6
 }
 
 create_navy_leader = {
 	name = "Peter Phipps"
 	gfx = "GFX_NZL_peter_phipps"
-	traits = { navy_career_officer }
+	traits = { }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
