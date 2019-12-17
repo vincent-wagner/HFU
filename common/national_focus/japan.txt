@@ -132,42 +132,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_greater_east_asian_co_prosperity_sphere
 
-		cost = 10
+		cost = 5
 
 		available = { 
-			is_puppet = no 
-			NOT = { has_war_with = CHI }
+			date > 1937.12.1
 		}
-		bypass = {
-			OR = {
-				AND = {
-					608 = {
-						NOT = {
-							is_controlled_by = CHI
- 
- 
-						}
-					}
-					597 = {
-						NOT = {
-							is_controlled_by = CHI
- 
- 
-						}
-					}
-					614 = {
-						NOT = {
-							is_controlled_by = CHI
- 
- 
-						}
-					}
-				}
-				has_war_with = CHI
-			}
-		}
+		
 
-		will_lead_to_war_with = CHI
+		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -175,47 +147,182 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
-			modifier = {
 				factor = 0
+			modifier = {
 				date < 1937.1.1
 			}
 		}
 
 		completion_reward = {
-		hidden_effect = { 
-		}
-				CHI = {
-					country_event = china.1
-				}
-					add_war_support = 0.05
-		create_wargoal = {
-  			type = annex_everything
-  			target = CHI
-  		}
-			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
-			unlock_decision_tooltip = JAP_china_step_up_war_effort
+	
+		
+         transfer_state = 608
+	     transfer_state = 614
+		 transfer_state = 597
+		 transfer_state = 743
+         transfer_state = 607
+		 transfer_state = 598
+	     transfer_state = 606
+		 transfer_state = 613
+		 transfer_state = 596
+		 transfer_state = 595
+		 transfer_state = 593
+	 	 transfer_state = 592
+		 transfer_state = 594
+		 transfer_state = 591
+         transfer_state = 729
+         transfer_state = 749		
+		 transfer_state = 600
+		 transfer_state = 599
+		 
+				
+					
+		
+			
+			
 	
 		hidden_effect = {
-			country_event = { days = 5 id = news.1 }
-		CHI = {remove_ideas = CHI_nine_power_treaty}
+		
+		
+		JAP = { 
+		        army_experience = 950
+		        air_experience = 600}
+		
+		SOV = { army_experience = 150
+		        air_experience = 200}
+		
+		USA = { add_war_support = 0.1
+		        army_experience = 100
+		        air_experience = 200}
+		
+		ENG = { add_war_support = 0.1
+		        army_experience = 100
+		        air_experience = 200}
+		
+		AST = { add_war_support = 0.1
+		        army_experience = 100
+		        air_experience = 200}
+		
+		SAF = { add_war_support = 0.1
+		        army_experience = 100
+		        air_experience = 200}
+		
+		CAN = { add_war_support = 0.1
+		        army_experience = 100
+		        air_experience = 200}
+		
+		IRE = { add_war_support = 0.1
+		        army_experience = 100
+		        air_experience = 200}
+		
+		NZL = { add_war_support = 0.1
+		        army_experience = 100
+		        air_experience = 200}
+		
+		RAJ = { add_war_support = 0.1
+		        army_experience = 100
+		        air_experience = 200}
+		
+		FRA = { add_war_support = 0.1
+		        army_experience = 100
+		        air_experience = 200}
+		
+		GER = { 
+		        army_experience = 150
+		        air_experience = 250}
+		
+		ITA = { 
+		        army_experience = 150
+		        air_experience = 200}
+		
+		HUN = { 
+		        army_experience = 150
+		        air_experience = 200}
+		
+		SPR = { 
+		        army_experience = 150
+		        air_experience = 200}
+		
+		BUL = { 
+		        army_experience = 150
+		        air_experience = 200}
+		
+		FIN = { 
+		        army_experience = 150
+		        air_experience = 200}
+		
+		ROM = { 
+		        army_experience = 150
+		        air_experience = 200}
+		
+		MAN = { 
+		        army_experience = 300
+		        air_experience = 200}
+		
+		SIA = { 
+		        army_experience = 150
+		        air_experience = 200}
+		
+		
+		
+		country_event = { days = 5 id = news.1 }
+	    add_war_support = 0.05
 		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
-		if = {
-			limit = {
-				has_country_leader = { id = 700 ruling_only = yes }
-			}
-			remove_country_leader_trait = imperial_sanction
+		
 		}
-		}
-		}
-	}
+	}}
 
 	focus = {
-		id = JAP_develop_chinese_resources
-		icon = GFX_goal_generic_construct_civilian
+		id = JAP_war_of_resistance
+		icon = GFX_focus_attack_japan
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = 0
 		y = 1
 		relative_position_id = JAP_intervene_in_china
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			date > 1939.1.1
+			
+		}
+
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+          CHI = {set_equipment_fraction = 0}
+		  annex_country = {
+          target = CHI
+          transfer_troops = no
+          }
+		
+		}
+ 			
+			
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = JAP_develop_chinese_resources
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = JAP_war_of_resistance }
+		x = 0
+		y = 5
 		
 		cost = 5
 

@@ -302,7 +302,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Godfried van Voorst tot Voorst"
 	gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
-	traits = { brilliant_strategist career_officer armor_officer politically_connected }
+	traits = { brilliant_strategist armor_officer politically_connected }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -324,23 +324,23 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Conrad Helfrich"
 	gfx = "GFX_portrait_hol_conrad_helfrich"
-	traits = { seawolf superior_tactician bold navy_career_officer }
+	traits = { seawolf superior_tactician }
 	id = 981
 	skill = 4
-	attack_skill = 5
+	attack_skill = 7
 	defense_skill = 2
-	maneuvering_skill = 3
+	maneuvering_skill = 6
 	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Karel Doorman"
 	gfx = "GFX_portrait_hol_karel_doorman"
-	traits = { fleet_protector naval_lineage bold }
+	traits = { fleet_protector naval_lineage }
 	skill = 3
-	attack_skill = 3
+	attack_skill = 5
 	defense_skill = 2
-	maneuvering_skill = 3
+	maneuvering_skill = 6
 	coordination_skill = 2
 }
 

@@ -37,10 +37,7 @@ USA_congress = {
 			not = {
 				has_decision = USA_medium_lobby_effort
 			}
-			OR = {
-				political_power_daily > 0.3
-				has_political_power > 10
-			}
+			political_power_daily > 0
 		}
 		cost = 0
 		ai_will_do = {
@@ -76,10 +73,7 @@ USA_congress = {
 			not = {
 				has_decision = USA_small_lobby_effort
 			}
-			OR = {
-				political_power_daily > 0.75
-				has_political_power > 35
-			}
+			political_power_daily > 0
 		}
 		cost = 0
 		ai_will_do = {
@@ -97,9 +91,9 @@ USA_congress = {
 				factor = 0
 			}
 		}
-		days_remove = 45
+		days_remove = 60
 		modifier = {
-			political_power_gain = -0.75
+			political_power_gain = -0.3
 		}
 		remove_effect = {
 			USA_congress_medium_support = yes
