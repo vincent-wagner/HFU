@@ -9,7 +9,12 @@ spriteTypes = {
 		name = "GFX_Goal_Positive_heroism"
 		texturefile = "gfx/interface/goals/Goal_Positive_heroism.tga"
 	}
-   SpriteType = {
+  SpriteType = {
+		name = "GFX_sov_stalin_writing"
+		texturefile = "gfx/interface/goals/sov_stalin_writing.tga"
+	}
+
+  SpriteType = {
 		name = "GFX_goal_wheat"
 		texturefile = "gfx/interface/goals/wheat_yields.tga"
 				

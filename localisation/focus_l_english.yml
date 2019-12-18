@@ -372,8 +372,10 @@
  ITA_japan_friend:0 "Befriend Japan"
  ITA_japan_friend_desc:0 "The Japanese are much like us; a young, hungry power with a positive demography, held ransom by trade from waning plutodemocracies like the UK and the Netherlands. We should unite with them to form a vibrant Naval Axis across the oceans!"
  soviet_focus:0 "Soviet National Focus"
- SOV_finish_five_year_plan:0 "Finish the Five Year Plan"
+ SOV_finish_five_year_plan:0 "Finish the second Five Year Plan"
  SOV_finish_five_year_plan_desc:0 "The second Five Year Plan prioritizes the development of heavy industry. The Soviet Union must develop quickly in order to match the Capitalist and Fascist powers of the West."
+ SOV_start_five_year_plan:0"Start the third Five Year Plan"
+ SOV_start_five_year_plan_des:0"Ukrainian lives matter"
  
  SOV_defense_of_moscow:0 "Defense of Moscow"
  SOV_defense_of_moscow_desc:0 "The Fascists are knocking at the gates of the capital! Moscow must not be allowed to fall at any cost. Mobilize everyone, from children to old people to hastily erect what defenses we can!"
