@@ -85,7 +85,26 @@ ideas = {
 
 	political_advisor = {
 
-		
+		generic_fascist_demagogue = {
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}				
+			}
+			
+			traits = { fascist_demagogue }
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
 		FIN_ralf_torngren = {
 
 			picture = generic_political_advisor_europe_1

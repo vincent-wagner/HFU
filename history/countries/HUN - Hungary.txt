@@ -276,9 +276,9 @@ create_corps_commander = {
 	name = "Lajos Veress"
 	gfx = GFX_Portrait_hungary_lajos_veress
 	traits = { infantry_leader trait_engineer  ranger}
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
 }

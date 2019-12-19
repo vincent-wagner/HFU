@@ -478,7 +478,6 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = fin_situational_awareness }
 		relative_position_id = fin_situational_awareness
-		mutually_exclusive = { focus = fin_authoritarianism }
 		x = 1
 		y = 1
 		cost = 10
