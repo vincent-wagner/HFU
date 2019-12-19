@@ -204,7 +204,8 @@ NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15						-- Vanilla 0,10
 NDefines.NAir.DISRUPTION_FACTOR = 5
-NDefines.NAir.ESCORT_FACTOR = 2.5 			        
+NDefines.NAir.ESCORT_FACTOR = 2.5 		
+        
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
 
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
@@ -215,7 +216,7 @@ NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.7 
                        
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05
-NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3    --Vanilla 0.3
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.45          --Vanilla -0.35

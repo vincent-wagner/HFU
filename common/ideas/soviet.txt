@@ -962,9 +962,8 @@ ideas = {
 			}
 			
 
+			traits = { army_chief_organizational_2 }
 			
-			
-			modifier = { training_time_army_factor = -0.5}
 			ai_will_do = {
 				factor = 1
 			}
@@ -1151,7 +1150,7 @@ ideas = {
 			
 
 			
-			traits = { army_regrouping_3 }
+			traits = { army_regrouping_2 }
 			
 			ai_will_do = {
 				factor = 1
