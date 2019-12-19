@@ -342,15 +342,7 @@ ideas = {
 			}
 			
 			
-			equipment_bonus = {
-				
-                    fighter_equipment = {
-					
-					
-					air_agility = -0.2
-				}
-
-			}
+			modifier = {air_air_superiority_agility_factor = -0.3 }
 		}
 
 		officers_purged_2 = {
