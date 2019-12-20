@@ -958,7 +958,7 @@ ideas = {
 			}
 			available = 
 			{
-				date>1941.1.1
+
 			}
 			
 

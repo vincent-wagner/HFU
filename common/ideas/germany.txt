@@ -85,17 +85,11 @@ ideas = {
 				army_org_Factor = 0.05
 				planning_speed = 0.25
 				air_ace_generation_chance_factor = 1.50
+				air_air_superiority_agility_factor = 0.2
+				air_interception_agility_factor = 0.2
 				}
 				
 				equipment_bonus = {
-				
-				fighter_equipment = {
-					air_range = 0.1
-					air_attack = 0.05
-					air_agility = 0.15
-					instant = yes
-                 
-				}
 
 				CAS_equipment = {
 					air_range = 0.1
