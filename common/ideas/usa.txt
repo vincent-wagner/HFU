@@ -1,6 +1,59 @@
 ideas = {
 
 	country = {
+		
+		
+		
+		USA_war_plans_1 = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+			targeted_modifier = {
+			tag = ITA
+			
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+		}
+		
+		USA_war_plans_2 = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+			amphibious_invasion = 0.1
+			invasion_preparation = -0.25
+		}
+			targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+		}
+		
+		
+		
+		
 		USA_naval_neutrality = {
 			picture = generic_the_london_naval_treaty
 			
