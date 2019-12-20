@@ -184,9 +184,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_core_attack_factor = 100000000000000000000000000000000000000000000000000.5
-				army_core_defence_factor = 1000000000000000000000000000000000000000000000000000000000.5
-				
 				join_faction_tension = 0.25
 				send_volunteers_tension = 0.5
 				guarantee_tension = 0.5
