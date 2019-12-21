@@ -321,7 +321,7 @@ on_actions = {
 									tag=LUX
 									tag=GRE
 									tag=YUG
-									tag=INS
+							
 								}
 							}
 						}
