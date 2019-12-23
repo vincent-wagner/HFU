@@ -875,7 +875,8 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-			
+						cost = 100
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -888,7 +889,8 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-						
+							cost = 100
+		
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -901,7 +903,8 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-						
+									cost = 100
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -914,7 +917,8 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-						
+									cost = 100
+
 			research_bonus = {
 				air_equipment = 0.15
 			}

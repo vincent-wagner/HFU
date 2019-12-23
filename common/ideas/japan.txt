@@ -1564,6 +1564,8 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
+			cost = 100
+			
 			traits = { light_aircraft_manufacturer_2 }
 
 			modifier = {
@@ -1585,6 +1587,8 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
+			cost = 100
+			
 			traits = { fuel_efficient_aircraft_manufacturer }
 		}
 		
@@ -1597,7 +1601,8 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+						cost = 100
+
 			traits = { heavy_aircraft_manufacturer }
 
 		}
@@ -1607,7 +1612,8 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
-						
+							cost = 100
+		
 			research_bonus = {
 				air_equipment = 0.15
 			}

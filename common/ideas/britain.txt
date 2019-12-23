@@ -1377,7 +1377,8 @@ ideas = {
 			}
 			
 
-			
+						cost = 100
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -1395,7 +1396,8 @@ ideas = {
 			}
 			
 
-			
+						cost = 100
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -1411,6 +1413,7 @@ ideas = {
 				original_TAG = ENG
 			}
 			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1429,6 +1432,7 @@ ideas = {
 				original_TAG = ENG
 			}
 			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1447,6 +1451,7 @@ ideas = {
 				original_TAG = ENG
 			}
 			
+			cost = 100
 
 			
 			research_bonus = {

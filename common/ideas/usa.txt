@@ -1888,6 +1888,7 @@ ideas = {
 				original_tag = USA
 			}
 			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1900,25 +1901,6 @@ ideas = {
 			}
 		}
 		
-		#bell = {
-		#	
-		#	
-		#	allowed = {
-		#		original_tag = USA
-		#	}
-		#	
-		#
-		#	
-		#	research_bonus = {
-		#		air_equipment = 0.15
-		#	}
-		#	
-		#	traits = { light_aircraft_manufacturer }	#TODO, make different from north american
-		#	
-		#	modifier = {
-		#	}
-		#}	
-		
 		lockheed = {
 			
 			
@@ -1926,6 +1908,7 @@ ideas = {
 				original_tag = USA
 			}
 			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1946,7 +1929,8 @@ ideas = {
 			}
 			
 
-			
+						cost = 100
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -1965,6 +1949,7 @@ ideas = {
 				original_tag = USA
 			}
 			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1976,25 +1961,7 @@ ideas = {
 			modifier = {
 			}
 		}
-		
-		#consolidated_aircraft = {
-		#	
-		#	
-		#	allowed = {
-		#		original_tag = USA
-		#	}
-		#	
-		#
-		#	
-		#	research_bonus = {
-		#		air_equipment = 0.15
-		#	}
-		#	
-		#	traits = { heavy_aircraft_manufacturer } #TODO remove?
-		#	
-		#	modifier = {
-		#	}
-		#}
+
 		grumman = {
 			
 			
@@ -2002,7 +1969,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-
+			cost = 100
 			
 			research_bonus = {
 				air_equipment = 0.15
