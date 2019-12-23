@@ -2816,6 +2816,7 @@ technologies = {
 				factor = 0.8
 		}
 	}
+	}
 	
 	peoples_army = {
 	
