@@ -825,7 +825,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			build_cost_ic = 80
+			build_cost_ic = 40
 			surface_detection = 5
 		}
 	}
@@ -834,7 +834,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			build_cost_ic = 110
+			build_cost_ic = 60
 			surface_detection = 7
 			sub_detection = 2
 		}
@@ -857,7 +857,7 @@ equipment_modules = {
 			
 			surface_detection = 12
 			sub_detection = 6
-			build_cost_ic = 140
+			build_cost_ic = 80
 		}
 		can_convert_from = {
 			module = ship_radar_2
@@ -879,7 +879,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			
-			build_cost_ic = 170
+			build_cost_ic = 100
 			surface_detection = 18
 			sub_detection = 14
 		}
@@ -1698,7 +1698,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			sub_attack = 20
+			sub_attack = 14
 			build_cost_ic = 120
 		}
 
@@ -1718,7 +1718,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			sub_attack = 30
+			sub_attack = 18
 			build_cost_ic = 150
 		}
 
@@ -1738,7 +1738,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			sub_attack = 45
+			sub_attack = 22
 			build_cost_ic = 180
 		}
 
@@ -1893,8 +1893,23 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			sub_detection = 7.0
-			build_cost_ic = 60
+			sub_detection = 7
+			build_cost_ic = 70
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 25
+		}
+	}
+	
+	ship_sonar_3 = {
+		category = ship_sonar
+		gfx = ship_sonar_3
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			sub_detection = 10
+			build_cost_ic = 120
 		}
 		can_convert_from = {
 			module_category = ship_sonar

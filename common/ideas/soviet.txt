@@ -14,7 +14,22 @@ ideas = {
       }
 
 
-	
+	SOV_home_fleet = {
+			picture = generic_the_london_naval_treaty
+			
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war_with = GER
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				navy_max_range_factor = -0.50
+			}
+		}
 	Order_227 = {
 		
 			removal_cost = -1

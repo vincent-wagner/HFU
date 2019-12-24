@@ -333,7 +333,7 @@ technologies = {
 		
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 1 y = 13 }
+			position = { x = 1 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -442,6 +442,11 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = sonar_advice_tt
 		}
+		path = {
+			leads_to_tech = advanced_sonar
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 0.75
 
 		start_year = 1936
@@ -449,6 +454,42 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	
+	advanced_sonar = {
+		enable_equipment_modules = { 
+			ship_sonar_3
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		research_cost = 0.75
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 13 }
 		}
 		
 		ai_will_do = {
@@ -1459,7 +1500,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 1940
 		destroyer = {
 			torpedo_attack = 0.2
 		}
@@ -1474,7 +1515,7 @@ early_ship_hull_carrier = {
 		}
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 16 }
+			position = { x = 2 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -1513,7 +1554,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 3 y = 14 }
+			position = { x = 3 y = 13 }
 		}
 		
 		ai_will_do = {
@@ -1593,7 +1634,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = 13 }
 		}
 		
 		ai_will_do = {
@@ -2148,7 +2189,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 1941
 		
 		destroyer = {
 			lg_attack = 0.05
@@ -2177,7 +2218,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = -1 y = 15 }
+			position = { x = -1 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -2349,7 +2390,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 1941
 		
 		
 		light_cruiser = {
@@ -2364,7 +2405,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 1 y = 15 }
+			position = { x = 1 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -2559,7 +2600,7 @@ early_ship_hull_carrier = {
 		xp_research_bonus = 1.50
 		research_cost = 2
 
-		start_year = 1942
+		start_year = 1941
 		
 		
 		battleship = {
@@ -2573,7 +2614,7 @@ early_ship_hull_carrier = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 3 y = 15 }
+			position = { x = 3 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -3395,7 +3436,7 @@ early_ship_hull_carrier = {
 		}
 		
 		research_cost = 1
-		start_year = 1939
+		start_year = 1938
 		
 		folder = {
 			name = mtgnavalfolder
@@ -3452,7 +3493,7 @@ early_ship_hull_carrier = {
 		naval_invasion_capacity = 100
 
 		research_cost = 1
-		start_year = 1942
+		start_year = 1940
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 16 }

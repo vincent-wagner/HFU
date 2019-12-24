@@ -1854,6 +1854,8 @@
  USA_naval_neutrality_desc:0 "The US Congress does not approve of using our ships as spy boats so they will remain at home. If we are forced to join the war then congress will revoke this neutrality"
  USA_wasteful_navy:0 "Commercial Maritime Focus"
  USA_wasteful_navy_desc:0 "US dockyards are focused on commercial enterprises rather than wartime production"
+ SOV_home_fleet:0 "Soviet Home Fleet"
+ SOV_home_fleet_desc:0 "When not at war with naval powers the Soviet fleet is instructed to stay close to their home ports"
  kawasaki_dockyards:0 "Kawasaki Dockyards"
  wartime_economy:0 "Wartime Economy"
  no_training:0 "No Training Allowed"

@@ -152,6 +152,7 @@ add_ideas = {
 	home_of_revolution
 	closed_economy
 	SOV_hidden_problem
+	SOV_home_fleet
 }
 
 create_country_leader = {
