@@ -113,7 +113,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 0.625
+		air_superiority = 0.5
 		reliability = 0.8
 
 		# Air vs Navy - low damage / high hit chance / easy to hurt
@@ -299,7 +299,7 @@ equipments = {
 		parent = heavy_fighter_equipment_1
 		priority = 100
 		
-		air_range = 1700
+		air_range = 1500
 		maximum_speed = 550
 		air_agility = 30
 		air_attack = 46
