@@ -897,6 +897,9 @@ technologies = {
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.50
 			acclimatization_cold_climate_gain_factor = 0.50
+		    breakthrough = 0.15
+		
+		
 		}
 		
 		special_forces_no_supply_grace = 48
