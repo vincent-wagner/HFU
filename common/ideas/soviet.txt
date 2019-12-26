@@ -14,22 +14,7 @@ ideas = {
       }
 
 
-	SOV_home_fleet = {
-			picture = generic_the_london_naval_treaty
-			
-			allowed = {
-				always = no
-			}
-			cancel = {
-				has_war_with = GER
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				navy_max_range_factor = -0.50
-			}
-		}
+	
 	Order_227 = {
 		
 			removal_cost = -1
@@ -977,7 +962,7 @@ ideas = {
 			}
 			
 
-			traits = { army_chief_organizational_2 }
+			traits = { army_chief_defensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1097,7 +1082,7 @@ ideas = {
 			
 
 			
-			traits = { air_air_superiority_1 }
+			traits = { air_chief_all_weather_3 }
 			
 			ai_will_do = {
 				factor = 1

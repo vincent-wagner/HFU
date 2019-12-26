@@ -192,9 +192,13 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				fighter_equipment = {
+				CAS_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				tac_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+                			
 			}
 		}
 		
@@ -1089,7 +1093,7 @@ ideas = {
 				original_tag = ENG
 			}
 			
-			traits = { air_air_superiority_2 }	
+			traits = { air_naval_strike_2 }	
 	
 		}
 		cyril_newall = {
@@ -1196,7 +1200,7 @@ ideas = {
 			
 
 			
-			traits = { air_air_superiority_3 }
+			traits = { air_close_air_support_2 }
 			
 			ai_will_do = {
 				factor = 1

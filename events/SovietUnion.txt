@@ -579,8 +579,24 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 5
 }
+ create_corps_commander = {
+	name = "Aleksandr Vasilevsky"
+	id = 1490
+		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
+	traits = { winter_specialist winter_expert ranger infantry_leader infantry_expert scavenger trickster skilled_staffer }
+	skill = 6
+	
+	attack_skill = 3
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 6
+}
+ 
+ 
  remove_unit_leader = 410
  remove_unit_leader = 402
+ remove_unit_leader = 407
+
 }		
 }
 

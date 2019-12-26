@@ -1089,7 +1089,7 @@ focus_tree = {
 			
 			add_tech_bonus = {
 				bonus = 3.0
-				uses = 10
+				uses = 12
 				category = air_doctrine
 			}
 			
@@ -1104,7 +1104,9 @@ focus_tree = {
 			
 			
 			}
-		 
+		 set_technology = {
+						fighter2 = 1
+					}
 		
 		
 		
