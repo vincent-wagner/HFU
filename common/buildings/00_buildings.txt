@@ -131,7 +131,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		damage_factor = 0.7
 		show_modifier = yes
-		fuel_gain_from_states = 2.0 #per hour
+		fuel_gain_from_states = 5.0 #per hour
 	}
 
 	fuel_silo = {
