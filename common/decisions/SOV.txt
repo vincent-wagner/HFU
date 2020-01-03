@@ -640,7 +640,61 @@ SOV_great_patriotic_war = {
 }
 
 SOV_great_patriotic_war = {
-
+	
+	SOV_move_capital_kazan={
+	icon = generic_civil_support
+	allowed = {
+			original_tag = SOV
+			
+		}
+	visible={has_war_with=GER}
+	available={
+	249={is_capital=no}}
+	complete_effect={
+	set_capital=249
+	}
+	}
+	SOV_move_capital_stalingrad={
+	icon = generic_civil_support
+	allowed = {
+			original_tag = SOV
+			
+		}
+	visible={has_war_with=GER}
+	available={
+	217={is_capital=no}}
+	complete_effect={
+	set_capital=217
+	}
+	}
+	SOV_move_capital_leningrad={
+	icon = generic_civil_support
+	allowed = {
+			original_tag = SOV
+			
+		}
+	visible={has_war_with=GER}
+	available={
+	195={is_capital=no}}
+	complete_effect={
+	set_capital=195
+	}
+	}
+	SOV_move_capital_moscow={
+	icon = generic_civil_support
+	allowed = {
+			original_tag = SOV
+			
+		}
+	visible={has_war_with=GER}
+	available={
+	219={is_capital=no}}
+	complete_effect={
+	set_capital=219
+	}
+	}
+	
+	
 	#217 "Stalingrad"
 	SOV_hold_stalingrad = {
 

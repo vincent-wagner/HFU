@@ -6,7 +6,7 @@ SOV_relocate_civ = {
 				OWNER={add_to_variable={relocatedciv = 1}}
 			OWNER={
 				random_owned_controlled_state={
-					limit={OR={state=582 state=572 state=583 state=653}}
+					limit={OR={state=582 state=572 state=583 state=590 state=403 state=573 state=653}}
 					add_extra_state_shared_building_slots=1
 					add_building_construction = {
    				 		type = industrial_complex
@@ -24,7 +24,7 @@ SOV_relocate_mil = {
 				OWNER={add_to_variable={relocatedmil = 1}}
 			OWNER={
 				random_owned_controlled_state={
-					limit={OR={state=582 state=572 state=583 state=653}}
+					limit={OR={state=582 state=572 state=590 state=573 state=403 state=583 state=653}}
 					add_extra_state_shared_building_slots=1
 					add_building_construction = {
    				 		type = arms_factory
