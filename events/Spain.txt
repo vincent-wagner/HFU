@@ -102,6 +102,7 @@ country_event = {
 	logistics_skill = 3
 }
 SOV = { remove_ideas = SOV_hidden_problem}
+SPR = { remove_ideas = SPR_memories}
 
 
 
