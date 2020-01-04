@@ -166,79 +166,8 @@ ideas = {
 				factor = 1
 			}
 		}
-
-		ITA_gian_galeazzo_ciano = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_political_advisor_europe_6
-						
-			traits = { compassionate_gentleman }
-	
-			on_add = {				
-			}
-				
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	
-		ITA_roberto_farinacci = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_army_europe_1
-						
-			traits = { backroom_backstabber }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
 		
-		ITA_dino_grandi = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
 
-			picture = generic_political_advisor_europe_3
-						
-			traits = { smooth_talking_charmer }
-	
-			on_add = {				
-			}
-				
-			ai_will_do = {
-				factor = 1
-			}
-		}
-			
-		ITA_serafino_mazzolini = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_political_advisor_europe_1
-						
-			traits = { ideological_crusader }
-	
-			on_add = {				
-			}
-				
-			ai_will_do = {
-				factor = 0.5
-			}
-		}
 					
 		ITA_giacomo_acerbo = {
 			
@@ -554,21 +483,6 @@ ideas = {
 			}
 		}
 		
-		silvio_scaroni = {
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		
 		alberto_da_zara = {
 			
@@ -870,21 +784,7 @@ ideas = {
 			traits = { naval_theorist military_theorist }
 		}
 		
-		amedeo_mecozzi = {
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_operational_integrity = 0.15
-			}
-			
-			traits = { assault_avaition }
-		}
-		
+
 		renato_sandalli = {
 			
 			

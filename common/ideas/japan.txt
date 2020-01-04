@@ -1110,17 +1110,6 @@ ideas = {
 			}
 		}
 
-		JAP_chiune_sugihara = {
-			
-			picture = generic_political_advisor_asia_3
-			
-			allowed = {
-				original_tag = JAP
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-
 		takuo_godo = {
 
 			picture = takuo_godo
@@ -1775,21 +1764,6 @@ ideas = {
 			}
 			
 			traits = { naval_theorist }
-		}
-		
-		yoshitoshi_tokugawa = {
-						
-			allowed = {
-				original_tag = JAP
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_operational_integrity = 0.15
-			}
-			
-			traits = { assault_avaition }
 		}
 		
 		hino_kumazo = {
