@@ -756,7 +756,27 @@ focus_tree = {
 			}
 		}
 	}
-
+	focus = {
+		id = GER_mineraloelsicherungsplan
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = GER_synthetic_rubber focus = GER_german_war_economy } 
+		x = -1
+		y = 1
+		relative_position_id = GER_synthetic_rubber
+		cost = 5
+		available = {
+			has_war_with = SOV }
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		completion_reward = {
+		add_timed_idea={idea=GER_mineraloelsicherungsplan days=180}	
+			
+		}
+	}
+	
 	focus = {
 		id = GER_extra_tech_slot
 		icon = GFX_focus_research

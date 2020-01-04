@@ -390,9 +390,9 @@ combat_unit_destruction = {
 direct_ground_support = {
 
 		# EFFECT ########
-		air_cas_present_factor = 0.20
+		air_cas_present_factor = 0.25
 		###########
-		xor = {battlefield_support}
+		#xor = {battlefield_support}
 		
 		xp_research_type = air
 		xp_research_cost = 100
@@ -432,10 +432,10 @@ direct_ground_support = {
 	battlefield_support = {
 
 		# EFFECT ########
-		army_bonus_air_superiority_factor = 0.2
+		army_bonus_air_superiority_factor = 0.25
 		###########
 		
-		xor = {direct_ground_support}
+		#xor = {direct_ground_support}
 		path = {
 			leads_to_tech = air_offense
 			research_cost_coeff = 1

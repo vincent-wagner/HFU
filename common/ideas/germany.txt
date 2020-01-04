@@ -3,7 +3,24 @@ ideas = {
 	country = {
 	
 		
-		
+	   GER_mineraloelsicherungsplan = {
+			allowed = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			
+			modifier = {
+			production_speed_synthetic_refinery_factor=0.5
+			industry_free_repair_factor=0.5
+			industry_repair_factor=0.25
+			consumer_goods_factor = 0.03
+			
+		}}	
 		
 	   triumphant_will = {
 			
@@ -87,6 +104,7 @@ ideas = {
 				air_ace_generation_chance_factor = 1.50
 				air_air_superiority_agility_factor = 0.2
 				air_interception_agility_factor = 0.2
+				air_cas_present_factor = 0.2
 				}
 			equipment_bonus = {
 
