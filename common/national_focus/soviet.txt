@@ -96,7 +96,32 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = SOV_kazanspawnin
+		icon = GFX_sov_stalin_writing
+		prerequisite = { focus = SOV_move_industry_to_urals }
+		x = 14
+		y = 4
+		
+		cost = 999
+		ai_will_do = {
+			factor = 5
+		}
 
+		available_if_capitulated = yes
+
+		
+
+		
+		completion_reward = {
+		hidden_effect={load_oob=SOV_kazanspawnin}	
+		custom_effect_tooltip="50 20w Infantry Divisions will spawn in Kazan "
+		add_timed_idea={idea=SOV_kazanspawnin days=180}
+		
+		
+		
+		}
+	}
 
 
     

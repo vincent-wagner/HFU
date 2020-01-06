@@ -1281,8 +1281,6 @@ random_owned_controlled_state = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = ritter_von_greim
 		}
 		
 		completion_reward = {
@@ -1313,8 +1311,7 @@ random_owned_controlled_state = {
 					}
 					set_state_flag = GER_air_innovation_6air
 				}				
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = ritter_von_greim
+			
 		}
 	}
 
@@ -1525,7 +1522,7 @@ random_owned_controlled_state = {
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = radar_tech
 			}
 			if = {
