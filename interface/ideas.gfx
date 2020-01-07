@@ -4049,7 +4049,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "idea_comradevonaustria"
+		name = "GFX_idea_comradevonaustria"
 		texturefile = "gfx/interface/ideas/idea_comradevonaustria.dds"
 	}
 	
