@@ -37,7 +37,7 @@ ideas = {
 
 		SPR_francisco_largo_caballero = {
 
-			picture = generic_air_europe_1
+			picture = idea_comradevonaustria
 				
 			allowed = {
 				original_tag = SPR

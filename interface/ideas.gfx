@@ -4048,6 +4048,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_CHI_division.dds"
 	}
 	
+	spriteType = {
+		name = "idea_comradevonaustria"
+		texturefile = "gfx/interface/ideas/idea_comradevonaustria.dds"
+	}
+	
 	
 
 	

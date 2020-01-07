@@ -139,7 +139,7 @@ ideas = {
 
 		SPA_fidel_davila_arrondo = {
 
-			picture = generic_army_europe_4
+			picture = idea_comradevonaustria
 
 			allowed = {
 				original_tag = SPR
