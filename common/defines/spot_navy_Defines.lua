@@ -94,3 +94,10 @@ NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.5
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.5		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 3.75         -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
+---CONVOY Supply
+
+NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 1.25,							-- vanilla 1.25 How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 3,						-- vanilla 1.25 Convoy starts regaining it's efficiency after X days without any convoys being sink.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.05,						-- vanilla 0.04 How much efficiency regains every day.
+NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.05,								-- vanilla 0.05 To avoid complete 0% efficiency, set the lower limit.
+	
