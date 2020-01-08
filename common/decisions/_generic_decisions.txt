@@ -79,8 +79,7 @@ political_actions = {
 
 		available = {
 			has_war = no
-			has_war_support > 0.2
-			has_stability < 1.0
+			
 		}
 		
 			allowed = { 
