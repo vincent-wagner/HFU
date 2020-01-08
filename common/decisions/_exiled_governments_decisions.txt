@@ -8,6 +8,10 @@ governments_in_exile = {
 
 		days_remove = 360
 
+		allowed = {
+		original_tag = ENG 
+		}
+		
 		available = {
 		    FROM = {
 		    	has_legitimacy > 60
@@ -42,47 +46,16 @@ governments_in_exile = {
 		}
 	}
 
-
-	request_reinstatement = {
-
-		icon = generic_independence
-
-		days_re_enable = 120 # Prevent event spam
-
-		cost = 10
-
-		available = {
-			all_owned_state = {
-				is_controlled_by = ROOT
-			}
-		}
-
-		visible = {
-			FROM = { is_hosting_exile = ROOT }
-			any_owned_state = {
-				is_controlled_by = ROOT
-			}
-		}
-
-		targets = { host }
-		
-		target_trigger = { FROM = { is_hosting_exile = ROOT } }
-		
-		complete_effect = {
-			FROM = {
-				country_event = { id = mtg_exile_government.2 }
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	grant_parliamentary_audience = {
 
 		icon = eng_install_government
 
+		
+		allowed = {
+		original_tag = ENG 
+		
+		}
+		
 		available = {
 		    FROM = {
 		    	has_legitimacy < 95
@@ -115,20 +88,6 @@ governments_in_exile = {
 
 		days_remove = 120
 
-		ai_will_do = {
-			factor = 0.03
-			modifier = {
-				has_political_power < 150
-				political_power_daily < 0.85
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-				FROM = {
-					has_legitimacy > 60
-				}
-			}
-		}
 	}
 
 	lobby_for_parliamentary_support = {
@@ -271,6 +230,13 @@ governments_in_exile = {
 
 		custom_cost_text = custom_cost_joint_training_exercise
 
+		
+		
+		allowed = {
+		original_tag = ENG 
+		
+		}
+		
 		available = {
 		    FROM = {
 		    	has_legitimacy > 40
@@ -321,6 +287,12 @@ governments_in_exile = {
 
 		icon = generic_political_discourse
 
+		
+		allowed = {
+		original_tag = ENG 
+		
+		}
+		
 		available = {
 		    FROM = {
 				AND = {
@@ -387,10 +359,15 @@ governments_in_exile = {
 		cost = 25
 		fire_only_once = yes
 
+		
+		allowed = {
+		original_tag = ENG 
+		
+		}
+		
 		available = {
 		    FROM = {
 		    	has_legitimacy > 0
-			NOT={tag=FRA}
 		    }
 		}
 		visible = {
@@ -440,6 +417,13 @@ category_exile_forces = {
 
 		days_re_enable = 270
 
+		
+		
+		allowed = {
+		original_tag = ENG 
+		
+		}
+		
 		custom_cost_trigger = {
 			command_power > 25
 		}

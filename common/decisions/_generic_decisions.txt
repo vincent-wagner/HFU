@@ -3,60 +3,7 @@
 
 political_actions = {
 	
-	targeted_race_for_the_bomb = {
-
-		icon = generic_research
-
-		allowed = {
-			always = no
-		}
-
-		available = {
-			#Target is FROM
-			has_tech = atomic_research
-			NOT = { has_global_flag = first_nuke_dropped }
-			NOT = { has_idea = race_for_the_bomb }
-		}
-
-		#If this trigger matches a country.
-		target_trigger = {
-			#Target is FROM
-			FROM = {
-        		NOT = { is_in_faction_with = ROOT }
-				has_tech = nuclear_reactor
-				any_owned_state = {
-					nuclear_reactor > 0
-				}
-			}
-		}
-
-		visible = {
-            #Target is FROM
-            has_tech = atomic_research
-            NOT = { has_global_flag = first_nuke_dropped }
-            NOT = { has_idea = race_for_the_bomb }
-            FROM = {
-        		NOT = { is_in_faction_with = ROOT }
-				has_tech = nuclear_reactor
-				any_owned_state = {
-					nuclear_reactor > 0
-				}
-			}
-		}
-
-		complete_effect = {
-			set_country_flag = racing_for_the_bomb
-			add_ideas = race_for_the_bomb
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				any_other_country = { has_tech = nukes }
-			}
-		}
-	}
+	
 
 	
 	
@@ -64,8 +11,38 @@ political_actions = {
 	improved_worker_conditions = {
 
 		icon = generic_industry
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR} }
+		
+			allowed = { 
+	OR = {	
+		tag = SOV
+	
+		tag = SIA 
+		tag = FRA
+		tag = JAP
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = MAN
+	
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		
+		
+		}
+		}
+
 		available = {
+			has_stability < 1.0
 		}
 
 		visible = {
@@ -76,7 +53,7 @@ political_actions = {
 
 		modifier = {
 			stability_weekly = 0.005
-			consumer_goods_factor = 0.02
+			consumer_goods_factor = 0.03
 			industrial_capacity_factory = -0.1
 		}
 
@@ -101,10 +78,38 @@ political_actions = {
 	promises_of_peace = {
 
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+
 		available = {
 			has_war = no
 			has_war_support > 0.2
+			has_stability < 1.0
+		}
+		
+			allowed = { 
+		OR = { 
+		tag = SOV
+		
+		tag = SIA 
+		tag = JAP
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = MAN
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = FRA
+		  }
 		}
 
 		visible = {
@@ -142,6 +147,7 @@ political_actions = {
 		}
 	}
 }
+
 
 economy_decisions = {
 
@@ -725,7 +731,9 @@ war_measures = {
 		icon = generic_industry
 
         allowed = {
-            always = yes
+            tag = GER
+			tag = SOV
+			tag = JAP
         }
 
         available = {
@@ -791,10 +799,31 @@ war_measures = {
 
     	icon = generic_industry
 
-    	allowed = {
-            always = yes
-        }
-
+    	allowed = { 
+		OR = { 
+		tag = SOV
+		
+		tag = SIA 
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = FRA
+		tag =  JAP
+		
+		tag = BUL
+		tag = GER
+		tag = ITA
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		 }
+		}
         available = {
             has_war = yes
             OR = {
