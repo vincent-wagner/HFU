@@ -23,7 +23,7 @@ political_actions = {
 		tag = AST
 		tag = NZL
 		tag = MAN
-	
+	    tag = EFR
 		tag = BUL
 		tag = ROM
 		tag = HUN
@@ -95,7 +95,7 @@ political_actions = {
 		tag = AST
 		tag = NZL
 		tag = MAN
-		tag = YUG
+	
 		tag = BUL
 		tag = ROM
 		tag = HUN
