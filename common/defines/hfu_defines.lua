@@ -16,6 +16,7 @@ NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12
+NDefines.NDiplomacy.MIN_TRUST_VALUE = -500 							-- WAS -100 | this is added to support embargoing nations to prevent trade memes from players in an opposing faction | Min opinion value cap.
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 ---------------------------------------------------------------
@@ -50,6 +51,8 @@ NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999
 NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0
 NDefines.NCountry.RESISTANCE_STRENGTH_FROM_UNIT = 0
 NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0
+NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  WAS 30 | days to transfer escaping divisions to host nation
+NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- WAS 10
 ---------------------------------------------------------------
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.001						-- down from 0.02 | Chances one ship get damage each hour while on training 		
 
@@ -210,6 +213,7 @@ NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
 
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.144	-- How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                        -- WAS 10, lowered to prevent some exploits with aces | biggest bonus we can get from having a small wing with an ace on
 
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
