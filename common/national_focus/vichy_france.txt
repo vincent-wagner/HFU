@@ -24,12 +24,27 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 300
-			hidden_effect  {
-				load_oob = EFR_armistice_army
-			}
-			custom_effect_tooltip = EFR_armistice_army_tt
-
+			461 = {set_demilitarized_zone = yes}
+			462 = {set_demilitarized_zone = yes}
+			513 = {set_demilitarized_zone = yes}
+			459 = {set_demilitarized_zone = yes}
+			460 = {set_demilitarized_zone = yes}
+			461 = {set_demilitarized_zone = yes}
+			268 = {set_demilitarized_zone = yes}
+			554 = {set_demilitarized_zone = yes}
+			553 = {set_demilitarized_zone = yes}
+			677 = {set_demilitarized_zone = yes}
+            680 = {set_demilitarized_zone = yes}
+			 543 = {set_demilitarized_zone = yes}
+			
+			inherit_technology = FRA
 		}
+	
+	ai_will_do = {
+			factor = 100
+		}
+	
+	
 	}
 	focus = {
 		id = EFR_travail
