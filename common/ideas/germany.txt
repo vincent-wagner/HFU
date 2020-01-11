@@ -101,9 +101,8 @@ ideas = {
 			modifier = {
 				army_org_Factor = 0.05
 				planning_speed = 0.25
+				
 				air_ace_generation_chance_factor = 1.50
-				air_air_superiority_agility_factor = 0.2
-				air_interception_agility_factor = 0.2
 				air_cas_present_factor = 0.2
 				}
 				
@@ -1346,6 +1345,7 @@ ideas = {
                     fighter_equipment = {
 					build_cost_ic = -0.1  
 					air_agility = 0.1 
+					air_attack = 0.1
 					maximum_speed = 0.1
 				}
 

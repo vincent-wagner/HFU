@@ -364,8 +364,9 @@ ideas = {
 			
 			
 			modifier = {
-			army_org_factor = -0.1
-			air_air_superiority_agility_factor = -0.3 }
+			defence = -0.1
+			army_org_factor = -0.2
+			air_air_superiority_agility_factor = -0.35 }
 		}
 
 		officers_purged_2 = {
@@ -1362,8 +1363,8 @@ ideas = {
 			equipment_bonus = {
 				
 				medium_tank_equipment = {
-					build_cost_ic = 0.1
-					maximum_speed = 0.1
+					
+					maximum_speed = 0.05
 					soft_attack = 0.05
 				}
 
