@@ -2319,6 +2319,12 @@ completion_reward = {
 				uses = 1
 				category = dd_tech	
 			}
+			add_tech_bonus = {
+				name = "Japanese ASW"
+				bonus = 1.0
+				uses = 2
+				category = asw_tech
+			}
 		}
 	}
 
