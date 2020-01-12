@@ -30,7 +30,7 @@ NDefines.NNavy.CARRIER_STACK_PENALTY = 5 -- The most efficient is 4 carriers in 
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.167 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		85.0,	-- big guns
+		75.0,	-- big guns
 		145.0,	-- torpedos
 		40.0,	-- small guns
 	}
