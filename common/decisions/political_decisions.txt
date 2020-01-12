@@ -3,7 +3,16 @@ fascism_on_the_rise = {
 	open_up_political_discourse_fascism = {
 
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+		allowed = {
+			OR = {	
+				tag = SIA 
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = FIN 
+				tag = EFR
+			}
+		}
 		available = {
 			fascism < 0.9
 			democratic < 0.9
@@ -24,7 +33,7 @@ fascism_on_the_rise = {
 		
 		fire_only_once = yes
 		
-		cost = 75
+		cost = 25
 		
 		complete_effect = {
 			set_country_flag = open_up_political_discourse_fascism
@@ -38,8 +47,16 @@ fascism_on_the_rise = {
 	hold_the_fascist_national_referendum = {
 
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
-		available = {
+		allowed = {
+			OR = {	
+				tag = SIA 
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = FIN 
+				tag = EFR
+			}
+		}		available = {
 			fascism > 0.5
 		}
 
@@ -58,7 +75,7 @@ fascism_on_the_rise = {
 		
 		fire_only_once = yes
 		
-		cost = 100
+		cost = 25
 		
 		complete_effect = {
 							set_politics = {
@@ -80,7 +97,7 @@ fascism_on_the_rise = {
 democratic_on_the_rise = {
 
 	open_up_political_discourse_democratic = {
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+		allowed = { always = no }
 		icon = generic_political_discourse
 
 		available = {
@@ -102,7 +119,7 @@ democratic_on_the_rise = {
 		
 		fire_only_once = yes
 		
-		cost = 75
+		cost = 25
 		
 		complete_effect = {
 			set_country_flag = open_up_political_discourse_democratic
@@ -114,7 +131,7 @@ democratic_on_the_rise = {
 	}
 	
 	hold_the_democratic_national_referendum = {
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+		allowed = { always = no }
 		icon = generic_political_discourse
 
 		available = {
@@ -136,7 +153,7 @@ democratic_on_the_rise = {
 		
 		fire_only_once = yes
 		
-		cost = 100
+		cost = 25
 		
 		complete_effect = {
 							set_politics = {
@@ -160,7 +177,7 @@ communism_on_the_rise = {
 	open_up_political_discourse_communist = {
 
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+		allowed = { always = no }
 		available = {
 			fascism < 0.9
 			democratic < 0.9
@@ -180,7 +197,7 @@ communism_on_the_rise = {
 		
 		fire_only_once = yes
 		
-		cost = 75
+		cost = 25
 		
 		complete_effect = {
 			set_country_flag = open_up_political_discourse_communist
@@ -194,7 +211,7 @@ communism_on_the_rise = {
 	hold_the_communist_national_referendum = {
 		
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+		allowed = { always = no }
 		available = {
 			communism > 0.5
 		}
@@ -214,7 +231,7 @@ communism_on_the_rise = {
 		
 		fire_only_once = yes
 		
-		cost = 100
+		cost = 25
 		
 		complete_effect = {
 						set_politics = {
@@ -246,24 +263,18 @@ political_actions = {
                 original_tag = CAN
             }
         }
-
-	visible = {
-            NOT = { has_government = fascism }
-            NOT = { has_government = communism }
-	}
-
+		visible = {
+        }
         cost = 50
         fire_only_once = yes
         
         days_remove = -1
 
         available = {
-            GER = { NOT = { has_government = ROOT } }
         }
 
         modifier = {
             research_speed_factor = 0.05
-           
         }
 
         ai_will_do = {
@@ -287,27 +298,22 @@ political_actions = {
                 original_tag = FRA
                 original_tag = CAN
             }
-	}
+		}
 
-	visible = {
-            NOT = { has_government = fascism }
-            NOT = { has_government = communism }
+		visible = {
         }
         cost = 50
         fire_only_once = yes
         days_remove = -1
 
         available = {
-            ITA = { NOT = { has_government = ROOT } }
         }
 
         modifier = {
             research_speed_factor = 0.05
-            
         }
 
         remove_trigger = {
-            ITA = { has_government = ROOT }
         }
         ai_will_do = {
 			factor = 1
@@ -323,7 +329,31 @@ political_actions = {
     anti_fascist_raids = {
 
     	icon = generic_civil_support
-	allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
     	visible = {
 			NOT = { has_government = fascism }
 		}
@@ -341,7 +371,7 @@ political_actions = {
 		cost = 50
 
 		complete_effect = {
-			add_stability = -0.1
+			add_stability = -0.08
 		}
 		
 		remove_effect = {
@@ -367,7 +397,31 @@ political_actions = {
     anti_democratic_raids = {
 
     	icon = generic_civil_support
-	allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
     	visible = {
 			NOT = { has_government = democratic }
 		}
@@ -385,7 +439,7 @@ political_actions = {
 		cost = 50
 
 		complete_effect = {
-			add_stability = -0.1
+			add_stability = -0.08
 		}
 		
 		remove_effect = {
@@ -397,7 +451,31 @@ political_actions = {
     }
 
     anti_communist_raids = {
-	allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
     	icon = generic_civil_support
 
     	visible = {
@@ -417,7 +495,7 @@ political_actions = {
 		cost = 50
 
 		complete_effect = {
-			add_stability = -0.1
+			add_stability = -0.08
 		}
 		
 		remove_effect = {
@@ -431,7 +509,31 @@ political_actions = {
 	ban_fascist_party = {
 
 		icon = generic_civil_support
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
 		available = {
 			fascism < 0.2
 		}
@@ -448,11 +550,11 @@ political_actions = {
 		}
 	
 		modifier = {
-			fascism_drift = -0.02
+			fascism_drift = -0.05
 		}
 	
 		days_remove = -1
-		cost = 100
+		cost = 25
 		
 		complete_effect = {
 			hidden_effect = {
@@ -464,6 +566,14 @@ political_actions = {
 					var = ban_ideology_var
 					value = -1
 				}
+				set_temp_variable = {
+					var = ban_ideology_var_stab
+					value = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var_stab
+					value = 0.2
+				}
 				add_popularity = {
 					ideology = fascism
 					popularity = ban_ideology_var
@@ -474,14 +584,38 @@ political_actions = {
 				}				
 			}
 			custom_effect_tooltip = ban_fascist_party_tt
-			add_stability = ban_ideology_var
+			add_stability = ban_ideology_var_stab
 		}
 	}
 
 	ban_democratic_party = {
 
 		icon = generic_civil_support
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
 		available = {
 			democratic < 0.2
 		}
@@ -498,11 +632,11 @@ political_actions = {
 		}
 	
 		modifier = {
-			democratic_drift = -0.02
+			democratic_drift = -0.05
 		}
 	
 		days_remove = -1
-		cost = 100
+		cost = 25
 		
 		complete_effect = {
 			hidden_effect = {
@@ -514,6 +648,14 @@ political_actions = {
 					var = ban_ideology_var
 					value = -1
 				}
+				set_temp_variable = {
+					var = ban_ideology_var_stab
+					value = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var_stab
+					value = 0.2
+				}
 				add_popularity = {
 					ideology = democratic
 					popularity = ban_ideology_var
@@ -524,14 +666,38 @@ political_actions = {
 				}				
 			}
 			custom_effect_tooltip = ban_democratic_party_tt
-			add_stability = ban_ideology_var
+			add_stability = ban_ideology_var_stab
 		}
 	}
 	
 	ban_communist_party = {
 
 		icon = generic_civil_support
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
 		available = {
 			communism < 0.2
 		}
@@ -548,11 +714,11 @@ political_actions = {
 		}
 	
 		modifier = {
-			communism_drift = -0.02
+			communism_drift = -0.05
 		}
 	
 		days_remove = -1
-		cost = 100
+		cost = 25
 		
 		complete_effect = {
 			hidden_effect = {
@@ -564,6 +730,14 @@ political_actions = {
 					var = ban_ideology_var
 					value = -1
 				}
+				set_temp_variable = {
+					var = ban_ideology_var_stab
+					value = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var_stab
+					value = 0.2
+				}
 				add_popularity = {
 					ideology = communism
 					popularity = ban_ideology_var
@@ -574,7 +748,7 @@ political_actions = {
 				}				
 			}
 			custom_effect_tooltip = ban_communist_party_tt
-			add_stability = ban_ideology_var
+			add_stability = ban_ideology_var_stab
 		}
 		
 		ai_will_do = {
@@ -585,7 +759,31 @@ political_actions = {
 	institute_press_censorship_fascist_state = {
 
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
 		visible = {
 			has_government = fascism
 		}
@@ -598,7 +796,7 @@ political_actions = {
 		}
 	
 		days_remove = 360
-		cost = 150
+		cost = 50
 	
 		ai_will_do = {
 			factor = 0
@@ -608,7 +806,31 @@ political_actions = {
 	institute_press_censorship_democratic_state = {
 
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
 		visible = {
 			has_government = democratic
 		}
@@ -621,7 +843,7 @@ political_actions = {
 		}
 	
 		days_remove = 360
-		cost = 150
+		cost = 50
 	
 		ai_will_do = {
 			factor = 0
@@ -631,7 +853,31 @@ political_actions = {
 	institute_press_censorship_communist_state = {
 
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
 		visible = {
 			has_government = communism
 		}
@@ -644,7 +890,7 @@ political_actions = {
 		}
 	
 		days_remove = 360
-		cost = 150
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0
@@ -654,7 +900,31 @@ political_actions = {
 	institute_press_censorship_neutrality_state = {
 
 		icon = generic_political_discourse
-		allowed = { NOT= { tag=PAN tag=BRA tag=COL tag=AFG tag=SWE tag=SWI tag=SAU tag=TIB tag=VEN tag=CUB tag=TUR}}
+        allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
 		visible = {
 			has_government = neutrality
 		}
@@ -667,7 +937,7 @@ political_actions = {
 		}
 	
 		days_remove = 360
-		cost = 150
+		cost = 50
 		
 		ai_will_do = {
 			factor = 0

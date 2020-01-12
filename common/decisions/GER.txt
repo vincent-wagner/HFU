@@ -14,7 +14,7 @@ GER_mefo_bills_category = {
 			has_political_power > 0
 		}
 
-		#cost = GER_mefo_bill_counter?10
+		cost = 999
 
 		selectable_mission = yes
 		days_mission_timeout = 180
@@ -90,6 +90,9 @@ operations = {
 	icon = generic_operation
 	
 	fire_only_once = yes
+	allowed = {
+		tag = GER
+	}
 	visible = {
 			
 			tag = GER
@@ -100,6 +103,7 @@ operations = {
 	available = {
 			tag = GER
 			EFR = { has_war_with = ENG }
+			EFR = { is_ai = yes }
 			Date > 1941.6.1
 			
 		}

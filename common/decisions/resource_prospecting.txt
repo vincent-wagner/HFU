@@ -4,21 +4,19 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-			
+			OR = { tag = MAN tag = JAP }
 		}
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 325
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 325
 		}
 		highlight_states = {
 			state = 325
 		}
 
-		visible = {
-			owns_state = 325
+		visible = {
 			controls_state = 325
 			325 = {
 				NOT = {
@@ -55,21 +53,19 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-			
+			OR = { tag = MAN tag = JAP }
 		}
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 605
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 605
 		}
 		highlight_states = {
 			state = 605
 		}
 
-		visible = {
-			owns_state = 605
+		visible = {
 			controls_state = 605
 			605 = {
 				NOT = {
@@ -106,11 +102,10 @@ prospect_for_resources = {
 		icon = chromium
 
 		allowed = {
-			
+			OR = { tag = MAN tag = JAP }
 		}
 
-		available = {
-			owns_state = 623
+		available = {
 			controls_state = 623
 			num_of_civilian_factories_available_for_projects > 2
 			has_tech = excavation3
@@ -119,8 +114,7 @@ prospect_for_resources = {
 			state = 623
 		}
 
-		visible = {
-			owns_state = 623
+		visible = {
 			controls_state = 623
 			623 = {
 				NOT = {
@@ -131,7 +125,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -157,7 +151,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-			
+			OR = { tag = MAN tag = JAP }
 		}
 
 		highlight_states = {
@@ -166,13 +160,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 627
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 627
 		}
 
-		visible = {
-			owns_state = 627
+		visible = {
 			controls_state = 627
 			627 = {
 				NOT = {
@@ -183,7 +175,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -209,13 +201,12 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-			
+			OR = { tag = MAN tag = JAP tag = USA }
 		}
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 625
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 625
 		}
 
@@ -223,8 +214,7 @@ prospect_for_resources = {
 			state = 625
 		}
 
-		visible = {
-			owns_state = 625
+		visible = {
 			controls_state = 625
 			625 = {
 				NOT = {
@@ -235,7 +225,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -262,13 +252,12 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-			
+			OR = { tag = MAN tag = JAP tag = ENG }
 		}
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 725
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 725
 		}
 
@@ -276,8 +265,7 @@ prospect_for_resources = {
 			state = 725
 		}
 
-		visible = {
-			owns_state = 725
+		visible = {
 			controls_state = 725
 			725 = {
 				NOT = {
@@ -288,7 +276,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -309,7 +297,7 @@ prospect_for_resources = {
 			725 = {
 				add_resource = {
 					type = tungsten #standin for phosphates
-					amount = 4
+					amount = 6
 				}
 			}
 		}
@@ -319,13 +307,12 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-			
+			OR = { tag = MAN tag = JAP }
 		}
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 671
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 671
 		}
 
@@ -333,8 +320,7 @@ prospect_for_resources = {
 			state = 671
 		}
 
-		visible = {
-			owns_state = 671
+		visible = {
 			controls_state = 671
 			671 = {
 				NOT = {
@@ -371,13 +357,12 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-			
+			OR = { tag = MAN tag = JAP tag = ENG }
 		}
 
 		available = {	
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 336
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 336
 		}
 
@@ -385,8 +370,7 @@ prospect_for_resources = {
 			state = 336
 		}
 
-		visible = {
-			owns_state = 336
+		visible = {
 			controls_state = 336
 			336 = {
 				NOT = {
@@ -397,7 +381,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -418,131 +402,17 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_sirte_oil_fields = { #662
-		
-		icon = oil
-		
-		allowed = {
-			NOT = {
-				tag = ITA
-			}
-		}
-
-		available = {
-			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 662
-			controls_state = 662
-		}
-
-		highlight_states = {
-			state = 662
-		}
-
-		visible = {
-			owns_state = 662
-			controls_state = 662
-			662 = {
-				NOT = {
-					has_state_flag = sirte_oil_developed
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		remove_effect = {
-			662 = {
-				set_state_flag = sirte_oil_developed
-			}
-			662 = {
-				add_resource = {
-					type = oil
-					amount = 8
-				}
-			}
-		}
-	}
-	develop_benghazi_oil_fields = { #450
-		
-		icon = oil
-
-		allowed = {
-			NOT = {
-				tag = ITA
-			}
-		}
-
-		available = {
-			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 450
-			controls_state = 450
-		}
-
-		highlight_states = {
-			state = 450
-		}
-
-		visible = {
-			owns_state = 450
-			controls_state = 450
-			has_tech = excavation3
-			450 = {
-				NOT = {
-					has_state_flag = benghazi_oil_developed
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		remove_effect = {
-			450 = {
-				set_state_flag = benghazi_oil_developed
-			}
-			450 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-		}
-	}
 	develop_tasmania_aluminium_deposits = { #518
 		
 		icon = aluminium
 
 		allowed = {
-
+			OR = { tag = MAN tag = JAP tag = AST }
 		}
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 518
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 518
 		}
 
@@ -550,8 +420,7 @@ prospect_for_resources = {
 			state = 518
 		}
 
-		visible = {
-			owns_state = 518
+		visible = {
 			controls_state = 518
 			518 = {
 				NOT = {
@@ -562,7 +431,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {
@@ -591,11 +460,10 @@ prospect_for_resources = {
 		icon = rubber
 
 		allowed = {
-
+			OR = { tag = GER tag = ITA tag = ENG }
 		}
 
-		available = {
-			owns_state = 558
+		available = {
 			controls_state = 558
 			num_of_civilian_factories_available_for_projects > 2
 		}
@@ -604,8 +472,7 @@ prospect_for_resources = {
 			state = 558
 		}
 
-		visible = {
-			owns_state = 558
+		visible = {
 			controls_state = 558
 			558 = {
 				NOT = {
@@ -616,7 +483,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 180
 
 		modifier = {
@@ -650,7 +517,7 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			tag = GER
 		}
 
 		highlight_states = {
@@ -659,13 +526,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 56
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 56
 		}
 
-		visible = {
-			owns_state = 56
+		visible = {
 			controls_state = 56
 			has_tech = excavation3
 			56 = {
@@ -677,7 +542,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 120
 
 		modifier = {
@@ -706,13 +571,12 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			tag = GER
 		}
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 4
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 4
 		}
 
@@ -720,8 +584,7 @@ prospect_for_resources = {
 			state = 4
 		}
 
-		visible = {
-			owns_state = 4
+		visible = {
 			controls_state = 4
 			has_tech = excavation3
 			4 = {
@@ -733,7 +596,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 120
 
 		modifier = {
@@ -751,7 +614,7 @@ prospect_for_resources = {
 			4 = {
 				add_resource = {
 					type = oil
-					amount = 4
+					amount = 6
 				}
 			}
 		}
@@ -761,7 +624,7 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			tag = GER
 		}
 
 		highlight_states = {
@@ -770,13 +633,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 36
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 36
 		}
 
-		visible = {
-			owns_state = 36
+		visible = {
 			controls_state = 36
 			has_tech = excavation3
 			36 = {
@@ -788,7 +649,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 120
 
 		modifier = {
@@ -809,64 +670,12 @@ prospect_for_resources = {
 			}
 		}
 	}
-	expand_eregli_steel_works = { #347
-		
-		icon = steel
-
-		allowed = {
-
-		}
-
-		highlight_states = {
-			state = 347
-		}
-
-		available = {
-			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 347
-			controls_state = 347
-		}
-
-		visible = {
-			owns_state = 347
-			controls_state = 347
-			347 = {
-				NOT = {
-					has_state_flag = eregli_steel_developed
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 90
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		remove_effect = {
-			347 = { set_state_flag = eregli_steel_developed }
-			347 = {
-				add_resource = {
-					type = steel
-					amount = 12
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	develop_newfoundland_steel = { #331
 		
 		icon = steel
 
 		allowed = {
-
+			OR = { tag = CAN tag = USA tag = ENG }
 		}
 
 		highlight_states = {
@@ -875,13 +684,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 331
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 331
 		}
 
-		visible = {
-			owns_state = 331
+		visible = {
 			controls_state = 331
 			331 = {
 				NOT = {
@@ -892,7 +699,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {
@@ -924,7 +731,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			tag = CAN
 		}
 
 		available = {
@@ -932,16 +739,14 @@ prospect_for_resources = {
 			num_of_civilian_factories_available_for_projects > 2
 			466 = {
 				infrastructure > 2
-			}
-			owns_state = 466
+			}
 			controls_state = 466
 		}
 		highlight_states = {
 			state = 466
 		}
 
-		visible = {
-			owns_state = 466
+		visible = {
 			controls_state = 466
 			466 = {
 				NOT = {
@@ -952,7 +757,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {
@@ -975,67 +780,12 @@ prospect_for_resources = {
 		}
 	}
 
-	develop_cuba_steel = { #315
-		
-		icon = steel
-
-		allowed = {
-
-		}
-
-		highlight_states = {
-			state = 315
-		}
-
-		available = {
-			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 315
-			controls_state = 315
-		}
-
-		visible = {
-			owns_state = 315
-			controls_state = 315
-			315 = {
-				NOT = {
-					has_state_flag = cuba_steel_developed
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 90
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		remove_effect = {
-			315 = {
-				set_state_flag = cuba_steel_developed
-			}
-			315 = {
-				add_resource = {
-					type = steel
-					amount = 6
-				}	
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	develop_arkansas_aluminium_deposits = { #372
 		
 		icon = aluminium
 
 		allowed = {
-
+			tag = USA
 		}
 
 		highlight_states = {
@@ -1044,13 +794,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 372
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 372
 		}
 
-		visible = {
-			owns_state = 372
+		visible = {
 			controls_state = 372
 			372 = {
 				NOT = {
@@ -1062,11 +810,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_arkansas_aluminium_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		remove_effect = {
@@ -1120,20 +868,18 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-
+			tag = USA
 		}
 		highlight_states = {
 			state = 358
 		}
 		available = {
 			has_tech = construction2
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 358
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 358
 		}
 
-		visible = {
-			owns_state = 358
+		visible = {
 			controls_state = 358
 			358 = {
 				NOT = {
@@ -1145,11 +891,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_new_york_aluminium_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1203,22 +949,20 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-
+			tag = USA
 		}
 
 		available = {
-			has_tech = construction2
-			owns_state = 368
+			has_tech = construction2
 			controls_state = 368
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 14
 		}
 
 		highlight_states = {
 			state = 368
 		}
 
-		visible = {
-			owns_state = 368
+		visible = {
 			controls_state = 368
 			368 = {
 				NOT = {
@@ -1230,11 +974,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_tennessee_aluminium_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1288,22 +1032,20 @@ prospect_for_resources = {
 		icon = aluminium
 
 		allowed = {
-
+			tag = USA
 		}
 
 		available = {
-			has_tech = construction2
-			owns_state = 386
+			has_tech = construction2
 			controls_state = 386
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 14
 		}
 
 		highlight_states = {
 			state = 386
 		}
 
-		visible = {
-			owns_state = 386
+		visible = {
 			controls_state = 386
 			386 = {
 				NOT = {
@@ -1315,11 +1057,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_washington_aluminium_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1373,7 +1115,7 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-
+			tag = USA
 		}
 
 		highlight_states = {
@@ -1382,13 +1124,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 387
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 387
 		}
 
-		visible = {
-			owns_state = 387
+		visible = {
 			controls_state = 387
 			387 = {
 				NOT = {
@@ -1400,11 +1140,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_idaho_tungsten_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1439,7 +1179,7 @@ prospect_for_resources = {
 			387 = {
 				add_resource = {
 					type = tungsten
-					amount = 6
+					amount = 12
 				}
 			}
 		}
@@ -1458,7 +1198,7 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-
+			tag = USA
 		}
 
 		highlight_states = {
@@ -1467,13 +1207,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 378
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 378
 		}
 
-		visible = {
-			owns_state = 378
+		visible = {
 			controls_state = 378
 			378 = {
 				NOT = {
@@ -1485,11 +1223,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_california_tungsten_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1524,7 +1262,7 @@ prospect_for_resources = {
 			378 = {
 				add_resource = {
 					type = tungsten
-					amount = 6
+					amount = 12
 				}
 			}
 		}
@@ -1543,13 +1281,12 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			tag = USA
 		}
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 391
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 391
 		}
 
@@ -1557,8 +1294,7 @@ prospect_for_resources = {
 			state = 391
 		}
 
-		visible = {
-			owns_state = 391
+		visible = {
 			controls_state = 391
 			391 = {
 				NOT = {
@@ -1570,11 +1306,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_minnesota_steel_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1628,7 +1364,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			tag = USA
 		}
 
 		highlight_states = {
@@ -1637,13 +1373,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 360
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 360
 		}
 
-		visible = {
-			owns_state = 360
+		visible = {
 			controls_state = 360
 			360 = {
 				NOT = {
@@ -1655,11 +1389,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_pennsylvania_steel_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1714,13 +1448,12 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			tag = USA
 		}
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 261
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 261
 		}
 
@@ -1728,8 +1461,7 @@ prospect_for_resources = {
 			state = 261
 		}
 
-		visible = {
-			owns_state = 261
+		visible = {
 			controls_state = 261
 			261 = {
 				NOT = {
@@ -1741,11 +1473,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_ohio_steel_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1799,7 +1531,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			tag = USA
 		}
 
 		highlight_states = {
@@ -1808,13 +1540,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 396
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 396
 		}
 
-		visible = {
-			owns_state = 396
+		visible = {
 			controls_state = 396
 			396 = {
 				NOT = {
@@ -1826,11 +1556,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_indiana_steel_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1885,7 +1615,7 @@ prospect_for_resources = {
 		icon = chromium
 
 		allowed = {
-
+			tag = USA
 		}
 
 		highlight_states = {
@@ -1894,13 +1624,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 388
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 388
 		}
 
-		visible = {
-			owns_state = 388
+		visible = {
 			controls_state = 388
 			has_tech = excavation3
 			388 = {
@@ -1913,11 +1641,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_montana_chromium_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -1952,7 +1680,7 @@ prospect_for_resources = {
 			388 = {
 				add_resource = {
 					type = chromium
-					amount = 6
+					amount = 12
 				}
 			}
 		}
@@ -1972,7 +1700,7 @@ prospect_for_resources = {
 		icon = chromium
 
 		allowed = {
-
+			tag = USA
 		}
 
 		highlight_states = {
@@ -1981,13 +1709,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 378
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 378
 		}
 
-		visible = {
-			owns_state = 378
+		visible = {
 			controls_state = 378
 			has_tech = excavation3
 			378 = {
@@ -2000,11 +1726,11 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = USA_california_chromium_duration
 
 		modifier = {
-			civilian_factory_use = 12
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -2039,7 +1765,7 @@ prospect_for_resources = {
 			378 = {
 				add_resource = {
 					type = chromium
-					amount = 6
+					amount = 12
 				}
 			}
 		}
@@ -2062,7 +1788,7 @@ prospect_for_resources = {
 		}
 
 		allowed = {
-			#Everyone
+			tag = JAP
 		}
 
 		available = {
@@ -2079,7 +1805,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -2109,7 +1835,7 @@ prospect_for_resources = {
 		}
 
 		allowed = {
-			#Everyone
+			tag = JAP
 		}
 
 		available = {
@@ -2152,13 +1878,12 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-			
+			tag = ENG
 		}
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 123
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 123
 		}
 
@@ -2166,8 +1891,7 @@ prospect_for_resources = {
 			state = 123
 		}
 
-		visible = {
-			owns_state = 123
+		visible = {
 			controls_state = 123
 			123 = {
 				NOT = {
@@ -2178,7 +1902,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -2199,7 +1923,7 @@ prospect_for_resources = {
 			123 = {
 				add_resource = {
 					type = tungsten
-					amount = 4
+					amount = 6
 				}
 			}
 		}
@@ -2209,13 +1933,12 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-			
+			tag = ENG
 		}
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 123
+			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 123
 		}
 
@@ -2223,8 +1946,7 @@ prospect_for_resources = {
 			state = 123
 		}
 
-		visible = {
-			owns_state = 123
+		visible = {
 			controls_state = 123
 			123 = {
 				NOT = {
@@ -2236,7 +1958,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {
@@ -2265,7 +1987,7 @@ prospect_for_resources = {
 		}
 
 		allowed = {
-			#Everyone
+			OR = { tag = SOV tag = GER }
 		}
 
 		available = {
@@ -2282,7 +2004,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -2311,7 +2033,7 @@ prospect_for_resources = {
 		}
 
 		allowed = {
-			#Everyone
+			tag = SOV
 		}
 
 		available = {
@@ -2328,7 +2050,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -2357,7 +2079,7 @@ prospect_for_resources = {
 		}
 
 		allowed = {
-			#Everyone
+			OR = { tag = SOV tag = GER }
 		}
 
 		available = {
@@ -2374,7 +2096,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -2406,13 +2128,12 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-			
+			tag = SOV
 		}
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 233
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 233
 		}
 
@@ -2420,8 +2141,7 @@ prospect_for_resources = {
 			state = 233
 		}
 
-		visible = {
-			owns_state = 233
+		visible = {
 			controls_state = 233
 			233 = {
 				NOT = {
@@ -2432,7 +2152,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -2464,13 +2184,12 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-			
+			tag = SOV
 		}
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 233
+			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 233
 		}
 
@@ -2478,8 +2197,7 @@ prospect_for_resources = {
 			state = 233
 		}
 
-		visible = {
-			owns_state = 233
+		visible = {
 			controls_state = 233
 			233 = {
 				NOT = {
@@ -2491,7 +2209,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {
@@ -2523,13 +2241,12 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-			
+			tag = SOV
 		}
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 404
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 404
 		}
 
@@ -2537,8 +2254,7 @@ prospect_for_resources = {
 			state = 404
 		}
 
-		visible = {
-			owns_state = 404
+		visible = {
 			controls_state = 404
 			has_tech = excavation3
 			404 = {
@@ -2550,7 +2266,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -2582,13 +2298,12 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-			
+			tag = SOV
 		}
 
 		available = {
 			has_tech = construction4
-			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 572
+			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 572
 			has_tech = construction3
 		}
@@ -2597,8 +2312,7 @@ prospect_for_resources = {
 			state = 572
 		}
 
-		visible = {
-			owns_state = 572
+		visible = {
 			controls_state = 572
 			has_tech = construction3
 			572 = {
@@ -2613,7 +2327,7 @@ prospect_for_resources = {
 
 		
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {
@@ -2663,13 +2377,12 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-			
+			tag = SOV
 		}
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 573
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 573
 		}
 
@@ -2677,8 +2390,7 @@ prospect_for_resources = {
 			state = 573
 		}
 
-		visible = {
-			owns_state = 573
+		visible = {
 			controls_state = 573
 			573 = {
 				NOT = {
@@ -2689,7 +2401,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -2721,13 +2433,12 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-			
+			tag = SOV
 		}
 
 		available = {
 			has_tech = construction4
-			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 573
+			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 573
 		}
 
@@ -2735,8 +2446,7 @@ prospect_for_resources = {
 			state = 573
 		}
 
-		visible = {
-			owns_state = 573
+		visible = {
 			controls_state = 573
 			573 = {
 				NOT = {
@@ -2748,7 +2458,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {
@@ -2780,7 +2490,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			OR = { tag = SOV tag = GER }
 		}
 
 		highlight_states = {
@@ -2789,13 +2499,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 8
-			owns_state = 220
+			num_of_civilian_factories_available_for_projects > 8
 			controls_state = 220
 		}
 
-		visible = {
-			owns_state = 220
+		visible = {
 			controls_state = 220
 			220 = {
 				NOT = {
@@ -2807,7 +2515,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = SOV_kursk_steel_duration
 
 		modifier = {
@@ -2867,7 +2575,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			tag = SOV
 		}
 
 		highlight_states = {
@@ -2876,13 +2584,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 220
+			num_of_civilian_factories_available_for_projects > 11
 			controls_state = 220
 		}
 
-		visible = {
-			owns_state = 220
+		visible = {
 			controls_state = 220
 			220 = {
 				NOT = {
@@ -2898,7 +2604,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = SOV_kursk_steel_duration_2
 
 		modifier = {
@@ -2958,7 +2664,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			tag = SOV
 		}
 
 		highlight_states = {
@@ -2967,13 +2673,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 14
-			owns_state = 220
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 220
 		}
 
-		visible = {
-			owns_state = 220
+		visible = {
 			controls_state = 220
 			220 = {
 				NOT = {
@@ -2989,7 +2693,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = SOV_kursk_steel_duration_3
 
 		modifier = {
@@ -3049,7 +2753,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			OR = { tag = SOV tag = GER }
 		}
 
 		highlight_states = {
@@ -3058,13 +2762,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 8
-			owns_state = 240
+			num_of_civilian_factories_available_for_projects > 8
 			controls_state = 240
 		}
 
-		visible = {
-			owns_state = 240
+		visible = {
 			controls_state = 240
 			240 = {
 				NOT = {
@@ -3076,7 +2778,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = SOV_Belgorod_steel_duration
 
 		modifier = {
@@ -3136,7 +2838,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			tag = SOV
 		}
 
 		highlight_states = {
@@ -3145,13 +2847,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 240
+			num_of_civilian_factories_available_for_projects > 11
 			controls_state = 240
 		}
 
-		visible = {
-			owns_state = 240
+		visible = {
 			controls_state = 240
 			240 = {
 				NOT = {
@@ -3167,7 +2867,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = SOV_Belgorod_steel_duration_2
 
 		modifier = {
@@ -3227,7 +2927,7 @@ prospect_for_resources = {
 		icon = steel
 
 		allowed = {
-
+			tag = SOV
 		}
 
 		highlight_states = {
@@ -3236,13 +2936,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 14
-			owns_state = 240
+			num_of_civilian_factories_available_for_projects > 14
 			controls_state = 240
 		}
 
-		visible = {
-			owns_state = 240
+		visible = {
 			controls_state = 240
 			240 = {
 				NOT = {
@@ -3258,7 +2956,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = SOV_Belgorod_steel_duration_3
 
 		modifier = {
@@ -3318,13 +3016,12 @@ prospect_for_resources = {
 		icon = chromium
 
 		allowed = {
-			
+			tag = SOV
 		}
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 407
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 407
 		}
 
@@ -3332,8 +3029,7 @@ prospect_for_resources = {
 			state = 407
 		}
 
-		visible = {
-			owns_state = 407
+		visible = {
 			controls_state = 407
 			407 = {
 				NOT = {
@@ -3344,7 +3040,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -3376,12 +3072,11 @@ prospect_for_resources = {
 		icon = chromium
 
 		allowed = {
-			
+			tag = SOV
 		}
 
 		available = {
-			has_tech = excavation5
-			owns_state = 407
+			has_tech = excavation5
 			controls_state = 407
 			num_of_civilian_factories_available_for_projects > 4
 		}
@@ -3390,8 +3085,7 @@ prospect_for_resources = {
 			state = 407
 		}
 
-		visible = {
-			owns_state = 407
+		visible = {
 			controls_state = 407
 			407 = {
 				NOT = {
@@ -3403,7 +3097,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {
@@ -3437,7 +3131,7 @@ prospect_for_resources = {
 		icon = tungsten
 
 		allowed = {
-
+			tag = JAP
 		}
 
 		highlight_states = {
@@ -3446,13 +3140,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 527
+			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 527
 		}
 
-		visible = {
-			owns_state = 527
+		visible = {
 			controls_state = 527
 			527 = {
 				NOT = {
@@ -3464,7 +3156,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = chosin_tungsten_duration
 
 		modifier = {
@@ -3519,7 +3211,7 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			OR = { tag = ENG tag = GER tag = ITA tag = ROM }
 		}
 
 		highlight_states = {
@@ -3528,13 +3220,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 6
-			owns_state = 658
+			num_of_civilian_factories_available_for_projects > 6
 			controls_state = 658
 		}
 
-		visible = {
-			owns_state = 658
+		visible = {
 			controls_state = 658
 			has_tech = excavation5
 			658 = {
@@ -3546,7 +3236,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 120
 
 		modifier = {
@@ -3574,12 +3264,11 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			OR = { tag = ENG tag = GER tag = ITA tag = ROM }
 		}
 
 		available = {
-			has_tech = excavation5
-			owns_state = 656
+			has_tech = excavation5
 			controls_state = 656
 			num_of_civilian_factories_available_for_projects > 11
 		}
@@ -3588,8 +3277,7 @@ prospect_for_resources = {
 			state = 656
 		}
 
-		visible = {
-			owns_state = 656
+		visible = {
 			controls_state = 656
 			has_tech = excavation2
 			656 = {
@@ -3602,7 +3290,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = kuwait_oil_duration
 		modifier = {
 			civilian_factory_use = 12
@@ -3655,7 +3343,7 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			OR = { tag = ENG tag = GER tag = ITA tag = ROM }
 		}
 
 		highlight_states = {
@@ -3664,13 +3352,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 8
-			owns_state = 413
+			num_of_civilian_factories_available_for_projects > 8
 			controls_state = 413
 		}
 
-		visible = {
-			owns_state = 413
+		visible = {
 			controls_state = 413
 			has_tech = excavation2
 			413 = {
@@ -3682,7 +3368,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 180
 
 		modifier = {
@@ -3710,7 +3396,7 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			OR = { tag = ENG tag = GER tag = ITA tag = ROM }
 		}
 
 		highlight_states = {
@@ -3719,13 +3405,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 412
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 412
 		}
 
-		visible = {
-			owns_state = 412
+		visible = {
 			controls_state = 412
 			has_tech = excavation3
 			412 = {
@@ -3737,7 +3421,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 120
 
 		modifier = {
@@ -3765,7 +3449,7 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			OR = { tag = ENG tag = GER tag = ITA tag = ROM }
 		}
 
 		highlight_states = {
@@ -3774,13 +3458,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 11
-			owns_state = 291
+			num_of_civilian_factories_available_for_projects > 11
 			controls_state = 291
 		}
 
-		visible = {
-			owns_state = 291
+		visible = {
 			controls_state = 291
 			has_tech = excavation4
 			291 = {
@@ -3792,7 +3474,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {
@@ -3820,7 +3502,7 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			OR = { tag = ENG tag = GER tag = ITA tag = ROM }
 		}
 
 		highlight_states = {
@@ -3828,13 +3510,11 @@ prospect_for_resources = {
 		}
 
 		available = {
-			num_of_civilian_factories_available_for_projects > 4
-			owns_state = 676
+			num_of_civilian_factories_available_for_projects > 4
 			controls_state = 676
 		}
 
-		visible = {
-			owns_state = 676
+		visible = {
 			controls_state = 676
 			has_tech = excavation3
 			676 = {
@@ -3846,7 +3526,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 180
 
 		modifier = {
@@ -3869,93 +3549,12 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_nejd_oil_fields = { #292 
-		
-		icon = oil
-
-		allowed = {
-
-		}
-
-		available = {
-			has_tech = excavation5
-			owns_state = 292
-			controls_state = 292
-			num_of_civilian_factories_available_for_projects > 14
-		}
-
-		highlight_states = {
-			state = 292
-		}
-
-		visible = {
-			owns_state = 292 
-			controls_state = 292 
-			has_tech = excavation4
-			292 = {
-				NOT = {
-					has_state_flag = { 
-						flag = nejd_oil_developed 
-						value = 5
-					}
-				}
-			}
-		}
-
-		cost = 25
-		days_remove = nejd_oil_duration
-		modifier = {
-			civilian_factory_use = 15
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		remove_effect = {
-			add_to_variable = { var = nejd_oil_duration value = 30 }
-			292 = {
-				if = {
-					limit = {
-						NOT = {
-							has_state_flag = nejd_oil_developed
-						}
-					}
-					set_state_flag = {
-						flag = nejd_oil_developed
-						value = 1
-					}
-				}
-				else = {
-					modify_state_flag = {
-						flag = nejd_oil_developed
-						value = 1
-					}
-				}
-			}
-			292 = {
-				add_resource = {
-					type = oil
-					amount = 22
-				}
-			}
-		}
-
-		complete_effect = {
-			if = {
-				limit = {
-					check_variable = { var = nejd_oil_duration value = 30 compare = less_than }
-				}
-				set_variable = { var = nejd_oil_duration value = 60 }
-			}
-		}
-	}
 	develop_eastern_desert_oil_fields   = { #457
 		
 		icon = oil
 
 		allowed = {
-
+			OR = { tag = ENG tag = GER tag = ITA tag = ROM }
 		}
 
 		highlight_states = {
@@ -3964,13 +3563,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 457
+			num_of_civilian_factories_available_for_projects > 2
 			controls_state = 457
 		}
 
-		visible = {
-			owns_state = 457
+		visible = {
 			controls_state = 457
 			has_tech = excavation2
 			457 = {
@@ -3982,7 +3579,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		modifier = {
@@ -4010,7 +3607,7 @@ prospect_for_resources = {
 		icon = oil
 
 		allowed = {
-
+			OR = { tag = ENG tag = GER tag = ITA tag = ROM }
 		}
 
 		highlight_states = {
@@ -4019,13 +3616,11 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 5
-			owns_state = 765
+			num_of_civilian_factories_available_for_projects > 5
 			controls_state = 765
 		}
 
-		visible = {
-			owns_state = 765
+		visible = {
 			controls_state = 765
 			has_tech = excavation2
 			765 = {
@@ -4037,7 +3632,7 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 90
 
 		modifier = {

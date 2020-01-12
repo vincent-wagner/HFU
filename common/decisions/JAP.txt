@@ -1,126 +1,4 @@
 #Category allowed for JAP
-JAP_intervene_in_china = {
-
-	JAP_china_step_up_war_effort = {
-
-		icon = jap_conquer_china
-
-		allowed = { original_tag = JAP }
-		
-		visible = {
-		has_war_with = CHI
-		}
-		
-		available = {
-		NOT = { country_exists = CHI }
-		}
-
-		days_mission_timeout = 30
-		#days_remove = 1
-	
-		cancel_trigger = {
-			hidden_trigger = {
-					NOT = { JAP_has_idea_JAP_intervene_in_china = yes }
-			}
-		}
-
-		activation = {
-			JAP_has_idea_JAP_intervene_in_china = yes
-		}
-
-		fire_only_once = no
-
-		is_good = no
-
-				timeout_effect = {
-			JAP_intervene_in_china_level_down = yes
-			USA = { add_war_support = 0.025 }
-			activate_mission = JAP_china_step_up_war_effort
-			}		
-			}
-
-	JAP_ichi_go = {
-
-		icon = jap_conquer_china
-
-		available = {
-		NOT = { JAP_has_idea_JAP_intervene_in_china = yes }
-			event_target:WTT_current_china_leader = {
-				has_capitulated = no
-				exists = yes
-			}
-		}
-
-		visible = {
-			any_enemy_country = {
-				is_literally_china = yes
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 50
-
-		complete_effect = {
-			if = {
-				limit = {
-					USA = {
-						has_war = no
-					}
-				}
-				USA = { add_war_support = 0.1 }
-			}
-			add_ideas = JAP_ichi_go
-			activate_mission_tooltip = JAP_conquer_china
-			set_country_flag = JAP_conquer_china_activate
-		}
-	}
-
-	JAP_conquer_china = {
-
-		icon = jap_conquer_china
-
-		available = {
-			event_target:WTT_current_china_leader = {
-				OR = {
-					has_capitulated = yes
-					exists = no
-					is_subject_of = ROOT
-				}
-			}
-		}
-
-		visible = {
-			JAP_has_idea_JAP_intervene_in_china = yes
-			any_enemy_country = {
-				is_literally_china = yes
-			}
-		}
-
-		activation = {
-			has_country_flag = JAP_conquer_china_activate
-		}
-
-		fire_only_once = yes
-
-		is_good = no
-
-		days_mission_timeout = 360
-		
-		timeout_effect = {
-			add_stability = -0.05
-			add_war_support = -0.15
-		}
-
-		complete_effect = {
-			add_stability = 0.03
-			add_war_support = 0.07
-		}
-	}
-
-	
-}
-
 foreign_politics = { 
 	
 JAP_permit_man = {
@@ -130,7 +8,7 @@ icon = generic_operation
 		tag = JAP
 	}
 	fire_only_once = yes
-	cost = 1
+	cost = 0
 	visible = {
 		country_exists = MAN
 	}
@@ -913,56 +791,6 @@ JAP_southern_expansion = {
 				
 		}
 
-	}
-}
-
-
-
-political_actions = {
-	JAP_break_the_london_naval_treaty = {
-
-		icon = generic_break_treaty
-
-		allowed = {
-			original_tag = JAP
-		}
-
-		available = {
-
-		}
-
-		visible = {
-			has_idea = JAP_the_london_naval_treaty
-		}
-
-		fire_only_once = yes
-
-
-		modifier = {
-
-		}
-
-		days_remove = 0
-		days_re_enable = 0
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		complete_effect = {
-			remove_ideas = JAP_the_london_naval_treaty
-			FRA = { add_opinion_modifier = { target = ROOT modifier = JAP_broke_the_london_naval_treaty } }
-			USA = { add_opinion_modifier = { target = ROOT modifier = JAP_broke_the_london_naval_treaty } }
-			ENG = { add_opinion_modifier = { target = ROOT modifier = JAP_broke_the_london_naval_treaty } }
-			FRA = { remove_opinion_modifier = { target = ROOT modifier = JAP_join_the_london_naval_treaty } }
-			USA = { remove_opinion_modifier = { target = ROOT modifier = JAP_join_the_london_naval_treaty } }
-			ENG = { remove_opinion_modifier = { target = ROOT modifier = JAP_join_the_london_naval_treaty } }
-			remove_opinion_modifier = { target = FRA modifier = JAP_join_the_london_naval_treaty }
-			remove_opinion_modifier = { target = USA modifier = JAP_join_the_london_naval_treaty }
-			remove_opinion_modifier = { target = ENG modifier = JAP_join_the_london_naval_treaty }
-		}		
 	}
 }
 
