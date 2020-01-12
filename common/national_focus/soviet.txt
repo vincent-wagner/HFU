@@ -87,7 +87,7 @@ focus = {
 		
 		add_resource = {
               type = aluminium
-               amount = 40
+               amount = 70
                state = 582
                            }
 		
@@ -854,7 +854,7 @@ focus = {
 			add_political_power = 120
 			add_resource = {
 				type = rubber
-				amount = 30
+				amount = 45
 				state = 404
 			}
 		}
@@ -1288,8 +1288,8 @@ focus = {
 		completion_reward = {
 			
 					
-			remove_ideas = trotskyite_plot
-			add_ideas = trotskyite_plot_purged
+			swap_ideas = { remove_idea = trotskyite_plot
+			add_idea = trotskyite_plot_purged}
 			add_ideas = officers_purged
 			
 

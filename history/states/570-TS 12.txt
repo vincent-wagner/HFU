@@ -4,7 +4,7 @@ state={
 	name="STATE_570" # Novosibirsk
 	manpower = 1765369
 
-	state_category = town
+	state_category = city
 
 	history={
 		owner = SOV
@@ -12,7 +12,7 @@ state={
 			7274 3 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
 			industrial_complex = 2
 			air_base = 1
 		}

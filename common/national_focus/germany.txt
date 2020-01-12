@@ -556,10 +556,20 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}			
+			}
+			add_resource = {
+              type = steel
+               amount = 60
+               state = 56
+                           }	
 		}
 
 		completion_reward = {
+			add_resource = {
+              type = steel
+               amount = 60
+               state = 56
+                           }	
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
