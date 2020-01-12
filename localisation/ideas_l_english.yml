@@ -1869,4 +1869,7 @@
  SPR_no_armada:0 "No Spanish Armada"
  SPR_no_armada_desc:0 "The embarrassment of losing the new world has left its scars and Spain is no longer willing to invest in a navy"
  GER_mineraloelsicherungsplan:0 "Mineralölsicherungsplan"
+ reliance_on_natural_rubber:0 "Reliance on Natural Rubber"
+ reliance_on_natural_rubber_desc:0 "We have abundant natural rubber available so there is no support for building refineries in our country"
+ 
   

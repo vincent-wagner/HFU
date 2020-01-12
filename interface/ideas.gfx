@@ -4053,14 +4053,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_comradevonaustria.dds"
 	}
 	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
+	spriteType = {
+		name = "GFX_idea_rubber"
+		texturefile = "gfx/interface/ideas/rubber.dds"
+	}
 }

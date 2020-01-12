@@ -16,6 +16,7 @@ set_research_slots = 4
 
 set_stability = 0.6
 set_war_support = 0.1
+add_ideas = reliance_on_natural_rubber
 
 # Starting tech
 set_technology = {
@@ -328,7 +329,7 @@ create_country_leader = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_processing = 1
+
 		fuel_refining2 = 1
 		construction1 = 1
 		construction2 = 1

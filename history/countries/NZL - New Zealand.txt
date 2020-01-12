@@ -3,6 +3,7 @@ oob = "NZL_1936"
 # Starting tech
 set_stability = 0.8
 set_war_support = 0.3
+add_ideas = reliance_on_natural_rubber
 
 set_technology = {
 	infantry_weapons = 1
@@ -129,8 +130,8 @@ if = {
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
+
+
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1

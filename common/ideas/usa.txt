@@ -86,6 +86,24 @@ ideas = {
 			}
 		}
 		
+		reliance_on_natural_rubber = {
+			picture = rubber
+			
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				has_war_with = JAP
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = -1.2
+			}
+		}
+		
 		great_depression = {
 			picture = usa_great_depression_3
 			
