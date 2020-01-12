@@ -388,7 +388,7 @@ ideas = {
 			allowed = {
 				original_tag = FIN
 			}
-			
+			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
 			}

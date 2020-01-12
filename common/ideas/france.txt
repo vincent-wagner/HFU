@@ -886,7 +886,7 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-						
+			cost = 100			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -919,7 +919,7 @@ ideas = {
 				original_tag = FRA
 			}
 			
-			cost = 250
+			cost = 150
 						
 			research_bonus = {
 				cat_grand_battle_plan = 0.15
@@ -969,7 +969,7 @@ ideas = {
 				original_tag = FRA
 			}
 			
-			cost = 250
+			cost = 150
 						
 			research_bonus = {
 				cat_fleet_in_being = 0.15

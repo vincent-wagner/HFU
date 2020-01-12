@@ -1192,6 +1192,7 @@ technologies = {
 			medium_air
 			air_equipment
 			cat_heavy_fighter
+			light_fighter
 		}
 		
 		ai_will_do = {
@@ -1221,6 +1222,7 @@ technologies = {
 			medium_air
 			air_equipment
 			cat_heavy_fighter
+			light_fighter
 		}
 		
 		ai_will_do = {
@@ -1258,6 +1260,7 @@ technologies = {
 			medium_air
 			air_equipment
 			cat_heavy_fighter
+			light_fighter
 		}
 		
 		ai_will_do = {

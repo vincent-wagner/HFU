@@ -1304,7 +1304,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-						
+			cost = 100			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1318,7 +1318,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1333,7 +1333,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1351,7 +1351,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1599,7 +1599,7 @@ ideas = {
 			available = {
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_grand_battle_plan = 0.15
@@ -1645,7 +1645,7 @@ ideas = {
 				
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_fleet_in_being = 0.15

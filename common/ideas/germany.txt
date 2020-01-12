@@ -1292,7 +1292,7 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-			
+			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1311,7 +1311,7 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
-			
+			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1598,7 +1598,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_mobile_warfare = 0.15
@@ -1629,7 +1629,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_trade_interdiction = 0.20

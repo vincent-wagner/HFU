@@ -1586,7 +1586,7 @@ ideas = {
 			}
 			
 
-			
+			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1613,7 +1613,7 @@ ideas = {
 				NOT = { has_country_flag = purge_1_group_a }
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_mass_assault = 0.15
@@ -1691,7 +1691,7 @@ ideas = {
 				original_tag = SOV
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_fleet_in_being = 0.15

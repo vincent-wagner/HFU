@@ -275,7 +275,7 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
+			cost = 100
 			available = {
 				controls_state = 613
 			}
@@ -301,7 +301,7 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
+			cost = 100
 			available = {
 				controls_state = 608
 			}

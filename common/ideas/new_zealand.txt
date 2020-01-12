@@ -636,7 +636,7 @@ ideas = {
 				original_TAG = NZL
 				has_dlc = "Together for Victory"
 			}
-						
+			cost = 100			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -653,7 +653,7 @@ ideas = {
 				original_TAG = NZL
 				has_dlc = "Together for Victory"
 			}
-			
+			cost = 100
 
 			
 			research_bonus = {

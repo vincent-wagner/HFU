@@ -814,7 +814,7 @@ ideas = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
-
+			cost = 100
 			picture = generic_naval_manufacturer_1
 						
 			research_bonus = {
@@ -831,7 +831,7 @@ ideas = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
-			
+			cost = 100
 			picture = generic_naval_manufacturer_3
 			
 			research_bonus = {
@@ -847,7 +847,7 @@ ideas = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
-			
+			cost = 100
 			picture = generic_naval_manufacturer_2
 			
 			research_bonus = {

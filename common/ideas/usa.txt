@@ -1794,7 +1794,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1813,7 +1813,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1832,7 +1832,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
+			cost = 100
 
 			
 			research_bonus = {
@@ -1851,7 +1851,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
+			cost = 100
 
 			
 			research_bonus = {
@@ -2110,7 +2110,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_superior_firepower = 0.15
@@ -2126,7 +2126,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_mobile_warfare = 0.15
@@ -2158,7 +2158,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-			cost = 250
+			cost = 150
 			
 			research_bonus = {
 				cat_base_strike = 0.15
