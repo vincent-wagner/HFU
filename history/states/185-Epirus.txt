@@ -7,8 +7,8 @@ state={
 	state_category = town
 	
 	resources={
-		chromium=14 # was: 20
-		steel = 14 # was: 20
+		#chromium=14 # moved to South Tyrol
+		#steel = 14 # was: 20   moved to Campania
 	}
 
 	history={
