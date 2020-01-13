@@ -5,7 +5,29 @@ crisis = {
 		icon = generic_civil_support
 
 		allowed = {
-			always = yes
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
 		}
 
 		available = {
@@ -54,7 +76,29 @@ crisis = {
 		icon = generic_civil_support
 
 		allowed = {
-			always = yes
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
 		}
 
 		available = {
@@ -105,7 +149,31 @@ crisis = {
 	draft_dodging_mission = {
 
 		icon = generic_civil_support
-		
+		allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
+		}
 		available = {
 			NOT = {
 				OR = {
@@ -208,7 +276,31 @@ crisis = {
 	strikes_mission = {
 
 		icon = generic_civil_support
-		
+		allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
+		}
 		available = {
 			NOT = {
 				OR = {
@@ -320,9 +412,31 @@ crisis = {
 	mutiny_1 = {
 
 		icon = generic_civil_support
-
+		
 		allowed = {
-			always = yes
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
 		}
 
 		available = {
@@ -364,7 +478,31 @@ crisis = {
 	mutiny_mission = {
 
 		icon = generic_civil_support
-		
+		allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
+		}
 		available = {
 			NOT = {
 				OR = {
@@ -476,7 +614,31 @@ crisis = {
 }
 demobilization = {
 	demobilization_economic = {
-
+		allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
+		}
 		icon = generic_industry
 		
 		is_good = no
@@ -552,7 +714,31 @@ demobilization = {
 				has_war = yes
 			}
 		}
-
+		allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
+		}
 		activation = {
 			has_unsupported_economic_law = yes
 			has_war = no
@@ -664,7 +850,7 @@ demobilization = {
 		}
 	}
 	demobilization_manpower = {
-
+		
 		icon = generic_prepare_civil_war
 
 		icon = revolt
@@ -676,7 +862,29 @@ demobilization = {
 		}
 
 		allowed = {
-			always = yes
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
+			}
 		}
 
 		cost = 50
@@ -725,6 +933,31 @@ demobilization = {
 			OR = {
 				has_unsupported_manpower_law = no
 				has_war = yes
+			}
+		}
+		allowed = {
+			OR = {	
+				tag = SOV
+				tag = SIA 
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN 
+				tag = USA
+				tag = CAN
+				tag = EFR	
 			}
 		}
 		activation = {
