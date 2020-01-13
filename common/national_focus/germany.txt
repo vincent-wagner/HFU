@@ -765,8 +765,13 @@ focus_tree = {
 		relative_position_id = GER_synthetic_rubber
 		cost = 5
 		available = {
-			has_war_with = SOV }
+		or = {	has_war_with = SOV 
 		
+		date > 1941.1.1
+		}
+		
+		}
+		 
 		ai_will_do = {
 			factor = 4
 		}

@@ -291,14 +291,14 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_acquire_tanks
-           		#modifier = {
-			#army_armor_speed_factor = 0.1
-			#}
+           		modifier = {
+			army_armor_attack_factor = 0.1
+			}
 			
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 			
 
@@ -319,15 +319,13 @@ ideas = {
 
 			picture = generic_acquire_tanks
             modifier = {
-			planning_speed = 3
-			supply_consumption_factor = -0.3
-			#army_armor_speed_factor = 0.1
+			army_armor_attack_factor = 0.1
 			}
 			
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 			
 
@@ -446,6 +444,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -478,8 +479,10 @@ ideas = {
 			removal_cost = -1
 
 			picture = ger_mefo_bills
-
-			modifier = {
+modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -491,7 +494,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 0.35
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -511,6 +514,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -522,7 +528,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 0.5
+				political_power_cost = 0.2
 			}
 		
 			}
@@ -543,6 +549,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -554,7 +563,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 0.65
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -574,6 +583,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -585,7 +597,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 0.8
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -605,6 +617,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -616,7 +631,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 0.95
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -636,6 +651,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -647,7 +665,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 1.1
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -665,8 +683,11 @@ ideas = {
 			removal_cost = -1
 
 			picture = ger_mefo_bills
-
-			modifier = {
+                
+		    modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -678,7 +699,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 1.25
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -698,6 +719,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -709,7 +733,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 1.4
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -729,6 +753,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -740,7 +767,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 1.55
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -760,6 +787,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -771,7 +801,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 1.7
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -791,6 +821,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -802,7 +835,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 1.85
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -822,6 +855,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -833,7 +869,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 2
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -853,6 +889,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -864,7 +903,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 2.15
+				political_power_cost = 0.2
 			}
 
 		}
@@ -884,6 +923,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -895,7 +937,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 2.3
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -915,6 +957,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -926,7 +971,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 2.45
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -946,6 +991,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -957,7 +1005,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 2.6
+				political_power_cost = 0.2
 			}
 		
 		}
@@ -977,6 +1025,9 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
@@ -988,7 +1039,7 @@ ideas = {
 				production_speed_radar_station_factor = 0.25
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
-				political_power_cost = 2.75
+				political_power_cost = 0.2
 			}
 		
 		}
