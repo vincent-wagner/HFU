@@ -26,10 +26,8 @@ on_actions = {
 	# Ace pilots
 	# country, FROM = ace
 	on_ace_promoted = {
-		random_events = {
-				100 = ace_promoted.1
-				5 = ace_promoted.2
-			}
+		effect={
+		if={limit={date>1938.1.1} add_war_support = 0.02}}
 		}
 		
 	

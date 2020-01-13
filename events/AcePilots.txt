@@ -83,7 +83,7 @@ country_event = {
 	hidden = yes
 	option = {
 		name = ace_promoted.1.a
-		add_war_support = 0.02		
+		if={limit={date>1938.1.1} add_war_support = 0.02}	
 	}
 }
 

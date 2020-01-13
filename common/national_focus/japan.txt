@@ -1520,6 +1520,14 @@ completion_reward = {
 
 
 		completion_reward = {
+			530 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = JAP_small_arms_modernization
 				bonus = 1.0
@@ -1558,6 +1566,14 @@ completion_reward = {
 
 
 		completion_reward = {
+			528 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_ideas = JAP_supremacy_of_technology
 		}
 	}
@@ -1590,6 +1606,14 @@ completion_reward = {
 
 
 		completion_reward = {
+			534 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = JAP_modern_artillery
 				bonus = 1.0
@@ -1627,9 +1651,22 @@ completion_reward = {
 
 
 		completion_reward = {
+			533 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_relation_modifier = {
+				target = GER
+				modifier = japan_armor_sharing
+			}
+			custom_effect_tooltip="License production factory output will be -20%.       "
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 1.0
+				bonus = 1.2
 				uses = 3
 				category = armor	
 			}
@@ -1696,6 +1733,14 @@ completion_reward = {
 
 
 		completion_reward = {
+			535 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = hajime_sugiyama
 		}
@@ -1730,6 +1775,14 @@ completion_reward = {
 
 
 		completion_reward = {
+			531 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_ideas = JAP_superior_will
 		}
 	}
@@ -2246,7 +2299,57 @@ completion_reward = {
 				uses = 1
 				category = marine_tech	
 			}
-		}
+			set_technology={jungle_warfare=1}
+				hidden_effect={
+					division_template = {
+					name = "Rikuhentai"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+					division_names_group = JAP_MAR_01
+					regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+						marine = { x = 0 y = 3 }
+						artillery_brigade = { x = 0 y = 4 }
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+						marine = { x = 1 y = 3 }
+						artillery_brigade = { x = 1 y = 4 }
+						marine = { x = 2 y = 0 }
+						marine = { x = 2 y = 1 }
+						marine = { x = 2 y = 2 }
+						artillery_brigade = { x = 2 y = 3 }
+						marine = { x = 3 y = 0 }
+						marine = { x = 3 y = 1 }
+						marine = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						recon = { x = 0 y = 2  } 
+						anti_air = { x = 0 y = 3  }
+						logistics_company = { x = 0 y = 4  }
+						signal_company = { x = 0 y = 5  }
+						
+					}
+					priority = 2
+				}
+				282 = {
+					for_loop_effect = {
+					end = 10 				
+					create_unit = {
+						division = "name = \"Rikuhentai\" division_template = \"Rikuhentai\" start_experience_factor = 2.0" 
+						owner = JAP
+						}
+					}}
+			}
+			custom_effect_tooltip="10 Marine Divisions spawn in Kanto"
+				
+		
+		
+		
+	}	
 	}
 
 	focus = {
