@@ -365,7 +365,7 @@ ideas = {
 			
 			modifier = {
 			defence = -0.1
-			#army_org_factor = -0.2
+			army_org_factor = -0.1
 			air_air_superiority_agility_factor = -0.25 }
 		}
 
