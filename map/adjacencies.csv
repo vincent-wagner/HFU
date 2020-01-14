@@ -238,5 +238,22 @@
 5042;8112;impassable;-1;-1;-1;-1;-1;;sinkiang
 5042;4973;impassable;-1;-1;-1;-1;-1;;sinkiang
 
+
+12931;12193;impassable;-1;-1;-1;-1;-1;;papua
+12193;5135;impassable;-1;-1;-1;-1;-1;;papua
+5135;12154;impassable;-1;-1;-1;-1;-1;;papua
+7614;5135;impassable;-1;-1;-1;-1;-1;;papua
+5135;12428;impassable;-1;-1;-1;-1;-1;;papua
+12428;10954;impassable;-1;-1;-1;-1;-1;;papua
+10954;11018;impassable;-1;-1;-1;-1;-1;;papua
+11018;2129;impassable;-1;-1;-1;-1;-1;;papua
+11018;11004;impassable;-1;-1;-1;-1;-1;;papua
+11004;10423;impassable;-1;-1;-1;-1;-1;;papua
+11004;10990;impassable;-1;-1;-1;-1;-1;;papua
+10990;8250;impassable;-1;-1;-1;-1;-1;;papua
+8250;7570;impassable;-1;-1;-1;-1;-1;;papua
+7570;8235;impassable;-1;-1;-1;-1;-1;;papua
+8235;10436;impassable;-1;-1;-1;-1;-1;;papua
+
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 -1;-1;;-1;-1;-1;-1;-1;-1
