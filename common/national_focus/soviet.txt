@@ -169,10 +169,10 @@ focus = {
 		id = SOV_great_patriotic_general
 		icon = GFX_anti_communism
 		
-		x = 12
-		y = 4
-		prerequisite = { focus = SOV_move_industry_to_urals }
-		cost = 15
+		x = 10
+		y = 6
+		prerequisite = { focus = SOV_great_figher }
+		cost = 6
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -208,8 +208,8 @@ focus = {
 		icon = GFX_goal_wheat
 		
 		x = 14
-		y = 5
-		prerequisite = { focus = SOV_great_patriotic_general }
+		y = 6
+		prerequisite = { focus = SOV_great_figher }
 		cost = 6
 		ai_will_do = {
 			factor = 10
@@ -241,10 +241,10 @@ focus = {
 		id = SOV_great_figher
 		icon = GFX_Goal_Positive_heroism
 		
-		x = 10
-		y = 5
-		prerequisite = { focus = SOV_great_patriotic_general }
-		cost = 6
+		x = 12
+		y = 4.5
+		prerequisite = { focus = SOV_move_industry_to_urals }
+		cost = 16
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -278,7 +278,7 @@ focus = {
 		
 		x = 12
 		y = 6
-		prerequisite = { focus = SOV_great_patriotic_general }
+		prerequisite = { focus = SOV_great_figher }
 		cost = 6
 		ai_will_do = {
 			factor = 10

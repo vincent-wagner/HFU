@@ -240,9 +240,9 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.50 -- +50% org regen, 
 NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 2
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
 
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 45 -- Was 30, exists to help speed 5 macro
 
-
-
+NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING=1.75
 
 
 

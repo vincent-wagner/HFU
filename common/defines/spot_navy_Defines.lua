@@ -58,7 +58,11 @@ NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.8	-- casting damage value to ship
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
 
 NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 1.0  -- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
-NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT = 5.0	-- spotting speed mult against naval invasion armies
+NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT = 1.0
+NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT = 1.0	-- spotting speed mult against naval invasion armies
+NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 1		-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
+NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 1	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
+
 
 NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
 		0.4, -- HOLD
