@@ -1866,10 +1866,6 @@ date > 1941.6.1
 		id = ITA_victoryinETH
 		icon = GFX_focus_ita_ethiopia
 		available = {
-			OR = {
-				owns_state = 271
-				ETH = { is_puppet_of = ITA }
-			}
 		}
 
 		available_if_capitulated = yes

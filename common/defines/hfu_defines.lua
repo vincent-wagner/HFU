@@ -53,6 +53,7 @@ NDefines.NCountry.RESISTANCE_STRENGTH_FROM_UNIT = 0
 NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0
 NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  WAS 30 | days to transfer escaping divisions to host nation
 NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- WAS 10
+NDefines.NCountry.BASE_FUEL_GAIN = 8.0							-- base amount of fuel gained hourly, independent of excess oil
 ---------------------------------------------------------------
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.001						-- down from 0.02 | Chances one ship get damage each hour while on training 		
 

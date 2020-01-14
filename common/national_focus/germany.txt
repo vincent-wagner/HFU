@@ -1122,7 +1122,7 @@ focus_tree = {
 				has_dlc = "Death or Dishonor" 
 				is_subject = no
 			}
-			GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
+			GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_dominion } }
 		}
 
 random_owned_controlled_state = {

@@ -1,38 +1,4 @@
 foreign_politics = {
-ITA_surrender_eth = {
-available = {
-			ETH = { surrender_progress > 0.3 }
-			}
-
-			allowed = {
-				tag = ITA
-			}
-			
-			
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
-		ETH = { has_war_with = ITA }
-		}
-		
-			complete_effect = {
-			      ITA = { white_peace = ETH }
-ETH = { white_peace = ITA }
-
-ETH = { remove_ideas = adjusted_surrender_limit }
-   if = { 
-limit = { ETH = { is_ai = yes } }
-ITA = { country_event = { id = italy.143 } }
-}
-
-else_if = { 
-ITA = { country_event = { id = italy.144 } }
-}
-		}
-		
-				}
 
 ITA_annex_bul = {
 	icon = generic_operation

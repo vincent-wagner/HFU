@@ -81,7 +81,7 @@ equipments = {
 			steel = 1
 		}
 		
-		manpower = 200
+		manpower = 1
 	}
 
 	ship_hull_submarine_1 = {
@@ -341,7 +341,7 @@ equipments = {
 			steel = 1
 		}
 		
-		manpower = 200
+		manpower = 1
 	}
 	
 	submarine_2 = {

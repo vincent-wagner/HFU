@@ -186,7 +186,7 @@ focus_tree = {
 		        army_experience = 950
 		        air_experience = 600}
 		
-		SOV = { army_experience = 150
+		SOV = { army_experience = 300
 		        air_experience = 200}
 		
 		USA = { add_war_support = 0.1
@@ -262,8 +262,10 @@ focus_tree = {
 		        air_experience = 200}
 		
 		
-		
-		country_event = { days = 5 id = news.1 }
+		USA = {
+			country_event = { id = panay_incident.2 days = 20 }
+		}
+		country_event = { id = news.1 days = 5 }
 	    add_war_support = 0.05
 		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
 		

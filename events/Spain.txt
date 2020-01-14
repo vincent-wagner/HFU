@@ -28,16 +28,16 @@ country_event = {
          add_threat = 3         
 		 
 		GER = { 
-		        army_experience = 100
-		        air_experience = 100}
+		        army_experience = 250
+		        air_experience = 250}
 		
         SOV = { 
-		        army_experience = 100
-		        air_experience = 100} 	
+		        army_experience = 250
+		        air_experience = 250} 	
 		
         ITA = { 
 		        army_experience = 100
-		        air_experience = 100}
+		        air_experience = 200}
 
 		set_politics = {
 				ruling_party = fascism	

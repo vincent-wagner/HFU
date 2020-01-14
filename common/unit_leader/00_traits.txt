@@ -396,7 +396,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			land_reinforce_rate = 0.02
+			land_reinforce_rate = 0.05
 		}
 		
 		ai_will_do = {
