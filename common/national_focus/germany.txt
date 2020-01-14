@@ -707,12 +707,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			#modify_building_resources = {
-        	#   building = synthetic_refinery
-        	#   resource = oil
-        	#   amount = -2
-        	#}
-	
         	modify_building_resources = {
         	   building = synthetic_refinery
         	   resource = rubber

@@ -3792,15 +3792,12 @@ focus_tree = {
 		GER = {
 				remove_resource_rights = 666
 				 }
-				 
-				 NOR = { add_ideas = war_economy 
-						remove_ideas = nor_spec_ops
-						remove_ideas = nor_army_buffs 
-						remove_ideas = nor_army_buffs2 
-						add_country_leader_trait = hero_people
-								add_offsite_building = { type = industrial_complex level = -5 }
-		add_offsite_building = { type = arms_factory level = -8 }
-						}
+				  SWE = {
+					give_resource_rights = { receiver = ENG state = 666 }
+					
+					}
+	
+	
 						
 				
 				 
