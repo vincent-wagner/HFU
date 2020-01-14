@@ -1,25 +1,5 @@
 foreign_politics = {
 
-	ENG_puppet_FRA = {
-		icon = generic_operation
-
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			FRA = { is_ai = yes}
-		}
-		
-		fire_only_once = yes
-		cost = 0
-		visible = {
-		}
-		complete_effect = {
-			ENG = { 
-				set_autonomy = { target = FRA autonomy_state = autonomy_dominion }
-			}
-		}
-	}
 }
 	
 

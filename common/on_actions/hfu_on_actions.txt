@@ -257,13 +257,6 @@ on_actions = {
 									state = FROM.FROM
 								}
 							}
-							IRE = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
 						}
 					}
 				}
