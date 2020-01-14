@@ -208,11 +208,7 @@ focus_tree = {
 		CAN = { add_war_support = 0.1
 		        army_experience = 100
 		        air_experience = 200}
-		
-		IRE = { add_war_support = 0.1
-		        army_experience = 100
-		        air_experience = 200}
-		
+
 		NZL = { add_war_support = 0.1
 		        army_experience = 100
 		        air_experience = 200}

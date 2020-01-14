@@ -3,17 +3,15 @@ state=
 {
 	id=134
 	name="STATE_134"
-	manpower = 667100
+	manpower = 1
 	
 	state_category = town
 
 	history=
 	{
-		owner = IRE
 		buildings = {
 			infrastructure = 6
 		}
-		add_core_of = IRE
 	}
 
 	provinces=

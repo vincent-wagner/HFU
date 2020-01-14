@@ -46,7 +46,6 @@ focus_tree = {
 		RAJ = {add_ideas =  tot_economic_mobilisation}
 		ENG = {add_ideas =  tot_economic_mobilisation}
 		USA = {add_ideas =  tot_economic_mobilisation}
-		IRE = {add_ideas =  tot_economic_mobilisation}
 		SOV = {add_ideas =  tot_economic_mobilisation}
 		FRA = {add_ideas =  tot_economic_mobilisation}
 		
