@@ -2630,7 +2630,9 @@ technologies = {
 		supply_consumption_factor = -0.20
 		
 		
-
+infantry = {
+			combat_width = -0.4
+		}
 		
 		enable_tactic = tactic_overwhelming_fire
 		enable_tactic = tactic_default_overwhelming_fire
