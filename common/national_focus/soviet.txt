@@ -1231,14 +1231,10 @@ focus = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
-		cost = 1
+		cost = 0.1
 
 	available = {
-				date > 1940.1.1
-				
-				
-		
-				
+				date > 1941.6.1
 							}
 
 		ai_will_do = {
