@@ -41,19 +41,5 @@ news_event = {
 		
 	}
 
-country_event = {
-	id = horsttool.3
-	title = "Historical Focus"
-	
-	desc = "A legendary .Heart Host. Historical focusses are not activated...    Time to rehost"
-	picture = GFX_news_event_001
-	hidden = yes
-	major = yes
-	is_triggered_only = yes
-	immediate={sound_effect="earrape_sound_effect"}
-	option = {
-		name = "Wow..."
-		 }
-		
-	}
+
 
