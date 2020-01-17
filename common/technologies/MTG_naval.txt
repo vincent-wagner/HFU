@@ -240,7 +240,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1922
 		
@@ -284,7 +284,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1936
 		
@@ -327,7 +327,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1940
 		
@@ -367,7 +367,7 @@ technologies = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 1.5
+		research_cost = 1
 
 		start_year = 1944
 		
@@ -406,7 +406,7 @@ technologies = {
 			leads_to_tech = improved_sonar
 			research_cost_coeff = 1
 		}
-		research_cost = 0.75
+		research_cost = 0.5
 
 		start_year = 1922
 		
@@ -447,7 +447,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 0.75
+		research_cost = 0.5
 
 		start_year = 1936
 		
@@ -483,7 +483,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = sonar_advice_tt
 		}
-		research_cost = 0.75
+		research_cost = 0.5
 
 		start_year = 1940
 		
@@ -1698,7 +1698,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1922
 		
@@ -1743,7 +1743,7 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1936
 		
@@ -1787,7 +1787,7 @@ early_ship_hull_carrier = {
 		
 		
 		
-		research_cost = 1
+		research_cost = 2
 
 		start_year = 1940
 		
@@ -1829,7 +1829,7 @@ early_ship_hull_carrier = {
 			
 		always=no
 		}
-		research_cost = 1
+		research_cost = 1.5
 
 		start_year = 1944
 		
@@ -1868,8 +1868,7 @@ early_ship_hull_carrier = {
 		on_research_complete = {
 			custom_effect_tooltip = snorkel_advice_tt
 		}
-		research_cost = 0.75
-
+		research_cost = 1.25
 		start_year = 1940
 		
 		folder = {
@@ -1921,7 +1920,7 @@ early_ship_hull_carrier = {
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
-		research_cost = 1
+		research_cost = 1.25
 
 		start_year = 1944
 		

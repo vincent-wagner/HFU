@@ -50,8 +50,15 @@ NDefines.NNavy.MISSION_SPREADS = {  -- mission spreads in the case a ship join c
 		0.0, -- NAVAL_INVASION_SUPPORT
 }
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003	-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
-NDefines.NNavy.SUBMARINE_REVEAL_POW = 4.0		-- A scaling factor that is applied to the reveal chance in order to make large differences in detection vs visibility more pronounced
+
+NDefines.NNavy.SUBMARINE_REVEAL_POW = 1.8		-- A scaling factor that is applied to the reveal chance in order to make large differences in detection vs visibility more pronounced
+NDefines.NNavy.NAVAL_COMBAT_SUB_DETECTION_FACTOR = 5.0      -- balance value for sub detection in combat by ships
+NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 8		-- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 16		-- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
+NDefines.NNavy.SUBMARINE_REVEAL_BASE_CHANCE = 30		-- Base factor for submarine detection. It's modified by the difference of a spotter's submarines detection vs submarine visibility. Use this variable for game balancing. setting this too low will cause bad spotting issues.
 NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.3									-- hidden subs get faster escape speed
+NDefines.NNavy.ESCAPE_SPEED_SUB_BASE = -0.20
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1
 
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25	-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.8	-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
