@@ -22,7 +22,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-		NOT = { has_idea = SPR_memories }
 		}
 
 		completion_reward = {

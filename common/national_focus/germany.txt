@@ -1318,7 +1318,6 @@ random_owned_controlled_state = {
 		id = GER_tactical_air_effort
 		icon = GFX_focus_GER_cas
 		prerequisite = { focus = GER_air_innovation }
-		mutually_exclusive = { focus = GER_strategic_air_effort }
 		x = 1
 		y = 2
 		relative_position_id = GER_air_innovation
@@ -1340,7 +1339,6 @@ random_owned_controlled_state = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber
 				category = cas_bomber			
 			}
 		}
@@ -1400,7 +1398,6 @@ random_owned_controlled_state = {
 		id = GER_strategic_air_effort
 		icon = GFX_focus_GER_bomber
 		prerequisite = { focus = GER_air_innovation }
-		mutually_exclusive = { focus = GER_tactical_air_effort }
 		x = -1
 		y = 2
 		relative_position_id = GER_air_innovation
@@ -1423,7 +1420,7 @@ random_owned_controlled_state = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = cat_strategic_bomber
+				category = tactical_bomber
 			}
 		}
 	}
@@ -2037,25 +2034,14 @@ available = {
 
 	}
 	
-			focus = { #should already be signed in 39
+	focus = { #should already be signed in 39
 		id = GER_mol_rib_pact
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_anschluss }
 		available = {
-			is_puppet = no
-			has_government = fascism
-			date > 1939.5.30				
-			SOV = {
-				NOT = { has_war_with = GER }
-				country_exists = SOV
-			}
-
+			date > 1939.5.30
 		}
 		cancel = {
-			OR = {
-				has_war_with = SOV
-				NOT = { country_exists = SOV }
-			}
 		}
 		cancel_if_invalid = no
 		x = -1
@@ -2099,7 +2085,7 @@ available = {
 		id = GER_demand_memel
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
-		available = { is_puppet = no }
+		available = {}
 		x = 1
 		y = 1
 		relative_position_id = GER_anschluss
@@ -2141,8 +2127,7 @@ available = {
 		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
 		available = {
-			date > 1939.6.1
-			is_puppet = no		
+			date > 1939.6.1	
 		}
 
 		bypass = {
@@ -2337,11 +2322,6 @@ SPR = { country_event = spain.29 }
 		prerequisite = { focus = GER_danzig_or_war }
 		
 		available = {
-			OR = {
-				NOT = { HOL = { is_in_faction_with = GER } }
-				NOT = { BEL = { is_in_faction_with = GER } }
-				NOT = { LUX = { is_in_faction_with = GER } }
-			}
 		}
 
 		bypass = {
@@ -2445,28 +2425,10 @@ SPR = { country_event = spain.29 }
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
 		available = {
-			is_puppet = no
-					
-			NOT = {
-				AND = {
-					CZE = { is_in_faction_with = GER }
-					has_war = yes
-				}
-			}
 		}
 		bypass = {
-			OR = {
-				CZE = { is_puppet_of = GER }
-				69 = { 
-					CONTROLLER = {
-						has_war_with = GER
-					}
-				}
-				GER = { controls_state = 69 }
-			}
 		}
 		cancel = {
-			is_puppet = yes
 		}
 		cancel_if_invalid = yes
 		x = -3
@@ -2520,8 +2482,6 @@ SPR = { country_event = spain.29 }
 			}
 		}
 		available = {
-			is_puppet = no
-			owns_state = 69
 		}
 		x = 0
 		y = 1
@@ -2550,24 +2510,9 @@ SPR = { country_event = spain.29 }
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = GER_first_vienna_award }
 		available = { 
-			is_puppet = no
-			
-			NOT = { has_war_with = CZE }
 		}
 
 		bypass = {
-			OR = {
-				CZE = { is_puppet_of = GER }
-				CZE = { is_in_faction_with = GER }
-				has_war_with = CZE
-				NOT = { country_exists = CZE }
-				any_other_country = {
-					is_in_faction_with = GER
-					CZE = {
-						is_puppet_of = PREV
-					}
-				}
-			}
 		}
 
 		x = 0
@@ -2911,6 +2856,7 @@ SPR = { country_event = spain.29 }
 		id = GER_plan_z
 		icon = GFX_focus_GER_plan_z
 		prerequisite = { focus = GER_naval_effort }
+		mutually_exclusive = { focus = GER_u_boat_effort }
 		
 		x = -1
 		y = 2
@@ -3051,6 +2997,7 @@ SPR = { country_event = spain.29 }
 		id = GER_u_boat_effort
 		icon = GFX_focus_GER_sub_plan
 		prerequisite = { focus = GER_naval_effort }
+		mutually_exclusive = { focus = GER_plan_z }
 		
 		x = 1
 		y = 2

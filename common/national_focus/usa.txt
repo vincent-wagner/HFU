@@ -132,7 +132,6 @@ focus_tree = {
 
 		available = {
 			congress_medium_support_trigger = yes
-			has_government = democratic
 		}
 		
 		bypass = {
@@ -172,7 +171,6 @@ focus_tree = {
 
 		available = {
 			congress_medium_support_trigger = yes
-			has_government = democratic
 			not = { has_country_flag = USA_great_depression_cooldown }
 		}
 		
@@ -209,7 +207,6 @@ focus_tree = {
 
 		available = {
 			congress_medium_support_trigger = yes
-			has_government = democratic
 			not = { has_country_flag = USA_great_depression_cooldown }
 		}
 
@@ -379,9 +376,6 @@ focus_tree = {
 
 		available = {
 			congress_low_support_trigger = yes
-			democratic > 0.95
-			NOT = { has_idea_with_trait = fascist_demagogue }
-			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
 		
 		bypass = {
@@ -394,7 +388,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 200
-			add_war_support = -0.05
 			USA_congress_small_support = yes
 			add_ideas = USA_neutrality_act 
 		}
@@ -489,7 +482,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			democratic > 0.95
 		}
 		bypass = {
 			AND = {
@@ -619,7 +611,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		available = {
-			has_government = democratic
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -781,9 +772,6 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		available = {
-			democratic > 0.95
-		}
 		completion_reward = {
 			
 			custom_effect_tooltip = available_designer
@@ -1962,7 +1950,8 @@ focus_tree = {
 		id = USA_air_support
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = USA_air_war_plans_division }
-		mutually_exclusive = { focus = USA_strategic_bombing }
+
+
 		x = -1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
@@ -1980,33 +1969,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_strategic_bombing
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = USA_air_war_plans_division }
-		mutually_exclusive = { focus = USA_air_support }
-		x = 1
-		y = 1
-		relative_position_id = USA_air_war_plans_division
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			air_experience = 25
-			add_ideas = strategic_bombing_focus
-		}
-	}
-
-	focus = {
 		id = USA_TAC
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = USA_air_support }
+		prerequisite = { focus = USA_air_war_plans_division }
 		x = 0
 		y = 2
-		relative_position_id = USA_air_support
+		relative_position_id = USA_air_war_plans_division
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -2049,49 +2017,12 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = USA_combined_bomber_offensive
-		icon = GFX_focus_USA_strat
-		prerequisite = { focus = USA_strategic_bombing }
-		available = {
-			has_war = yes
-			OR = {
-				is_in_faction_with = GER
-				is_in_faction_with = JAP
-				is_in_faction_with = ITA
-				is_in_faction_with = SOV
-				is_in_faction_with = FRA
-				is_in_faction_with = ENG
-			}
-		}
-		x = 0
-		y = 2
-		relative_position_id = USA_strategic_bombing
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = USA_combined_bomber_offensive
-				bonus = 1.0
-				uses = 1
-				category = heavy_air
-			}
-			add_ideas = combined_bomber_offensive
-		}
-	}
 	focus = {
 		id = USA_escort_fighters
 		icon = GFX_focus_usa_escort_fighters
-		x = 0
-		y = 2
-		prerequisite = { focus = USA_air_support focus = USA_strategic_bombing }
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_air_war_plans_division }
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
 
@@ -2125,10 +2056,10 @@ focus_tree = {
 	focus = {
 		id = USA_us_army_airforce
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = -1
-		y = 4
+		x = 0
+		y = 1
 		prerequisite = { focus = USA_TAC }
-		relative_position_id = USA_air_war_plans_division
+		relative_position_id = USA_TAC
 		cost = 10
 
 		ai_will_do = {
@@ -2156,36 +2087,6 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = USA_us_air_force
-		icon = GFX_goal_generic_build_airforce
-		x = 1
-		y = 4
-		prerequisite = { focus = USA_combined_bomber_offensive }
-		relative_position_id = USA_air_war_plans_division
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = USA_us_air_force
-		}
-	}
-
 #  #  ##  #   # #   #      ## ###  ##  ### ###  ##  #  # 
 ## # #  # #   #  # #      #   #   #  #  #   #  #  # ## # 
 # ## ####  # #    #        #  ##  #     #   #  #  # # ## 
