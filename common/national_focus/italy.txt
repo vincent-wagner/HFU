@@ -1635,8 +1635,17 @@ date > 1941.6.1
 				uses = 1
 				category = naval_bomber
 			}
-			set_technology = {
-				naval_bomber2 = 1
+			set_technology = {naval_bomber2 = 1
+			}
+			create_equipment_variant = { 
+				name = "Bomber Alpha" 
+				type = nav_bomber_equipment_2  
+				upgrades = { 
+					plane_naval_upgrade=2
+					plane_range_upgrade=2
+					plane_engine_upgrade=2
+					plane_reliability_upgrade=2
+				}
 			}
 		}
 	}
