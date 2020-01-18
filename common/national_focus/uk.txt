@@ -548,6 +548,7 @@ focus_tree = {
 					threat > 0.05
 					has_war = yes
 					NOT = { has_government = democratic }
+					date > 1936.9.1
 				}
 			}
 			if = {
