@@ -49,6 +49,15 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	division= {	
+		name = "This is here so you can look at your generals"
+		location = 949
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+	}
+}
 
 air_wings = {
 	### Vuzdushnite voiski -- Sofia (early purchases of GER Ar 65, He 51 fighters)

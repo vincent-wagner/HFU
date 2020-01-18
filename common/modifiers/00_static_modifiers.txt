@@ -375,7 +375,7 @@ pride_of_the_fleet = {
 
 
 pride_of_the_fleet_country = {
-	war_support_factor = 0.05
+	war_support_factor = 0.00
 }
 
 pride_of_the_fleet_sunk_temporary = {

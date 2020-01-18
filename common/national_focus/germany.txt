@@ -1930,10 +1930,13 @@ available = {
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = GER_rhineland }
 		available = {
-			is_puppet = no
+			if = {
+				is_puppet = no
+				date > 1937.5.1
+			}
 			
-	
 		}
+			
 
 
 		cancel_if_invalid = no

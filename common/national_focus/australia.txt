@@ -2125,8 +2125,19 @@ focus_tree = {
 		}
 
 		available = {
-	    threat > 0.20
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					threat > 0.2
+					date > 1938.1.1
+				}
+			}
+			
 		}
+	    
+
 		
 		bypass = {
 

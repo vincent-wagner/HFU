@@ -88,6 +88,15 @@ division_template = {
 	}
 }
 
+units = {
+	division= {	
+		name = "This is here so you can look at your generals"
+		location = 10400
+		division_template = "District Force"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+	}
+}
 ##### OOB #####
 
 

@@ -50,7 +50,15 @@ division_template = {
 }
 
 
-
+units = {
+	division= {	
+		name = "This is here so you can look at your generals"
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+	}
+}
 
 ### Magyar Légiero ###
 air_wings = {

@@ -53,6 +53,15 @@ division_template = {
 
 ####### OOB #######
 
+units = {
+	division= {	
+		name = "This is here so you can look at your generals"
+		location = 2086
+		division_template = "Infantry Division"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+	}
+}
 
 air_wings = {
 	### AHQ India

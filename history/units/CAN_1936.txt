@@ -84,6 +84,17 @@ division_template = {
 	artillery = { x = 0 y = 2 }
 	}
 }
+
+units = {
+	division= {	
+		name = "This is here so you can look at your generals"
+		location = 3778
+		division_template = "Infantry Division"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
+	}
+}
+
 air_wings = {
 	### Royal Canadian Air Force (RCAF)-- New South Wales
 	276 = {

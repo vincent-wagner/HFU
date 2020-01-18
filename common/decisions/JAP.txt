@@ -35,7 +35,7 @@ JAP_annex_siam = {
 
 			available = {
 				SIA = { is_ai = yes }
-
+				date > 1940.1.1
 			}
 			
 			cost = 0
