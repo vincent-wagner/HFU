@@ -1968,6 +1968,7 @@ completion_reward = {
 
 
 		completion_reward = {
+			air_experience=200
 			add_tech_bonus = {
 				name = JAP_bomber_modernization
 				bonus = 1.0

@@ -1443,7 +1443,7 @@ random_owned_controlled_state = {
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
 			
-			army_experience = 10
+			army_experience = 40
 
 			
 			add_tech_bonus = {
@@ -1514,7 +1514,7 @@ random_owned_controlled_state = {
 		available_if_capitulated = yes
 
 		completion_reward = { 
-			air_experience = 50
+			air_experience = 150
 
 			add_ideas = GER_air_innovations_2_idea
 			# Balance research bonus to next tech among radio, radio_detection, decimetric_radar, improved_decimetric_radar, centimetric_radar, improved_centimetric_radar, advanced_centimetric_radar
@@ -1560,7 +1560,7 @@ random_owned_controlled_state = {
 
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
-			army_experience = 20
+			army_experience = 50
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
@@ -1930,9 +1930,10 @@ available = {
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = GER_rhineland }
 		available = {
-			date > 1937.5.1
-		}
+			is_puppet = no
 			
+	
+		}
 
 
 		cancel_if_invalid = no
@@ -2157,9 +2158,9 @@ available = {
 
 		}	
 		completion_reward = {
-			GER = {
-				remove_resource_rights = 724
-			}
+			army_experience=70
+			remove_resource_rights = 724
+			
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 				
 					GER = {

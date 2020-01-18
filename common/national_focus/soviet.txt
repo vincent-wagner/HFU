@@ -95,37 +95,6 @@ focus = {
 		
 		}
 	}
-
-	focus = {
-		id = SOV_kazanspawnin
-		icon = GFX_sov_stalin_writing
-		prerequisite = { focus = SOV_move_industry_to_urals }
-		x = 14
-		y = 4
-		
-		cost = 999
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		
-
-		
-		completion_reward = {
-		hidden_effect={load_oob=SOV_kazanspawnin}	
-		custom_effect_tooltip="50 20w Infantry Divisions will spawn in Kazan "
-		add_timed_idea={idea=SOV_kazanspawnin days=180}
-		
-		
-		
-		}
-	}
-
-
-    
-
      focus = {
 		id = SOV_move_industry_to_urals
 		icon = GFX_sov_stakhonovite
@@ -164,7 +133,66 @@ focus = {
             			
 		}
 	}
-    
+    focus = {
+		id = SOV_kazanspawnin
+		icon = GFX_sov_stalin_writing
+		prerequisite = { focus = SOV_move_industry_to_urals }
+		x = 14
+		y = 4
+		
+		cost = 999
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		
+
+		
+		completion_reward = {
+		hidden_effect={load_oob=SOV_kazanspawnin}	
+		custom_effect_tooltip="50 20w Infantry Divisions will spawn in Kazan "
+		add_timed_idea={idea=SOV_kazanspawnin days=180}
+		
+		
+		
+		}
+	}
+	focus = {
+		id = SOV_great_figher
+		icon = GFX_Goal_Positive_heroism
+		
+		x = 12
+		y = 4.5
+		prerequisite = { focus = SOV_move_industry_to_urals }
+		cost = 20
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		available = {
+		
+			
+		}
+
+		bypass = {
+			
+		}
+		
+		completion_reward = {
+		 
+			 add_timed_idea= {idea=Order_227 days=180}
+            
+             
+                         
+					
+		}
+	}
      focus = {
 		id = SOV_great_patriotic_general
 		icon = GFX_anti_communism
@@ -172,7 +200,7 @@ focus = {
 		x = 10
 		y = 6
 		prerequisite = { focus = SOV_great_figher }
-		cost = 6
+		cost = 12
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -183,7 +211,7 @@ focus = {
 
 		available = {
 			
-			has_completed_focus = SOV_move_industry_to_urals
+			date>1942.6.1
 			
 		}
 
@@ -210,7 +238,7 @@ focus = {
 		x = 14
 		y = 6
 		prerequisite = { focus = SOV_great_figher }
-		cost = 6
+		cost =10
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -220,7 +248,7 @@ focus = {
 		}
 
 		available = {
-			has_war_with = GER
+		
 			
 		}
 
@@ -237,40 +265,7 @@ focus = {
 		}
 	}
     
-	focus = {
-		id = SOV_great_figher
-		icon = GFX_Goal_Positive_heroism
-		
-		x = 12
-		y = 4.5
-		prerequisite = { focus = SOV_move_industry_to_urals }
-		cost = 16
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
-		}
-
-		available = {
-			has_war_with = GER
-			
-		}
-
-		bypass = {
-			
-		}
-		
-		completion_reward = {
-		 
-        	
-             remove_ideas = officers_purged
-             
-                         
-					
-		}
-	}
+	
     
 	focus = {
 		id = SOV_modifiers
@@ -279,7 +274,7 @@ focus = {
 		x = 12
 		y = 6
 		prerequisite = { focus = SOV_great_figher }
-		cost = 6
+		cost = 10
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -289,7 +284,7 @@ focus = {
 		}
 
 		available = {
-			has_war_with = GER
+		date>1942.1.1
 			
 		}
 
@@ -300,7 +295,7 @@ focus = {
 		completion_reward = {
 		 
         	
-             add_ideas = Order_227
+              remove_ideas = officers_purged
                                       					
 		}
 	}
@@ -562,7 +557,7 @@ focus = {
 		}
 
 		completion_reward = {
-			army_experience = 10
+			army_experience = 40
 			if = {
 				limit = {
 					653 = {
@@ -854,7 +849,7 @@ focus = {
 			add_political_power = 120
 			add_resource = {
 				type = rubber
-				amount = 45
+				amount = 50
 				state = 404
 			}
 		}
@@ -1065,7 +1060,7 @@ focus = {
 		available_if_capitulated = yes	
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 150
 
 			add_tech_bonus = {
 				name = air_bonus
@@ -1342,7 +1337,21 @@ focus = {
 				uses = 1
 				category = land_doctrine
 			}
-			army_experience = 20
+			add_tech_bonus = {
+				name = at
+				bonus = 1
+				uses = 2
+				category = cat_anti_tank
+			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 1
+				uses = 2
+				technology=artillery3
+				technology=artillery2
+				technology=artillery1
+			}
+			army_experience = 50
 		}
 	}
 
@@ -1370,7 +1379,48 @@ focus = {
 			add_ideas = nkvd
 			set_technology{motorized_rocket_unit=1}
 			custom_effect_tooltip = "Five fully equipped Katyusha-Divisions will spawn in Moscow."
-			hidden_effect={load_oob="SOVrocket"}
+			hidden_effect={
+							division_template = {
+							name = "Katyusha Diviziya"			# Rifle Division
+							division_names_group = SOV_MEC_01
+
+							regiments = {
+								motorized = { x = 0 y = 0 }
+								motorized = { x = 0 y = 1 }
+								motorized = { x = 0 y = 2 }
+								motorized = { x = 0 y = 3 }
+								motorized = { x = 1 y = 0 }
+								motorized = { x = 1 y = 1 }
+								motorized = { x = 1 y = 2 }
+								motorized_rocket_brigade= { x = 2 y = 1 }
+								motorized_rocket_brigade= { x = 2 y = 2 }
+								motorized_rocket_brigade= { x = 2 y = 3}
+								motorized_rocket_brigade= { x = 2 y = 4 }
+								motorized_rocket_brigade= { x = 2 y = 0 }
+								motorized_rocket_brigade= { x = 3 y = 1 }
+								motorized_rocket_brigade= { x = 3 y = 2 }
+								motorized_rocket_brigade= { x = 3 y = 3 }
+								mot_anti_air_brigade= { x = 3 y = 4 }
+								mot_anti_air_brigade= { x = 3 y = 0 }
+
+							}
+							support = {
+								recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+								engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+								artillery = { x = 0 y = 2 } 
+								logistics_company = { x = 0 y = 3 }
+								signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+							}
+							}
+				219 = {
+					for_loop_effect = {
+					end = 5 				
+					create_unit = {
+						division = "name = \"Katyusha Diviziya\" division_template = \"Katyusha Diviziya\" start_experience_factor = 0.3" 
+						owner = SOV
+						}
+					}}
+			}
 		}
 	}
 
@@ -1395,7 +1445,7 @@ focus = {
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_nkvd_upgrade_tooltip
-
+			army_experience = 20
 			swap_ideas = {
 				remove_idea = nkvd
 				add_idea = nkvd_2
@@ -1429,7 +1479,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 20
+			army_experience = 50
 			add_ideas=Fast_Training
 			add_tech_bonus = {
 				name = armor_bonus
