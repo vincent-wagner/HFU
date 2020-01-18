@@ -10,7 +10,7 @@ if = {
 
 set_research_slots = 3
 set_stability = 0.5
-set_war_support = 0.15
+set_war_support = 0.2
 add_ideas = reliance_on_natural_rubber
 
 # Starting tech
