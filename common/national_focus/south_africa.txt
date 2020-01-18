@@ -245,14 +245,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			ENG = { has_war = no }
 		}
 		
 		bypass = {
@@ -284,7 +276,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
@@ -418,9 +409,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_war_with = ENG }
-			ENG = { is_puppet = no }
-
 		}
 		
 		bypass = {
@@ -530,7 +518,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {

@@ -1426,25 +1426,6 @@ ideas = {
 			}
 		}
 		
-		avro = {
-			
-			allowed = {
-				original_TAG = ENG
-			}
-			
-			cost = 100
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
 		fairey_aviation = {
 			
 			allowed = {

@@ -590,7 +590,16 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			NOT = {
+				count_triggers = {
+					amount = 5
+					has_full_control_of_state = 539
+					has_full_control_of_state = 543
+					has_full_control_of_state = 310
+					has_full_control_of_state = 779
+					has_full_control_of_state = 272
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -648,7 +657,29 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			NOT = {
+				count_triggers = {
+					amount = 18
+					has_full_control_of_state = 772
+					has_full_control_of_state = 773
+					has_full_control_of_state = 539
+					has_full_control_of_state = 660
+					has_full_control_of_state = 774
+					has_full_control_of_state = 515
+					has_full_control_of_state = 556
+					has_full_control_of_state = 557
+					has_full_control_of_state = 310
+					has_full_control_of_state = 635
+					has_full_control_of_state = 543
+					has_full_control_of_state = 665
+					has_full_control_of_state = 462
+					has_full_control_of_state = 772
+					has_full_control_of_state = 671
+					has_full_control_of_state = 286
+					has_full_control_of_state = 670
+					has_full_control_of_state = 741
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2127,13 +2158,6 @@ focus = {
 		id = FRA_go_with_britain
 		icon = GFX_goal_anschluss
 		available = {
-			is_puppet = no
-			has_government = democratic
-			ENG = {
-				exists = yes
-				has_government = democratic
-			}
-			NOT = { has_war_with = ENG }
 		}
 		bypass = {
 			is_in_faction_with = ENG

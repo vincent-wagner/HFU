@@ -1932,25 +1932,6 @@ ideas = {
 		}
 
 		
-		boeing = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			cost = 100
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
 
 		grumman = {
 			

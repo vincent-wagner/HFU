@@ -1586,21 +1586,6 @@ ideas = {
 			traits = { fuel_efficient_aircraft_manufacturer }
 		}
 		
-		nakajima = {
-						
-			allowed = {
-				original_tag = JAP
-			}
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-						cost = 100
-
-			traits = { heavy_aircraft_manufacturer }
-
-		}
-		
 		yokosuka = {
 						
 			allowed = {

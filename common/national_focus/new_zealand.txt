@@ -598,7 +598,6 @@ focus_tree = {
 				name = NZL_bomber_focus
 				bonus = 1.00
 				uses = 1
-				category = cat_strategic_bomber
 				category = tactical_bomber
 			}
 		}
@@ -725,7 +724,7 @@ focus_tree = {
 				name = NZL_heavy_bombers
 				bonus = 1.0
 				uses = 2
-				category = cat_strategic_bomber
+				category = tactical_bomber
 			}
 		}
 	}

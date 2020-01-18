@@ -1450,26 +1450,6 @@ modifier = {
 			}
 		}
 		
-		heinkel = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-						cost = 100
-
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
 		dornier = {
 
 			allowed = {

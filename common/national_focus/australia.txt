@@ -813,15 +813,8 @@ focus_tree = {
 				name = AST_cac_woomera
 				bonus = 3.0
 				uses = 1
-				category = cat_strategic_bomber
 				category = tactical_bomber
 				category = naval_air
-			}
-			add_tech_bonus = {
-				name = AST_cac_woomera
-				bonus = 1.0
-				uses = 1
-				category = cat_strategic_bomber
 			}
 		}
 	}
@@ -2687,35 +2680,12 @@ focus_tree = {
 
 		cost = 5
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				NOT = { ENG = { has_government = democratic } } #less likely to do if ENG not democratic
-				factor = 0.5
-			}
-			modifier = {
-				OR = {
-					communism > 0.15
-					fascism > 0.15
-					}
-				factor = 0.2
-			}
-		}
+		ai_will_do = {}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			ENG = { has_war = no }
 		}
 		
 		bypass = {
-			is_subject_of = ENG
-			has_war_together_with = ENG
 		}
 
 		cancel_if_invalid = yes
@@ -2747,35 +2717,12 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				ENG = { NOT = { has_government = democratic } }
-				factor = 0
-			}
 		}
 
 		available = {
-			is_subject_of = ENG
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			OR = {
-				ENG = { has_idea = ENG_george_vi }
-				ENG = { has_country_flag = edward_viii_married_wallis_simpson }
-			}
 		}
 		
 		bypass = {
-			NOT = {
-				OR = {
-					is_subject_of = ENG
-					is_in_faction_with = ENG
-				}
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -2804,13 +2751,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
 		}
 		
 		bypass = {
@@ -2847,14 +2787,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
-			is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
@@ -2890,13 +2822,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
 			336 = {
 				controller = { is_in_faction_with = ROOT }
 			}
@@ -2914,7 +2839,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			336 = {
+			672 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -2941,15 +2866,6 @@ focus_tree = {
 					level = 4
 					instant_build = yes
 				}
-				
-								set_building_level = {
-					type = coastal_bunker
-					province = 12299
-					level = 5
-					instant_build = yes
-				}
-
-
 			}
 
 			333 = {
@@ -2989,17 +2905,9 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
 		}
 		
 		bypass = {
@@ -3026,17 +2934,9 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
 		}
 		
 		bypass = {

@@ -1009,31 +1009,5 @@ ideas = {
 			}
 		}
 
-		CAN_handley_page = {
-			picture = generic_air_manufacturer_3
-
-			cost = 150
-
-			allowed = {
-				original_tag = CAN
-				has_dlc = "Together for Victory"
-			}
-
-			available = {
-				has_completed_focus = CAN_cookie_carriers
-			}
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			# fighter/interceptors like Hurricane
-						
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 }
