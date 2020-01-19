@@ -11,9 +11,9 @@ country_event = {
 
 	is_triggered_only = yes
 	immediate = {
-		if={limit={INS={has_war=no}}
+		if={limit={ENG={has_war=no}}
 		GER={declare_war_on = {
-    target = INS
+    target = ENG
     type = annex_everything
 	}}		
 		}
@@ -32,8 +32,12 @@ country_event = {
 			transfer_navy={target=ENG}
 		
 		every_owned_state={limit={is_core_of=ROOT}
-		add_core_of=INS
-		INS={set_state_owner=PREV}}
+		add_state_modifier = {
+    							modifier = {
+       							local_building_slots_factor = 0.5
+  							}
+						}
+		GER={set_state_owner=PREV}}
 		if={limit={tag=DEN}USA = { transfer_state = 101}
 		ENG = { transfer_state =  100
 		        transfer_state = 337 }
@@ -53,8 +57,12 @@ country_event = {
 				}
 			transfer_navy={target=ENG}
 			every_owned_state={limit={is_core_of=ROOT}
-			add_core_of=INS
-			INS={set_state_owner=PREV}}
+			add_state_modifier = {
+    							modifier = {
+       							local_building_slots_factor = 0.5
+  							}
+						}
+			GER={set_state_owner=PREV}}
 			FRA={annex_country={target=ROOT transfer_troops=yes}
 			set_state_controller=538#congo sometimes goes to GER on cap
 			set_state_controller=718
@@ -70,8 +78,12 @@ country_event = {
 			transfer_navy={target=ENG}
 			transfer_state=270 #Pitcairn Island West of Chile
 			every_owned_state={limit={is_core_of=ROOT}
-			add_core_of=INS
-			INS={set_state_owner=PREV}}
+			add_state_modifier = {
+    							modifier = {
+       							local_building_slots_factor = 0.5
+  							}
+						}
+			GER={set_state_owner=PREV}}
 			ENG={annex_country={target=ROOT transfer_troops=yes}}
 		}
 	}

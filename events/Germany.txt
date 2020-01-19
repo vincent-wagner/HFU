@@ -50,8 +50,10 @@ country_event = {
 		  transfer_state = 47
 		  transfer_state = 186
 		  transfer_state = 187
+		  
 		  }
-    GER = {transfer_state = 102}
+    GER = {transfer_state = 102
+	   transfer_state = 182}
    }	
   
 	option = { 

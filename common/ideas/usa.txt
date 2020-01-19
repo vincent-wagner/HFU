@@ -67,7 +67,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				navy_max_range_factor = -1.00
+				navy_max_range_factor = -0.90
 			}
 		}
 		

@@ -42,7 +42,7 @@ wartime_economy = {
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.75
 				max_fuel_factor = -0.45
-				fuel_gain_factor = -0.6
+				fuel_gain_factor = -0.3
 			}
 			
 			allowed_to_remove = {
@@ -72,7 +72,7 @@ wartime_economy = {
 				join_faction_tension = 0.20
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.5
-				max_fuel_factor = -0.35
+				max_fuel_factor = -0.3
 				fuel_gain_factor = -0.5
 			}
 			allowed_to_remove = {
