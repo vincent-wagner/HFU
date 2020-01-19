@@ -16,7 +16,7 @@ set_technology = {
 	gw_artillery
 	gwtank
 }
-set_stability = 0.65
+set_stability = 0.7
 set_war_support = 0.60
 1939.1.1 = {
 
