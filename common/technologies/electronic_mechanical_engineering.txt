@@ -572,7 +572,11 @@ technologies = {
 		
 		research_cost = 1
 		start_year = 1940
-		
+		allow = { 
+			OR={has_tech=basic_decryption
+			    has_tech=improved_decryption
+			}
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 10 }
@@ -613,7 +617,11 @@ technologies = {
 		
 		research_cost = 1
 		start_year = 1942
-		
+		allow = { 
+			OR={has_tech=basic_decryption
+			    has_tech=improved_decryption
+			}
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 14 }
