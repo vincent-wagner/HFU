@@ -135,7 +135,7 @@ add_equipment_to_stockpile = {
          producer = GER
 }
 add_equipment_to_stockpile = {
-         type = tac_bomber_equipment_0
+         type = tac_bomber_equipment_1
          amount = 480
          producer = GER
 }
@@ -1041,7 +1041,16 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-
+create_equipment_variant = {
+	name = "Bf 109 A"
+	type = fighter_equipment_1
+	upgrades = {
+		plane_range_upgrade = 2
+		plane_engine_upgrade = 0
+		plane_reliability_upgrade = 2
+	}
+	obsolete = no
+}
 create_equipment_variant = {
 	name = "Do 17"
 	type = tac_bomber_equipment_0
