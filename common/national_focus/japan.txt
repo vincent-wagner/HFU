@@ -101,7 +101,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
 		}
 
 		bypass = {
@@ -650,16 +649,6 @@ focus_tree = {
 		}
 
 		available = {
-			any_country = {
-				original_tag = GER
-				has_government = fascism
-				NOT = { has_war_with = ROOT }
-			}
-			any_country = {
-				original_tag = ITA
-				has_government = fascism
-				NOT = { has_war_with = ROOT }
-			}
 		}
 
 		bypass = {
@@ -1061,39 +1050,6 @@ focus_tree = {
 		
 	}
 
-	focus = {
-		id = JAP_strengthen_the_divine_wind
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = JAP_spiritual_mobilization }
-		prerequisite = { focus = JAP_warrior_spirit }
-		x = 1
-		y = 1
-		relative_position_id = JAP_spiritual_mobilization
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-			has_tech = rocket_engines
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
-			hidden_effect = { set_technology = { suicide_craft = 1 } }
-		}
-	}
-
 	
 	
 	focus = {
@@ -1123,8 +1079,7 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = { is_subject_of = ROOT 
-					is_ai = no }
+			MAN = {	is_ai = no }
 		}
 
 		bypass = {
@@ -1161,9 +1116,7 @@ completion_reward = {
 		}
 
 		available = {
-			716 = { is_fully_controlled_by = MAN }
-			MAN = { is_subject_of = ROOT
-			is_ai = no 			}
+			MAN = { is_ai = no }
 		}
 
 		bypass = {
@@ -1192,60 +1145,6 @@ completion_reward = {
 	}
 
 	focus = {
-		id = JAP_develop_aluminum_sources
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = JAP_expand_the_showa_steel_works }
-		x = 0
-		y = 1
-		relative_position_id = JAP_expand_the_showa_steel_works
-
-		allow_branch = {
-			MAN = { has_focus_tree = generic_focus }
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-			328 = { is_fully_controlled_by = MAN }
-			MAN = { is_subject_of = ROOT
-			is_ai = no }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			328 = {
-				if = {
-					limit = {
-						MAN = { has_focus_tree = generic_focus }
-					}
-					add_resource = {
-						type = aluminium
-						amount = 12
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = JAP_expand_manchurian_railways
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = JAP_the_manchurian_project }
@@ -1260,8 +1159,7 @@ completion_reward = {
 		}
 
 		available = {
-			MAN = { is_subject_of = ROOT
-			is_ai = no }
+			MAN = {is_ai = no }
 		}
 
 		bypass = {
@@ -1315,8 +1213,6 @@ completion_reward = {
 
 		available = {
 			MAN = {
-				is_subject_of = ROOT
-				has_full_control_of_state = 715
 				is_ai = no 
 			}
 		}
@@ -1386,8 +1282,6 @@ completion_reward = {
 
 		available = {
 			MAN = {
-				is_subject_of = ROOT
-				has_full_control_of_state = 716		
 				is_ai = no 
 			}
 		}
@@ -1430,10 +1324,6 @@ completion_reward = {
 
 		available = {
 			MAN = {
-				is_subject_of = ROOT
-				has_full_control_of_state = 715
-				has_full_control_of_state = 610
-				has_full_control_of_state = 328
 				is_ai = no 
 		}
 			}
@@ -1944,7 +1834,7 @@ completion_reward = {
 		id = JAP_bomber_modernization
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = JAP_range_focus focus = JAP_agility_focus }
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = JAP_fighter_modernization
 
@@ -1968,6 +1858,7 @@ completion_reward = {
 
 
 		completion_reward = {
+			air_experience=200
 			add_tech_bonus = {
 				name = JAP_bomber_modernization
 				bonus = 1.0
@@ -1980,50 +1871,11 @@ completion_reward = {
 	}
 
 	focus = {
-		id = JAP_strategic_bomber_effort
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = JAP_range_focus }
-		prerequisite = { focus = JAP_bomber_modernization }
-		x = -1
-		y = 3
-		relative_position_id = JAP_fighter_modernization
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_strategic_bomber_effort
-				bonus = 1.0
-				uses = 2
-				category = cat_strategic_bomber	
-			}
-		}
-	}
-
-	focus = {
 		id = JAP_unified_fighter_development
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = JAP_agility_focus }
-		prerequisite = { focus = JAP_the_zero }
+		prerequisite = { focus = JAP_agility_focus  focus = JAP_range_focus }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = JAP_fighter_modernization
 
 		cost = 5
@@ -2053,9 +1905,9 @@ completion_reward = {
 	focus = {
 		id = JAP_jet_prototypes
 		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = JAP_unified_fighter_development focus = JAP_strategic_bomber_effort }
+		prerequisite = { focus = JAP_unified_fighter_development focus = JAP_bomber_modernization }
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = JAP_fighter_modernization
 
 		cost = 10

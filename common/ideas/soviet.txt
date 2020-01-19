@@ -13,7 +13,7 @@ ideas = {
       }
  	Fast_Training = {
            modifier = {
-                training_time_army_factor = -0.90
+                training_time_army_factor = -0.50
            }
       }
 
@@ -55,6 +55,8 @@ ideas = {
 				
 			army_core_defence_factor = 0.1
 			army_core_attack_factor = 0.05
+			army_armor_speed_factor=-0.1
+			army_speed_factor=0.1
 		                   
 			           }
 		}
@@ -252,7 +254,7 @@ ideas = {
 			modifier = {
 			mobilization_speed = 0.15	
 			MONTHLY_POPULATION = 0.1
-			local_building_slots_factor = 0.1
+			local_building_slots_factor = 0.15
 			}
 		}
 
@@ -1429,25 +1431,6 @@ ideas = {
 			
 		}
 		
-		ilyushin_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-			cost = 100
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
 		
 		tupolev_design_bureau = {
 			

@@ -16,11 +16,8 @@ focus_tree = {
 	focus = {
 		id = crypto_bomb_focus
 		available = {
-				has_war_with = GER
-				POL = {
-					NOT = { is_in_faction_with = GER } #We assume POL will help vs Germany unless they are allied to them
-				}
-			}
+			has_war_with = GER
+		}
 		
 		bypass = {
 
@@ -49,27 +46,7 @@ focus_tree = {
 	
 	focus = {
 		id = tizard_mission_focus
-		available = {				
-			has_government = democratic
-			any_other_country = {
-				has_war_with = ROOT
-				NOT = { has_government = democratic }
-				num_of_factories > 30
-			}
-			NOt = {
-				has_war_with = USA
-			}
-			USA = { 
-				has_government = ROOT
-				has_war = no
-				NOT = {
-					OR = {
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-					}
-				}
-			}
-			
+		available = {						
 		} 
 		prerequisite = { focus = crypto_bomb_focus }
 		prerequisite = { focus = radar_focus }
@@ -114,7 +91,7 @@ focus_tree = {
 	}
 	focus = {
 		id = maud_focus
-		available = { is_in_faction_with = USA }
+		available = { }
 		prerequisite = { focus = tizard_mission_focus }
 		icon = GFX_focus_wonderweapons
 		x = 0
@@ -240,26 +217,6 @@ focus_tree = {
 		id = air_defense_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					threat > 0.05
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					threat > 0.05
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
 		}
 
 		continue_if_invalid = yes
@@ -540,27 +497,8 @@ focus_tree = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					threat > 0.05
-					has_war = yes
-					NOT = { has_government = democratic }
-					date > 1936.9.1
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					threat > 0.05
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
+			threat > 0.05
+			date > 1936.9.1
 		}
 
 		continue_if_invalid = yes
@@ -691,39 +629,7 @@ focus_tree = {
 	focus = {
 		id = royal_ordinance_focus
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					any_other_country = {
-						has_war_with = ROOT
-						num_of_factories > 30
-					}
-					GER = {
-						has_completed_focus = GER_rhineland
-					}
-					threat > 0.2
-					NOT = { has_government = democratic }
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					any_other_country = {
-						has_war_with = ROOT
-						num_of_factories > 30
-					}
-					GER = {
-						has_completed_focus = GER_rhineland
-					}
-					threat > 0.2
-					NOT = { has_government = democratic }
-				}
-			}
-		} #at war with major or ger in rhineland or high threat
+		}
 		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_goal_generic_construct_mil_factory
 		x = -1
@@ -1134,7 +1040,6 @@ focus_tree = {
 				name = bomber_command_focus
 				bonus = 1.0
 				uses = 2
-				category = cat_strategic_bomber
 				category = tactical_bomber
 			}
 		}
@@ -1739,10 +1644,7 @@ focus_tree = {
 		available = {
 			447 = {
 				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+					tag = ENG
 				}
 			}
 		} 
@@ -1838,10 +1740,7 @@ focus_tree = {
 		available = {
 			447 = {
 				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+					tag = ENG
 				}
 			}
 		}
@@ -1890,80 +1789,6 @@ focus_tree = {
 		}
 	}
 
-
-	focus = {
-		id = uk_turkey_focus
-		prerequisite = { focus = uk_protect_suez }
-		available = {
-			TUR = {
-				exists = yes
-				has_war = no
-				NOT = { is_in_faction_with = ENG }
-				is_subject = no
-			}
-			NOT = { has_government = communism }
-		} #TUR not in a faction
-		#prerequisite = { focus = uk_battleship_focus }
-		icon = GFX_goal_generic_political_pressure
-		x = 0
-		y = 1
-		relative_position_id = uk_protect_suez
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			# + relations with TUR - they become more democratic and like fascist/commies less
-			if = {
-				limit = { has_government = democratic }
-				TUR = {
-					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-					add_timed_idea = { idea = democratic_influence days = 1095 }
-					country_event = { id = generic.1 }
-				}
-				every_other_country = {
-					limit = { 
-						NOT = { has_government = democratic }
-						num_of_factories > 30
-					}
-					add_opinion_modifier = { target = TUR modifier = democratic_leanings_bad }
-				}
-			}
-			if = {
-				limit = { has_government = fascism }
-				TUR = {
-					add_opinion_modifier = { target = ENG modifier = fascism_leanings_good }
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-					country_event = { id = generic.1 }
-				}
-				every_other_country = {
-					limit = { 
-						NOT = { has_government = fascism }
-						num_of_factories > 30
-					}
-					add_opinion_modifier = { target = TUR modifier = fascism_leanings_bad }
-				}
-			}
-			if = {
-				limit = { has_government = neutrality }
-				TUR = {
-					add_opinion_modifier = { target = ENG modifier = neutrality_leanings_good }
-					add_timed_idea = { idea = neutrality_influence days = 1095 }
-					country_event = { id = generic.1 }
-				}
-				every_other_country = {
-					limit = { 
-						NOT = { has_government = neutrality }
-						num_of_factories > 30
-					}
-					add_opinion_modifier = { target = TUR modifier = neutrality_leanings_bad }
-				}
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.225 }
-			}
-		}
-	}
 	
 	focus = {
 		id = uk_malta_focus 
@@ -2038,18 +1863,12 @@ focus_tree = {
 		available = {
 			336 = {
 				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+					tag = ENG
 				}
 			}
 			326 = {
 				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+					tag = ENG
 				}
 			}
 		}
@@ -2151,11 +1970,6 @@ focus_tree = {
 		id = uk_burma_focus
 		prerequisite = { focus = uk_asia_focus } 
 		available = {
-			CHI = { 
-				has_war_with = JAP 
-				NOT = { has_war_with = ENG }
-			}
-			JAP = { NOT = { is_in_faction_with = ENG } }
 		}
 
 		bypass = {
@@ -2308,10 +2122,7 @@ focus_tree = {
 		available = {
 			336 = {
 				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+					tag = ENG
 				}
 			}
 		}
@@ -2363,10 +2174,7 @@ focus_tree = {
 		available = { 
 			326 = {
 				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+					tag = ENG
 				}
 			}
 		}
@@ -2401,10 +2209,7 @@ focus_tree = {
 		available = {
 			326 = {
 				CONTROLLER = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+					tag = ENG
 				}
 			}
 		}
@@ -2427,119 +2232,24 @@ focus_tree = {
 			326 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			
 				add_building_construction = {
 					type = air_base
-					level = 4
+					level = 10
 					instant_build = yes
 				}
 			}
 		}
 	}
-	
-	focus = {
-		id = uk_china_focus 
-		prerequisite = { focus = hk_air_focus  }
-		available = {
-			CHI = { exists = yes }
-			has_government = democratic
-		} 
-		cancel = {
-			CHI = { exists = no }
-		}
-		icon = GFX_goal_generic_improve_relations
-		x = 0
-		y = 1
-		relative_position_id = hk_air_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		completion_reward = {
-			event_target:WTT_current_china_leader = {
-				add_offsite_building = { type = arms_factory level = 2 }
-				add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-				add_timed_idea = { idea = democratic_influence days = 1095 }
-				country_event = { id = generic.1 }
-				set_country_flag = ENG_influenced_by_britain_flag
-			}
-			every_other_country = {
-				limit = { 
-					NOT = { has_government = democratic }
-					num_of_factories > 30
-				}
-				add_opinion_modifier = { target = CHI modifier = democratic_leanings_bad }
-			}
-		}
-	}
-	
 	focus = {
 		id = uk_commonwealth_focus 
 		prerequisite = { focus = uk_colonial_focus }
 		available = {
-			OR = {
-				any_country = {
-					original_tag = NZL
-					is_in_faction_with = ROOT
-				}
-				any_country = {
-					original_tag = SAF
-					is_in_faction_with = ROOT
-				}
-				any_country = {
-					original_tag = RAJ
-					is_in_faction_with = ROOT
-				}
-				any_country = {
-					original_tag = AST
-					is_in_faction_with = ROOT
-				}
-				any_country = {
-					original_tag = NZL
-					is_in_faction_with = ROOT
-				}
-			}
 		}
 		bypass = {
-			CAN = {
-				exists = no
-			}
-			SAF = {
-				exists = no
-			}
-			RAJ = {
-				exists = no
-			}
-			AST = {
-				exists = no
-			}
-			NZL = {
-				exists = no
-			}
-			NOT = {
-				any_state = {
-					OR = {
-						is_core_of = ENG
-						is_core_of = CAN
-						is_core_of = SAF
-						is_core_of = AST
-						is_core_of = NZL
-						is_core_of = RAJ
-					}
-					NOT = { state = 320 }
-					NOT = { state = 321 }
-					OWNER = {
-						NOT = { tag = ENG }
-					}
-				}
-			}
 		}
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 3
@@ -2601,13 +2311,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				CAN = { is_in_faction_with = ENG }
-				SAF = { is_in_faction_with = ENG }
-				RAJ = { is_in_faction_with = ENG }
-				AST = { is_in_faction_with = ENG }
-				NZL = { is_in_faction_with = ENG }
-			}
 		}
 
 		bypass = {
@@ -2637,10 +2340,6 @@ focus_tree = {
 		id = uk_india_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			any_country = {
-				original_tag = RAJ
-				is_in_faction_with = ROOT
-			}
 		} 
 		icon = GFX_goal_generic_construct_civ_factory
 		x = -1
@@ -2730,10 +2429,6 @@ focus_tree = {
 		id = uk_australia_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			any_country = {
-				original_tag = AST
-				is_in_faction_with = ROOT
-			}
 		}
 
 		bypass = {
@@ -2901,10 +2596,6 @@ focus_tree = {
 		id = uk_new_zealand_focus 
 		prerequisite = { focus = uk_australia_focus }
 		available = {
-			any_country = {
-				original_tag = NZL
-				is_in_faction_with = ROOT
-			}
 		}
 		bypass = {
 			OR = {
@@ -3072,10 +2763,6 @@ focus_tree = {
 		id = uk_canada_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			any_country = {
-				original_tag = CAN
-				is_in_faction_with = ROOT
-			}
 		}
 		bypass = {
 			OR = {
@@ -3242,10 +2929,6 @@ focus_tree = {
 		id = uk_south_africa_focus
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			any_country = {
-				original_tag = SAF
-				is_in_faction_with = ROOT
-			}
 		}
 		bypass = {
 			OR = {
@@ -3412,14 +3095,7 @@ focus_tree = {
 		id = ENG_indian_autonomy
 		prerequisite = { focus = uk_india_focus }
 
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
 		available = { 	
-			RAJ = {
-				is_subject_of = ENG
-			}
 		}
 
 		continue_if_invalid = no
@@ -3451,10 +3127,6 @@ focus_tree = {
 		prerequisite = { focus = uk_canada_focus }
 		prerequisite = { focus = uk_new_zealand_focus }
 		prerequisite = { focus = uk_south_africa_focus }
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
 
 		available = {
 			date > 1938.3.1
@@ -3553,12 +3225,6 @@ focus_tree = {
 		id = ENG_steady_as_she_goes
 	
 		available = { 
-			if = {
-				limit = {
-					NOT = { has_country_flag = ENG_abdication_crisis_changed_mind }
-		}
-				NOT = { has_country_flag = edward_viii_refused_to_abdicate_flag }
-			}
 		}
 
 		cancel_if_invalid = yes

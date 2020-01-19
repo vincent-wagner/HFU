@@ -437,10 +437,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 470
-			controls_state = 471
-			controls_state = 472
-			controls_state = 683
 		}
 		
 		bypass = {
@@ -2196,8 +2192,6 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = { has_government = ROOT }
-			is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
@@ -2238,7 +2232,6 @@ focus_tree = {
 		}
 
 		available = {
-			threat > 0.05
 		}
 		
 		bypass = {
@@ -2361,8 +2354,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction_with = ENG
-			is_in_tech_sharing_group = commonwealth_research
 		}
 		
 		bypass = {
@@ -2520,9 +2511,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 682
-			controls_state = 466
-			controls_state = 468
 		}
 		
 		bypass = {
@@ -2570,7 +2558,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 470
 		}
 		
 		bypass = {
@@ -2906,18 +2893,13 @@ focus_tree = {
 		id = CAN_fund_fairchilds_development
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = CAN_commonwealth_air_training_plan }
-		x = -1
+		x = 0
 		y = 3
 		relative_position_id = CAN_rcaf_station_borden
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 2
-				has_completed_focus = CAN_cookie_carriers
-			}
 		}
 
 		available = {
@@ -2946,51 +2928,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_cookie_carriers
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = CAN_commonwealth_air_training_plan }
-		x = 1
-		y = 3
-		relative_position_id = CAN_rcaf_station_borden
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 2
-				has_completed_focus = CAN_fund_fairchilds_development
-			}
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_cookie_carriers
-				bonus = 1.0
-				uses = 1
-				category = cat_strategic_bomber
-			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = CAN_handley_page
-		}
-	}
-
-	focus = {
 		id = CAN_the_sabre_project
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = CAN_cookie_carriers }
 		prerequisite = { focus = CAN_fund_fairchilds_development }
 		x = 0
 		y = 4

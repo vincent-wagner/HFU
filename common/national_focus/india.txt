@@ -120,10 +120,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				is_subject = yes
-				has_global_flag = ENG_decolonized
-			}
 		}
 
 		bypass = {
@@ -170,19 +166,9 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				is_subject = yes
-				has_global_flag = ENG_decolonized
-			}
 		}
 
 		bypass = {
-			NOT = {
-				OR = {
-					has_idea = RAJ_marginalized_muslim_community
-					has_idea = RAJ_marginalized_muslim_community_angry
-				}
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -220,7 +206,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = yes
 		}
 
 		bypass = {
@@ -261,14 +246,9 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				is_subject = yes
-				has_global_flag = ENG_decolonized
-			}
 		}
 
 		bypass = {
-			has_idea = RAJ_marginalized_muslim_community_happy
 		}
 
 		cancel_if_invalid = yes
@@ -340,13 +320,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
 		}
 
 		bypass = {
@@ -388,16 +361,6 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = {
-					not = { has_dlc = "Man the Guns" }
-				}
-				has_tech = early_light_cruiser
-			}
-			else = {
-				has_tech = early_ship_hull_cruiser
-				has_tech = basic_battery
-			}
 		}
 
 		bypass = {
@@ -409,37 +372,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = {
-					not = { has_dlc = "Man the Guns" }
-				}
-				if = {
-					limit = { 
-						has_tech = basic_light_cruiser 
-					}
-					add_equipment_production = {
-						equipment = {
-							type = light_cruiser_2
-						}
-						requested_factories = 1
-						progress = 0.95
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = light_cruiser_2
-						}
-						requested_factories = 1
-						progress = 0.95
-						amount = 1
-					}
-					else = {
-						set_technology = { basic_light_cruiser = 1 }
-						custom_effect_tooltip = RAJ_navy_funding_effect
-					}
-				}
-			}
-			else = {
 				if = {
 					limit = {
 						has_tech = basic_ship_hull_cruiser
@@ -497,7 +429,6 @@ focus_tree = {
 						custom_effect_tooltip = RAJ_navy_funding_effect
 					}
 				}
-			}
 		}
 	}
 
@@ -516,13 +447,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-			}
 		}
 
 		bypass = {
@@ -2485,16 +2409,10 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				AND = {
-					compare_autonomy_progress_ratio > 0.4
-					compare_autonomy_state > autonomy_puppet
-					is_subject_of = ENG
-				}
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+			AND = {
+				compare_autonomy_progress_ratio > 0.4
+				compare_autonomy_state > autonomy_puppet
+				is_subject_of = ENG
 			}
 		}
 

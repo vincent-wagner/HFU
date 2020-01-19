@@ -848,20 +848,6 @@ ideas = {
 			traits = { medium_aircraft_manufacturer }
 		}
 		
-		amiot = {
-						
-			allowed = {
-				original_tag = FRA
-			}
-									cost = 100
-
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-		}
-		
 		levasseur = {
 						
 			allowed = {

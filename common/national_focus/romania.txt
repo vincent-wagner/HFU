@@ -106,7 +106,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_war_with = GER }
 		}
 
 		bypass = {
@@ -143,11 +142,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction_with = GER
-			GER = {
-				exists = yes
-				is_puppet = no
-			}
 		}
 
 		bypass = {
@@ -612,10 +606,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
-			communism < 0.5
-			fascism < 0.5
-			democratic < 0.5
 		}
 
 		bypass = {
@@ -743,10 +733,6 @@ focus_tree = {
 		}
 
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = ROM_carol_not_leader_trigger
-				NOT = { has_country_leader = { id = 550 } }
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -920,13 +906,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_idea = ROM_king_carol_ii_hedonist
-			OR = {
-				democratic > 0.35
-				communism > 0.35
-				fascism > 0.35
-			}
-			
+			has_idea = ROM_king_carol_ii_hedonist	
 		}
 
 		bypass = {
@@ -982,8 +962,6 @@ focus_tree = {
 				add_idea = ROM_figurehead_king_michael
 				remove_idea = ROM_king_carol_ii_hedonist
 			}
-			#add_political_power = -120
-			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 10 }
 			hidden_effect = {
 				news_event = { id = news.323 days = 1 }
 			}
@@ -1864,7 +1842,6 @@ focus = {
 		}
 
 		available = {
-			is_in_faction_with = GER
 		}
 
 		bypass = {
