@@ -120,7 +120,10 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = { ideology = fascism popularity = 0.05 }
 			add_opinion_modifier = { target = GER modifier = ROM_trade_treaty_with_germany }
-			GER = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany } }
+			GER = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany }
+				
+			}
+			add_relation_modifier = { target = GER modifier = ROM_oil_agreement}
 		}
 	}
 
