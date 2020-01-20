@@ -841,7 +841,7 @@ shared_focus = {
 	completion_reward = {
 		SOV = { country_event = wtt_china_shared.11 
 		air_experience = 25
-		unlock_decision_tooltip = CHI_soviet_volunteer_group
+		
 		}
 	}
 }
@@ -2074,7 +2074,7 @@ shared_focus = {
 		USA = {
 		country_event = wtt_china_shared.10
 		add_war_support = 0.05
-		unlock_decision_tooltip = CHI_flying_tigers
+		
 		}
 	}
 }
@@ -2225,7 +2225,7 @@ shared_focus = {
 			uses = 2
 			category = cv_tech
 		}
-		activate_mission_tooltip = CHI_build_a_carrier
+		
 	}
 }
 
