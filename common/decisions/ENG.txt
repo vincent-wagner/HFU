@@ -80,8 +80,8 @@ political_actions = {
 		}
 
 		available = {
-			has_government = democratic
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			
+			
 			has_war_with = GER
 		}
 
@@ -126,8 +126,7 @@ political_actions = {
 		}
 
 		available = {
-			has_government = democratic
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			
 			has_war_with = GER
 			is_in_faction_with = FRA
 			FRA = {
@@ -176,8 +175,8 @@ political_actions = {
 		}
 
 		available = {
-			has_government = democratic
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			
+		
 			has_war_with = GER
 			is_in_faction_with = FRA
 			FRA = { has_capitulated = yes }
