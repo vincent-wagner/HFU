@@ -389,107 +389,7 @@ operations = {
 	
 
 
-	blow_panama_canal = {
 
-		icon = GFX_decision_generic_ignite_civil_war
-		allowed = {
-			tag = USA 
-		}
-		available = {
-			has_full_control_of_state = 685
-		}
-	
-		visible = {
-			has_war = yes
-			NOT = { has_global_flag = PANAMA_CANAL_BLOCKED }
-			any_state = {
-				is_controlled_by = ROOT
-				OR = {
-					region = 34
-					region = 124
-				}
-			}
-		}
-	
-		fire_only_once = no
-	
-		days_remove = 30
-	
-		cost = 75
-	
-		modifier = {
-			civilian_factory_use = 5
-		}
-
-		complete_effect = {
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = {
-							owns_state = 685
-						}
-					}
-					random_country = {
-						limit = {
-							owns_state = 685
-						}
-						country_event = { id = generic.13 days = 1 }
-					}
-				}
-			}
-		}
-	
-		remove_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_full_control_of_state = 685
-						has_full_control_of_state = 304
-					}
-				}
-				set_country_flag = blew_up_panama
-				set_global_flag = PANAMA_CANAL_BLOCKED
-				country_event = { id = wtt_news.41 hours = 6}
-			}
-			effect_tooltip = {
-				if = {
-					limit = {
-						USA = { owns_state = 685 }
-					}
-					add_war_support = -0.05
-					add_stability = -0.05
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0 # Don't blow up the canal as USA. Ever.
-				tag = USA
-			}
-			modifier = {
-				factor = 0 # Don't blow up the canal if enemies have weak navies but you are a strong naval power
-				has_navy_size = {
-					size > 50
-				}
-				NOT = {
-					any_enemy_country = {
-						has_navy_size = {
-							size > 50
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 200 # Always blow up the canal as JAP or GER when at war with USA (priority)
-				OR = {
-					is_in_faction_with = JAP
-					is_in_faction_with = GER
-				}
-				has_war_with = USA
-			}
-		}
-	}
 }
 
 special_projects = {
@@ -559,215 +459,22 @@ special_projects = {
 		}
 	}
 
-	rebuild_panama_canal = {
-
-		icon = GFX_decision_generic_special_project
-		allowed = {
-			OR = {	
-				tag = JAP
-				tag = USA
-			}
-		}
-		available = {
-			has_full_control_of_state = 685
-			NOT = {
-				any_country = {
-					has_war_with = ROOT
-					controls_state = 304
-				}
-			}
-			num_of_civilian_factories > 25
-		}
 	
-		visible = {
-			has_global_flag = PANAMA_CANAL_BLOCKED
-		}
-	
-		fire_only_once = no
-	
-		days_remove = 180
-	
-		cost = 400
-	
-		modifier = {
-			civilian_factory_use = 25
-		}
-	
-		remove_effect = {
-			if = {
-				limit = {
-					has_full_control_of_state = 685
-					NOT = {
-						any_country = {
-							has_war_with = ROOT
-							controls_state = 304
-						}
-					}
-				}
-				set_country_flag = rebuilt_panama
-				clr_global_flag = PANAMA_CANAL_BLOCKED
-				country_event = { id = wtt_news.43 hours = 6 }
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0 # Don't bother if your navy is weak AND not USA
-				has_navy_size = { size < 50 }
-				NOT = { tag = USA }
-				has_war = yes
-			}
-			modifier = {
-				factor = 200 # Prioritize if you decisively beat USA's navy
-				has_war_with = USA
-				USA = { has_navy_size = { size < 50 } }
-				has_navy_size = { size > 100 }
-			}
-			modifier = {
-				factor = 200 # Prioritize if USA
-				tag = USA
-			}
-			modifier = {
-				factor = 10 # Prioritize if not at war
-				has_war = no
-			}
-		}
-	}
 }
 
 war_measures = {
 	
-	emergency_factory_conversion_defensive = {
-		allowed = {
-			OR = {	
-				tag = SOV
-				tag = SIA 
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN 
-				tag = USA
-				tag = CAN
-				tag = EFR	
-			}
-		}
-		icon = generic_industry
-
-		available = {
-			num_of_civilian_factories > 5 #Change this if amount of factories change
-		}
-
-		visible = {
-			has_defensive_war = yes
-			has_offensive_war = no			
-		}
-
-		fire_only_once = no
-
-		days_re_enable = 90
-
-		cost = 100
-
-		complete_effect = {
-			replace_civ_with_arms_factories = yes
-			add_war_support = -0.05
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	emergency_factory_conversion_offensive = {
-
-		icon = generic_industry
-		allowed = {
-			OR = {	
-				tag = SOV
-				tag = SIA 
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN 
-				tag = USA
-				tag = CAN
-				tag = EFR	
-			}
-		}
-		available = {
-			num_of_civilian_factories > 5 #Change this if amount of factories change
-		}
-
-		visible = {
-			has_offensive_war = yes
-		}
-
-		fire_only_once = no
-
-		days_re_enable = 90
-
-		cost = 100
-
-		complete_effect = {
-			replace_civ_with_arms_factories = yes
-			add_war_support = -0.05
-			add_stability = -0.03
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	desperate_defense = {
+	
+   desperate_defense = {
 
 		icon = generic_prepare_civil_war
 		allowed = {
-			OR = {	
-				tag = SIA 
+			
+				
 				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN 
-				tag = USA
-				tag = CAN
-				tag = EFR	
+				
 			}
-		}
+		
 		available = {
 			surrender_progress > 0.5
 		}
@@ -776,7 +483,7 @@ war_measures = {
 			surrender_progress > 0
 		}
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		days_remove = 45
 		days_re_enable = 360
@@ -807,26 +514,9 @@ war_measures = {
         allowed = {
 			OR = {	
 				tag = SOV
-				tag = SIA 
-				tag = FRA
+
 				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN 
-				tag = USA
-				tag = CAN
-				tag = EFR	
+			
 			}
 		}
 
@@ -1059,7 +749,7 @@ economy_decisions = {
 			}
 		}
 
-        cost = 100
+        cost = 75
         fire_only_once = no
 
         days_re_enable = 30
@@ -1115,146 +805,7 @@ economy_decisions = {
 		}
     }
 
-    war_building_slot = {
-
-    	icon = generic_construction
-
-        allowed = {
-			OR = {	
-				tag = SOV
-				tag = SIA 
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN 
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
-		}
-
-        cost = 50
-        fire_only_once = no
-
-        available = {
-            has_war = yes
-            any_owned_state = {
-            	NOT = { has_state_flag = war_building_slot_flag }
-            	is_fully_controlled_by = ROOT
-            }
-        }
-
-        visible = {
-			has_war = yes
-			any_owned_state = {
-				NOT = { has_state_flag = war_building_slot_flag }
-				is_fully_controlled_by = ROOT
-			}
-		}
-
-        complete_effect = {
-        	add_war_support = -0.025
-			add_stability = -0.025
-			if = {
-				limit = {
-					any_owned_state = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 8
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 8
-					}
-					add_extra_state_shared_building_slots = 1
-					set_state_flag = war_building_slot_flag
-				}
-			}
-			else_if = {
-				limit = {
-					any_owned_state = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 5
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 5
-					}
-					add_extra_state_shared_building_slots = 1
-					set_state_flag = war_building_slot_flag
-				}
-			}
-			else = {
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-            			free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 8
-					}
-					add_extra_state_shared_building_slots = 1
-					set_state_flag = war_building_slot_flag
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 10
-				all_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
-			}
-			modifier = {
-				any_owned_state = {
-					infrastructure > 5
-					free_building_slots = { building = industrial_complex size > 0 include_locked = no }
-				}
-				factor = 0
-			}
-		}
-    }
+   
 }
 
 
