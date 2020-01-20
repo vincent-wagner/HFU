@@ -84,6 +84,34 @@ custom_effect_tooltip = GER_mefo_bills_mission_tt
 
 operations = {
 
+	GER_fin = {
+	icon = generic_operation
+	fire_only_once = yes
+	allowed = {
+		tag = GER
+	}
+	visible = {
+			
+			tag = GER
+			Date > 1941.1.1
+		}
+	
+	available = {
+			tag = GER
+			
+			
+			Date > 1941.1.1
+			
+		}
+	
+	
+	complete_effect = {
+			GER =  { puppet = FIN}
+		}
+	
+	
+	
+	}
 	
 	GER_Anton = {
 	

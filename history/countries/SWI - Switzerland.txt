@@ -88,8 +88,8 @@ set_popularities = {
 }
 
 add_ideas = {
-	neutrality_idea	
-	limited_conscription
+	neutrality_idea
+	neutral_idea
 }
 
 set_stability = 0.85

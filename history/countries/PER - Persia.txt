@@ -10,7 +10,7 @@ set_technology = {
 	early_fighter = 1
 	CAS1 = 1
 }
-add_timed_idea = { idea = no_training days= 730 }
+add_ideas = no_training 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 1400
