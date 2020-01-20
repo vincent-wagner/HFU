@@ -169,6 +169,7 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
 NDefines.NBuildings.MAX_BUILDING_LEVELS=20
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
+NDefines.NAVALBASE_REPAIR_MULT = 0.075
 -------------------------------------
 --Combat 
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.7 }
