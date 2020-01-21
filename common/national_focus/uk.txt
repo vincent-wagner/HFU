@@ -497,8 +497,9 @@ focus_tree = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			threat > 0.05
+			or = {threat > 0.05
 			date > 1936.9.1
+			}
 		}
 
 		continue_if_invalid = yes

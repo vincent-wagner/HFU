@@ -183,13 +183,13 @@ division= {
 division= {	
 		name = "SS-Division Florian Geyer"
 		location = 6334
-		division_template = "SS-Division"
+		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 division= {	
 		name = "SS-Division Hitlerjugend"
 		location = 6334
-		division_template = "SS-Division"
+		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 
@@ -259,7 +259,6 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1
-			version_name="Bf 109 A"
 			creator = "GER" 
 		}
 		requested_factories = 1
