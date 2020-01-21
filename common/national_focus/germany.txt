@@ -1565,13 +1565,21 @@ random_owned_controlled_state = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
-				bonus = 2
+				name = mech_army_bonus
+				
+				bonus = 1.0
+				uses = 1
+				technology = mechanised_infantry
+			}
+			
+			add_tech_bonus = {
+				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
 				technology = basic_medium_tank
 				technology = improved_medium_tank
 				technology = advanced_medium_tank
-				technology = mechanised_infantry
+				
 			}	
 			# REVISIT Might want to add bonuses to Soviet through event, since focus branches from treaty
 		}
