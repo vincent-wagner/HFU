@@ -16,7 +16,6 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_dockyard = -10
-				industry_air_damage_factor=-0.9
 			}
 		}
 		

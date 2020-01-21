@@ -121,7 +121,6 @@ country_event = {
 				FRA={subtract_from_temp_variable = { resistancetemp = resistance }
 				add_offsite_building = { type = industrial_complex level = resistancetemp }
 				add_offsite_building = { type = arms_factory level = resistancetemp }
-				clr_country_flag=no_naval_base
 				}
 				ITA = { transfer_state = 735
 						transfer_state = 32

@@ -5,7 +5,7 @@ state={
 	manpower = 1794880
 	
 	state_category = city
-	impassable=yes
+	
 	resources={
 		steel=8 # was: 12
 	}
@@ -19,7 +19,10 @@ state={
 			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 2
-			
+			air_base = 1
+			740 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = SPR
 	}

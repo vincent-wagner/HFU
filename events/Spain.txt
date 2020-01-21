@@ -53,8 +53,8 @@ country_event = {
 			news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
 			
-			set_stability = 1
-			set_war_support = 1
+			set_stability = 0.9
+			set_war_support = 0.8
 			army_experience = 30
 			
 			
@@ -92,7 +92,7 @@ country_event = {
 	name = "Francisco Franco"
 	id = 1490
 		picture = "Portrait_Spain_Francisco_Franco.dds"
-	traits = {  panzer_leader panzer_expert  trickster expert_improviser logistics_wizard }
+	traits = {  panzer_leader panzer_expert  trickster expert_improviser  }
 	skill = 5
 
 	
