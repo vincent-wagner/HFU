@@ -292,13 +292,18 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_acquire_tanks
-           		modifier = {
-			army_armor_attack_factor = 0.1
-			army_artillery_attack_factor = 0.2
-			army_infantry_attack_factor = 0.2
+           		
+		modifier = {
+			
+			army_armor_attack_factor = 0.2
+			army_artillery_attack_factor = 0.3
+			army_infantry_attack_factor = 0.3
+			
+			supply_consumption_factor = -0.20
+			terrain_penalty_reduction = 0.2
 			}
 			
-			targeted_modifier = {
+		targeted_modifier = {
 				tag = SOV
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
@@ -323,14 +328,14 @@ ideas = {
 			picture = generic_acquire_tanks
           modifier = {
 			army_armor_attack_factor = 0.1
-			army_artillery_attack_factor = 0.2
-			army_infantry_attack_factor = 0.2
+			army_artillery_attack_factor = 0.1
+			army_infantry_attack_factor = 0.1
 			}
 			
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 			
 
@@ -1276,14 +1281,16 @@ modifier = {
 				armor = 0.15
 			}
 			
-			equipment_bonus = {
+			
 				
-				medium_tank_equipment = {
-					reliability = 0.05
-					maximum_speed = 0.1
+				equipment_bonus = {
+				armor = {
+					maximum_speed = 0.1 
+					reliability = 0.1 
 				}
-				
 			}
+				
+			
 			
 			ai_will_do = {
 				factor = 1
@@ -1323,15 +1330,15 @@ modifier = {
 				armor = 0.15
 			}
 			
-			equipment_bonus = {
+			
 				
-				medium_tank_equipment = {
-					reliability = 0.05
-					soft_attack = 0.1
-				}
+				equipment_bonus = {
+				armor = {
+					 reliability = 0.05 soft_attack = 0.1 				
+			}
 				
 			}
-
+            
 			ai_will_do = {
 				factor = 1
 			}
