@@ -3,7 +3,7 @@ state=
 	id=177
 	name="STATE_177"
 	manpower = 365500
-	
+	impassable=yes
 	state_category = rural
 	
 	history=
@@ -14,13 +14,7 @@ state=
 		owner = SPR
 		buildings = {
 			infrastructure = 6
-			air_base = 1
-			9793 = {
-				naval_base = 2
-			}
-			7114 = {
-				naval_base = 1
-			}
+			
 		}
 		add_core_of = SPR
 	}

@@ -259,6 +259,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1
+			version_name="Bf 109 A"
 			creator = "GER" 
 		}
 		requested_factories = 1

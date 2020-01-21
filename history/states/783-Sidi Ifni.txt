@@ -3,16 +3,14 @@ state={
 	id=783
 	name="STATE_783" # Sidi Ifni
 	manpower = 11043
-	
+	#impassable=yes
 	state_category = pastoral
 
 	history={
 		owner = SPR
 		buildings = {
 			infrastructure = 1
-			12857 = {
-				naval_base = 1
-			}
+			
 		}
 	}
 
