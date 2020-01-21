@@ -48,7 +48,7 @@ sub_units = {
 	bicycle_battalion = {
 		sprite = bicycle
 		map_icon_category = infantry
-		
+		special_forces = yes
 		priority = 600
 		ai_priority = 150
 		active = no
@@ -70,8 +70,8 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 60
-		default_morale = 0.3
+		max_organisation = 65
+		default_morale = 0.4
 		maximum_speed = 0.6
 		manpower = 1000
 
@@ -88,7 +88,7 @@ sub_units = {
 		}
 
 		forest = {
-			movement = 0.00
+			movement = 0.05
 		}
 		hills = {
 			movement = 0.1
@@ -106,7 +106,7 @@ sub_units = {
 			movement = 0.2
 		}
 		desert = {
-			movement = 0.05
+			movement = 0.10
 		}
 		river = {
 			movement = -0.05
