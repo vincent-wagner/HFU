@@ -62,7 +62,7 @@
  OOS_ERROR_CODE:0 "Error code: $CODE$"
  GAME_IS_OOS:0 "Games is out of sync. Error code: $CODE$, Description: $LONG$"
  OOS_0:0 "Random seed"
- OOS_1:0 "Random count"
+ OOS_1:0 "Cheatengine detected"
  OOS_2:1 "Gamestate checksum"
  OOS_3:0 "Number of Armies"
  OOS_4:0 "Number of Leaders"

@@ -39,7 +39,7 @@ NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 1                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
-NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000 
+NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 750000 
 
 ---------------------------------------------------------------
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 1000				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
@@ -51,7 +51,7 @@ NDefines.NCountry.RESISTANCE_STRENGTH_FROM_UNIT = 0
 NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0
 NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  WAS 30 | days to transfer escaping divisions to host nation
 NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- WAS 10
-NDefines.NCountry.BASE_FUEL_GAIN = 8.0							-- base amount of fuel gained hourly, independent of excess oil
+NDefines.NCountry.BASE_FUEL_GAIN = 15.0							-- base amount of fuel gained hourly, independent of excess oil
 ---------------------------------------------------------------
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.001						-- down from 0.02 | Chances one ship get damage each hour while on training 		
 
@@ -186,7 +186,7 @@ NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 10
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 4 --back to 4
-NDefines.NMilitary.TRAINING_ATTRITION = 0.02
+NDefines.NMilitary.TRAINING_ATTRITION = 0.01
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
@@ -242,7 +242,7 @@ NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
 
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 45 -- Was 30, exists to help speed 5 macro
 
-NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING=1.75
+NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING=2.5
 
 
 

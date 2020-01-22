@@ -1,3 +1,0 @@
-﻿l_english:
- special_forces_exploit:0 "Special forces exploit detected"
- special_forces_exploit_desc:0 "This Lappen is exceeding the special forces limit by [?numspecialforces|G0] battalions. His special forces limit is [?numlimitspecial|G0]."

@@ -280,8 +280,8 @@ stability_bad_modifier = {
 
 war_support_good_modifier = {
 	mobilization_speed = 0.30 #in 1/1000 of 1 %
-	army_core_attack_factor = 0.1
-	army_core_defence_factor = 0.1
+	#army_core_attack_factor = 0.1
+	#army_core_defence_factor = 0.1
 	command_power_gain_mult = 0.5
 }
 
@@ -424,6 +424,6 @@ japan_armor_sharing = {
 	}
 
 	license_armor_purchase_cost = -1 #base cost reduction
-	license_production_speed = 0.15 #speed  increase for being a license
+	license_production_speed = 0.20 #speed  increase for being a license
 	license_tech_difference_speed = 0.5 #less cost increase for each tech level between the license and own tech level 
 }

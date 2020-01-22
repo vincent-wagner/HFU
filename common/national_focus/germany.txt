@@ -1893,7 +1893,7 @@ available = {
 		
 
 		available = { 
-			Date > 1941.6.1
+			Date > 1942.1.1
 			
 		}
 
@@ -1908,7 +1908,7 @@ available = {
 
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = triumphant_will
+			add_ideas = GER_totaler_krieg
 		}
 	}
 	
