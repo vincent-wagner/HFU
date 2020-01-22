@@ -2946,6 +2946,12 @@ SPR = { country_event = spain.29 }
 				uses = 1
 				category = cv_tech
 			}
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 3
+				uses = 3
+				category = naval_doctrine
+			}
 			set_technology = {
 				improved_ship_hull_heavy = 1
 			}
@@ -3084,8 +3090,8 @@ SPR = { country_event = spain.29 }
 			add_tech_bonus = {
 				name = ti_bonus
 				name = GER_trade_interdiction
-				bonus = 1.0
-				uses = 6
+				bonus = 3.0
+				uses = 5
 				category = trade_interdiction_tree
 			}
 		}

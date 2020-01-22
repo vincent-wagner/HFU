@@ -50,6 +50,7 @@ country_event = {
 		  transfer_state = 47
 		  transfer_state = 186
 		  transfer_state = 187
+
 		  
 		  }
     GER = {transfer_state = 102
@@ -60,6 +61,7 @@ country_event = {
 	transfer_state =187}
 	 else={ENG={transfer_state=187}}
 	 }
+
   	
 
  }	
@@ -1133,4 +1135,16 @@ country_event = {
 		name = germany.120.a
 	}
 }
-
+country_event = {
+	id = germany.121
+	title = germany.121.t
+	desc = germany.121.d
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.121.a
+	}
+}

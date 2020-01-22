@@ -423,8 +423,14 @@ special_projects = {
 			}
 		}		
 		available = {
-			has_full_control_of_state = 446
-			has_full_control_of_state = 453
+			any_country = {
+				is_in_faction_with = ROOT
+				has_full_control_of_state = 446
+			}
+			any_country = {
+				is_in_faction_with = ROOT
+				has_full_control_of_state = 453
+			}
 			num_of_civilian_factories > 15
 		}
 	
@@ -439,14 +445,20 @@ special_projects = {
 		cost = 75
 	
 		modifier = {
-			civilian_factory_use = 15
+			civilian_factory_use = 10
 		}
 	
 		remove_effect = {
 			if = {
 				limit = {
-					has_full_control_of_state = 446
-					has_full_control_of_state = 453
+					any_country = {
+						is_in_faction_with = ROOT
+						has_full_control_of_state = 446
+					}
+					any_country = {
+						is_in_faction_with = ROOT
+						has_full_control_of_state = 453
+					}
 				}
 				set_country_flag = rebuilt_suez
 				clr_global_flag = SUEZ_CANAL_BLOCKED
