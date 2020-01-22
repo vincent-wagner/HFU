@@ -475,7 +475,7 @@ create_field_marshal = {
 	name = "Alan Brooke" # Aristocrat
 	id = 997
 	picture = "Portrait_Britain_Alan_Brooke.dds"
-	traits = {  trait_cautious infantry_leader organizer }
+	traits = {  inflexible_strategist organizer infantry_leader ranger}
 	skill = 5
 	attack_skill = 5
 	defense_skill = 2
@@ -487,33 +487,45 @@ create_field_marshal = {
 	name = "Bernard Montgomery" # Aristocrat
 	id = 996
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
-	traits = { logistics_wizard offensive_doctrine desert_fox panzer_leader inflexible_strategist organizer }
+	traits = { logistics_wizard offensive_doctrine desert_fox infantry_leader inflexible_strategist organizer }
 	skill = 6 
-	attack_skill = 3
-	defense_skill = 6
-	planning_skill = 2
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Claude Auchinleck"
-	picture = "Portrait_Britain_Claude_Auchinleck.dds"
-	traits = { inflexible_strategist infantry_leader }
-	skill = 5
-	attack_skill = 2
+	attack_skill = 4
 	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 5
 }
 
+create_field_marshal = {
+	name = "Oliver Leese" # Aristocrat
+	id = 993
+	picture = "Portrait_Britain_Oliver_Leese.dds"
+	traits = {  panzer_leader harsh_leader politically_connected desert_fox}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Claude Auchinleck"
+	picture = "Portrait_Britain_Claude_Auchinleck.dds"
+	traits = { inflexible_strategist infantry_leader trickster}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
 create_corps_commander = {
 	name = "Neil Ritchie"
 	picture = "Portrait_Britain_Neil_Ritchie.dds"
-	traits = { inflexible_strategist panzer_leader politically_connected  }
+	traits = { trait_reckless panzer_leader politically_connected  }
 	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
 	logistics_skill = 3
 }
 
@@ -521,9 +533,9 @@ create_corps_commander = {
 	name = "Alan Cunningham"
 	picture = "Portrait_Britain_Alan_Cunningham.dds"
 	traits = {infantry_leader commando}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 1
+	skill = 5
+	attack_skill = 6
+	defense_skill = 2
 	planning_skill = 4
 	logistics_skill = 4
 }
@@ -545,8 +557,8 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Richard_OConnor.dds"
 	traits = { infantry_leader cavalry_leader  }
 	skill = 4
-	attack_skill = 1
-	defense_skill = 6
+	attack_skill = 4
+	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 3
 }
@@ -555,7 +567,7 @@ create_corps_commander = {
 	name = "William Platt"
 	picture = "Portrait_Britain_William_Platt.dds"
 	traits = { infantry_leader }
-	skill = 3
+	skill = 4
 	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 3
@@ -682,18 +694,6 @@ create_corps_commander = {
 	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 2
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Oliver Leese" # Aristocrat
-	id = 993
-	picture = "Portrait_Britain_Oliver_Leese.dds"
-	traits = {  armor_officer harsh_leader politically_connected }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
 	logistics_skill = 4
 }
 
