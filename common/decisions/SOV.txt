@@ -28,7 +28,7 @@ SOV_mrp = {
 			add_named_threat = { threat = 7.5 name = Winter_War_Threat }
 		}
 		remove_effect = {
-			SOV = { set_country_flag=finland_prepared }
+			SOV = { activate_decision = SOV_attack_finland  }
 		custom_effect_tooltip= "Preparations completed"
 		}
 	}
@@ -55,47 +55,22 @@ SOV_mrp = {
 		
 		
 		complete_effect = {
-			SOV = { declare_war_on = { type = puppet_wargoal_focus target = FIN }}
-			
-		}
-	}
-					
-	SOV_surrender_fin = {
-			available = {
-			FIN={surrender_progress> 0.25}
+			SOV = { 
+				army_experience = 200
+				transfer_state = 146 
+				transfer_state= 147
+				country_event = { id = finland.8 }
+				146 = { remove_core_of = FIN }
+				147 = { remove_core_of = FIN }
 			}
-
-			allowed = {
-				
-				
-			          tag = SOV
-			}
-			
-			
-			fire_only_once = yes
-
-			cost = 0
-
-			visible = {
-		NOT={has_war_with = GER}
-		FIN = { has_war_with = SOV }
-		}
-		
-        complete_effect = {
-			SOV = { white_peace = FIN }
-			FIN = { white_peace = SOV }
-			SOV = {transfer_state = 146 
-			       transfer_state= 147}
-			SOV = { country_event = { id = finland.8 } }
-
-		}
-		
+			hidden_effect = {
+				FIN = {
+					load_oob = "FIN_barb"
 				}
-	
-	
-	
-
+			}
+		}
 	}
+}
 
 #Category only allowed for SOV
 SOV_great_patriotic_war = {

@@ -1129,4 +1129,16 @@ country_event = {
 		name = germany.120.a
 	}
 }
-
+country_event = {
+	id = germany.121
+	title = germany.121.t
+	desc = germany.121.d
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.121.a
+	}
+}
