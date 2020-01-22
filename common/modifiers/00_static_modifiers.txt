@@ -23,7 +23,7 @@ weather_rain_heavy = { # on Region
 	naval_strike = -0.4
 	air_accidents = 0.3
 	air_bombing_targetting = -0.5
-	local_org_regain = -0.2
+	local_org_regain = -0.1
 	air_mission_efficiency = -0.3
 	naval_retreat_speed = 0.1
 	positioning = -0.2
@@ -49,7 +49,7 @@ weather_blizzard = { # on Region
 	naval_strike = -0.4
 	air_accidents = 0.3
 	air_bombing_targetting = -0.7
-	local_org_regain = -0.2
+	local_org_regain = -0.15
 	air_mission_efficiency = -0.3
 	naval_retreat_speed = 0.15
 	positioning = -0.2
@@ -78,12 +78,12 @@ weather_extreme_cold = { # on Province
 	winter_attrition = 0.2
 	dig_in_speed_factor = -0.6
 	local_org_regain = -0.05
-	army_attack_factor = -0.3
+	army_attack_factor = -0.15
 }
 weather_very_cold = { # on Province
 	winter_attrition = 0.15
 	dig_in_speed_factor = -0.3
-	army_attack_factor = -0.2
+	army_attack_factor = -0.1
 }
 weather_very_hot = { # on Province
 	heat_attrition = 0.1
@@ -245,6 +245,14 @@ ROM_military_modernization = {
 	license_production_speed = 0.25 #speed  increase for being a license
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level 
 }
+ROM_oil_agreement = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+
+	trade_cost_for_target_factor=-0.6}
 
 free_license = {
 	valid_relation_trigger = {
@@ -272,8 +280,8 @@ stability_bad_modifier = {
 
 war_support_good_modifier = {
 	mobilization_speed = 0.30 #in 1/1000 of 1 %
-	army_core_attack_factor = 0.1
-	army_core_defence_factor = 0.1
+	#army_core_attack_factor = 0.1
+	#army_core_defence_factor = 0.1
 	command_power_gain_mult = 0.5
 }
 
@@ -416,6 +424,6 @@ japan_armor_sharing = {
 	}
 
 	license_armor_purchase_cost = -1 #base cost reduction
-	license_production_speed = 0.15 #speed  increase for being a license
+	license_production_speed = 0.20 #speed  increase for being a license
 	license_tech_difference_speed = 0.5 #less cost increase for each tech level between the license and own tech level 
 }

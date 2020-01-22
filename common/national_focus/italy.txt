@@ -97,6 +97,10 @@ focus_tree = {
 					}
 				}
 			}
+			add_named_threat = { 
+				threat = 1.5 
+				name = ITA_ethiopian_war_logistics
+			}
 		}
 	}
 

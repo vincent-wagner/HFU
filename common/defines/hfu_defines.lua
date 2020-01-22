@@ -17,7 +17,7 @@ NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12
 NDefines.NDiplomacy.MIN_TRUST_VALUE = -500 							-- WAS -100 | this is added to support embargoing nations to prevent trade memes from players in an opposing faction | Min opinion value cap.
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
@@ -25,9 +25,7 @@ NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
 
----------------------------------------------------------------
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                   --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
----------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
 NDefines.NDiplomacy.GUARANTEE_COST = 1000
@@ -41,7 +39,7 @@ NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 1                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
-NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000 
+NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 750000 
 
 ---------------------------------------------------------------
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 1000				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
@@ -53,7 +51,7 @@ NDefines.NCountry.RESISTANCE_STRENGTH_FROM_UNIT = 0
 NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0
 NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  WAS 30 | days to transfer escaping divisions to host nation
 NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- WAS 10
-NDefines.NCountry.BASE_FUEL_GAIN = 8.0							-- base amount of fuel gained hourly, independent of excess oil
+NDefines.NCountry.BASE_FUEL_GAIN = 15.0							-- base amount of fuel gained hourly, independent of excess oil
 ---------------------------------------------------------------
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.001						-- down from 0.02 | Chances one ship get damage each hour while on training 		
 
@@ -169,6 +167,7 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
 NDefines.NBuildings.MAX_BUILDING_LEVELS=20
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
+NDefines.NAVALBASE_REPAIR_MULT = 0.075
 -------------------------------------
 --Combat 
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.7 }
@@ -187,7 +186,7 @@ NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 10
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 4 --back to 4
-NDefines.NMilitary.TRAINING_ATTRITION = 0.02
+NDefines.NMilitary.TRAINING_ATTRITION = 0.01
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
@@ -195,7 +194,8 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3    			
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.04				-- Amount of planning lost due to player manual order
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0	
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0		
@@ -242,7 +242,7 @@ NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
 
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 45 -- Was 30, exists to help speed 5 macro
 
-NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING=1.75
+NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING=2.5
 
 
 

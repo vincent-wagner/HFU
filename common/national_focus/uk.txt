@@ -206,7 +206,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 2
+				bonus = 1.5
 				uses = 2
 				category = armor
 			}
@@ -497,8 +497,9 @@ focus_tree = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			threat > 0.05
+			or = {threat > 0.05
 			date > 1936.9.1
+			}
 		}
 
 		continue_if_invalid = yes
@@ -2097,7 +2098,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Waking the Tiger"
 				}
-				unlock_decision_tooltip = CHI_expand_the_burma_road
+				
 			}
 			CHI = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good } 

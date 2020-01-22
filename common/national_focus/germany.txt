@@ -1565,13 +1565,21 @@ random_owned_controlled_state = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
-				bonus = 2
+				name = mech_army_bonus
+				
+				bonus = 1.0
+				uses = 1
+				technology = mechanised_infantry
+			}
+			
+			add_tech_bonus = {
+				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
 				technology = basic_medium_tank
 				technology = improved_medium_tank
 				technology = advanced_medium_tank
-				technology = mechanised_infantry
+				
 			}	
 			# REVISIT Might want to add bonuses to Soviet through event, since focus branches from treaty
 		}
@@ -1885,7 +1893,7 @@ available = {
 		
 
 		available = { 
-			Date > 1941.6.1
+			Date > 1942.1.1
 			
 		}
 
@@ -1900,7 +1908,7 @@ available = {
 
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = triumphant_will
+			add_ideas = GER_totaler_krieg
 		}
 	}
 	
@@ -2938,6 +2946,12 @@ SPR = { country_event = spain.29 }
 				uses = 1
 				category = cv_tech
 			}
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 3
+				uses = 3
+				category = naval_doctrine
+			}
 			set_technology = {
 				improved_ship_hull_heavy = 1
 			}
@@ -3076,8 +3090,8 @@ SPR = { country_event = spain.29 }
 			add_tech_bonus = {
 				name = ti_bonus
 				name = GER_trade_interdiction
-				bonus = 1.0
-				uses = 6
+				bonus = 3.0
+				uses = 5
 				category = trade_interdiction_tree
 			}
 		}

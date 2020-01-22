@@ -14,6 +14,7 @@ set_technology = {
 	tech_mountaineers = 1
 	paratroopers = 1 
 	motorised_infantry = 1
+	interwar_antitank = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	gwtank = 1
@@ -135,7 +136,7 @@ add_equipment_to_stockpile = {
          producer = GER
 }
 add_equipment_to_stockpile = {
-         type = tac_bomber_equipment_0
+         type = tac_bomber_equipment_1
          amount = 480
          producer = GER
 }
@@ -408,8 +409,8 @@ create_field_marshal = {
 	name = "Gerd von Rundstedt"
 	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
 	traits = { defensive_doctrine offensive_doctrine infantry_leader organizer }
-	skill = 5
-	attack_skill = 4
+	skill = 6
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 4
@@ -467,8 +468,8 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Heinz Guderian"
 	picture = "Portrait_Germany_Heinz_Guderian.dds"
-	traits = { trickster brilliant_strategist panzer_leader panzer_expert trickster ranger  }
-	skill = 7
+	traits = { trickster brilliant_strategist panzer_leader panzer_expert trickster ranger organizer }
+	skill = 8
 	id = 6
 	attack_skill = 6
 	defense_skill = 4
@@ -505,10 +506,10 @@ create_corps_commander = {
 	name = "Fedor von Bock"
 	picture = "Portrait_Germany_Fedor_von_Bock.dds"
 	traits = { harsh_leader infantry_leader naval_invader trickster }
-	skill = 4
+	skill = 6
 	id = 9
-	attack_skill = 4
-	defense_skill = 3
+	attack_skill = 5
+	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 2
 }
@@ -577,10 +578,10 @@ create_corps_commander = {
 	name = "Kurt Student"
 	picture = "Portrait_Germany_Kurt_Student.dds"
 	traits = { commando trait_reckless }
-	skill = 4
+	skill = 5
 	id = 16
-	attack_skill = 4
-	defense_skill = 2
+	attack_skill = 5
+	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 3
 }
@@ -661,9 +662,9 @@ create_corps_commander = {
 	name = "Alfred Jodl"
 	picture = "Portrait_Germany_Alfred_Jodl.dds"
 	traits = { politically_connected infantry_leader cavalry_leader }
-	skill = 3
+	skill = 4
 	id = 23
-	attack_skill = 1
+	attack_skill = 3
 	defense_skill = 6
 	planning_skill = 3
 	logistics_skill = 3
@@ -737,7 +738,7 @@ create_corps_commander = {
 	skill = 5
 	id = 35
 	attack_skill = 4
-	defense_skill = 2
+	defense_skill = 4
 	planning_skill = 5
 	logistics_skill = 3
 }
@@ -1041,7 +1042,16 @@ create_equipment_variant = {
 	}
 	obsolete = yes
 }
-
+create_equipment_variant = {
+	name = "Bf 109 A"
+	type = fighter_equipment_1
+	upgrades = {
+		plane_range_upgrade = 2
+		plane_engine_upgrade = 0
+		plane_reliability_upgrade = 2
+	}
+	obsolete = no
+}
 create_equipment_variant = {
 	name = "Do 17"
 	type = tac_bomber_equipment_0

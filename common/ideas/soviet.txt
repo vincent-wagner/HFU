@@ -313,7 +313,7 @@ ideas = {
 				research_speed_factor = 0.15
 				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.25
 			}
 			
 			rule = {
@@ -918,7 +918,7 @@ ideas = {
 			}
 			
 
-			traits = { army_chief_defensive_2 }
+			traits = { army_chief_planning_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1342,10 +1342,10 @@ ideas = {
 			
 			equipment_bonus = {
 				
-				medium_tank_equipment = {
+				armor = {
 					
-					reliability = 0.35
-					build_cost_ic = -0.05
+					reliability = 0.4
+					
 					
 					
 				}
@@ -1369,7 +1369,7 @@ ideas = {
 			
 			equipment_bonus = {
 				
-				medium_tank_equipment = {
+				armor = {
 					
 					maximum_speed = 0.05
 					soft_attack = 0.05
@@ -1393,10 +1393,10 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				
-				medium_tank_equipment = {
+			
+			armor = {
 					
-					hard_attack = 0.1
+					hard_attack = 0.05
 					maximum_speed = 0.05
 					
 				}

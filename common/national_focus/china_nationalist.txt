@@ -778,7 +778,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = CHI_scorched_earth_tactics
+			
 		}
 	}
 
@@ -974,7 +974,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = CHI_60_divisions_plan
+			
 		}
 	}
 
@@ -1388,7 +1388,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = CHI_forced_loans
 		}
 	}
 

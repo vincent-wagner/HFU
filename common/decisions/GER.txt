@@ -84,6 +84,25 @@ custom_effect_tooltip = GER_mefo_bills_mission_tt
 
 operations = {
 
+	GER_fin = {
+	icon = generic_operation
+	fire_only_once = yes
+	allowed = {
+		tag = GER
+	}
+	visible = {	
+		Date > 1941.1.1
+	}
+	
+	available = {
+		Date > 1941.6.1	
+	}
+	
+	
+	complete_effect = {
+		GER =  { puppet = FIN}
+	}
+	}
 	
 	GER_Anton = {
 	
@@ -115,6 +134,75 @@ operations = {
 	
 		}
 	
+	}
+	
+	GER_seize_syria = {
+	
+		icon = generic_operation
+		
+		fire_only_once = yes
+		
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			tag = GER
+			EFR = {
+				exists = yes
+			}
+			EFR = {
+				owns_state = 553
+				owns_state = 554
+				owns_state = 680
+				owns_state = 677
+			}
+		}
+	
+		days_remove = 10
+	
+		available = {
+			any_country = {
+				is_in_faction_with = ROOT
+				controls_state = 455
+			}
+			any_country = {
+				is_in_faction_with = ROOT
+				controls_state = 454
+			}
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				every_country = {
+					if = {
+						limit = { is_in_faction_with = ENG }
+						country_event = {
+							id = germany.121
+							days = 0
+						}
+					}
+				}
+			}	
+		}
+	
+		remove_effect = {
+			transfer_state = 553
+			transfer_state = 554
+			transfer_state = 680
+			transfer_state = 677
+			553 = {
+				set_demilitarized_zone = no
+			}
+			554 = {
+				set_demilitarized_zone = no
+			}
+			680 = {
+				set_demilitarized_zone = no
+			}
+			677 = {
+				set_demilitarized_zone = no
+			}
+		}
 	}
 	
 	GER_barbarossa_mission = {

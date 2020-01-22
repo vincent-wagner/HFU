@@ -1551,7 +1551,7 @@ completion_reward = {
 				target = GER
 				modifier = japan_armor_sharing
 			}
-			custom_effect_tooltip="License production factory output will be -20%.       "
+			custom_effect_tooltip="License production factory output will be -15%.       "
 			add_tech_bonus = {
 				name = JAP_armored_divisions
 				bonus = 1.2
