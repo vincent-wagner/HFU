@@ -50,12 +50,16 @@ country_event = {
 		  transfer_state = 47
 		  transfer_state = 186
 		  transfer_state = 187
-		  
-		  }
-    GER = {transfer_state = 102
-	   if={limit={143={is_controlled_by_ROOT_or_ally = yes}}
-	transfer_state =182}
-	 else={ENG={transfer_state=182}}}
+
+	GER = {
+		transfer_state = 102
+		if={
+			limit={182={is_controlled_by_ROOT_or_ally = yes}}
+			transfer_state =182
+		}
+		else={ENG={transfer_state=182}}
+		
+	}
   	
 
  }	
