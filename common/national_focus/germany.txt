@@ -2165,6 +2165,7 @@ available = {
 				
 						add_state_core = 85
 						add_state_core = 762
+						add_state_core = 86
 			}
 POL = {
 					country_event = { id = germany.86 }
