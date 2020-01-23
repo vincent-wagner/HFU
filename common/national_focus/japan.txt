@@ -293,12 +293,20 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-          add_threat = 20
-          CHI = {set_equipment_fraction = 0}
+      		if={limit={country_exists = MAN}
+		MAN={add_ideas=wartime_economy
+			add_ideas=closed_economy}
+		}
+		if={limit={country_exists = SIA}
+		SIA={add_ideas=wartime_economy
+			add_ideas=closed_economy}
+		}
+		add_threat = 20
+         	 CHI = {set_equipment_fraction = 0}
 		  annex_country = {
-          target = CHI
-          transfer_troops = no
-          }
+         	 target = CHI
+         	 transfer_troops = no
+          	}
 		
 		}
  			
