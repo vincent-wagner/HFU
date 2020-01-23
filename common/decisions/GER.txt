@@ -173,13 +173,10 @@ operations = {
 		
 		complete_effect = {
 			hidden_effect = {
-				every_country = {
-					if = {
-						limit = { is_in_faction_with = ENG }
-						country_event = {
-							id = germany.121
-							days = 0
-						}
+				every_enemy_country = {
+					country_event = {
+						id = germany.121
+						days = 0
 					}
 				}
 			}	

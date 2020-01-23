@@ -100,7 +100,7 @@ JAP_annex_manchukuo = {
 			complete_effect = {
 					if = { 
 					limit = { 
-					MAN = { AND = { NOT = { has_completed_focus = MAN_assertiveness has_completed_focus = MAN_obedience }}}
+					MAN = { AND = { NOT = { has_completed_focus = MAN_obedience }}}
 					
 					}
 						716 = { 
@@ -128,37 +128,6 @@ JAP_annex_manchukuo = {
 					}
 					}
 					}
-					
-					if = { 
-					limit = { 
-					MAN = { AND = { has_completed_focus = MAN_assertiveness NOT = { has_completed_focus = MAN_resources }}}
-					}
-							716 = { 
-						add_resource = {
-					type = steel
-					amount = 16
-				}
-					}
-					328 = {
-				add_resource = {
-					type = aluminium
-					amount = 12
-				}
-			}
-								714 = { 			
-				add_resource = {
-					type = oil
-					amount = 20	
-				}
-				}	
-								JAP = { 
-					annex_country = {
-						target = MAN
-						transfer_troops = yes 
-					}
-					}	
-					}	
-					
 					
 					
 										if = { 
@@ -288,18 +257,7 @@ JAP_annex_manchukuo = {
 					
 					}
 					
-					
-						if = { 
-					limit = { 
-					MAN = { AND = { has_completed_focus = MAN_assertiveness has_completed_focus = MAN_resources } } 
-					}
-						JAP = { 
-					annex_country = {
-						target = MAN
-						transfer_troops = yes 
-					}
-					}	
-					}
+				
 					
 					
 					
