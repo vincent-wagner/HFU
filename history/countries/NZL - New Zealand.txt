@@ -261,12 +261,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Dan the Man"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = {  }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 10
-	logistics_skill = 1
+	traits = { trait_mountaineer infantry_leader }
+	skill = 7
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 6
+	logistics_skill = 2
 }
 
 create_navy_leader = {
