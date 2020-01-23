@@ -1142,9 +1142,9 @@ focus = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1.0
-				uses = 2
-				category = bb_tech
+				bonus = 3.0
+				uses = 5
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1165,26 +1165,9 @@ focus = {
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = SOV_expand_red_fleet_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}				
-			}
-			add_tech_bonus = {
-				name = ships_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_equipment
-			}			
-		}
 
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 100
 			195 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
@@ -1205,9 +1188,52 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = ships_bonus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 2
 				category = naval_equipment
+			}
+			if = {
+				limit = {
+					not = { has_tech = ship_hull_super_heavy }
+				}
+				set_technology = {
+					ship_hull_super_heavy = 1
+				}
+			}
+			create_equipment_variant = {
+				name = "Sovetsky Soyuz Class"
+				type = ship_hull_super_heavy_1
+				name_group = SOV_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot=ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot=ship_anti_air_2
+					fixed_ship_fire_control_system_slot=ship_fire_control_system_2
+					fixed_ship_engine_slot=heavy_ship_engine_3
+					fixed_ship_secondaries_slot=dp_ship_secondaries
+					fixed_ship_armor_slot=ship_armor_shbb
+					front_1_custom_slot=ship_super_heavy_battery_1
+					mid_1_custom_slot=dp_ship_secondaries
+					mid_2_custom_slot=dp_ship_secondaries
+					rear_1_custom_slot=ship_super_heavy_battery_1
+					front_2_custom_slot=ship_super_heavy_battery_1
+					mid_3_custom_slot=dp_ship_secondaries
+					rear_2_custom_slot=ship_super_heavy_battery_1
+				}
+			}
+			custom_effect_tooltip = "Adds a Sovetsky Soyuz Class super heavy battleship to the production queue at 50% completion"
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "SOV" 
+						version_name = "Sovetsky Soyuz Class"
+					}
+					name = "Sovetsky Soyuz" 
+					requested_factories = 1
+					progress = 0.5
+					amount = 1
+				}
 			}
 		}
 	}

@@ -52,10 +52,6 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = CHI
-		}
 	}
 
 	available = {
@@ -85,14 +81,6 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = CHI
-		}
-		modifier = {
-			factor = 10
-			has_country_flag = GER_befriended_by_germany_flag
-		}
 	}
 
 	available = {
@@ -666,10 +654,6 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = CHI
-		}
 	}
 
 	available = {
@@ -1434,14 +1418,6 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = CHI
-		}
-		modifier = {
-			factor = 10
-			has_country_flag = ENG_influenced_by_britain_flag
-		}
 	}
 
 	available = {
@@ -1972,10 +1948,6 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 4
-			tag = CHI
-		}
 	}
 
 	available = {
@@ -2409,7 +2381,7 @@ shared_focus = {
 	}
 	
 	bypass = {
-	original_tag = MAN 
+		original_tag = MAN 
 	}
 
 	available = {

@@ -239,7 +239,6 @@ bookmarks = {
 			focuses = {
 				MAN_obedience
 				MAN_develop_aluminum_sources
-				MAN_assertiveness
 			}
 		}
 
