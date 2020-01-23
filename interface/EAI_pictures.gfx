@@ -1,0 +1,14 @@
+spriteTypes = {
+
+	
+	
+	
+	spriteType = {
+		name = "GFX_EAI_config_bg_stockpile"
+		texturefile = "gfx/interface/EAI_config_bg_stockpile.dds"
+	}
+	
+	###
+	}
+	
+}
