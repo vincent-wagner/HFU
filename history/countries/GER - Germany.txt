@@ -453,6 +453,18 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 
+
+create_field_marshal = {
+	name = "Wilhelm Keitel"
+	picture = "Portrait_Germany_Wilhelm_Keitel.dds"
+	traits = { politically_connected career_officer trait_cautious }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
 create_corps_commander = {
 	name = "Erich von Manstein"
 	picture = "Portrait_Germany_Erich_von_Manstein.dds"
