@@ -519,7 +519,7 @@ focus_tree = {
 						add_ideas = closed_economy
 					}
 		custom_effect_tooltip = tooltip_jap_war
-		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 90 }
 		hidden_effect={
 		if={limit={NOT={USA={has_war=yes}}}
 		ENG={add_to_faction=USA}
