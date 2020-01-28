@@ -1756,7 +1756,7 @@ available = {
 				        GER = { 
 						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
-					hidden_effect={    ROM = { 
+					    ROM = { 
 						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 						HUN = { 
@@ -1773,8 +1773,7 @@ available = {
 					}
 			            SPR = { 
 						add_timed_idea = { idea = GER_barbarossa days = 120 }
-					}}
-				custom_effect_tooltip = GER_barbarossa_others_text
+					}
 			
 			
 			
@@ -1805,8 +1804,8 @@ available = {
 			
 		}
 
-		x = 18
-		y = 5
+		x = 17
+		y = 6
 		
 		cost = 1
 		ai_will_do = {
@@ -1819,7 +1818,7 @@ available = {
 			GER = { 
 						add_timed_idea = { idea = GER_blau days = 100 }
 					}
-					  hidden_effect={  ROM = { 
+					    ROM = { 
 						add_timed_idea = { idea = GER_blau days = 100 }
 					}
 						HUN = { 
@@ -1836,58 +1835,12 @@ available = {
 					}
 			            SPR = { 
 						add_timed_idea = { idea = GER_blau days = 100 }
-					}}
-					custom_effect_tooltip = GER_barbarossa_others_text
+					}
 			
        }
        }
 	
-	focus = {
-		id = GER_ardennenoffensive
-		
-		prerequisite = { focus = GER_ussr_war_goal }
-		icon = GFX_focus_ger_reichskommisariats
-		available = { 
-			Date > 1942.5.1
-			NOT={has_idea=GER_barbarossa}
-		}
-		allow_branch={always=no}
-		x = 16
-		y = 5
-		
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}	
-    
-		available_if_capitulated = no
-		completion_reward = {
-			
-			GER = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
-					}
-					  hidden_effect={  ROM = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
-					}
-						HUN = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
-					}
-						BUL = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
-					}
-			            FIN = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
-					}
-			            ITA = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
-					}
-			            SPR = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
-					}}
-					custom_effect_tooltip = GER_barbarossa_others_text
-			
-       }
-       }
+	
 	
 	
 	focus = {
@@ -3123,8 +3076,8 @@ SPR = { country_event = spain.29 }
 	focus = {
 		id = GER_trade_interdiction
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = GER_u_boat_effort focus=GER_plan_z  }
-		x = -1
+		prerequisite = { focus = GER_u_boat_effort }
+		x = 0
 		y = 1
 		relative_position_id = GER_u_boat_effort
 		cost = 5
