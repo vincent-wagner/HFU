@@ -457,12 +457,12 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Wilhelm Keitel"
 	picture = "Portrait_Germany_Wilhelm_Keitel.dds"
-	traits = { politically_connected career_officer trait_cautious }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 2
+	traits = { infantry_leader cavalry_leader organizer trickster ranger swamp_fox }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 7
 }
 
 create_corps_commander = {
