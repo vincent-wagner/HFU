@@ -1005,7 +1005,7 @@ equipments = {
 		build_cost_ic = 3500
 		naval_speed = 20
 		surface_visibility = 22
-		naval_range = 7500
+		naval_range = 3500
 		resources = {
 			steel = 3
 		}

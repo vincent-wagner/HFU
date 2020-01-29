@@ -7,9 +7,6 @@ state={
 	
 	state_category = pastoral
 	
-	resources={
-		steel=15 # was: 20
-	}
 
 	history={
 		owner = SPR
@@ -19,9 +16,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 3
-			12100 = {
-				naval_base = 3
-			}
+			
 		}
 	}
 
