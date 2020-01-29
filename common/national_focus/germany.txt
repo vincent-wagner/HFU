@@ -1773,6 +1773,9 @@ available = {
 					}
 			            SPR = { 
 						add_timed_idea = { idea = GER_barbarossa days = 120 }
+					}
+					41={set_building_level = {type = infrastructure
+  			 		level = 10}
 					}}
 				custom_effect_tooltip = GER_barbarossa_others_text
 			
