@@ -41,7 +41,7 @@ wartime_economy = {
 				lend_lease_tension = 0.40
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.75
-				max_fuel_factor = -0.45
+				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.3
 			}
 			
@@ -98,7 +98,7 @@ wartime_economy = {
 				conversion_cost_civ_to_mil_factor= 0.3
 				conversion_cost_mil_to_civ_factor = 0.3
 				max_fuel_factor = -0.25
-				fuel_gain_factor = -0.4
+				fuel_gain_factor = -0.15
 			}
 			
 			default = yes
@@ -127,7 +127,7 @@ wartime_economy = {
 				consumer_goods_factor = 0.3
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
-				fuel_gain_factor = -0.25
+				fuel_gain_factor = -0.15
 			}
 			
 			cancel_if_invalid = no
@@ -203,25 +203,9 @@ wartime_economy = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
-					AND = {
-						has_war = yes
-						any_enemy_country = {
-							ic_ratio = { 
-								tag = ROOT 
-								ratio > 0.4
-							}
-						}
+					has_war = yes	
 					}
-				}
-
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}		
+						
 			}
 		
 			cost = 150

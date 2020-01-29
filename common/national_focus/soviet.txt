@@ -133,32 +133,7 @@ focus = {
             			
 		}
 	}
-    focus = {
-		id = SOV_kazanspawnin
-		icon = GFX_sov_stalin_writing
-		prerequisite = { focus = SOV_move_industry_to_urals }
-		x = 14
-		y = 4
-		
-		cost = 999
-		ai_will_do = {
-			factor = 5
-		}
-
-		available_if_capitulated = yes
-
-		
-
-		
-		completion_reward = {
-		hidden_effect={load_oob=SOV_kazanspawnin}	
-		custom_effect_tooltip="50 20w Infantry Divisions will spawn in Kazan "
-		add_timed_idea={idea=SOV_kazanspawnin days=180}
-		
-		
-		
-		}
-	}
+ 
 	focus = {
 		id = SOV_great_figher
 		icon = GFX_Goal_Positive_heroism
@@ -174,32 +149,135 @@ focus = {
 				NOT = { has_war_with = GER }
 			}
 		}
-
-		available = {
 		
-			
+		completion_reward = {
+		 
+			 add_timed_idea= {idea=Order_227 days=210}
+                      
+					
 		}
-
-		bypass = {
-			
+	}
+	focus = {
+		id = SOV_winter_offensive
+		icon = GFX_focus_attack_germany
+		relative_position_id = SOV_great_figher
+		mutually_exclusive = { focus = SOV_winter_defensive }
+		x = -1
+		y = 1
+		prerequisite = { focus = SOV_great_figher }
+		cost = 2
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
 		}
 		
 		completion_reward = {
 		 
-			 add_timed_idea= {idea=Order_227 days=180}
-            
-             
-                         
+			 add_timed_idea= {idea=SOV_winter_offensive days=45}
+                      
 					
+		}
+	}
+	focus = {
+		id = SOV_winter_defensive
+		icon = GFX_focus_chi_army_reform
+		relative_position_id = SOV_great_figher
+		mutually_exclusive = { focus = SOV_winter_offensive }
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_great_figher }
+		cost = 2
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+		
+		completion_reward = {
+		hidden_effect={
+							if={
+							limit={NOT={has_tech=mass_assault}}
+							
+							division_template = {
+							name = "Winterskaya Diviziya"			# Rifle Division
+							division_names_group = SOV_MEC_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry= { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
+								
+							}
+							support = {
+								anti_air = { x = 0 y = 0 } 		
+								engineer = { x = 0 y = 1 } 
+								artillery = { x = 0 y = 2 } 
+								
+							}
+							}}
+							else={
+							division_template = {
+							name = "Winterskaya Diviziya"			# Rifle Division
+							division_names_group = SOV_MEC_01
+
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry= { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
+								cavalry = { x = 2 y = 0 }
+								cavalry = { x = 2 y = 1 }
+							}
+							support = {
+								anti_air = { x = 0 y = 0 } 		
+								engineer = { x = 0 y = 1 } 
+								artillery = { x = 0 y = 2 } 
+								
+							}
+							}
+							}
+				249 = {
+					for_loop_effect = {
+					end = 25				
+					create_unit = {
+						division = "name = \"Winterskaya Diviziya\" division_template = \"Winterskaya Diviziya\" start_experience_factor = 0.3" 
+						owner = SOV
+						}
+					}}
+			}	
+		custom_effect_tooltip="25 20w Infantry Divisions will spawn in Kazan "
+		add_timed_idea= {idea=SOV_winter_defensive days=60}
+		
+		
+		
 		}
 	}
      focus = {
 		id = SOV_great_patriotic_general
 		icon = GFX_anti_communism
+		relative_position_id = SOV_great_figher
+		prerequisite = { focus = SOV_winter_defensive focus = SOV_winter_offensive }
+		x = -2
+		y = 2
 		
-		x = 10
-		y = 6
-		prerequisite = { focus = SOV_great_figher }
 		cost = 12
 		ai_will_do = {
 			factor = 10
@@ -235,9 +313,10 @@ focus = {
 		id = SOV_great_industry
 		icon = GFX_goal_wheat
 		
-		x = 14
-		y = 6
-		prerequisite = { focus = SOV_great_figher }
+		relative_position_id = SOV_great_figher
+		x = 2
+		y = 2
+		prerequisite = { focus = SOV_winter_defensive focus = SOV_winter_offensive }
 		cost =10
 		ai_will_do = {
 			factor = 10
@@ -270,10 +349,10 @@ focus = {
 	focus = {
 		id = SOV_modifiers
 		icon = GFX_Goal_Great_Purge2
-		
-		x = 12
-		y = 6
-		prerequisite = { focus = SOV_great_figher }
+		relative_position_id = SOV_great_figher
+		x = 0
+		y = 2
+		prerequisite = { focus = SOV_winter_defensive focus = SOV_winter_offensive }
 		cost = 10
 		ai_will_do = {
 			factor = 10

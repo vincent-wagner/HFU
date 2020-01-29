@@ -204,6 +204,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience=150
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.5
@@ -231,19 +232,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = air_defense_focus_bypass_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 0
-						}
-					}
-				}
-			}
-		}
+		
 
 		complete_tooltip = {
 			air_experience = 25
@@ -266,206 +255,61 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							123 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-							125 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-							127 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-						}
-					}
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = anti_air_building
-								size > 1
-							}
-							OR = {
-								region = 1
-								region = 2
-								region = 3
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}			
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						OR = {
-							123 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-							125 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-							127 = {
-								free_building_slots = {
-									building = anti_air_building
-									size > 1
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}
-						OR = {
-							region = 1
-							region = 2
-							region = 3
-						}
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}
-						OR = {
-							region = 1
-							region = 2
-							region = 3
-						}						
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = anti_air_building
-							size > 1
-						}
-						OR = {
-							region = 1
-							region = 2
-							region = 3
-						}						
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_air_defense_focus_built_2
-				}
-			}			
-			if = {
-				limit = {
-					OR = {
-						123 = {
-							free_building_slots = {
-								building = anti_air_building
-								size > 1
-							}
-						}
-						125 = {
-							free_building_slots = {
-								building = anti_air_building
-								size > 1
-							}
-						}
-						127 = {
-							free_building_slots = {
-								building = anti_air_building
-								size > 1
-							}
-						}
-					}
-				}
-				custom_effect_tooltip = air_defense_focus_tt
-				hidden_effect = {
+			
+				
 					123 = {
-						add_building_construction = {
+						set_building_level = {
 							type = anti_air_building
 							level = 5
 							instant_build = yes
 						}
 					}
 					125 = {
-						add_building_construction = {
+						set_building_level = {
 							type = anti_air_building
 							level = 5
 							instant_build = yes
 						}
 					}
 					127 = {
-						add_building_construction = {
+						set_building_level = {
 							type = anti_air_building
 							level = 5
 							instant_build = yes
 						}
 					}
-					set_country_flag = air_defense_focus_built_max
-				}
+					130 = {
+						set_building_level = {
+							type = anti_air_building
+							level = 5
+							instant_build = yes
+						}
+					}
+					132 = {
+						set_building_level = {
+							type = anti_air_building
+							level = 5
+							instant_build = yes
+						}
+					}
+					128 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 2
+							instant_build = yes
+						}
+					}
+					129 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 2
+							instant_build = yes
+						}
+					}
+				
+				
 			}
-		}
+		
 	}
 
 	focus = {
@@ -750,7 +594,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -985,7 +829,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -1028,7 +872,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1052,7 +896,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1077,7 +921,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = fighter_command_focus
-		cost = 7
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -2388,10 +2232,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_india_focus
-				}
+				
 			}
 		}
 
@@ -2399,10 +2240,10 @@ focus_tree = {
 			RAJ = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				439 = {
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 5
+						level = 4
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_india_focus_2IC
@@ -2410,16 +2251,13 @@ focus_tree = {
 			
 				
 				
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_india_focus
-				}
+				
 			}
 		 119 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 		}
@@ -2508,22 +2346,7 @@ focus_tree = {
 		completion_reward = {
 			AST = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_australia_focus_1IC
-				}
+				
 				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
@@ -2582,10 +2405,10 @@ focus_tree = {
 				}
 			}
 		120 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 		
@@ -2675,22 +2498,7 @@ focus_tree = {
 		completion_reward = {
 			NZL = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_new_zealand_focus_1IC
-				}
+				
 				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
@@ -2748,10 +2556,10 @@ focus_tree = {
 				}
 			}
 		121 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 		
@@ -3081,10 +2889,10 @@ focus_tree = {
 				}
 			}
 		123 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 		
@@ -3434,7 +3242,38 @@ focus_tree = {
 			add_ideas = ENG_prepare_for_the_inevitable_idea
 		}
 	}
+	focus = {
+		id = ENG_pressure_axis
+		
+		available = {
+		date>1941.1.1
+		}		
+		prerequisite = { focus = ENG_prepare_for_the_inevitable }
 
+		icon = GFX_goal_generic_construct_military
+
+		x = 0
+		y = 1
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				NOT = { has_dlc = "Man the Guns" }
+			}
+		}
+		relative_position_id = ENG_prepare_for_the_inevitable
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			
+			swap_ideas = {
+    remove_idea = ENG_prepare_for_the_inevitable_idea
+    add_idea = ENG_handle_the_inevitable_idea
+}
+		}
+	}
 	focus = { 
 	id = ENG_pressure_sweden
 	prerequisite = { focus = ENG_home_defence }

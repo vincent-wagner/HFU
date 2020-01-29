@@ -153,6 +153,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
+				conscription = 0.01
 			}
 		}
 		
@@ -385,7 +386,30 @@ ideas = {
 			
 			removal_cost = -1
 		}
+		ENG_handle_the_inevitable_idea = {
 
+			name = ENG_prepare_for_the_inevitable
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_air_base_factor = 0.35
+				production_speed_infrastructure_factor = 0.35
+				industrial_capacity_factory = 0.05
+				
+			}
+
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+		}
 
 		
 		ENG_service_overseas_idea = {
@@ -1566,10 +1590,12 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { medium_tank_manufacturer }
-			
-			modifier = {
+			equipment_bonus = {
+				armor = {
+					 reliability = 0.05 soft_attack = 0.1 				
 			}
+			}
+			
 		}
 	}
 	

@@ -7,7 +7,7 @@ state={
 		chromium=20 # was: 28
 	}
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = SOV
@@ -15,7 +15,7 @@ state={
 			957 15
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
 			dockyard = 1
 			arms_factory = 5
 			air_base = 5

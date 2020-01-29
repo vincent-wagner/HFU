@@ -1848,14 +1848,27 @@ available = {
 		prerequisite = { focus = GER_ussr_war_goal }
 		icon = GFX_focus_ger_reichskommisariats
 		available = { 
-			Date > 1942.5.1
+			Date > 1942.6.1
 			NOT={has_idea=GER_barbarossa}
+			count_triggers={
+			amount=4
+			14= {is_controlled_by_ROOT_or_ally=no}
+			30= {is_controlled_by_ROOT_or_ally=no}
+			16= {is_controlled_by_ROOT_or_ally=no}
+			15= {is_controlled_by_ROOT_or_ally=no}
+			6= {is_controlled_by_ROOT_or_ally=no}
+			29= {is_controlled_by_ROOT_or_ally=no}
+			35= {is_controlled_by_ROOT_or_ally=no}
+			36= {is_controlled_by_ROOT_or_ally=no}
+			7= {is_controlled_by_ROOT_or_ally=no}
+			785= {is_controlled_by_ROOT_or_ally=no}
+			}
 		}
-		allow_branch={always=no}
+		#allow_branch={always=no}
 		x = 16
 		y = 5
 		
-		cost = 1
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1864,25 +1877,25 @@ available = {
 		completion_reward = {
 			
 			GER = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 					}
 					  hidden_effect={  ROM = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 					}
 						HUN = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 					}
 						BUL = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 					}
 			            FIN = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 					}
 			            ITA = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 					}
 			            SPR = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 					}}
 					custom_effect_tooltip = GER_barbarossa_others_text
 			

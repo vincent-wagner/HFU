@@ -1830,7 +1830,9 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		max_planning = 0.1
-
+		category_army = {
+			soft_attack = 0.07
+		}
 		enable_tactic = tactic_overwhelming_fire
 		
 		path = {
@@ -2012,12 +2014,12 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		land_reinforce_rate = 0.02
+		land_reinforce_rate = 0.15
 		category_all_infantry = {
-			max_organisation = 5
+			max_organisation = 7
 		}
 		category_tanks = {
-			max_organisation = 3
+			max_organisation = 7
 		}
 
 		doctrine = yes	
@@ -2291,7 +2293,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		land_reinforce_rate = 0.02
+		land_reinforce_rate = 0.15
 		
 		recon = { 
 			recon = 1 
