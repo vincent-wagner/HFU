@@ -13,6 +13,60 @@ focus_tree = {
 	
 	default = no
 
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = ENG_southern_thrust
+		icon = GFX_focus_ENG_attack_iran
+		prerequisite = { focus = ENG_military_training_act }
+		
+		x = 35
+		y = 4
+		
+		cost = 0.1
+
+	available = {
+				date > 1940.6.1
+				country_exists = PER
+							}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war_with = GER
+				factor = 0
+			}
+			modifier = {
+				AND = {
+					has_war_with = ENG
+					surrender_progress > 0.3
+				}
+				factor = 0
+			}
+			modifier = {
+				has_war_with = RAJ
+				factor = 5
+			}
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+				SOV = { country_event = { id = iran.2}} 
+			   
+			ENG = { country_event = { id = iran.3 } }
+		}
+	}
+	
+	
+	
+	
+	
 	focus = {
 		id = crypto_bomb_focus
 		available = {

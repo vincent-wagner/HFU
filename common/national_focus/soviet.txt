@@ -1334,7 +1334,8 @@ focus = {
 		cost = 0.1
 
 	available = {
-				date > 1941.6.1
+				date > 1940.6.1
+				country_exists = PER
 							}
 
 		ai_will_do = {
