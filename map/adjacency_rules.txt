@@ -80,7 +80,7 @@ adjacency_rule
 	{
 		army = yes
 		navy = no
-		submarine = no
+		submarine = yes
 		trade = yes
 	}
 	
@@ -128,7 +128,7 @@ adjacency_rule
 	{
 		army = yes
 		navy = no
-		submarine = no
+		submarine = yes
 		trade = yes
 	}
 	
