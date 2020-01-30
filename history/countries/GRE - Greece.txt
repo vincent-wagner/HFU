@@ -205,13 +205,13 @@ create_country_leader = {
 
 
 create_corps_commander = {
-	name = "Markos Drakos"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { hill_fighter }
-	skill = 3
-	attack_skill = 1
+	name = "BZK"
+	portrait_path = "gfx/leaders/BZK/BZK.tga"
+	traits = { hill_fighter panzer_leader organizer commando harsh_leader }
+	skill = 6
+	attack_skill = 7
 	defense_skill = 3
-	planning_skill = 3
+	planning_skill = 4
 	logistics_skill = 3
 }
 
