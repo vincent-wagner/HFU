@@ -15,7 +15,7 @@ ideas = {
 			picture = generic_navy_bonus
 			
 			modifier = {
-				industrial_capacity_dockyard = -10
+				industrial_capacity_dockyard = -1
 				industry_air_damage_factor=-0.9
 				consumer_goods_factor=0.05
 			}
