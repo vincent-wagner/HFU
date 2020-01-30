@@ -25,6 +25,17 @@ focus_tree = {
 	
 		completion_reward = {
 		
+		hidden_effect = { 
+				anti_cross_faction_trade_all = yes
+			
+			SPR = {
+			add_opinion_modifier = {
+    target = SOV
+    modifier = anti_cross_faction_trade
+}
+			}
+		}
+		
 		VEN = { set_rule = { can_join_factions = no }}
 
 		if = {
