@@ -928,7 +928,7 @@ focus = {
 			add_political_power = 120
 			add_resource = {
 				type = rubber
-				amount = 45
+				amount = 50
 				state = 404
 			}
 		}
