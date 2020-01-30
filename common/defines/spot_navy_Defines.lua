@@ -99,6 +99,7 @@ NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 15.0		-- each ship in c
 NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0.4     -- scales impact of convoy route size (0 to turn off)
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.07						-- supremacy of a ship is calculated using its IC, manpower and a base define
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 15.0
+NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
 
 ---Air
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
@@ -106,5 +107,4 @@ NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.5
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.5		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 3.5        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
-SNDefines.NAir.UPPLY_NEED_FACTOR = 0
 	
