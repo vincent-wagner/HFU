@@ -1581,11 +1581,10 @@ ideas = {
 				air_equipment = 0.15
 			}
 			equipment_bonus = {
-				
-                    heavy_fighter_equipment = {
-					
-					build_cost_ic = -0.20 
-				}}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.20
+				}
+			}
 
 			cost = 100
 			
@@ -1597,10 +1596,15 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
-							cost = 100
+			cost = 100
 		
 			research_bonus = {
 				air_equipment = 0.15
+			}
+			equipment_bonus = {
+				CAS_equipment = {
+					air_ground_attack = 0.1 reliability = 0.1
+				}
 			}
 			
 			traits = { naval_aircraft_manufacturer }

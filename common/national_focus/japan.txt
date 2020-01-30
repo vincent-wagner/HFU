@@ -1099,7 +1099,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 completion_reward = {
-			add_political_power = 35
+			add_political_power = 50
 				MAN = {	
 				MAN_low_legitimacy_level_down = yes
 		}

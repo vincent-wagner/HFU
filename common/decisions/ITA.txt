@@ -23,6 +23,16 @@ ITA_annex_bul = {
 				}
 
 			complete_effect = {
+				BUL = {
+					every_owned_state={
+						limit={is_core_of=PREV}
+						add_state_modifier = {
+							modifier = {
+								local_building_slots_factor = 0.5
+							}
+						}
+					}
+				}
 				ITA = { 
 					annex_country = {
 						target = BUL

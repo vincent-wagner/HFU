@@ -48,6 +48,16 @@ JAP_annex_siam = {
 			fire_only_once = yes
 	
 			complete_effect = {
+				SIA = {
+					every_owned_state={
+						limit={is_core_of=PREV}
+						add_state_modifier = {
+							modifier = {
+								local_building_slots_factor = 0.5
+							}
+						}
+					}
+				}
 				JAP = { 
 					annex_country = {
 						target = SIA
@@ -98,6 +108,16 @@ JAP_annex_manchukuo = {
 				}
 
 			complete_effect = {
+				MAN = {
+					every_owned_state={
+						limit={is_core_of=PREV}
+						add_state_modifier = {
+							modifier = {
+								local_building_slots_factor = 0.5
+							}
+						}
+					}
+				}
 					if = { 
 					limit = { 
 					MAN = { AND = { NOT = { has_completed_focus = MAN_obedience }}}
