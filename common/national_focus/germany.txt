@@ -1527,12 +1527,12 @@ random_owned_controlled_state = {
 				}
 				SOV = {
 					country_event = { id = germany.78 days = 1 }
-							add_ideas = GER_air_innovations_2_idea
+							
 
 							add_tech_bonus = {
 				name = radar_tech_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 3
 				category = radar_tech
 			}
 			

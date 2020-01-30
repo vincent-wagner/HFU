@@ -1655,7 +1655,7 @@ leader_traits = {
 		sprite = 14
 		
 		equipment_bonus = {
-			armor = {
+			medium_tank_equipment = {
 				instant = yes
 				maximum_speed = 0.10
 			}

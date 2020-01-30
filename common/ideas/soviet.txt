@@ -326,7 +326,7 @@ ideas = {
 				research_speed_factor = 0.15
 				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.2
 			}
 			
 			rule = {
@@ -380,11 +380,11 @@ ideas = {
 			
 			modifier = {
 				defence = -0.1
-				army_org_factor = -0.1
+				army_attack_factor = -0.1
 			}
 			equipment_bonus = {
 				fighter_equipment = {
-					air_attack = -0.25 instant = yes
+					air_attack = -0.1 instant = yes
 				}
 			}
 		}
@@ -931,7 +931,7 @@ ideas = {
 			}
 			
 
-			traits = { army_chief_planning_3 }
+			traits = { army_chief_organizational_2 }
 			
 			ai_will_do = {
 				factor = 1
