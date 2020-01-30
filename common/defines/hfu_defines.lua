@@ -15,8 +15,6 @@ NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
-NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12
-NDefines.NDiplomacy.MIN_TRUST_VALUE = -500 							-- WAS -100 | this is added to support embargoing nations to prevent trade memes from players in an opposing faction | Min opinion value cap.
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 ---------------------------------------------------------------
@@ -34,6 +32,9 @@ NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0						-- When you pass once you 
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 1				-- WAS 0.05 | Each army unit owned by the source country contributes this amount of volunteers to the limit.
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0				-- WAS 30 | This many divisons are required for the country to be able to send volunteers.
 NDefines.NDiplomacy.FRONT_IS_DANGEROUS = 0
+NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12
+NDefines.NDiplomacy.MIN_TRUST_VALUE = -500 							-- WAS -100 | this is added to support embargoing nations to prevent trade memes from players in an opposing faction | Min opinion value cap.
+
 ---------------------------------------------------------------
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST 
 ---------------------------------------------------------------
