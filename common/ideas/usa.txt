@@ -172,9 +172,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				join_faction_tension = -0.25
-				send_volunteers_tension = -0.35
-				guarantee_tension = -0.2
 				mobilization_laws_cost_factor = 1
 				economy_cost_factor = 1
 			}
@@ -193,7 +190,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				join_faction_tension = 0.25
 				send_volunteers_tension = 0.5
 				guarantee_tension = 0.5
 			}
@@ -213,10 +209,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				lend_lease_tension = -1
-				join_faction_tension = -0.25
-				send_volunteers_tension = -0.35
-				guarantee_tension = -0.2
 				mobilization_laws_cost_factor = 1
 				economy_cost_factor = 1
 			}
@@ -235,8 +227,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				lend_lease_tension = -1
-				join_faction_tension = -1
+
 			}
 		}
 		USA_lend_lease_act_dummy = { #dummy version to show effects
