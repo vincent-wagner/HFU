@@ -140,7 +140,6 @@ ideas = {
 						has_dlc = "Together for Victory"
 					}
 					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
 				}				
 				if = {
 					limit = {
@@ -148,7 +147,6 @@ ideas = {
 						has_dlc = "Together for Victory"
 					}
 					has_completed_focus = CAN_commit_to_the_war
-					has_completed_focus = CAN_if_day
 				}
 				
 

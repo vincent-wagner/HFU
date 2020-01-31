@@ -163,7 +163,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription_factor = 0.1
+				conscription_factor = 0.15
 			}
 		}
 
@@ -223,6 +223,7 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.25
 				foreign_subversive_activites = -0.50
+				conscription = 0.025
 			}
 		}
 
@@ -247,7 +248,7 @@ ideas = {
 			modifier = {
 				send_volunteer_divisions_required = -1
 				send_volunteer_size = 1
-				mobilization_speed = 0.5
+				mobilization_speed = 1
 			}
 		}
 
