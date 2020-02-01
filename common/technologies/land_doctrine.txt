@@ -2478,7 +2478,7 @@ technologies = {
 		}
 		category_line_artillery = {
 		
-			max_strength = 1
+			max_strength = 5
 		
 		}
 
@@ -2590,7 +2590,7 @@ technologies = {
 		category_all_infantry = {
 			default_morale = 0.05
 		}
-		land_reinforce_rate = 0.05
+		land_reinforce_rate = 0.1
 		enable_tactic = tactic_elastic_defense
 		enable_tactic = tactic_default_elastic_defense
 		
