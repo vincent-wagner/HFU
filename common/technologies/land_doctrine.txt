@@ -710,7 +710,7 @@ technologies = {
 		
 		doctrine = yes	
 		research_cost = 4.5
-		
+		start_year = 1941
 		categories = {
 			land_doctrine
 			cat_mobile_warfare
@@ -755,6 +755,7 @@ technologies = {
 
 		
 		doctrine = yes	
+		start_year = 1942
 		research_cost = 4.5
 		
 		categories = {
@@ -783,12 +784,11 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		#Increased Partisan effect on your land occupied by others
-		partisan_effect = 0.1 #10% more partisan effects
 		
 		conscription = 0.005
-		enable_tactic = tactic_guerrilla_tactics
-		doctrine = yes	
+		#enable_tactic = tactic_guerrilla_tactics
+		doctrine = yes
+		start_year = 1943	
 		research_cost = 4.5
 		
 		categories = {
