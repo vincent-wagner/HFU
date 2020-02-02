@@ -1027,7 +1027,13 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 150
+			air_experience = 250
+			add_tech_bonus = {
+				name = coastal_command_focus
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
+			}
 			set_rule = {
 				can_generate_female_aces = yes
 			}
@@ -1140,7 +1146,7 @@ focus = {
 		available_if_capitulated = yes	
 
 		completion_reward = {
-			air_experience = 150
+			air_experience = 250
 
 			add_tech_bonus = {
 				name = air_bonus
@@ -1150,13 +1156,7 @@ focus = {
 				
 			}
 		
-		add_tech_bonus = {
-				name = coastal_command_focus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-				category = cas_bomber
-			}
+		
 		
 		}
 	}
