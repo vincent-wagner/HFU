@@ -246,6 +246,15 @@ on_actions = {
 	on_declare_war = {
 		effect = {
 			if = {
+				limit= {
+					AND = {tag=GER FROM={tag=SOV}}
+					SOV = { has_opinion_modifier = MR_pact}
+				}
+				GER = {
+					news_event = {id = news.153} 
+				}
+			}
+			if = {
 				limit = {
 					FROM = {
 						OR = {
@@ -465,7 +474,8 @@ on_actions = {
 				}
 				set_global_flag = achievement_france_surrender
 				set_global_flag = fall_of_france
-				GER = { country_event = {id=france.14 days=10} }
+				GER = { country_event = {id=france.14 days=3} }
+				FRA = { country_event = {id=france.31 days=20} }
 			}
 			if = {
 				limit = {
