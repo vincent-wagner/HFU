@@ -28,7 +28,16 @@ ideas = {
 			
 
 		}
-
+		ENG_Tank_upgrade_cost={
+		allowed = {
+				original_tag = ENG
+			}
+			picture = king_edward
+			modifier = {
+				land_equipment_upgrade_xp_cost=-0.5				
+			}
+			removal_cost = -1
+			}
 		ENG_king_edward = {
 			
 			allowed = {
@@ -1190,7 +1199,7 @@ ideas = {
 			
 
 			
-			traits = { army_logistics_2 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 2

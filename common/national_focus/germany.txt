@@ -1778,6 +1778,11 @@ available = {
   			 		level = 10}
 					}}
 				custom_effect_tooltip = GER_barbarossa_others_text
+				ENG={
+					remove_ideas=stiff_upper_lip
+					add_timed_idea={idea=stiff_upper_lip days=150}
+				
+				}	
 			
 			
 			
@@ -1820,25 +1825,25 @@ available = {
 		completion_reward = {
 			
 			GER = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_blau days = 70 }
 					}
 					  hidden_effect={  ROM = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_blau days = 70 }
 					}
 						HUN = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_blau days = 70 }
 					}
 						BUL = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_blau days = 70 }
 					}
 			            FIN = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_blau days = 70 }
 					}
 			            ITA = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_blau days = 70 }
 					}
 			            SPR = { 
-						add_timed_idea = { idea = GER_blau days = 100 }
+						add_timed_idea = { idea = GER_blau days = 70 }
 					}}
 					custom_effect_tooltip = GER_barbarossa_others_text
 			
