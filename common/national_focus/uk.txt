@@ -241,6 +241,7 @@ focus_tree = {
 				uses = 1
 				category = motorized_equipment
 			}
+			custom_effect_tooltip = "Applies on Mechanized"
 		}
 	}
 	focus = {
@@ -258,7 +259,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience=150
+			army_experience=200
+			add_ideas=ENG_Tank_upgrade_cost
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.5
