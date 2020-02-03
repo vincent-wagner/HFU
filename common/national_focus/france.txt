@@ -1807,11 +1807,11 @@ focus = {
 	y = 1
 	available_if_capitulated = yes
 	available = {
-				date > 1941.1.1
-				controls_state = 448
-				controls_state = 665
-				controls_state = 458
-		}
+		date > 1941.1.1
+		448 = { owner = { is_in_faction_with = ROOT }}
+		665 = { owner = { is_in_faction_with = ROOT }}
+		458 = { owner = { is_in_faction_with = ROOT }}
+	}
 		
 		bypass = {
 					448 = {

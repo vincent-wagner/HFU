@@ -2588,7 +2588,7 @@ focus_tree = {
 		x = 24
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -2699,7 +2699,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = CAN_rcaf_station_borden
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2718,42 +2718,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			add_tech_bonus = {
-				name = CAN_the_pacific_coast_air_defence_radar_system
-				bonus = 1.0
-				uses = 1
-				category = radar_tech
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar1
-				}
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar2
-				}
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar3
-				}
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 
 		completion_reward = {
@@ -2769,7 +2733,7 @@ focus_tree = {
 				464 = {
 					add_building_construction = {
 						type = radar_station
-						level = 1
+						level = 4
 						instant_build = yes
 					}
 					set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar1
@@ -2778,20 +2742,12 @@ focus_tree = {
 				739 = {
 					add_building_construction = {
 						type = radar_station
-						level = 1
+						level = 4
 						instant_build = yes
 					}
 					set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar2
 				}
 
-				464 = {
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar3
-				}
 				else = {
 					set_technology = {
 						radio_detection = 1
@@ -2799,7 +2755,7 @@ focus_tree = {
 					464 = {
 						add_building_construction = {
 							type = radar_station
-							level = 1
+							level = 4
 							instant_build = yes
 						}
 						set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar1
@@ -2808,7 +2764,7 @@ focus_tree = {
 					739 = {
 						add_building_construction = {
 							type = radar_station
-							level = 1
+							level = 4
 							instant_build = yes
 						}
 						set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar2

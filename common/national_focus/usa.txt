@@ -72,7 +72,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = democratic
 		}
 		
 		bypass = {
@@ -1342,10 +1341,6 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = USA_war_plan_orange }
 		available = {
-			JAP = {
-				exists = yes
-				NOT = { has_government = ROOT }
-			}
 		}
 		will_lead_to_war_with = JAP
 		x = 1
@@ -2284,8 +2279,9 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_advanced_mahanian_doctrine
+				uses = 2
 				bonus = 1.0
-				category = cat_base_strike
+				category = naval_doctrine
 			}
 		}
 	}
@@ -2316,29 +2312,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			638 = {
+			721 = {
 				add_building_construction = {
 					type = naval_base
-					province = 12140
-					level = 2
+					province = 12190
+					level = 20
 					instant_build = yes
-				}
-			}
-			if = {
-				limit = {
-					327 = {
-						CONTROLLER = {
-							is_subject_of = ROOT
-						}
-					}
-				}
-				327 = {
-					add_building_construction = {
-						type = naval_base
-						province = 10265
-						level = 2
-						instant_build = yes
-					}
 				}
 			}
 		}

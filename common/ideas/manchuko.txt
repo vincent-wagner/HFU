@@ -317,13 +317,6 @@ ideas = {
 			allowed = {
 				original_tag = MAN
 			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Waking the Tiger" }
-					has_completed_focus = MAN_invite_japanese_investors
-				}
-			}
 			
 			traits = { captain_of_industry }
 		}
@@ -575,7 +568,9 @@ ideas = {
 				has_dlc = "Waking the Tiger"
 				original_tag = MAN
 			}
-
+			
+			cost = 50
+			
 			traits = {
 				construction_company
 			}

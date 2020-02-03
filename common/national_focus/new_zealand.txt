@@ -820,7 +820,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 284 
 		}
 
 		bypass = {
@@ -839,7 +838,7 @@ focus_tree = {
 			284 = {
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 20
 				}
 			}
 		}
@@ -860,7 +859,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 284
 		}
 
 		bypass = {
@@ -879,7 +877,7 @@ focus_tree = {
 			284 = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 20
 				}
 			}
 		}
@@ -1714,8 +1712,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 284
-			controls_state = 723
 		}
 
 		bypass = {
@@ -1987,8 +1983,6 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = { has_government = ROOT }
-			is_in_tech_sharing_group = commonwealth_research
 		}
 
 		bypass = {

@@ -9,7 +9,6 @@ if = {
 	}
 }
 add_ideas = {
-SPR_memories
 SPR_no_armada
 }
 set_country_flag=no_naval_base
