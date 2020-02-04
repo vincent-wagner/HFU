@@ -172,7 +172,6 @@ focus_tree = {
 
 		available = {
 			NOT = { has_idea = MAN_banditry }
-			NOT = { has_war_with = JAP }
 		}
 
 		bypass = {
@@ -562,7 +561,6 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_war_with = JAP }
 		}
 
 		bypass = {
@@ -756,7 +754,6 @@ focus_tree = {
 		}
 
 		available = {
-			716 = { is_fully_controlled_by = ROOT }
 		}
 
 		bypass = {
@@ -927,7 +924,6 @@ focus_tree = {
 		}
 
 		available = {
-			716 = { is_fully_controlled_by = ROOT }
 		}
 
 		bypass = {

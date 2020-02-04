@@ -334,8 +334,6 @@ focus_tree = {
 		}
 
 		available = {
-			605={is_controlled_by_ROOT_or_ally = yes}
-			325={is_controlled_by_ROOT_or_ally = yes}
 			
 		}
 

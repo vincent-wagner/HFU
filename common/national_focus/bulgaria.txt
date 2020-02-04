@@ -95,9 +95,6 @@ focus_tree = {
 			BUL {
 					fascism > 0.5
 			}
-			OR = {
-				has_government = fascism
-			}
 		}
 		x = 3
 		y = 1
@@ -651,10 +648,6 @@ focus_tree = {
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = BUL_Monarch_Speech }
 		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
 		}
 		x = 5
 		y = 1
@@ -858,9 +851,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			OR = {
-				has_government = fascism
-			}
 		}
 
 		ai_will_do = {
@@ -934,9 +924,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			OR = {
-				has_government = fascism
-			}
 		}
 
 		ai_will_do = {

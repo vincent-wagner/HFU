@@ -76,7 +76,6 @@ focus_tree = {
 
 		available = {
 			threat > 0.1
-			is_subject = yes
 		}
 
 		bypass = {
@@ -1651,7 +1650,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 429
 		}
 
 		bypass = {
@@ -1695,7 +1693,6 @@ focus_tree = {
 		}
 
 		available = {
-			controls_state = 432
 		}
 
 		bypass = {
@@ -2410,9 +2407,8 @@ focus_tree = {
 
 		available = {
 			AND = {
-				compare_autonomy_progress_ratio > 0.4
+				compare_autonomy_progress_ratio > 0.15
 				compare_autonomy_state > autonomy_puppet
-				is_subject_of = ENG
 			}
 		}
 
@@ -2510,9 +2506,8 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_progress_ratio > 0.4
+			compare_autonomy_progress_ratio > 0.25
 			compare_autonomy_state > autonomy_puppet
-			is_subject_of = ENG
 		}
 
 		bypass = {
@@ -2609,9 +2604,8 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_progress_ratio > 0.4
+			compare_autonomy_progress_ratio > 0.25
 			compare_autonomy_state > autonomy_puppet
-			is_subject_of = ENG
 		}
 
 		bypass = {

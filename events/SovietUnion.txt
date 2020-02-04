@@ -546,7 +546,6 @@ country_event ={
 	fire_only_once = yes 
 	is_triggered_only = yes
 	
-	mean_time_to_happen = {days = 1}
 	immediate = {
 		SOV = {
 			country_event = { id = soviet.1488 days = 10 } 
@@ -598,29 +597,6 @@ create_corps_commander = {
 }		
 }
 
-
-#4/4 purges
-country_event = {
-	id = soviet.53
-	title = soviet.53.t
-	desc = soviet.53.d
-	picture = GFX_report_event_stalin_01
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = SOV
-		has_country_flag = SOV_purged_4
-	}
-
-	mean_time_to_happen = { days = 2 }
-
-	option = {
-		name = soviet.53.a
-		remove_ideas = trotskyite_plot_purged
-	}
-
-}
 
    country_event = {
    id = soviet.140

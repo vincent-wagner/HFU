@@ -195,7 +195,6 @@ shared_focus = {
 	}
 
 	available = {
-		NOT = { has_idea = CHI_incompetent_officers }
 	}
 
 	bypass = {
@@ -467,7 +466,6 @@ shared_focus = {
 	}
 
 	available = {
-		capital_scope = { is_fully_controlled_by = ROOT }
 		has_tech = motorised_infantry
 	}
 
@@ -1050,26 +1048,6 @@ shared_focus = {
 	}
 
 	available = {
-		all_other_country = { NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route } }
-		
-		325 = { #Yunnan
-			CONTROLLER = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-		671 = { #Tonkin
-			CONTROLLER = {
-				NOT = { has_war_with = ROOT }
-				OR = {
-					original_tag = FRA
-					is_subject_of = FRA
-				}
-			}
-		}
 	}
 
 	bypass = {
@@ -1354,8 +1332,6 @@ shared_focus = {
 	}
 
 	available = {
-		is_subject = no
-		NOT = { has_government = fascism }
 	}
 
 	bypass = {
@@ -1492,35 +1468,6 @@ shared_focus = {
 	}
 
 	available = {
-		all_other_country = { NOT = { has_completed_focus = CHI_burma_road } }
-		
-		325 = { #Yunnan
-			CONTROLLER = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-		288 = { #Burma
-			CONTROLLER = {
-				NOT = { has_war_with = ROOT }
-				OR = {
-					original_tag = ENG
-					is_subject_of = ENG
-				}				
-			}
-		}
-		640 = { #Mandalay
-			CONTROLLER = {
-				NOT = { has_war_with = ROOT }
-				OR = {
-					original_tag = ENG
-					is_subject_of = ENG
-				}				
-			}
-		}
 	}
 
 	bypass = {
@@ -1575,39 +1522,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			is_subject = no
-			is_subject_of = ENG
-		}
-		all_other_country = { NOT = { has_completed_focus = CHI_ledo_road } }
-		
-		325 = { #Yunnan
-			CONTROLLER = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-		432 = { #Assam
-			CONTROLLER = {
-				NOT = { has_war_with = ROOT }
-				OR = {
-					original_tag = ENG
-					is_subject_of = ENG
-				}				
-			}
-		}
-		640 = { #Mandalay
-			CONTROLLER = {
-				NOT = { has_war_with = ROOT }
-				OR = {
-					original_tag = ENG
-					is_subject_of = ENG
-				}				
-			}
-		}
 	}
 
 	bypass = {
@@ -1652,16 +1566,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			AND = {
-				has_completed_focus = CHI_british_cooperation
-	
-			}
-			AND = {
-				has_completed_focus = CHI_mission_to_the_us
-	
-			}
-		}
 	}
 
 	bypass = {
@@ -1720,17 +1624,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			AND = {
-				has_completed_focus = CHI_british_cooperation
-	
-			}
-			AND = {
-				has_completed_focus = CHI_mission_to_the_us
-	
-			}
-		}
-		is_subject = no
 	}
 
 	bypass = {
@@ -1763,7 +1656,6 @@ shared_focus = {
 	}
 
 	available = {
-		has_idea = CHI_camco_1
 	}
 
 	bypass = {
@@ -1795,7 +1687,6 @@ shared_focus = {
 	}
 
 	available = {
-		has_idea = CHI_camco_2
 	}
 
 	bypass = {
@@ -1841,39 +1732,6 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			is_subject = no
-			is_subject_of = ENG
-		}
-		all_other_country = { NOT = { has_completed_focus = CHI_the_hump } }
-		OR = {
-			AND = {
-				has_completed_focus = CHI_british_cooperation
-	
-			}
-			AND = {
-				has_completed_focus = CHI_mission_to_the_us
-	
-			}
-		}
-		601 = { #Xikang
-			CONTROLLER = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-		434 = { #Arunachal Pradesh
-			CONTROLLER = {
-				NOT = { has_war_with = ROOT }
-				OR = {
-					original_tag = ENG
-					is_subject_of = ENG
-				}				
-			}
-		}
 	}
 
 	bypass = {
@@ -1915,7 +1773,6 @@ shared_focus = {
 	}
 
 	available = {
-		NOT = { has_tech = fighter3 }
 	}
 
 	bypass = {
@@ -1989,8 +1846,6 @@ shared_focus = {
 	}
 
 	available = {
-		
-		is_subject = no
 	}
 
 	bypass = {
@@ -2028,8 +1883,6 @@ shared_focus = {
 	}
 
 	available = {
-		
-		is_subject = no
 	}
 
 	bypass = {
@@ -2385,8 +2238,6 @@ shared_focus = {
 	}
 
 	available = {
-		NOT = { has_wargoal_against = JAP }
-		NOT = { has_war_with = JAP }
 	}
 
 	bypass = {

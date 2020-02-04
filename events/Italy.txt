@@ -182,50 +182,6 @@ country_event = {
    }
 }
 
-
- country_event = {
-   id = italy.146
-   title = italy.146.t
-   desc = italy.146.d
-   picture = GFX_mussolini_arrest
-   
-   trigger = { 
-   tag = ITA 
-  AND = {
-  any_enemy_country = { has_full_control_of_state = 448 }
-      any_enemy_country = { has_full_control_of_state = 450 }
-	     any_enemy_country = { has_full_control_of_state = 449 }
-		    any_enemy_country = { has_full_control_of_state = 115 }
-			   any_enemy_country = { has_full_control_of_state = 117 }
-			      any_enemy_country = { has_full_control_of_state = 156 }
-				     any_enemy_country = { has_full_control_of_state = 114 }
-							}
-   }
-   
-   mean_time_to_happen = { days = 1 }
-   
-   fire_only_once = yes
-
-   option = {
-   name = italy.146.a
-   
-retire_country_leader = yes
-create_country_leader = {	
-	name = "Pietro Badoglio"
-	desc = "POLITICS_PIETRO_BADOGLIO_DESC"
-	picture = "Portrait_Italy_Pietro_Badoglio.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-
-	}
-}
-
-GER = { country_event = { id = italy.147 days = 3 } }
-
-   }
-}
-
  country_event = {
    id = italy.147
    title = italy.147.t

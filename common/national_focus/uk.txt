@@ -1486,8 +1486,6 @@ focus_tree = {
 	focus = {
 		id = uk_empire_focus 
 		available = {
-			NOT = { has_government = communism }
-			num_subjects > 0
 		} 
 		icon = GFX_focus_eng_imperial_federation
 		x = 26
