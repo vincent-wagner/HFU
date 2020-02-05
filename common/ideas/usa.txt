@@ -227,7 +227,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-
+				lend_lease_tension = -1
+				join_faction_tension = -1
 			}
 		}
 		USA_lend_lease_act_dummy = { #dummy version to show effects

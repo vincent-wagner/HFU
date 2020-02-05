@@ -221,7 +221,7 @@ NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.7 
                        
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3    --Vanilla 0.3
