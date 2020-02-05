@@ -1616,8 +1616,6 @@ focus = {
 			transfer_state=781 #Niger
 			transfer_state=780 #Guinea
 			transfer_state=272 #Senegal
-			transfer_state=298 #Liberia
-			transfer_state=296 #Portuguese Guinea
 			665 = {	
 
 				add_state_modifier = {
