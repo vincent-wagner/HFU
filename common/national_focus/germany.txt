@@ -3027,8 +3027,8 @@ SPR = { country_event = spain.29 }
 			add_tech_bonus = {
 				name = ti_bonus
 				name = GER_trade_interdiction
-				bonus = 9.0
-				uses = 5
+				bonus = 2.0
+				uses = 4
 				category = naval_doctrine
 			}
 		}
