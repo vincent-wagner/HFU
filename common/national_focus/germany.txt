@@ -2871,35 +2871,6 @@ SPR = { country_event = spain.29 }
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			navy_experience = 50
-			every_state = {
-				limit = { has_state_flag = GER_plan_z_dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = bc_bonus
-				bonus = 1.0
-				uses = 1
-				category = bc_tech
-			}
-			add_tech_bonus = {
-				name = bb_bonus
-				bonus = 1.0
-				uses = 1
-				category = bb_tech
-				category = shbb_tech
-			}
-			add_tech_bonus = {
-				name = cv_bonus
-				bonus = 1.0
-				uses = 1
-				category = cv_tech
-			}
 		}
 
 		completion_reward = {
@@ -2920,19 +2891,6 @@ SPR = { country_event = spain.29 }
 					instant_build = yes
 				}
 				set_state_flag = GER_plan_z_dockyards
-			}
-			add_tech_bonus = {
-				name = bc_bonus
-				bonus = 1.0
-				uses = 1
-				category = bc_tech
-			}
-			add_tech_bonus = {
-				name = bb_bonus
-				bonus = 1.0
-				uses = 1
-				category = bb_tech
-				category = shbb_tech
 			}
 			add_tech_bonus = {
 				name = cv_bonus
@@ -3001,7 +2959,7 @@ SPR = { country_event = spain.29 }
 		icon = GFX_focus_GER_sub_plan
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_plan_z }
-		available={date>1940.1.1}
+		available={date>1941.1.1}
 		x = 1
 		y = 2
 		relative_position_id = GER_naval_effort
@@ -3034,19 +2992,19 @@ SPR = { country_event = spain.29 }
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 1
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = GER_u_boat_effort_2dockyards
 			}
-		set_technology={ improved_submarine=1}
+			set_technology={ improved_submarine=1}
 			
 		}
 	}
@@ -3071,7 +3029,7 @@ SPR = { country_event = spain.29 }
 				name = GER_trade_interdiction
 				bonus = 9.0
 				uses = 5
-				category = trade_interdiction_tree
+				category = naval_doctrine
 			}
 		}
 	}
