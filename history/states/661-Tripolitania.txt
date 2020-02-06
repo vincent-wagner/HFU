@@ -5,12 +5,12 @@ state={
 	
 	state_category = wasteland
 	resources={
-		rubber = 30
+		rubber = 45
 	}
 	history={
 		owner = ITA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 		}
 	}
 	

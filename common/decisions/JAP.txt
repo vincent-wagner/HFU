@@ -732,46 +732,6 @@ foreign_politics = {
 
 #Category allowed for JAP
 #Not visible if puppet
-JAP_southern_expansion = {
-
-	JAP_pressure_france = { 
-
-		available = {
-			16 = { NOT = { is_controlled_by = FRA } }
-			NOT = { has_war_with = FRA }
-			NOT = { is_in_faction_with = FRA }
-			custom_trigger_tooltip = {
-				tooltip = demand_indochina_focus_tt
-				OR = {
-					286 = { is_fully_controlled_by = EFR }
-					670 = { is_fully_controlled_by = EFR }
-					671 = { is_fully_controlled_by = EFR }
-				}
-			}
-		}
-
-		visible = {
-			has_completed_focus = JAP_strike_south_doctrine
-		}
-
-		fire_only_once = yes
-
-		cost = 50
-
-		complete_effect = {
-			EFR = { country_event = { id = france.1 } }
-			
-				transfer_state = 286
-				transfer_state = 670
-				transfer_state = 671		
-				transfer_state = 741
-				transfer_state = 728
-				
-		}
-
-	}
-}
-
 operations = {
 
 	#first border incident

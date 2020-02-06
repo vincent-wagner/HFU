@@ -35,162 +35,149 @@ country_event = {
 
 	option = { # Agree
 		name = france.14.a
-
-				
-				set_global_flag = achievement_france_surrender
-				set_global_flag = fall_of_france
-				add_political_power=150
-				          
-                EFR = {transfer_state = 26
-				every_state = {
-						limit = {
-							is_core_of = FRA
-							
-						}
-						add_core_of = EFR
-					}
-					
-					
-			
-					set_capital = 26
-					set_politics = {
-						ruling_party = fascism
-						elections_allowed = no }
-
-                    set_popularities = {
-                        democratic = 18
-                        fascism = 70
-                        communism = 2
-                        neutrality = 10
-                    }
-					}
-								
-				FRA = {
-					
-					set_cosmetic_tag = FRA_FREE
-			        clr_country_flag=no_naval_base
-					remove_ideas=FRA_protected_by_the_maginot_line
-					set_country_flag = free_france
-					set_capital = 539
-				    destroy_ships = {
-                    type = ship_hull_light
-                    count = all
-					}
-					destroy_ships = {
-						type = ship_hull_cruiser
-						count = all
-					}
-					destroy_ships = {
-						type = ship_hull_heavy
-                    count = all
-					}
-					destroy_ships = {
-						type = ship_hull_carrier 
-						count = all
-					}
-					destroy_ships = {
-                    type = ship_hull_submarine
-                    count = all
-					}
-				}
-				  
-					
-				
-				EFR = { 
-			
-					
-					add_ideas = EFR_neutrality_idea
-					diplomatic_relation = { country = ENG relation = non_aggression_pact }
-					diplomatic_relation = { country = USA relation = non_aggression_pact }
-					diplomatic_relation = { country = PHI relation = non_aggression_pact }
-					diplomatic_relation = { country = FRA relation = non_aggression_pact }
-					diplomatic_relation = { country = SAF relation = non_aggression_pact }
-					diplomatic_relation = { country = CAN relation = non_aggression_pact }
-					diplomatic_relation = { country = RAJ relation = non_aggression_pact }
-					diplomatic_relation = { country = AST relation = non_aggression_pact }
-					diplomatic_relation = { country = NZL relation = non_aggression_pact }
-					diplomatic_relation = { country = GER relation = non_aggression_pact }
-					}
-					
-				
-				
-				
-				
-				
-				if = { limit = { Date < 1939.11.1}
-				FRA={subtract_from_temp_variable = { resistancetemp = resistance }
+		set_global_flag = achievement_france_surrender
+		set_global_flag = fall_of_france
+		add_political_power = 150
+		EFR = {
+			transfer_state = 26
+			every_state = {
+				limit = { is_core_of = FRA }
+				add_core_of = EFR
+			}
+			set_capital = 26
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no 
+			}
+			set_popularities = {
+				democratic = 18
+				fascism = 70
+				communism = 2
+				neutrality = 10
+			}
+		}		
+		FRA = {
+			set_cosmetic_tag = FRA_FREE
+			clr_country_flag = no_naval_base
+			remove_ideas = FRA_protected_by_the_maginot_line
+			set_country_flag = free_france
+			set_capital = 539
+		    destroy_ships = {
+				type = ship_hull_light
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_cruiser
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_heavy
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_carrier 
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_submarine
+				count = all
+			}
+		}
+		EFR = { 
+			add_ideas = EFR_neutrality_idea
+			diplomatic_relation = { country = ENG relation = non_aggression_pact }
+			diplomatic_relation = { country = USA relation = non_aggression_pact }
+			diplomatic_relation = { country = PHI relation = non_aggression_pact }
+			diplomatic_relation = { country = FRA relation = non_aggression_pact }
+			diplomatic_relation = { country = SAF relation = non_aggression_pact }
+			diplomatic_relation = { country = CAN relation = non_aggression_pact }
+			diplomatic_relation = { country = RAJ relation = non_aggression_pact }
+			diplomatic_relation = { country = AST relation = non_aggression_pact }
+			diplomatic_relation = { country = NZL relation = non_aggression_pact }
+			diplomatic_relation = { country = GER relation = non_aggression_pact }
+		}	
+		if = { 
+			limit = {Date < 1939.11.1}
+			FRA={
+				subtract_from_temp_variable = { resistancetemp = resistance }
 				add_offsite_building = { type = industrial_complex level = resistancetemp }
 				add_offsite_building = { type = arms_factory level = resistancetemp }
-				}
-				ITA = { transfer_state = 735
-						transfer_state = 32
-						transfer_state = 21
-						transfer_state = 1
-						transfer_state = 458
-						transfer_state = 665}}
-				else={
-				EFR = { transfer_state = 735
-						transfer_state = 32
-						transfer_state = 21
-						transfer_state = 1
-						transfer_state = 458
-						transfer_state = 665}
-				}
-    			EFR = {
-				
-				    add_ideas = extensive_conscription
-					add_ideas = partial_economic_mobilisation
-					#transfer_state = 26
-					transfer_state = 22
-					
-					transfer_state = 25
-					transfer_state = 20
-					transfer_state = 33
-					transfer_state = 31
-									
-					#Northern Africa
-					transfer_state = 513
-					
-					transfer_state = 459
-					transfer_state = 460
-					transfer_state = 461
-					transfer_state = 462
-					
-					transfer_state = 514
-					transfer_state = 776
-					transfer_state = 781
-					transfer_state = 777
-					transfer_state = 778
-					transfer_state = 556
-					transfer_state = 779
-					transfer_state = 780
-					transfer_state = 272
-					transfer_state = 557
-					transfer_state = 268
-					transfer_state = 786
-					transfer_state = 782
-					transfer_state = 515
-					transfer_state = 775
-					transfer_state = 553
-					transfer_state = 554
-					transfer_state = 680
-					transfer_state = 677
-					transfer_state = 286
-					transfer_state = 670
-					transfer_state = 671		
-					transfer_state = 741
-					transfer_state = 728
-					transfer_state = 543 #Madagascar
-				}
-				}
-				
-				
-				
-				
-				
-		
-		
+			}
+			ITA = { 
+				transfer_state = 735
+				transfer_state = 32
+				transfer_state = 21
+				transfer_state = 1
+				transfer_state = 458
+				transfer_state = 665
+			}
+		}
+		else={
+			EFR = {
+				transfer_state = 735
+				transfer_state = 32
+				transfer_state = 21
+				transfer_state = 1
+				transfer_state = 458
+				transfer_state = 665
+			}
+		}
+    	EFR = {
+			add_ideas = extensive_conscription
+			add_ideas = partial_economic_mobilisation
+			
+			#transfer_state = 26
+			transfer_state = 22
+			
+			transfer_state = 25
+			transfer_state = 20
+			transfer_state = 33
+			transfer_state = 31
+							
+			#Northern Africa
+			transfer_state = 513
+			
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 461
+			transfer_state = 462
+			
+			transfer_state = 514
+			transfer_state = 776
+			transfer_state = 781
+			transfer_state = 777
+			transfer_state = 778
+			transfer_state = 556
+			transfer_state = 779
+			transfer_state = 780
+			transfer_state = 272
+			transfer_state = 557
+			transfer_state = 268
+			transfer_state = 786
+			transfer_state = 782
+			transfer_state = 515
+			transfer_state = 775
+			transfer_state = 553
+			transfer_state = 554
+			transfer_state = 680
+			transfer_state = 677
+			transfer_state = 286
+			transfer_state = 670
+			transfer_state = 671		
+			transfer_state = 741
+			transfer_state = 728
+			transfer_state = 543 #Madagascar
+		}
+		JAP = {
+			EFR = { country_event = { id = france.1 } }
+			transfer_state = 286
+			transfer_state = 670
+			transfer_state = 671		
+			transfer_state = 741
+			transfer_state = 728
+		}
 	}
+}
 
 
 
