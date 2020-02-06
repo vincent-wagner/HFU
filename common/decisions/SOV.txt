@@ -23,10 +23,33 @@ operations = {
 					}
 				}
 				load_oob = "sov_spawn"
+			}
+			custom_effect_tooltip = "Spawns a 2w division in every province between Moscow and the Axis front. g
+			They would require 6.5M manpower and 650K guns to fully equip as 20w"
+		}
+	}
+	sov_spawn2 = {
+		icon = eng_blackshirt_march
+		fire_only_once = yes
+		allowed = {tag = SOV}
+		available = {
+			has_war = no
+			date > 1941.1.1
+		}
+		visible = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				division_template = {
+					name = "Filler"
+					regiments = {
+						infantry = { x = 0 y = 0 }
+					}
+				}
 				load_oob = "sov_spawn"
 			}
-			custom_effect_tooltip = "Spawns two 2w divisions in every province between Moscow and the Axis front. g
-			They would require 13M manpower and 1.3M guns to fully equip as 20w"
+			custom_effect_tooltip = "Spawns a 2w division in every province between Moscow and the Axis front. g
+			They would require 6.5M manpower and 650K guns to fully equip as 20w"
 		}
 	}
 }
