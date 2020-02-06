@@ -1616,6 +1616,12 @@ focus = {
 			transfer_state=781 #Niger
 			transfer_state=780 #Guinea
 			transfer_state=272 #Senegal
+			add_tech_bonus = {
+				name = FRA_army_reform
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
 			665 = {	
 
 				add_state_modifier = {

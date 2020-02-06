@@ -1530,11 +1530,11 @@ ideas = {
 			}
 			
 			available = {
-				NOT = { has_country_flag = joseph_stilwell_sent_to_china }
+				
 			}
 
 			
-			traits = { army_logistics_2 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1697,12 +1697,13 @@ ideas = {
 			traits = { }
 			
 			equipment_bonus = {
-				medium_tank_equipment = {
-					build_cost_ic = -0.1
+				
+				armor = {
+					build_cost_ic = -0.10
+					soft_attack=0.05
+					reliability=0.1
 				}
-				light_tank_equipment = {
-					build_cost_ic = -0.1
-				}
+				
 			}
 
 			modifier = {
@@ -1734,12 +1735,12 @@ ideas = {
 				}
 				medium_tank_destroyer_equipment = {
 					build_cost_ic = -0.1
-					ap_attack = 0.1
+					ap_attack = 0.20
 					hard_attack = 0.25
 				}
 				heavy_tank_destroyer_equipment = {
 					build_cost_ic = -0.1
-					ap_attack = 0.1
+					ap_attack = 0.20
 					hard_attack = 0.25
 				}
 			}

@@ -1738,12 +1738,15 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			army_experience=200
+			add_ideas=ENG_Tank_upgrade_cost
 			add_tech_bonus = {
 				name = USA_tank_experiments
 				uses = 2
-				bonus = 1.0
+				bonus = 1.5
 				category = armor
 			}
+			
 		}
 	}
 	focus = {
@@ -1752,9 +1755,8 @@ focus_tree = {
 		x = 1
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
-		mutually_exclusive = { focus = USA_main_battle_tanks }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1783,9 +1785,8 @@ focus_tree = {
 		x = 3
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
-		mutually_exclusive = { focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1815,7 +1816,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1837,7 +1838,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
 				uses = 2
-				bonus = 1.0
+				bonus = 1.2
 				category = motorized_equipment
 			}
 		}

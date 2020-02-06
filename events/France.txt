@@ -68,38 +68,35 @@ country_event = {
 				FRA = {
 					
 					set_cosmetic_tag = FRA_FREE
-			        
-					
-					
+			        clr_country_flag=no_naval_base
+					remove_ideas=FRA_protected_by_the_maginot_line
 					set_country_flag = free_france
 					set_capital = 539
-				    transfer_navy = { 
-						target = EFR 
+				    destroy_ships = {
+                    type = ship_hull_light
+                    count = all
+					}
+					destroy_ships = {
+						type = ship_hull_cruiser
+						count = all
+					}
+					destroy_ships = {
+						type = ship_hull_heavy
+                    count = all
+					}
+					destroy_ships = {
+						type = ship_hull_carrier 
+						count = all
+					}
+					destroy_ships = {
+                    type = ship_hull_submarine
+                    count = all
 					}
 				}
 				  
 					
 				
-				EFR = { destroy_ships = {
-                    type = ship_hull_light
-                    count = all
-                }
-                destroy_ships = {
-                    type = ship_hull_cruiser
-                    count = all
-                }
-                destroy_ships = {
-                    type = ship_hull_heavy
-                    count = all
-                }
-                destroy_ships = {
-                    type = ship_hull_carrier 
-                    count = all
-                }
-                destroy_ships = {
-                    type = ship_hull_submarine
-                    count = all
-                }
+				EFR = { 
 			
 					
 					add_ideas = EFR_neutrality_idea
@@ -113,36 +110,44 @@ country_event = {
 					diplomatic_relation = { country = AST relation = non_aggression_pact }
 					diplomatic_relation = { country = NZL relation = non_aggression_pact }
 					diplomatic_relation = { country = GER relation = non_aggression_pact }
+					}
 					
-					
+				
+				
+				
+				
 				
 				if = { limit = { Date < 1939.11.1}
-				
 				FRA={subtract_from_temp_variable = { resistancetemp = resistance }
 				add_offsite_building = { type = industrial_complex level = resistancetemp }
 				add_offsite_building = { type = arms_factory level = resistancetemp }
-				clr_country_flag=no_naval_base
 				}
 				ITA = { transfer_state = 735
 						transfer_state = 32
 						transfer_state = 21
 						transfer_state = 1
 						transfer_state = 458
+						transfer_state = 665}}
+				else={
+				EFR = { transfer_state = 735
+						transfer_state = 32
+						transfer_state = 21
+						transfer_state = 1
+						transfer_state = 458
 						transfer_state = 665}
-			
+				}
     			EFR = {
 				
 				    add_ideas = extensive_conscription
 					add_ideas = partial_economic_mobilisation
-					transfer_state = 26
+					#transfer_state = 26
 					transfer_state = 22
 					
 					transfer_state = 25
 					transfer_state = 20
 					transfer_state = 33
 					transfer_state = 31
-					
-					
+									
 					#Northern Africa
 					transfer_state = 513
 					
@@ -171,76 +176,22 @@ country_event = {
 					transfer_state = 680
 					transfer_state = 677
 					transfer_state = 286
-				transfer_state = 670
-				transfer_state = 671		
-				transfer_state = 741
-				transfer_state = 728
-				transfer_state = 543 #Madagascar
-				
-				
+					transfer_state = 670
+					transfer_state = 671		
+					transfer_state = 741
+					transfer_state = 728
+					transfer_state = 543 #Madagascar
 				}
 				}
 				
-				else = {
 				
 				
-				ITA = { transfer_state = 735} 
-				EFR = {
-				
-				
-				    add_ideas = extensive_conscription
-					add_ideas = partial_economic_mobilisation
-					transfer_state = 26
-					transfer_state = 22
-					transfer_state = 31
-					transfer_state = 25
-					transfer_state = 20
-					transfer_state = 33
-					transfer_state = 32
-					transfer_state = 21
-					transfer_state = 1
-					#Northern Africa
-					transfer_state = 513
-					transfer_state = 458
-					transfer_state = 459
-					transfer_state = 460
-					transfer_state = 461
-					transfer_state = 462
-					transfer_state = 665
-					transfer_state = 514
-					transfer_state = 776
-					transfer_state = 781
-					transfer_state = 777
-					transfer_state = 778
-					transfer_state = 556
-					transfer_state = 779
-					transfer_state = 298
-					transfer_state = 780
-					transfer_state = 272
-					transfer_state = 557
-					transfer_state = 268
-					transfer_state = 786
-					transfer_state = 782
-					transfer_state = 515
-					transfer_state = 775
-					transfer_state = 553
-					transfer_state = 554
-					transfer_state = 680
-					transfer_state = 677
-					transfer_state = 286
-				transfer_state = 670
-				transfer_state = 671		
-				transfer_state = 741
-				transfer_state = 728
-				transfer_state=543 #Madagascar	
-				}
-				  }	
 				
 				
 		
 		
-	}}
-}
+	}
+
 
 
 #Capital captured by non french faction

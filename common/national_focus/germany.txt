@@ -1956,6 +1956,7 @@ available = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = GER_totaler_krieg
+			
 		}
 	}
 	
@@ -2866,7 +2867,7 @@ SPR = { country_event = spain.29 }
 		ai_will_do = {
 			factor = 0.25
 		}	
-
+		available={date>1940.1.1}
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -2939,12 +2940,7 @@ SPR = { country_event = spain.29 }
 				uses = 1
 				category = cv_tech
 			}
-			add_tech_bonus = {
-				name = naval_doctrine
-				bonus = 3
-				uses = 3
-				category = naval_doctrine
-			}
+			
 			set_technology = {
 				improved_ship_hull_heavy = 1
 			}
@@ -3005,7 +3001,7 @@ SPR = { country_event = spain.29 }
 		icon = GFX_focus_GER_sub_plan
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_plan_z }
-		
+		available={date>1940.1.1}
 		x = 1
 		y = 2
 		relative_position_id = GER_naval_effort
@@ -3027,12 +3023,7 @@ SPR = { country_event = spain.29 }
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
-				name = GER_u_boat_effort
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
+			set_technology={ improved_submarine=1}
 			
 		}
 		
@@ -3055,12 +3046,7 @@ SPR = { country_event = spain.29 }
 				}
 				set_state_flag = GER_u_boat_effort_2dockyards
 			}
-			add_tech_bonus = {
-				name = GER_u_boat_effort
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
+		set_technology={ improved_submarine=1}
 			
 		}
 	}
@@ -3083,7 +3069,7 @@ SPR = { country_event = spain.29 }
 			add_tech_bonus = {
 				name = ti_bonus
 				name = GER_trade_interdiction
-				bonus = 3.0
+				bonus = 9.0
 				uses = 5
 				category = trade_interdiction_tree
 			}
