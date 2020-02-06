@@ -16,6 +16,7 @@ technologies = {
 			max_organisation = 10			
 		}
 		light_cruiser = {
+			max_organisation = 10
 			surface_detection = 0.10
 		}
 		destroyer = {
@@ -251,7 +252,8 @@ technologies = {
 			max_organisation = 20
 		}
 		
-		navy_capital_ship_defence_factor = 0.10
+		navy_capital_ship_defence_factor = 0.15
+		navy_anti_air_attack_factor = 0.10
 		
 		########
 
@@ -348,7 +350,7 @@ technologies = {
 			max_organisation = 20
 		}
 
-		navy_capital_ship_attack_factor = 0.1
+		navy_capital_ship_attack_factor = 0.15
 		mines_planting_by_fleets_factor = 0.1
 		
 		xp_research_type = navy
@@ -1250,8 +1252,6 @@ technologies = {
 			convoy_raiding_coordination = 0.5
 			surface_detection = 0.25
 		}
-
-		naval_enemy_fleet_size_ratio_penalty_factor = 0.2
 		#######
 		
 		path = {
@@ -1891,7 +1891,6 @@ technologies = {
 		carrier = {
 			max_organisation = 20			
 		}
-		carrier_capacity_penalty_reduction = -0.2
 		sortie_efficiency = 0.2
 
 		modifier = {
