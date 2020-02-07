@@ -165,7 +165,7 @@ equipment_modules = {
 			build_cost_ic = 1275
 		}
 		multiply_stats = {
-			naval_speed = -0.05
+			naval_speed = -0.06
 		}
 		add_average_stats = {
 			hg_armor_piercing = 31
@@ -222,7 +222,7 @@ equipment_modules = {
 			build_cost_ic = 1450
 		}
 		multiply_stats = {
-			naval_speed = -0.07
+			naval_speed = -0.06
 		}
 		add_average_stats = {
 			hg_armor_piercing = 40
@@ -254,7 +254,7 @@ equipment_modules = {
 			
 		}
 		multiply_stats = {
-			naval_speed = -0.08
+			naval_speed = -0.06
 		}
 		add_average_stats = {
 			hg_armor_piercing = 43
@@ -289,7 +289,7 @@ equipment_modules = {
 			chromium = 1
 		}
 		multiply_stats = {
-			naval_speed = -0.07
+			naval_speed = -0.05
 		}
 		add_average_stats = {
 			hg_armor_piercing = 50
@@ -1249,7 +1249,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			naval_speed = 10
+			naval_speed = 7
 			fuel_consumption = 25
 			build_cost_ic = 2200
 		}
@@ -1277,7 +1277,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			naval_speed = 11
+			naval_speed = 7
 			fuel_consumption = 30
 			build_cost_ic = 2600
 		}
@@ -1305,7 +1305,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			naval_speed = 12
+			naval_speed = 7
 			fuel_consumption = 35
 			build_cost_ic = 3000
 		}
@@ -2041,7 +2041,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			build_cost_ic = 0.25
-			naval_speed = -0.25
+			naval_speed = -0.20
 			max_strength = 0.1
 		}
 		build_cost_resources = {

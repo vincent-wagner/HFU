@@ -176,3 +176,5 @@ category_exile_forces = {
 		has_dlc = "Man the Guns"
 	}
 }
+check_tech_category = {
+}

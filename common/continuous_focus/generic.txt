@@ -193,13 +193,16 @@ continuous_focus_palette = {
 						is_in_tech_sharing_group = continuous_tech_share
 						num_tech_sharing_groups < 2
 					}
-					num_tech_sharing_groups < 1
+					num_tech_sharing_groups < 2
 				}				
 			}
 		}
 		
 		select_effect = {
-			add_to_tech_sharing_group = continuous_tech_share
+			if = {
+				limit = { NOT={is_in_tech_sharing_group=commonwealth_research}}
+				add_to_tech_sharing_group = continuous_tech_share
+			}
 		}
 		
 		cancel_effect = {
