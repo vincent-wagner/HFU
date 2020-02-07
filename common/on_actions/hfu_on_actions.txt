@@ -169,7 +169,6 @@ on_actions = {
 						OR = {
 							tag = JAP
 							tag = MAN
-							tag = SIA
 						}
 					}
 					FROM.FROM = {
@@ -340,7 +339,7 @@ on_actions = {
 	}
 		on_startup = {
 		effect = {
-			SIA = {
+			JAP = {
 				give_resource_rights = { receiver = GER state = 724 }
 			}
 		}

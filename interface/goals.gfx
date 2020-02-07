@@ -1712,10 +1712,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_BUL_befriend_commie_ROM.dds"
 	}
 	
-	SpriteType = { 
-		name = "GFX_focus_SIA_thailand_alliance_fascism"
-		texturefile = "gfx/interface/goals/focus_SIA_thailand_alliance_fascism.dds"
-	}
 		SpriteType = { 
 		name = "GFX_focus_ITA_balkan"
 		texturefile = "gfx/interface/goals/focus_ITA_balkan.tga"

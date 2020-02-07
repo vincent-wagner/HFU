@@ -25,67 +25,6 @@ icon = generic_operation
 		}
 	}
 }
-JAP_annex_siam = {
-
-			icon = generic_operation
-
-			allowed = {
-				original_tag = JAP
-			}
-
-			available = {
-				SIA = { is_ai = yes }
-				date > 1940.1.1
-			}
-			
-			cost = 0
-			
-			visible = {
-					country_exists = SIA
-
-				}
-			
-			fire_only_once = yes
-	
-			complete_effect = {
-				SIA = {
-					every_owned_state={
-						limit={is_core_of=PREV}
-						add_state_modifier = {
-							modifier = {
-								local_building_slots_factor = 0.5
-							}
-						}
-					}
-				}
-				JAP = { 
-					annex_country = {
-						target = SIA
-						transfer_troops = yes 
-					}
-					if = {
-						limit = {
-							GER = {
-								NOT = { has_completed_focus = GER_danzig_or_war }
-							}
-						}
-						JAP = { 
-							country_event = {
-								id = japan.146
-								days = 2
-							}
-						}	
-					}
-				
-			}
-			SIA = {
-					remove_state_core = 289
-					remove_state_core = 724
-					remove_state_core = 670
-					remove_state_core = 741
-			}
-		}
-	}
 JAP_annex_manchukuo = {
 
 			icon = generic_operation

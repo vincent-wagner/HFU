@@ -851,11 +851,6 @@ spriteTypes = {
 	}
 	
 		spriteType = {
-		name = "GFX_plaekphibunsongkhram"
-		texturefile = "gfx/leaders/SIA/plaekphibunsongkhram.tga"
-	}
-	
-		spriteType = {
 		name = "GFX_Erik_Heinrichs"
 		texturefile = "gfx/leaders/FIN/Erik_Heinrichs.tga"
 	}

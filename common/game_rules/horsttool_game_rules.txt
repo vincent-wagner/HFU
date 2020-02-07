@@ -79,11 +79,6 @@ horst_host_country = {
 		desc = ""
 	}
 	option = {
-		name = SIA
-		text = "Siam"
-		desc = ""
-	}
-	option = {
 		name = SOV
 		text = "Soviet Union"
 		desc = ""

@@ -252,10 +252,6 @@ focus_tree = {
 		        army_experience = 300
 		        air_experience = 200}
 		
-		SIA = { 
-		        army_experience = 150
-		        air_experience = 200}
-		
 		
 		USA = {
 			country_event = { id = panay_incident.2 days = 20 }
@@ -295,10 +291,6 @@ focus_tree = {
 		completion_reward = {
       		if={limit={country_exists = MAN}
 		MAN={add_ideas=wartime_economy
-			add_ideas=closed_economy}
-		}
-		if={limit={country_exists = SIA}
-		SIA={add_ideas=wartime_economy
 			add_ideas=closed_economy}
 		}
 		add_threat = 20
@@ -383,7 +375,6 @@ focus_tree = {
 			}
 					add_timed_idea = { idea = SPA_preparing_for_war days = 365 }
 					MAN = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
-					SIA = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
 		}
 	}
 
@@ -433,8 +424,8 @@ focus_tree = {
 		id = JAP_bypass_the_philippines
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = JAP_strike_south_doctrine }
-		x = -1
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = JAP_strike_south_doctrine
 
 		cost = 10
@@ -470,7 +461,7 @@ focus_tree = {
 		icon = GFX_focus_jap_strike_south
 		prerequisite = { focus = JAP_strike_south_doctrine }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = JAP_strike_south_doctrine
 
 		will_lead_to_war_with = ENG
@@ -820,7 +811,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = JAP_nationalize_war_industry }
 		x = 0
-		y = 6
+		y = 5
 		relative_position_id = JAP_guide_the_zaibatsus
 
 		cost = 10
@@ -2594,99 +2585,8 @@ completion_reward = {
 				set_technology = { torpedo_cruiser_mtg = 1 }
 			}
 		}
-	}
-	
-		focus = {
-		id = JAP_puppet_siam
-		icon = GFX_focus_SIA_thailand_alliance_fascism
-		prerequisite = { focus = JAP_strike_south_doctrine }
-
-
-		x = 1
-		y = 1
-		relative_position_id = JAP_strike_south_doctrine
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			GER = { has_completed_focus = GER_danzig_or_war }
-			SIA = { is_ai = no }
-		}
-
-		available_if_capitulated = no
-		
-		complete_tooltip = {
-	
-		}
-		
-		completion_reward = {
-		JAP = { 
-				set_autonomy = {
-				
-					target = SIA
-					autonomy_state = autonomy_wtt_imperial_associate
-				}
-			}	
-		}
-		}
-		
-		
-		
-				focus = {
-		id = JAP_develop_siam
-		icon = GFX_focus_JAP_siam
-		prerequisite = { focus = JAP_puppet_siam }
-
-
-		x = 0
-		y = 1
-		relative_position_id = JAP_puppet_siam
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-				SIA = { is_subject_of = ROOT 
-					controls_state = 670
-					is_ai = no }
-		}
-
-		available_if_capitulated = no
-		
-		complete_tooltip = {
-	
-		}
-		
-		completion_reward = {
-		
-		670 = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				}
-				741 = {
-						add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}	
-						
-						
-						}
-		
-		}
-		}
-		
-		
-		
-	}
+	}	
+}
 	
 	
 	

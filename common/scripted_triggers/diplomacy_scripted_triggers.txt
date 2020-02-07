@@ -351,8 +351,8 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		hidden_trigger={OR={NOT={OR={tag=Jap tag=SIA tag=MAN}}
-		FROM={OR={tag=Jap tag=SIA tag=MAN}}}}
+		hidden_trigger={OR={NOT={OR={tag=Jap tag=MAN}}
+		FROM={OR={tag=Jap tag=MAN}}}}
 	}
 	if = {
 		limit = {
@@ -410,8 +410,8 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 		}
 		hidden_trigger={OR = {
 			NOT={
-			From={OR={tag=Jap tag=SIA tag=MAN}}}
-			OR={tag=Jap tag=SIA tag=MAN}
+			From={OR={tag=Jap tag=MAN}}}
+			OR={tag=Jap tag=MAN}
 		}}
 		
 	}

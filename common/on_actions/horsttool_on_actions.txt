@@ -65,10 +65,6 @@ else_if = {
 		set_variable={host = MAN.id}
 	}
 else_if = {
-		limit = {has_game_rule = {rule = horst_host_country option = SIA}}
-		set_variable={host = SIA.id}
-	}
-else_if = {
 		limit = {has_game_rule = {rule = horst_host_country option = SOV}}
 		set_variable={host = SOV.id}
 	}

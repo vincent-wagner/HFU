@@ -13,10 +13,9 @@ state={
 	}
 
 	history={
-		owner = SIA
+		owner = JAP
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 5
 			air_base = 3
 			7408 = {
@@ -32,7 +31,6 @@ state={
 		victory_points = {
 			10438 1 
 		}
-		add_core_of = SIA
 	}
 
 	provinces={
