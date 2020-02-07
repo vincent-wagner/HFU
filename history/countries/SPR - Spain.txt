@@ -11,6 +11,10 @@ if = {
 add_ideas = {
 SPR_no_armada
 }
+set_variable = {
+    var = min_fuel
+    value = 0.800
+}
 set_country_flag=no_naval_base
 set_country_flag=no_air_base
 set_research_slots = 3

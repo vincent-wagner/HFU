@@ -12,6 +12,10 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
+set_variable = {
+    var = min_fuel
+    value = 0.800
+}
 
 
 # Starting tech

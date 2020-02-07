@@ -11,6 +11,10 @@ if = {
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.6
+set_variable = {
+    var = min_fuel
+    value = 0.800
+}
 
 # Starting tech
 set_technology = {

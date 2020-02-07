@@ -13,6 +13,10 @@ add_timed_idea = {
 	idea = USA_wasteful_navy
     days = 1096
 }
+set_variable = {
+    var = min_fuel
+    value = 0.800
+}
 
 
 set_research_slots = 4

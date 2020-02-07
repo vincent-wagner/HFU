@@ -10,6 +10,10 @@ set_technology = {
 	tech_mountaineers = 1
 	
 }
+set_variable = {
+    var = min_fuel
+    value = 0.800
+}
 add_ideas = MAN_faction_trade
 if = {
 	limit = { has_dlc = "Waking the Tiger" }

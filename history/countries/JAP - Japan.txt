@@ -17,6 +17,10 @@ add_ideas = {
 	JAP_duplicate_research_efforts
 	JAP_militarism
 }
+set_variable = {
+    var = min_fuel
+    value = 0.800
+}
 
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
