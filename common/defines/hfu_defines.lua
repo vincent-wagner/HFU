@@ -169,6 +169,7 @@ NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6 -- WAS 5 | We added one more support company as it feels necessary for quality tank or infantry divisions -Thrasymachus
+NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 6		-- Max height of regiments in division designer
 
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state

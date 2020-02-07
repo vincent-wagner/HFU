@@ -166,7 +166,7 @@ guiTypes = {
 				name = "regiments_grid"
 				position = { x = 115 y = 57 }
 				size = { width = 445 height = 100%% }
-				slotsize = { width = 82 height = 51 }
+				slotsize = { width = 82 height = 43 }
 				format = "UPPER_LEFT"
 			}
 		}
@@ -936,7 +936,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "designer_division_regiment_slot_entry"
 		position = { x=0 y=0}	
-		size = { width=76 height=53 }
+		size = { width=76 height=44 }
 		clipping = no
 
 		background = {
@@ -958,7 +958,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "unit_icon"
-			position = { x = 1 y = 10 }
+			position = { x = 1 y = 1 }
 			spriteType = "GFX_locked_icon"
 			Orientation = CENTER_LOWER
 			clicksound = click_default
@@ -966,7 +966,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "invisible_icon"
-			position = { x = 1 y = 12 }
+			position = { x = 1 y = 3 }
 			spriteType = "GFX_cost_textbox_inv"
 			Orientation = CENTER_LOWER
 			clicksound = click_default
