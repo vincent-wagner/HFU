@@ -1,6 +1,111 @@
 spriteTypes = {	
 
 
+spriteType = {
+		name = "GFX_idea_chelyabinsk_tractor_plant"
+		texturefile = "gfx/interface/ideas/idea_chelyabinsk_tractor_plant.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_krasnoye_sormovo"
+		texturefile = "gfx/interface/ideas/idea_krasnoye_sormovo.dds"
+	}		
+    spriteType = {
+        name = "GFX_idea_factory_no_174_k_e_voroshilov"
+        texturefile = "gfx/interface/ideas/idea_k_e_voroshilov.dds"
+    }
+	spriteType = {
+		name = "GFX_idea_kirov_plant"
+		texturefile = "gfx/interface/ideas/idea_kirov_plant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kharkiv_diesel_factory"
+		texturefile = "gfx/interface/ideas/idea_malyshev.dds"
+	}		
+    
+	SpriteType = { 
+		name = "GFX_idea_ordzhonikidze_ural_heavy_machine_building_plant_UZTM"
+		texturefile = "gfx/interface/ideas/idea_uralmash.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_uralvagonzavod"
+		texturefile = "gfx/interface/ideas/idea_uralvagonazavod.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_dzerzhinsky_stalingrad_tractor_factory"
+		texturefile = "gfx/interface/ideas/idea_volgograd_tractor_plant.dds"
+	}
+spriteType = {
+		name = "GFX_idea_Leyland"
+		texturefile = "gfx/interface/ideas/Leyland.tga"
+	}
+
+SpriteType = {
+		name = "GFX_idea_bhp_steel_research"
+		texturefile = "gfx/interface/ideas/idea_bhp_steel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_italo_balbo_pol"
+		texturefile = "gfx/interface/ideas/idea_italo_balbo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_okmo_research"
+		texturefile = "gfx/interface/ideas/idea_okmo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ilyushin_design_bureau_research"
+		texturefile = "gfx/interface/ideas/idea_ilyushin_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_grabin_design_bureau_research"
+		texturefile = "gfx/interface/ideas/idea_grabin_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_stalingrad_tractor_factory_research"
+		texturefile = "gfx/interface/ideas/idea_stalingrad_tractor_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_leningrad_polytechnical_institute_research"
+		texturefile = "gfx/interface/ideas/idea_leningrad_polytechnical_institute.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tula_arms_plant_research"
+		texturefile = "gfx/interface/ideas/idea_tula_arms_plant.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gaz_research"
+		texturefile = "gfx/interface/ideas/idea_gaz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nevskoye_design_bureau_research"
+		texturefile = "gfx/interface/ideas/idea_nevskoye_design_bureau.dds"
+	}
+
+SpriteType = {
+		name = "GFX_idea_vomag"
+		texturefile = "gfx/interface/ideas/idea_vomag.dds"
+	}
+SpriteType = {
+		name = "GFX_idea_krupp_tank"
+		texturefile = "gfx/interface/ideas/idea_krupp.dds"
+	}
+
+SpriteType = {
+		name = "GFX_idea_nibelungenwerke"
+		texturefile = "gfx/interface/ideas/idea_nibelungenwerke.dds"
+	}
+
+SpriteType = {
+		name = "GFX_idea_idea_alkett"
+		texturefile = "gfx/interface/ideas/idea_alkett.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_idea_GER_ckd"
+		texturefile = "gfx/interface/ideas/idea_GER_ckd.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_idea_traits_strip"

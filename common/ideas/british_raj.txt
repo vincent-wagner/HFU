@@ -804,6 +804,8 @@ ideas = {
 		}
 	}
 
+	
+	
 	naval_manufacturer = {
 		
 		designer = yes

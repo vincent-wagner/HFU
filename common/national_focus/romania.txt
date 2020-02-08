@@ -1623,7 +1623,7 @@ focus = {
 			add_tech_bonus = {
 				name = ROM_the_maresal
 				bonus = 1.0
-				ahead_reduction = 2
+				
 				uses = 1
 				category = cat_heavy_armor
 			}
@@ -1656,8 +1656,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_leonidas_works
+			add_tech_bonus = {
+				name = ROM_the_maresal
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cat_heavy_armor
+			}
 		}
 	}
 

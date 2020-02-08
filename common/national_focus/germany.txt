@@ -1890,6 +1890,125 @@ available = {
        }
 	
 	
+#	focus = {
+#		id = GER_raseiniai
+#		icon = GFX_GER_mobile_fortresses
+#		
+#		prerequisite = { focus = GER_rhineland }
+#
+#
+#		available = { 
+#			has_war_with = SOV
+#			
+#			
+#		}
+#
+#		
+#		x = 7
+#		y = -3
+#		relative_position_id = GER_ussr_war_goal
+#		cost = 6
+#		ai_will_do = {
+#			factor = 1
+#		}	
+#
+#		available_if_capitulated = no
+#		completion_reward = {
+#		
+#		custom_effect_tooltip = "two fully equipped Tiger-Divisions will spawn in Königsberg."
+#		
+#		
+#		hidden_effect={
+#				set_technology = {
+#									improved_heavy_tank = 1
+#								}
+#		
+#		create_equipment_variant = {
+#		name = "Tiger Panzer"
+#		type = heavy_tank_equipment_2
+#		upgrades = {
+#			tank_gun_upgrade = 5
+#			tank_reliability_upgrade = 5
+#			
+#		}}
+#		
+#		add_equipment_production = {
+#		equipment = {
+#		
+#		    type = heavy_tank_equipment_2
+#			creator = "GER"
+#			version_name = "Tiger Panzer"
+#		}
+#		requested_factories = 10
+#		progress = 0.1
+#		efficiency = 50
+#	}
+#
+#
+#
+#
+#
+#					division_template = {
+#							name = "SS-Panzergrenadier"			# Rifle Division
+#							
+#
+#							regiments = {
+#								heavy_armor = { x = 0 y = 0 }
+#		heavy_armor = { x = 0 y = 1 }
+#		heavy_armor = { x = 0 y = 2 }
+#		heavy_armor = { x = 0 y = 3 }
+#	heavy_armor = { x = 1 y = 0 }
+#		heavy_armor = { x = 1 y = 1 }
+#		heavy_armor = { x = 1 y = 2 }
+#		heavy_armor = { x = 1 y = 3 }
+#	heavy_armor = { x = 2 y = 0 }
+#		heavy_armor = { x = 2 y = 1 }
+#		heavy_armor = { x = 2 y = 2 }
+#		heavy_armor = { x = 2 y = 3 }
+#	motorized = { x = 3 y = 0 }
+#		motorized = { x = 3 y = 1 }
+#		motorized = { x = 3 y = 2 }
+#		motorized = { x = 3 y = 3 }
+#	motorized = { x = 4 y = 0 }
+#		motorized = { x = 4 y = 1 }
+#		motorized = { x = 4 y = 2 }
+#		motorized = { x = 4 y = 3 }
+#
+#							}
+#							support = {
+#								recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+#								engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+#								artillery = { x = 0 y = 2 } 
+#								logistics_company = { x = 0 y = 3 }
+#								signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+#							}
+#							}
+#				763 = {
+#					for_loop_effect = {
+#					end = 2 				
+#					create_unit = {
+#						division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0" 
+#						owner = GER
+#						}
+#					}}
+#			}
+#		
+#		
+#		army_experience = 100
+#
+#		
+#		add_tech_bonus = {
+#									name = at_bonus
+#									bonus = 2.0
+#									uses = 2
+#									category = cat_anti_tank
+#								
+#		
+#		}
+#	
+#	}}
+	
+	
 	focus = {
 		id = GER_endsieg
 		icon = GFX_praisegermania
@@ -2629,7 +2748,7 @@ SPR = { country_event = spain.29 }
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 25
+		x = 26
 		y = 0
 		cost = 5
 		ai_will_do = {

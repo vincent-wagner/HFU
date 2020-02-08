@@ -1,7 +1,12 @@
 spriteTypes = {	
 
 	#### Generic continuous goal icons
-   SpriteType = { 
+spriteType = {
+		name = "GFX_GER_mobile_fortresses"
+		texturefile = "gfx/interface/goals/GER_tigers_in_the_east.dds"
+	}  
+
+  SpriteType = { 
 		name = "GFX_Goal_Great_Purge2"
 		texturefile = "gfx/interface/goals/Goal_Great_Purge2.tga"
 	}
@@ -1712,6 +1717,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_BUL_befriend_commie_ROM.dds"
 	}
 	
+	SpriteType = { 
+		name = "GFX_focus_SIA_thailand_alliance_fascism"
+		texturefile = "gfx/interface/goals/focus_SIA_thailand_alliance_fascism.dds"
+	}
 		SpriteType = { 
 		name = "GFX_focus_ITA_balkan"
 		texturefile = "gfx/interface/goals/focus_ITA_balkan.tga"

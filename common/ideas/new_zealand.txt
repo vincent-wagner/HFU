@@ -717,47 +717,5 @@ ideas = {
 		
 	}	
 
-	tank_manufacturer = {
-		NZL_nz_railways = {
-
-			picture = generic_tank_manufacturer_1
-			
-			allowed = {
-				original_TAG = NZL
-				has_dlc = "Together for Victory"
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { fast_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-		NZL_christchurch_workshops = {
-
-			picture = generic_tank_manufacturer_2
-			
-			allowed = {
-				original_TAG = NZL
-				has_dlc = "Together for Victory"
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { heavy_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
+	
 }

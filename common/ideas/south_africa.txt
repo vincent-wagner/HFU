@@ -756,27 +756,6 @@ ideas = {
 
 	}
 
-	tank_manufacturer = {
-		iscor = {
-			
-			picture = generic_tank_manufacturer_3
-
-			allowed = {
-				original_TAG = SAF
-				has_dlc = "Together for Victory"
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { medium_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
+	
 
 }

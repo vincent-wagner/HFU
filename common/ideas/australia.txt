@@ -722,31 +722,7 @@ high_command = {
 
 	}
 
-	tank_manufacturer = {
-		new_south_wales_rc = {
-			
-			picture = generic_tank_manufacturer_1
-
-
-			allowed = {
-				original_TAG = AST
-				has_dlc = "Together for Victory"
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { fast_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-
-	}
-
+	
 	naval_manufacturer = {
 		
 		designer = yes
