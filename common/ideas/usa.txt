@@ -745,12 +745,9 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				min_export = -0.15
-			
 				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
-	
 		bureau_of_ships_focus = {
 			
 			
@@ -1059,6 +1056,7 @@ ideas = {
 			}
 			
 			modifier = {
+				min_export = -0.3
 				drift_defence_factor = 0.2
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
 				

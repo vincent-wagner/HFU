@@ -11,7 +11,7 @@ ITA_annex_bul = {
 			}
 	
 			allowed = {
-				tag = ITA
+				tag = ROM
 			}
 
 			
@@ -26,14 +26,10 @@ ITA_annex_bul = {
 				BUL = {
 					every_owned_state={
 						limit={is_core_of=PREV}
-						add_state_modifier = {
-							modifier = {
-								local_building_slots_factor = 0.5
-							}
-						}
+						add_core_of = ROM
 					}
 				}
-				ITA = { 
+				ROM = { 
 					annex_country = {
 						target = BUL
 						transfer_troops = yes 

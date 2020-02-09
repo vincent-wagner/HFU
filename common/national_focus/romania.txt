@@ -637,50 +637,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ROM_king_michaels_coup
-		icon = GFX_focus_rom_coup
-		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = 2
-		y = 1
-		relative_position_id = ROM_institute_royal_dictatorship
-
-		cost = 10
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			create_country_leader = {
-				name = "Michael I"
-				desc = "POLITICS_MICHAEL_I_DESC"
-				picture = GFX_Portrait_romania_michael_i				
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-				}
-			}
-			if = {
-				limit = {
-					has_idea = ROM_king_carol_ii_hedonist
-				}
-				remove_ideas = ROM_king_carol_ii_hedonist
-			}
-			hidden_effect = {
-				news_event = { id = news.322 days = 1 }
-			}
-			
-		}
-	}
-
-	focus = {
 		id = ROM_fortify_the_borders
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ROM_institute_royal_dictatorship }
