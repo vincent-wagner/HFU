@@ -98,7 +98,25 @@ ideas = {
 			traits = { popular_figurehead }
 			
 		}
+        ENG_goods = {
+			
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
 		ENG_the_war_to_end_all_wars = {
 			
 			allowed = {
@@ -1572,7 +1590,7 @@ ideas = {
 	
 	tank_manufacturer = {
 		vickers_armstrong_eng = {
-			
+			cost = 100
 allowed = {
 				or = { 
 					original_TAG = ENG
@@ -1610,7 +1628,7 @@ allowed = {
 			
 		}
 		vauxhall = {
-			
+			cost = 100
 			allowed = {
 				or = { 
 					original_TAG = ENG
@@ -1644,7 +1662,7 @@ allowed = {
 			}
 		}
 		Leyland = {
-			
+			cost = 100
 			allowed = {
 				or = { 
 					original_TAG = ENG

@@ -1,4 +1,17 @@
 ﻿l_english:
+ krupp_tank:0 "Krupp"
+ krupp_tank_desc:1 "Krupp focuses on heavy industry and armaments production"
+ GER_idea_alkett:0 "Alkett"
+ nibelungenwerke:0 "Nibelungenwerke"
+ nibelungenwerke_AG_desc:1 ""
+ GER_ckd:0 "CKD"
+ GER_ckd_desc:1"czech light tanks"
+ vomag:0 "VOMAG"
+ vomag_desc:1 "VOMAG was originally an embroidery plant in Plauen, but also produced tanks, trucks, and other products. During the war, they produced vehicles such as the Jagdpanzer IV."
+ 
+ Leyland:0 "Leyland"
+ vauxhall:0 "Vauxhall"
+ 
  fascist_influence:0 "Fascist Influence"
  fascist_influence_desc:0 "Fascist pressure has made fascism very popular, and the country is susceptible to align with other fascists."
  communist_influence:0 "Communist Influence"

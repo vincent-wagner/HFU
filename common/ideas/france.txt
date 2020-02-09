@@ -735,7 +735,7 @@ ideas = {
 	
 		# TECHNOLOGY
 		renault_fra = {
-		
+		cost = 100
 			picture = renault
 						
 			allowed = {
@@ -764,7 +764,7 @@ ideas = {
 		}
 	
 		FRA_AMX = {
-		
+		cost = 100
 			picture = generic_tank_manufacturer_2
 
 			available = {

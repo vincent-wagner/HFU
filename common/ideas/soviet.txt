@@ -1326,7 +1326,7 @@ ideas = {
 		designer = yes
 		
 		kharkiv_diesel_factory = { 
-
+cost = 100
 			allowed = {
 				original_tag = SOV
 			}
@@ -1377,6 +1377,7 @@ ideas = {
 		
 
 		kirov_plant = { 
+			cost = 100
 			allowed = {
 				original_tag = SOV
 			}
@@ -1426,7 +1427,7 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-
+cost = 100
 			available = {
 				
 			}
@@ -1476,7 +1477,7 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-
+cost = 100
 			available = {
 				
 			}
@@ -1503,7 +1504,7 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-
+cost = 100
 			available = {
 				
 			}
@@ -1535,7 +1536,7 @@ ideas = {
 		
 		
 		morozov_design_bureau = {
-			
+			cost = 100
 			
 			allowed = {
 				OR = {
@@ -1584,7 +1585,7 @@ ideas = {
 		}
 		
 		astrov_design_bureau = {
-			
+			cost = 100
 			
 			allowed = {
 				original_tag = SOV
@@ -1610,7 +1611,7 @@ ideas = {
 		}
 		
 		okmo = {
-			
+			cost = 100
 			
 			allowed = {
 				original_tag = SOV

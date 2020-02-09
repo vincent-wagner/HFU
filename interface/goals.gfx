@@ -6,6 +6,10 @@ spriteType = {
 		texturefile = "gfx/interface/goals/GER_tigers_in_the_east.dds"
 	}  
 
+  SpriteType = {
+		name = "GFX_goal_generic_air_defense"
+		texturefile = "gfx/interface/goals/Goal_Generic_Air_Defense.dds"
+	}
   SpriteType = { 
 		name = "GFX_Goal_Great_Purge2"
 		texturefile = "gfx/interface/goals/Goal_Great_Purge2.tga"

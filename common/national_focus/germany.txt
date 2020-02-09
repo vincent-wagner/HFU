@@ -127,9 +127,233 @@ focus_tree = {
 
 
 	focus = {
+		id = GER_flak_36
+		icon = GFX_goal_generic_air_defense
+			relative_position_id = GER_four_year_plan
+		prerequisite = { focus = GER_west_wall }
+		x = -2
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	  add_timed_idea = {
+    idea = ENG_goods
+    days = 45
+}
+
+                    66 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					68 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					54 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					51 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					42 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					56 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					59 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					58 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					61  = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					62 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					63 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					57 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					64 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 5
+							instant_build = yes
+						}
+					}
+					
+					65 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					60 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					55 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					51 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					42 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					
+					50 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					
+					52 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					53 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					153 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					152 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					4 = {
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+					
+					
+					
+				
+					
+					
+	
+			add_tech_bonus = {
+				name = anti_air
+				bonus = 1
+				uses = 3
+				category = artillery
+			}
+
+		}
+	}
+
+
+
+	focus = {
 		id = GER_ostwall
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = GER_west_wall }
+		prerequisite = { focus = GER_flak_36 }
 		available = {
 			any_country = {
 				OR = {
@@ -152,7 +376,7 @@ focus_tree = {
 			}
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_west_wall
 		cost = 5
 		ai_will_do = {
