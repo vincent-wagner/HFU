@@ -1230,6 +1230,8 @@ focus_tree = {
 		icon = GFX_focus_attack_germany
 		prerequisite = { focus = USA_intervention_in_europe }
 		available = {
+		
+		ITA ={ not ={has_full_control_of_state = 448}}
 		}
 
 		continue_if_invalid = yes

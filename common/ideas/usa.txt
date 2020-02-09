@@ -17,6 +17,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
+			air_cas_present_factor = 0.2
 			amphibious_invasion = 0.1
 			invasion_preparation = -0.25
 		}
@@ -41,6 +42,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
+			air_cas_present_factor = 0.2
 			amphibious_invasion = 0.1
 			invasion_preparation = -0.25
 		}

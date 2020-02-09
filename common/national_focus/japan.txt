@@ -2139,10 +2139,18 @@ completion_reward = {
 
 		completion_reward = {
 			add_ideas = JAP_expand_the_snlf
+			
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 3
+				category = tp_tech
+			}
 			add_tech_bonus = {
 				name = JAP_expand_the_snlf
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 2
 				category = marine_tech	
 			}
 			set_technology={jungle_warfare=1}
