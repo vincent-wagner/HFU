@@ -1341,6 +1341,14 @@ cost = 100
 			
 			equipment_bonus = {
 				
+				medium_tank_equipment = {
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1 
+					armor_value = 0.1
+					build_cost_ic = 0.1
+				}
+				
 				medium_tank_aa_equipment = {
 					reliability = 0.1
 					air_attack = 0.05
@@ -1358,13 +1366,7 @@ cost = 100
 					soft_attack = 0.1
 					build_cost_ic = 0.1
 				}
-				medium_tank_equipment = {
-					reliability = 0.05
-					soft_attack = 0.1
-					hard_attack = 0.1 
-					armor_value = 0.1
-					build_cost_ic = 0.1
-				}
+				
 			  			
 			}
 
@@ -1393,21 +1395,21 @@ cost = 100
 			equipment_bonus = {
 				heavy_tank_equipment = {
 					reliability = -0.2 
-					armor_value = 0.15 
-					hard_attack = 0.05
-					soft_attack = 0.05
+					armor_value = 0.1 
+					hard_attack = 0.1
+					soft_attack = 0.1
 					build_cost_ic = 0.10
 				}
 				heavy_tank_destroyer_equipment = {
 					reliability = -0.2
-					armor_value = 0.15 
-					hard_attack = 0.1
+					armor_value = 0.1 
+					hard_attack = 0.15
 					build_cost_ic = 0.10
 				}
 				heavy_tank_artillery_equipment = {
 					reliability = -0.2 
-					armor_value = 0.15  
-					soft_attack = 0.1
+					armor_value = 0.1
+					soft_attack = 0.15
 					build_cost_ic = 0.10
 				}				
 				
@@ -1441,28 +1443,19 @@ cost = 100
 			equipment_bonus = {
 				
 				medium_tank_equipment = {
-					reliability = -0.1
-					hard_attack = -0.1
-					defense = -0.1 
+					
 					build_cost_ic = -0.15
 				}
 				medium_tank_artillery_equipment = {
-					reliability = -0.1
-					soft_attack = -0.1
-					defense = -0.1
-					maximum_speed = -0.1
+					
 					build_cost_ic = -0.15
 				}
 				medium_tank_destroyer_equipment = {
-					hard_attack = -0.1
-					ap_attack = -0.1
-					reliability = -0.1
-					defense = -0.1
+					
 					build_cost_ic = -0.15
 				}
 				medium_tank_aa_equipment = {
-					reliability = -0.1
-					air_attack = -0.1
+					
 					build_cost_ic = -0.15
 				}
 			}
@@ -1625,13 +1618,13 @@ cost = 100
 			
 			equipment_bonus = {
 				heavy_tank_equipment = {
-					maximum_speed = -0.1 reliability = -0.1 armor_value = 0.1 
+				build_cost_ic = 0.075	maximum_speed = 0.25 hard_attack = 0.05 soft_attack = 0.05
 				}
 				heavy_tank_destroyer_equipment = {
-				    maximum_speed = -0.1 reliability = -0.1 armor_value = 0.1
+				    build_cost_ic = 0.075	maximum_speed = 0.25 hard_attack = 0.1
 				}
 				heavy_tank_artillery_equipment = {
-				    maximum_speed = -0.1 reliability = -0.1 armor_value = 0.1
+				    build_cost_ic = 0.075	maximum_speed = 0.25 soft_attack = 0.1
 				}				
 				
 			}
