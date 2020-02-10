@@ -42,6 +42,24 @@ original_tag = FRA
 }
 
 war_measures = {
+	FRA_Surrender = {
+	icon = generic_operation
+
+	allowed = {
+	original_tag = FRA
+	}
+		available = {surrender_progress>0.2}
+		visible = {
+		has_capitulated=no
+		
+		}
+		fire_only_once=yes
+		cost = 0
+		modifier={surrender_limit=-0.7}
+		days_remove=15
+		
+	}
+
 	FRA_claim_vichy_territory = {
 icon = generic_operation
 
@@ -184,7 +202,8 @@ foreign_politics = {
 		icon = generic_naval
 		available = {AND={
 			has_capitulated=yes
-			POL={has_capitulated=yes}
+			OR={POL={has_capitulated=yes}
+			NOT={country_exists = POL}}
 					}}
 
 		days_mission_timeout = 15
@@ -199,7 +218,7 @@ foreign_politics = {
 		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = arms_factory level = 1 }
 		if={
-		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
+		limit={check_variable = {resistance<11}} 
 		activate_mission=FRA_Resistance2
 		add_to_variable= {resistance = 1}
 		else={}
@@ -216,7 +235,8 @@ foreign_politics = {
 		icon = generic_naval
 		available = {AND={
 			has_capitulated=yes
-			POL={has_capitulated=yes}
+			OR={POL={has_capitulated=yes}
+			NOT={country_exists = POL}}
 					}}
 
 		days_mission_timeout = 15
@@ -230,7 +250,7 @@ foreign_politics = {
 		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = arms_factory level = 1 }
 		if={
-		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
+		limit={check_variable = {resistance<11}} 
 		activate_mission=FRA_Resistance3
 		add_to_variable= {resistance = 1}
 		else={}
@@ -247,7 +267,8 @@ foreign_politics = {
 		icon = generic_naval
 		available = {AND={
 			has_capitulated=yes
-			POL={has_capitulated=yes}
+			OR={POL={has_capitulated=yes}
+			NOT={country_exists = POL}}
 					}}
 
 		days_mission_timeout = 15
@@ -261,7 +282,7 @@ foreign_politics = {
 		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = arms_factory level = 1 }
 		if={
-		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
+		limit={check_variable = {resistance<11}} 
 		activate_mission=FRA_Resistance4
 		add_to_variable= {resistance = 1}
 		else={}
@@ -278,7 +299,8 @@ foreign_politics = {
 		icon = generic_naval
 		available = {AND={
 			has_capitulated=yes
-			POL={has_capitulated=yes}
+			OR={POL={has_capitulated=yes}
+			NOT={country_exists = POL}}
 					}}
 
 		days_mission_timeout = 15
@@ -292,7 +314,7 @@ foreign_politics = {
 		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = arms_factory level = 1 }
 		if={
-		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
+		limit={check_variable = {resistance<11}}  
 		activate_mission=FRA_Resistance5
 		add_to_variable= {resistance = 1}
 		else={}
@@ -309,7 +331,8 @@ foreign_politics = {
 		icon = generic_naval
 		available = {AND={
 			has_capitulated=yes
-			POL={has_capitulated=yes}
+			OR={POL={has_capitulated=yes}
+			NOT={country_exists = POL}}
 					}}
 
 		days_mission_timeout = 15
@@ -323,7 +346,7 @@ foreign_politics = {
 		add_offsite_building = { type = industrial_complex level = 1 }
 		add_offsite_building = { type = arms_factory level = 1 }
 		if={
-		limit={has_capitulated=no POL={has_capitulated=no} check_variable = {resistance<11}} 
+		limit={check_variable = {resistance<11}} 
 		activate_mission=FRA_Resistance
 		add_to_variable= {resistance = 1}
 		else={}

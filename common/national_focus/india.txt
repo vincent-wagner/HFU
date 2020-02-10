@@ -1199,7 +1199,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_lessons_of_the_great_war
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1260,37 +1260,27 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_expand_air_bases_AB1
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_expand_air_bases_AB2
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
 			435 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 5
+					level = 10
 					instant_build = yes
 				}
-				set_state_flag = RAJ_expand_air_bases_AB1
+			}
+			430 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			431 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1303,7 +1293,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_british_pilot_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1682,7 +1672,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1722,7 +1712,8 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = { focus = RAJ_tata_steel }
 		prerequisite = { focus = RAJ_assam_oil }
-		x = 0
+		prerequisite = { focus = RAJ_expand_mazagon_dock }
+		x = 1
 		y = 2
 		relative_position_id = RAJ_industrial_expansion
 
@@ -1757,7 +1748,7 @@ focus_tree = {
 		id = RAJ_institute_of_fundamental_research
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = RAJ_indian_institute_of_science }
-		x = 0
+		x = 1
 		y = 3
 		relative_position_id = RAJ_industrial_expansion
 
@@ -1985,7 +1976,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2022,7 +2013,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2059,7 +2050,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2095,7 +2086,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2132,7 +2123,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = RAJ_expand_mazagon_dock
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2151,13 +2142,30 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
+			
+				add_tech_bonus = {
 				name = RAJ_modernizing_navy
 				bonus = 3.0
-				uses = 1
+				uses = 5
 				category = naval_doctrine
 			}
-		}
+			random_owned_controlled_state = {
+				prioritize = { 428 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+		}}
 	}
 
 
@@ -2256,7 +2264,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
