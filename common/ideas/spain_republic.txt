@@ -377,7 +377,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			#traits = { light_aircraft_manufacturer }
 			
 			equipment_bonus = {
 				# capable of aerobatics, forward shooting machine guns, low number of crashes

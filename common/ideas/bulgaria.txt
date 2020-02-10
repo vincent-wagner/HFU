@@ -231,7 +231,7 @@ ideas = {
 			
 			cost = 100
 			
-			traits = { light_aircraft_manufacturer }
+			#traits = { light_aircraft_manufacturer }
 			
 			# licenced Focke-Wulf Fw 44, built own trainers DAR 6 and DAR 9.
 			
