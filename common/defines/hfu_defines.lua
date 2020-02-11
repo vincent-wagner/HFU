@@ -10,7 +10,7 @@ NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0     -- WAS 2
 NDefines.NTechnology.MAX_SUBTECHS = 4
 --Performance
 
-NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 
@@ -61,8 +61,8 @@ NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (whi
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
 ---------------------------------------------------------------
-NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.001						-- down from 0.02 | Chances one ship get damage each hour while on training 		
-
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0						-- down from 0.02 | Chances one ship get damage each hour while on training 		 0.0001	
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0
 ---------------------------------------------------------------
 NDefines.NAI.DIPLOMACY_REJECTED_WAIT_MONTHS_BASE = 24                --up from 4 | should cut down on AI spam
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0	
@@ -156,6 +156,7 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 100
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED=0
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 45 -- Was 30, exists to help speed 5 macro
 --generals
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0
@@ -251,7 +252,7 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.50 -- +50% org regen, 
 NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 2
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
 
-NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 45 -- Was 30, exists to help speed 5 macro
+
 
 NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING=2.5
 
