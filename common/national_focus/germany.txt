@@ -2368,7 +2368,7 @@ available = {
 				AUS = {
 					country_event = germany.28
 				}				
-				custom_effect_tooltip = anschluss_mefo_bills_tt
+				#custom_effect_tooltip = anschluss_mefo_bills_tt
 			}
 			
 		4 = {
@@ -2390,13 +2390,13 @@ available = {
 		USA = {
 			set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
 		}
-		custom_effect_tooltip = anschluss_mefo_bills_tt
-		hidden_effect = { # Having it appear twice might be confusing
-			GER_mefo_bills_level_down = yes
-			GER_mefo_bills_level_down = yes
-		}
-		custom_effect_tooltip = anschluss_mefo_bills_double_reduction
-		add_to_variable = { var = GER_mefo_bill_counter value = -10 }
+		#custom_effect_tooltip = anschluss_mefo_bills_tt
+		#hidden_effect = { # Having it appear twice might be confusing
+		#	GER_mefo_bills_level_down = yes
+		#	GER_mefo_bills_level_down = yes
+		#}
+		#custom_effect_tooltip = anschluss_mefo_bills_double_reduction
+		#add_to_variable = { var = GER_mefo_bill_counter value = -10 }
 		hidden_effect = {
 			news_event = { hours = 6 id = news.36 }
 		}
@@ -2924,7 +2924,7 @@ SPR = { country_event = spain.29 }
 				country_event = { id = germany.55 hours = 6 }
 			}
 			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-			custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
+			#custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		}
 	}
 

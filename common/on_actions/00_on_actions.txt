@@ -350,31 +350,6 @@ on_actions = {
 			USA = { add_war_support = 0.025 }
 			}
 
-			#Remove MEFO bills if Germany goes to war
-			if = {
-				limit = {
-					ROOT = { original_tag = GER }
-					ROOT = { GER_has_mefo_bills = yes }
-					NOT = { FROM = { original_tag = GER } } # Don't remove it from Fascist Germany if they start the civil war
-				}
-				ROOT = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
-				}
-			}
-
-			#Remove MEFO bills if Germany is declared war on
-			if = {
-				limit = {
-					FROM = { original_tag = GER }
-					FROM = { GER_has_mefo_bills = yes }
-				}
-				FROM = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
-				}
-			}
-
 			#Remove previous ideology civil war faction from Democratic Germany faction and add Democratic civil war faction to Germany's faction
 			if = {
 				limit = {

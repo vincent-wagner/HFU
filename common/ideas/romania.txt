@@ -523,39 +523,12 @@ ideas = {
 
 			picture = generic_air_bonus
 
-			equipment_bonus = {
-				CAS_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_CAS_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				tac_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				strat_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-			}
+			
 
 			modifier = {
-				air_ace_generation_chance_factor = 0.10
+				air_ace_generation_chance_factor = 0.20
+				air_cas_present_factor = 0.1
+				air_air_superiority_agility_factor=0.5
 			}
 		}
 

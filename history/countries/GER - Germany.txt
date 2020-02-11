@@ -96,6 +96,10 @@ set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
 set_country_flag=fuel_system_enabled
+add_timed_idea = {
+    idea = GER_mefo_bills_1
+    days = 1369
+}
 set_research_slots = 4
 set_convoys = 200
 add_equipment_to_stockpile = {
@@ -222,7 +226,7 @@ set_war_support = 0.4
 
 	set_global_flag = end_of_czechoslovakia
 	set_global_flag = olympics_1936
-	set_variable = { var = GER_mefo_bill_counter value = 90 }
+	#set_variable = { var = GER_mefo_bill_counter value = 90 }
 	complete_national_focus = GER_autobahn
 	complete_national_focus = GER_west_wall
 	complete_national_focus = GER_army_innovation
@@ -342,9 +346,9 @@ add_ideas = {
 	partial_economic_mobilisation
 	
 }
-add_ideas = GER_mefo_bills_1
+#add_ideas = GER_mefo_bills_1
 
-activate_mission = GER_mefo_bills_mission
+#activate_mission = GER_mefo_bills_mission
 
 create_country_leader = {
 	name = "Adolf Hitler"
