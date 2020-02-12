@@ -16,6 +16,7 @@ set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.2
 add_ideas = reliance_on_natural_rubber
+add_ideas = peace_training
 set_country_flag=no_naval_base
 # Starting tech
 set_technology = {

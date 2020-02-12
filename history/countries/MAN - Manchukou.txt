@@ -10,6 +10,7 @@ set_technology = {
 	tech_mountaineers = 1
 	
 }
+add_ideas = peace_training
 set_variable = {
     var = min_fuel
     value = 0.800
