@@ -3877,4 +3877,7 @@
  SOV_winter_offensive:0 "Winter Offensive"
  GER_ardennenoffensive:0 "Ardennenoffensive"
   GER_flak_36:0 "Flugzeugabwehrkanone 36"
+ ITA_transport_resc:0 "Gomma e Olio"
+ ITA_transport_resc_desc:0 "We have to move the natural resources from Libya to Rome"
+ alda:0"§R This focus will move your Oil and Rubber to Rome §R "
  GER_flak_36_desc:0 "The 8.8 cm Flak 36(commonly called the eighty-eight) was a German 88 mm anti-aircraft and anti-tank artillery gun from World War II. It was widely used by Germany throughout the war, and was one of the most recognized German weapons of that conflict. Development of the original model led to a wide variety of guns."

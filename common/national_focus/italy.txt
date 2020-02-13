@@ -909,7 +909,7 @@ date > 1941.6.1
 		x = 0
 		y = 1
 		relative_position_id = ITA_extra_tech_slot
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -919,7 +919,7 @@ date > 1941.6.1
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -1066,21 +1066,15 @@ date > 1941.6.1
 		}	
 		completion_reward = {
 			
-			662 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 2
-					instant_build = yes
-				}
+			
 				add_resource = {
 				type = oil
-				amount = 4
+				amount = 25
 				state = 662
 			}
 			}	
 		
-		}
+		
 	}	
 	
 	
@@ -1210,6 +1204,51 @@ date > 1941.6.1
 			
 		}
 	}		
+    
+	focus = {
+	    id = ITA_transport_resc
+		icon = GFX_goal_generic_oil_refinery
+		
+		prerequisite = { focus = ITA_libyan_infrastructure focus = ITA_libyan_refineries }
+		available = {
+			
+			date>1941.6.1
+			ITA = {
+				AND = {controls_state = 661 controls_state = 448 controls_state = 662}
+				
+				
+			}
+		}
+		x = 0
+		y = 2
+		relative_position_id = ITA_prospect_for_oil
+		cost = 0
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+	
+	custom_effect_tooltip = alda
+
+	hidden_effect = {		
+activate_decision = ITA_relocation
+activate_decision = ITA_relocation2
+activate_decision = ITA_relocation3
+	}
+		}
+	}	
+
+
+
+
+
+
+
+
+
 
 		
 
