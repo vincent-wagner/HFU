@@ -51,6 +51,28 @@ ideas = {
 			}
 		}
 
+		
+		ITA_roman = {
+		picture = tfv_can_conscription_crisis
+		allowed = {
+				original_tag = ITA
+			}
+		removal_cost = -1
+		
+		
+		
+		
+		modifier = {
+		stability_factor = 0.10
+		heat_attrition_factor = -0.5
+		acclimatization_hot_climate_gain_factor = 0.1
+		
+		}
+		
+		
+		
+		}
+		
 		ITA_german_millitary_cooperation_focus = {
 
 			picture = german_advisors

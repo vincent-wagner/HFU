@@ -2158,49 +2158,22 @@ activate_decision = ITA_relocation3
 
 	focus = {
 		id = ITA_romania_friend
-		icon = GFX_focus_BUL_befriend_commie_ROM
+		icon = GFX_ITA_Regio_Esercito
 		prerequisite = { focus = ITA_bulgaria_friend }
 		x = 1
 		y = 1
 		relative_position_id = ITA_bulgaria_friend
-		cost = 3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
 		}
-		bypass = {
-			ROM = {
-				NOT = { country_exists = ROM }
-			}
-		}
+		
+		
 		completion_reward = {
-			ROM = {
-				if = {
-					limit = { ROOT = { has_government = fascism } }
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-				}
-				if = {
-					limit = { ROOT = { has_government = democratic } }
-					add_timed_idea = { idea = democratic_influence days = 1095 }
-				}
-				if = {
-					limit = { ROOT = { has_government = communism } }
-					add_timed_idea = { idea = communist_influence days = 1095 }
-				}
-				country_event = { id = generic.1 }}
-			HUN = {
-				if = {
-					limit = { ROOT = { has_government = fascism } }
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-				}
-			}
-			BUL = {
-				if = {
-					limit = { ROOT = { has_government = fascism } }
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-				}
-			}
+			add_ideas = military_youth_focus
+			
 		}
 	}
 
@@ -2315,5 +2288,43 @@ activate_decision = ITA_relocation3
 			102 = {	add_claim_by  = GER}
 			}
 		}
+
 	}
+
+
+	focus = {
+		id = ITA_rome
+		icon = GFX_ITA_Mare_Nostrum
+		prerequisite = { focus = ITA_greece_war_goal }
+		available = {
+ 
+		ITA = { AND = {controls_state =	447 controls_state = 446 controls_state = 116 controls_state = 183 controls_state = 182 }}
+			
+		}
+		
+		x = 2
+		y = 2
+		relative_position_id = ITA_pact_of_steel
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+		
+		add_ideas = ITA_roman
+		
+		
+		
+		}
+
+	}
+
+
+
+
+
+
+
+
+
 }
