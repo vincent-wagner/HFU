@@ -33,7 +33,8 @@ set_technology = {
 	strategic_bomber1 = 1
 	CAS1 = 1
 	naval_bomber1 = 1
-	
+	electronic_mechanical_engineering = 1
+	radio = 1
 	mobile_warfare = 1
 	trade_interdiction = 1
 	synth_oil_experiments = 1

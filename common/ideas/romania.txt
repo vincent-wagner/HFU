@@ -878,7 +878,7 @@ ideas = {
 			
 			picture = generic_army_europe_2
 			
-			traits = { army_infantry_2 }
+			traits = { army_infantry_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -894,7 +894,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			traits = { army_commando_2 }
+			traits = { army_commando_1 }
 			
 			ai_will_do = {
 				factor = 1
