@@ -790,6 +790,17 @@ create_navy_leader = {
 }
 
 create_navy_leader = {
+	name = ".FazeHeart"
+		picture = "Portrait_Germany_FazeHeart.dds"
+	traits = { fleet_protector destroyer_leader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 9
+	coordination_skill = 1
+}
+
+create_navy_leader = {
 	name = "Alfred Saalwächter"
 		picture = "Portrait_Germany_Alfred_Saalwachter.dds"
 	traits = { superior_tactician}
