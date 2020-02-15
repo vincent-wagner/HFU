@@ -808,8 +808,8 @@ GER_ckd = {
 				}
 			}
 			available = {
-				has_completed_focus = GER_end_of_czechoslovakia
-				}
+				GER = {has_completed_focus = GER_end_of_czechoslovakia}
+			}
 						
 			traits = {  }
 

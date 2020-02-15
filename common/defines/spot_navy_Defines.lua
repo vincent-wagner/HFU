@@ -49,6 +49,16 @@ NDefines.NNavy.MISSION_SPREADS = {  -- mission spreads in the case a ship join c
 		0.0, -- RESERVE_FLEET
 		0.0, -- NAVAL_INVASION_SUPPORT
 }
+NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1
+NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.5
+NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
+		1000,     -- do not engage
+		15,   -- low
+		3.0,   -- medium
+		3.0,   -- high
+		3.0,   -- I am death incarnate!
+	}
+
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003	-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 
 NDefines.NNavy.SUBMARINE_REVEAL_POW = 1.8		-- A scaling factor that is applied to the reveal chance in order to make large differences in detection vs visibility more pronounced
