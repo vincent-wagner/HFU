@@ -480,6 +480,7 @@ focus_tree = {
 		#}
 		completion_reward = {
 			add_research_slot = 1
+			add_to_tech_sharing_group = commonwealth_research
 		}
 	}
 
