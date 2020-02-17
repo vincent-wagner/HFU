@@ -15,6 +15,7 @@ state={
 			infrastructure = 5
 			dockyard = 1
 			industrial_complex = 1
+			air_base = 6
 		}
 		add_core_of = SOV
 		1939.1.1 = {
@@ -25,6 +26,6 @@ state={
 	}
 
 	provinces={
-		409 574 3403 3755 6597 9573 11546 11683 
+		409 574 3403 3755 6597 9573 11546 11683 11715
 	}
 }

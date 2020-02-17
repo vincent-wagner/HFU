@@ -56,7 +56,7 @@ operations = {
 			EFR={
 				every_country = {
 					if = {
-						limit = { is_in_faction_with = ENG }
+						limit = { is_in_faction_with = ENG has_war=yes}
 						EFR = {
 							declare_war_on = {
 								target = PREV

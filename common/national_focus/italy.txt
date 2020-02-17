@@ -12,7 +12,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 50 y = 1200 }
 
 	focus = {
 		id = ITA_ethiopian_war_logistics
@@ -1208,13 +1208,13 @@ date > 1941.6.1
 	focus = {
 	    id = ITA_transport_resc
 		icon = GFX_goal_generic_oil_refinery
-		
-		prerequisite = { focus = ITA_libyan_infrastructure focus = ITA_libyan_refineries }
+		prerequisite = { focus = ITA_libyan_infrastructure}
+		prerequisite = { focus = ITA_libyan_refineries }
 		available = {
 			
-			date>1941.6.1
+			date>1941.8.1
 			ITA = {
-				AND = {controls_state = 661 controls_state = 448 controls_state = 662}
+				AND = {controls_state = 662 controls_state = 2}
 				
 				
 			}
@@ -1222,27 +1222,271 @@ date > 1941.6.1
 		x = 0
 		y = 2
 		relative_position_id = ITA_prospect_for_oil
-		cost = 0
-
+		cost = 5
+		continue_if_invalid=no
+		cancel_if_invalid=no
 		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
-	
-	custom_effect_tooltip = alda
-
-	hidden_effect = {		
-activate_decision = ITA_relocation
-activate_decision = ITA_relocation2
-activate_decision = ITA_relocation3
-	}
+		add_resource = {
+			type = oil
+			amount = 33
+			state = 115
+		}
+		
+		add_resource = {
+			type = oil
+			amount = -33
+			state = 662
+		}	
 		}
 	}	
+	focus = {
+	    id = ITA_transport_resc2
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = ITA_libyan_infrastructure}
+		prerequisite = { focus = ITA_libyan_refineries }
+		
+		available = {
+			
+			date>1941.7.1
+			ITA = {
+				AND = {controls_state = 291 controls_state = 676 controls_state = 115 controls_state = 662}
+				
+				
+			}
+		}
+		x = -2
+		y = 2
+		relative_position_id = ITA_prospect_for_oil
+		cost = 5
+		continue_if_invalid=no
+		cancel_if_invalid=no
+		available_if_capitulated = yes
 
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		
+		add_resource = {
+			type = oil
+			amount = 7
+			state = 662
+		}
+		if={limit={676 = {
+					has_state_flag = mosul_developed
+				}}
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 115
+		}
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 662
+		}
+		add_resource = {
+			type = oil
+			amount = -28
+			state = 676
+		}
+		}
+		add_resource = {
+			type = oil
+			amount = -7
+			state = 291
+		}
+		add_resource = {
+			type = oil
+			amount = -14
+			state = 676
+		}
+		
+		}
+	}
+	focus = {
+	    id = ITA_transport_resc3
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = ITA_libyan_infrastructure}
+		prerequisite = { focus = ITA_libyan_refineries }
+		available = {
+			
+			date>1941.9.1
+			ITA = {
+				AND = {controls_state = 661 controls_state = 2}
+				
+				
+			}
+		}
+		x = 2
+		y = 2
+		relative_position_id = ITA_prospect_for_oil
+		cost = 5
+		continue_if_invalid=no
+		cancel_if_invalid=no
+		available_if_capitulated = yes
 
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		add_resource = {
+			type = rubber
+			amount = 20
+			state = 2
+		}
+		
+		add_resource = {
+			type = rubber
+			amount = -20
+			state = 661
+		}	
+		}
+	}
+	focus = {
+	    id = ITA_transport_resc4
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = ITA_transport_resc2}
+		available = {
+			
+			date>1941.10.1
+			ITA = {
+				AND = {controls_state = 676 controls_state = 2}
+				
+				
+			}
+		}
+		x = -2
+		y = 3
+		relative_position_id = ITA_prospect_for_oil
+		cost = 5
+		continue_if_invalid=no
+		cancel_if_invalid=no
+		available_if_capitulated = yes
 
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 2
+		}
+		add_resource = {
+			type = oil
+			amount = 6
+			state = 2
+		}
+		add_resource = {
+			type = oil
+			amount = -6
+			state = 291
+		}
+		add_resource = {
+			type = oil
+			amount = -14
+			state = 676
+		}
+		
+		}
+	}	
+	focus = {
+	    id = ITA_transport_resc6
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = ITA_transport_resc3}
+		
+		available = {
+			
+			date>1941.11.1
+			ITA = {
+				AND = {controls_state = 661 controls_state = 2}
+				
+				
+			}
+		}
+		x = 2
+		y = 3
+		relative_position_id = ITA_prospect_for_oil
+		cost = 5
+		continue_if_invalid=no
+		cancel_if_invalid=no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		add_resource = {
+			type = rubber
+			amount = 25
+			state = 2
+		}
+		
+		add_resource = {
+			type = rubber
+			amount = -25
+			state = 661
+		}	
+		}
+	}
+focus = {
+	    id = ITA_transport_resc5
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = ITA_transport_resc}
+		available = {
+			
+			date>1941.11.1
+			ITA = {
+				AND = {controls_state = 662 controls_state = 2}
+				
+				
+			}
+		}
+		x = 0
+		y = 3
+		relative_position_id = ITA_prospect_for_oil
+		cost = 5
+		continue_if_invalid=no
+		cancel_if_invalid=no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		add_resource = {
+			type = oil
+			amount = 15
+			state = 2
+		}
+		
+		add_resource = {
+			type = oil
+			amount = -15
+			state = 662
+		}
+		if={limit={676 = {
+					has_state_flag = mosul_developed
+				}}
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 2
+		}
+		add_resource = {
+			type = oil
+			amount = -14
+			state = 662
+		}
+		}
+		}
+	}	
 
 
 
