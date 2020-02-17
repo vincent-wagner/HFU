@@ -115,33 +115,7 @@ continuous_focus_palette = {
 		available_if_capitulated = yes
 	}
 
-	focus = {
-		id = continuous_suppression
-		
-		icon = GFX_goal_continuous_suppression
-		
-		available = {
-		}
-		
-		modifier = {
-			resistance_tick_auto = -2
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				
-				num_occupied_states < 1
-			}
-		}
-		
-		supports_ai_strategy = ai_focus_military_advancements
-		
-		daily_cost = 1
-		
-		available_if_capitulated = yes
-	}
+	
 
 	focus = {
 		id = continuous_repair
@@ -163,54 +137,6 @@ continuous_focus_palette = {
 				
 				has_damaged_buildings = no
 			}
-		}
-		
-		supports_ai_strategy = ai_focus_military_advancements
-		
-		daily_cost = 1
-		
-		available_if_capitulated = yes
-	}
-
-	focus = {
-		id = continuous_tech_share
-		
-		icon = GFX_goal_continuous_research
-		
-		available = {
-			hidden_trigger = { has_dlc = "Together for Victory" }
-			
-		}
-
-		enable = {
-			is_in_faction = yes
-			num_faction_members > 1
-
-			custom_trigger_tooltip = {
-				tooltip = NO_OTHER_SHARING_GROUPS
-				OR = {
-					AND = {
-						is_in_tech_sharing_group = continuous_tech_share
-						num_tech_sharing_groups < 2
-					}
-					num_tech_sharing_groups < 2
-				}				
-			}
-		}
-		
-		select_effect = {
-			if = {
-				limit = { NOT={is_in_tech_sharing_group=commonwealth_research}}
-				add_to_tech_sharing_group = continuous_tech_share
-			}
-		}
-		
-		cancel_effect = {
-			remove_from_tech_sharing_group = continuous_tech_share	
-		}
-
-		ai_will_do = {
-			factor = 0
 		}
 		
 		supports_ai_strategy = ai_focus_military_advancements
@@ -245,33 +171,6 @@ continuous_focus_palette = {
 		available_if_capitulated = yes
 	}
 
-	focus = {
-		id = continuous_restrict_freedom
-		
-		icon = GFX_goal_continuous_restrict_freedom
-		
-		available = {
-			hidden_trigger = { has_dlc = "Together for Victory" }
-		}
-
-		enable = {
-			num_subjects > 0
-		}
-
-		modifier = {
-			subjects_autonomy_gain = -0.5
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		supports_ai_strategy = ai_focus_military_advancements
-		
-		daily_cost = 1
-		
-		available_if_capitulated = yes
-	}
 	
 		focus = {
 		id = continuous_recruitment_drive

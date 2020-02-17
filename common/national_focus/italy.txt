@@ -2443,7 +2443,7 @@ focus = {
 				country_event = { id = italy.5 days = 1 }
 				custom_effect_tooltip = needs_approval
 			}
-			# Actual reward effects added in event if Soviets approve
+			add_to_tech_sharing_group = axis_research
 			effect_tooltip = {
 				add_tech_bonus = {
 					name = synth_bonus
