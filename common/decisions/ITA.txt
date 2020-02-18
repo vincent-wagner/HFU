@@ -21,7 +21,7 @@ ITA_annex_bul = {
 			visible = {
 			BUL = { is_ai = yes }
 				}
-
+			fire_only_once = yes
 			complete_effect = {
 				BUL = {
 					every_owned_state={
