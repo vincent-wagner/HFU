@@ -1019,9 +1019,10 @@ leader_traits = {
 	
 	prince_of_terror = {
 		sprite = 13
-		enemy_partisan_effect = -0.25
-		foreign_subversive_activites = -0.3
-		non_core_manpower = 0.1
+		#enemy_partisan_effect = -0.25
+		#foreign_subversive_activites = -0.3
+		non_core_manpower = 0.15
+		political_power_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -1925,7 +1926,7 @@ leader_traits = {
 				naval_speed = 0.15
 			}
 			submarine = {
-			naval_range = 0.25
+			naval_range = 0.20
 			}
 		}
 		
