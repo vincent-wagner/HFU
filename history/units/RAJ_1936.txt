@@ -63,18 +63,6 @@ units = {
 	}
 }
 
-air_wings = {
-	### AHQ India
-	439 = { 
-		### AHQ India -- Fairey Gordons, Battles
-		CAS_equipment_1 = {
-			owner = "RAJ" 
-			amount = 80
-		}
-	}
-}
-
-
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
@@ -85,5 +73,23 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.12
 		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "RAJ" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "RAJ" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
 	}
 }

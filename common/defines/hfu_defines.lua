@@ -40,7 +40,7 @@ NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 1                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
-NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 750000 
+NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 5000000
 
 ---------------------------------------------------------------
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 1000				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
@@ -156,7 +156,7 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 100
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED=0
-NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 45 -- Was 30, exists to help speed 5 macro
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50 -- Was 30, exists to help speed 5 macro
 --generals
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0

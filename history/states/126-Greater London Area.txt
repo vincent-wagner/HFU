@@ -19,7 +19,7 @@ state={
 			radar_station = 1
 			air_base = 20
 			11374 = {
-				naval_base = 10
+				naval_base = 20
 			}
 		}
 		add_core_of = ENG

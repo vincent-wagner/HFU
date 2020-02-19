@@ -112,4 +112,22 @@ instant_effect = {
 		progress = 0.20
 		efficiency = 100
 	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "SAF" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SAF" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
 }

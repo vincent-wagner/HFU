@@ -1222,7 +1222,7 @@ date > 1941.6.1
 		x = 0
 		y = 2
 		relative_position_id = ITA_prospect_for_oil
-		cost = 5
+		cost = 4
 		continue_if_invalid=no
 		cancel_if_invalid=no
 		available_if_capitulated = yes
@@ -1233,13 +1233,13 @@ date > 1941.6.1
 		completion_reward = {
 		add_resource = {
 			type = oil
-			amount = 33
-			state = 115
+			amount = 15
+			state = 46
 		}
 		
 		add_resource = {
 			type = oil
-			amount = -33
+			amount = -15
 			state = 662
 		}	
 		}
@@ -1262,7 +1262,7 @@ date > 1941.6.1
 		x = -2
 		y = 2
 		relative_position_id = ITA_prospect_for_oil
-		cost = 5
+		cost = 4
 		continue_if_invalid=no
 		cancel_if_invalid=no
 		available_if_capitulated = yes
@@ -1272,41 +1272,42 @@ date > 1941.6.1
 		}	
 		completion_reward = {
 		
-		add_resource = {
-			type = oil
-			amount = 7
-			state = 662
-		}
+		
 		if={limit={676 = {
 					has_state_flag = mosul_developed
 				}}
 		add_resource = {
 			type = oil
-			amount = 14
-			state = 115
-		}
-		add_resource = {
-			type = oil
-			amount = 14
-			state = 662
+			amount = 28
+			state = 46
 		}
 		add_resource = {
 			type = oil
 			amount = -28
 			state = 676
 		}
+		} else = {
+			add_resource = {
+				type = oil
+				amount = 14
+				state = 46
+			}
+			add_resource = {
+				type = oil
+				amount = -14
+				state = 676
+			}
+		}
+		add_resource = {
+			type = oil
+			amount = 7
+			state = 46
 		}
 		add_resource = {
 			type = oil
 			amount = -7
 			state = 291
 		}
-		add_resource = {
-			type = oil
-			amount = -14
-			state = 676
-		}
-		
 		}
 	}
 	focus = {
@@ -1326,7 +1327,7 @@ date > 1941.6.1
 		x = 2
 		y = 2
 		relative_position_id = ITA_prospect_for_oil
-		cost = 5
+		cost = 4
 		continue_if_invalid=no
 		cancel_if_invalid=no
 		available_if_capitulated = yes
@@ -1364,7 +1365,7 @@ date > 1941.6.1
 		x = -2
 		y = 3
 		relative_position_id = ITA_prospect_for_oil
-		cost = 5
+		cost = 4
 		continue_if_invalid=no
 		cancel_if_invalid=no
 		available_if_capitulated = yes
@@ -1373,25 +1374,40 @@ date > 1941.6.1
 			factor = 1
 		}	
 		completion_reward = {
+		if={limit={676 = {
+					has_state_flag = mosul_developed
+				}}
 		add_resource = {
 			type = oil
-			amount = 14
-			state = 2
+			amount = 28
+			state = 46
+		}
+		add_resource = {
+			type = oil
+			amount = -28
+			state = 676
+		}
+		} else = {
+			add_resource = {
+				type = oil
+				amount = 14
+				state = 46
+			}
+			add_resource = {
+				type = oil
+				amount = -14
+				state = 676
+			}
 		}
 		add_resource = {
 			type = oil
 			amount = 6
-			state = 2
+			state = 46
 		}
 		add_resource = {
 			type = oil
 			amount = -6
 			state = 291
-		}
-		add_resource = {
-			type = oil
-			amount = -14
-			state = 676
 		}
 		
 		}
@@ -1403,7 +1419,7 @@ date > 1941.6.1
 		
 		available = {
 			
-			date>1941.11.1
+			date>1941.12.1
 			ITA = {
 				AND = {controls_state = 661 controls_state = 2}
 				
@@ -1413,7 +1429,7 @@ date > 1941.6.1
 		x = 2
 		y = 3
 		relative_position_id = ITA_prospect_for_oil
-		cost = 5
+		cost = 4
 		continue_if_invalid=no
 		cancel_if_invalid=no
 		available_if_capitulated = yes
@@ -1451,7 +1467,7 @@ focus = {
 		x = 0
 		y = 3
 		relative_position_id = ITA_prospect_for_oil
-		cost = 5
+		cost = 4
 		continue_if_invalid=no
 		cancel_if_invalid=no
 		available_if_capitulated = yes
@@ -1462,28 +1478,14 @@ focus = {
 		completion_reward = {
 		add_resource = {
 			type = oil
-			amount = 15
-			state = 2
+			amount = 18
+			state = 46
 		}
 		
 		add_resource = {
 			type = oil
-			amount = -15
+			amount = -18
 			state = 662
-		}
-		if={limit={676 = {
-					has_state_flag = mosul_developed
-				}}
-		add_resource = {
-			type = oil
-			amount = 14
-			state = 2
-		}
-		add_resource = {
-			type = oil
-			amount = -14
-			state = 662
-		}
 		}
 		}
 	}	

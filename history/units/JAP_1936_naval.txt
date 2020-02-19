@@ -59,8 +59,7 @@ units = {
 			ship = { name = "I-171" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class"} } }
 			ship = { name = "Ryujo" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = JAP version_name = "Ryujo Class" } } 				
 				air_wings = { 
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 24 } # historical 24
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } 	# historical 12
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 1 } # historical 24
 				}
 			}
 			#Dai 5 Kuchikutai
@@ -94,9 +93,7 @@ units = {
 			# Dai 2 Koku Sentai
 			ship = { name = "Kaga" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Kaga Class"} } 			
 				air_wings = { 
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 16 } # historical 16
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 16 } # historical 16
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 28 } # historical 28
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 1 } # historical 28
 				}
 			}
 			#Flagship
@@ -137,15 +134,12 @@ units = {
 			ship = { name = "Kirishima" definition = battle_cruiser start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Kongo Class"} } }
 			ship = { name = "Akagi" definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Akagi Class"} } 				
 				air_wings = { 
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 12 } 	# historical 12
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } 			# historical 18
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 36 } 	# historical 36
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 1 } 	# historical 36
 				}
 			}	
 			ship = { name = "Hosho" definition = carrier equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = JAP version_name = "Hosho Class"} } 				
-				air_wings = { 
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 10 } 	
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 5 } 	
+				air_wings = { 	
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 1 } 	
 				}
 			}
 			ship = { name = "Natori" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class"} } }
@@ -291,7 +285,7 @@ instant_effect =
 				creator = "JAP"
 				version_name = "Kongo Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.2
 			amount = 1
 		}
@@ -302,7 +296,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Soryu Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.66
 
 			amount = 1
@@ -313,7 +307,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Zuiho Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.15
 
 			amount = 1
@@ -325,7 +319,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Myoko Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.2
 			amount = 1
 		}		
@@ -336,7 +330,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Kuma/Nagara Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.15
 			amount = 1
 		}		
@@ -347,7 +341,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Fubuki Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.7
 			amount = 1
 		}		
@@ -357,7 +351,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Fubuki Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.6
 			amount = 1
 		}		
@@ -367,7 +361,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Fubuki Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.5
 			amount = 1
 		}		
@@ -377,7 +371,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Fubuki Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.4
 			amount = 1
 		}		
@@ -387,7 +381,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Fubuki Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.3
 			amount = 1
 		}		
@@ -398,7 +392,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Kaidai III Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.7
 			amount = 1
 		}
@@ -408,7 +402,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Kaidai III Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.6
 			amount = 1
 		}
@@ -419,7 +413,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Kaidai III Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.7
 			amount = 1
 		}
@@ -429,7 +423,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Kaidai III Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.6
 			amount = 1
 		}
@@ -440,7 +434,7 @@ instant_effect =
 				creator = "JAP" 
 				version_name = "Ro-26 Class"
 			}
-			requested_factories = 10
+			requested_factories = 20
 			progress = 0.80
 			amount = 1
 		}
