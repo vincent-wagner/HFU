@@ -127,7 +127,7 @@ ideas = {
 		        air_ace_generation_chance_factor = 2
 				air_cas_present_factor = 0.2}
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.25
 				jet_technology = 0.10
 			}
 

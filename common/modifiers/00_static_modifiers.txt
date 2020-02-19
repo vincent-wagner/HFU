@@ -296,6 +296,8 @@ war_support_bad_modifier = {
 
 attache_sent = {
 	war_support_factor = 0.1
+	experience_gain_army = 0.2
+	
 }
 
 # Difficulty modifiers

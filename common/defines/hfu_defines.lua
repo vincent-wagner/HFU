@@ -172,6 +172,15 @@ NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6 -- WAS 5 | We added one more support company as it feels necessary for quality tank or infantry divisions -Thrasymachus
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 6		-- Max height of regiments in division designer
 
+--Eq upgrade cost
+
+NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 10					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
+NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 4					
+NDefines.NMilitary.NAVAL_EQUIPMENT_BASE_COST = 5
+NDefines.NMilitary.NAVAL_EQUIPMENT_RAMP_COST = 2
+NDefines.NMilitary.AIR_EQUIPMENT_BASE_COST = 25
+NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 5
+
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
 NDefines.NBuildings.MAX_BUILDING_LEVELS=20

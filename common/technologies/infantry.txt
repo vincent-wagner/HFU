@@ -810,7 +810,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1938 }
+			position = { x = 2 y = 4 }
 		}
 		
 		categories = {
@@ -832,7 +832,7 @@ technologies = {
 
 		category_special_forces = {
 			max_organisation = 5
-			defense = 0.05
+			defense = 0.075
 		}
 
 		special_forces_training_time_factor = 0.1
@@ -846,7 +846,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = 6 }
 		}
 		
 		categories = {
@@ -864,9 +864,14 @@ technologies = {
 		xor={
 			advanced_special_forces
 		}
-
-		special_forces_cap = 0.05
-		special_forces_training_time_factor = -0.1
+		category_special_forces = {
+		   	breakthrough = 0.05
+			max_organisation = 5
+			
+		
+		
+		}
+		special_forces_training_time_factor = -0.2
 		
 		path = {
 			leads_to_tech = survival_training
@@ -877,7 +882,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1940 }
+			position = { x = 3 y = 6 }
 		}
 		
 		categories = {
@@ -897,7 +902,8 @@ technologies = {
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.50
 			acclimatization_cold_climate_gain_factor = 0.50
-		    breakthrough = 0.15
+		   	breakthrough = 0.10
+			supply_consumption_factor=-0.1
 		
 		
 		}
@@ -911,10 +917,10 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @1942 }
+			position = { x = 1 y = 8 }
 		}
 		
 		categories = {
@@ -936,7 +942,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.20
 		}
 		
-		special_forces_out_of_supply_factor = -0.1
+		special_forces_out_of_supply_factor = -0.2
 		
 		path = {
 			leads_to_tech = elite_forces
@@ -947,7 +953,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1942 }
+			position = { x = 3 y = 8 }
 		}
 		
 		categories = {
@@ -968,6 +974,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.20
 			max_organisation = 5
 			soft_attack = 0.05
+			breakthrough = 0.05
 		}
 		
 		special_forces_no_supply_grace = 48
@@ -976,7 +983,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1944 }
+			position = { x = 2 y = 10 }
 		}
 		
 		categories = {

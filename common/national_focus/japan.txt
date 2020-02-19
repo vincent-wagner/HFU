@@ -1895,6 +1895,12 @@ completion_reward = {
 
 		completion_reward = {
 			remove_ideas = JAP_duplicate_research_efforts
+			add_tech_bonus = {
+				name = strat_dest_bonus
+				bonus = 1.5
+				uses = 6
+				category = air_doctrine
+			}
 		}
 	}
 

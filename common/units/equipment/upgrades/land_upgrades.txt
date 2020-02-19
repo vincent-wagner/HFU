@@ -12,7 +12,6 @@ upgrades = {
 	}
 	tank_armor_upgrade = {
 		max_level = 5
-
 		cost = land
 		armor_value = 0.05
 		maximum_speed = -0.02
@@ -27,11 +26,11 @@ upgrades = {
 	tank_reliability_upgrade = {
 		max_level = 5
 		cost = land
-		reliability = 0.05
+		reliability = 0.10
+		build_cost_ic=0.03
 	}
 	tank_aa_upgrade = {
 		max_level = 5
-
 		cost = land
 		air_attack = 0.15
 		maximum_speed = -0.02

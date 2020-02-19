@@ -1469,8 +1469,8 @@ random_owned_controlled_state = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = air_sup_bonus
-				bonus = 1.0
-				uses = 2
+				bonus = 1.5
+				uses = 4
 				category = air_doctrine
 			}
 			every_state = {
@@ -1497,7 +1497,7 @@ random_owned_controlled_state = {
 
 			add_tech_bonus = {
 				name = air_sup_bonus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 6
 				category = air_doctrine
 			}
@@ -1586,7 +1586,7 @@ random_owned_controlled_state = {
 		x = 0
 		y = 2
 		relative_position_id = GER_tactical_air_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1621,8 +1621,8 @@ random_owned_controlled_state = {
 			# Balance research bonus for 2 techs in battlefield_support_tree
 			add_tech_bonus = {
 				name = strat_dest_bonus
-				bonus = 1.0
-				uses = 2
+				bonus = 1.5
+				uses = 4
 				category = air_doctrine
 			}
 			add_tech_bonus = {
