@@ -29,23 +29,17 @@ units= {
 			ship = { name = "USS Maryland" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
 			ship = { name = "USS Ranger" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_1 = { amount = 1 owner = USA version_name = "Ranger Class" } } 
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "USA" amount = 36 } # historical: 36
-					cv_CAS_equipment_1 =  { owner = "USA" amount = 12 } # historical: 15
-					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 12 } # historical: 12
+					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 1 } # historical: 12
 				}
 			}
 			ship = { name = "USS Lexington" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "Lexington Class" } } 
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "USA" amount = 16 } # historical: 16
-					cv_CAS_equipment_1 =  { owner = "USA" amount = 30 } # historical: 30
-					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 12 } # historical: 12
+					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 1 } # historical: 12
 				}
 			}
 			ship = { name = "USS Saratoga" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = USA version_name = "Lexington Class" } } 
 				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "USA" amount = 16 } # historical: 16
-					cv_CAS_equipment_1 =  { owner = "USA" amount = 30 } # historical: 30
-					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 12 } # historical: 12
+					cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 1 } # historical: 12
 				}
 			}
 			# Cruiser Division 2 #			
@@ -325,7 +319,7 @@ instant_effect = {
 			version_name = "New Orleans Class"
 		}
 		name = "USS Quincy" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.60
 		amount = 1
 	}
@@ -335,7 +329,7 @@ instant_effect = {
 			creator = "USA"
 			version_name = "New Orleans Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.50
 		amount = 1
 	}
@@ -346,7 +340,7 @@ instant_effect = {
 			creator = "USA"
 			version_name = "New Orleans Class"
 		} 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.10
 		amount = 1
 	}
@@ -357,7 +351,7 @@ instant_effect = {
 			creator = "USA"
 			version_name = "Yorktown Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.50
 		amount = 1
 	}
@@ -367,7 +361,7 @@ instant_effect = {
 			creator = "USA"
 			version_name = "Yorktown Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.40
 		amount = 1
 	}
@@ -380,7 +374,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Porter" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.20
 		amount = 1
 	}
@@ -391,7 +385,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Phelps" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.80
 		amount = 1
 	}
@@ -402,7 +396,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Clark" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.50
 		amount = 1
 	}
@@ -413,7 +407,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Moffett" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.20
 		amount = 1
 	}
@@ -425,7 +419,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Mahan" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.30
 		amount = 1
 	}
@@ -436,7 +430,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Cummings" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.10
 		amount = 1
 	}
@@ -447,7 +441,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Flusser" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.20
 		amount = 1
 	}
@@ -458,7 +452,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Case" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.30
 		amount = 1
 	}
@@ -469,7 +463,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Conyngham" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.10
 		amount = 1
 	}
@@ -480,7 +474,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Cassin" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.40
 		amount = 1
 	}
@@ -491,7 +485,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Shaw" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.30
 		amount = 1
 	}
@@ -502,7 +496,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Cushing" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.40
 		amount = 1
 	}
@@ -513,7 +507,7 @@ instant_effect = {
 			version_name = "Farragut Class"
 		}
 		name = "USS Perkins" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.30
 		amount = 1
 	}
@@ -525,7 +519,7 @@ instant_effect = {
 			version_name = "Porpoise Class"
 		}
 		name = "USS Tarpon" 
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.70
 		amount = 1
 	}

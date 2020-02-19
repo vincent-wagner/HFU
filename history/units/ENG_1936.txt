@@ -199,7 +199,7 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = tac_bomber_equipment_0
+			type = tac_bomber_equipment_1
 			creator = "ENG" 
 		}
 		requested_factories = 1
@@ -217,11 +217,29 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
+			type = CAS_equipment_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
 			type = motorized_equipment_1
 			creator = "ENG" 
 		}
 		requested_factories = 1
 		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.3
 		efficiency = 50
 	}
 	

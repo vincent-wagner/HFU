@@ -73,7 +73,7 @@ instant_effect = {
 			creator = "GER" 
 			version_name = "Type II Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.75
 		amount = 1
 	}
@@ -83,7 +83,7 @@ instant_effect = {
 			creator = "GER" 
 			version_name = "Type II Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.65
 		amount = 1
 	}
@@ -93,7 +93,7 @@ instant_effect = {
 			creator = "GER" 
 			version_name = "Type II Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.55
 		amount = 1
 	}
@@ -103,7 +103,7 @@ instant_effect = {
 			creator = "GER" 
 			version_name = "Type II Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.45
 		amount = 1
 	}
@@ -114,7 +114,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934 Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.75
 		amount = 1
 	}
@@ -124,7 +124,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934 Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.65
 		amount = 1
 	}
@@ -136,7 +136,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Admiral Hipper Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.95
 		amount = 1
 	}
@@ -147,7 +147,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Admiral Hipper Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.25
 		amount = 1
 	}
@@ -158,7 +158,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Scharnhorst Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.35
 		amount = 1
 	}
@@ -169,7 +169,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Scharnhorst Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.25
 		amount = 1
 	}
@@ -180,7 +180,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934A Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.25
 		amount = 1
 	}
@@ -191,7 +191,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934A Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.25
 		amount = 1
 	}
@@ -202,7 +202,7 @@ instant_effect = {
 			creator = "GER"
 			version_name = "Zerstörer 1934A Class"
 		}
-		requested_factories = 10
+		requested_factories = 20
 		progress = 0.25
 		amount = 1
 	}

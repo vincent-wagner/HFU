@@ -58,19 +58,6 @@ units = {
 		start_equipment_factor = 0.01
 	}
 }
-
-air_wings = {
-	### Vuzdushnite voiski -- Sofia (early purchases of GER Ar 65, He 51 fighters)
-	48 = {
-		# Vuzdushnite voiski na Negovo Velichestvo
-		fighter_equipment_0 =  {
-			owner = "BUL"
-			creator = "GER" 
-			amount = 48
-		}
-	}
-}
-
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
@@ -98,6 +85,15 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "BUL"
+		}
+		requested_factories = 1
+		progress = 0.24
 		efficiency = 100
 	}
 }

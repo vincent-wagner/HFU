@@ -17,12 +17,7 @@ units= {
 			ship = { name = "Amazone" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "630 Series" } } }
 			ship = { name = "La Sybille" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "630 Series" } } }
 			ship = { name = "Antiope" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "630 Series" } } }		
-			ship = { name = "Béarn" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = FRA version_name = "Béarn Class" } } 
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "FRA" amount = 18 }
-					cv_nav_bomber_equipment_1 =  { owner = "FRA" amount = 18 }
-				}
-			}
+			ship = { name = "Béarn" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = FRA version_name = "Béarn Class" } } }
 			# 2e Division des Contre-Torpilleurs
 			ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Chacal" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }

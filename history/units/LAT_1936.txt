@@ -15,11 +15,6 @@
 	}
 }
 
-units = {
-}
-
-air_wings = {
-}
 
 ### Starting Production ###
 instant_effect = {

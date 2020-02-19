@@ -61,30 +61,6 @@ units = {
 }
 
 ### Magyar Légiero ###
-air_wings = {
-	43 = {
-		# 1. Légi Ezred -- Fiat CR.32 fighters
-		# 2. Légi Ezred -- Fiat CR.32 fighters
-		fighter_equipment_0 = {
-			owner = "HUN" 
-			creator = "ITA"
-				amount = 72
-		}
-
-	}
-	154 = {
-		# 3. Légi Ezred -- Caproni Ca.101, WM-16 Budapest light bombers
-		CAS_equipment_1 = {
-			owner = "HUN" 
-			amount = 12
-		}
-		tac_bomber_equipment_0 = {
-			owner = "HUN" 
-			creator = "ITA"
-			amount = 12
-		}
-	}
-}
 
 
 ### Starting Production ###
@@ -94,7 +70,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "HUN"
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.68
 		efficiency = 100
 	}
@@ -106,5 +82,32 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.60
 		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "HUN" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "HUN" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "HUN" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
 	}
 }

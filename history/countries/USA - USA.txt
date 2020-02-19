@@ -283,17 +283,17 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
          type = cv_fighter_equipment_0
-         amount = 68
+         amount = 136
          producer = USA
 }
 add_equipment_to_stockpile = {
          type = cv_CAS_equipment_1
-         amount = 72
+         amount = 144
          producer = USA
 }
 add_equipment_to_stockpile = {
          type = cv_nav_bomber_equipment_1
-         amount = 36
+         amount = 69
          producer = USA
 }
 set_politics = {
