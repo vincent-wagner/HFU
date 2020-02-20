@@ -1540,13 +1540,13 @@ random_owned_controlled_state = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = op_dest_bonus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 2
 				category = air_doctrine
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				category = cas_bomber			
 			}
@@ -1841,8 +1841,9 @@ random_owned_controlled_state = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_research_slot = 1
 			set_technology = { 
-	        
+	        	
 			advanced_rocket_engines = 1
 			super_heavy_tank = 1
 			
