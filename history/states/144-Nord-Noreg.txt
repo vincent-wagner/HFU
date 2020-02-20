@@ -5,7 +5,7 @@ state={
 	manpower = 355251
 	
 	state_category = rural
-	
+	impassable=yes
 	resources={
 		steel=9 # was: 12
 		tungsten = 25 # was: 20
@@ -15,13 +15,8 @@ state={
 		owner = NOR
 		buildings = {
 			infrastructure = 3
-			air_base = 1
-			192 = {
-				naval_base = 3
-			}
-			11050 = {
-				naval_base = 2
-			}
+			
+			
 		}
 		victory_points = {
 			192 1

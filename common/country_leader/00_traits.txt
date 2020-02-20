@@ -1660,6 +1660,20 @@ leader_traits = {
 				instant = yes
 				maximum_speed = 0.10
 			}
+		medium_tank_aa_equipment = {
+						instant = yes
+				maximum_speed = 0.10
+				}
+
+				medium_tank_artillery_equipment = {
+					instant = yes
+				maximum_speed = 0.10
+				}
+
+				medium_tank_destroyer_equipment = {
+					 instant = yes
+				maximum_speed = 0.10 
+				}
 		}
 		experience_gain_army = 0.2
 		

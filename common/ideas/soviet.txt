@@ -389,10 +389,13 @@ ideas = {
 			}
 			equipment_bonus = {
 				fighter_equipment = {
-					air_attack = -0.1 instant = yes
+					air_attack = -0.15 instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_attack = -0.1 instant = yes
+					air_attack = -0.15 instant = yes
+				}
+				cv_fighter_equipment = {
+					air_attack = -0.15 instant = yes
 				}
 			}
 		}
@@ -1532,31 +1535,14 @@ cost = 100
 			cost = 100
 			
 			allowed = {
-				OR = {
+				
 					original_tag = SOV
-					AND = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-						has_dlc = "Waking the Tiger"
-					}
-				}
+					
+				
 			}
 
 			available = {
-				if = {
-					limit = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-					}
-					has_completed_focus = CHI_hire_soviet_designer
-					NOT = {
-						has_war_with = SOV
-					}
-				}
+				original_tag = SOV
 			}
 			
 			research_bonus = {
@@ -1568,7 +1554,7 @@ cost = 100
 				
 				armor = {
 					
-					reliability = 0.5
+					reliability = 0.15
 					build_cost_ic = -0.1
 					
 					
