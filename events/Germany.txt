@@ -1034,8 +1034,6 @@ country_event = {
 	title = germany.121.t
 	desc = germany.121.d
 	
-	major = yes
-	
 	is_triggered_only = yes
 	
 	option = {

@@ -1813,9 +1813,9 @@ focus = {
 	available_if_capitulated = yes
 	available = {
 		date > 1941.1.1
-		448 = { owner = { is_in_faction_with = ROOT }}
-		665 = { owner = { is_in_faction_with = ROOT }}
-		458 = { owner = { is_in_faction_with = ROOT }}
+		448 = { controller = { is_in_faction_with = ROOT }}
+		665 = { controller = { is_in_faction_with = ROOT }}
+		458 = { controller = { is_in_faction_with = ROOT }}
 	}
 		
 		bypass = {
@@ -2165,7 +2165,6 @@ focus = {
 		available = {
 		}
 		bypass = {
-			is_in_faction_with = ENG
 		}
 	 	prerequisite = { focus = FRA_support_status_quo }
 		x = 0
