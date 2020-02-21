@@ -57,7 +57,12 @@ add_opinion_modifier = {
 add_opinion_modifier = {
     target = NZL
     modifier = anti_cross_faction_trade
+}
+add_opinion_modifier = {
+    target = EFR
+    modifier = anti_cross_faction_trade_efr
 }	
+
 }
 
 

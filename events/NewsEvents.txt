@@ -2065,6 +2065,18 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_stalingrad
+		GER={
+		create_corps_commander = {
+				name = "Schwerer Gustav"
+				gfx = "GFX_portrait_ger_schwerer_gustav"
+				traits = { brilliant_strategist substance_abuser  media_personality JAP_communist_sympathizer bearer_of_artillery trait_engineer defective_geneseed }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 4
+			}
+		}
 	}
 	
 	mean_time_to_happen = {

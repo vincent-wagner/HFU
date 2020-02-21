@@ -969,6 +969,20 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			77 = {
+				add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			84 = {
+				add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
 						79 = {
 				add_building_construction = {
 					type = air_base
