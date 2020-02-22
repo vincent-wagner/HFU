@@ -1,5 +1,9 @@
 on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	
+
+
+
 	on_startup={
 		effect{
 			every_country={
@@ -160,7 +164,51 @@ on_actions = {
 	}
 	
 	}
-	
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					
+					FROM.FROM = {
+						
+							 
+							OR = {
+							state = 219# moscow
+							state = 195 #Leningrad
+							state = 217 #Stalingrad
+							state = 202 #Kiev
+							state = 206 #Minsk	
+							}
+							
+							
+						}
+					}
+				
+				
+				GER = {clear_variable=barb_factory_output
+					if={limit={NOT={SOV={controls_state = 202}}}
+					add_to_variable={barb_factory_output=0.025}
+					} 
+
+					if={limit={NOT={SOV={controls_state = 206}}}
+					add_to_variable={barb_factory_output=0.025}
+					} 
+					
+					if={limit={NOT={SOV={controls_state = 195}}}
+					add_to_variable={barb_factory_output=0.05}
+					} 
+					
+					if={limit={NOT={SOV={controls_state = 217}}}
+					add_to_variable={barb_factory_output=0.05}
+					} 
+					
+					if={limit={NOT={SOV={controls_state = 219}}}
+					add_to_variable={barb_factory_output=0.10}
+					} 
+					
+				}
+			}}}
+
 	on_state_control_changed = {
 		effect = {
 			if = {

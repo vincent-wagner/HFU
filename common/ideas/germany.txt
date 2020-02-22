@@ -17,6 +17,7 @@ ideas = {
 				stability_factor = 0.075
 			
 		}}
+		
 	   	GER_triumph_in_africa = {
 			allowed = {
 				always = yes
@@ -667,7 +668,7 @@ modifier = {
 				add_timed_idea={idea=GER_Albert_Speer_idea days=60}
 				set_country_flag=speer_taken 
 			}}
-			available={date>1941.1.1}
+			available={date>1940.10.1}
 			traits = { armaments_organizer }
 		}
 		

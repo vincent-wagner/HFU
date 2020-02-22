@@ -1959,10 +1959,12 @@ available = {
 				type = annex_everything
 				target = SOV
 			}
+				
 			            SOV={remove_ideas=Fast_Training }
 		
 				        GER = { 
 						add_timed_idea = { idea = GER_barbarossa days = 120 }
+						add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
 					}
 					hidden_effect={    ROM = { 
 						add_timed_idea = { idea = GER_barbarossa days = 120 }
