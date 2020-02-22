@@ -38,6 +38,7 @@ country_event = {
 		set_global_flag = achievement_france_surrender
 		set_global_flag = fall_of_france
 		add_political_power = 150
+		if={limit={date<1940.2.1}add_timed_idea={idea=GER_triumph_in_france days=730}}
 		EFR = {
 			transfer_state = 26
 			every_state = {

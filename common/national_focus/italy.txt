@@ -2547,8 +2547,10 @@ focus = {
 		icon = GFX_ITA_Mare_Nostrum
 		prerequisite = { focus = ITA_greece_war_goal }
 		available = {
- 
-		ITA = { AND = {controls_state =	447 controls_state = 446 controls_state = 116 controls_state = 183 controls_state = 182 }}
+ 		446={is_controlled_by_ROOT_or_ally = yes}
+		116={is_controlled_by_ROOT_or_ally = yes}
+		183={is_controlled_by_ROOT_or_ally = yes}
+		182={is_controlled_by_ROOT_or_ally = yes}
 			
 		}
 		

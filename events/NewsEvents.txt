@@ -2206,6 +2206,8 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_cairo
+		GER={add_ideas={GER_triumph_in_africa}}
+		ITA={add_ideas={GER_triumph_in_africa}}
 	}
 	
 	mean_time_to_happen = {
@@ -2378,6 +2380,8 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_cairo_ita
+		GER={add_ideas={GER_triumph_in_africa}}
+		ITA={add_ideas={GER_triumph_in_africa}}
 	}
 	
 	mean_time_to_happen = {

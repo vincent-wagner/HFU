@@ -2,7 +2,42 @@ ideas = {
 
 	country = {
 	
-		
+	   GER_triumph_in_france = {
+			allowed = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+			
+			picture = german_advisors
+			
+			
+			modifier = {
+				stability_factor = 0.075
+			
+		}}
+	   	GER_triumph_in_africa = {
+			allowed = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+			cancel={
+			NOT={
+			446={is_controlled_by_ROOT_or_ally = yes}
+			447={is_controlled_by_ROOT_or_ally = yes}
+			452={is_controlled_by_ROOT_or_ally = yes}
+			}
+			}
+			picture = HUN_treaty_of_triannon
+
+			
+			modifier = {
+				stability_factor = 0.075
+			
+		}}
 	   GER_mineraloelsicherungsplan = {
 			allowed = {
 				always = yes
@@ -19,6 +54,24 @@ ideas = {
 			industry_free_repair_factor=0.5
 			industry_repair_factor=0.25
 			consumer_goods_factor = 0.03
+			
+		}}
+	GER_Albert_Speer_idea = {
+			allowed = {
+				always = yes
+			}
+
+			cancel={NOT={has_idea=speer}}
+			removal_cost = -1
+			available={date>1941.1.1}
+			picture = generic_manpower_bonus
+
+			
+			modifier = {
+			industrial_capacity_factory = -0.1
+			production_factory_efficiency_gain_factor = 0.75
+			line_change_production_efficiency_factor = 0.1
+			
 			
 		}}	
 		
@@ -38,7 +91,7 @@ ideas = {
 			
 			army_core_defence_factor = 0.1
 	        	army_core_attack_factor = 0.05
-			industrial_capacity_factory = 0.10
+			industrial_capacity_factory = 0.15
 			surrender_limit = 0.05
 			}
 			
@@ -75,7 +128,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+			cancel = { FRA={has_capitulated = yes} }
 			removal_cost = -1
 			
 			modifier = {
@@ -610,7 +663,10 @@ modifier = {
 			allowed = {
 				original_tag = GER
 			}
-			
+			on_add={if={limit{NOT={has_country_flag=speer_taken}}
+				add_timed_idea={idea=GER_Albert_Speer_idea days=60}
+				set_country_flag=speer_taken 
+			}}
 			traits = { armaments_organizer }
 		}
 		
