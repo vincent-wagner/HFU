@@ -903,7 +903,7 @@ technologies = {
 			acclimatization_hot_climate_gain_factor = 0.50
 			acclimatization_cold_climate_gain_factor = 0.50
 		   	breakthrough = 0.10
-			supply_consumption_factor=-0.1
+			supply_consumption_factor=-0.01
 		
 		
 		}
