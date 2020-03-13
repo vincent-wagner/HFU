@@ -1,17 +1,12 @@
 ﻿capital = 41
 
 oob = "SPR_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SPR_1936_naval_mtg"
-	else = {
-		set_naval_oob = "SPR_1936_naval_legacy"
-	}
-}
 add_ideas = peace_training
 add_ideas = {
 SPR_no_armada
+SPA_carlism_1
 }
+set_rule = {can_be_spymaster = no}
 set_variable = {
     var = min_fuel
     value = 0.800
@@ -68,10 +63,6 @@ set_popularities = {
 
 set_convoys = 200
 set_stability = 0.5
-
-1939.1.1 = {
-}
-
 create_country_leader = {
 	name = "Manuel Azana"
 	desc = "POLITICS_MANUEL_AZANA_DESC"
@@ -100,8 +91,7 @@ create_country_leader = {
 	picture = "Portrait_Spain_Francisco_Franco.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {propaganda_expert popular_figurehead
-		#
+	traits = {
 	}
 }
 

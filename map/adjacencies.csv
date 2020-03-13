@@ -20,16 +20,16 @@
 9990;4159;sea;5681;-1;-1;-1;-1;;Calabria-Sicily
 9793;9845;sea;8871;-1;-1;-1;-1;;Menorca-Mallorca
 12299;12113;sea;5539;-1;-1;-1;-1;;Singapore-Batam
-7396;1401;sea;5615;-1;-1;-1;-1;;Bangka Belitung-Sumatra
-1342;10279;sea;2737;-1;-1;-1;-1;;Java-Sumatra
+7396;1401;sea;5615;4461;600;4467;603;;Bangka Belitung-Sumatra
+1342;10279;sea;2714;4455;557;4458;552;;Java-Sumatra
 7396;4211;sea;4225;-1;-1;-1;-1;;Bangka-Belitung
 1460;12126;sea;812;-1;-1;-1;-1;;Tanahbala-Sumatra
 12126;1428;sea;812;-1;-1;-1;-1;;Tanahbala-Siberut
-4306;4608;sea;5666;-1;-1;-1;-1;;Soerbaja-Madura
-7654;4273;sea;2239;-1;-1;-1;-1;;Java-Bali
-7293;4273;sea;2239;-1;-1;-1;-1;;Bali-Lombok
+4306;4608;sea;5666;4562;538;4566;538;;Soerbaja-Madura
+7654;4273;sea;2440;4590;516;4596;517;;Java-Bali
+7293;4273;sea;2239;4611;516;4617;514;;Bali-Lombok
 7293;10191;sea;2239;-1;-1;-1;-1;;Lombok-W.Nusa Tenggara
-12162;1298;sea;2124;-1;-1;-1;-1;;West Nusa Tenggara-East Nusa Tenggara
+12162;1298;sea;2124;4663;514;4669;514;;West Nusa Tenggara-East Nusa Tenggara
 12151;10219;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor
 12444;10222;sea;5515;-1;-1;-1;-1;;Sulawesi-Pulau Buton
 1293;4269;sea;8751;-1;-1;-1;-1;;Surigao-Leyte

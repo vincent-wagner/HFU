@@ -14,7 +14,7 @@ name = iran.2.a
 white_peace = PER
 
 SOV = {
-
+PER = {set_equipment_fraction = 0}
 annex_country = { target = PER transfer_troops = no }
 
 416 = { add_core_of = SOV }
@@ -55,6 +55,27 @@ transfer_state = 411
 transfer_state = 412
 transfer_state = 414
 transfer_state = 410
+413 = {
+	add_compliance = 100
+}
+421 = {
+	add_compliance = 100
+}
+417 = {
+	add_compliance = 100
+}
+411 = {
+	add_compliance = 100
+}
+412 = {
+	add_compliance = 100
+}
+414 = {
+	add_compliance = 100
+}
+410 = {
+	add_compliance = 100
+}
 
 
 }

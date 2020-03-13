@@ -167,6 +167,38 @@ GER_military_buildup = {
 }
 
 special_projects = {
+	GER_begin_heavy_water_production = {
+		allowed = { 
+			original_tag = GER 
+			has_dlc = "La Resistance"
+		}
+		available = {
+			110 = {
+				CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		visible = {}
+		cost = 0
+		ai_will_do = {
+			factor = 5 
+		}
+		cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } } #can be removed via intelligence ops
+		days_remove = 365
+		remove_effect = {
+			add_tech_bonus = {
+				name = GER_heavy_water
+				category = nuclear
+				uses = 2
+				bonus = 2
+			}
+		}
+		complete_effect = { set_global_flag = GER_heavy_water_production_underway }
+	}
 	GER_dismantle_maginot = {
 
 		icon = generic_construction

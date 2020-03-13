@@ -3,7 +3,7 @@ operations = {
 		icon = generic_operation
 		allowed = { original_tag = ENG }
 		available = {
-			Date > 1940.1.1
+			Date > 1941.1.1
 			EFR = { exists = yes}
 		}
 		visible = {

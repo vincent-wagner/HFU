@@ -14,6 +14,11 @@ RAJ_UK = {
 	color_ui = rgb { 200  10  10 }
 }
 
+RAJ_FREE = {
+	color = rgb { 226  135  40 }
+	color_ui = rgb { 226  135  40 }
+}
+
 INS_HOL = {
     color = rgb { 203 138 74 }
     color_ui = rgb { 255 179 96 }
@@ -219,4 +224,12 @@ HOL_benelux_unified = {
 VAPE = {
 	color = rgb { 21 94 12 }
 	color_ui = rgb { 21 94 12 }
+}
+SPR_nationalist_spain = {
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+FRA_VICHY = {
+	color = rgb { 80 168 181 }
+	color_ui = rgb {115 185 196 }
 }

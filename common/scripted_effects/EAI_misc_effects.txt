@@ -36,9 +36,9 @@ EAI_set_stockpile_variables = {
 	divide_variable = { EAI_str_ratio_rocket_artillery_equipment = Prev.num_target_equipment_in_armies@rocket_artillery_equipment }
 	multiply_variable = { EAI_str_ratio_rocket_artillery_equipment = 100 }
 
-	set_variable = { EAI_stockpile_motorized_rocket_equipment_equipment = Prev.num_equipment@motorized_rocket_equipment_equipment }
-	set_variable = { EAI_str_ratio_motorized_rocket_equipment_equipment = Prev.num_equipment_in_armies@motorized_rocket_equipment_equipment }
-	divide_variable = { EAI_str_ratio_motorized_rocket_equipment_equipment = Prev.num_target_equipment_in_armies@motorized_rocket_equipment_equipment }
+	set_variable = { EAI_stockpile_motorized_rocket_equipment_equipment = Prev.num_equipment@motorized_rocket_equipment }
+	set_variable = { EAI_str_ratio_motorized_rocket_equipment_equipment = Prev.num_equipment_in_armies@motorized_rocket_equipment }
+	divide_variable = { EAI_str_ratio_motorized_rocket_equipment_equipment = Prev.num_target_equipment_in_armies@motorized_rocket_equipment}
 	multiply_variable = { EAI_str_ratio_motorized_rocket_equipment_equipment = 100 }
 
 	set_variable = { EAI_stockpile_anti_tank_equipment = Prev.num_equipment@anti_tank_equipment }

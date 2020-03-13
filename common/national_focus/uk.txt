@@ -20,48 +20,7 @@ focus_tree = {
 	
 	
 	
-	focus = {
-		id = ENG_southern_thrust
-		icon = GFX_focus_ENG_attack_iran
-		prerequisite = { focus = ENG_military_training_act }
-		
-		x = 35
-		y = 4
-		
-		cost = 0.1
-
-	available = {
-				date > 1940.6.1
-				country_exists = PER
-							}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_war_with = GER
-				factor = 0
-			}
-			modifier = {
-				AND = {
-					has_war_with = ENG
-					surrender_progress > 0.3
-				}
-				factor = 0
-			}
-			modifier = {
-				has_war_with = RAJ
-				factor = 5
-			}
-		}
-		bypass = {
-
-		}
-		completion_reward = {
-				SOV = { country_event = { id = iran.2}} 
-			   
-			ENG = { country_event = { id = iran.3 } }
-		}
-	}
+	
 	
 	
 	
@@ -221,7 +180,9 @@ focus_tree = {
 	focus = {
 		id = ENG_motorized_focus
 		prerequisite = { focus = limited_rearmament_focus }
-		available = { 			
+		available = { 
+
+          date>1937.1.1		
 		}
 		icon = GFX_goal_generic_army_motorized
 		x = 0
@@ -261,9 +222,15 @@ focus_tree = {
 		completion_reward = {
 			army_experience=200
 			add_ideas=ENG_Tank_upgrade_cost
+			
+			add_tech_bonus = {
+		  name = armor_bonus
+		  ahead_reduction = 2
+		  technology = basic_medium_tank
+		}
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.5
+				bonus = 1
 				uses = 2
 				category = armor
 			}
@@ -656,197 +623,39 @@ focus_tree = {
 		}
 
 		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = air_focus_bypass_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-			}
 		}
 
 		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = air_rearmament_focus_2AirBase }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}		
-			}
 		}
 
 		completion_reward = {
 			air_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-					OR = {
-						region = 1
-						region = 2
-					}
-				}
-				add_building_construction = {
+			127 = {
+				set_building_level = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
-				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-					OR = {
-						region = 1
-						region = 2
-					}
-				}
-				add_building_construction = {
+			123 = {
+				set_building_level = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
-				}			
-				set_state_flag = air_rearmament_focus_2AirBase
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-					OR = {
-						region = 1
-						region = 2
-						region = 3
-					}
 				}
-				add_building_construction = {
+			}
+			338 = {
+				set_building_level = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
-				}			
-				set_state_flag = air_rearmament_focus_2AirBase
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-					OR = {
-						region = 1
-						region = 2
-						region = 3
-					}
 				}
-				add_building_construction = {
+			}
+			125 = {
+				set_building_level = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
-				}			
-				set_state_flag = air_rearmament_focus_2AirBase
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-					OR = {
-						region = 1
-						region = 2
-						region = 3
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}			
-				set_state_flag = air_rearmament_focus_2AirBase
-			}
-
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-							OR = {
-								region = 1
-								region = 2
-								region = 3
-							}
-						}			
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}			
-					set_state_flag = air_rearmament_focus_2AirBase
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}			
-					set_state_flag = air_rearmament_focus_2AirBase
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}			
-					set_state_flag = air_rearmament_focus_2AirBase
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}			
-					set_state_flag = air_rearmament_focus_2AirBase
 				}
 			}
 		}
@@ -1104,7 +913,7 @@ focus_tree = {
 		prerequisite = { focus = naval_rearmament_focus }
 		prerequisite = { focus = uk_service_focus }
 		icon = GFX_focus_generic_cruiser2
-		x = 4
+		x = 2
 		y = 1
 		offset = {
 			x = -1
@@ -1488,7 +1297,7 @@ focus_tree = {
 		available = {
 		} 
 		icon = GFX_focus_eng_imperial_federation
-		x = 26
+		x = 19
 		y = 0
 		offset = {
 			x = -1
@@ -1541,17 +1350,17 @@ focus_tree = {
 		id = uk_mediterranean_focus 
 		prerequisite = { focus = uk_service_focus }
 		available = {
-			447 = {
+			446 = {
 				CONTROLLER = {
 					tag = ENG
 				}
 			}
 		} 
 		icon = GFX_goal_generic_construct_military
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 5
+		cost = 10
 		completion_reward = {
 			if = {
 				limit = {
@@ -1569,24 +1378,42 @@ focus_tree = {
 				}
 				add_ideas = ENG_fortify_the_empire_1
 			}
-			447 = {
+			446 = {
 				set_building_level = {
 					type = coastal_bunker
+					level = 5
+					province = 12049
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
 					level = 3
 					province = 4076
 					instant_build = yes
 				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 7011
+					instant_build = yes
+				}
 				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				set_building_level = {
 					type = naval_base
-					level = 2
-					province = 4076
+					level = 20
+					province = 4073
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = air_base
-					level = 3
-					instant_build = yes
-				}
+				
 			}
 		}
 	}
@@ -1597,27 +1424,32 @@ focus_tree = {
 			118 = { is_owned_and_controlled_by = ENG }
 		} 
 		icon = GFX_goal_generic_construct_military
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = uk_mediterranean_focus
 		cost = 5
 		completion_reward = {
 			118 = {
-	
 				set_building_level = {
 					type = coastal_bunker
-					level = 3
+					level = 5
 					province = 4135
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province = 13235
+					instant_build = yes
+				}
+				set_building_level = {
 					type = air_base
-					level = 2
+					level = 20
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1629,7 +1461,7 @@ focus_tree = {
 		prerequisite = { focus = uk_mediterranean_focus }
 		icon = GFX_goal_generic_defence
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = uk_mediterranean_focus
 		cost = 5
 		ai_will_do = {
@@ -1637,7 +1469,7 @@ focus_tree = {
 		}
 
 		available = {
-			447 = {
+			453 = {
 				CONTROLLER = {
 					tag = ENG
 				}
@@ -1666,19 +1498,51 @@ focus_tree = {
 		#}
 
 		completion_reward = {
-			447 = {
+			
+			
+			455 = {
+				
+				
 				set_building_level = {
-					type = coastal_bunker
-					level = 5
-					province = 4076
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = air_base
-					level = 3
+					level = 10
 					instant_build = yes
 				}
 
+				
+			}
+			
+			454 = {
+				
+				
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+
+				
+			}
+			
+			
+			453 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 1155
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 9942
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = anti_air_building
 					level = 2
@@ -1696,7 +1560,7 @@ focus_tree = {
 			116 = { is_owned_and_controlled_by = ENG }
 		}		
 		icon = GFX_goal_generic_construct_military
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = uk_mediterranean_focus
 		cost = 5
@@ -1719,21 +1583,21 @@ focus_tree = {
 
 		completion_reward = {
 			116 = {
-				add_extra_state_shared_building_slots = 1
+				
 				set_building_level = {
 					type = coastal_bunker
-					level = 3
+					level = 5
 					province = 12003
 					instant_build = yes
 				}
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 3
+					level = 10
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 2
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1744,7 +1608,7 @@ focus_tree = {
 		id = uk_colonial_focus 
 		prerequisite = { focus = uk_service_focus }
 		icon = GFX_focus_research2
-		x = -5
+		x = -1
 		y = 1
 		relative_position_id = uk_service_focus
 		cost = 5
@@ -1773,7 +1637,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_construct_civilian
-		x = -4
+		x = -2
 		y = 1
 		relative_position_id = uk_colonial_focus
 		cost = 5
@@ -1876,7 +1740,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_construct_infrastructure
-		x = -2
+		x = 1
 		y = 1
 		relative_position_id = uk_asia_focus
 		cost = 5
@@ -1933,11 +1797,6 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
 				}
 			}
 			325 = {
@@ -1953,11 +1812,6 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
 						level = 2
 						instant_build = yes
 					}
@@ -1978,17 +1832,6 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
 				}
 			}
 			add_war_support = 0.05
@@ -2007,63 +1850,11 @@ focus_tree = {
 			} 
 		}
 	}
-	
-
-	focus = {
-		id = singapore_focus
-		prerequisite = { focus = uk_asia_focus }
-		icon = GFX_goal_generic_fortify_city
-		x = 2
-		y = 1
-		relative_position_id = uk_asia_focus
-		cost = 5
-
-		available = {
-			336 = {
-				CONTROLLER = {
-					tag = ENG
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = { 
-			navy_experience = 25
-			336 = {
-				add_extra_state_shared_building_slots = 1
-				set_building_level = {
-					type = coastal_bunker
-					level = 3
-					province = 12299
-					instant_build = yes
-				}
-				if = {
-					limit = {
-						CONTROLLER = {
-							NOT = { tag = ENG }
-						}
-					}
-					CONTROLLER = {
-						add_autonomy_ratio = {
-							value = -0.02
-							localization = singapore_focus
-						}
-					}
-				}
-			}
-		}
-	}
-	
 	focus = {
 		id = hongkong_focus
 		prerequisite = { focus = uk_asia_focus }
 		icon = GFX_goal_generic_fortify_city
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = uk_asia_focus
 		cost = 5
@@ -2135,7 +1926,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
@@ -2151,8 +1942,8 @@ focus_tree = {
 		bypass = {
 		}
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 3
-		y = 1
+		x = 2
+		y = 2
 		relative_position_id = uk_colonial_focus
 		cost = 5
 
@@ -2201,7 +1992,7 @@ focus_tree = {
 		id = ENG_british_commonwealth_air_training_plan
 		prerequisite = { focus = uk_commonwealth_focus }
 		icon = GFX_goal_generic_air_fighter2
-		x = -3
+		x = 2
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
@@ -2241,7 +2032,7 @@ focus_tree = {
 		available = {
 		} 
 		icon = GFX_goal_generic_construct_civ_factory
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
@@ -2352,7 +2143,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civilian
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
@@ -2655,7 +2446,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 0
+		x = -1
 		y = 3
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
@@ -2778,10 +2569,10 @@ focus_tree = {
 			
 			}
 		122 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 		
@@ -2821,7 +2612,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 2
+		x = 1
 		y = 3
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
@@ -3010,34 +2801,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			every_country = {
-				limit = {
-					OR = {
-						tag = ENG
-						AND = {
-							is_subject_of = ENG
-							tag = CAN
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-					}
-				}
-				hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
-			}
+			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 			ENG = { 
 				add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 }
 				add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
@@ -3094,7 +2858,7 @@ focus_tree = {
 
 		icon = GFX_focus_ENG_steady
 
-		x = 34
+		x = 28
 		y = 0
 		offset = {
 			x = -7
@@ -3226,7 +2990,7 @@ focus_tree = {
 
 		prerequisite = { focus = ENG_home_defence }
 		icon = GFX_goal_generic_construct_military
-		x = 1
+		x = 0
 		y = 1
 		offset = {
 			x = 1
@@ -3278,14 +3042,9 @@ focus_tree = {
 
 		icon = GFX_goal_generic_construction
 
-		x = -1
+		x = -2
 		y = 1
 		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
 		}
 		relative_position_id = ENG_home_defence
 		cost = 5
@@ -3345,7 +3104,7 @@ focus_tree = {
 									
 	icon = GFX_focus_ENG_coerce_sweden			 
 	relative_position_id = ENG_home_defence
-		x = -3
+		x = 2
 	    y = 1
 		cost = 1
 				 
@@ -3365,6 +3124,48 @@ focus_tree = {
 
 	}
 	
+	}
+	focus = {
+		id = ENG_southern_thrust
+		icon = GFX_focus_ENG_attack_iran
+		prerequisite = { focus = ENG_military_training_act }
+		relative_position_id = ENG_military_training_act
+		x = 0
+		y = 1
+		
+		cost = 0.1
+
+	available = {
+				date > 1940.6.1
+				country_exists = PER
+							}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war_with = GER
+				factor = 0
+			}
+			modifier = {
+				AND = {
+					has_war_with = ENG
+					surrender_progress > 0.3
+				}
+				factor = 0
+			}
+			modifier = {
+				has_war_with = RAJ
+				factor = 5
+			}
+		}
+		bypass = {
+
+		}
+		completion_reward = {
+			SOV = { country_event = { id = iran.2}} 
+			   
+			ENG = { country_event = { id = iran.3 } }
+		}
 	}
  }
 

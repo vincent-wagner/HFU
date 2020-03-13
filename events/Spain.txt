@@ -23,6 +23,20 @@ country_event = {
       if = { 
       limit = { original_tag = SPR }
 	  hidden_effect = {
+		add_timed_idea = { idea = SPA_civil_war days = 365}
+		add_ideas = SPA_recovering_from_civil_war
+		
+		create_corps_commander = {
+			name = "Francisco Franco"
+			id = 1490
+			picture = "Portrait_Spain_Francisco_Franco.dds"
+			traits = {  panzer_leader panzer_expert trickster expert_improviser trait_engineer organizer}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
 			
 	
          add_threat = 3         
@@ -69,7 +83,6 @@ country_event = {
 		custom_effect_tooltip = nationalists_chosen
 		}
 	}
-
 }
 
 # Civil war over. Move Capital
@@ -98,8 +111,8 @@ country_event = {
 	planning_skill = 3
 	logistics_skill = 4
 }
-SOV = { remove_ideas = SOV_hidden_problem}
-SPR = { remove_ideas = SPR_memories}
+#SOV = { remove_ideas = SOV_hidden_problem}
+#SPR = { remove_ideas = SPR_memories}
 
 
 

@@ -45,7 +45,7 @@ buildings = {
 		base_cost = 700
 		icon_frame = 5
 		air_base = yes
-		max_level = 10
+		max_level = 20
 		value = 1
 		damage_factor = 0.5
 	}
@@ -72,7 +72,7 @@ buildings = {
 		disabled_in_dmz = yes
 		icon_frame = 7
 		land_fort = 1
-		max_level = 5
+		max_level = 10
 		value = 1
 	}
 

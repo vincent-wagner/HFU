@@ -17,8 +17,8 @@ scripted_gui = {
 		
 			observer_click = { owner = {
 				set_temp_variable = { ROOT.marks = this}
-				PHI = {change_tag_from =var:marks
-				}	
+				PHI = {change_tag_from =var:marks}	
+				
 				}
 				
 			}
@@ -34,35 +34,32 @@ scripted_gui = {
 		
 			clear_all_markings_click = {
 				ROOT = { 
-					set_variable = { marked_states = 0 }
-				}
-				every_state = {
-					limit = {
-						has_state_flag = marked_for_transfer
-						is_owned_and_controlled_by = ROOT
+					for_each_scope_loop={
+					array=marked_states
+					clear_variable=mark_status
 					}
-					clr_state_flag = marked_for_transfer
-					#set_demilitarized_zone = no
+					clear_array=marked_states
 				}
+				
 			}
 			
 			award_states_click = {
-				ROOT = { 
-					set_variable = { marked_states = 0 }
-				}owner={
-				set_temp_variable = { ROOT.taker = this}
-				every_state = {
-					limit = {
-						has_state_flag = marked_for_transfer
-						
+				
+				owner={
+				for_each_loop={
+					array=ROOT.marked_states
+					value=state
+					transfer_state = state
 					}
-					var:taker = { 
-					transfer_state = PREV
-					 }
-					clr_state_flag = marked_for_transfer
-					#set_demilitarized_zone = no
+				ROOT = { 
+					for_each_scope_loop={
+					array=marked_states
+					clear_variable=mark_status
+					}
+					clear_array=marked_states
 				}
-			}}
+				}
+			}
 			add_cheat_click = {
 				
 				set_variable = { ROOT.taker = this}
@@ -82,8 +79,8 @@ scripted_gui = {
 				if={limit={check_variable={Root.selected_cheat=13}} army_experience=100}
 				if={limit={check_variable={Root.selected_cheat=14}} air_experience=100}
 				 }}
-				every_country={
-				limit={is_ai=no}
+				GER={
+				
 				set_variable={this.target_country=Root.target_country}
 				set_variable={this.selected_cheat=Root.selected_cheat}
 				news_event={id=horsttool.1}}
@@ -91,68 +88,91 @@ scripted_gui = {
 				
 			}
 			add_cores_click = {
-					ROOT = { 
-						set_variable = { marked_states = 0 }
+				owner={
+				set_temp_variable = { ROOT.taker = this}
+				for_each_loop={
+					array=ROOT.marked_states
+					value=state
+					var:state={add_core_of=var:taker}
 					}
-					owner={
-					set_temp_variable = { ROOT.taker = this}
-					every_state = {
-						limit = {
-							has_state_flag = marked_for_transfer
-							
-						}
-						add_core_of = var:taker
-						clr_state_flag = marked_for_transfer
-						#set_demilitarized_zone = no
+				ROOT = { 
+					for_each_scope_loop={
+					array=marked_states
+					clear_variable=mark_status
 					}
-				}}
+					clear_array=marked_states
+					clear_variable=first_marked_state
+				}
+				}
+			}
 			annex_country_click = {
-				ROOT = { 
-					set_variable = { marked_states = 0 }
-				}owner={
-				set_temp_variable = { ROOT.taker = this}
-				random_state = {
-					limit = {
-						has_state_flag = marked_for_transfer
-						NOT={is_owned_by= var:taker}
-					}owner={
-					var:taker = { annex_country = { target = PREV transfer_troops = yes } }}
-					clr_state_flag = marked_for_transfer
-					#set_demilitarized_zone = no
+				
+				owner={
+				set_variable = { ROOT.taker = this}}
+				var:ROOT.marked_states^0={owner={set_variable={ROOT.target=this}}}
+				if={
+				limit={check_variable={ROOT.target=ROOT.taker}}
 				}
-			}}			
+				else={
+				var:ROOT.target={var:ROOT.taker={
+				annex_country={
+				target=PREV
+				transfer_troops=yes
+				}}}}
+					
+				ROOT = { 
+					for_each_scope_loop={
+					array=marked_states
+					clear_variable=mark_status
+					}
+					clear_array=marked_states
+					clear_variable=target
+					clear_variable=taker
+					clear_variable=first_marked_state
+				}
+			}
+				
+				
+						
 			puppet_country_click = {
-				ROOT = { 
-					set_variable = { marked_states = 0 }
-				}owner={
-				set_temp_variable = { ROOT.taker = this}
-				every_state = {
-					limit = {
-						has_state_flag = marked_for_transfer
-						NOT={is_owned_by= var:taker}
-					}owner={
-					var:taker = { puppet = PREV }}
-					clr_state_flag = marked_for_transfer
-					#set_demilitarized_zone = no
+				owner={
+				set_variable = { ROOT.taker = this}}
+				var:ROOT.marked_states^0={owner={set_variable={ROOT.target=this}}}
+				if={
+				limit={check_variable={ROOT.target=ROOT.taker}}
 				}
-			}}
+				else={
+				var:ROOT.target={var:ROOT.taker={
+				puppet=PREV
+				
+				}}}
+					
+				ROOT = { 
+					for_each_scope_loop={
+					array=marked_states
+					clear_variable=mark_status
+					}
+					clear_array=marked_states
+					clear_variable=target
+					clear_variable=taker
+					clear_variable=first_marked_state
+				}
+				
+			}
 			
 
-			st_state_manager_power_mark_for_transfer_click = {
-				FROM.FROM = { 
-					set_state_flag = marked_for_transfer
-					#set_demilitarized_zone = yes
+			toogle_mark_click = {
+				if={
+				limit={check_variable={mark_status=0}}
+				set_variable={mark_status=2}
+				add_to_array={ROOT.marked_states=THIS}
 				}
-				add_to_variable = { ROOT.marked_states = 1 }
+				else={clear_variable=mark_status
+				remove_from_array={ROOT.marked_states=THIS}}
+				set_variable={ROOT.first_marked_state=ROOT.marked_states^0}
 			}
 			
-			st_state_manager_power_unmark_for_transfer_click = {
-				FROM.FROM = { 
-					clr_state_flag = marked_for_transfer 
-					#set_demilitarized_zone = no
-				}
-				subtract_from_variable = { ROOT.marked_states = 1 }
-			}
+			
 			cheat1_click={if={limit={Root={has_country_flag=cheating}} set_variable={Root.selected_cheat=1} ROOT={clr_country_flag=cheating}} else={ROOT={set_country_flag=cheating}}
 			}
 			cheat2_click={set_variable={Root.selected_cheat=2} ROOT={clr_country_flag=cheating}}
@@ -169,24 +189,20 @@ scripted_gui = {
 			cheat13_click={set_variable={Root.selected_cheat=13} ROOT={clr_country_flag=cheating}}
 			cheat14_click={set_variable={Root.selected_cheat=14} ROOT={clr_country_flag=cheating}}
 		}
-		
+		properties = {
+			
+			toogle_mark={
+				frame = mark_status
+				}
+		}
 		triggers = {
 		
-			observer_click_enabled = {owner = {
+			observer_click_enabled = {
+				owner = {
 				is_ai=no}
 			}
 			
-			observer_visible = {
-				
-			}
-		
-			whitepeace_enabled = {
-				
-			}
 			
-			whitepeace_visible = {
-				
-			}
 			add_cheat_click_enabled = {check_variable={Root.selected_cheat>0}}
 			cheat1_visible={}
 			cheat1_text_visible={}
@@ -217,36 +233,21 @@ scripted_gui = {
 			cheat13_text_visible={ROOT={has_country_flag=cheating}}
 			cheat14_text_visible={ROOT={has_country_flag=cheating}}
 			clear_all_markings_click_enabled = {
-				check_variable = { ROOT.marked_states > 0 }
+				check_variable = { ROOT.marked_states^num > 0 }
 			}
-		
 			award_states_click_enabled = {
-				check_variable = { ROOT.marked_states > 0 }
+				check_variable = { ROOT.marked_states^num > 0 }
 			}
 			annex_country_click_enabled = {
-				check_variable = { ROOT.marked_states > 0 }
+				check_variable = { ROOT.marked_states^num > 0 }
 			}
 			puppet_country_click_enabled = {
-				check_variable = { ROOT.marked_states > 0 }
+				check_variable = { ROOT.marked_states^num > 0 }
 			}
 			add_cores_click_enabled = {
-				check_variable = { ROOT.marked_states > 0 }
+				check_variable = { ROOT.marked_states^num > 0 }
 			}
-		st_state_manager_power_mark_for_transfer_click_enabled = {
-				FROM.FROM = {
-					NOT = { has_state_flag = marked_for_transfer }
-				}
-			}
-			st_state_manager_power_mark_for_transfer_visible = {
-				FROM.FROM = {
-					NOT = { has_state_flag = marked_for_transfer }
-				}
-			}
-			st_state_manager_power_unmark_for_transfer_visible = {
-				FROM.FROM = {
-					has_state_flag = marked_for_transfer
-				}
-			}
+		
 		}
         
 	}

@@ -14,7 +14,7 @@ focus_tree = {
 			original_tag = USA
 		}
 	}
-	continuous_focus_position = { x = 50 y = 1600 }
+	continuous_focus_position = { x = 50 y = 1000 }
 	default = no
 #	focus = {
 #		id = USA_
@@ -631,6 +631,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = USA_black_chamber
 			add_tech_bonus = {
 				name = USA_black_chamber
 				bonus = 1.0
@@ -725,7 +726,17 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = office_of_strategic_services
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				add_ideas = office_of_strategic_services
+			}
+			else = {
+				add_ideas = office_of_strategic_services_lar
+			}
 		}
 	}
 	
@@ -2049,7 +2060,6 @@ focus_tree = {
 				uses = 1
 				technology = heavy_fighter1
 				technology = heavy_fighter2
-				technology = heavy_fighter3
 			}
 		}
 	}

@@ -49,7 +49,7 @@ political_actions = {
 		cost = 100
 
 		complete_effect = {
-
+		custom_effect_tooltip = "Gives 12.85% Stability in total"
 		}
 
 		ai_will_do = {
@@ -118,7 +118,7 @@ political_actions = {
 		cost = 25
 
 		complete_effect = {
-
+		custom_effect_tooltip = "Gives 6.42% Stability and -12.85% War Support in total"
 		}
 
 		ai_will_do = {
@@ -472,49 +472,6 @@ special_projects = {
 
 war_measures = {
 	
-	
-   desperate_defense = {
-
-		icon = generic_prepare_civil_war
-		allowed = {
-			
-				
-				tag = FRA
-				
-			}
-		
-		available = {
-			surrender_progress > 0.5
-		}
-
-		visible = {
-			surrender_progress > 0
-		}
-
-		fire_only_once = yes
-
-		days_remove = 45
-		days_re_enable = 360
-
-		cost = 50
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				surrender_progress > 0.6
-				factor = 10
-			}
-		}
-
-		modifier = {
-			defence = 0.2
-			dig_in_speed_factor = 0.5
-		}
-
-		complete_effect = {
-
-		}
-	}
-
 	women_in_the_workforce = {
 
 		icon = generic_industry

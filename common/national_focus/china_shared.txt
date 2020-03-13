@@ -103,26 +103,6 @@ shared_focus = {
 				target = ROOT
 				modifier = CHI_mission_to_germany
 			}
-			add_ai_strategy = {
-				type = alliance
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = protect
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = support
-				id = "ROOT"
-				value = 100
-			}
 		}
 	}
 }
@@ -674,26 +654,6 @@ shared_focus = {
 				target = ROOT
 				modifier = CHI_mission_to_the_soviet_union
 			}
-			add_ai_strategy = {
-				type = alliance
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = protect
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = support
-				id = "ROOT"
-				value = 100
-			}
 		}
 	}
 }
@@ -862,26 +822,6 @@ shared_focus = {
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = CHI_reach_out_to_france
-			}
-			add_ai_strategy = {
-				type = alliance
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = protect
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = support
-				id = "ROOT"
-				value = 100
 			}
 		}
 	}
@@ -1416,26 +1356,6 @@ shared_focus = {
 				target = ROOT
 				modifier = CHI_british_cooperation
 			}
-			add_ai_strategy = {
-				type = alliance
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = protect
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = support
-				id = "ROOT"
-				value = 100
-			}
 		}
 	}
 }
@@ -1787,7 +1707,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = CHI_the_chu_x_po
 			ahead_reduction = 2
-			technology = fighter3				
+			technology = fighter2				
 		}
 	}
 }
@@ -2254,26 +2174,26 @@ shared_focus = {
 				target = ROOT
 				modifier = CHI_collaboration_with_the_japanese
 			}
-			add_ai_strategy = {
-				type = alliance
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = protect
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = send_volunteers_desire
-				id = "ROOT"
-				value = 100
-			}
-			add_ai_strategy = {
-				type = support
-				id = "ROOT"
-				value = 100
-			}
+			#add_ai_strategy = {
+			#	type = alliance
+			#	id = "ROOT"
+			#	value = 100
+			#}
+			#add_ai_strategy = {
+			#	type = protect
+			#	id = "ROOT"
+			#	value = 100
+			#}
+			#add_ai_strategy = {
+			#	type = send_volunteers_desire
+			#	id = "ROOT"
+			#	value = 100
+			#}
+			#add_ai_strategy = {
+			#	type = support
+			#	id = "ROOT"
+			#	value = 100
+			#}
 		}
 	}
 }

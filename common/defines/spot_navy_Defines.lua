@@ -37,18 +37,7 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profi
 
 
 NDefines.NNavy.COMBAT_MIN_DURATION = 12
-NDefines.NNavy.MISSION_SPREADS = {  -- mission spreads in the case a ship join combat, whih defines their starting position
-		0.0, -- HOLD 
-		0.0, -- PATROL		
-		0.0, -- STRIKE FORCE 
-		0.0, -- CONVOY RAIDING
-		0.0, -- CONVOY ESCORT
-		0.0, -- MINES PLANTING	
-		0.0, -- MINES SWEEPING	
-		0.5, -- TRAIN
-		0.0, -- RESERVE_FLEET
-		0.0, -- NAVAL_INVASION_SUPPORT
-}
+
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1
 NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.5
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
@@ -112,9 +101,10 @@ NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 15.0
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
 
 ---Air
+NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.1    -- same as above but used inside naval combat for carrier battles
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.5
-NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.5		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
+NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.4		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 3.5        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
-	
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 4.0

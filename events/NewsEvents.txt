@@ -2066,7 +2066,7 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_stalingrad
 		GER={
-		create_corps_commander = {
+			create_corps_commander = {
 				name = "Schwerer Gustav"
 				gfx = "GFX_portrait_ger_schwerer_gustav"
 				traits = { brilliant_strategist substance_abuser  media_personality JAP_communist_sympathizer bearer_of_artillery trait_engineer defective_geneseed }
@@ -2202,6 +2202,7 @@ news_event = {
 		446 = { is_owned_by = ENG }
 		GER = { has_war_with = ENG }
 		NOT = { has_global_flag = fall_of_cairo }
+		NOT = { has_global_flag = fall_of_cairo_ita }
 	}
 	
 	immediate = {
@@ -2376,6 +2377,7 @@ news_event = {
 		446 = { is_owned_by = ENG }
 		ITA = { has_war_with = ENG }
 		NOT = { has_global_flag = fall_of_cairo_ita }
+		NOT = { has_global_flag = fall_of_cairo }
 	}
 	
 	immediate = {

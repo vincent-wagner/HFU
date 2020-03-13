@@ -84,6 +84,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			army_experience = 5
@@ -121,6 +122,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -157,6 +159,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			army_experience = 5
@@ -207,6 +210,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -242,6 +246,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			army_experience = 5
@@ -285,6 +290,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -327,6 +333,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
 			
@@ -359,6 +366,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -400,6 +408,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -436,6 +445,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -451,6 +461,7 @@ focus_tree = {
 		id = AST_airborne_defence
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = AST_specialize_equipment }
+		prerequisite = { focus = AST_volunteer_air_observers_corps }
 		x = 2
 		y = 4
 		relative_position_id = AST_additional_militia_training
@@ -472,6 +483,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -508,6 +520,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			army_experience = 5
@@ -545,6 +558,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -582,6 +596,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -624,6 +639,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		complete_tooltip = {
 		}
@@ -679,6 +695,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -689,7 +706,6 @@ focus_tree = {
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
-				technology = fighter3
 			}
 		}
 	}
@@ -719,6 +735,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		complete_tooltip = {
 		}
@@ -774,6 +791,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -912,6 +930,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -949,6 +968,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		complete_tooltip = {
 			air_experience = 25
@@ -1096,6 +1116,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = {  }
 
 		completion_reward = {
 			air_experience = 50
@@ -1130,6 +1151,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		complete_tooltip = {
 			air_experience = 25
@@ -1207,6 +1229,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
 			navy_experience = 25
@@ -1273,6 +1296,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1311,6 +1335,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1347,6 +1372,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1384,6 +1410,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1421,6 +1448,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = {  }
 
 		completion_reward = {
 			add_ideas = AST_naval_auxiliary_patrol
@@ -1452,6 +1480,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1490,6 +1519,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1530,6 +1560,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
 			520 = {
@@ -1577,6 +1608,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1614,6 +1646,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
 			521 = {
@@ -1662,6 +1695,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
 			random_state = {
@@ -1724,6 +1758,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
 			random_state = {
@@ -1788,7 +1823,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
 			random_state = {
@@ -1852,7 +1887,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
 			random_state = {
@@ -1944,6 +1979,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
 			random_state = {
@@ -2003,6 +2039,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			add_ideas = AST_australian_arms_production
@@ -2035,6 +2072,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2072,6 +2110,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_political_power = 120
@@ -2114,6 +2153,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			swap_ideas = {
@@ -2179,6 +2219,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			swap_ideas = {
@@ -2213,6 +2254,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_research_slot = 1
@@ -2244,6 +2286,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			add_ideas = AST_invest_in_victory
@@ -2434,6 +2477,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			#if effect is there for the tooltips sake
@@ -2483,6 +2527,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			swap_ideas = {
@@ -2517,6 +2562,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
 			random_state = {
@@ -2651,6 +2697,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {			
 			modify_tech_sharing_bonus = {
@@ -2688,6 +2735,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
 		add_stability = 0.05
@@ -2720,6 +2768,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
 
 		completion_reward = {
 			add_political_power = 120
@@ -2756,6 +2805,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			AST = {
@@ -2797,6 +2847,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = {  }
 
 		completion_reward = {
 			672 = {
@@ -2877,6 +2928,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = {  }
 
 		completion_reward = {
 			add_ideas = AST_empire_air_training_scheme
@@ -2906,6 +2958,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			add_ideas = AST_commonwealth_aircraft_corporation

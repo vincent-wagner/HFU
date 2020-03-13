@@ -6,23 +6,10 @@ add_ideas = {
 	limited_conscription
 }
 
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	early_fighter = 1
-}
+set_technology = {}
 add_ideas = no_training 
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 800
-}
+set_convoys = 1
 
-set_research_slots = 3
-
-set_convoys = 10
-
-1939.1.1 = {
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -37,10 +24,6 @@ set_popularities = {
 	neutrality = 40
 }
 
-# probably needs some adjustment before nazi occupation in 1940
-1939.1.1 = {
-	#
-}
 
 create_country_leader = {
 	name = "Karlis Ulmanis"

@@ -23,7 +23,7 @@ country_event = {
 		name = mtg_britain.1.c
 		add_stability = 0.05
 		set_country_flag = ENG_edward_abdicating
-		country_event = { id = mtg_britain.14 days = 5 random = 5 }
+		country_event = { id = mtg_britain.14 days = 5 random_days = 5 }
 	}
 }
 
@@ -177,7 +177,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.84 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.84 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -328,7 +328,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.88 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.88 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -516,7 +516,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.92 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.92 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -665,7 +665,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.96 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.96 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}

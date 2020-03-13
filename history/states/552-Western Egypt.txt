@@ -1,22 +1,17 @@
-
 state={
-	id=552
-	name="STATE_552"
-	manpower = 18539
-	
-	state_category = wasteland
-	impassable = yes
-
-	history={
-		owner = ENG
-		buildings = {
-			infrastructure = 0
-		}
-
-
-	}
-
-	provinces={
-		 7216  10869 10907 12099 12733 12816 2064 10127 
-	}
+id=552
+name="STATE_552"
+manpower = 18539
+state_category = wasteland
+impassable = yes
+history={
+owner = ENG
+add_core_of=SWE
+buildings = {
+infrastructure = 0
+}
+}
+provinces={
+7216  10869 10907 12099 12733 12816 2064 10127
+}
 }

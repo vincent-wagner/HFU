@@ -31,9 +31,9 @@ equipments = {
 		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 12
-		hard_attack = 12
-		ap_attack = 35
+		soft_attack = 17
+		hard_attack = 22
+		ap_attack = 60
 		air_attack = 0
 
 		#Space taken in convoy
@@ -109,11 +109,11 @@ equipments = {
 		armor_value = 130
 
 		#Offensive Abilities
-		soft_attack = 28
-		hard_attack = 40
+		soft_attack = 26
+		hard_attack = 36
 		ap_attack = 131
 		
-		build_cost_ic = 36
+		build_cost_ic = 34
 		resources = {
 			#oil = 1
 			steel = 4

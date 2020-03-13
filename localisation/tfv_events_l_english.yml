@@ -90,7 +90,7 @@
  tfv_australia.90.desc:0 "[AST.GetLeader] has travelled to Britain to take part in the coronation ceremony for King George VI and Queen Elizabeth. Following several weeks of lunches, dinners, garden parties, receptions, and more dinners, he has finally succeeded in securing a private audience with the new King. After an exchange of pleasantries and small talk, the topic turns to politics, and the King asks what he can do to help [AST.GetNameDef]."
  tfv_australia.90.a:0 "Ask the King to make a visit to Australia to boost morale."
  tfv_australia.90.b:0 "Ask the King to support a recruitment campaign."
- tfv_australia.90.c:0 "Ask the King to publically support the government."
+ tfv_australia.90.c:0 "Ask the King to publicly support the government."
  tfv_australia.92.t:0 "King Edward VIII Visits Australia"
  tfv_australia.92.desc:0 "[AST.GetLeader] has travelled to Britain to take part in the marriage ceremony between King Edward VIII and Wallis Simpson. Following several weeks of lunches, dinners, garden parties, receptions, and more dinners, he has finally succeeded in securing a private audience with the new King. \n\nAfter an exchange of pleasantries and small talk, the topic turns to politics. The King goes on a lengthy tirade about Commonwealth solidarity and loyalty to the mother country, and as he goes to address continental politics [AST.GetLeader] cannot help but feel a little uncomfortable. The King asks what he can do to help [AST.GetNameDef] and endear himself to the people there."
  tfv_australia.92.a:0 "Ask the King to make a visit to Australia to boost morale."

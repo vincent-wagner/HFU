@@ -319,7 +319,7 @@ equipment_modules = {
 			lg_armor_piercing = 1
 		}
 		add_average_stats = {
-			hg_armor_piercing = 11
+			hg_armor_piercing = 18
 			surface_visibility = 8.5
 		}
 		can_convert_from = {
@@ -348,7 +348,7 @@ equipment_modules = {
 			lg_armor_piercing = 1
 		}
 		add_average_stats = {
-			hg_armor_piercing = 12
+			hg_armor_piercing = 21
 			surface_visibility = 8.5
 		}
 		can_convert_from = {
@@ -377,7 +377,7 @@ equipment_modules = {
 			lg_armor_piercing = 1
 		}
 		add_average_stats = {
-			hg_armor_piercing = 13
+			hg_armor_piercing = 24
 			surface_visibility = 8.5
 		}
 		can_convert_from = {
@@ -406,7 +406,7 @@ equipment_modules = {
 			lg_armor_piercing = 1
 		}
 		add_average_stats = {
-			hg_armor_piercing = 14
+			hg_armor_piercing = 27
 			surface_visibility = 8.5
 		}
 		can_convert_from = {

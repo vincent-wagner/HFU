@@ -13,12 +13,15 @@ NDefines.NTechnology.MAX_SUBTECHS = 4
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.375, 0.175, 0.1, 0.035, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
+NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350	
 ---------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
@@ -38,8 +41,11 @@ NDefines.NDiplomacy.MIN_TRUST_VALUE = -500 							-- WAS -100 | this is added to
 ---------------------------------------------------------------
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST 
 ---------------------------------------------------------------
-NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 | 
-NDefines.NProduction.BASE_LICENSE_IC_COST = 1                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
+NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 |                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
+NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0	-- License production tech bonus
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0			-- Base IC cost for lended license
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0	-- IC cost equipment for every year of equipment after 1936
+
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 5000000
 
 ---------------------------------------------------------------
@@ -47,9 +53,6 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 1000				-- up from 24 | You can have 
 NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- down from 7 | why not allow Luxembourg to cap faster
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
 
-NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0
-NDefines.NCountry.RESISTANCE_STRENGTH_FROM_UNIT = 0
-NDefines.NCountry.RESISTANCE_STRENGTH_FROM_NEIGHBORS = 0
 NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  WAS 30 | days to transfer escaping divisions to host nation
 NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- WAS 10
 NDefines.NCountry.BASE_FUEL_GAIN = 15.0							-- base amount of fuel gained hourly, independent of excess oil
@@ -60,6 +63,7 @@ NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0					-- Based on number of navies.
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (which is typically a lot).
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
+NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
 ---------------------------------------------------------------
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0						-- down from 0.02 | Chances one ship get damage each hour while on training 		 0.0001	
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0
@@ -157,6 +161,7 @@ NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 100
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED=0
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50 -- Was 30, exists to help speed 5 macro
+
 --generals
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0
@@ -204,10 +209,10 @@ NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.6
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.10
 NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
-NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 10
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 4 --back to 4
 NDefines.NMilitary.TRAINING_ATTRITION = 0.01
@@ -219,10 +224,7 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.04				-- Amount of planning lost due to player manual order
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0	
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0		
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0	
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20			
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20		
@@ -239,7 +241,8 @@ NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.144	-- How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                        -- WAS 10, lowered to prevent some exploits with aces | biggest bonus we can get from having a small wing with an ace on
-
+NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
+NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.002 
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.15
 
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
@@ -259,27 +262,46 @@ NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 2.0
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.60	-- Vanilla 0,75
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 1
 
---Paratrooper changes
-NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.30 -- 33% org on drop
-NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 72 -- 72hrs of org regen 'penalty'
-NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.50 -- +50% org regen, normal is -80%
-NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 2
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
 
+NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING = 2.5
+
+NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 3
+
+NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
+NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0.002		-- Amount of stability recovered daily from propaganda effort
+NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 0.6
+NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0				-- Base amount of daily ideology drift provoked by an operative
+NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0.2
+NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.2
+NDefines.NOperatives.AGENCY_CREATION_DAYS = 0						-- Number of days needed to create an intelligence agency
+NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0
+NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 130						-- Number of days needed to upgrade an intelligence agency
+NDefines.NOperatives.BASE_COUNTER_INTELLIGENCE_RATING = 0.5						-- Number of days needed to upgrade an intelligence agency
+NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 0					-- Number of political power used to become Spy Master
+NDefines.NOperatives.BECOME_SPYMASTER_MIN_UPGRADES = 0			-- Number of agency upgrades you need before becoming Spy Master						-- Number of days needed to upgrade an intelligence agency
+NDefines.NOperatives.AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 1
+NDefines.NOperatives.BUILD_INTEL_NETWORK_DAILY_XP_GAIN = 3
+NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 1
+NDefines.NOperatives.COUNTER_INTELLIGENCE_DAILY_XP_GAIN = 1.5
+NDefines.NOperatives.ROOT_OUT_RESISTANCE_DAILY_XP_GAIN = 1.5
+NDefines.NOperatives.AGENCY_OPERATIVE_RECRUITMENT_TIME = 5
+NDefines.NOperatives.OPERATION_COMPLETION_XP = 100
+NDefines.NOperatives.ON_CAPTURE_COUNTERINTELLIGENCE_OPERATIVE_XP_GAIN = 300
+NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 1
+NDefines.NOperatives.INTEL_NETWORK_MIN_STRENGTH_TO_TARGET = 1
+NDefines.NOperatives.OPERATIVE_BASE_CONTROL_TRADE_DRIFT = 1				-- The base daily drift in trade influence caused by an operative
+NDefines.NOperatives.CONTROL_TRADE_MAX_INFLUENCE = 200.0					-- The maximum amount of trade influence that can be gained through the control trade mission
+NDefines.NOperatives.CRYPTO_BASE_CRYPTO_LEVEL = 4000						-- base crypto strength for a country
+NDefines.NOperatives.CRYPTO_CRYPTO_LEVEL_PER_CRYPTO_UPGRADE = 1500			-- crypto strength per crypto upgrade
+NDefines.NOperatives.CRYPTO_CRYPTO_ACTIVE_BONUS_DURATION = 15
+NDefines.NOperatives.OPERATIVE_CAPTURE_DURATION_IN_DAYS = 4*30
+NDefines.NOperatives.AGENCY_DEFENSE_EFFECT_ON_HOSTILE_ACTION_COST = 0.1
 
 
-NDefines.NDeployment.BASE_DEPLOYMENT_TRAINING=2.5
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.075 			-- max combat bonus that will apply when intel is high enough
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 40
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_ABSOLUTE_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 50
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_CAPTURED_OPERATIVE_MAXIMUMS = { 10, 10, 10, 10 }
+NDefines.NIntel.DYNAMIC_INTEL_SOURCE_CAPTURED_OPERATIVE_ABSOLUTE_MAXIMUMS = { 10, 10, 10, 10 }

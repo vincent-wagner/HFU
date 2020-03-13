@@ -36,6 +36,8 @@ sub_units = {
 		#Tanks are awesome
 		soft_attack = 0.5
 
+		suppression = 2.5	
+
 		forest = {
 		    attack = -0.2
 			movement = -0.4
@@ -67,7 +69,7 @@ sub_units = {
 			movement = -0.2
 		}
 		amphibious = { 
-			attack = -0.7
+			attack = -0.8
 		}
 	}
 }

@@ -1,3 +1,11 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
 focus_tree = {
 	id = german_focus
 	
@@ -21,7 +29,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
@@ -782,8 +790,8 @@ focus_tree = {
 				}
 			}	
 		}
-
-		completion_reward = {	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -861,7 +869,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -928,7 +936,7 @@ focus_tree = {
 
 		available = {
 		}
-		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
         	modify_building_resources = {
         	   building = synthetic_refinery
@@ -996,7 +1004,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 		}
-		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 		add_timed_idea={idea=GER_mineraloelsicherungsplan days=180}	
 			
@@ -1006,7 +1014,6 @@ focus_tree = {
 	focus = {
 		id = GER_extra_tech_slot
 		icon = GFX_focus_research
-		text = extra_tech_slot
 		prerequisite = { focus = GER_kdf_wagen focus = GER_synthetic_rubber }
 		x = -1
 		y = 1
@@ -1017,7 +1024,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -1037,7 +1044,7 @@ focus_tree = {
 
 		available = {
 		}
-		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = GER_autobahn_tt
 			hidden_effect = {
@@ -1121,7 +1128,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			if = {
 				limit = {
@@ -1176,7 +1183,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = GER_grosraumwirtschaft
 		}
@@ -1322,6 +1329,7 @@ focus_tree = {
 			}
 		}
 		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 
 		
@@ -1465,32 +1473,9 @@ random_owned_controlled_state = {
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = air_sup_bonus
-				bonus = 1.5
-				uses = 4
-				category = air_doctrine
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_2air }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_6air }
-				add_building_construction = {
-					type = air_base
-					level = 6
-					instant_build = yes
-				}
-			}
-		}
 		
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			
 			air_experience = 25
@@ -1501,7 +1486,7 @@ random_owned_controlled_state = {
 				uses = 6
 				category = air_doctrine
 			}
-            add_tech_bonus = {
+           		 add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0
 				uses = 1
@@ -1510,16 +1495,34 @@ random_owned_controlled_state = {
 			
 			
 			}
-				42 = {
+								
+				55 = {
 
-					add_building_construction = {
+					set_building_level = {
 						type = air_base
-						level = 6
+						level = 10
 						instant_build = yes
 					}
-					set_state_flag = GER_air_innovation_6air
-				}				
-			
+					
+				}
+				57 = {
+
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+					
+				}
+				50 = {
+
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+					
+				}
 		}
 	}
 
@@ -1536,7 +1539,7 @@ random_owned_controlled_state = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = op_dest_bonus
@@ -1566,7 +1569,7 @@ random_owned_controlled_state = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_long_range_escorts
@@ -1616,7 +1619,7 @@ random_owned_controlled_state = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			# Balance research bonus for 2 techs in battlefield_support_tree
 			add_tech_bonus = {
@@ -1645,7 +1648,7 @@ random_owned_controlled_state = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
 			
@@ -1684,7 +1687,8 @@ random_owned_controlled_state = {
 		cost = 10
 		ai_will_do = {
 			factor = 10
-		}	
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			SOV = {
 				country_event = { id = germany.75 days = 1 }
@@ -1718,7 +1722,7 @@ random_owned_controlled_state = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = { 
 			air_experience = 150
 
@@ -1763,7 +1767,7 @@ random_owned_controlled_state = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
 			army_experience = 50
@@ -1808,7 +1812,7 @@ random_owned_controlled_state = {
 		}	
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = GER_rocketry_idea
 			add_tech_bonus = {
@@ -1839,6 +1843,7 @@ random_owned_controlled_state = {
 		}
         available = { date > 1941.1.1}
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_research_slot = 1
@@ -1869,7 +1874,8 @@ random_owned_controlled_state = {
 		}
 		ai_will_do = {
 			factor = 10
-		}	
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }	
 		completion_reward = {
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
@@ -1944,7 +1950,7 @@ random_owned_controlled_state = {
 		y = 2
 
 available = {
-				date > 1941.6.1
+				date > 1941.6.22
 							}
 
 		relative_position_id = GER_anti_comitern_pact
@@ -1959,7 +1965,6 @@ available = {
 				type = annex_everything
 				target = SOV
 			}
-				
 			            SOV={remove_ideas=Fast_Training }
 		
 				        GER = { 
@@ -2306,6 +2311,36 @@ available = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = GER_totaler_krieg
+			hidden_effect={
+					division_template = {
+					name = "Volkssturm"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
+					#division_names_group = JAP_MAR_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry  = { x = 0 y = 1 }
+						infantry  = { x = 0 y = 2 }
+						infantry  = { x = 0 y = 3 }
+						infantry  = { x = 0 y = 4 }
+						infantry  = { x = 1 y = 0 }
+						infantry  = { x = 1 y = 1 }
+						infantry  = { x = 1 y = 2 }
+						infantry  = { x = 1 y = 3 }
+						infantry  = { x = 1 y = 4 }
+						
+					}
+					support = {
+						anti_air = { x = 0 y = 0  }
+						
+					}
+					priority = 1
+				}}
+			64={for_loop_effect = {
+					end = 50 				
+					create_unit = {
+						division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.17" 
+						owner = GER
+						}
+					}}
 			
 		}
 	}
@@ -2351,7 +2386,7 @@ available = {
 
 		bypass = {
 		}
-
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_research_slot = 1
 			army_experience = 10
@@ -2448,6 +2483,9 @@ available = {
 				custom_effect_tooltip = GER_mol_rib_pact_tt
 				custom_effect_tooltip = needs_approval
 			}
+			EST = {set_equipment_fraction = 0}
+			LIT = {set_equipment_fraction = 0}
+			LAT = {set_equipment_fraction = 0}
 			SOV = {
 			transfer_state = 78 
 			transfer_state = 80
@@ -2488,6 +2526,7 @@ available = {
 				date < 1939.1.1
 			}
 		}	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			188 = { add_claim_by = GER }
 			85 = { add_claim_by = GER }
@@ -2529,6 +2568,19 @@ available = {
 
 		}	
 		completion_reward = {
+			hidden_effect = {
+				GER = {
+					add_intel = {
+						target = POL
+						army_intel = 100
+						civilian_intel = 100
+						navy_intel = 100
+						airforce_intel = 100
+					}
+				}
+				SOV = { add_ideas = war_in_our_neigbour }
+				JAP = { add_ideas = war_in_our_neigbour }
+			}
 			army_experience=70
 			remove_resource_rights = 724
 			
@@ -2556,7 +2608,6 @@ POL = {
 					FRA = {
 				add_war_support = 0.1 #just not cricket
 			}
-		FIN = { country_event = finland.2 }
 			SAF = {	country_event = tfv_south_africa.133 }
 		ENG = { country_event = britain.24
 		        125 = {
@@ -2577,11 +2628,7 @@ POL = {
 			}
 			set_state_flag = shadow_scheme_2AF
 		}
-		}
-		
-		
-SPR = { country_event = spain.29 }
-		
+		}		
 		
 		}
 			
@@ -2612,7 +2659,8 @@ SPR = { country_event = spain.29 }
 				factor = 0
 				date < 1939.1.1
 			}
-		}	
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 
 			if = {
@@ -2811,6 +2859,7 @@ SPR = { country_event = spain.29 }
 		ai_will_do = {
 			factor = 10
 		}	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 				
 				ENG = {
@@ -2896,7 +2945,7 @@ SPR = { country_event = spain.29 }
 			factor = 10
 		}
 
-
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 		add_war_support = 0.1
 		add_political_power = -20
@@ -2949,7 +2998,7 @@ SPR = { country_event = spain.29 }
 		x = 0
 		y = 2
 		relative_position_id = GER_around_maginot
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -2971,6 +3020,22 @@ SPR = { country_event = spain.29 }
 			}
 			LUX = {
 				country_event = { id = wtt_germany.64 }
+			}
+			custom_effect_tooltip = "Every axis controlled state in europe will gain 30% compliance"
+			every_country = {
+				limit = {
+					is_in_faction_with = GER
+				}
+				every_controlled_state = {
+					limit = {
+						is_controlled_by = PREV
+						NOT = {
+							is_core_of = PREV
+						}
+						is_on_continent = europe
+					}
+					add_compliance = 30
+				}
 			}
 		}
 	}
@@ -3023,7 +3088,7 @@ SPR = { country_event = spain.29 }
 				}
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -3163,7 +3228,7 @@ SPR = { country_event = spain.29 }
 				}
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -3222,7 +3287,7 @@ SPR = { country_event = spain.29 }
 
 		complete_tooltip = {
 		}
-
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			navy_experience = 50
 			random_owned_controlled_state = {
@@ -3335,6 +3400,7 @@ SPR = { country_event = spain.29 }
 			
 		}
 		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
@@ -3372,7 +3438,7 @@ SPR = { country_event = spain.29 }
 		}
 			
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = ti_bonus
@@ -3397,6 +3463,7 @@ SPR = { country_event = spain.29 }
 		}
 			
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			add_ideas = GER_modular_construction
@@ -3476,6 +3543,7 @@ SPR = { country_event = spain.29 }
 			}
 			
 			completion_reward = {
+						add_ideas = GER_atlantikwall_idea
 						99 = {
 								set_building_level = {
 						type = coastal_bunker

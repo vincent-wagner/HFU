@@ -39,6 +39,10 @@ country_event = {
 		set_global_flag = fall_of_france
 		add_political_power = 150
 		if={limit={date<1940.2.1}add_timed_idea={idea=GER_triumph_in_france days=730}}
+		FRA = {
+			add_ideas = FRA_defeatism
+			country_event = france.20
+		}
 		EFR = {
 			transfer_state = 26
 			every_state = {
@@ -205,7 +209,33 @@ country_event = {
 		}
 	}
 }
-
+country_event = {
+	id = france.20
+	title = france.20.t
+	desc = france.20.d
+	picture = GFX_report_event_degaulle_churchill
+	
+	is_triggered_only = yes
+	
+	option = {
+		custom_effect_tooltip = france.20.a_tt
+		set_country_flag = france_de_gaulle
+		hidden_effect =  {
+			create_country_leader = {
+				name = "Charles de Gaulle"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					
+				}
+			}
+		}
+		
+		name = france.20.a
+	}
+}
 # French strikes
 country_event = {
 	id = france.21
@@ -275,36 +305,7 @@ country_event = {
 		}
 	}	
 }
-# Strikes are over
 
-
-# Édouard Daladier Resigns
-country_event = {
-    id = france.31
-    title = france.31.t
-    desc = france.31.d
-    picture = GFX_report_event_german_parade_paris
- 
-    fire_only_once = yes
-
-	is_triggered_only = yes
-
-
-    option = {
-        name = france.31.a
-        retire_country_leader = yes
-        create_country_leader = {
-        	name = "Paul Reynaud"
-        	desc = "POLITICS_PAUL_REYNAUD_DESC"
-        	picture = "Portrait_France_Paul_Reynaud.dds"
-        	expire = "1965.1.1"
-        	ideology = liberalism
-        	traits = {
-        	      }
-            }
-        set_country_flag = daladier_resigned
-      }
-}
 
 news_event = {
 	id = france.34

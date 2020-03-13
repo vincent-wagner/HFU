@@ -64,7 +64,7 @@ focus_tree = {
 	focus = {
 		id = ROM_preserve_greater_romania
 		icon = GFX_focus_rom_preserve_romania
-		x = 2
+		x = 0
 		y = 0
 
 		cost = 10
@@ -189,7 +189,7 @@ focus_tree = {
 		id = ROM_civil_works
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 2 
+		x = 1 
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -600,7 +600,7 @@ focus_tree = {
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 8
+		x = 4
 		y = 0
 
 		cost = 10
@@ -641,7 +641,7 @@ focus_tree = {
 		id = ROM_fortify_the_borders
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
@@ -673,7 +673,7 @@ focus_tree = {
 		id = ROM_revise_the_constitution
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
@@ -709,7 +709,7 @@ focus_tree = {
 		id = ROM_the_royal_foundation
 		icon = GFX_focus_research
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
@@ -877,29 +877,12 @@ focus_tree = {
 				limit = { has_country_leader = { id = 550 } }
 				retire_country_leader = yes
 			}
-			if = {
-				limit = {
-					democratic > 0.35
-				}
-				set_politics = {
-					ruling_party = democratic
-					elections_allowed = yes
-				}
-				limit = {
-					communism > 0.35
-				}
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-				}
-				limit = {
-					fascism > 0.35
-				}
+		
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = no
 				}
-			}
+			
 			if = {
 				limit = {
 					has_idea = ROM_constitutional_guarantees
@@ -935,7 +918,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 12
+		x = 7
 		y = 0
 
 		cost = 10
@@ -963,30 +946,30 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 			46 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 7
+					level = 10
 					instant_build = yes
 				}
 			}
 			77 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
 			84 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
 			}
 						79 = {
-				add_building_construction = {
+				set_building_level = {
 					type = air_base
-					level = 8
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -1107,7 +1090,7 @@ focus_tree = {
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 21
+		x = 13
 		y = 0
 
 		cost = 10
@@ -1136,7 +1119,7 @@ focus_tree = {
 		id = ROM_license_german_equipment
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_army_maneuvers }
-		x = -6
+		x = -2
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 		mutually_exclusive = { focus = ROM_the_maresal }
@@ -1177,7 +1160,7 @@ focus_tree = {
 		id = ROM_army_maneuvers2
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = ROM_army_maneuvers }
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
@@ -1212,7 +1195,7 @@ focus_tree = {
 		id = ROM_the_zb_53
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = ROM_army_maneuvers }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
@@ -1389,7 +1372,7 @@ focus_tree = {
 		id = ROM_reserve_divisions
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_army_maneuvers }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
@@ -1644,7 +1627,7 @@ focus = {
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 26
+		x = 20
 		y = 0
 
 		cost = 10

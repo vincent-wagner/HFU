@@ -78,7 +78,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		complete_tooltip = {
 
 		}
@@ -213,7 +213,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		complete_tooltip = {
 
 		}
@@ -370,7 +370,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		complete_tooltip = {
 
 		}
@@ -527,7 +527,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		complete_tooltip = {
 
 		}
@@ -796,7 +796,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -841,7 +841,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -892,7 +892,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -943,7 +943,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -1003,7 +1003,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -1059,7 +1059,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -1115,7 +1115,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -1170,7 +1170,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
 		complete_tooltip = {
 
 		}
@@ -1216,7 +1216,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -1259,7 +1259,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -1302,7 +1302,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -1340,7 +1340,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		complete_tooltip = {
 
 		}
@@ -1384,7 +1384,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		complete_tooltip = {
 
 		}
@@ -1451,7 +1451,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
 		complete_tooltip = {
 
 		}
@@ -1491,7 +1491,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		complete_tooltip = {
 
 		}
@@ -1526,7 +1526,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		complete_tooltip = {
 
 		}
@@ -1681,7 +1681,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		complete_tooltip = {
 
 		}
@@ -1717,7 +1717,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_WAR_SUPPORT }
 		complete_tooltip = {
 
 		}
@@ -1789,7 +1789,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
 			custom_effect_tooltip = CZE_war_college_effect_tt
@@ -1891,7 +1891,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		complete_tooltip = {
 
 		}
@@ -1932,7 +1932,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = FRA_army_of_aggression_focus
 		}
 	}
 
@@ -2020,7 +2020,7 @@ focus_tree = {
 				}
 				add_timed_idea = { idea = CZE_czech_fascism_idea days = 1095 }
 			}
-			country_event = { days = 6 random = 120 id = czech.14 }			
+			country_event = { days = 6 random_days = 5 id = czech.14 }			
 		}
 	}
 	
@@ -2190,7 +2190,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		complete_tooltip = {
 
 		}
@@ -2386,7 +2386,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -2489,7 +2489,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -2529,7 +2529,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -2566,7 +2566,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -2609,7 +2609,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -2772,7 +2772,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_to_tech_sharing_group = little_entente_research_group
 			every_country = {
@@ -2819,13 +2819,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			#events for faction members. add 10% planning cap bonus
 			add_ideas = CZE_planning_bonus
 			every_other_country = {
 				limit = {
 					is_in_faction_with = ROOT
 				}
-				country_event = { id = czech.31 }
+				add_ideas = CZE_planning_bonus
 			}
 		}
 	}
@@ -3048,7 +3047,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3089,7 +3088,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3130,7 +3129,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3184,7 +3183,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3226,7 +3225,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3266,7 +3265,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3305,7 +3304,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 		}
 
@@ -3344,7 +3343,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3384,7 +3383,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3425,7 +3424,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3466,7 +3465,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3546,7 +3545,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3588,7 +3587,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3629,7 +3628,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3706,7 +3705,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3746,7 +3745,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3788,7 +3787,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3829,7 +3828,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -3912,7 +3911,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
 		}
@@ -4013,7 +4012,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -4052,7 +4051,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -4091,7 +4090,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -4133,7 +4132,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}
@@ -4175,7 +4174,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		complete_tooltip = {
 
 		}

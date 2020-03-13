@@ -12,9 +12,6 @@ set_war_support = 0.1
 set_technology = {
 }
 
-1939.1.1 = {
-}
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1932.9.18"
@@ -44,7 +41,3 @@ create_country_leader = {
 		#
 	}
 }
-### VARIANTS ###
-# 1936 Start #
-
-# 1939 Start #

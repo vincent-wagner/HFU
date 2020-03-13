@@ -301,6 +301,7 @@ focus_tree = {
 		id = YUG_crush_the_ustasa
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = YUG_concessions_for_macedonians }
+		
 		x = 0
 		y = 3
 		relative_position_id = YUG_ban_slovene_nationalist_parties
@@ -463,6 +464,7 @@ focus_tree = {
 		id = YUG_concessions_for_macedonians
 		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = YUG_traditional_values }
+		mutually_exclusive = { focus = YUG_greater_yugoslavia }
 		x = 0
 		y = 2
 		relative_position_id = YUG_ban_slovene_nationalist_parties
@@ -679,7 +681,7 @@ focus_tree = {
 		id = YUG_develop_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = YUG_expand_the_mining_industry }
-		
+		mutually_exclusive = { focus = YUG_develop_military_industry }
 		x = -1
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
@@ -787,6 +789,7 @@ focus_tree = {
 		id = YUG_integrated_rail_network
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = YUG_expand_the_university_of_zagreb }
+		mutually_exclusive = { focus = YUG_improve_serbian_rail_network }
 		
 		x = 0
 		y = 2

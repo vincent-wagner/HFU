@@ -9,14 +9,15 @@ state={
 	history={
 		owner = SPR
 		victory_points = {
-			758 3
+			758 5
 		}
 		victory_points = {
-			6734 1
+			6734 3
 		}
 		buildings = {
 			infrastructure = 6
 			anti_air_building = 10
+			arms_factory = 1
 		}
 		add_core_of = SPR
 	}

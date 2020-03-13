@@ -1,23 +1,21 @@
 ideas = {
 
 	country = {
-	
-	   GER_triumph_in_france = {
+		 GER_triumph_in_france = {
 			allowed = {
 				always = yes
 			}
 
 
 			removal_cost = -1
-			
+
 			picture = german_advisors
-			
-			
+
+
 			modifier = {
 				stability_factor = 0.075
-			
+
 		}}
-		
 	   	GER_triumph_in_africa = {
 			allowed = {
 				always = yes
@@ -34,10 +32,10 @@ ideas = {
 			}
 			picture = HUN_treaty_of_triannon
 
-			
+
 			modifier = {
 				stability_factor = 0.075
-			
+
 		}}
 	   GER_mineraloelsicherungsplan = {
 			allowed = {
@@ -55,25 +53,23 @@ ideas = {
 			industry_free_repair_factor=0.5
 			industry_repair_factor=0.25
 			consumer_goods_factor = 0.03
-			
 		}}
-	GER_Albert_Speer_idea = {
+		GER_Albert_Speer_idea = {
 			allowed = {
 				always = yes
 			}
 
 			cancel={NOT={has_idea=speer}}
 			removal_cost = -1
-			
 			picture = generic_manpower_bonus
 
-			
+
 			modifier = {
 			industrial_capacity_factory = -0.1
 			production_factory_efficiency_gain_factor = 0.75
 			line_change_production_efficiency_factor = 0.1
-			
-			
+
+
 		}}	
 		
 	   GER_totaler_krieg = {
@@ -91,7 +87,7 @@ ideas = {
 				
 			
 			army_core_defence_factor = 0.1
-	        	army_core_attack_factor = 0.05
+	        army_core_attack_factor = 0.05
 			industrial_capacity_factory = 0.15
 			surrender_limit = 0.05
 			}
@@ -157,7 +153,7 @@ ideas = {
 				experience_loss_factor = -0.5
 				army_org_Factor = 0.05
 				army_morale_factor=0.10
-				
+				agency_upgrade_time = -0.30
 				
 				}
 				
@@ -232,7 +228,26 @@ ideas = {
 				production_speed_bunker_factor = 0.2
 			}
 		}
+		GER_atlantikwall_idea = {
+			picture = FRA_fortification_focus
+			allowed = {
+				original_tag = GER
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_wall_line
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.1
+				production_speed_bunker_factor = 0.1
+			}
+		}
 		GER_autarky_idea = {
 
 			allowed = {
@@ -249,6 +264,8 @@ ideas = {
 			picture = generic_exploit_mines
 
 			modifier = {
+				production_speed_synthetic_refinery_factor=0.1
+				global_building_slots_factor=0.15
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
@@ -530,7 +547,6 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
-
 		GER_mefo_bills_1 = {
 			name = GER_mefo_bills
 			allowed = {
@@ -548,10 +564,8 @@ ideas = {
 
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
-				#production_factory_max_efficiency_factor = -0.1
-				
 				consumer_goods_factor = -0.05
-				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.10
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
@@ -563,12 +577,12 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.2
 			}
-		
-		
-		
-		
+			on_remove={country_event = {
+   				 id = germany.444
+  				 hours=1
+				}
+				}
 		}
-
 		GER_mefo_bills_2 = {
 			name = GER_mefo_bills
 			allowed = {
@@ -582,12 +596,12 @@ ideas = {
 			removal_cost = -1
 
 			picture = ger_mefo_bills
-modifier = {
+				modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 				#production_factory_max_efficiency_factor = -0.1
-				
 				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
+				
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
 				production_speed_coastal_bunker_factor = 0.25
@@ -603,7 +617,7 @@ modifier = {
 		}
 
 		
-
+		
 		
 
 		GER_mefo_bills_ended = {
@@ -757,7 +771,7 @@ modifier = {
 				custom_effect_tooltip = GER_SS_himmler_recruit
 			}
 			
-			traits = { prince_of_terror }
+			traits = { prince_of_terror head_of_intelligence }
 		}
 		
 		martin_bormann = {
@@ -798,7 +812,6 @@ modifier = {
 				factor = 0
 			}
 		}
-		
 	}
 
 	
@@ -816,7 +829,8 @@ modifier = {
 					original_TAG = SPR 
 					original_TAG = BUL
 					original_TAG = ROM
-                    original_TAG = HUN 					
+                    			original_TAG = HUN
+					original_TAG = MAN  					
 				}
 			}
 			available = {
@@ -834,21 +848,21 @@ modifier = {
 			}
             equipment_bonus = {
 				medium_tank_equipment = {
-					build_cost_ic = -0.15 
+					build_cost_ic = -0.075 
 				}
 
 				
 
 				medium_tank_aa_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.075 
 				}
 
 				medium_tank_artillery_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.075 
 				}
 
 				medium_tank_destroyer_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.075 
 				}				
 			}	
 
@@ -863,7 +877,8 @@ GER_ckd = {
 					original_TAG = SPR 
 					original_TAG = BUL
 					original_TAG = ROM
-                    original_TAG = HUN 					
+					original_TAG = MAN 
+                   			original_TAG = HUN 					
 				}
 			}
 			available = {
@@ -878,13 +893,13 @@ GER_ckd = {
 		
 			equipment_bonus = {
 				light_tank_equipment = {
-					build_cost_ic = -0.15 reliability = 0.05  
+					build_cost_ic = -0.12 reliability = 0.05  
 				}
 				light_tank_destroyer_equipment = {
-					build_cost_ic = -0.15 reliability = 0.05
+					build_cost_ic = -0.12 reliability = 0.05
 				}
 				light_tank_artillery_equipment = {
-					build_cost_ic = -0.15 reliability = 0.05
+					build_cost_ic = -0.12 reliability = 0.05
 				} 
 			}
 		}
@@ -898,7 +913,8 @@ krupp_tank = {
 					original_TAG = SPR 
 					original_TAG = BUL
 					original_TAG = ROM
-                    original_TAG = HUN 					
+					original_TAG = MAN 
+                    			original_TAG = HUN 					
 				}
 			}
 						
@@ -954,7 +970,8 @@ equipment_bonus = {
 					original_TAG = SPR 
 					original_TAG = BUL
 					original_TAG = ROM
-                    original_TAG = HUN 					
+					original_TAG = MAN 
+                  			original_TAG = HUN 					
 				}
 			}
 
@@ -973,7 +990,7 @@ equipment_bonus = {
 					
 					hard_attack = 0.2 
 					soft_attack = 0.2 
-					reliability = 0.15
+					
 					build_cost_ic = 0.2
 				}
 			
@@ -993,7 +1010,7 @@ equipment_bonus = {
 				medium_tank_aa_equipment = {
 					
                     reliability = 0.15
-					soft_attack = 0.2 
+					air_attack = 0.15
 					build_cost_ic = 0.2
 				}
 			}
@@ -1003,10 +1020,9 @@ equipment_bonus = {
 		}
    
    
-   idea_alkett = {
+   Alkett = {
 
 			cost = 100
-			
 			allowed = {
 				or = { 
 					original_TAG = GER
@@ -1014,7 +1030,8 @@ equipment_bonus = {
 					original_TAG = SPR 
 					original_TAG = BUL
 					original_TAG = ROM
-                    original_TAG = HUN 					
+					original_TAG = MAN 
+                   			original_TAG = HUN 					
 				}
 			}
 			available = {
@@ -1029,27 +1046,24 @@ equipment_bonus = {
 
 			equipment_bonus = {
 				light_tank_equipment = {
-					build_cost_ic = -0.1 maximum_speed = 0.05 soft_attack = 0.05 reliability = -0.1
+					build_cost_ic = -0.075 
+					 
+					soft_attack = 0.1 
+					reliability = -0.1
 				}
 				light_tank_destroyer_equipment = {
-					build_cost_ic = -0.1 maximum_speed = 0.05 hard_attack = 0.05 reliability = -0.1
+					build_cost_ic = -0.075 
+					ap_attack=0.15
+					soft_attack = 0.1
+					reliability = -0.1
 				}
 				light_tank_artillery_equipment = {
-					build_cost_ic = -0.1 maximum_speed = 0.05 soft_attack = 0.05 reliability = -0.1
+					build_cost_ic = -0.075 
+					
+					soft_attack = 0.1 
+					reliability = -0.1
 				} 
-				medium_tank_equipment = {
-					build_cost_ic = -0.1 maximum_speed = 0.05 soft_attack = 0.05 reliability = -0.1
-				}
 				
-				medium_tank_destroyer_equipment = {
-					build_cost_ic = -0.1 maximum_speed = 0.05 hard_attack = 0.05 reliability = -0.1
-				}
-				medium_tank_artillery_equipment = {
-					build_cost_ic = -0.1 maximum_speed = 0.05 soft_attack = 0.05 reliability = -0.1
-				}
-				medium_tank_aa_equipment = {
-					build_cost_ic = -0.1 maximum_speed = 0.05 soft_attack = 0.05 reliability = -0.1
-				}
 			}
 		}
 
@@ -1064,7 +1078,8 @@ equipment_bonus = {
 					original_TAG = SPR 
 					original_TAG = BUL
 					original_TAG = ROM
-                    original_TAG = HUN 					
+					original_TAG = MAN 
+                    			original_TAG = HUN 					
 				}
 			}
 		
@@ -1075,13 +1090,13 @@ equipment_bonus = {
 			
 			equipment_bonus = {
 				heavy_tank_equipment = {
-					build_cost_ic = -0.05 reliability = -0.1 armor_value = 0.1
+					build_cost_ic = -0.075 reliability = -0.1 armor_value = 0.1
 				}
 				heavy_tank_destroyer_equipment = {
-				    build_cost_ic = -0.05 reliability = -0.1 armor_value = 0.1
+				    build_cost_ic = -0.075 reliability = -0.1 armor_value = 0.1
 				}
 				heavy_tank_artillery_equipment = {
-				    build_cost_ic = -0.05 reliability = -0.10 armor_value = 0.1
+				    build_cost_ic = -0.075 reliability = -0.10 armor_value = 0.1
 				}				
 				
 			}
@@ -1096,7 +1111,8 @@ equipment_bonus = {
 					original_TAG = SPR 
 					original_TAG = BUL
 					original_TAG = ROM
-                    original_TAG = HUN 					
+					original_TAG = MAN 
+                    			original_TAG = HUN 					
 				}
 			}
 
@@ -1144,6 +1160,7 @@ equipment_bonus = {
 					original_TAG = SPR 
 					original_TAG = BUL
 					original_TAG = ROM
+					original_TAG = MAN 
                     original_TAG = HUN 					
 				}
 			}
@@ -1199,6 +1216,7 @@ cost = 100
 					original_TAG = SPR 
 					original_TAG = BUL
 					original_TAG = ROM
+					original_TAG = MAN 
                     original_TAG = HUN 					
 				}
 			}
@@ -1475,13 +1493,21 @@ cost = 100
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
+			equipment_bonus = {
+				
+                    mechanized_equipment = {
+					build_cost_ic = -0.1  
+					
+				}
+
+			}
 			traits = { motorized_equipment_manufacturer }
 		}
 	}
 	
 	theorist = {
 		von_braun = {
+			ledger = air
 			
 			allowed = {
 				original_tag = GER
@@ -1495,6 +1521,7 @@ cost = 100
 		}
 		
 		heisenberg = {
+			ledger = army
 
 			
 			allowed = {
@@ -1509,6 +1536,7 @@ cost = 100
 		}
 		
 		heinz_guderian = {
+			ledger = army
 
 			
 			allowed = {
@@ -1524,6 +1552,7 @@ cost = 100
 		}
 		
 		manstein = {
+			ledger = army
 
 			
 			allowed = {
@@ -1541,6 +1570,7 @@ cost = 100
 		}
 		
 		ernst_udet = {
+			ledger = air
 
 			
 			allowed = {
@@ -1555,6 +1585,7 @@ cost = 100
 		}
 		
 		alfred_saalwachter = {
+			ledger = navy
 
 			
 			allowed = {
@@ -1571,6 +1602,7 @@ cost = 100
 		}
 		
 		otto_ciliax = {
+			ledger = navy
 
 			
 			allowed = {
@@ -1722,6 +1754,7 @@ cost = 100
 	high_command = {
 
 		ferdinand_schorner = {
+			ledger = army
 
 			
 			allowed = {
@@ -1736,6 +1769,7 @@ cost = 100
 		}
 		
 		erwin_rommel = {
+			ledger = army
 
 			
 			allowed = {
@@ -1753,6 +1787,7 @@ cost = 100
 		}
 		
 		gerd_von_rundstedt = {
+			ledger = army
 
 			
 			allowed = {
@@ -1767,6 +1802,7 @@ cost = 100
 		}
 		
 		werner_von_fritsch = {
+			ledger = army
 
 			
 			allowed = {
@@ -1781,6 +1817,7 @@ cost = 100
 		}
 		
 		hugo_sperrle = {
+			ledger = air
 
 			
 			allowed = {
@@ -1798,6 +1835,7 @@ cost = 100
 		}
 		
 		erhard_milch = {
+			ledger = air
 
 			
 			allowed = {
@@ -1812,6 +1850,7 @@ cost = 100
 		}
 		
 		kurt_student = {
+			ledger = air
 
 			
 			allowed = {
@@ -1826,6 +1865,7 @@ cost = 100
 		}	
 		
 		erich_bey = {
+			ledger = navy
 
 			
 			allowed = {
@@ -1840,6 +1880,7 @@ cost = 100
 		}
 		
 		gunther_lutjens = {
+			ledger = navy
 
 			
 			allowed = {
@@ -1854,6 +1895,7 @@ cost = 100
 		}
 		 
 		viktor_schutze = {
+			ledger = navy
 
 			
 			allowed = {

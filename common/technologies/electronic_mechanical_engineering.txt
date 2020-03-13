@@ -531,7 +531,9 @@ technologies = {
 		
 		research_cost = 1
 		start_year = 1938
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 6 }
@@ -569,7 +571,9 @@ technologies = {
 
 		# encryption 2
 		encryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1940
 		allow = { 
@@ -614,7 +618,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1942
 		allow = { 
@@ -659,7 +665,9 @@ technologies = {
 
 		# decryption 1
 		decryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1938
 		
@@ -696,7 +704,9 @@ technologies = {
 
 		# decryption 2
 		decryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1940
 		
@@ -733,7 +743,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 1
-		
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1942
 		
@@ -1024,7 +1036,7 @@ technologies = {
 		
 		enable_equipments = {
 			rocket_interceptor_equipment_3
-			
+			guided_missile_equipment_3
 		}
 		
 		rocket_artillery = {
@@ -1054,37 +1066,6 @@ technologies = {
 		
 		categories = {
 			rocketry
-		}
-	}
-	
-	jet_engines = {
-	
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 2 }
-		}
-		
-		start_year = 1944
-		research_cost = 2
-
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = 11 }
-		}
-		
-		desc = "JET_ENGINES_SPECIAL"
-
-		on_research_complete = {
-			custom_effect_tooltip = JET_ENGINES_RESEARCHED
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-			jet_technology
 		}
 	}
 	
@@ -1139,10 +1120,7 @@ technologies = {
 	nuclear_reactor = {
 		
 		allow = {
-			has_game_rule = {
-				rule = horst_nuke_options
-				option = HORST_ENABLE_NUKES
-			}
+			
 		}
 
 		# can build reactors
@@ -1197,5 +1175,23 @@ technologies = {
 		categories = {
 			nuclear
 		}
+	}
+
+	lar_decryption_bonus_tech = {
+				
+		research_cost = 1.5 #Carrier Variant
+		start_year = 1944
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		decryption_power = 10
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+		################
 	}
 }

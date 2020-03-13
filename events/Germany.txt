@@ -147,7 +147,15 @@ country_event = {
 		name = germany.4.a
 	}
 }
-
+country_event = {
+	id = germany.444
+	is_triggered_only = yes
+	hidden=yes
+	immediate={GER={add_timed_idea = {
+   					idea = GER_mefo_bills_2
+    					days = 638
+					}}}
+}
 #anti_comintern_pact
 # nations are asked to join pact, agreeing = relations with GER and hit with SOV 
 
@@ -814,7 +822,7 @@ country_event = {
 		add_tech_bonus = {
 			name = armor_bonus
 			bonus = 1.0
-			uses = 1
+			uses = 2
 			category = armor
 		}
 		}

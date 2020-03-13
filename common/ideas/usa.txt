@@ -900,6 +900,45 @@ ideas = {
 			}
 		}
 
+		office_of_strategic_services_lar = {
+			name = office_of_strategic_services
+			picture = office_of_strategic_services
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1			
+
+			modifier = {
+				operation_infiltrate_outcome = 0.25
+				boost_resistance_factor = 0.25
+			}
+		}
+
+		USA_black_chamber = {
+
+			picture = office_of_strategic_services
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1			
+
+			modifier = {
+				operative_slot = 1
+				propaganda_mission_factor = 0.25
+				boost_ideology_mission_factor = 0.25
+			}
+		}
+
 		war_bonds_focus = {
 			allowed = {
 				always = no
@@ -1052,17 +1091,11 @@ ideas = {
 
 			picture = generic_pp_unity_bonus
 			
-			rule = {
-				can_join_opposite_factions = no
-				can_create_factions = yes
-			}
-			
 			modifier = {
 				min_export = -0.3
-				drift_defence_factor = 0.2
-				ai_badass_factor = 0.03 # cares for 3% of normal threat
-				
 				global_building_slots_factor = 1
+				operative_slot = 2
+				agency_upgrade_time = -0.30
 			}
 		}
 
@@ -1238,7 +1271,24 @@ ideas = {
 				justify_war_goal_time = -0.35
 			}			
 		}
+		CSA_spirit_of_rebellion = {
+			allowed = { always = no	}
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_volunteer_expedition_bonus
+			modifier = {			
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				training_time_factor = -0.5
+				equipment_capture = 0.125
+				consumer_goods_factor = -0.1	
+				conscription_factor = 0.25
+			}			
+		}
 	
 	}
 	
@@ -1339,6 +1389,22 @@ ideas = {
 			}
 			
 			traits = { armaments_organizer }
+		}
+		
+		usa_william_donovan = {
+		
+			available = {
+				has_intelligence_agency = yes
+				threat > 0.5
+			}
+			
+			allowed = {
+				original_tag = USA
+				has_dlc = "La Resistance"
+			}
+			
+			traits = { head_of_intelligence }
+
 		}
 	}
 	
@@ -1507,6 +1573,7 @@ ideas = {
 	
 	high_command = {
 		courtney_hodges = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1523,6 +1590,7 @@ ideas = {
 		}
 		
 		joseph_stilwell = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1542,6 +1610,7 @@ ideas = {
 		}
 		
 		mark_clark = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1558,6 +1627,7 @@ ideas = {
 		}	
 		
 		jimmy_doolittle = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1575,6 +1645,7 @@ ideas = {
 		
 	
 		claire_lee_chennault = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1591,6 +1662,7 @@ ideas = {
 		}
 		
 		raymond_spruance = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -1607,6 +1679,7 @@ ideas = {
 		}
 		
 		frank_jack_fletcher = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1623,6 +1696,7 @@ ideas = {
 		}
 		
 		thomas_kinkaid = {
+			ledger = army
 			
 			
 			allowed = {
@@ -2141,6 +2215,7 @@ ideas = {
 	
 	theorist = {
 		omar_bradley = {
+			ledger = army
 			
 			
 			allowed = {
@@ -2157,6 +2232,7 @@ ideas = {
 		}
 		
 		george_patton = {
+			ledger = army
 			
 			
 			allowed = {
@@ -2173,6 +2249,7 @@ ideas = {
 		}
 		
 		dewitt_clinton_ramsey = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -2189,6 +2266,7 @@ ideas = {
 		}
 		
 		marc_mitscher = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -2206,6 +2284,7 @@ ideas = {
 
 		
 		harold_mcclelland = {
+			ledger = air
 			
 			
 			allowed = {
@@ -2222,6 +2301,7 @@ ideas = {
 		}
 		
 		robert_oppenheimer = {
+			ledger = army
 			
 			
 			allowed = {
@@ -2238,6 +2318,7 @@ ideas = {
 		}
 		
 		robert_goddard = {
+			ledger = air
 			
 			
 			allowed = {

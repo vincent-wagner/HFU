@@ -4,7 +4,7 @@ state=
 	name="STATE_69"
 	manpower = 2830000
 	
-	state_category = town
+	state_category = city
 	
 	resources={
 		steel=4 # was: 8
@@ -23,7 +23,8 @@ state=
 		owner = CZE
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 2
+			arms_factory = 3
+			industrial_complex = 4
 			anti_air_building = 1
 			424 =
 			{

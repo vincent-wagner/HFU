@@ -22,7 +22,12 @@ upgrades = {
 		cost = land
 		maximum_speed = 0.04
 		reliability = -0.05
-	}	
+	}
+	ac_engine_upgrade = {
+		max_level = 5
+		cost = land
+		maximum_speed = 0.02
+	}
 	tank_reliability_upgrade = {
 		max_level = 5
 		cost = land

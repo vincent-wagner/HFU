@@ -369,6 +369,7 @@ political_actions = {
 
 		complete_effect = {
 			add_stability = -0.08
+			custom_effect_tooltip = "Gives 4% Stability in total"
 		}
 		
 		remove_effect = {
@@ -436,6 +437,7 @@ political_actions = {
 
 		complete_effect = {
 			add_stability = -0.08
+			custom_effect_tooltip = "Gives 4% Stability in total"
 		}
 		
 		remove_effect = {
@@ -491,6 +493,7 @@ political_actions = {
 
 		complete_effect = {
 			add_stability = -0.08
+			custom_effect_tooltip = "Gives 4% Stability in total"
 		}
 		
 		remove_effect = {

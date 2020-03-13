@@ -79,7 +79,12 @@ focus = {
 
 		
 		completion_reward = {
-			add_resource = {
+		590 = {
+				
+				
+			
+
+		add_resource = {
               type = steel
                amount = 100
                state = 582
@@ -91,16 +96,20 @@ focus = {
                state = 582
                            }
 		
-		
+		add_resource = {
+              type = tungsten
+               amount = 30
+               state = 582
+                           }
 		
 		}
-	}
+	}}
      focus = {
 		id = SOV_move_industry_to_urals
 		icon = GFX_sov_stakhonovite
-		
+		prerequisite = {focus =SOV_defense_of_leningrad focus =SOV_defense_of_stalingrad focus = SOV_defense_of_moscow}
 		x = 12
-		y = 3
+		y = 5
 		
 		cost = 1
 		ai_will_do = {
@@ -114,7 +123,10 @@ focus = {
 		available = {
 			OR={has_war_with = GER
 			date>1941.6.22
-			}
+			#hidden_trigger = {
+  			VEN={has_completed_focus = VEN_hurensohn_sealion}
+			#}
+		}	
 		}
 
 		bypass = {
@@ -129,8 +141,8 @@ focus = {
 		}
 		completion_reward = {
 			add_ideas=Fast_Training
-			add_ideas = tot_economic_mobilisation	
-			add_political_power = 100
+			add_ideas = SOV_the_great_war	
+			#add_political_power = 100
             			
 		}
 	}
@@ -138,9 +150,9 @@ focus = {
 	focus = {
 		id = SOV_great_figher
 		icon = GFX_Goal_Positive_heroism
-		
-		x = 12
-		y = 4.5
+		relative_position_id = SOV_move_industry_to_urals
+		x = 0
+		y = 1.5
 		prerequisite = { focus = SOV_move_industry_to_urals }
 		cost = 20
 		ai_will_do = {
@@ -257,7 +269,7 @@ focus = {
 							}
 				249 = {
 					for_loop_effect = {
-					end = 25				
+					end = 30				
 					create_unit = {
 						division = "name = \"Winterskaya Diviziya\" division_template = \"Winterskaya Diviziya\" start_experience_factor = 0.3" 
 						owner = SOV
@@ -513,26 +525,157 @@ focus = {
 		}
 	}
 	focus = {
-		id = SOV_defense_of_moscow
+		id = SOV_defense_of_leningrad
 		icon = GFX_focus_SOV_defense_of_moscow
-		prerequisite = { focus = SOV_move_industry_to_urals }
+		prerequisite = { focus = SOV_extra_tech_slot_early focus=SOV_southern_thrust }
+		available = {
+			
+		}
+		x = 14
+		y = 4
+		
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}	
+		completion_reward = {
+			army_experience = 20
+			
+			195 = {
+				custom_effect_tooltip = SOV_defense_of_moscow_forts
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3060
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 9150
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3151
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 149
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6174
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 79
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11068
+						instant_build = yes
+					}
+					
+					
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_defense_of_stalingrad
+		icon = GFX_focus_SOV_defense_of_moscow
+		prerequisite = { focus = SOV_extra_tech_slot_early focus=SOV_southern_thrust }
 		available = {
 			
 		}
 		x = 10
 		y = 4
 		
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 100
 		}	
 		completion_reward = {
 			army_experience = 20
-			add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 30000
-         producer = SOV
+			
+			217 = {
+				custom_effect_tooltip = SOV_defense_of_moscow_forts
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 3529
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11474
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 498
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9504
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11484
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 520
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 6527
+						instant_build = yes
+					}
+					
+				}
+			}
 		}
+	}
+	focus = {
+		id = SOV_defense_of_moscow
+		icon = GFX_focus_SOV_defense_of_moscow
+		prerequisite = { focus = SOV_extra_tech_slot_early focus=SOV_southern_thrust }
+		available = {
+			
+		}
+		x = 12
+		y = 4
+		
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}	
+		completion_reward = {
+			army_experience = 20
+			
 			219 = {
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
 				hidden_effect = {
@@ -795,7 +938,7 @@ focus = {
 		id = SOV_peoples_commissariat
 		icon = GFX_goal_support_communism
 		prerequisite = {  focus = SOV_great_purge}
-		x = 11
+		x = 12
 		y = 1
 		
 		cost = 10
@@ -817,7 +960,7 @@ focus = {
 		prerequisite = { focus = SOV_peoples_commissariat }
 		
 		
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -928,7 +1071,7 @@ focus = {
 			add_political_power = 120
 			add_resource = {
 				type = rubber
-				amount = 50
+				amount = 42
 				state = 404
 			}
 		}
@@ -948,7 +1091,8 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 160
+			add_political_power = 10
+			add_ideas = SPR_collectivized_society
 		}
 	}
 
@@ -976,10 +1120,10 @@ focus = {
 	focus = {
 		id = SOV_militarized_schools
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SOV_collectivist_propaganda }
-		x = 0
-		y = 1
-		relative_position_id = SOV_collectivist_propaganda
+		prerequisite = { focus = SOV_workers_culture }
+		x = 4
+		y = 4
+		
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -995,10 +1139,10 @@ focus = {
 	focus = {
 		id = SOV_workers_culture
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = SOV_militarized_schools }
+		prerequisite = { focus = SOV_collectivist_propaganda }
 		x = 0
 		y = 1
-		relative_position_id = SOV_militarized_schools
+		relative_position_id = SOV_collectivist_propaganda
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1014,10 +1158,10 @@ focus = {
 	focus = {
 		id = SOV_women_pilots
 		icon = GFX_focus_SOV_women_in_aviation
-		prerequisite = { focus = SOV_workers_culture }
+		prerequisite = { focus = SOV_militarized_schools }
 		x = 0
 		y = 1
-		relative_position_id = SOV_workers_culture
+		relative_position_id = SOV_militarized_schools
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1333,17 +1477,16 @@ focus = {
 
 	focus = {
 		id = SOV_southern_thrust
-		icon = GFX_focus_ENG_attack_iran
+		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = SOV_peoples_commissariat }
 		
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
-		cost = 0.1
+		cost = 5
 
 	available = {
-				date > 1940.6.1
-				country_exists = PER
+				
 							}
 
 		ai_will_do = {
@@ -1368,9 +1511,11 @@ focus = {
 
 		}
 		completion_reward = {
-				SOV = { country_event = { id = iran.2}} 
-			   
-			ENG = { country_event = { id = iran.3 } }
+				add_ideas = SOV_scientist_defect
+				195 = {
+				
+				
+			}
 		}
 	}
 

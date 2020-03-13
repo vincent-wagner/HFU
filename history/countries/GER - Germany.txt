@@ -92,15 +92,20 @@ if = {
 	}
 	set_naval_oob = "GER_1936_naval_mtg"
 }
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
 
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
-
-set_variable = { var = wehrmacht_anger value = 0 }
-set_variable = { var = ss_anger value = 0 }
 set_country_flag=fuel_system_enabled
 add_timed_idea = {
     idea = GER_mefo_bills_1
-    days = 1369
+    days = 731#1369
 }
 set_research_slots = 4
 set_convoys = 200
@@ -160,171 +165,6 @@ set_war_support = 0.4
 
 #Trade
 
-1939.1.1 = {
-	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
-	set_war_support = 0.7
-
-	add_political_power = 1197
-	
-	#adding ministers
-	add_ideas = {
-		henschel
-		ig_faben
-		heinrich_himmler
-		rudolf_hess
-		ludwig_beck
-		gerd_von_rundstedt
-		GER_autarky_idea
-
-		#laws
-		war_economy
-		extensive_conscription
-	}
-	
-	oob = "GER_1939"
-	
-	create_wargoal = {
-		type = take_state_focus
-		target = POL
-		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
-	}
-
-#Trade
-
-	#MR pact effect, Also has a part scripted in soviet history file
-	unlock_national_focus = GER_mol_rib_pact
-	every_other_country = {
-		limit = {
-			has_government = fascism 
-		}
-		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-	}
-	diplomatic_relation = { country = SOV relation = non_aggression_pact }
-	add_opinion_modifier = { target = SOV modifier = MR_pact }
-	#MR pact end
-
-	#Soviet treaty
-	unlock_national_focus = GER_soviet_treaty
-	add_tech_bonus = {
-		bonus = 1.0
-		uses = 2
-		category = armor
-	}
-	SOV = {
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
-	}
-	#Soviet treaty end
-	
-	unlock_national_focus = GER_rhineland
-	unlock_national_focus = GER_anschluss
-	unlock_national_focus = GER_demand_sudetenland
-	unlock_national_focus = GER_first_vienna_award
-	unlock_national_focus = GER_end_of_czechoslovakia
-	unlock_national_focus = GER_demand_memel
-	unlock_national_focus = GER_four_year_plan
-	unlock_national_focus = GER_autarky
-	unlock_national_focus = GER_synthetic_rubber
-
-	set_global_flag = end_of_czechoslovakia
-	set_global_flag = olympics_1936
-	#set_variable = { var = GER_mefo_bill_counter value = 90 }
-	complete_national_focus = GER_autobahn
-	complete_national_focus = GER_west_wall
-	complete_national_focus = GER_army_innovation
-	complete_national_focus = GER_hermann_goring_werke
-	complete_national_focus = GER_kdf_wagen
-	complete_national_focus = GER_coal_liquidization
-	complete_national_focus = GER_extra_tech_slot
-
-	#BUILDINGS
-	
-
-	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
-	}
-	if = {
-		limit = {
-			not = {
-				has_dlc = "Man the Guns"
-			}
-		}
-		set_technology = {
-			basic_heavy_cruiser = 1
-			improved_heavy_cruiser = 1
-			improved_battleship = 1
-			early_carrier = 1
-			basic_carrier = 1
-			improved_carrier = 1
-		}
-		set_naval_oob = "GER_1939_naval_legacy"
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			improved_ship_hull_cruiser = 1
-			basic_ship_hull_heavy = 1
-			early_ship_hull_carrier = 1
-			basic_ship_hull_carrier = 1
-			improved_heavy_battery = 1
-			basic_heavy_armor_scheme = 1
-		}
-		set_naval_oob = "GER_1939_naval_mtg"
-	}
-}
-
 set_politics = {
 	ruling_party = fascism
 	last_election = "1933.3.5"
@@ -338,6 +178,11 @@ set_popularities = {
 }
 create_faction = Axis
 add_to_faction = GER
+add_to_faction = ROM
+add_to_faction = ITA
+add_to_faction = HUN
+add_to_faction = BUL
+add_to_faction = SPR
 
 
 add_ideas = {
@@ -362,53 +207,6 @@ create_country_leader = {
 		dictator
 	}
 }
-
-create_country_leader = {
-	name = "Konrad Adenauer"
-	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "Portrait_Germany_Konrad_Adenauer.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Wilhelm Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"
-	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
-		exiled # He left in 1933 so he should still be exiled
-	}
-}
-
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
 
 add_namespace = {
 	name = "ger_unit_leader"
@@ -783,7 +581,7 @@ create_navy_leader = {
 	traits = { naval_lineage battleship_adherent ironside air_controller }
 	skill = 5
 	id = 27
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 4
 	maneuvering_skill = 5
 	coordination_skill = 6
@@ -842,10 +640,41 @@ create_navy_leader = {
 	traits = { gentlemanly superior_tactician fly_swatter blockade_runner }
 	skill = 5
 	id = 31
-	attack_skill = 5
+	attack_skill = 4
 	defense_skill = 1
 	maneuvering_skill = 4
 	coordination_skill = 6
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Otto Skorzeny"
+		GFX = GFX_portrait_otto_skorenzy
+		traits = { operative_commando }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER }
+	}
+
+	create_operative_leader = {
+		name = "Nikolaus Ritter"
+		GFX = GFX_portrait_nikolaus_ritter
+		traits = { operative_safe_cracker }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER }
+	}
+	create_operative_leader = {
+		name = "Eleysa Bazna"
+		GFX = GFX_portrait_eleysa_bazna
+		traits = { operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER }
+	}
 }
 
 if = {
@@ -1169,125 +998,4 @@ create_equipment_variant = {
 		plane_reliability_upgrade = 5
 	}
 	obsolete = yes
-}
-
-
-## 1939 Start ##
-1939.1.1 = {
-	if = {
-		limit = {
-			not = { has_dlc = "Man the Guns" }
-		}
-		# Submarines #
-		create_equipment_variant = {
-			name = "Type VIIA"
-			type = submarine_2
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 1
-				sub_engine_upgrade = 1
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 1
-			}
-		}
-		# Destroyer #
-		create_equipment_variant = {
-			name = "Zerstörer 1936"
-			type = destroyer_2
-			parent_version = 0
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 2
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		create_equipment_variant = {
-			name = "Zerstörer 1936 Class"
-			type = ship_hull_light_2
-			name_group = GER_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-		}
-		create_equipment_variant = {
-			name = "Bismarck Class"
-			type = ship_hull_heavy_2
-			name_group = GER_BB_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_3
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = empty
-				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = ship_secondaries_2
-				rear_1_custom_slot = ship_heavy_battery_3
-			}
-		}
-		create_equipment_variant = {
-			name = "Graf Zeppelin Class"
-			type = ship_hull_carrier_1
-			name_group = GER_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = ship_deck_space
-			}
-		}
-	}
-	create_equipment_variant = {
-		name = "He 112"
-		type = fighter_equipment_1
-		upgrades = {
-			plane_gun_upgrade = 1
-			plane_range_upgrade = 1  
-			plane_engine_upgrade = 0
-			plane_reliability_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "Bf 109 E"
-		type = fighter_equipment_1
-		upgrades = {
-			plane_gun_upgrade = 2
-			plane_range_upgrade = 1  
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 4
-		}
-	}
-	# Heavy Cruisers #
-	#create_equipment_variant = {
-	#	name = "Deutschland Class"
-	#	type = heavy_cruiser_1
-	#	parent_version = 0
-	#	upgrades = {
-	#		ship_reliability_upgrade = 1
-	#		ship_engine_upgrade = 1
-	#		ship_armor_upgrade = 1
-	#		ship_gun_upgrade = 2
-	#	}
-	#	obsolete = yes
-	#}
 }

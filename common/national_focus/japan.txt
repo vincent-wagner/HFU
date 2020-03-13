@@ -47,6 +47,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -150,16 +151,17 @@ focus_tree = {
 			}
 		}
 
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 	
 		
-         transfer_state = 608
-	     transfer_state = 614
+         	 transfer_state = 608
+	  	 transfer_state = 614
 		 transfer_state = 597
 		 transfer_state = 743
-         transfer_state = 607
+        	 transfer_state = 607
 		 transfer_state = 598
-	     transfer_state = 606
+	    	 transfer_state = 606
 		 transfer_state = 613
 		 transfer_state = 596
 		 transfer_state = 595
@@ -167,8 +169,8 @@ focus_tree = {
 	 	 transfer_state = 592
 		 transfer_state = 594
 		 transfer_state = 591
-         transfer_state = 729
-         transfer_state = 749		
+         	 transfer_state = 729
+        	 transfer_state = 749		
 		 transfer_state = 600
 		 transfer_state = 599
 		 add_threat = 7
@@ -256,7 +258,7 @@ focus_tree = {
 		USA = {
 			country_event = { id = panay_incident.2 days = 20 }
 		}
-		country_event = { id = news.1 days = 5 }
+		news_event = { id = news.1 days = 5 }
 	    add_war_support = 0.05
 		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
 		
@@ -288,6 +290,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
       		if={limit={country_exists = MAN}
 		MAN={add_ideas=wartime_economy
@@ -299,6 +302,16 @@ focus_tree = {
          	 target = CHI
          	 transfer_troops = no
           	}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+					}
+					is_on_continent = asia
+				}
+				add_compliance = 20
+			}
 		
 		}
  			
@@ -337,6 +350,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			605 = {
 				add_resource = {
@@ -409,6 +423,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_strike_south_doctrine
@@ -446,6 +461,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bypass_the_philippines
@@ -501,6 +517,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 		JAP = { 
 						add_timed_idea = { idea = JAP_banzai days = 90 }
@@ -527,11 +544,37 @@ focus_tree = {
 		transfer_state=335
 		transfer_state=334
 		transfer_state=672
-		transfer_state=789
+		transfer_state=798
 		}
 		USA={annex_country = { target = INS transfer_troops = no }}
 		}
 		effect_tooltip={ENG = {annex_country = { target = INS transfer_troops = no }}}
+		hidden_effect = {
+			672 = {
+				add_compliance = 100
+			}
+			334 = {
+				add_compliance = 100
+			}
+			335 = {
+				add_compliance = 100
+			}
+			673 = {
+				add_compliance = 100
+			}
+			667 = {
+				add_compliance = 100
+			}
+			668 = {
+				add_compliance = 100
+			}
+			669 = {
+				add_compliance = 100
+			}
+			798 = {
+				add_compliance = 100
+			}
+		}
 		}
 		
 	}
@@ -571,6 +614,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			336 = {
 				add_resource = {
@@ -725,6 +769,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			random_state = {
 				limit = {
@@ -789,7 +834,7 @@ focus_tree = {
 		completion_reward = {
 			530 = {
 				
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -797,7 +842,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_nationalize_war_industry_AF
@@ -833,6 +878,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			528 = {
 				add_extra_state_shared_building_slots = 1
@@ -878,6 +924,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			if = {
 				limit = {	
@@ -956,6 +1003,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			if = {
 				limit = {
@@ -1001,6 +1049,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = spiritual_mobilization_idea
 		}
@@ -1086,7 +1135,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-completion_reward = {
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
 			add_political_power = 50
 				MAN = {	
 				MAN_low_legitimacy_level_down = yes
@@ -1123,7 +1173,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			716 = {
 						add_resource = {
@@ -1166,6 +1216,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			MAN = {			
 				328 = {
@@ -1221,7 +1272,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			714 = {
 				add_extra_state_shared_building_slots = 1
@@ -1290,7 +1341,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			716 = {
 				add_extra_state_shared_building_slots = 3
@@ -1321,8 +1372,9 @@ completion_reward = {
 		available = {
 			MAN = {
 				is_ai = no 
-		}
 			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 
 		bypass = {
@@ -1333,7 +1385,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_political_power = 35
 			715 = { add_extra_state_shared_building_slots = 2 }
@@ -1402,7 +1454,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			530 = {
 				add_extra_state_shared_building_slots = 2
@@ -1448,7 +1500,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			528 = {
 				add_extra_state_shared_building_slots = 2
@@ -1488,7 +1540,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			534 = {
 				add_extra_state_shared_building_slots = 2
@@ -1533,7 +1585,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			533 = {
 				add_extra_state_shared_building_slots = 5
@@ -1583,7 +1635,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			set_technology = { bicycle_infantry = 1 }
 		}
@@ -1701,7 +1753,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
@@ -1819,7 +1871,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			custom_effect_tooltip = JAP_the_zero_tt
 			hidden_effect = { set_technology = { cv_fighter2 = 1 } }
@@ -1852,7 +1904,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			air_experience=200
 			add_tech_bonus = {
@@ -1892,7 +1944,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			remove_ideas = JAP_duplicate_research_efforts
 			add_tech_bonus = {
@@ -1930,7 +1982,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_jet_prototypes
@@ -1970,6 +2022,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			random_state = {
 				limit = {
@@ -2092,7 +2145,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_carrier_warfare_experiments
@@ -2142,7 +2195,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = JAP_expand_the_snlf
 			
@@ -2274,7 +2327,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_modern_escorts
@@ -2376,7 +2429,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_supremacy_of_the_battlefleet
@@ -2417,7 +2470,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			set_technology = {
 				ship_hull_super_heavy = 1
@@ -2498,7 +2551,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_cruiser_modernization
@@ -2568,7 +2621,7 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			if = {
 				limit = {

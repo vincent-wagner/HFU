@@ -1,9 +1,6 @@
 ﻿capital = 49
 set_research_slots = 0
 
-
-set_research_slots = 3
-
 add_ideas = {
 	limited_conscription
 	neutral_idea
@@ -12,10 +9,6 @@ add_ideas = {
 set_technology = {
 }
 
-
-
-1939.1.1 = {
-}
 
 set_politics = {
 	ruling_party = neutrality
@@ -30,9 +23,6 @@ set_popularities = {
 
 set_convoys = 1
 set_stability = 0.55
-
-1939.1.1 = 
-}
 
 # Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
 create_country_leader = {

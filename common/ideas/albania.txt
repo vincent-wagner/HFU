@@ -1,25 +1,5 @@
 ideas = {
 
-country = { 
-alb_zog = {
-
-	allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = generic_air_bonus
-			
-			modifier = { 
-			air_ace_generation_chance_factor = 0.01
-			
-		}
-
-}
-
-}
-
 	political_advisor = {
 
 		ALB_midhat_frasheri = {
@@ -32,18 +12,6 @@ alb_zog = {
 			
 			traits = { popular_figurehead }
 		}
-		
-			ALB_midhat_frasherii = {
-
-			picture = generic_political_advisor_arab_1
-			
-			allowed = {
-				original_tag = ALB
-			}
-			
-			traits = { fascist_demagogue }
-		}
-
 
 		ALB_jocelyn_percy = {
 
@@ -71,6 +39,7 @@ alb_zog = {
 	theorist = {
 
 		ALB_qemal_komani = {
+			ledger = army
 					
 			picture = generic_army_arab_1
 
@@ -86,6 +55,7 @@ alb_zog = {
 		}
 
 		ALB_xhelal_mitrovica = {
+			ledger = air
 					
 			picture = generic_air_arab_1
 				
@@ -101,6 +71,7 @@ alb_zog = {
 		}
 
 		ALB_hajre_fetahu = {
+			ledger = navy
 					
 					
 			allowed = {
@@ -120,6 +91,7 @@ alb_zog = {
 	high_command = {
 
 		ALB_selim_moishiou = {
+			ledger = army
 
 			picture = generic_army_arab_1
 			
@@ -135,6 +107,7 @@ alb_zog = {
 		}
 
 		ALB_alexander_mori = {
+			ledger = army
 
 			picture = generic_army_arab_2
 			
@@ -150,6 +123,7 @@ alb_zog = {
 		}
 
 		ALB_kristo_cajupi = {
+			ledger = army
 
 			picture = generic_army_arab_3
 			
@@ -165,6 +139,7 @@ alb_zog = {
 		}
 
 		ALB_halil_nergutti = {
+			ledger = navy
 
 			picture = generic_navy_arab_1
 			

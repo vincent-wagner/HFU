@@ -1,8 +1,53 @@
 ideas = {
-
-	country = {
-	
+	hidden_ideas = {
+		JAP_everybody_serves = {
+		 picture = generic_infantry_bonus
+		 allowed = {
+				always = no
+			}
+		 
+		 removal_cost = -1
+		 allowed_civil_war = {
+				always = yes
+			}
+		 modifier = {		 
+		 conscription = 0.01
+		 }
+		 }
+		 
+		JAP_draft_exemptions = {
+		 picture = generic_infantry_bonus
+		 allowed = {
+				always = no
+			}
+		 
+		 removal_cost = -1
+		 allowed_civil_war = {
+				always = yes
+			}
+		 modifier = {
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+			}
+		 }
 	     
+		JAP_special_air_landing_force = {
+		 picture = generic_infantry_bonus
+		 allowed = {
+				always = no
+			}
+		 
+		 removal_cost = -1
+		 allowed_civil_war = {
+				always = yes
+			}
+		 modifier = {
+			special_forces_attack_factor = 0.05 
+			special_forces_defence_factor = 0.05
+		}
+		 }}
+	country = {
+		
 		JAP_banzai = {
 		 
 		 picture = generic_infantry_bonus
@@ -52,7 +97,8 @@ ideas = {
 				industry_air_damage_factor = -0.1
 				army_morale_factor = 0.1
 				industrial_capacity_factory = 0.1
-			
+				operative_slot = 2
+				agency_upgrade_time = -0.30
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
 			}
@@ -115,7 +161,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.025
+				conscription = 0.01
 			}
 		}
 
@@ -1128,6 +1174,22 @@ ideas = {
 				factor = 3
 			}
 		}
+		
+		JAP_intelligence_advisor = {
+		
+			available = {
+				has_intelligence_agency = yes
+			}
+			
+			allowed = {
+				original_tag = JAP
+				has_dlc = "La Resistance" 
+			}
+			
+			traits = { head_of_intelligence }
+
+		}
+		
 	}
 		
 	# MILITARY
@@ -1291,6 +1353,7 @@ ideas = {
 	high_command = {
 		
 		hitoshi_imamura = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1307,6 +1370,7 @@ ideas = {
 		}
 		
 		yasuji_okamura = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1329,6 +1393,7 @@ ideas = {
 		}
 		
 		shunroku_hata = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1345,6 +1410,7 @@ ideas = {
 		}	
 		
 		mitsuo_fuchida = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1361,6 +1427,7 @@ ideas = {
 		}
 		
 		nishizo_tsukahara = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -1377,6 +1444,7 @@ ideas = {
 		}
 		
 		tateo_kato = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1393,6 +1461,7 @@ ideas = {
 		}	
 		
 		soemu_toyoda = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -1409,6 +1478,7 @@ ideas = {
 		}
 		
 		matome_ugaki = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -1425,6 +1495,7 @@ ideas = {
 		}
 		
 		chuichi_nagumo = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1743,6 +1814,7 @@ ideas = {
 	theorist = {
 		
 		tomoyuki_yamashita = {
+			ledger = army
 						
 			allowed = {
 				original_tag = JAP
@@ -1758,6 +1830,7 @@ ideas = {
 		}
 		
 		hisaichi_terauchi = {
+			ledger = army
 						
 			allowed = {
 				original_tag = JAP
@@ -1771,6 +1844,7 @@ ideas = {
 		}
 		
 		isoroku_yamamoto = {
+			ledger = navy
 						
 			allowed = {
 				original_tag = JAP
@@ -1786,6 +1860,7 @@ ideas = {
 		}
 		
 		minoru_genda = {
+			ledger = navy
 						
 			allowed = {
 				original_tag = JAP
@@ -1799,6 +1874,7 @@ ideas = {
 		}
 		
 		hino_kumazo = {
+			ledger = air
 						
 			allowed = {
 				original_tag = JAP
@@ -1812,6 +1888,7 @@ ideas = {
 		}
 		
 		yoshio_nishina = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1828,6 +1905,7 @@ ideas = {
 		}
 		
 		hideo_itokawa = {
+			ledger = air
 			
 			
 			allowed = {

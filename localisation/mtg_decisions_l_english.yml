@@ -135,6 +135,8 @@
  USA_use_huac:0 "Investigate the Opposition"
  USA_beat_up_opposition:0 "Intimidate Political Opponents"
  USA_CSA_set_up_provisional_government:0 "Set up Provisional State Government"
+ USA_CSA_set_up_provisional_government2:0 "Set up Provisional State Government"
+ USA_CSA_set_up_provisional_government3:0 "Set up Provisional State Government"
  USA_statehood_for_puerto_rico:0 "Grant Statehood to Puerto Rico"
  USA_statehood_for_alaska:0 "Grant Statehood to Alaska"
  USA_statehood_for_hawaii:0 "Grant Statehood to Hawaii"
