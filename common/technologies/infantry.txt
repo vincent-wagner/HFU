@@ -502,7 +502,7 @@ technologies = {
 
 		paratrooper = {
 			max_organisation = 5
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -632,7 +632,7 @@ technologies = {
 
 		marine = {
 			max_organisation = 5
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		path = {
 			leads_to_tech = marines3
@@ -742,7 +742,7 @@ technologies = {
 
 		mountaineers = {
 			max_organisation = 5
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		path = {
 			leads_to_tech = tech_mountaineers3
