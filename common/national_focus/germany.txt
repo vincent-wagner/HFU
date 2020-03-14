@@ -3543,6 +3543,20 @@ POL = {
 			}
 			
 			completion_reward = {
+
+				FRA={ every_owned_state= {
+               limit={is_coastal=yes is_on_continent = europe }
+                add_state_modifier = {
+                    modifier = { max_dig_in=7 }              
+                }}}
+		every_controlled_state= {
+               limit={is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN}
+			}
+                add_state_modifier = {
+                    modifier = { max_dig_in=7 }              
+                }}
+            
+				
 						add_ideas = GER_atlantikwall_idea
 						99 = {
 								set_building_level = {

@@ -13,7 +13,35 @@ focus_tree = {
 	
 		default = no
      	
+		focus = { 
+		id = VEN_remove_Atlantikwall
+		icon = GFX_goal_generic_SS_focus
+		available = {
+		GER={has_completed_focus=GER_atlantikwall OR={date>1942.1.1 NOT={448={is_controlled_by = ITA}}}}
+			
+		
+		
+		}
+		
+		x = 1
+		y = 1
+		cost = 0
+		
+	completion_reward = {
 	
+	 GER={FRA={ every_owned_state= {
+               limit={is_coastal=yes is_on_continent = europe }
+                add_state_modifier = {
+                    modifier = { max_dig_in=-7 }              
+                }}}
+		every_owned_state= {
+               limit={is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN}}
+                add_state_modifier = {
+                    modifier = { max_dig_in=-7 }              
+                }}}
+	
+	}	
+	}
 		focus = {
 		id = VEN_hurensohn_sealion
 		icon = GFX_goal_generic_consumer_goods
@@ -52,5 +80,6 @@ focus_tree = {
 		
    }
 		
+	
 		
 	}
