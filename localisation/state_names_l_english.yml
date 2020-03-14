@@ -445,7 +445,7 @@
  STATE_444:0 "Baluchistan"
  STATE_445:0 "Quetta"
  STATE_446:0 "Cairo"
- STATE_447:0 "Inner Borneo"
+ STATE_447:0 "Alexandria"
  STATE_448:0 "Tripoli"
  STATE_449:0 "El Agheila"
  STATE_450:0 "Benghasi"
@@ -796,4 +796,5 @@
  STATE_795:0 "Santarém"
  STATE_796:0 "North Angola"
  STATE_797:0 "Impasslandet"
+ STATE_798:0 "Inner Borneo"
  

@@ -1,6 +1,6 @@
 state={
-	id=447
-	name="STATE_447"
+	id=798
+	name="STATE_798"
 	state_category = wasteland
 	impassable = yes
 	history={

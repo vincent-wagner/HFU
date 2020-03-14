@@ -1022,11 +1022,11 @@ date > 1941.6.1
 		prerequisite = { focus = ITA_italian_highways }
 		available = {
 			ITA = {
-				controls_state = 662
+				controls_state = 449
 			}
 		}
 		bypass = {
-			662 = {
+			449 = {
 				has_state_flag = sirte_oil_developed
 			}
 		}
@@ -1046,7 +1046,7 @@ date > 1941.6.1
 			add_resource = {
 				type = oil
 				amount = 8
-				state = 662
+				state = 449
 			}
 		}
 	}
@@ -1058,7 +1058,7 @@ date > 1941.6.1
 		prerequisite = { focus = ITA_prospect_for_oil }
 		available = {
 			ITA = {
-				controls_state = 662
+				controls_state = 449
 			}
 		}
 		x = -1
@@ -1078,7 +1078,7 @@ date > 1941.6.1
 				add_resource = {
 				type = oil
 				amount = 25
-				state = 662
+				state = 449
 			}
 			}	
 		
@@ -1130,7 +1130,7 @@ date > 1941.6.1
 					}
 				}
 			}
-			662 = {
+			661 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -1223,7 +1223,7 @@ date > 1941.6.1
 			
 			date>1941.8.1
 			ITA = {
-				AND = {controls_state = 662 controls_state = 2}
+				AND = {controls_state = 449 controls_state = 2}
 				
 				
 			}
@@ -1249,7 +1249,7 @@ date > 1941.6.1
 		add_resource = {
 			type = oil
 			amount = -15
-			state = 662
+			state = 449
 		}	
 		}
 	}	
@@ -1263,7 +1263,7 @@ date > 1941.6.1
 			
 			date>1941.7.1
 			ITA = {
-				AND = {controls_state = 291 controls_state = 676 controls_state = 115 controls_state = 662}
+				AND = {controls_state = 291 controls_state = 676 controls_state = 115 controls_state = 449}
 				
 				
 			}
@@ -1468,7 +1468,7 @@ focus = {
 			
 			date>1941.11.1
 			ITA = {
-				AND = {controls_state = 662 controls_state = 2}
+				AND = {controls_state = 449 controls_state = 2}
 				
 				
 			}
@@ -1494,7 +1494,7 @@ focus = {
 		add_resource = {
 			type = oil
 			amount = -18
-			state = 662
+			state = 449
 		}
 		}
 	}	

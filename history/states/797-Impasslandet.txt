@@ -1,6 +1,6 @@
 state={
-id=662
-name="STATE_662"
+id=797
+name="STATE_797"
 state_category = wasteland
 impassable = yes
 history={
