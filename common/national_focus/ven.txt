@@ -25,7 +25,7 @@ focus_tree = {
 		
 		x = 1
 		y = 1
-		cost = 0
+		cost = 5
 		
 	completion_reward = {
 	
