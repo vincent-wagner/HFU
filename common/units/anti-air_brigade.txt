@@ -33,7 +33,7 @@ sub_units = {
 		training_time = 120
 		weight = 0.5
 		
-		supply_consumption = 0.09
+		supply_consumption = 0.05
 
 		need = {
 			anti_air_equipment = 30
@@ -92,7 +92,7 @@ sub_units = {
 		training_time = 120
 		weight = 0.5
 		
-		supply_consumption = 0.15
+		supply_consumption = 0.1
 		transport = motorized_equipment
 		need = {
 			anti_air_equipment = 30
