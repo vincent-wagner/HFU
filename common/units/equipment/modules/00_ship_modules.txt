@@ -1678,7 +1678,7 @@ equipment_modules = {
 		
 		
 		add_stats = {
-			sub_attack = 10
+			sub_attack = 15
 			build_cost_ic = 90
 		}
 
@@ -1698,7 +1698,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			sub_attack = 14
+			sub_attack = 21
 			build_cost_ic = 120
 		}
 
@@ -1718,7 +1718,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			sub_attack = 18
+			sub_attack = 27
 			build_cost_ic = 150
 		}
 
@@ -1738,7 +1738,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			sub_attack = 22
+			sub_attack = 33
 			build_cost_ic = 180
 		}
 

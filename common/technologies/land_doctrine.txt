@@ -867,7 +867,7 @@ technologies = {
 		}
 		
 		category_front_line = {
-			 soft_attack = 0.1
+			 soft_attack = 0.2
 		}
 		
 		enable_tactic = tactic_barrage
@@ -1428,7 +1428,7 @@ technologies = {
 			soft_attack = 0.05 
 		}
 		category_artillery = { 
-			soft_attack = 0.15
+			soft_attack = 0.05
 		}
 		path = {
 			leads_to_tech = forward_observers 
@@ -1678,7 +1678,7 @@ technologies = {
 		}
 		
 		#planning max bonus increase
-		max_planning = 0.15
+		max_planning = 0.10
 
 		doctrine = yes	
 		research_cost = 4.25
@@ -2023,7 +2023,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		max_planning = 0.15
+		max_planning = 0.10
 		
 		
 		path = {
@@ -2066,7 +2066,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		land_reinforce_rate = 0.15
+		land_reinforce_rate = 0.10
 		category_all_infantry = {
 			max_organisation = 7
 		}
@@ -2545,11 +2545,6 @@ technologies = {
 		category_front_line = {
 			 hard_attack = 0.1
 		}
-		category_line_artillery = {
-		
-			max_strength = 5
-		
-		}
 
 		enable_tactic = tactic_relentless_assault
 		enable_tactic = tactic_human_wave_tactics
@@ -2884,7 +2879,7 @@ infantry = {
 		}
 		enable_tactic = tactic_backhand_blow
         infantry = {
-			max_strength = 5
+			max_strength = 7
 		}
 		doctrine = yes	
 		research_cost = 4.25
