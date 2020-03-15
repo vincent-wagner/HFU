@@ -29,22 +29,22 @@ naval_base = 8
 
 
 victory_points = {
-4076 20
+4076 15
 }
 victory_points = {
 1071 1
 }
 victory_points = {
-7011 25
+7011 35
 }
 victory_points = {
-12049 5
+12049 10
 }
 victory_points = {
-3996 5
+3996 1
 }
 victory_points = {
-4073 3
+4073 10
 }
 }
 provinces={

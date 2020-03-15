@@ -428,7 +428,7 @@ ideas = {
 			modifier = {
                
 
-				max_dig_in = -10
+				#max_dig_in = -10
 				army_attack_factor = -0.1
 				air_attack_factor =-0.15
 
