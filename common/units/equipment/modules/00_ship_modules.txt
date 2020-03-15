@@ -15,7 +15,7 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 1
-			build_cost_ic = 90	
+			build_cost_ic = 60	
 		}
 		multiply_stats = {
 			naval_speed = -0.01
@@ -39,7 +39,7 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 1.5
-			build_cost_ic = 120
+			build_cost_ic = 80
 			
 		}
 		multiply_stats = {
@@ -68,7 +68,7 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 2
-			build_cost_ic = 150			
+			build_cost_ic = 100			
 		}
 		
 		add_average_stats = {
@@ -96,7 +96,7 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 3.0
-			build_cost_ic = 175	
+			build_cost_ic = 120	
 		}
 		build_cost_resources = {
 			steel = 1
@@ -127,7 +127,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 3
 			anti_air_attack = 1
-			build_cost_ic = 300
+			build_cost_ic = 150
 		}
 		multiply_stats = {
 			naval_speed = -0.02
@@ -1449,7 +1449,7 @@ equipment_modules = {
 		
 		add_stats = {
 			torpedo_attack = 14.4
-			build_cost_ic = 90
+			build_cost_ic = 40
 		}
 		multiply_stats = {
 			naval_speed = -0.01			
@@ -1468,7 +1468,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 21.6
-			build_cost_ic = 120
+			build_cost_ic = 50
 		}
 		multiply_stats = {
 			naval_speed = -0.01		
@@ -1477,14 +1477,14 @@ equipment_modules = {
 			steel = 0
 		}
 		 
-		dismantle_cost_ic = 60
+		dismantle_cost_ic = 20
 		dismantle_cost_resources = {
 			steel = 0
 		}
 
 		can_convert_from = {
 			module_category = ship_torpedo
-			convert_cost_ic = 60
+			convert_cost_ic = 20
 			convert_cost_resources = {
 				steel = 0
 			}
@@ -1500,16 +1500,16 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 28.8
-			build_cost_ic = 150
+			build_cost_ic = 60
 		}
 		multiply_stats = {
 			naval_speed = -0.01			
 		}
-		dismantle_cost_ic = 60
+		dismantle_cost_ic = 30
 
 		can_convert_from = {
 			module_category = ship_torpedo
-			convert_cost_ic = 60
+			convert_cost_ic = 30
 		}
 		critical_parts = { damaged_torpedoes }
 	}
@@ -1522,16 +1522,16 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 36
-			build_cost_ic = 180
+			build_cost_ic = 70
 		}
 		multiply_stats = {
 			naval_speed = -0.01			
 		}
-		dismantle_cost_ic = 60
+		dismantle_cost_ic = 40
 
 		can_convert_from = {
 			module_category = ship_torpedo
-			convert_cost_ic = 60
+			convert_cost_ic = 40
 		}
 		critical_parts = { damaged_torpedoes }
 	}
@@ -1542,7 +1542,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 14
+			torpedo_attack = 18
 			build_cost_ic = 80
 		}
 		
@@ -1559,7 +1559,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 18
+			torpedo_attack = 22
 			build_cost_ic = 100
 		}
 		
@@ -1580,7 +1580,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 22
+			torpedo_attack = 28
 			build_cost_ic = 120
 		}
 		can_convert_from = {
@@ -1597,7 +1597,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 28
+			torpedo_attack = 34
 			build_cost_ic = 140
 		}
 		can_convert_from = {
@@ -1679,7 +1679,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_attack = 15
-			build_cost_ic = 90
+			build_cost_ic = 40
 		}
 
 		can_convert_from = {
@@ -1699,7 +1699,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_attack = 21
-			build_cost_ic = 120
+			build_cost_ic = 50
 		}
 
 		can_convert_from = {
@@ -1719,7 +1719,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_attack = 27
-			build_cost_ic = 150
+			build_cost_ic = 60
 		}
 
 		can_convert_from = {
@@ -1739,7 +1739,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_attack = 33
-			build_cost_ic = 180
+			build_cost_ic = 70
 		}
 
 		can_convert_from = {
@@ -1894,7 +1894,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_detection = 7
-			build_cost_ic = 70
+			build_cost_ic = 60
 		}
 		can_convert_from = {
 			module_category = ship_sonar
@@ -1909,7 +1909,7 @@ equipment_modules = {
 		
 		add_stats = {
 			sub_detection = 10
-			build_cost_ic = 120
+			build_cost_ic = 90
 		}
 		can_convert_from = {
 			module_category = ship_sonar
