@@ -302,7 +302,7 @@ focus = {
 
 		available = {
 			
-			date>1942.6.1
+			date>1942.3.1
 			
 		}
 
