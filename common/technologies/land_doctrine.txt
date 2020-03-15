@@ -2872,14 +2872,14 @@ infantry = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		org_loss_when_moving = -0.3
+		org_loss_when_moving = -0.2
 		land_reinforce_rate = 0.05
 		category_army = {
 			default_morale = 0.10
 		}
 		enable_tactic = tactic_backhand_blow
         infantry = {
-			max_strength = 7
+			max_strength = 5
 		}
 		doctrine = yes	
 		research_cost = 4.25
