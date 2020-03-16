@@ -108,7 +108,7 @@ add_timed_idea = {
     days = 731#1369
 }
 set_research_slots = 4
-set_convoys = 200
+set_convoys = 300
 add_equipment_to_stockpile = {
          type = artillery_equipment_1
          amount = 229
