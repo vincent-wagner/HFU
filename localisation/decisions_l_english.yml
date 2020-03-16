@@ -50,3 +50,5 @@
  show_agency_warning:0 "Warn when not upgrading agency"
  spy_agency_upgrade:0 "No agency upgrade in progress"
  spy_agency_upgrade2:0 "No agency upgrade in progress"
+ ENG_give_chromium:0"Give SAF access to African Chromium"
+ ENG_get_chromium:0"Get access to African Chromium"

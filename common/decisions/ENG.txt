@@ -1,4 +1,59 @@
 foreign_politics = {
+ENG_get_chromium = {
+		icon = generic_operation
+
+			allowed = {
+				tag = ENG
+			}
+
+			available = {
+				NOT={has_country_flag=resource_rights_saf}
+				
+			}
+			
+			cost = 0
+
+			visible = {
+			SAF={has_completed_focus = SAF_secure_interests_in_africa}
+				}
+				
+			complete_effect = {
+				SAF = {
+				give_resource_rights = { receiver = ENG state = 542 }
+				give_resource_rights = { receiver = ENG state = 771 }
+			}
+			set_country_flag=resource_rights_saf
+			}
+		}
+
+
+ENG_give_chromium = {
+		icon = generic_operation
+
+			allowed = {
+				tag = ENG
+			}
+
+			available = {
+				has_country_flag=resource_rights_saf
+			}
+			
+			cost = 0
+
+			visible = {
+			SAF={has_completed_focus = SAF_secure_interests_in_africa}
+			always=yes
+				}
+				
+			complete_effect = {
+				
+				remove_resource_rights = 542 
+				remove_resource_rights = 771
+				clr_country_flag=resource_rights_saf
+			
+			}
+		}
+
 
 }
 	
