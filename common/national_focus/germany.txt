@@ -1654,20 +1654,7 @@ random_owned_controlled_state = {
 			
 			army_experience = 40
 
-			add_tech_bonus = {
-				name = at
-				bonus = 1
-				uses = 2
-				category = cat_anti_tank
-			}
-			add_tech_bonus = {
-				name = artillery
-				bonus = 1
-				uses = 2
-				technology=artillery3
-				technology=artillery2
-				technology=artillery1
-			}
+			
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
@@ -1981,28 +1968,27 @@ available = {
 			            SOV={remove_ideas=Fast_Training }
 		
 				        GER = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 						add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
 					}
-					hidden_effect={   
-
-					ROM = { 
-						add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
+					hidden_effect={    ROM = { 
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 						HUN = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 						BUL = { 
-						add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
-			            
+			            FIN = { 
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
+					}
 			            ITA = { 
-						add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
 			            SPR = { 
-						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_timed_idea = { idea = GER_barbarossa days = 120 }
 					}
-					
 					41={set_building_level = {type = infrastructure
   			 		level = 10}
 					}}

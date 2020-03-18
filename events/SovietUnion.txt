@@ -565,7 +565,7 @@ country_event ={
 	planning_skill = 5
 	logistics_skill = 5
 }
-	   create_field_marshal = {
+create_corps_commander = {
 	name = "Georgy Zhukov"
 	id = 1489
 		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
@@ -576,12 +576,12 @@ country_event ={
 	planning_skill = 3
 	logistics_skill = 5
 }
- 	   create_field_marshal = {
+ create_corps_commander = {
 	name = "Aleksandr Vasilevsky"
-	id = 1487
+	id = 1490
 		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
 	traits = { winter_specialist winter_expert ranger infantry_leader infantry_expert scavenger trickster skilled_staffer }
-	skill = 7
+	skill = 6
 	
 	attack_skill = 3
 	defense_skill = 6
