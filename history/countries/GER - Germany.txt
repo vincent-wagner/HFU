@@ -5,7 +5,7 @@ oob = "GER_1936"
 set_fuel_ratio = 0.8
 set_variable = {
     var = min_fuel
-    value = 0.800
+    value = 0.300
 }
 add_ideas = peace_training
 add_to_tech_sharing_group = axis_research
