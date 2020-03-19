@@ -2407,7 +2407,11 @@ technologies = {
 		}
 		
 		land_reinforce_rate = 0.02
-		minimum_training_level = -0.1		
+		minimum_training_level = -0.1
+		
+		infantry = {
+			combat_width = -0.4
+		}
 
 		doctrine = yes	
 		research_cost = 0.00001
@@ -2704,10 +2708,6 @@ technologies = {
 		xp_research_bonus = 1.00
 		supply_consumption_factor = -0.10
 		
-		
-infantry = {
-			combat_width = -0.4
-		}
 		
 		enable_tactic = tactic_overwhelming_fire
 		enable_tactic = tactic_default_overwhelming_fire
@@ -3061,9 +3061,6 @@ infantry = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		infantry = {
-			combat_width = -0.4
-		}
 
 		land_reinforce_rate = 0.15		
 		
