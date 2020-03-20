@@ -94,7 +94,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
          type = infantry_equipment_0
-         amount = 19700
+         amount = 100000
          producer = SOV
 }
 add_equipment_to_stockpile = {

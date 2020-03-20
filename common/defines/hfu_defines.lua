@@ -231,7 +231,7 @@ NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20		
 -------------------------------------
 --Air changes
-
+NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15						-- Vanilla 0,10
 NDefines.NAir.DISRUPTION_FACTOR = 5
