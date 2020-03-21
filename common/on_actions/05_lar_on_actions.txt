@@ -48,9 +48,61 @@ on_actions = {
                 #log = yes # log picked effect in game.log
 
                 temp_var:capture_chance = {
-                   	capture_operative = {
-                   	    captured_by = ROOT
-                   	}  	
+					random_list = {
+						90 = { #regular
+							force_operative_leader_into_hiding = 120
+							operative_leader_event = {
+								id = lar_operative_event.1
+								set_from_from = ROOT
+							}			
+							operative_leader_event = {
+								id = lar_operative_event.6
+								originator = FROM
+								recipient = ROOT
+								set_from = FROM
+							}
+							
+							if = {
+								limit = { ROOT = { has_done_agency_upgrade = upgrade_interrogation_techniques }}
+								ROOT = {
+									add_intel = {
+										target = PREV.FROM
+										army_intel = 25
+										civilian_intel = 25
+										navy_intel = 25
+										airforce_intel = 25
+									}
+								}
+							} else = {
+								ROOT = {
+									add_intel = {
+										target = PREV.FROM
+										army_intel = 20
+										civilian_intel = 20
+										navy_intel = 20
+										airforce_intel = 20
+									}
+								}
+							}
+						}
+						10 = { #operative turned
+							modifier = {
+								has_trait = operative_tough
+								factor = 0 #tough operatives never get turned
+							}
+							modifier = {
+								has_trait = operative_double_agent
+								factor = 0 #no tripple agents please
+							}
+							turn_operative = { turned_by = ROOT }
+							# ensure the operative has the nationality of the country he is coming from
+							add_nationality = FROM
+							operative_leader_event = {
+								id = lar_operative_event.5
+								set_from_from = FROM #tells the event which nationality to add
+							}
+						}
+					}
                 }
                 temp_var:kill_chance = {
                     kill_operative = {
