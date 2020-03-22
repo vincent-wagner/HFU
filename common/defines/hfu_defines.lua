@@ -231,7 +231,7 @@ NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20		
 -------------------------------------
 --Air changes
-
+NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15						-- Vanilla 0,10
 NDefines.NAir.DISRUPTION_FACTOR = 5
@@ -277,7 +277,7 @@ NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0.2
 NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.2
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 0						-- Number of days needed to create an intelligence agency
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0
-NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 130						-- Number of days needed to upgrade an intelligence agency
+NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 150						-- Number of days needed to upgrade an intelligence agency
 NDefines.NOperatives.BASE_COUNTER_INTELLIGENCE_RATING = 0.5						-- Number of days needed to upgrade an intelligence agency
 NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 0					-- Number of political power used to become Spy Master
 NDefines.NOperatives.BECOME_SPYMASTER_MIN_UPGRADES = 0			-- Number of agency upgrades you need before becoming Spy Master						-- Number of days needed to upgrade an intelligence agency
@@ -286,7 +286,7 @@ NDefines.NOperatives.BUILD_INTEL_NETWORK_DAILY_XP_GAIN = 3
 NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 1
 NDefines.NOperatives.COUNTER_INTELLIGENCE_DAILY_XP_GAIN = 1.5
 NDefines.NOperatives.ROOT_OUT_RESISTANCE_DAILY_XP_GAIN = 1.5
-NDefines.NOperatives.AGENCY_OPERATIVE_RECRUITMENT_TIME = 5
+NDefines.NOperatives.AGENCY_OPERATIVE_RECRUITMENT_TIME = 45
 NDefines.NOperatives.OPERATION_COMPLETION_XP = 100
 NDefines.NOperatives.ON_CAPTURE_COUNTERINTELLIGENCE_OPERATIVE_XP_GAIN = 300
 NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 1
@@ -296,13 +296,11 @@ NDefines.NOperatives.CONTROL_TRADE_MAX_INFLUENCE = 200.0					-- The maximum amou
 NDefines.NOperatives.CRYPTO_BASE_CRYPTO_LEVEL = 4000						-- base crypto strength for a country
 NDefines.NOperatives.CRYPTO_CRYPTO_LEVEL_PER_CRYPTO_UPGRADE = 1500			-- crypto strength per crypto upgrade
 NDefines.NOperatives.CRYPTO_CRYPTO_ACTIVE_BONUS_DURATION = 15
-NDefines.NOperatives.OPERATIVE_CAPTURE_DURATION_IN_DAYS = 4*30
 NDefines.NOperatives.AGENCY_DEFENSE_EFFECT_ON_HOSTILE_ACTION_COST = 0.1
+NDefines.NOperatives.OPERATIVE_MAX_DAYS_TO_AUTO_RESUME_MISSION = 121
 
 
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.075 			-- max combat bonus that will apply when intel is high enough
 
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 40
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_ABSOLUTE_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 50
-NDefines.NIntel.DYNAMIC_INTEL_SOURCE_CAPTURED_OPERATIVE_MAXIMUMS = { 10, 10, 10, 10 }
-NDefines.NIntel.DYNAMIC_INTEL_SOURCE_CAPTURED_OPERATIVE_ABSOLUTE_MAXIMUMS = { 10, 10, 10, 10 }

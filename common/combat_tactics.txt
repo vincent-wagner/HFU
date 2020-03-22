@@ -716,7 +716,7 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	
 	base =  { factor = 3 }
 	picture = tactic_guerrilla_tactics
-	
+		countered_by = tactic_blitz
 	combat_width = -0.5
 	attacker = -0.6
 	defender = -0.5

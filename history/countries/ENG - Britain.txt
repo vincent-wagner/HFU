@@ -11,7 +11,7 @@ if = {
 }
 set_variable = {
     var = min_fuel
-    value = 0.300
+    value = 0.800
 }
 
 set_research_slots = 4
@@ -147,7 +147,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
          type = fighter_equipment_0
-         amount = 1056
+         amount = 1556
          producer = ENG
 }
 

@@ -1,6 +1,12 @@
 spriteTypes = {	
 
 	#### Generic continuous goal icons
+
+spriteType = {
+		name = "GFX_GER_SS_armed_branch"
+		texturefile = "gfx/interface/goals/ger_waffen_ss.dds"
+	}
+
 spriteType = {
 		name = "GFX_GER_mobile_fortresses"
 		texturefile = "gfx/interface/goals/GER_tigers_in_the_east.dds"

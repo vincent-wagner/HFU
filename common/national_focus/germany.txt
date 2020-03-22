@@ -1107,7 +1107,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		available = {
-			has_war_support > 0.49
+			
 		}
 		complete_tooltip = {
 			every_state = {
@@ -1654,7 +1654,20 @@ random_owned_controlled_state = {
 			
 			army_experience = 40
 
-			
+			add_tech_bonus = {
+				name = at
+				bonus = 1
+				uses = 2
+				category = cat_anti_tank
+			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 1
+				uses = 2
+				technology=artillery3
+				technology=artillery2
+				technology=artillery1
+			}
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
@@ -1891,6 +1904,238 @@ random_owned_controlled_state = {
 	}
 	
 	
+
+	focus = {
+		id = GER_anti_comitern_pact
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = GER_danzig_or_war  }
+		x = -2
+		y = 2
+		relative_position_id = GER_mol_rib_pact
+		cost = 1
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+			add_named_threat = { threat = 2 name = GER_anti_comitern_pact }
+			every_other_country = {
+				limit = {
+					NOT = { tag = GER }
+					NOT = { has_war_with = GER }
+					NOT = { is_in_faction_with = SOV }
+					is_subject = no
+					OR = {
+						capital_scope = {
+								is_on_continent = europe
+						}
+						capital_scope = {
+								is_on_continent = asia
+						}
+						num_of_factories > 30
+					}
+					OR = {
+						has_government = fascism 
+						AND = {
+							is_neighbor_of = SOV
+							NOT = { has_government = communism }
+						}
+					}
+				}
+				country_event = germany.5
+			}
+		}
+	}
+
+	
+	focus = {
+		id = GER_ussr_war_goal
+		icon = GFX_focus_generic_attack_communists
+		prerequisite = { focus = GER_anti_comitern_pact }
+		will_lead_to_war_with = SOV
+
+		cancel = {
+			NOT = { country_exists = SOV }
+		}
+		x = 0
+		y = 2
+
+available = {
+				date > 1941.6.22
+							}
+
+		relative_position_id = GER_anti_comitern_pact
+		cost = 2
+
+		bypass = {
+			has_war_with = SOV
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+			}
+			            SOV={remove_ideas=Fast_Training }
+		
+				        GER = { 
+						add_timed_idea = { idea = GER_barbarossa days = 100 }
+						add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
+					}
+					hidden_effect={   
+
+					ROM = { 
+						add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
+					}
+						HUN = { 
+						add_timed_idea = { idea = GER_barbarossa days = 100 }
+					}
+						BUL = { 
+						add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
+					}
+			            
+			            SPR = { 
+						add_timed_idea = { idea = GER_barbarossa days = 100 }
+					}
+					
+					41={set_building_level = {type = infrastructure
+  			 		level = 10}
+					}}
+				custom_effect_tooltip = GER_barbarossa_others_text
+				ENG={
+					remove_ideas=stiff_upper_lip
+					add_timed_idea={idea=stiff_upper_lip days=150}
+				
+				}	
+			
+			
+			
+			
+			}
+			
+			
+			
+			
+					
+		}
+	
+
+	
+	
+	
+	
+	
+	focus = {
+		id = GER_blau
+		
+		prerequisite = { focus = GER_ussr_war_goal }
+		icon = GFX_focus_ger_reichskommisariats
+		available = { 
+			Date > 1942.5.1
+			NOT={has_idea=GER_barbarossa}
+	 
+			
+		}
+		relative_position_id = GER_ussr_war_goal
+		x = 0
+		y = 2
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}	
+    
+		available_if_capitulated = no
+		completion_reward = {
+			
+			GER = { 
+						add_timed_idea = { idea = GER_blau days = 70 }
+					}
+					  hidden_effect={  ROM = { 
+						add_timed_idea = { idea = GER_blau days = 70 }
+					}
+						HUN = { 
+						add_timed_idea = { idea = GER_blau days = 70 }
+					}
+						BUL = { 
+						add_timed_idea = { idea = GER_blau days = 70 }
+					}
+			            FIN = { 
+						add_timed_idea = { idea = GER_blau days = 70 }
+					}
+			            ITA = { 
+						add_timed_idea = { idea = GER_blau days = 70 }
+					}
+			            SPR = { 
+						add_timed_idea = { idea = GER_blau days = 70 }
+					}}
+					custom_effect_tooltip = GER_barbarossa_others_text
+			
+       }
+       }
+	
+	focus = {
+		id = GER_ardennenoffensive
+		
+		prerequisite = { focus = GER_war_with_france }
+		icon = GFX_focus_ger_reichskommisariats
+		available = { 
+			Date > 1941.10.1
+			NOT={has_idea=GER_barbarossa}
+			count_triggers={
+			amount=4
+			14= {is_controlled_by_ROOT_or_ally=no}
+			30= {is_controlled_by_ROOT_or_ally=no}
+			16= {is_controlled_by_ROOT_or_ally=no}
+			15= {is_controlled_by_ROOT_or_ally=no}
+			6= {is_controlled_by_ROOT_or_ally=no}
+			29= {is_controlled_by_ROOT_or_ally=no}
+			35= {is_controlled_by_ROOT_or_ally=no}
+			36= {is_controlled_by_ROOT_or_ally=no}
+			7= {is_controlled_by_ROOT_or_ally=no}
+			785= {is_controlled_by_ROOT_or_ally=no}
+			}
+		}
+		#allow_branch={always=no}
+		x = 0
+		y = 2
+		
+		relative_position_id = GER_war_with_france
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+    
+		available_if_capitulated = no
+		completion_reward = {
+			
+			GER = { 
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+					}
+					  hidden_effect={  ROM = { 
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+					}
+						HUN = { 
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+					}
+						BUL = { 
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+					}
+			            FIN = { 
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+					}
+			            ITA = { 
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+					}
+			            SPR = { 
+						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
+					}}
+					custom_effect_tooltip = GER_barbarossa_others_text
+			
+       }
+       }
 	
 	
 	focus = {
@@ -2404,179 +2649,6 @@ POL = {
 	}
 	
 	focus = {
-		id = GER_anti_comitern_pact
-		icon = GFX_goal_anti_comintern_pact
-		prerequisite = { focus = GER_danzig_or_war  }
-		x = -2
-		y = 2
-		relative_position_id = GER_mol_rib_pact
-		cost = 1
-		available = {
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
-			add_named_threat = { threat = 2 name = GER_anti_comitern_pact }
-			every_other_country = {
-				limit = {
-					NOT = { tag = GER }
-					NOT = { has_war_with = GER }
-					NOT = { is_in_faction_with = SOV }
-					is_subject = no
-					OR = {
-						capital_scope = {
-								is_on_continent = europe
-						}
-						capital_scope = {
-								is_on_continent = asia
-						}
-						num_of_factories > 30
-					}
-					OR = {
-						has_government = fascism 
-						AND = {
-							is_neighbor_of = SOV
-							NOT = { has_government = communism }
-						}
-					}
-				}
-				country_event = germany.5
-			}
-		}
-	}
-
-	
-	focus = {
-		id = GER_ussr_war_goal
-		icon = GFX_focus_generic_attack_communists
-		prerequisite = { focus = GER_anti_comitern_pact }
-		will_lead_to_war_with = SOV
-
-		cancel = {
-			NOT = { country_exists = SOV }
-		}
-		x = 0
-		y = 2
-
-available = {
-				date > 1941.6.22
-							}
-
-		relative_position_id = GER_anti_comitern_pact
-		cost = 2
-
-		bypass = {
-			has_war_with = SOV
-		}
-
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SOV
-			}
-			            SOV={remove_ideas=Fast_Training }
-		
-				        GER = { 
-						add_timed_idea = { idea = GER_barbarossa days = 120 }
-						add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
-					}
-					hidden_effect={    ROM = { 
-						add_timed_idea = { idea = GER_barbarossa days = 120 }
-					}
-						HUN = { 
-						add_timed_idea = { idea = GER_barbarossa days = 120 }
-					}
-						BUL = { 
-						add_timed_idea = { idea = GER_barbarossa days = 120 }
-					}
-			            FIN = { 
-						add_timed_idea = { idea = GER_barbarossa days = 120 }
-					}
-			            ITA = { 
-						add_timed_idea = { idea = GER_barbarossa days = 120 }
-					}
-			            SPR = { 
-						add_timed_idea = { idea = GER_barbarossa days = 120 }
-					}
-					41={set_building_level = {type = infrastructure
-  			 		level = 10}
-					}}
-				custom_effect_tooltip = GER_barbarossa_others_text
-				ENG={
-					remove_ideas=stiff_upper_lip
-					add_timed_idea={idea=stiff_upper_lip days=150}
-				
-				}	
-			
-			
-			
-			
-			}
-			
-			
-			
-			
-					
-		}
-	
-
-	
-	
-	
-	
-	
-	focus = {
-		id = GER_blau
-		
-		prerequisite = { focus = GER_ussr_war_goal }
-		icon = GFX_focus_ger_reichskommisariats
-		available = { 
-			Date > 1942.5.1
-			NOT={has_idea=GER_barbarossa}
-	 
-			
-		}
-		relative_position_id = GER_ussr_war_goal
-		x = 0
-		y = 2
-		
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}	
-    
-		available_if_capitulated = no
-		completion_reward = {
-			
-			GER = { 
-						add_timed_idea = { idea = GER_blau days = 70 }
-					}
-					  hidden_effect={  ROM = { 
-						add_timed_idea = { idea = GER_blau days = 70 }
-					}
-						HUN = { 
-						add_timed_idea = { idea = GER_blau days = 70 }
-					}
-						BUL = { 
-						add_timed_idea = { idea = GER_blau days = 70 }
-					}
-			            FIN = { 
-						add_timed_idea = { idea = GER_blau days = 70 }
-					}
-			            ITA = { 
-						add_timed_idea = { idea = GER_blau days = 70 }
-					}
-			            SPR = { 
-						add_timed_idea = { idea = GER_blau days = 70 }
-					}}
-					custom_effect_tooltip = GER_barbarossa_others_text
-			
-       }
-       }
-	
-	focus = {
 		id = GER_weserubung
 		icon = GFX_focus_ger_weserubung2
 		prerequisite = { focus = GER_danzig_or_war }
@@ -2927,7 +2999,7 @@ available = {
 
 	focus = {
 		id = GER_reintegrate_luxemburg_and_alsace_lorraine
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_around_maginot }
 		available = {
 			has_full_control_of_state = 8
@@ -3443,75 +3515,13 @@ available = {
 		}
 	}	
 	
-	focus = {
-		id = GER_ardennenoffensive
-		
-		prerequisite = { focus = GER_war_with_france }
-		icon = GFX_focus_ger_reichskommisariats
-		available = { 
-			Date > 1941.10.1
-			NOT={has_idea=GER_barbarossa}
-			count_triggers={
-			amount=4
-			14= {is_controlled_by_ROOT_or_ally=no}
-			30= {is_controlled_by_ROOT_or_ally=no}
-			16= {is_controlled_by_ROOT_or_ally=no}
-			15= {is_controlled_by_ROOT_or_ally=no}
-			6= {is_controlled_by_ROOT_or_ally=no}
-			29= {is_controlled_by_ROOT_or_ally=no}
-			35= {is_controlled_by_ROOT_or_ally=no}
-			36= {is_controlled_by_ROOT_or_ally=no}
-			7= {is_controlled_by_ROOT_or_ally=no}
-			785= {is_controlled_by_ROOT_or_ally=no}
-			}
-		}
-		#allow_branch={always=no}
-		x = 0
-		y = 2
-		
-		relative_position_id = GER_war_with_france
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}	
-    
-		available_if_capitulated = no
-		completion_reward = {
-			
-			GER = { 
-						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
-					}
-					  hidden_effect={  ROM = { 
-						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
-					}
-						HUN = { 
-						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
-					}
-						BUL = { 
-						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
-					}
-			            FIN = { 
-						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
-					}
-			            ITA = { 
-						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
-					}
-			            SPR = { 
-						add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
-					}}
-					custom_effect_tooltip = GER_barbarossa_others_text
-			
-       }
-       }
-	
 		focus = { 
 		id = GER_SS
-		icon = GFX_goal_generic_SS_focus
+		icon = GFX_GER_SS_armed_branch
 		prerequisite = { focus = GER_rhineland }
 		available = {
 		
-			
-		
+		has_idea=heinrich_himmler	
 		
 		}
 		
