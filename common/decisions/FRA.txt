@@ -1,3 +1,19 @@
+war_measures = {
+Fra_move_capital_gabon={
+	icon = generic_civil_support
+	allowed = {
+			original_tag = FRA
+			
+		}
+	visible={has_war=yes}
+	available={
+	539={is_capital=no}}
+	complete_effect={
+	set_capital=539
+	}
+	}
+
+}
 VIC_concessions_to_the_germans = {
 	VIC_basing_rights = {
 		available = {

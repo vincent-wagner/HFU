@@ -89,6 +89,10 @@ weather_very_hot = { # on Province
 	heat_attrition = 0.1
 	local_org_regain = -0.05
 }
+dont_take_gibraltar = { # on Province
+	enemy_army_bonus_air_superiority_factor = -0.25
+	local_org_regain = 0.2
+}
 weather_extreme_hot = { # on Province
 	heat_attrition = 0.2
 	local_org_regain = -0.1

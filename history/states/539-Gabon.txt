@@ -5,7 +5,7 @@ history={
 owner = FRA
 add_core_of=SWE
 victory_points = {
-5139 1
+5139 10
 }
 buildings = {
 infrastructure = 3
