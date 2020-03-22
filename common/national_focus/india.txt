@@ -1222,7 +1222,7 @@ focus_tree = {
 		id = RAJ_british_pilot_training
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = RAJ_lessons_of_the_great_war }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = RAJ_lessons_of_the_great_war
 
@@ -1255,7 +1255,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = RAJ_british_pilot_training
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = air_doctrine
 			}
 		}
@@ -1264,11 +1264,10 @@ focus_tree = {
 	focus = {
 		id = RAJ_expand_air_bases
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = RAJ_british_pilot_training }
-		prerequisite = { focus = RAJ_industrial_expansion }
-		x = 0
+		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
+		x = 1
 		y = 1
-		relative_position_id = RAJ_british_pilot_training
+		relative_position_id = RAJ_great_indian_peninsula_railway
 
 		cost = 5
 
@@ -1313,133 +1312,15 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RAJ_air_support_effort
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = RAJ_expand_air_bases }
-		x = -1
-		y = 2
-		relative_position_id = RAJ_british_pilot_training
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {			
-			add_tech_bonus = {
-				name = RAJ_air_support_effort
-				bonus = 1.0
-				uses = 1
-				category = tactical_bomber
-				category = cas_bomber
-				category = naval_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = RAJ_fighter_effort
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = RAJ_expand_air_bases }
-		x = 1
-		y = 2
-		relative_position_id = RAJ_british_pilot_training
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_fighter_effort
-				bonus = 1.0
-				uses = 1
-				category = light_fighter
-				category = cat_heavy_fighter
-			}
-		}
-	}
-
-	focus = {
-		id = RAJ_royal_indian_air_force
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = RAJ_air_support_effort focus = RAJ_fighter_effort }
-		x = 0
-		y = 3
-		relative_position_id = RAJ_british_pilot_training
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 3
-				OR = {
-					has_completed_focus = RAJ_institute_of_fundamental_research
-					has_completed_focus = RAJ_indian_institute_of_science
-				}
-			}
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = RAJ_royal_indian_air_force
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
+	
 
 	focus = {
 		id = RAJ_the_smiling_buddha
 		icon = GFX_focus_smiling_buddha
-		prerequisite = { focus = RAJ_royal_indian_air_force }
 		prerequisite = { focus = RAJ_institute_of_fundamental_research }
-		x = 1
-		y = 4
-		relative_position_id = RAJ_british_pilot_training
+		x = 0
+		y = 1
+		relative_position_id = RAJ_institute_of_fundamental_research
 
 		cost = 10
 
@@ -1448,14 +1329,7 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = { NOT = { has_government = fascism } }
-				compare_autonomy_state > autonomy_colony
-			}
-			if = {
-				limit = { has_government = fascism }
-				compare_autonomy_state > autonomy_reichsprotectorate
-			}
+			
 		}
 
 		bypass = {
@@ -1622,7 +1496,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1638,10 +1512,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_industrial_expansion_IC
@@ -1657,7 +1531,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1738,10 +1612,8 @@ focus_tree = {
 	focus = {
 		id = RAJ_indian_institute_of_science
 		icon = GFX_focus_research
-		prerequisite = { focus = RAJ_tata_steel }
-		prerequisite = { focus = RAJ_assam_oil }
-		prerequisite = { focus = RAJ_expand_mazagon_dock }
-		x = 1
+		prerequisite = { focus = RAJ_tata_steel focus = RAJ_assam_oil}
+		x = 0.5
 		y = 2
 		relative_position_id = RAJ_industrial_expansion
 
@@ -1775,10 +1647,10 @@ focus_tree = {
 	focus = {
 		id = RAJ_institute_of_fundamental_research
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = RAJ_indian_institute_of_science }
-		x = 1
-		y = 3
-		relative_position_id = RAJ_industrial_expansion
+		prerequisite = { focus = RAJ_british_pilot_training }
+		x = 0
+		y = 1
+		relative_position_id = RAJ_british_pilot_training
 
 		cost = 10
 
@@ -1823,7 +1695,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = RAJ_industrial_expansion }
 		x = 3
-		y = 1
+		y = 1.5
 		relative_position_id = RAJ_industrial_expansion
 
 		cost = 5
@@ -1959,11 +1831,10 @@ focus_tree = {
 	focus = {
 		id = RAJ_royal_indian_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = RAJ_expand_mazagon_dock
-		focus = RAJ_found_scindia_shipyard }
-		x = 1
+		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
+		x = -1
 		y = 1
-		relative_position_id = RAJ_expand_mazagon_dock
+		relative_position_id = RAJ_great_indian_peninsula_railway
 
 		cost = 5
 
@@ -1999,9 +1870,9 @@ focus_tree = {
 	focus = {
 		id = RAJ_screening_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = RAJ_royal_indian_navy }
+		prerequisite = { focus = RAJ_expand_mazagon_dock focus = RAJ_found_scindia_shipyard }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = RAJ_expand_mazagon_dock
 
 		cost = 5
@@ -2036,9 +1907,9 @@ focus_tree = {
 	focus = {
 		id = RAJ_cruiser_effort
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = RAJ_royal_indian_navy }
+		prerequisite = {  focus = RAJ_expand_mazagon_dock focus = RAJ_found_scindia_shipyard }
 		x = 2
-		y = 2
+		y = 1
 		relative_position_id = RAJ_expand_mazagon_dock
 
 		cost = 5
@@ -2075,7 +1946,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = RAJ_screening_effort focus = RAJ_cruiser_effort }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = RAJ_expand_mazagon_dock
 
 		cost = 5
@@ -2111,7 +1982,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = RAJ_screening_effort focus = RAJ_cruiser_effort }
 		x = 2
-		y = 3
+		y = 2
 		relative_position_id = RAJ_expand_mazagon_dock
 
 		cost = 5
@@ -2148,7 +2019,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = RAJ_submarine_effort focus = RAJ_capital_ship_effort }
 		x = 1
-		y = 4
+		y = 3
 		relative_position_id = RAJ_expand_mazagon_dock
 
 		cost = 5
@@ -2447,7 +2318,7 @@ focus_tree = {
 
 		available = {
 			AND = {
-				compare_autonomy_progress_ratio > 0.15
+				date > 1938.1.1
 				compare_autonomy_state > autonomy_puppet
 			}
 		}
@@ -2483,7 +2354,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = arms_factory
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -2491,10 +2362,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_autonomy_ratio = {
-				value = -0.15
-				localization = RAJ_strengthen_ties_with_british_investors
-			}
+			
 			random_owned_controlled_state = {
 				prioritize = {  }
 				limit = {
@@ -2506,7 +2374,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = arms_factory
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -2547,8 +2415,7 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_progress_ratio > 0.25
-			compare_autonomy_state > autonomy_puppet
+			date > 1938.5.1
 		}
 
 		bypass = {
@@ -2590,10 +2457,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_autonomy_ratio = {
-				value = -0.25
-				localization = RAJ_british_rail_investors
-			}
+			
 			random_owned_controlled_state = {
 				prioritize = {  }
 				limit = {
@@ -2646,8 +2510,7 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_progress_ratio > 0.25
-			compare_autonomy_state > autonomy_puppet
+			date > 1938.5.1
 		}
 
 		bypass = {
@@ -2689,10 +2552,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_autonomy_ratio = {
-				value = -0.25
-				localization = RAJ_british_arms_investors
-			}
 			random_owned_controlled_state = {
 				prioritize = {  }
 				limit = {
@@ -2727,6 +2586,55 @@ focus_tree = {
 				}
 				set_state_flag = RAJ_british_arms_investors_AF2
 			}
+		}
+	}
+	
+	focus = {
+		id = RAJ_OP_Focus
+		icon = GFX_focus_RAJ_all_india_forward_bloc
+		prerequisite = { focus = RAJ_indian_institute_of_science }
+		prerequisite = [ focus = RAJ_the_smiling_buddha }
+		x = -2
+		y = 1
+		relative_position_id = RAJ_indian_institute_of_science
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			date > 1941.6.1
+			RAJ = {has_full_control_of_state = 289}
+			RAJ = {has_full_control_of_state = 724}
+			RAJ = {has_full_control_of_state = 670}
+			RAJ = {has_full_control_of_state = 741}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+			RAJ = {
+				drop_cosmetic_tag = yes
+				retire_country_leader = yes
+			}
+			set_autonomy = {
+						target = RAJ
+						autonomy_state = autonomy_free
+					}
+			remove_ideas = RAJ_agrarian_society
 		}
 	}
 }		
