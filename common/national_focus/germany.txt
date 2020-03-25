@@ -3263,8 +3263,8 @@ POL = {
 			}
 			add_tech_bonus = {
 				name = cv_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 2
 				category = cv_tech
 			}
 			

@@ -66,47 +66,7 @@ units= {
 instant_effect = {
 
 	### Ships Under Contruction ###
-	# SS: Type IIA (x2) ("U-25" "U-26"), Type IIB (x6) ("U-14" "U-16" "U-18" "U-15" "U-20" "U-19")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER" 
-			version_name = "Type II Class"
-		}
-		requested_factories = 20
-		progress = 0.75
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER" 
-			version_name = "Type II Class"
-		}
-		requested_factories = 20
-		progress = 0.65
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER" 
-			version_name = "Type II Class"
-		}
-		requested_factories = 20
-		progress = 0.55
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER" 
-			version_name = "Type II Class"
-		}
-		requested_factories = 20
-		progress = 0.45
-		amount = 1
-	}
+	
 	# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
 	add_equipment_production = {
 		equipment = {
@@ -159,7 +119,7 @@ instant_effect = {
 			version_name = "Scharnhorst Class"
 		}
 		requested_factories = 20
-		progress = 0.35
+		progress = 0.65
 		amount = 1
 	}
 	# Gneisenau
@@ -170,7 +130,7 @@ instant_effect = {
 			version_name = "Scharnhorst Class"
 		}
 		requested_factories = 20
-		progress = 0.25
+		progress = 0.60
 		amount = 1
 	}
 	# DD: 1934A class (x12) ("Z5"-"Z16")

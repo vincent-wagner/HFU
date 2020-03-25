@@ -59,6 +59,7 @@ if = {
 		early_battleship = 1
 		basic_battleship = 1
 		early_battlecruiser = 1
+		early_ship_hull_carrier = 1
 		transport = 1
 	}
 	set_naval_oob = "GER_1936_naval"
@@ -89,6 +90,7 @@ if = {
 		improved_secondary_battery = 1
 		basic_depth_charges = 1
 		sonar = 1
+		basic_heavy_armor_scheme = 1
 		basic_cruiser_armor_scheme = 1
 	}
 	set_naval_oob = "GER_1936_naval_mtg"
