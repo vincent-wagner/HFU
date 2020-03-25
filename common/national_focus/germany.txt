@@ -2265,9 +2265,27 @@ available = {
 						add_timed_idea = { idea = GER_barbarossa days = 100 }
 					}
 					
-					41={set_building_level = {type = infrastructure
+			hidden_effect={41={set_building_level = {type = infrastructure
   			 		level = 10}
 					}
+				118 = {
+				
+				set_building_level = {
+					type = anti_air_building
+					level = 0
+					instant_build = yes
+				}
+				118 = {
+				
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}}
+				
+			}}
+			
+				
 				#custom_effect_tooltip = GER_barbarossa_others_text
 				ENG={
 					remove_ideas=stiff_upper_lip

@@ -50,6 +50,49 @@ adjacency_rule
 		
 	}
 }
+Spain Strait2
+adjacency_rule
+{
+	name = "Vienna-Madrid"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 3938 }
+	is_disabled = {
+		NOT = {
+			tag=SPR
+		
+		}
+		
+	}
+}
 #Suez Canal
 adjacency_rule
 {
