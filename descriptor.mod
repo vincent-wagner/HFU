@@ -1,4 +1,4 @@
-version="1.9.0"
+version="1.9.1"
 tags={
 	"Balance"
 }
@@ -21,4 +21,5 @@ replace_path="common/units/names_divisions"
 replace_path="common/units/names_ships"
 replace_path="events"
 name="HFU"
-supported_version="1.9.0"
+supported_version="1.9.*"
+remote_file_id="1866795171"

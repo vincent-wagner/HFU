@@ -55,7 +55,7 @@ NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999
 
 NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  WAS 30 | days to transfer escaping divisions to host nation
 NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- WAS 10
-NDefines.NCountry.BASE_FUEL_GAIN = 15.0							-- base amount of fuel gained hourly, independent of excess oil
+NDefines.NCountry.BASE_FUEL_GAIN = 20.0							-- base amount of fuel gained hourly, independent of excess oil
 
 NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0				-- Weight of the country score.
 NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0					-- Based on number of armies.
@@ -225,13 +225,14 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
-NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 0	
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1	
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0	
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20			
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20		
 -------------------------------------
 --Air changes
 NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
+NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15						-- Vanilla 0,10
 NDefines.NAir.DISRUPTION_FACTOR = 5
@@ -286,7 +287,7 @@ NDefines.NOperatives.BUILD_INTEL_NETWORK_DAILY_XP_GAIN = 3
 NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 1
 NDefines.NOperatives.COUNTER_INTELLIGENCE_DAILY_XP_GAIN = 1.5
 NDefines.NOperatives.ROOT_OUT_RESISTANCE_DAILY_XP_GAIN = 1.5
-NDefines.NOperatives.AGENCY_OPERATIVE_RECRUITMENT_TIME = 45
+NDefines.NOperatives.AGENCY_OPERATIVE_RECRUITMENT_TIME = 30
 NDefines.NOperatives.OPERATION_COMPLETION_XP = 100
 NDefines.NOperatives.ON_CAPTURE_COUNTERINTELLIGENCE_OPERATIVE_XP_GAIN = 300
 NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 1
