@@ -1832,7 +1832,6 @@ focus_tree = {
 					}
 				}
 			}
-			add_war_support = 0.05
 			if = {
 				limit = {
 					has_dlc = "Waking the Tiger"

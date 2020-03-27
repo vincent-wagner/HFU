@@ -47,6 +47,7 @@ set_technology = {
 	interwar_antiair = 1
 	gwtank = 1
 	early_fighter = 1
+	fighter1 = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
 	cv_CAS1 = 1
@@ -59,6 +60,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
+	interwar_antitank = 1
 }
 
 if = {
@@ -130,24 +132,24 @@ add_equipment_to_stockpile = {
 }
 
 add_equipment_to_stockpile = {
-         type = fighter_equipment_0
-         amount = 384
+         type = fighter_equipment_1
+         amount = 500
          producer = USA
 }
 
 add_equipment_to_stockpile = {
          type = nav_bomber_equipment_1
-         amount = 108
+         amount = 100
          producer = USA
 }
 add_equipment_to_stockpile = {
          type = tac_bomber_equipment_0
-         amount = 204
+         amount = 200
          producer = USA
 }
 add_equipment_to_stockpile = {
          type = CAS_equipment_1
-         amount = 96
+         amount = 100
          producer = USA
 }
 add_equipment_to_stockpile = {

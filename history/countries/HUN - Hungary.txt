@@ -26,6 +26,8 @@ set_technology = {
 	tech_engineers = 1
 	motorised_infantry = 1
 	mtg_transport = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
 }
 
 set_convoys = 100

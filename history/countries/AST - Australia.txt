@@ -25,6 +25,7 @@ set_technology = {
 	CAS1 = 1
 	motorised_infantry = 1
 	fuel_silos = 1
+	interwar_antitank = 1
 
 	fleet_in_being = 1
 }

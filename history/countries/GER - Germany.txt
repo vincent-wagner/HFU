@@ -139,8 +139,8 @@ add_equipment_to_stockpile = {
          producer = GER
 }
 add_equipment_to_stockpile = {
-         type = fighter_equipment_0
-         amount = 280
+         type = fighter_equipment_1
+         amount = 2500
          producer = GER
 }
 add_equipment_to_stockpile = {
@@ -150,17 +150,17 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
          type = nav_bomber_equipment_1
-         amount = 72
+         amount = 300
          producer = GER
 }
 add_equipment_to_stockpile = {
          type = tac_bomber_equipment_1
-         amount = 480
+         amount = 500
          producer = GER
 }
 add_equipment_to_stockpile = {
          type = CAS_equipment_1
-         amount = 80
+         amount = 600
          producer = GER
 }
 set_stability = 0.75 
