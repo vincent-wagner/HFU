@@ -159,7 +159,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
          type = fighter_equipment_1
-         amount = 2200
+         amount = 2500
          producer = ENG
 }
 
