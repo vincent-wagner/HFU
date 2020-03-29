@@ -1,6 +1,7 @@
 	From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3938;6521;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid
 896;11666;sea;;-1;-1;-1;-1;Vienna-Madrid;Vienna-Madrid
+12657;12189;sea;;-1;-1;-1;-1;Amur-Khabarovsk;Amur-Khabarovsk
 12251;10321;sea;8313;-1;-1;-1;-1;;Andaman
 7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas
 10141;1419;sea;5267;-1;-1;-1;-1;;Moluccas
@@ -319,6 +320,8 @@
 5036;8244;impassable;-1;-1;-1;-1;-1;;Equatorial Guinea
 10948;8244;impassable;-1;-1;-1;-1;-1;;Equatorial Guinea
 5139;8244;impassable;-1;-1;-1;-1;-1;;Equatorial Guinea
+
+6944;11879;impassable;-1;-1;-1;-1;-1;;Soviet Border
 
 3314;6336;sea;8622;2885;1578;2890;1581;;Afsluitdijk
 -1;-1;;-1;-1;-1;-1;-1;-1

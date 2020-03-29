@@ -7,7 +7,7 @@
 #Rules needs linking from the straits that are affected by the rule ( adjacency_rule_id )
 
 #Name is how you refer to the rule in adjecencies.csv
-Spain Strait
+#Spain Strait
 adjacency_rule
 {
 	name = "Berlin-Madrid"
@@ -50,7 +50,8 @@ adjacency_rule
 		
 	}
 }
-Spain Strait2
+
+#Spain Strait2
 adjacency_rule
 {
 	name = "Vienna-Madrid"
@@ -93,6 +94,51 @@ adjacency_rule
 		
 	}
 }
+#Vladistrait
+adjacency_rule
+{
+	name = "Amur-Khabarovsk"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 12657 }
+	is_disabled = {
+		NOT = {
+			tag=SOV
+		
+		}
+		
+	}
+}
+
+
 #Suez Canal
 adjacency_rule
 {

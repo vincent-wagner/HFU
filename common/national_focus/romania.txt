@@ -157,20 +157,16 @@ focus_tree = {
 
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
+			46 = {
+				
 				add_resource = {
 					type = oil
 					amount = 8
 				}
 			}
 			GER = {
-				random_owned_controlled_state = {
-					limit = {
-						GER = { has_full_control_of_state = PREV }
-					}
+				56 = {
+					
 					add_resource = {
 						type = oil
 						amount = 4

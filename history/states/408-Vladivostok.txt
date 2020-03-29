@@ -19,8 +19,16 @@ state={
 			dockyard = 1
 			arms_factory = 5
 			air_base = 5
+			957 = {
+				naval_base = 3
+				bunker = 3
+				coastal_bunker = 3
+
+			}
 			
 		}
+		
+		
 		add_core_of = SOV
 	}
 

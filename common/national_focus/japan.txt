@@ -669,7 +669,46 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = JAP_ussr_war_goal
+		icon = GFX_focus_generic_attack_communists
+		prerequisite = { focus = JAP_exploit_the_southern_resource_area }
+		will_lead_to_war_with = SOV
 
+		cancel = {
+			NOT = { country_exists = SOV }
+		}
+		x = 0
+		y = 1
+
+		available = {date > 1941.6.22
+				count_triggers = {
+    				amount = 2
+				Or={AST={has_capitulated=yes} AST={exists=no}}
+				Or={RAJ={has_capitulated=yes} RAJ={exists=no}}
+				Or={SAF={has_capitulated=yes} SAF={exists=no}}
+				
+							}}
+
+		relative_position_id = JAP_exploit_the_southern_resource_area
+		cost = 2
+
+		bypass = {
+			has_war_with = SOV
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+			}
+			}    
+			
+			
+			
+			
+					
+		}
 	focus = {
 		id = JAP_sign_tripartite_pact
 		icon = GFX_goal_anschluss

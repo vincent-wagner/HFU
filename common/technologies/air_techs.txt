@@ -360,7 +360,7 @@ technologies = {
 			cv_CAS_equipment_1
 		}
 	
-		research_cost = 1.0 #Carrier Variant
+		research_cost = 0.5 #Carrier Variant
 		start_year = 1936
 		
 		categories = {
@@ -465,7 +465,7 @@ technologies = {
 			cv_CAS_equipment_2
 		}
 	
-		research_cost = 1.0 #Carrier Variant
+		research_cost = 0.5 #Carrier Variant
 		start_year = 1940
 		
 		categories = {

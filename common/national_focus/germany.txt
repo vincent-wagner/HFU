@@ -1544,7 +1544,7 @@ random_owned_controlled_state = {
 			add_tech_bonus = {
 				name = op_dest_bonus
 				bonus = 1.5
-				uses = 2
+				uses = 4
 				category = air_doctrine
 			}
 			add_tech_bonus = {
@@ -1625,7 +1625,7 @@ random_owned_controlled_state = {
 			add_tech_bonus = {
 				name = strat_dest_bonus
 				bonus = 1.5
-				uses = 4
+				uses = 2
 				category = air_doctrine
 			}
 			add_tech_bonus = {
