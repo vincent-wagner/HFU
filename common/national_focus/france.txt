@@ -2564,7 +2564,7 @@
 		}
 		relative_position_id = FRA_form_the_national_committee
 		
-		cost = 35
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
