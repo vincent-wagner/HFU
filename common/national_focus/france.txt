@@ -40,7 +40,7 @@
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_timed_idea = {
@@ -80,7 +80,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -191,7 +191,7 @@
 	
 			cancel_if_invalid = yes
 			continue_if_invalid = no
-			available_if_capitulated = no
+			available_if_capitulated = yes
 	
 			search_filters = { FOCUS_FILTER_STABILITY }
 			completion_reward = {
@@ -221,7 +221,7 @@
 		relative_position_id = FRA_devalue_the_franc
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		bypass = {
 			
 		}
@@ -256,8 +256,7 @@
 		icon = GFX_focus_generic_industry_3
 		available = {
 		}
-		prerequisite = { focus = FRA_metropolitan_france}
-		prerequisite = {  focus = FRA_algerie_france }
+		prerequisite = { focus = FRA_metropolitan_france  focus = FRA_algerie_france }
 		x = 0
 		y = 1
 		relative_position_id = FRA_metropolitan_france
@@ -271,7 +270,7 @@
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		complete_tooltip = {
 			every_owned_state = {
 				limit = {
@@ -775,7 +774,7 @@
 	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -828,7 +827,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -906,7 +905,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = FRA_firepower
@@ -940,7 +939,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
@@ -1021,7 +1020,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1062,7 +1061,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = { special_forces }
@@ -1114,7 +1113,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			custom_effect_tooltip = available_theorist
@@ -1197,7 +1196,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = { FRA_air_dominance }
@@ -1253,7 +1252,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
@@ -1325,7 +1324,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
@@ -1372,7 +1371,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
@@ -1415,7 +1414,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.05
@@ -1445,7 +1444,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_state_core = 459
@@ -1481,7 +1480,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = { FRA_expanded_citizenship }
@@ -1516,7 +1515,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			swap_ideas = {
@@ -1567,7 +1566,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			remove_worker_shortage_effect = yes
@@ -1602,7 +1601,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_popularity = { ideology = democratic popularity = 0.20 }
@@ -1638,7 +1637,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = { FRA_market_dynamism }
@@ -1668,7 +1667,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
 		completion_reward = {
 			add_ideas = { FRA_communism_banned }
@@ -1710,7 +1709,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			if = {
@@ -1752,7 +1751,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_to_tech_sharing_group = commonwealth_research
@@ -1811,7 +1810,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
@@ -1876,7 +1875,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = { FRA_entrepeneurship }
@@ -2097,7 +2096,7 @@
 		relative_position_id = FRA_capital_ship_focus
 		cost = 5
 
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 				add_equipment_production = {
@@ -2132,7 +2131,7 @@
 		relative_position_id = FRA_carrier_focus
 		cost = 5
 
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			if = {
@@ -2565,7 +2564,7 @@
 		}
 		relative_position_id = FRA_form_the_national_committee
 		
-		cost = 10
+		cost = 35
 		ai_will_do = {
 			factor = 1
 		}
@@ -2670,7 +2669,7 @@
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 50
+				amount = 150
 			}
 			create_navy_leader = {
 				name = "Emilie Muselier"
@@ -2780,7 +2779,7 @@
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2824,7 +2823,7 @@
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2857,7 +2856,7 @@
 		}
 		relative_position_id = FRA_reach_out_to_trade_unions
 		
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2899,7 +2898,7 @@
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2932,7 +2931,7 @@
 		}
 		relative_position_id = FRA_connections_to_industrialists
 		
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2974,7 +2973,7 @@
 		}
 		relative_position_id = FRA_the_civil_and_military_organization
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3010,7 +3009,7 @@
 		}
 		relative_position_id = FRA_national_council_of_the_resistance
 		
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
