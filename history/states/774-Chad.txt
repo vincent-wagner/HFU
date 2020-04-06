@@ -8,7 +8,7 @@ victory_points = {
 2081 1
 }
 buildings = {
-infrastructure = 2
+infrastructure = 3
 }
 }
 provinces={
@@ -16,5 +16,5 @@ provinces={
 }
 manpower=1442456
 buildings_max_level_factor=1.000
-state_category=pastoral
+state_category=french_colony
 }

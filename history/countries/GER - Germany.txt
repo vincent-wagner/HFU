@@ -114,23 +114,28 @@ set_research_slots = 4
 set_convoys = 300
 add_equipment_to_stockpile = {
          type = artillery_equipment_1
-         amount = 229
+         amount = 4000
+         producer = GER
+}
+add_equipment_to_stockpile = {
+         type = anti_air_equipment_1
+         amount = 500
          producer = GER
 }
 add_equipment_to_stockpile = {
          type = infantry_equipment_1
-         amount = 16819
+         amount = 20000
          producer = GER
 }
 
 add_equipment_to_stockpile = {
          type = motorized_equipment_1
-         amount = 752
+         amount = 1000
          producer = GER
 }
 add_equipment_to_stockpile = {
          type = support_equipment_1
-         amount = 591
+         amount = 700
          producer = GER
 }
 add_equipment_to_stockpile = {
@@ -140,7 +145,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
          type = fighter_equipment_1
-         amount = 1800
+         amount = 1000
          producer = GER
 }
 add_equipment_to_stockpile = {

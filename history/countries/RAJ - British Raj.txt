@@ -55,6 +55,17 @@ add_equipment_to_stockpile = {
          amount = 22975
          producer = RAJ
 }
+
+add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 1500
+         producer = RAJ
+}
+add_equipment_to_stockpile = {
+         type = anti_air_equipment_1
+         amount = 500
+         producer = RAJ
+}
 set_cosmetic_tag = RAJ_UK # British Raj
 
 set_politics = {

@@ -8,9 +8,9 @@ victory_points = {
 5139 10
 }
 buildings = {
-infrastructure = 3
+infrastructure = 5
 5139 = {
-naval_base = 1
+naval_base = 20
 }
 }
 }
@@ -18,6 +18,9 @@ provinces={
 5139 8207 10948 13210
 }
 manpower=409752
+resources={
+	steel=50
+}
 buildings_max_level_factor=1.000
-state_category=pastoral
+state_category=french_colony
 }

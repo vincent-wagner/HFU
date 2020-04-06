@@ -40,7 +40,7 @@
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_timed_idea = {
@@ -80,7 +80,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -191,7 +191,7 @@
 	
 			cancel_if_invalid = yes
 			continue_if_invalid = no
-			available_if_capitulated = yes
+			available_if_capitulated = no
 	
 			search_filters = { FOCUS_FILTER_STABILITY }
 			completion_reward = {
@@ -221,7 +221,7 @@
 		relative_position_id = FRA_devalue_the_franc
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		bypass = {
 			
 		}
@@ -256,7 +256,8 @@
 		icon = GFX_focus_generic_industry_3
 		available = {
 		}
-		prerequisite = { focus = FRA_metropolitan_france  focus = FRA_algerie_france }
+		prerequisite = { focus = FRA_metropolitan_france}
+		prerequisite = {  focus = FRA_algerie_france }
 		x = 0
 		y = 1
 		relative_position_id = FRA_metropolitan_france
@@ -270,7 +271,7 @@
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		complete_tooltip = {
 			every_owned_state = {
 				limit = {
@@ -385,7 +386,7 @@
 		}
 		x = 2
 		y = 1
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 0.2
 		}
@@ -509,7 +510,7 @@
 		prerequisite = {focus = FRA_invest_in_the_colonies }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -575,7 +576,7 @@
 		prerequisite = { focus = FRA_invest_in_the_colonies }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -624,7 +625,7 @@
 		prerequisite = {focus = FRA_invest_in_the_colonies }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -733,8 +734,6 @@
 		}
 		available = {
 			
-				num_of_factories > 75
-			
 		}
 		x = 0
 		y = 1
@@ -774,7 +773,7 @@
 	
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -799,77 +798,15 @@
 
 	#### END ####
 
-	focus = {
-		id = FRA_begin_rearmament
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 13
-		y = 0
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {}
-		mutually_exclusive = { }
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_war_support > 0.12
-		
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-		
-			}
-		}
-	}
 
 	focus = {
 		id = FRA_defensive_focus
 		icon = GFX_goal_generic_defence
 		mutually_exclusive = { focus = FRA_aggressive_focus }
-		x = -1
-		y = 1
-		cost = 5
-		prerequisite = { focus = FRA_begin_rearmament }
+		x = 12
+		y = 0
+		cost = 10
 		available_if_capitulated = yes
-		relative_position_id = FRA_begin_rearmament
 		ai_will_do = {
 			factor = 1
 		}
@@ -905,7 +842,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			add_ideas = FRA_firepower
@@ -939,7 +876,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
@@ -1020,7 +957,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1061,7 +998,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			add_ideas = { special_forces }
@@ -1072,12 +1009,10 @@
 		id = FRA_aggressive_focus
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = FRA_defensive_focus }
-		x = 1
-		y = 1
-		cost = 5
-		relative_position_id = FRA_begin_rearmament
+		x = 14
+		y = 0
+		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = FRA_begin_rearmament }
 		ai_will_do = {
 			factor = 0.2
 		}
@@ -1113,7 +1048,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			custom_effect_tooltip = available_theorist
@@ -1196,7 +1131,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			add_ideas = { FRA_air_dominance }
@@ -1252,7 +1187,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
@@ -1324,7 +1259,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
@@ -1371,7 +1306,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
@@ -1414,7 +1349,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.05
@@ -1444,7 +1379,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_state_core = 459
@@ -1480,7 +1415,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = { FRA_expanded_citizenship }
@@ -1515,7 +1450,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			swap_ideas = {
@@ -1566,7 +1501,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			remove_worker_shortage_effect = yes
@@ -1601,7 +1536,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			add_popularity = { ideology = democratic popularity = 0.20 }
@@ -1637,7 +1572,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = { FRA_market_dynamism }
@@ -1667,7 +1602,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
 		completion_reward = {
 			add_ideas = { FRA_communism_banned }
@@ -1709,7 +1644,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			if = {
@@ -1751,7 +1686,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_to_tech_sharing_group = commonwealth_research
@@ -1810,7 +1745,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
@@ -1875,7 +1810,7 @@
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = { FRA_entrepeneurship }
@@ -2096,7 +2031,7 @@
 		relative_position_id = FRA_capital_ship_focus
 		cost = 5
 
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 				add_equipment_production = {
@@ -2131,7 +2066,7 @@
 		relative_position_id = FRA_carrier_focus
 		cost = 5
 
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			if = {
@@ -2564,7 +2499,7 @@
 		}
 		relative_position_id = FRA_form_the_national_committee
 		
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -2669,7 +2604,7 @@
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 150
+				amount = 50
 			}
 			create_navy_leader = {
 				name = "Emilie Muselier"
@@ -2779,7 +2714,7 @@
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -2823,7 +2758,7 @@
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 3
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -2856,7 +2791,7 @@
 		}
 		relative_position_id = FRA_reach_out_to_trade_unions
 		
-		cost = 3
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -2898,7 +2833,7 @@
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 3
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -2931,7 +2866,7 @@
 		}
 		relative_position_id = FRA_connections_to_industrialists
 		
-		cost = 3
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -2973,7 +2908,7 @@
 		}
 		relative_position_id = FRA_the_civil_and_military_organization
 		
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -3009,7 +2944,7 @@
 		}
 		relative_position_id = FRA_national_council_of_the_resistance
 		
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}

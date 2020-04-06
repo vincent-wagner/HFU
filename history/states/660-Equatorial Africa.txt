@@ -2,7 +2,7 @@ state={
 id=660
 name="STATE_660"
 manpower = 1136921
-state_category = pastoral
+state_category = french_colony
 resources={
 rubber=0
 }
@@ -13,7 +13,7 @@ victory_points = {
 12830 1
 }
 buildings = {
-infrastructure = 2
+infrastructure = 3
 }
 }
 provinces={

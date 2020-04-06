@@ -1102,7 +1102,6 @@ ideas = {
 			}
 			modifier = {
 				conscription = -0.003
-				war_support_factor = -0.05
 			}
 		}
 
@@ -1432,6 +1431,42 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 				stability_factor = 0.1
 				consumer_goods_factor = 0.05
+			}
+		}
+
+		FRA_Civs = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = -0.4
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
+		Phoney_War = {
+			picture = chi_incompetent_officers
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
 			}
 		}
 
