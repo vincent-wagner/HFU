@@ -83,8 +83,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
 				production_speed_dockyard_factor = -0.9
+				production_speed_industrial_complex_factor = 0.3
 			}
 		}
 		
