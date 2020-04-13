@@ -1,7 +1,7 @@
 state={
 id=309
 name="STATE_309"
-manpower = 152000
+manpower = 152001
 state_category = rural
 history={
 owner = HOL
