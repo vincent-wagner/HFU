@@ -345,7 +345,7 @@ equipments = {
 		air_defence = 10
 		
 				
-		build_cost_ic = 25.8
+		build_cost_ic = 52.8
 		resources = {
 			#oil = 1
 			aluminium = 3
