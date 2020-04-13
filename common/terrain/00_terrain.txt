@@ -165,10 +165,15 @@ categories =  {
 	desert = {
 		color = { 255 127 0 }
 		movement_cost = 1.05
-		attrition = 0.2
 		ai_terrain_importance_factor = 8.0
 		match_value = 8
 		sound_type = desert
+		attrition = 0.1
+		units = {
+			
+			movement = -0.1
+		}
+		
 		
 		sickness_chance = 1.0
 	}

@@ -43,6 +43,9 @@ set_technology = {
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	fuel_refining2 = 1
+	fuel_refining3 = 1
+	fuel_refining4 = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

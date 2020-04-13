@@ -675,8 +675,25 @@ focus = {
 		}	
 		completion_reward = {
 			army_experience = 20
-			
+			247={set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}}
+				
+				248={set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}}
+				
+				253={set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}}
 			219 = {
+			
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
 				hidden_effect = {
 					add_building_construction = {

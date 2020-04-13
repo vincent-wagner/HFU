@@ -30,21 +30,39 @@ country_event = {
 	title = france.14.t
 	desc = france.14.d
 	picture = GFX_report_event_german_parade_paris
-
+     fire_only_once = yes
 	is_triggered_only = yes
-
+     
 	option = { # Agree
 		name = france.14.a
 		set_global_flag = achievement_france_surrender
 		set_global_flag = fall_of_france
 		add_political_power = 100
 		if={limit={date<1940.2.1}add_timed_idea={idea=GER_triumph_in_france days=730}}
+		
+		
+		EFR ={annex_country = { target = FRA transfer_troops = no }}
+	    
 		FRA = {
-			add_ideas = FRA_defeatism
+			transfer_state = 539
+			set_cosmetic_tag = FRA_FREE
+			clr_country_flag = no_naval_base
+			remove_ideas = FRA_protected_by_the_maginot_line
+			set_country_flag = free_france
+			set_capital = 539
+		    add_ideas = FRA_defeatism
 			country_event = france.20
 		}
+		
+		ENG = { add_to_faction = FRA }
+		
+		GER ={declare_war_on = {
+        target = FRA
+        type = annex_everything
+             }
+        }
 		EFR = {
-			transfer_state = 26
+			
 			every_state = {
 				limit = { is_core_of = FRA }
 				add_core_of = EFR
@@ -55,25 +73,14 @@ country_event = {
 				elections_allowed = no 
 			}
 			set_popularities = {
-				democratic = 18
-				fascism = 70
-				communism = 2
-				neutrality = 10
+				fascism = 100
 			}
 		}		
-		FRA = {
-			set_cosmetic_tag = FRA_FREE
-			clr_country_flag = no_naval_base
-			remove_ideas = FRA_protected_by_the_maginot_line
-			set_country_flag = free_france
-			set_capital = 539
 		
-		}
 		EFR = { 
 			add_ideas = EFR_neutrality_idea
 			diplomatic_relation = { country = ENG relation = non_aggression_pact }
 			diplomatic_relation = { country = USA relation = non_aggression_pact }
-			diplomatic_relation = { country = PHI relation = non_aggression_pact }
 			diplomatic_relation = { country = FRA relation = non_aggression_pact }
 			diplomatic_relation = { country = SAF relation = non_aggression_pact }
 			diplomatic_relation = { country = CAN relation = non_aggression_pact }
@@ -98,62 +105,7 @@ country_event = {
 				transfer_state = 665
 			}
 		}
-		else={
-			EFR = {
-				transfer_state = 735
-				transfer_state = 32
-				transfer_state = 21
-				transfer_state = 1
-				transfer_state = 458
-				transfer_state = 665
-			}
-		}
-    	EFR = {
-			add_ideas = extensive_conscription
-			add_ideas = partial_economic_mobilisation
-			
-			#transfer_state = 26
-			transfer_state = 22
-			
-			transfer_state = 25
-			transfer_state = 20
-			transfer_state = 33
-			transfer_state = 31
-							
-			#Northern Africa
-			transfer_state = 513
-			
-			transfer_state = 459
-			transfer_state = 460
-			transfer_state = 461
-			transfer_state = 462
-			
-			transfer_state = 514
-			transfer_state = 776
-			transfer_state = 781
-			transfer_state = 777
-			transfer_state = 778
-			transfer_state = 556
-			transfer_state = 779
-			transfer_state = 780
-			transfer_state = 272
-			transfer_state = 557
-			transfer_state = 268
-			transfer_state = 786
-			transfer_state = 782
-			transfer_state = 515
-			transfer_state = 775
-			transfer_state = 553
-			transfer_state = 554
-			transfer_state = 680
-			transfer_state = 677
-			transfer_state = 286
-			transfer_state = 670
-			transfer_state = 671		
-			transfer_state = 741
-			transfer_state = 728
-			transfer_state = 543 #Madagascar
-		}
+		
 		JAP = {
 			EFR = { country_event = { id = france.1 } }
 			transfer_state = 286
@@ -163,19 +115,90 @@ country_event = {
 			transfer_state = 728
 		}
 		FRA = {
-			every_owned_state = {
-				limit = {
-					is_on_continent = africa
-					is_controlled_by = GER
-				}
-				FRA= {set_state_controller = PREV}
-			}
-			set_capital = 539
+			transfer_state = 772
+			transfer_state = 773
+			transfer_state = 774
+			transfer_state = 660
+			transfer_state = 310
+			transfer_state = 635
+			transfer_state = 734
+			transfer_state = 641
+		    transfer_state = 320
+			transfer_state = 694
+			transfer_state = 706
+			transfer_state = 713
+			transfer_state = 708
 		}
+	    
+		GER = {
+		
+		transfer_state =28
+		transfer_state =17
+		transfer_state =18
+		transfer_state = 29
+		transfer_state =785
+		transfer_state =16
+		transfer_state =15
+		transfer_state =14
+		transfer_state =23
+		transfer_state =19
+		transfer_state =24
+		transfer_state =30
+		transfer_state =27
+		
+		}
+	GER = { country_event = {id=france.15 days=10} }
 	}
 }
 
+#Capital captured by non french faction
+country_event = {
+	id = france.15
+	title = france.15.t
+	desc = france.15.d
+	picture = GFX_report_event_german_parade_paris
+     fire_only_once = yes
+	is_triggered_only = yes
 
+	option = {
+	name = france.15.a	
+		GER = {
+		
+		add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 2000
+         producer = FRA
+}
+add_equipment_to_stockpile = {
+         type = anti_air_equipment_1
+         amount = 1000
+         producer = FRA
+}
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 20000
+         producer = FRA
+}
+
+add_equipment_to_stockpile = {
+         type = motorized_equipment_1
+         amount = 1000
+         producer = FRA
+}
+add_equipment_to_stockpile = {
+         type = support_equipment_1
+         amount = 500
+         producer = FRA
+}
+add_equipment_to_stockpile = {
+         type = anti_tank_equipment
+         amount = 1000
+         producer = FRA
+}		
+		}
+		
+	}
+}
 
 #Capital captured by non french faction
 country_event = {

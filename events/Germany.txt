@@ -26,7 +26,7 @@ country_event = {
    
    immediate = {
 
-		
+  76={remove_core_of=ROM}	
    HUN = {transfer_state = 76
           transfer_state = 45
 		  transfer_state = 764
@@ -35,10 +35,12 @@ country_event = {
 		 ROM = { remove_state_core = 76 }   #Prevents Hungary from returning Transylvania  -Thrasymachus
    if = {
 		limit = {country_exists = BUL }
+		77 = {remove_core_of = ROM}
 		BUL = {
 			transfer_state = 106
 			transfer_state = 731
 			transfer_state = 184
+			transfer_state = 77
 		}
    }
    else = {
@@ -725,23 +727,7 @@ country_event = {
 		
 	}
 	
-	option = {
-		name = germany.55.c
-		add_political_power = -30
 
-		if = {
-			limit = { country_exists = CZE }
-			annex_country = { target = CZE }
-		}
-		if = {
-			limit = { has_global_flag = GER_HUN_CZE_split }
-			HUN = { country_event = DOD_hungary.106 }
-		}
-		hidden_effect = {
-			country_event = { hours = 6 id = news.62 }
-		}
-		
-	}
 }
 
 # Hungary asked to partition Czechoslovakia
@@ -763,21 +749,14 @@ country_event = {
 	option = {
 		name = germany.56.a
 		ai_chance = { factor = 100 }
-		transfer_state = 70
-		transfer_state = 71
+		
 		transfer_state = 73
 		hidden_effect = {
 			GER = {
 				annex_country = { target = CZE }
-				add_to_faction = HUN				
+								
 			}
-			HUN = {
-				add_ai_strategy = {
-					type = alliance
-					id = "GER"
-					value = 200
-				}
-			}
+			
 		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.61 }

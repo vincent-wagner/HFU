@@ -1123,7 +1123,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.4
 				stability_factor = -0.10
-				surrender_limit = -0.5
+
 			}
 		}
 
@@ -1183,7 +1183,7 @@ ideas = {
 			picture = generic_wall_line
 			
 			modifier = {
-				
+			    surrender_limit = 0.5
 				max_planning = 0.25
 				planning_speed = -0.25
 				conversion_cost_civ_to_mil_factor=2

@@ -874,7 +874,7 @@ technologies = {
 		category_front_line = {
 			 soft_attack = 0.2
 		}
-		supply_consumption_factor = 0.10
+		
 		enable_tactic = tactic_barrage
 			
 		doctrine = yes	
@@ -2550,9 +2550,10 @@ technologies = {
 			default_morale = 0.05
 		}
 		
-		army_core_defence_factor = 0.075
-	    army_core_attack_factor = 0.075
-
+		army_core_defence_factor = 0.1
+	    army_core_attack_factor = 0.2
+        army_attack_factor = -0.1
+		
 		enable_tactic = tactic_relentless_assault
 		enable_tactic = tactic_human_wave_tactics
 		path = {
@@ -2884,7 +2885,7 @@ technologies = {
 		}
 		enable_tactic = tactic_backhand_blow
         infantry = {
-			max_strength = 5
+			max_strength = 8
 		}
 		doctrine = yes	
 		research_cost = 4.25

@@ -467,14 +467,6 @@ on_actions = {
 				}
 				set_global_flag = fall_of_poland
 				retire_country_leader = yes
-			}if = {
-				limit = { 
-					original_tag = FRA
-				}
-				set_global_flag = achievement_france_surrender
-				set_global_flag = fall_of_france
-				GER = { country_event = {id=france.14 days=3} }
-				FRA = { country_event = {id=france.31 days=20} }
 			}
 			if = {
 				limit = {
@@ -560,6 +552,22 @@ on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
 		effect = {
+			if = {
+				limit = {
+					
+			      	count_triggers = {
+                    amount = 5
+                   18 = { is_controlled_by = GER}
+                   29 = { is_controlled_by = GER}
+				   16 = { is_controlled_by = GER}
+				   785 = { is_controlled_by = GER}
+				   17 = { is_controlled_by = GER}
+                   28 = { is_controlled_by = GER}
+				   15 = { is_controlled_by = GER}
+}
+				}
+				country_event = {days = 10 id=france.14}
+			}
 			if = {
 				limit = {
 					OR = {
