@@ -13,7 +13,7 @@ NDefines.NTechnology.MAX_SUBTECHS = 4
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.375, 0.175, 0.1, 0.035, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.35, 0.15, 0.1, 0.035, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
@@ -217,9 +217,9 @@ NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 4 --back to 4
 NDefines.NMilitary.TRAINING_ATTRITION = 0.01
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
@@ -232,9 +232,9 @@ NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20
 -------------------------------------
 --Air changes
 NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
-NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02
+NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15						-- Vanilla 0,10
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.13						-- Vanilla 0,10
 NDefines.NAir.DISRUPTION_FACTOR = 5
 NDefines.NAir.ESCORT_FACTOR = 2.5 		
         
@@ -244,7 +244,7 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applie
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.144	-- How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                        -- WAS 10, lowered to prevent some exploits with aces | biggest bonus we can get from having a small wing with an ace on
 NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
-NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.002 
+NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.003 
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.15
 
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2

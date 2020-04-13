@@ -874,7 +874,7 @@ technologies = {
 		category_front_line = {
 			 soft_attack = 0.2
 		}
-		supply_consumption_factor = 0.10
+		#supply_consumption_factor = 0.10
 		enable_tactic = tactic_barrage
 			
 		doctrine = yes	
@@ -1773,6 +1773,7 @@ technologies = {
 		category_army = {
 			breakthrough = 0.10
 			soft_attack = 0.05
+			max_organisation = 7
 		}
 		
 		enable_tactic = tactic_planned_attack

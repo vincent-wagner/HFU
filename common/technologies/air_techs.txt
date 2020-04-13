@@ -52,7 +52,7 @@ technologies = {
 			cv_fighter_equipment_0
 		}
 	
-		research_cost = 1.0 #Carrier Variant
+		research_cost = 0.7 #Carrier Variant
 		start_year = 1933
 		
 		categories = {
@@ -145,7 +145,7 @@ technologies = {
 			cv_fighter_equipment_1
 		}
 	
-		research_cost = 1 #Carrier Variant
+		research_cost = 0.7 #Carrier Variant
 		start_year = 1936
 		
 		categories = {
@@ -262,7 +262,7 @@ technologies = {
 			cv_fighter_equipment_2
 		}
 	
-		research_cost = 1.0 #Carrier Variant
+		research_cost = 0.7 #Carrier Variant
 		start_year = 1940
 		
 		categories = {
@@ -557,7 +557,7 @@ technologies = {
 			cv_nav_bomber_equipment_1
 		}
 	
-		research_cost = 1.0 #Carrier Variant
+		research_cost =  0.7 #Carrier Variant
 		start_year = 1936
 		
 		categories = {
@@ -661,7 +661,7 @@ technologies = {
 			cv_nav_bomber_equipment_2
 		}
 	
-		research_cost = 1.0 #Carrier Variant
+		research_cost = 0.7 #Carrier Variant
 		start_year = 1940
 		
 		categories = {
