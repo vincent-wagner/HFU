@@ -37,30 +37,22 @@ country_event = {
 		name = france.14.a
 		set_global_flag = achievement_france_surrender
 		set_global_flag = fall_of_france
+		FRA ={set_country_flag =lel}
 		add_political_power = 100
-		if={limit={date<1940.2.1}add_timed_idea={idea=GER_triumph_in_france days=730}}
+		add_timed_idea={idea=GER_triumph_in_france days=730}
+		FRA = {set_equipment_fraction = 0}
 		
+		EFR = {
+    change_tag_from = FRA
+}
+        
 		
+		EFR = {
+    change_tag_from = FRA
+}
 		EFR ={annex_country = { target = FRA transfer_troops = no }}
 	    
-		FRA = {
-			transfer_state = 539
-			set_cosmetic_tag = FRA_FREE
-			clr_country_flag = no_naval_base
-			remove_ideas = FRA_protected_by_the_maginot_line
-			set_country_flag = free_france
-			set_capital = 539
-		    add_ideas = FRA_defeatism
-			country_event = france.20
-		}
-		
-		ENG = { add_to_faction = FRA }
-		
-		GER ={declare_war_on = {
-        target = FRA
-        type = annex_everything
-             }
-        }
+
 		EFR = {
 			
 			every_state = {
@@ -114,21 +106,7 @@ country_event = {
 			transfer_state = 741
 			transfer_state = 728
 		}
-		FRA = {
-			transfer_state = 772
-			transfer_state = 773
-			transfer_state = 774
-			transfer_state = 660
-			transfer_state = 310
-			transfer_state = 635
-			transfer_state = 734
-			transfer_state = 641
-		    transfer_state = 320
-			transfer_state = 694
-			transfer_state = 706
-			transfer_state = 713
-			transfer_state = 708
-		}
+		
 	    
 		GER = {
 		
@@ -147,8 +125,59 @@ country_event = {
 		transfer_state =27
 		
 		}
+	GER = {country_event = { id=france.187 days=2}}
 	GER = { country_event = {id=france.15 days=10} }
 	}
+}
+
+
+
+
+country_event = {
+	id = france.187
+	title = france.187.t
+	desc = france.187.d
+	picture = GFX_report_event_german_parade_paris
+     fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+	option = { 
+		FRA = {
+    change_tag_from = EFR
+}
+	
+	FRA = {
+	        add_ideas = FRA_no_training_queue
+			add_ideas = FRA_defeatism
+			transfer_state = 539
+			transfer_state = 772
+			transfer_state = 773
+			transfer_state = 774
+			transfer_state = 660
+			transfer_state = 310
+			transfer_state = 635
+			transfer_state = 734
+			transfer_state = 641
+		    transfer_state = 320
+			transfer_state = 694
+			transfer_state = 706
+			transfer_state = 713
+			transfer_state = 708
+			set_cosmetic_tag = FRA_FREE
+			clr_country_flag = no_naval_base
+			remove_ideas = FRA_protected_by_the_maginot_line
+			set_country_flag = free_france
+			set_capital = 539
+		
+			country_event = france.20
+		}
+		ENG = { add_to_faction = FRA }
+	GER ={declare_war_on = {
+        target = FRA
+        type = annex_everything
+             }
+        }	
+		}
 }
 
 #Capital captured by non french faction
