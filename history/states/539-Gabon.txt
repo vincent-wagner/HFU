@@ -19,7 +19,7 @@ provinces={
 }
 manpower=409752
 resources={
-	steel=35
+	steel=50
 }
 buildings_max_level_factor=1.000
 state_category=french_colony

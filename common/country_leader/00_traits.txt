@@ -495,7 +495,8 @@ leader_traits = {
 	hawk = {
 		random = yes
 		sprite = 13
-		war_support_factor = 0.5
+		war_support_factor = 0.1
+		stability_factor = -0.05
 
 		ai_will_do = {
 			factor = 1
@@ -754,7 +755,8 @@ leader_traits = {
 	appeaser = {
 		random = yes
 		sprite = 13
-		stability_factor = 0.5
+		war_support_factor = -0.05
+		stability_factor = 0.1
 
 		ai_will_do = {
 			factor = 1

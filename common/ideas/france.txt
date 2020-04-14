@@ -19,6 +19,25 @@ ideas = {
 				conscription_factor = -0.25
 			}
 		}
+		FRA_no_training_queue = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = FRA
+				
+			}
+			cancel={NOT={amount_manpower_in_deployment_queue > 10}}
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+			removal_cost = -1
+			on_remove={set_equipment_fraction = 0}
+			modifier = {
+				industrial_capacity_factory = -0.5
+				consumer_goods_factor = 0.5
+				stability_factor = -0.5
+				training_time_factor = 1000
+			}
+		}
 		FRA_worker_shortage = {
 			picture = FRA_factory_strikes
 			allowed = {
@@ -38,25 +57,6 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 			}
 		}
-		FRA_no_training_queue = {
-			picture = generic_production_bonus
-			allowed = {
-				original_tag = FRA
-
-			}
-			cancel={NOT={amount_manpower_in_deployment_queue > 10}}
-			allowed_civil_war = {
-				tag = FRA #stays with main country
-			}
-			removal_cost = -1
-			on_remove={set_equipment_fraction = 0}
-			modifier = {
-				industrial_capacity_factory = -0.5
-				consumer_goods_factor = 0.5
-				stability_factor = -0.5
-				training_time_factor = 1000
-			}
-		}
 		FRA_inefficient_economy_1 = {
 			picture = generic_local_self_management
 			allowed = {
@@ -73,6 +73,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
+				
 			}
 		}
 		FRA_inefficient_economy_2 = {
@@ -359,6 +360,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 			}
 			research_bonus = { industry = 0.05}
@@ -1602,7 +1604,7 @@ ideas = {
 			available = {  }
 
 			
-			traits = { captain_of_industry }
+			traits = { financial_expert }
 	
 			on_add = {
 			}
