@@ -2233,8 +2233,7 @@
 			factor = 1
 		}
 		available = {
-			has_capitulated = yes
-			has_legitimacy > 40
+			has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
 		}
 		
 		bypass = {
@@ -2263,7 +2262,7 @@
 			factor = 1
 		}
 		available = {
-			has_capitulated = yes
+			
 			has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
 		}
 		
@@ -2504,7 +2503,7 @@
 			factor = 1
 		}
 		available = {
-			has_legitimacy > 90
+
 		}
 		
 		bypass = {
