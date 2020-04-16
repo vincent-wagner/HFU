@@ -1,6 +1,39 @@
 #Category only allowed for GER
 operations = {
 
+
+
+
+
+GER_jaegernotprogramm = {
+
+		icon = generic_air
+
+		available = {
+			GER ={has_war_with = SOV}
+		
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			
+			GER ={has_war_with = SOV}
+			
+		}
+
+		complete_effect = {
+			add_timed_idea = { idea = GER_jaegernotprogramm days = 100 }
+		}
+	}
+
+
+
+
 	GER_fin = {
 	icon = generic_operation
 	fire_only_once = yes

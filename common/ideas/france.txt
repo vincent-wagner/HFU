@@ -1,7 +1,27 @@
 ideas = {
 
 	country = {
+        
+		FRA_snakemodding = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
 
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 10
+				production_factory_efficiency_gain_factor = 10
+				
+			}
+		}
+		
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {

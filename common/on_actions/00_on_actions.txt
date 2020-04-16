@@ -564,9 +564,11 @@ on_actions = {
 				   17 = { is_controlled_by = GER}
                    28 = { is_controlled_by = GER}
 				   15 = { is_controlled_by = GER}
+				   24 = { is_controlled_by = GER}
+				   27 = { is_controlled_by = GER}
 }
 				}
-				country_event = {days = 10 id=france.14}
+				country_event = {days = 9 id=france.13}
 			}
 			if = {
 				limit = {

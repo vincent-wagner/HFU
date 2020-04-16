@@ -22,6 +22,42 @@ country_event = {
 }
 
 
+country_event = {
+	id = france.12
+	title = france.12.t
+	desc = france.12.d
+	picture = GFX_report_event_german_parade_paris
+     fire_only_once = yes
+	is_triggered_only = yes
+     hidden=yes
+	option = { # Agree
+		name = france.12.a
+		add_timed_idea = {
+    idea = FRA_snakemodding
+    days = 45
+}
+	}
+}
+
+
+
+country_event = {
+	id = france.13
+	title = france.13.t
+	desc = france.13.d
+	picture = GFX_report_event_german_parade_paris
+     fire_only_once = yes
+	is_triggered_only = yes
+     hidden=yes
+	option = { # Agree
+	    FRA ={set_country_flag =lel}
+		EFR ={transfer_state =20}
+		EFR ={inherit_technology = FRA}
+		FRA = {set_equipment_fraction = 0}	
+	GER = { country_event = {id=france.14 days=2} }
+	}
+}
+
 
 
 # France wants Armistice (Germany)
@@ -37,16 +73,12 @@ country_event = {
 		name = france.14.a
 		set_global_flag = achievement_france_surrender
 		set_global_flag = fall_of_france
-		FRA ={set_country_flag =lel}
 		add_political_power = 100
 		add_timed_idea={idea=GER_triumph_in_france days=730}
-		FRA = {set_equipment_fraction = 0}
 		
 		
 		
-		EFR = {
-    change_tag_from = FRA
-}
+		
 		EFR ={annex_country = { target = FRA transfer_troops = no }}
 	    
 
@@ -80,11 +112,7 @@ country_event = {
 		}	
 		if = { 
 			limit = {Date < 1939.11.1}
-			FRA={
-				subtract_from_temp_variable = { resistancetemp = resistance }
-				add_offsite_building = { type = industrial_complex level = resistancetemp }
-				add_offsite_building = { type = arms_factory level = resistancetemp }
-			}
+			
 			ITA = { 
 				transfer_state = 735
 				transfer_state = 32
@@ -122,23 +150,6 @@ country_event = {
 		transfer_state =27
 		
 		}
-	GER = {country_event = { id=france.187 days=2}}
-	GER = { country_event = {id=france.15 days=10} }
-	}
-}
-
-
-
-
-country_event = {
-	id = france.187
-	title = france.187.t
-	desc = france.187.d
-	picture = GFX_report_event_german_parade_paris
-     fire_only_once = yes
-	is_triggered_only = yes
-    hidden = yes
-	option = { 
 		FRA = {
     change_tag_from = EFR
 }
@@ -160,6 +171,11 @@ country_event = {
 			transfer_state = 706
 			transfer_state = 713
 			transfer_state = 708
+			transfer_state = 295
+			transfer_state = 538
+			transfer_state = 718
+			transfer_state = 768
+			transfer_state = 769
 			set_cosmetic_tag = FRA_FREE
 			clr_country_flag = no_naval_base
 			remove_ideas = FRA_protected_by_the_maginot_line
@@ -173,7 +189,27 @@ country_event = {
         target = FRA
         type = annex_everything
              }
-        }	
+        }
+	FRA = {set_equipment_fraction = 0}	
+	FRA = { country_event = {id=france.187 days=10} }
+	GER = { country_event = {id=france.15 days=10} }
+	}
+}
+
+
+
+
+country_event = {
+	id = france.187
+	title = france.187.t
+	desc = france.187.d
+	picture = GFX_report_event_german_parade_paris
+     fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+	option = { 
+		FRA = {set_equipment_fraction = 0}
+        
 		}
 }
 
@@ -192,33 +228,28 @@ country_event = {
 		
 		add_equipment_to_stockpile = {
          type = artillery_equipment_1
-         amount = 2000
+         amount = 3000
          producer = FRA
 }
 add_equipment_to_stockpile = {
          type = anti_air_equipment_1
-         amount = 1000
+         amount = 2000
          producer = FRA
 }
 add_equipment_to_stockpile = {
          type = infantry_equipment_1
-         amount = 20000
+         amount = 30000
          producer = FRA
 }
 
 add_equipment_to_stockpile = {
          type = motorized_equipment_1
-         amount = 1000
-         producer = FRA
-}
-add_equipment_to_stockpile = {
-         type = support_equipment_1
-         amount = 500
+         amount = 2000
          producer = FRA
 }
 add_equipment_to_stockpile = {
          type = anti_tank_equipment
-         amount = 1000
+         amount = 2000
          producer = FRA
 }		
 		}

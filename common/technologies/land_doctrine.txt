@@ -2411,9 +2411,7 @@ technologies = {
 			leads_to_tech = pocket_defence 
 			research_cost_coeff = 1
 		}
-		infantry = {
-			combat_width = -0.4
-		}
+		
 
 		land_reinforce_rate = 0.02
 		minimum_training_level = -0.1		
@@ -2551,10 +2549,10 @@ technologies = {
 			default_morale = 0.05
 		}
 		
-		army_core_defence_factor = 0.1
+		army_core_defence_factor = 0.2
 	    army_core_attack_factor = 0.2
         army_attack_factor = -0.1
-		
+		army_defence_factor = -0.1
 		enable_tactic = tactic_relentless_assault
 		enable_tactic = tactic_human_wave_tactics
 		path = {
@@ -2613,6 +2611,9 @@ technologies = {
 		}
 		category_all_armor = {
 			default_morale = 0.1
+		}
+		category_all_infantry = {
+			defense = 0.10
 		}
 		xp_research_type = army
 		xp_research_cost = 100
@@ -2714,8 +2715,7 @@ technologies = {
 		supply_consumption_factor = -0.20
 		
 		
-
-		
+        attrition = -0.1 #take 10% less attrition losses
 		enable_tactic = tactic_overwhelming_fire
 		enable_tactic = tactic_default_overwhelming_fire
 		
@@ -2882,7 +2882,7 @@ technologies = {
 		org_loss_when_moving = -0.2
 		land_reinforce_rate = 0.05
 		category_army = {
-			default_morale = 0.10
+			default_morale = 0.15
 		}
 		enable_tactic = tactic_backhand_blow
         infantry = {
@@ -2930,7 +2930,10 @@ technologies = {
 		
 		enable_tactic = tactic_human_wave_tactics
 		
-		
+		infantry = {
+			combat_width = -0.4
+		}
+
 		path = {
 			leads_to_tech = human_infantry_offensive
 			research_cost_coeff = 1
