@@ -1258,7 +1258,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

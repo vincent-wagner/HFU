@@ -3077,7 +3077,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			
+			every_country={limit={is_in_faction_with=ENG}army_experience=100}
 			swap_ideas = {
     remove_idea = ENG_prepare_for_the_inevitable_idea
     add_idea = ENG_handle_the_inevitable_idea

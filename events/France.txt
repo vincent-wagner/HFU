@@ -51,8 +51,8 @@ country_event = {
      hidden=yes
 	option = { # Agree
 	    FRA ={set_country_flag =lel}
-		EFR ={transfer_state =20}
 		EFR ={inherit_technology = FRA}
+		EFR ={transfer_state =20}
 		FRA = {set_equipment_fraction = 0}	
 	GER = { country_event = {id=france.14 days=2} }
 	}
@@ -78,9 +78,16 @@ country_event = {
 		
 		
 		
-		
+		GER={
+			set_variable={collabo=has_collaboration@FRA}
+			multiply_variable={collabo=100}
+
+		}
+		FRA={transfer_navy = {
+   			target = VEN
+		}}
 		EFR ={annex_country = { target = FRA transfer_troops = no }}
-	    
+	    	
 
 		EFR = {
 			
@@ -135,19 +142,19 @@ country_event = {
 	    
 		GER = {
 		
-		transfer_state =28
-		transfer_state =17
-		transfer_state =18
+		transfer_state = 28
+		transfer_state = 17
+		transfer_state = 18
 		transfer_state = 29
-		transfer_state =785
-		transfer_state =16
-		transfer_state =15
-		transfer_state =14
-		transfer_state =23
-		transfer_state =19
-		transfer_state =24
-		transfer_state =30
-		transfer_state =27
+		transfer_state = 785
+		transfer_state = 16
+		transfer_state = 15
+		transfer_state = 14
+		transfer_state = 23
+		transfer_state = 19
+		transfer_state = 24
+		transfer_state = 30
+		transfer_state = 27
 		
 		}
 		FRA = {
@@ -166,7 +173,7 @@ country_event = {
 			transfer_state = 635
 			transfer_state = 734
 			transfer_state = 641
-		    transfer_state = 320
+		   	transfer_state = 320
 			transfer_state = 694
 			transfer_state = 706
 			transfer_state = 713
@@ -185,11 +192,21 @@ country_event = {
 			country_event = france.20
 		}
 		ENG = { add_to_faction = FRA }
-	GER ={declare_war_on = {
-        target = FRA
-        type = annex_everything
-             }
+	GER ={	
+		declare_war_on = {
+      		target = FRA
+        	type = annex_everything
+            	}
+		every_owned_state = {
+					limit = {
+						is_core_of = FRA
+					}
+					add_compliance = GER.collabo
+				}	
         }
+	VEN={transfer_navy = {
+   	 target = FRA
+	}}	
 	FRA = {set_equipment_fraction = 0}	
 	FRA = { country_event = {id=france.187 days=10} }
 	GER = { country_event = {id=france.15 days=10} }
@@ -223,7 +240,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	name = france.15.a	
+	name = france.15.a
+		
 		GER = {
 		
 		add_equipment_to_stockpile = {

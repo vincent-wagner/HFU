@@ -106,7 +106,7 @@ equipments = {
 		maximum_speed = 10
 
 		#Defensive Abilities
-		defense = 15
+		defense = 12
 		breakthrough = 62
 		armor_value = 90
 
