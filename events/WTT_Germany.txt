@@ -23,7 +23,7 @@ country_event = {
 	picture = GFX_report_event_generic_peaceful_annexation
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_germany.63.a
 		effect_tooltip = {
@@ -43,7 +43,7 @@ country_event = {
 	picture = GFX_report_event_generic_peaceful_annexation
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_germany.64.a
 		effect_tooltip = {
@@ -64,7 +64,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	option = { # Yaplx
 		name = wtt_germany.72.a
 		custom_effect_tooltip = wtt_germany.72_tt
@@ -82,10 +82,10 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_germany.73.a
-		
-		
+
+
 	}
 }

@@ -7,11 +7,11 @@ news_event = {
 	title = lar_news.3.t
 	desc = lar_news.3.desc
 	picture = GFX_news_event_generic_sign_treaty3
-	
+
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = lar_news.3.a
 		trigger = {
@@ -46,11 +46,11 @@ news_event = {
 	title = lar_news.4.t
 	desc = lar_news.4.desc
 	picture = GFX_news_event_021
-	
+
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = lar_news.4.a
 		trigger = {
@@ -79,7 +79,7 @@ news_event = {
 	option = {
 		name = lar_news.4.d #France
 		trigger = {
-			
+
 			tag = FRA
 		}
 	}
@@ -102,15 +102,15 @@ news_event = {
 	title = lar_news.8.t
 	desc = lar_news.8.desc
 	picture = GFX_news_event_generic_parliament
-	
+
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = lar_news.8.a #royalists
-		}
-	}	
+	}
+}
 
 #news event - France - Communists force the issue
 news_event = {
@@ -118,11 +118,11 @@ news_event = {
 	title = lar_news.9.t
 	desc = lar_news.9.desc
 	picture = GFX_news_event_generic_rally2
-	
+
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = lar_news.9.a #unaligned
 		trigger = {
@@ -143,7 +143,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = lar_news.9.e #fascist 
+		name = lar_news.9.e #fascist
 		trigger = {
 			has_government = fascism
 
@@ -163,18 +163,18 @@ news_event = {
 	title = lar_news.21.t
 	desc = lar_news.21.desc
 	picture = GFX_news_event_sign_treaty2
-	
+
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = lar_news.21.a # Spain
 		trigger = {
 			original_tag = SPR
 		}
 	}
-	
+
 }
 
 

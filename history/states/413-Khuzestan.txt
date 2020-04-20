@@ -6,9 +6,9 @@ state={
 	resources={
 		oil=28 # was: 42
 	}
-	
+
 	state_category = rural
-	
+
 
 	history={
 		owner = PER
@@ -16,12 +16,12 @@ state={
 			infrastructure = 5
 		}
 		victory_points = {
-			7953 1 
+			7953 1
 		}
 		add_core_of = PER
 	}
 
 	provinces={
-		1922 5005 5089 7953 
+		1922 5005 5089 7953
 	}
 }

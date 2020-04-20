@@ -6,14 +6,14 @@ ROM_DD_HISTORICAL = {
 	for_countries = { ROM }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
 	prefix = "NMS "
-	fallback_name = "Distrugator %d"					
+	fallback_name = "Distrugator %d"
 
-	unique = {											
-		"Marasti" "Marasesti" "Regele Ferdinand" "Regina Maria" "Vifor" "Viscul" 
-		"Vice-Amiral Rosca" "Amiral Barbuneanu" "Contraamiral Sebastian" "Contraamiral Macellariu" "Zborul" "Pescarusul" "Lastunul" 
+	unique = {
+		"Marasti" "Marasesti" "Regele Ferdinand" "Regina Maria" "Vifor" "Viscul"
+		"Vice-Amiral Rosca" "Amiral Barbuneanu" "Contraamiral Sebastian" "Contraamiral Macellariu" "Zborul" "Pescarusul" "Lastunul"
 	}
 }
 
@@ -25,12 +25,12 @@ ROM_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
+
 	prefix = "NMS "
 	fallback_name = "Crucisator Lumina %d"
 
 	unique = {
-		"Elisabeta" "Timosoara" "Arad" "Oradea" "Baia Mare" "Sighetu Marmatiei" "Bistrita" "Reghin" "Pitesti" "Rosiori de Vede" 
+		"Elisabeta" "Timosoara" "Arad" "Oradea" "Baia Mare" "Sighetu Marmatiei" "Bistrita" "Reghin" "Pitesti" "Rosiori de Vede"
 	}
 }
 
@@ -42,12 +42,12 @@ ROM_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
+
 	prefix = "NMS "
 	fallback_name = "Crucisator Grea %d"
 
 	unique = {
-		"Elisabeta" "Timosoara" "Arad" "Oradea" "Baia Mare" "Sighetu Marmatiei" "Bistrita" "Reghin" "Pitesti" "Rosiori de Vede" 
+		"Elisabeta" "Timosoara" "Arad" "Oradea" "Baia Mare" "Sighetu Marmatiei" "Bistrita" "Reghin" "Pitesti" "Rosiori de Vede"
 	}
 }
 
@@ -60,12 +60,12 @@ ROM_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
+
 	prefix = "NMS "
-	fallback_name = "Vas de Razboi %d"		
+	fallback_name = "Vas de Razboi %d"
 
 	unique = {
-		"Constanta" "Tirgu Mures" "Cluj Napoca" 
+		"Constanta" "Tirgu Mures" "Cluj Napoca"
 	}
 }
 
@@ -77,12 +77,12 @@ ROM_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	
+
 	prefix = "NMS "
-	fallback_name = "Crucisator Lupta %d"		
+	fallback_name = "Crucisator Lupta %d"
 
 	unique = {
-		"Constanta" "Tirgu Mures" "Cluj Napoca" 
+		"Constanta" "Tirgu Mures" "Cluj Napoca"
 	}
 }
 
@@ -94,12 +94,12 @@ ROM_CV_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-	
+
 	prefix = "NMS "
-	fallback_name = "Portavion %d"	
+	fallback_name = "Portavion %d"
 
 	unique = {
-		"Romania" "Bucuresti" "Banat" "Constanta" "Mangalia" "Sulina" "Navodari" 
+		"Romania" "Bucuresti" "Banat" "Constanta" "Mangalia" "Sulina" "Navodari"
 	}
 }
 
@@ -111,12 +111,12 @@ ROM_SS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
+
 	prefix = "NMS "
 	fallback_name = "Submarin %d"
-	
+
 	unique = {
-		"Delfinul" "Rechinul" "Marsuinul" "Baracuda" "Narval" "Nautilus" "Somonul" "Peste-Spada" 
+		"Delfinul" "Rechinul" "Marsuinul" "Baracuda" "Narval" "Nautilus" "Somonul" "Peste-Spada"
 	}
 }
 
@@ -130,8 +130,8 @@ ROM_REGIONS = {
 
 	prefix = "NMS "
 	unique = {
-		"Bucuresti" "Muntenia" "Oltenia" "Banat" "Constanta" "Transilvania" "Moldova" "Dobruja" "Crisana" "Maramures" "Basarabia" "Bukovina" 
-		"Herta" "Budjak" 
+		"Bucuresti" "Muntenia" "Oltenia" "Banat" "Constanta" "Transilvania" "Moldova" "Dobruja" "Crisana" "Maramures" "Basarabia" "Bukovina"
+		"Herta" "Budjak"
 	}
 }
 
@@ -145,10 +145,10 @@ ROM_CITIES = {
 
 	prefix = "NMS "
 	unique = {
-		"Bucuresti" "Cluj" "Constanta" "Puebla" "Iasi" "Craiova" "Brasov" "Galati" "Ploiesti" "Oradea" "Arad" "Pitesti" "Brăila" "Sibiu" 
-		"Bacău" "Târgu Mures" "Baia Mare" "Buzău" "Botosani" "Satu Mare" "Râmnicu Vâlcea" "Piatra Neamt" "Piatra Neamt" "Târgu Jiu" "Târgoviste" "Focsani" "Bistrita" 
-		"Tulcea" "Resita" "Slatina" "Călărasi" "Alba Iulia" "Giurgiu" "Deva" "Zalău" "Sfântu Gheorghe" "Vaslui" "Slobozia" "Alexandria" 
-		"Miercurea Ciuc" 
+		"Bucuresti" "Cluj" "Constanta" "Puebla" "Iasi" "Craiova" "Brasov" "Galati" "Ploiesti" "Oradea" "Arad" "Pitesti" "Brăila" "Sibiu"
+		"Bacău" "Târgu Mures" "Baia Mare" "Buzău" "Botosani" "Satu Mare" "Râmnicu Vâlcea" "Piatra Neamt" "Piatra Neamt" "Târgu Jiu" "Târgoviste" "Focsani" "Bistrita"
+		"Tulcea" "Resita" "Slatina" "Călărasi" "Alba Iulia" "Giurgiu" "Deva" "Zalău" "Sfântu Gheorghe" "Vaslui" "Slobozia" "Alexandria"
+		"Miercurea Ciuc"
 	}
 }
 

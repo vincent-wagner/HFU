@@ -1,16 +1,16 @@
 focus_tree = {
 	id = polish_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = POL
 			has_dlc = "Poland: United and Ready"
 		}
 	}
-	
+
 	default = no
 
 
@@ -39,7 +39,7 @@ focus_tree = {
 				category = industry
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = POL_expansion_of_new_towns
@@ -71,7 +71,7 @@ focus_tree = {
 			#	Adds a civilian Factory (Warsaw)
 			random_owned_controlled_state = {
 				prioritize = { 10 }
-				limit = {									
+				limit = {
 					free_building_slots = {
 						building = industrial_complex
 						size > 0
@@ -123,7 +123,7 @@ focus_tree = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
-				}	
+				}
 			}
 			random_state = {
 				limit = { has_state_flag = POL_fill_the_railways_gaps_2 }
@@ -131,7 +131,7 @@ focus_tree = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
-				}	
+				}
 			}
 		}
 
@@ -193,7 +193,7 @@ focus_tree = {
 				set_state_flag = POL_fill_the_railways_gaps_2
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = POL_start_central_industrial_region
@@ -235,11 +235,11 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = POL_start_central_industrial_region_1
-			}			
+			}
 		}
 
 	}
-	
+
 	focus = {
 		id = POL_expand_central_industrial_region
 		icon = GFX_goal_generic_build_tank
@@ -304,7 +304,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = POL_national_defence_fund
 		icon = GFX_goal_generic_defence
@@ -319,7 +319,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		
+
 		complete_tooltip = {
 			random_state = {
 				limit = { has_state_flag = POL_national_defence_fund_1 }
@@ -394,7 +394,7 @@ focus_tree = {
 				set_state_flag = POL_warsaw_main_railway_station_1
 			}
 		}
-			#	Increase Infrastructure in Warsaw
+		#	Increase Infrastructure in Warsaw
 	}
 
 	focus = {
@@ -484,8 +484,8 @@ focus_tree = {
 				}
 				set_state_flag = POL_develop_upper_silesia_1
 			}
-		}		
-	}		
+		}
+	}
 
 	focus = {
 		id = POL_additional_research_slot1
@@ -529,7 +529,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = computing_tech
-			}		
+			}
 		}
 	}
 
@@ -593,17 +593,17 @@ focus_tree = {
 				category = nuclear
 			}
 		}
-	}		
+	}
 
 	focus = {
 		id = POL_additional_research_slot2
 		icon = GFX_focus_research
 		prerequisite = { focus = POL_atomic_physics_institute }
-	
+
 		available = {
 			num_of_factories > 50
 		}
-		
+
 		available_if_capitulated = yes
 
 		x = 0
@@ -627,7 +627,7 @@ focus_tree = {
 	focus = {
 		id = POL_prepare_for_the_next_war
 		icon = GFX_goal_generic_build_tank
-		
+
 		x = 10
 		y = 0
 		cost = 10
@@ -653,7 +653,7 @@ focus_tree = {
 		id = POL_the_defence_of_poland
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = POL_prepare_for_the_next_war }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = POL_prepare_for_the_next_war
@@ -680,7 +680,7 @@ focus_tree = {
 		id = POL_romanian_bridgehead_strategy
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = POL_the_defence_of_poland }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = POL_the_defence_of_poland
@@ -712,7 +712,7 @@ focus_tree = {
 			762 = { NOT = { is_owned_by = ROOT } }
 			762 = { NOT = { is_controlled_by = ROOT } }
 		}
-		
+
 		x = 1
 		y = 1
 		relative_position_id = POL_romanian_bridgehead_strategy
@@ -741,12 +741,12 @@ focus_tree = {
 			#Adds three Land Forts to Katowice province
 		}
 	}
-	
+
 	focus = {
 		id = POL_hel_fortified_area
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = POL_romanian_bridgehead_strategy }
-		
+
 		bypass = {
 			85 = { NOT = { is_owned_by = ROOT } }
 			85 = { NOT = { is_controlled_by = ROOT } }
@@ -808,7 +808,7 @@ focus_tree = {
 		id = POL_standardisation_of_equipment
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = POL_prepare_for_the_next_war }
-		
+
 		x = -1
 		y = 1
 		relative_position_id = POL_prepare_for_the_next_war
@@ -835,7 +835,7 @@ focus_tree = {
 		id = POL_modernising_the_cavalry
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = POL_standardisation_of_equipment }
-		
+
 		x = -1
 		y = 1
 		relative_position_id = POL_standardisation_of_equipment
@@ -862,7 +862,7 @@ focus_tree = {
 		id = POL_study_foreign_tanks
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = POL_modernising_the_cavalry }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = POL_modernising_the_cavalry
@@ -889,7 +889,7 @@ focus_tree = {
 		id = POL_cruiser_tank_experiments
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = POL_study_foreign_tanks }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = POL_study_foreign_tanks
@@ -916,7 +916,7 @@ focus_tree = {
 		id = POL_artillery_modernisation
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = POL_hel_fortified_area focus = POL_silesia_fortified_area }
-		
+
 		x = 2
 		y = 1
 		relative_position_id = POL_hel_fortified_area
@@ -943,7 +943,7 @@ focus_tree = {
 		id = POL_anti_tank_guns
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = POL_hel_fortified_area focus = POL_silesia_fortified_area }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = POL_hel_fortified_area
@@ -970,7 +970,7 @@ focus_tree = {
 		id = POL_army_modernisation
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = POL_artillery_modernisation focus = POL_anti_tank_guns }
-		
+
 		x = -1
 		y = 1
 		relative_position_id = POL_artillery_modernisation
@@ -1002,7 +1002,7 @@ focus_tree = {
 	focus = {
 		id = POL_air_base_expansion
 		icon = GFX_goal_generic_air_production
-		
+
 		x = 16
 		y = 0
 		cost = 10
@@ -1041,7 +1041,7 @@ focus_tree = {
 				set_state_flag = POL_air_base_expansion_1
 			}
 			#Add 2 Airbases in Warsaw
-			
+
 		}
 	}
 
@@ -1049,7 +1049,7 @@ focus_tree = {
 		id = POL_fighter_modernisation
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = POL_air_base_expansion }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = POL_air_base_expansion
@@ -1078,7 +1078,7 @@ focus_tree = {
 		id = POL_air_innovations
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = POL_air_base_expansion }
-		
+
 		x = -1
 		y = 1
 		relative_position_id = POL_air_base_expansion
@@ -1105,7 +1105,7 @@ focus_tree = {
 		id = POL_heavy_fighter_concept
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = POL_air_innovations focus = POL_fighter_modernisation }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = POL_air_innovations
@@ -1114,14 +1114,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_heavy_fighter_concept
 				bonus = 1.0
-				uses = 1				
+				uses = 1
 				category = cat_heavy_fighter
 			}
 			#1x 50% research bonus to Heavy Fighters
@@ -1132,7 +1132,7 @@ focus_tree = {
 		id = POL_naval_bomber_experiments
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = POL_air_innovations }
-		
+
 		x = -1
 		y = 1
 		relative_position_id = POL_air_innovations
@@ -1148,7 +1148,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = POL_naval_bomber_experiments
 				bonus = 1.0
-				uses = 1				
+				uses = 1
 				category = naval_bomber
 			}
 			#1x50% research bonus to NAV
@@ -1160,7 +1160,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = POL_heavy_fighter_concept focus = POL_air_innovations }
 		mutually_exclusive = { focus = POL_light_bomber_focus }
-		
+
 		x = -1
 		y = 1
 		relative_position_id = POL_heavy_fighter_concept
@@ -1176,7 +1176,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = POL_medium_bomber_focus
 				bonus = 1.0
-				uses = 1				
+				uses = 1
 				category = tactical_bomber
 			}
 			#1 x 50% research bonus to Tactical Bomber models
@@ -1188,7 +1188,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = POL_heavy_fighter_concept focus = POL_fighter_modernisation }
 		mutually_exclusive = { focus = POL_medium_bomber_focus }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = POL_heavy_fighter_concept
@@ -1204,7 +1204,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = POL_light_bomber_focus
 				bonus = 1.0
-				uses = 1				
+				uses = 1
 				category = cas_bomber
 			}
 			#1 x 50% research bonus to CAS
@@ -1215,7 +1215,7 @@ focus_tree = {
 		id = POL_air_modernisations_programme
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = POL_light_bomber_focus focus = POL_medium_bomber_focus }
-		
+
 		x = -1
 		y = 1
 		relative_position_id = POL_light_bomber_focus
@@ -1235,7 +1235,7 @@ focus_tree = {
 				category = air_doctrine
 			}
 			#1x 50% reduction in an air doctrine research
-			
+
 		}
 	}
 
@@ -1243,7 +1243,7 @@ focus_tree = {
 		id = POL_rocket_development
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = POL_air_modernisations_programme }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = POL_air_modernisations_programme
@@ -1276,7 +1276,7 @@ focus_tree = {
 	focus = {
 		id = POL_develop_polish_ship_building
 		icon = GFX_goal_generic_construct_naval_dockyard
-		
+
 		x = 21
 		y = 0
 		cost = 10
@@ -1286,7 +1286,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		
+
 		complete_tooltip = {
 			random_state = {
 				limit = { has_state_flag = POL_develop_polish_ship_building_1 }
@@ -1315,7 +1315,7 @@ focus_tree = {
 				}
 				set_state_flag = POL_develop_polish_ship_building_1
 			}
-			#Add 3 Dockyards at Gdansk			
+			#Add 3 Dockyards at Gdansk
 		}
 	}
 
@@ -1323,7 +1323,7 @@ focus_tree = {
 		id = POL_study_foreign_built_ships
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = POL_develop_polish_ship_building }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = POL_develop_polish_ship_building
@@ -1350,7 +1350,7 @@ focus_tree = {
 		id = POL_a_cruiser_navy
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = POL_study_foreign_built_ships }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = POL_study_foreign_built_ships
@@ -1377,7 +1377,7 @@ focus_tree = {
 		id = POL_import_submarine_technology
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = POL_develop_polish_ship_building }
-		
+
 		x = -1
 		y = 1
 		relative_position_id = POL_develop_polish_ship_building
@@ -1430,7 +1430,7 @@ focus_tree = {
 		id = POL_the_twin_threats
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = POL_import_submarine_technology focus = POL_study_foreign_built_ships }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = POL_import_submarine_technology
@@ -1485,7 +1485,7 @@ focus_tree = {
 			#1x50% research bonus to destroyers & 1 x50% bonus to Submarines
 		}
 	}
-	
+
 	focus = {
 		id = POL_strike_force
 		icon = GFX_goal_generic_occupy_states_coastal
@@ -1523,7 +1523,7 @@ focus_tree = {
 		id = POL_baltic_navy
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = POL_strike_force focus = POL_coastal_defense }
-		
+
 		x = 1
 		y = 1
 		relative_position_id = POL_strike_force
@@ -1554,7 +1554,7 @@ focus_tree = {
 	focus = {
 		id = POL_strengthen_the_polish_state
 		icon = GFX_goal_generic_demand_territory
-		
+
 		x = 29
 		y = 0
 		cost = 10
@@ -1575,7 +1575,7 @@ focus_tree = {
 		id = POL_defensive_focus
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = POL_strengthen_the_polish_state }
-		
+
 		x = 2
 		y = 1
 		relative_position_id = POL_strengthen_the_polish_state
@@ -1597,7 +1597,7 @@ focus_tree = {
 		id = POL_polish_militarism
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = POL_strengthen_the_polish_state }
-		
+
 		x = -2
 		y = 1
 		relative_position_id = POL_strengthen_the_polish_state
@@ -1619,7 +1619,7 @@ focus_tree = {
 		id = POL_polish_revanchism
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = POL_polish_militarism }
-		
+
 		x = -2
 		y = 1
 		relative_position_id = POL_polish_militarism
@@ -1644,7 +1644,7 @@ focus_tree = {
 		mutually_exclusive = { focus = POL_internationalism }
 
 		available = { is_ai = no }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = POL_polish_militarism
@@ -1760,7 +1760,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_opinion_modifier = { target = LAT modifier = POL_the_baltic_alliance }
-			LAT = { 
+			LAT = {
 				add_opinion_modifier = { target = ROOT modifier = POL_the_baltic_alliance }
 			}
 			hidden_effect = {
@@ -1918,7 +1918,7 @@ focus_tree = {
 			country_exists = GER
 			GER = { has_government = fascism }
 		}
-		
+
 		x = 0
 		y = 1
 		relative_position_id = POL_go_right
@@ -2052,7 +2052,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		
+
 		completion_reward = {
 			set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
@@ -2108,4 +2108,4 @@ focus_tree = {
 		}
 	}
 
-}		
+}

@@ -1,24 +1,24 @@
 ideas = {
 
 	country = {
-		
+
 		AST_the_commonwealth = {
-		
-		picture = stiff_upper_lip
-		
-		allowed = {
+
+			picture = stiff_upper_lip
+
+			allowed = {
 				original_tag = AST
 			}
-		
+
 			allowed_civil_war = {
 				always = no
 			}
-		
-		removal_cost = -1		
-		
+
+			removal_cost = -1
+
 		}
-		
-	
+
+
 		AST_great_depression_1 = {
 
 			allowed = {
@@ -32,7 +32,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = great_depression
-			
+
 			modifier = {
 				consumer_goods_factor = 0.20
 				industrial_capacity_factory = -0.15
@@ -40,7 +40,7 @@ ideas = {
 				stability_factor = -0.10
 			}
 		}
-		
+
 		AST_great_depression_2 = {
 
 			allowed = {
@@ -54,14 +54,14 @@ ideas = {
 			removal_cost = -1
 
 			picture = great_depression
-			
+
 			modifier = {
 				consumer_goods_factor = 0.15
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
 		}
-		
+
 		AST_great_depression_3 = {
 
 			allowed = {
@@ -75,7 +75,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = great_depression
-			
+
 			modifier = {
 				consumer_goods_factor = 0.05
 				industrial_capacity_factory = -0.05
@@ -96,8 +96,8 @@ ideas = {
 			removal_cost = -1
 
 			picture = ast_all_in
-			
-			modifier = {				
+
+			modifier = {
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
@@ -117,7 +117,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-			
+
 			modifier = {
 				consumer_goods_factor = -0.05
 				industrial_capacity_factory = 0.07
@@ -139,7 +139,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-			
+
 			modifier = {
 				consumer_goods_factor = -0.1
 				industrial_capacity_factory = 0.15
@@ -161,7 +161,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_manpower_bonus
-			
+
 			modifier = {
 				conscription_factor = 0.15
 			}
@@ -180,10 +180,10 @@ ideas = {
 			removal_cost = -1
 
 			picture = ast_naval_auxiliary_patrol
-			
+
 			modifier = {
 				production_speed_coastal_bunker_factor = 0.5
-				army_core_defence_factor = 0.03				
+				army_core_defence_factor = 0.03
 			}
 		}
 
@@ -200,9 +200,9 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_production_bonus
-			
+
 			modifier = {
-				conversion_cost_civ_to_mil_factor= -0.2			
+				conversion_cost_civ_to_mil_factor= -0.2
 			}
 		}
 
@@ -219,7 +219,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = ast_volunteer_defence_corps
-			
+
 			modifier = {
 				drift_defence_factor = 0.25
 				foreign_subversive_activites = -0.50
@@ -240,7 +240,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_volunteer_expedition_bonus
-			
+
 			rule = {
 				can_send_volunteers = yes
 			}
@@ -274,7 +274,7 @@ ideas = {
 		}
 
 		AST_empire_air_training_scheme = {
-			
+
 			allowed = {
 				always = no
 			}
@@ -344,40 +344,40 @@ ideas = {
 			}
 		}
 	}
-		
+
 
 	political_advisor = {
 
 		AST_alexander_hore_ruthven = {
 
 			picture = generic_political_advisor_europe_1
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			traits = { quartermaster_general }
 		}
 
 		AST_robert_g_menzies = {
 
 			picture = generic_political_advisor_europe_2
-				
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			traits = { backroom_backstabber }
 		}
 
 		AST_herbert_v_evatt = {
 
 			picture = generic_political_advisor_europe_2
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			cost = 100
 
 			traits = { silent_workhorse }
@@ -393,223 +393,223 @@ ideas = {
 		AST_jack_beasley = {
 
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
-			
+
 			traits = { war_industrialist }
 		}
-		
+
 
 		AST_frank_forde = {
 
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
-			
+
 			traits = { compassionate_gentleman }
 		}
 
-		AST_arthur_calwell = { 
-		picture = generic_political_advisor_europe_3
-			
+		AST_arthur_calwell = {
+			picture = generic_political_advisor_europe_3
+
 			allowed = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
-			
-		traits = { captain_of_industry }
+
+			traits = { captain_of_industry }
 		}
 
 
 
 	}
 
-theorist = {
+	theorist = {
 
-	AST_norman_makin = {
-		ledger = navy
-				
-		picture = generic_political_advisor_europe_3
+		AST_norman_makin = {
+			ledger = navy
 
-		allowed = {
-			original_tag = AST
+			picture = generic_political_advisor_europe_3
+
+			allowed = {
+				original_tag = AST
+			}
+
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+
+			traits = { naval_theorist }
 		}
-		
-		research_bonus = {
-			naval_doctrine = 0.10
+
+		AST_james_fairbairn = {
+			ledger = army
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = AST
+			}
+
+			research_bonus = {
+				air_doctrine = 0.10
+				land_doctrine = 0.10
+			}
+
+			traits = { military_theorist }
 		}
-		
-		traits = { naval_theorist }
+
+
 	}
 
-	AST_james_fairbairn = {
-		ledger = army
-				
-		picture = generic_political_advisor_europe_2
-			
-		allowed = {
-			original_tag = AST
-		}
-		
-		research_bonus = {
-			air_doctrine = 0.10
-			land_doctrine = 0.10
-		}
-		
-		traits = { military_theorist }
-	}
+	high_command = {
 
-	
-}
+		AST_arthur_allen = {
+			ledger = army
 
-high_command = {
+			picture = generic_army_europe_2
 
-	AST_arthur_allen = {
-		ledger = army
+			allowed = {
+				original_tag = AST
+			}
 
-		picture = generic_army_europe_2
-		
-		allowed = {
-			original_tag = AST
-		}
-		
-		traits = { army_infantry_3 }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+			traits = { army_infantry_3 }
 
-	AST_clive_caldwell = {
-		ledger = air
-
-		picture = generic_air_europe_1
-		
-		allowed = {
-			original_tag = AST
-		}
-		
-		traits = { air_air_superiority_3 }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	AST_john_collins = {
-		ledger = navy
-
-		picture = generic_navy_europe_1
-		
-		allowed = {
-			original_tag = AST
-		}
-		
-		traits = { navy_capital_ship_2 }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	AST_edmund_herring = {
-		ledger = army
-
-		picture = generic_army_europe_1
-		
-		allowed = {
-			original_tag = AST
-		}
-		
-		traits = { army_commando_2 }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	AST_arthur_drakeford = {
-		ledger = air
-
-		picture = generic_army_europe_4
-			
-		allowed = {
-			original_tag = AST
-			has_dlc = "Together for Victory"
-		}
-			
-		traits = {air_air_combat_training_2 }
+			ai_will_do = {
+				factor = 1
+			}
 		}
 
-	AST_cederic_hicks = {
-		ledger = army
+		AST_clive_caldwell = {
+			ledger = air
 
-		picture = generic_army_europe_4
-		
-		allowed = {
-			original_tag = AST
-			has_dlc = "Together for Victory"
+			picture = generic_air_europe_1
+
+			allowed = {
+				original_tag = AST
+			}
+
+			traits = { air_air_superiority_3 }
+
+			ai_will_do = {
+				factor = 1
+			}
 		}
-		cost = 100
-		available = {
+
+		AST_john_collins = {
+			ledger = navy
+
+			picture = generic_navy_europe_1
+
+			allowed = {
+				original_tag = AST
+			}
+
+			traits = { navy_capital_ship_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		AST_edmund_herring = {
+			ledger = army
+
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = AST
+			}
+
+			traits = { army_commando_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		AST_arthur_drakeford = {
+			ledger = air
+
+			picture = generic_army_europe_4
+
+			allowed = {
+				original_tag = AST
+				has_dlc = "Together for Victory"
+			}
+
+			traits = {air_air_combat_training_2 }
+		}
+
+		AST_cederic_hicks = {
+			ledger = army
+
+			picture = generic_army_europe_4
+
+			allowed = {
+				original_tag = AST
+				has_dlc = "Together for Victory"
+			}
+			cost = 100
+			available = {
 				has_completed_focus = AST_australian_army_catering_corps
 			}
 
-		traits = { army_armored_2}
-		
-		ai_will_do = {
-			factor = 1
+			traits = { army_armored_2}
+
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
-}
 	# MILITARY
 	army_chief = {
 
 		AST_john_lavarack = {
-			
+
 			picture = generic_army_europe_5
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			traits = { army_chief_defensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		AST_sydney_rowell = {
-			
+
 			picture = generic_army_europe_3
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			traits = { army_chief_organizational_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		AST_vernon_sturdee = {
-			
+
 			picture = generic_army_europe_5
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			traits = { army_chief_offensive_1 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -617,33 +617,33 @@ high_command = {
 	}
 
 	air_chief = {
-		
+
 
 		AST_richard_williams = {
-			
+
 			picture = generic_air_europe_1
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			traits = { air_chief_safety_3 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		AST_charles_burnett = {
-			
+
 			picture = generic_air_europe_3
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			traits = { air_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -654,30 +654,30 @@ high_command = {
 	navy_chief = {
 
 		AST_ragnar_colvin = {
-			
+
 			picture = generic_navy_europe_2
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			traits = { navy_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		AST_jack_crace = {
-			
+
 			picture = generic_navy_europe_1
-			
+
 			allowed = {
 				original_tag = AST
 			}
-			
+
 			traits = { navy_chief_decisive_battle_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -687,143 +687,143 @@ high_command = {
 
 	industrial_concern = {
 
-		
+
 
 		bhp_steel = {
 
 			picture = generic_industrial_concern_1
-			
+
 			allowed = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
-			
 
-			
+
+
 			research_bonus = {
 				industry = 0.15
 			}
-			
+
 			traits = { industrial_concern }
-			
+
 			modifier = {
 			}
 		}
 
 		AST_jack_piddington = {
-					
+
 			picture = generic_political_advisor_europe_2
-				
+
 			allowed = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
-			
+
 			research_bonus = {
 				electronics = 0.15
 			}
 
 			cost = 75
-			
+
 			traits = { electronics_developer }
 		}
 
 	}
 
-	
+
 	naval_manufacturer = {
-		
+
 		designer = yes
-		
+
 		Cockatoo_doe = {
-			
+
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
-			cost = 100			
+			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			
+
 			traits = { convoy_escort_naval_manufacturer }
 
 		}
-		
+
 		evans_deakin_co = {
-			
+
 			picture = generic_naval_manufacturer_1
 
 			allowed = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
-			
 
-			
+
+
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-			
+
 			traits = { pacific_fleet_naval_manufacturer }
 		}
-		
-		
+
+
 	}
 
 	materiel_manufacturer = {
-			
+
 		designer = yes
-		
+
 		lysaghts_works = {
-			
+
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
-			
 
-			
+
+
 			research_bonus = {
 				support_tech = 0.10
 			}
-			
+
 			traits = { support_equipment_manufacturer }
-			
-			
-		}	
+
+
+		}
 
 		lithgow_saf = {
 
 			picture = generic_infantry_equipment_manufacturer_1
-			
+
 			allowed = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
-			
 
-			
+
+
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
+
 			traits = { infantry_equipment_manufacturer }
-			
+
 		}
-		
+
 	}
 
 	aircraft_manufacturer = {
-			
+
 		designer = yes
-		
+
 		AST_commonwealth_aircraft_corporation = {
-			
+
 			picture = generic_air_bonus
 
 			cost = 50
@@ -837,11 +837,11 @@ high_command = {
 				has_completed_focus = AST_commonwealth_aircraft_corporation
 				is_subject_of = ENG
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.15
-			}			
-			
+			}
+
 			equipment_bonus = {
 				fighter_equipment = {
 					build_cost_ic = -0.05
@@ -865,7 +865,7 @@ high_command = {
 					air_ground_attack = 0.05
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}

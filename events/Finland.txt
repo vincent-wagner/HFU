@@ -10,9 +10,9 @@ country_event = {
 	title = finland.1.t
 	desc = finland.1.d
 	picture = GFX_report_event_soviet_tanks_snow
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Refuse
 		name = finland.1.b
 		ai_chance = { factor = 75 }
@@ -35,25 +35,25 @@ country_event = {
 	title = finland.5.t
 	desc = finland.5.d
 	picture = GFX_report_event_swedish_soldier
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = finland.5.a
-		if = { 
-		limit = { tag = FIN }
-		add_manpower = 8402
+		if = {
+			limit = { tag = FIN }
+			add_manpower = 8402
 			SWE = {
 				add_manpower = -8402
-					send_equipment = {
-						target = FIN
-						type = infantry_equipment
-						amount = 500
+				send_equipment = {
+					target = FIN
+					type = infantry_equipment
+					amount = 500
 				}
-					send_equipment = {
-						target = FIN
-						type = artillery_equipment
-						amount = 250
+				send_equipment = {
+					target = FIN
+					type = artillery_equipment
+					amount = 250
 				}
 			}
 		}
@@ -68,7 +68,7 @@ country_event = {
 	title = finland.8.t
 	desc = finland.8.d
 	picture = GFX_report_event_finnish_soldiers_snow
-	
+
 	is_triggered_only = yes
 
 	#Accept surrender
@@ -91,13 +91,13 @@ country_event = {
 	title = finland.21.t
 	desc = finland.21.d
 	picture = GFX_report_event_finnish_soldiers_snow
-	
+
 	is_triggered_only = yes
 
 
 	option = {
-			name = finland.21.a
-	
+		name = finland.21.a
+
 	}
 
 }

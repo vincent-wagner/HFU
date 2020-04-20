@@ -3,23 +3,23 @@
 #
 # format is:
 # rule_token = {
-#	name = "TEXT_KEY_FOR_NAME"
-#	required_dlc = "Name of the Required DLC"
-#	desc = "TEXT_KEY_FOR_LONG_DESC"
-#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
-#	icon = gfx_option_token							# Optional icon
-#	option = {										# Unless other specified, the first option is the default option
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
-#													# If not specified, this is set to yes for default options and no for all other options.
-#	}
-#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		...
-#	}
-# }
+	#	name = "TEXT_KEY_FOR_NAME"
+	#	required_dlc = "Name of the Required DLC"
+	#	desc = "TEXT_KEY_FOR_LONG_DESC"
+	#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups
+	#	icon = gfx_option_token							# Optional icon
+	#	option = {										# Unless other specified, the first option is the default option
+		#		name = option_token
+		#		text = "TEXT_KEY_FOR_OPTION_NAME"
+		#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
+		#													# If not specified, this is set to yes for default options and no for all other options.
+		#	}
+	#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
+		#		name = option_token
+		#		text = "TEXT_KEY_FOR_OPTION_NAME"
+		#		...
+		#	}
+	# }
 
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
@@ -278,11 +278,11 @@ allow_take_over_faction = {
 	}
 }
 
- ##   ##  #   # ### ###  ###      ##   ##  ### ###  ##  #  #  ## 
-#  # #  # #   # #   #  #  #      #  # #  #  #   #  #  # ## # #   
-#    #  #  # #  ##  ###   #      #### #     #   #  #  # # ##  #  
-#  # #  #  # #  #   #  #  #      #  # #  #  #   #  #  # #  #   # 
- ##   ##    #   ### #  #  #      #  #  ##   #  ###  ##  #  # ##  
+##   ##  #   # ### ###  ###      ##   ##  ### ###  ##  #  #  ##
+#  # #  # #   # #   #  #  #      #  # #  #  #   #  #  # ## # #
+#    #  #  # #  ##  ###   #      #### #     #   #  #  # # ##  #
+#  # #  #  # #  #   #  #  #      #  # #  #  #   #  #  # #  #   #
+##   ##    #   ### #  #  #      #  #  ##   #  ###  ##  #  # ##
 
 allow_coups = {
 	name = "RULE_ALLOW_COUPS"
@@ -333,11 +333,11 @@ allow_party_boosting = {
 	}
 }
 
-###  ### #   # ###  ## ###  ##  #  #     ### ### #   # ###  #    ##  ### ###  ## 
-#  #  #  #   #  #  #    #  #  # ## #      #  #   ## ## #  # #   #  #  #  #   #   
-#  #  #   # #   #   #   #  #  # # ##      #  ##  # # # ###  #   ####  #  ##   #  
-#  #  #   # #   #    #  #  #  # #  #      #  #   #   # #    #   #  #  #  #     # 
-###  ###   #   ### ##  ###  ##  #  #      #  ### #   # #    ### #  #  #  ### ##  
+###  ### #   # ###  ## ###  ##  #  #     ### ### #   # ###  #    ##  ### ###  ##
+#  #  #  #   #  #  #    #  #  # ## #      #  #   ## ## #  # #   #  #  #  #   #
+#  #  #   # #   #   #   #  #  # # ##      #  ##  # # # ###  #   ####  #  ##   #
+#  #  #   # #   #    #  #  #  # #  #      #  #   #   # #    #   #  #  #  #     #
+###  ###   #   ### ##  ###  ##  #  #      #  ### #   # #    ### #  #  #  ### ##
 
 
 allow_paratroopers = {
@@ -357,11 +357,11 @@ allow_paratroopers = {
 }
 
 
- ##   ##  #  #  ## ### ###  #  #  ##  ### ###  ##  #  # 
-#  # #  # ## # #    #  #  # #  # #  #  #   #  #  # ## # 
-#    #  # # ##  #   #  ###  #  # #     #   #  #  # # ## 
-#  # #  # #  #   #  #  #  # #  # #  #  #   #  #  # #  # 
- ##   ##  #  # ##   #  #  #  ##   ##   #  ###  ##  #  # 
+##   ##  #  #  ## ### ###  #  #  ##  ### ###  ##  #  #
+#  # #  # ## # #    #  #  # #  # #  #  #   #  #  # ## #
+#    #  # # ##  #   #  ###  #  # #     #   #  #  # # ##
+#  # #  # #  #   #  #  #  # #  # #  #  #   #  #  # #  #
+##   ##  #  # ##   #  #  #  ##   ##   #  ###  ##  #  #
 
 maximum_fort_level = {
 	name = "RULE_MAXIMUM_FORT_LEVEL"
@@ -419,59 +419,59 @@ maximum_fort_level = {
 	}
 }
 
-###  ###  ## ###  ##  ###   ##  #  # 
-#  # #   #   #   #  # #  # #  # #  # 
-###  ##   #  ##  #### ###  #    #### 
-#  # #     # #   #  # #  # #  # #  # 
-#  # ### ##  ### #  # #  #  ##  #  # 
+###  ###  ## ###  ##  ###   ##  #  #
+#  # #   #   #   #  # #  # #  # #  #
+###  ##   #  ##  #### ###  #    ####
+#  # #     # #   #  # #  # #  # #  #
+#  # ### ##  ### #  # #  #  ##  #  #
 
 #research_ahead_of_time = {
-#	name = "RULE_RESEARCH_AOT"
-#	group = "RULE_GROUP_RESEARCH"
-#	default = {
-#		name = FREE
-#		text = "RULE_OPTION_FREE"
-#		desc = "RULE_RESEARCH_AOT_FREE_DESC"
-#	}
-#	option = {
-#		name = THREE_YEARS
-#		text = "RULE_OPTION_THREE_YEARS"
-#		desc = "RULE_RESEARCH_AOT_THREE_YEARS_DESC"
-#	}
-#	option = {
-#		name = TWO_YEARS
-#		text = "RULE_OPTION_TWO_YEARS"
-#		desc = "RULE_RESEARCH_AOT_TWO_YEARS_DESC"
-#	}
-#	option = {
-#		name = ONE_YEARS
-#		text = "RULE_OPTION_ONE_YEARS"
-#		desc = "RULE_RESEARCH_AOT_ONE_YEARS_DESC"
-#	}
-#	option = {
-#		name = BLOCKED
-#		text = "RULE_OPTION_BLOCKED"
-#		desc = "RULE_RESEARCH_AOT_BLOCKED_DESC"
-#	}
-#}
+	#	name = "RULE_RESEARCH_AOT"
+	#	group = "RULE_GROUP_RESEARCH"
+	#	default = {
+		#		name = FREE
+		#		text = "RULE_OPTION_FREE"
+		#		desc = "RULE_RESEARCH_AOT_FREE_DESC"
+		#	}
+	#	option = {
+		#		name = THREE_YEARS
+		#		text = "RULE_OPTION_THREE_YEARS"
+		#		desc = "RULE_RESEARCH_AOT_THREE_YEARS_DESC"
+		#	}
+	#	option = {
+		#		name = TWO_YEARS
+		#		text = "RULE_OPTION_TWO_YEARS"
+		#		desc = "RULE_RESEARCH_AOT_TWO_YEARS_DESC"
+		#	}
+	#	option = {
+		#		name = ONE_YEARS
+		#		text = "RULE_OPTION_ONE_YEARS"
+		#		desc = "RULE_RESEARCH_AOT_ONE_YEARS_DESC"
+		#	}
+	#	option = {
+		#		name = BLOCKED
+		#		text = "RULE_OPTION_BLOCKED"
+		#		desc = "RULE_RESEARCH_AOT_BLOCKED_DESC"
+		#	}
+	#}
 
-#Looks interesting so im not deleting it 
+#Looks interesting so im not deleting it
 #-Milky
 
- ##  ###     ###  ### #  #  ##  #   # ###  ##  ###  
-#  #  #      #  # #   #  # #  # #   #  #  #  # #  # 
-####  #      ###  ##  #### ####  # #   #  #  # ###  
-#  #  #      #  # #   #  # #  #  # #   #  #  # #  # 
-#  # ###     ###  ### #  # #  #   #   ###  ##  #  # 
+##  ###     ###  ### #  #  ##  #   # ###  ##  ###
+#  #  #      #  # #   #  # #  # #   #  #  #  # #  #
+####  #      ###  ##  #### ####  # #   #  #  # ###
+#  #  #      #  # #   #  # #  #  # #   #  #  # #  #
+#  # ###     ###  ### #  # #  #   #   ###  ##  #  #
 
- ##   ##  #   # ###      ## ### ### #  # ###  
-#    #  # ## ## #       #   #    #  #  # #  # 
-# ## #### # # # ##       #  ##   #  #  # ###  
-#  # #  # #   # #         # #    #  #  # #    
- ##  #  # #   # ###     ##  ###  #   ##  #   
+##   ##  #   # ###      ## ### ### #  # ###
+#    #  # ## ## #       #   #    #  #  # #  #
+# ## #### # # # ##       #  ##   #  #  # ###
+#  # #  # #   # #         # #    #  #  # #
+##  #  # #   # ###     ##  ###  #   ##  #
 
 
- 
+
 
 
 

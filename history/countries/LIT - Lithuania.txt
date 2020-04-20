@@ -9,7 +9,7 @@ add_ideas = {
 }
 
 set_technology = {}
-add_ideas = no_training 
+add_ideas = no_training
 
 set_convoys = 1
 

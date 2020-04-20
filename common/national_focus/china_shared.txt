@@ -1,42 +1,42 @@
 #	shared_focus = {
-#		id = CHI_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 5
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
+	#		id = CHI_
+	#		icon = GFX_
+	#		prerequisite = { focus = }
+	#		mutually_exclusive = { focus =  }
+	#		x = -3
+	#		y = 0
+	#		relative_position_id =
+	#
+	#		cost = 5
+	#
+	#		ai_will_do = {
+		#			factor = 1
+		#		}
+	#
+	#		available = {
+		#
+		#		}
+	#
+	#		bypass = {
+		#
+		#		}
+	#
+	#		cancel_if_invalid = yes
+	#		continue_if_invalid = no
+	#		available_if_capitulated = no
+	#
+	#		complete_tooltip = {
+		#
+		#		}
+	#
+	#		completion_reward = {
+		#
+		#		}
+	#	}
 
 
 shared_focus = {
-	id = CHI_invite_foreign_investors 
+	id = CHI_invite_foreign_investors
 	icon = GFX_focus_generic_concessions
 	x = 40
 	y = 0
@@ -44,7 +44,7 @@ shared_focus = {
 		x = -16
 		y = 0
 		trigger = {
-			 tag = MAN 
+			tag = MAN
 		}
 	}
 
@@ -59,7 +59,7 @@ shared_focus = {
 	}
 
 	bypass = {
-		
+
 	}
 
 	cancel_if_invalid = yes
@@ -122,19 +122,19 @@ shared_focus = {
 	}
 
 	available = {
-		
 
-		
+
+
 	}
 
 	bypass = {
-		custom_trigger_tooltip = { 
+		custom_trigger_tooltip = {
 			tooltip = falkenhausen_tt
 			any_other_country = {
 				any_army_leader = {
 					has_id = 603
 				}
-			}	
+			}
 		}
 	}
 
@@ -208,9 +208,9 @@ shared_focus = {
 	}
 
 	available = {
-		
 
-		
+
+
 	}
 
 	bypass = {
@@ -253,9 +253,9 @@ shared_focus = {
 
 	available = {
 		NOT = { has_war_with = GER }
-	
 
-		
+
+
 	}
 
 	bypass = {
@@ -343,7 +343,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -381,7 +381,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -471,14 +471,14 @@ shared_focus = {
 					regiments = {
 						light_armor = { x = 0 y = 0 }
 						light_armor = { x = 0 y = 1 }
-			
+
 						motorized = { x = 1 y = 0 }
 						motorized = { x = 1 y = 1 }
 						motorized = { x = 1 y = 2 }
 						motorized = { x = 1 y = 3 }
 					}
 					support = {
-						
+
 					}
 				}
 			}
@@ -493,23 +493,23 @@ shared_focus = {
 					regiments = {
 						light_armor = { x = 0 y = 0 }
 						light_armor = { x = 0 y = 1 }
-			
+
 						motorized = { x = 1 y = 0 }
 						motorized = { x = 1 y = 1 }
 						motorized = { x = 1 y = 2 }
 						motorized = { x = 1 y = 3 }
 					}
 					support = {
-						
+
 					}
 				}
 			}
 			capital_scope = {
 				create_unit = {
-					division = "name = \"200. Mechanised Division\" division_template = \"Experimental Mechanised Division\" start_experience_factor = 1.0" 
+					division = "name = \"200. Mechanised Division\" division_template = \"Experimental Mechanised Division\" start_experience_factor = 1.0"
 					owner = ROOT
 				}
-			}			
+			}
 		}
 	}
 }
@@ -565,7 +565,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -603,7 +603,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -674,7 +674,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -716,7 +716,7 @@ shared_focus = {
 	}
 
 	available = {
-			
+
 	}
 
 	bypass = {
@@ -737,7 +737,7 @@ shared_focus = {
 	completion_reward = {
 		create_corps_commander = {
 			name = "Aleksandr Cherepanov"
-			gfx = GFX_portrait_sov_aleksandr_cherepanov 
+			gfx = GFX_portrait_sov_aleksandr_cherepanov
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -767,7 +767,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -781,9 +781,9 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		SOV = { country_event = wtt_china_shared.11 
-		air_experience = 25
-		
+		SOV = { country_event = wtt_china_shared.11
+			air_experience = 25
+
 		}
 	}
 }
@@ -810,7 +810,7 @@ shared_focus = {
 	}
 
 	bypass = {
-		
+
 	}
 
 	cancel_if_invalid = yes
@@ -842,7 +842,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -894,7 +894,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = yes
 
-	completion_reward = {		
+	completion_reward = {
 		add_ideas = CHI_elite_mountaineers
 		add_tech_bonus = {
 			name = CHI_elite_mountaineers
@@ -914,11 +914,11 @@ shared_focus = {
 					mountaineers = { x = 0 y = 0 }
 					mountaineers = { x = 0 y = 1 }
 					mountaineers = { x = 0 y = 2 }
-		
+
 					mountaineers = { x = 1 y = 0 }
 					mountaineers = { x = 1 y = 1 }
 					mountaineers = { x = 1 y = 2 }
-		
+
 					mountaineers = { x = 2 y = 0 }
 					artillery_brigade = { x = 2 y = 1 }
 					artillery_brigade = { x = 2 y = 2 }
@@ -938,7 +938,7 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = CHI_small_arms_expertise
-	
+
 	cost = 5
 
 	ai_will_do = {
@@ -1004,7 +1004,7 @@ shared_focus = {
 		}
 		325 = { #Yunnan
 			set_state_flag = CHI_needed_for_hanoi_route
-		}	
+		}
 		set_variable = { CHI_hanoi_route_current_level = 3 }
 		add_offsite_building = { type = arms_factory level = 3 }
 	}
@@ -1061,7 +1061,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -1156,7 +1156,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -1171,7 +1171,7 @@ shared_focus = {
 		every_army_leader = {
 			add_defense = 1
 		}
-		add_ideas = CHI_french_drill		
+		add_ideas = CHI_french_drill
 	}
 }
 
@@ -1228,7 +1228,7 @@ shared_focus = {
 shared_focus = {
 	id = CHI_renegotiate_the_unequal_treaties
 	icon = GFX_focus_renounce_the_treaty_of_trianon
-	prerequisite = { focus = CHI_modern_logistics focus = CHI_combined_arms_warfare focus = CHI_naval_aviation } 
+	prerequisite = { focus = CHI_modern_logistics focus = CHI_combined_arms_warfare focus = CHI_naval_aviation }
 	x = 0
 	y = 1
 	relative_position_id = CHI_modern_logistics
@@ -1371,7 +1371,7 @@ shared_focus = {
 	cost = 5
 
 	ai_will_do = {
-		factor = 1		
+		factor = 1
 		modifier = {
 			factor = 4
 			tag = CHI
@@ -1662,13 +1662,13 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 
-	completion_reward = {		
+	completion_reward = {
 		434 = { #Arunachal Pradesh
 			set_state_flag = CHI_needed_for_the_hump
 		}
 		601 = { #Xikang
 			set_state_flag = CHI_needed_for_the_hump
-		}	
+		}
 		set_variable = { CHI_the_hump_current_level = 1 }
 		add_offsite_building = { type = arms_factory level = 1 }
 	}
@@ -1707,7 +1707,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = CHI_the_chu_x_po
 			ahead_reduction = 2
-			technology = fighter2				
+			technology = fighter2
 		}
 	}
 }
@@ -1817,9 +1817,9 @@ shared_focus = {
 
 	completion_reward = {
 		USA = {
-		country_event = wtt_china_shared.10
-		add_war_support = 0.05
-		
+			country_event = wtt_china_shared.10
+			add_war_support = 0.05
+
 		}
 	}
 }
@@ -1843,7 +1843,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -1881,7 +1881,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -1917,7 +1917,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -1970,7 +1970,7 @@ shared_focus = {
 			uses = 2
 			category = cv_tech
 		}
-		
+
 	}
 }
 
@@ -2152,9 +2152,9 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	
+
 	bypass = {
-		original_tag = MAN 
+		original_tag = MAN
 	}
 
 	available = {
@@ -2175,25 +2175,25 @@ shared_focus = {
 				modifier = CHI_collaboration_with_the_japanese
 			}
 			#add_ai_strategy = {
-			#	type = alliance
-			#	id = "ROOT"
-			#	value = 100
-			#}
+				#	type = alliance
+				#	id = "ROOT"
+				#	value = 100
+				#}
 			#add_ai_strategy = {
-			#	type = protect
-			#	id = "ROOT"
-			#	value = 100
-			#}
+				#	type = protect
+				#	id = "ROOT"
+				#	value = 100
+				#}
 			#add_ai_strategy = {
-			#	type = send_volunteers_desire
-			#	id = "ROOT"
-			#	value = 100
-			#}
+				#	type = send_volunteers_desire
+				#	id = "ROOT"
+				#	value = 100
+				#}
 			#add_ai_strategy = {
-			#	type = support
-			#	id = "ROOT"
-			#	value = 100
-			#}
+				#	type = support
+				#	id = "ROOT"
+				#	value = 100
+				#}
 		}
 	}
 }
@@ -2214,7 +2214,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {
@@ -2250,7 +2250,7 @@ shared_focus = {
 	}
 
 	available = {
-		
+
 	}
 
 	bypass = {

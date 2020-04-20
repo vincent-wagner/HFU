@@ -3,7 +3,7 @@
 ################
 
 FRA_vichy_france = {
-	
+
 	allowed = {
 		original_tag = FRA
 	}
@@ -11,7 +11,7 @@ FRA_vichy_france = {
 
 FRA_spanish_intervention_category = {
 	allowed = {
-		
+
 		always=no
 	}
 	visible = {

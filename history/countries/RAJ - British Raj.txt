@@ -8,8 +8,8 @@ set_war_support = 0.15
 set_research_slots = 3
 add_ideas = reliance_on_natural_rubber
 set_variable = {
-    var = min_fuel
-    value = 0.800
+	var = min_fuel
+	value = 0.800
 }
 add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
@@ -17,7 +17,7 @@ set_rule = {can_be_spymaster = no}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	transport = 1
@@ -42,29 +42,29 @@ if = {
 		RAJ_marginalized_muslim_community
 		RAJ_agrarian_society
 		RAJ_risk_of_famine
-		SAF_the_commonwealth	
+		SAF_the_commonwealth
 	}
 
 	add_to_tech_sharing_group = commonwealth_research
-	
+
 }
 
 set_convoys = 100
 add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 22975
-         producer = RAJ
+	type = infantry_equipment_1
+	amount = 22975
+	producer = RAJ
 }
 
 add_equipment_to_stockpile = {
-         type = artillery_equipment_1
-         amount = 1500
-         producer = RAJ
+	type = artillery_equipment_1
+	amount = 1500
+	producer = RAJ
 }
 add_equipment_to_stockpile = {
-         type = anti_air_equipment_1
-         amount = 500
-         producer = RAJ
+	type = anti_air_equipment_1
+	amount = 500
+	producer = RAJ
 }
 set_cosmetic_tag = RAJ_UK # British Raj
 
@@ -88,7 +88,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		
+
 	}
 }
 
@@ -100,7 +100,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {
-		
+
 	}
 }
 
@@ -111,7 +111,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
+
 	}
 }
 
@@ -122,7 +122,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		
+
 	}
 }
 

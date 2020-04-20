@@ -6,13 +6,13 @@ DEN_DD_HISTORICAL = {
 	for_countries = { DEN }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
 	prefix = "HDMS "
-	fallback_name = "Destroyer %d"					
+	fallback_name = "Destroyer %d"
 
-	unique = {											
-		"Nymfen" "Najaden" "Huitfeldt" "Willemoes" "Søridderen" "Flyvefisken" "Søulven" "Hvalrossen" "Delfinen" "Sværdfisken" "Springeren" "Støren" 
+	unique = {
+		"Nymfen" "Najaden" "Huitfeldt" "Willemoes" "Søridderen" "Flyvefisken" "Søulven" "Hvalrossen" "Delfinen" "Sværdfisken" "Springeren" "Støren"
 		"Søløven" "Søhunden" "Havhesten" "Narhvalen" "Makrelen" "Nordkaperen" "Havkatten" "Sælen" "Dragen" "Hvalen" "Laxen" "Glenten" "Høgen" "Ørnen"
 	}
 }
@@ -25,12 +25,12 @@ DEN_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
+
 	prefix = "HDMS "
 	fallback_name = "Lys Cruiseren %d"
 
 	unique = {
-		"Flynderen" "Mågen" "Ørnen" "Falken" "Ulken" "Olfert Fischer" "Fyen" "Hekla" 
+		"Flynderen" "Mågen" "Ørnen" "Falken" "Ulken" "Olfert Fischer" "Fyen" "Hekla"
 	}
 }
 
@@ -42,12 +42,12 @@ DEN_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
+
 	prefix = "HDMS "
 	fallback_name = "Tung Cruiseren %d"
 
 	unique = {
-		"Niels Juel" "Peder Skram" "Vitus Bering" "Sælen" "Hvalrossen" "Isbjørn" "Flynderen" "Mågen" "Ørnen" "Falken" "Ulken" 
+		"Niels Juel" "Peder Skram" "Vitus Bering" "Sælen" "Hvalrossen" "Isbjørn" "Flynderen" "Mågen" "Ørnen" "Falken" "Ulken"
 		"Olfert Fischer" "Fyen" "Hekla"
 	}
 }
@@ -61,12 +61,12 @@ DEN_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
+
 	prefix = "HDMS "
-	fallback_name = "Slagskib %d"		
+	fallback_name = "Slagskib %d"
 
 	unique = {
-		"Tordenskiold" "Ivar Huitfeldt" "Olfert Fischer" "Ulrik Gyldenløve" "Markor Rodsteen" 
+		"Tordenskiold" "Ivar Huitfeldt" "Olfert Fischer" "Ulrik Gyldenløve" "Markor Rodsteen"
 	}
 }
 
@@ -78,12 +78,12 @@ DEN_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	
+
 	prefix = "HDMS "
-	fallback_name = "Slagkrydseren %d"		
+	fallback_name = "Slagkrydseren %d"
 
 	unique = {
-		"Tordenskiold" "Ivar Huitfeldt" "Olfert Fischer" "Ulrik Gyldenløve" "Markor Rodsteen" 
+		"Tordenskiold" "Ivar Huitfeldt" "Olfert Fischer" "Ulrik Gyldenløve" "Markor Rodsteen"
 	}
 }
 
@@ -95,12 +95,12 @@ DEN_CV_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-	
+
 	prefix = "HDMS "
-	fallback_name = "Hangarskib %d"	
+	fallback_name = "Hangarskib %d"
 
 	unique = {
-		"Danske Løve" "Peter Willemoes" "Steen Bille" "Peder Marsvin" "Dannebrog" "Peder Skram" "Rolf Krake" "Lindormen" "Gorm" "Odin" 
+		"Danske Løve" "Peter Willemoes" "Steen Bille" "Peder Marsvin" "Dannebrog" "Peder Skram" "Rolf Krake" "Lindormen" "Gorm" "Odin"
 	}
 }
 
@@ -112,12 +112,12 @@ DEN_SS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
+
 	prefix = "HDMS "
 	fallback_name = "Ubåd %d"
-	
+
 	unique = {
-		"Rota" "Bellona" "Flora" "Daphne" "Dryaden" "Havmanden" "Havfruen" "Havkalen" "Havhesten" "Springeren" "Støren" "Delfinen" "Spækhuggeren" "Tumleren" "Springeren" 
+		"Rota" "Bellona" "Flora" "Daphne" "Dryaden" "Havmanden" "Havfruen" "Havkalen" "Havhesten" "Springeren" "Støren" "Delfinen" "Spækhuggeren" "Tumleren" "Springeren"
 		"Dykkeren" "Thetis" "2den April" "Najaden" "Nymfen" "Ægir" "Ran" "Triton" "Neptun" "Galathea"
 	}
 }

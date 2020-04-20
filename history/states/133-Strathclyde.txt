@@ -3,9 +3,9 @@ state={
 	id=133
 	name="STATE_133" # Lanark
 	manpower = 2257723
-	
+
 	state_category = city
-	
+
 	resources={
 		steel=21 # was: 36
 	}
@@ -36,6 +36,6 @@ state={
 	}
 
 	provinces={
-		3273 6320 6350 6385 6395 9237 9350 11218 
+		3273 6320 6350 6385 6395 9237 9350 11218
 	}
 }

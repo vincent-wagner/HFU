@@ -1,5 +1,5 @@
 ITA_industry_relocation = {
-	
+
 	allowed = {
 		original_tag = ITA
 	}

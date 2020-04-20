@@ -16,7 +16,7 @@ add_ideas = {
 if = {
 	limit = {
 		has_dlc = "Waking the Tiger"
-	}		
+	}
 	add_ideas = {
 		CHI_nine_power_treaty
 		CHI_army_corruption_1

@@ -4,31 +4,31 @@
 	division_names_group = SAF_GAR_01
 
 	regiments = {
-	infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 0 y = 4 }
-	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
 		infantry = { x = 1 y = 4 }
-	infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		infantry = { x = 2 y = 3 }
-	artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }	
+		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
-       	engineer = { x = 0 y = 0 }
-       	artillery = { x = 0 y = 1 }
-	recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
 	}
-	
+
 }
 division_template = {
 	name = "District Brigade"			# For 1-brigade Military Districts
@@ -36,19 +36,19 @@ division_template = {
 	division_names_group = SAF_GAR_01
 
 	regiments = {
-	infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 0 y = 4 }
-	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
 		infantry = { x = 1 y = 4 }
 	}
 	support = {
-       	engineer = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
 	}
 	priority = 0
 }
@@ -60,36 +60,36 @@ division_template = {
 	division_names_group = SAF_ARM_01
 
 	regiments = {
-	light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
 		light_armor = { x = 0 y = 3 }
-	light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
 		light_armor = { x = 1 y = 2 }
 		light_armor = { x = 1 y = 3 }
-	light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 0 }
 		light_armor = { x = 2 y = 1 }
 		light_armor = { x = 2 y = 2 }
 		light_armor = { x = 2 y = 3 }
-	motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
 		motorized = { x = 3 y = 2 }
 		motorized = { x = 3 y = 3 }
-	motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 0 }
 		motorized = { x = 4 y = 1 }
 		motorized = { x = 4 y = 2 }
 		motorized = { x = 4 y = 3 }
 	}
 	support = {
-       	engineer = { x = 0 y = 0 }
-	recon = { x = 0 y = 1 }
-	artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 
 units = {
-	division= {	
+	division= {
 		name = "This is here so you can look at your generals"
 		location = 10400
 		division_template = "District Force"
@@ -115,7 +115,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "SAF" 
+			creator = "SAF"
 		}
 		requested_factories = 1
 		progress = 0.1
@@ -124,7 +124,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "SAF" 
+			creator = "SAF"
 		}
 		requested_factories = 1
 		progress = 0.3

@@ -4,13 +4,13 @@ is_available_fighter_ROM = {
 	OR = {
 		AND = {
 			has_tech = fighter1
-			ROM = { 
+			ROM = {
 				NOT = { has_tech = fighter1}
 			}
 		}
 		AND = {
 			has_tech = fighter2
-			ROM = { 
+			ROM = {
 				NOT = { has_tech = fighter2}
 			}
 		}
@@ -24,13 +24,13 @@ is_available_heavy_fighter_ROM = {
 	OR = {
 		AND = {
 			has_tech = heavy_fighter1
-			ROM = { 
+			ROM = {
 				NOT = { has_tech = heavy_fighter1}
 			}
 		}
 		AND = {
 			has_tech = heavy_fighter2
-			ROM = { 
+			ROM = {
 				NOT = { has_tech = heavy_fighter2}
 			}
 		}
@@ -44,13 +44,13 @@ is_available_cas_ROM = {
 	OR = {
 		AND = {
 			has_tech = CAS1
-			ROM = { 
+			ROM = {
 				NOT = { has_tech = CAS1}
 			}
 		}
 		AND = {
 			has_tech = CAS2
-			ROM = { 
+			ROM = {
 				NOT = { has_tech = CAS2}
 			}
 		}
@@ -64,13 +64,13 @@ is_available_tac_ROM = {
 	OR = {
 		AND = {
 			has_tech = tactical_bomber1
-			ROM = { 
+			ROM = {
 				NOT = { has_tech = tactical_bomber1}
 			}
 		}
 		AND = {
 			has_tech = tactical_bomber2
-			ROM = { 
+			ROM = {
 				NOT = { has_tech = tactical_bomber2}
 			}
 		}

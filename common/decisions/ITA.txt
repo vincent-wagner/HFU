@@ -1,46 +1,46 @@
 foreign_politics = {
 
-ITA_annex_bul = {
-	icon = generic_operation
+	ITA_annex_bul = {
+		icon = generic_operation
 
-	
-			available = {
+
+		available = {
 			BUL = { is_ai = yes }
 			date>1939.1.1
-			
-			}
-	
-			allowed = {
-				tag = ROM
-			}
 
-			
+		}
 
-			cost = 0
+		allowed = {
+			tag = ROM
+		}
 
-			visible = {
+
+
+		cost = 0
+
+		visible = {
 			BUL = { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			BUL = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ROM
 				}
-			fire_only_once = yes
-			complete_effect = {
-				BUL = {
-					every_owned_state={
-						limit={is_core_of=PREV}
-						add_core_of = ROM
-					}
+			}
+			ROM = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
 				}
-				ROM = { 
-					annex_country = {
-						target = BUL
-						transfer_troops = yes 
-					}
 			}
 		}
 	}
-}	
+}
 
-	
-	
-	
-	
-	
+
+
+
+
+

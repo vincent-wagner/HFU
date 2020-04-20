@@ -13,7 +13,7 @@ focus_tree = {
 	default = no#was yes
 	reset_on_civilwar = no
 
-		focus = {
+	focus = {
 		id = BUL_Monarch_Speech
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 5
@@ -38,7 +38,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_tech_bonus = {
+			add_tech_bonus = {
 				name = BUL_Radar_Testing
 				uses = 1
 				bonus = 1
@@ -50,7 +50,7 @@ focus_tree = {
 	focus = {
 		id = BUL_University_Of_Sofia
 		prerequisite = { focus = BUL_Radar_Testing }
-		
+
 		icon = GFX_focus_research
 		x = 7
 		y = 2
@@ -94,7 +94,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_Monarch_Speech }
 		available = {
 			BUL {
-					fascism > 0.5
+				fascism > 0.5
 			}
 		}
 		x = 3
@@ -693,12 +693,12 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-	    }
-    }
+		}
+	}
 
 
 
-	
+
 
 	focus = {
 		id = BUL_Arms_Expansion
@@ -944,7 +944,7 @@ focus_tree = {
 			}
 		}
 
-		
+
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -955,8 +955,8 @@ focus_tree = {
 						include_locked = yes
 					}
 					is_core_of = ROOT
-					
-					
+
+
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -967,8 +967,8 @@ focus_tree = {
 			}
 		}
 	}
-	
-#new begin
+
+	#new begin
 	focus = {
 		id = bul_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -977,7 +977,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Highway_Development
 		cost = 10
-		
+
 		available_if_capitulated = yes
 
 
@@ -997,7 +997,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
 			if = {
@@ -1093,11 +1093,11 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}			
+			}
 		}
 	}
-#new end
-	
+	#new end
+
 
 	focus = {
 		id = BUL_Naval_Aviation
@@ -1120,18 +1120,18 @@ focus_tree = {
 		}
 	}
 
-	
 
-	
+
+
 	focus = {
 		id = BUL_military_training
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 16
 		y = 0
 		cost = 10
-		
+
 		available_if_capitulated = yes
-		
+
 		completion_reward = {
 			army_experience = 50
 			add_tech_bonus = {
@@ -1232,7 +1232,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BUL_Mobile_Army
-		cost = 5	
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1241,7 +1241,7 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 5
-				add_tech_bonus = {
+			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
 				bonus = 1
 				uses = 1
@@ -1326,7 +1326,7 @@ focus_tree = {
 
 		available = {
 			GER = { has_completed_focus = GER_integrate_war_economies }
-			
+
 		}
 
 		bypass = {
@@ -1391,7 +1391,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_sa_engineer_corps

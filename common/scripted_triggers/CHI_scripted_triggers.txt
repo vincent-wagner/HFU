@@ -1,17 +1,17 @@
 #	Example:
-# 
+#
 #	example_trigger = {
-#		tag = GER
-#		is_ai = no
-#	}
+	#		tag = GER
+	#		is_ai = no
+	#	}
 #
 #
 #	In a script file:
 #
 #	trigger = {
-#		example_trigger = yes
-#	}
-# 
+	#		example_trigger = yes
+	#	}
+#
 #	THIS FILE IS FOR TRIGGERS SPECIFICALLY FOR THE CHI TAG
 
 is_independent_china_or_warlord = { #Does not include sinkiang
@@ -63,7 +63,7 @@ is_literally_china = {
 }
 
 is_chinese_warlord = {
-	OR = {		
+	OR = {
 	}
 }
 

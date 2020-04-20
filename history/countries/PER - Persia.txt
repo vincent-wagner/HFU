@@ -5,7 +5,7 @@ set_research_slots = 0
 # Starting tech
 set_technology = {
 }
-add_ideas = no_training 
+add_ideas = no_training
 
 set_convoys = 1
 set_politics = {

@@ -25,7 +25,7 @@ USA_great_depression_level_up = {
 			add_idea = great_depression_2
 		}
 	}
-	
+
 }
 
 #Important to put LOWEST first
@@ -60,8 +60,8 @@ USA_congress_get_quorum = {
 	multiply_variable = { var = quorum_medium value = 0.5 }
 	set_variable = { var = quorum_high value = senators_total }
 	multiply_variable = { var = quorum_high value = 0.6 }
-	round_variable = quorum_low 
-	round_variable = quorum_medium 
+	round_variable = quorum_low
+	round_variable = quorum_medium
 	round_variable = quorum_high
 	USA_recalc_congress_icon_frames = yes
 }
@@ -84,7 +84,7 @@ USA_congress_small_opposition = {
 	hidden_effect = {
 		USA_senate_small_opposition = yes
 		USA_house_small_opposition = yes
-		
+
 	}
 }
 
@@ -172,7 +172,7 @@ USA_congress_medium_opposition = {
 	hidden_effect = {
 		USA_senate_medium_opposition = yes
 		USA_house_medium_opposition = yes
-		
+
 	}
 }
 
@@ -181,7 +181,7 @@ USA_congress_large_opposition = {
 	hidden_effect = {
 		USA_senate_large_opposition = yes
 		USA_house_large_opposition = yes
-		
+
 	}
 }
 USA_congress_small_support = {
@@ -189,7 +189,7 @@ USA_congress_small_support = {
 	hidden_effect = {
 		USA_senate_small_support = yes
 		USA_house_small_support = yes
-		
+
 	}
 }
 
@@ -198,7 +198,7 @@ USA_congress_medium_support = {
 	hidden_effect = {
 		USA_senate_medium_support = yes
 		USA_house_medium_support = yes
-		
+
 	}
 }
 USA_congress_large_support = {
@@ -206,7 +206,7 @@ USA_congress_large_support = {
 	hidden_effect = {
 		USA_senate_large_support = yes
 		USA_house_large_support = yes
-		
+
 	}
 }
 USA_election_senate = {
@@ -280,7 +280,7 @@ USA_flip_support = {
 }
 
 USA_recalc_congress_icon_frames = {
-	
+
 	set_temp_variable = { senators_temp = senators_support }
 	divide_temp_variable = { senators_temp = senators_total }
 	multiply_temp_variable = { senators_temp = 21 }
@@ -309,7 +309,7 @@ USA_recalc_congress_icon_frames = {
 		}
 	}
 	else = {
-		set_temp_variable = { house_temp = 1 }		
+		set_temp_variable = { house_temp = 1 }
 	}
 	set_variable = { current_house_icon_frame = house_temp }
 }
@@ -357,7 +357,7 @@ USA_set_president_effect = {
 			expire = "1965.1.1"
 			ideology = oligarchism
 			traits = {
-				
+
 			}
 		}
 	}
@@ -372,7 +372,7 @@ USA_set_president_effect = {
 			expire = "1965.1.1"
 			ideology = oligarchism
 			traits = {
-				
+
 			}
 		}
 	}

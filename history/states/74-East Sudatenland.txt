@@ -3,10 +3,10 @@ state=
 	id=74
 	name="STATE_74"
 	manpower = 820000
-	
+
 	state_category = rural
-	
-	
+
+
 	history=
 	{
 		victory_points = {
@@ -26,5 +26,5 @@ state=
 	}
 	provinces= {
 		421 3414 3583 6485
- 	}
+	}
 }

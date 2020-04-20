@@ -4,7 +4,7 @@ heavy_water_infiltration = {
 	outcome = heavy_water_infiltration_outcome
 	icon = "GFX_phase_heavy_water_infiltration_small"
 	picture = "GFX_phase_heavy_water_infiltration"
-	
+
 	equipment = {
 	}
 }
@@ -32,7 +32,7 @@ bruneval_infiltration = {
 	outcome = bruneval_infiltration_outcome
 	icon = "GFX_phase_bruneval_infiltration_small"
 	picture = "GFX_phase_bruneval_infiltration"
-	
+
 	equipment = {
 	}
 }
@@ -59,7 +59,7 @@ bruneval_exfiltration = {
 		}
 	}
 	equipment = {
-		
+
 	}
 }
 
@@ -68,7 +68,7 @@ capture_tito_infiltration = {
 	desc = capture_tito_infiltration_desc
 	icon = "GFX_phase_capture_tito_infiltration_small"
 	picture = "GFX_phase_capture_tito_infiltration"
-	
+
 	equipment = {
 	}
 }
@@ -88,7 +88,7 @@ capture_tito_exfiltration = {
 	picture = "GFX_phase_capture_tito_exfiltration"
 
 	equipment = {
-		
+
 	}
 }
 
@@ -97,7 +97,7 @@ rescue_mussolini_infiltration = {
 	desc = rescue_mussolini_infiltration_desc
 	icon = "GFX_phase_capture_tito_infiltration_small"
 	picture = "GFX_phase_capture_tito_infiltration"
-	
+
 	equipment = {
 	}
 }
@@ -117,6 +117,6 @@ rescue_mussolini_exfiltration = {
 	picture = "GFX_phase_rescue_mussolini_exfiltration"
 
 	equipment = {
-		
+
 	}
 }

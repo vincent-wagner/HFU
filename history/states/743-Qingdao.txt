@@ -4,15 +4,15 @@ state=
 	name="STATE_743"
 	manpower = 385000
 	state_category = large_town
-	
-	
+
+
 	history=
 	{
 		owner = CHI
 		add_core_of = CHI
 
 		victory_points = {
-			10000 5 
+			10000 5
 		}
 		buildings = {
 			infrastructure = 5

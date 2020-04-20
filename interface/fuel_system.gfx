@@ -1,4 +1,4 @@
-spriteTypes = {	
+spriteTypes = {
 
 	spriteType = {
 		name = "GFX_fuel_progress_bar"
@@ -13,5 +13,5 @@ spriteTypes = {
 		texturefile = "gfx/interface/button_transparent.dds"
 	}
 
-	
+
 }

@@ -11,7 +11,7 @@
 opinion_modifiers = {
 
 	chinese_united_front = {
-	value = 200
+		value = 200
 	}
 
 	falangist_veterans_opinion = {
@@ -57,7 +57,7 @@ opinion_modifiers = {
 	mexico_trotskyite_wreckers = {
 		value = -35
 	}
-	
+
 	mexico_german_resource_exchange = {
 		value = 50
 		trade = yes
@@ -80,4 +80,4 @@ opinion_modifiers = {
 		decay = 0.125
 	}
 
-}	
+}

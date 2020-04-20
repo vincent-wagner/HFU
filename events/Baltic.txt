@@ -10,9 +10,9 @@ country_event = {
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = baltic.1.a
 		SOV = {
@@ -28,9 +28,9 @@ country_event = {
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = baltic.1.a
 
@@ -46,9 +46,9 @@ country_event = {
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = baltic.1.a
 
@@ -64,9 +64,9 @@ country_event = {
 	title = baltic.4.t
 	desc = baltic.4.d
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = baltic.4.a
 		GER = {
@@ -81,7 +81,7 @@ country_event = {
 	id = baltic.6
 
 	hidden = yes
-	
+
 	is_triggered_only = yes
 
 	immediate = {

@@ -6,14 +6,14 @@ units= {
 	fleet = {
 		name = "Amiral Nord"
 		naval_base = 575 # Dunkerque
-		task_force = {				
-			name = "1ère Région Navale"			
-			location = 575 # Dunkerque			
+		task_force = {
+			name = "1ère Région Navale"
+			location = 575 # Dunkerque
 			ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Chacal" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Léopard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Panthère" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
-			# 2e Légère Division des Contre-Torpilleurs			
+			# 2e Légère Division des Contre-Torpilleurs
 			# 2e Division des Sous-Marins
 			ship = { name = "Pasteur" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			ship = { name = "Achille" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
@@ -24,16 +24,16 @@ units= {
 			ship = { name = "Archimède" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			# 8e Division des Sous-Marins
 			ship = { name = "Phénix" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
-			ship = { name = "Courbet" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Courbet Class" } } }        
-			ship = { name = "Algérie" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Algérie Class" } } }			
+			ship = { name = "Courbet" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Courbet Class" } } }
+			ship = { name = "Algérie" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Algérie Class" } } }
 			ship = { name = "Duquesne" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Suffren Class" } } }
 			# 4e Division des Contre-Torpilleurs
 			ship = { name = "Lynx" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Tigre" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
-			# 5e Division des Contre-Torpilleurs	
+			# 5e Division des Contre-Torpilleurs
 			ship = { name = "Cassard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Maillé Brézé" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
-			ship = { name = "Kersaint" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }		
+			ship = { name = "Kersaint" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			# 1e Division des Sous-Marins
 			ship = { name = "Le Glorieux" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			# 3 Division des Sous-Marins
@@ -44,15 +44,15 @@ units= {
 			# 5e Division des Sous-Marins
 			ship = { name = "L`Espoire" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			ship = { name = "Pégase" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
-			ship = { name = "Monge" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }			
+			ship = { name = "Monge" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			# 7e Division des Sous-Marins
 			ship = { name = "Redoutable" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			ship = { name = "Vengeur" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
-			ship = { name = "Provence" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }			
-			ship = { name = "Lorraine" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }			
-			ship = { name = "Bretagne" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }			
+			ship = { name = "Provence" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }
+			ship = { name = "Lorraine" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }
+			ship = { name = "Bretagne" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }
 			ship = { name = "Pluton" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
-			# 1e Légère Division des Contre-Torpilleurs		
+			# 1e Légère Division des Contre-Torpilleurs
 			ship = { name = "La Galissonnière" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
 			ship = { name = "Émile Bertin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Émile Bertin Class" } } }
 			# 1e Division des Contre-Torpilleurs
@@ -66,18 +66,18 @@ units= {
 			# 6e Division des Contre-Torpilleurs
 			ship = { name = "Aigle" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Milan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
-			ship = { name = "Épervier" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }			
+			ship = { name = "Épervier" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 			ship = { name = "Jeanne d'Arc" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
 			ship = { name = "Duguay-Trouin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
 			ship = { name = "Le Centaure" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			ship = { name = "Argo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			ship = { name = "Pascal" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
-			ship = { name = "Henri Poincaré" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }							
+			ship = { name = "Henri Poincaré" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			ship = { name = "Suffren" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Suffren Class" } } }
 			ship = { name = "Lamotte-Picquet" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
 		}
 	}
-} 
+}
 
 
 
@@ -91,10 +91,10 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_1
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "Le Fantasque Class"
 		}
-		name = "Le Malin" 
+		name = "Le Malin"
 		requested_factories = 1
 		progress = 0.60
 		amount = 1
@@ -102,10 +102,10 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_1
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "Le Fantasque Class"
 		}
-		name = "L'Indomptable" 
+		name = "L'Indomptable"
 		requested_factories = 1
 		progress = 0.85
 		amount = 1
@@ -113,10 +113,10 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_1
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "Le Fantasque Class"
 		}
-		name = "Le Fantasque" 
+		name = "Le Fantasque"
 		requested_factories = 1
 		progress = 0.75
 		amount = 1
@@ -124,45 +124,45 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_1
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "Le Fantasque Class"
 		}
-		name = "Le Triomphant" 
+		name = "Le Triomphant"
 		requested_factories = 1
 		progress = 0.60
 		amount = 1
 	}
-	# BC: Dunkerque (Comm. 16-Apr, 1937)	
+	# BC: Dunkerque (Comm. 16-Apr, 1937)
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_heavy_2
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "Dunkerque Class"
 		}
-		name = "Dunkerque" 
+		name = "Dunkerque"
 		requested_factories = 1
 		progress = 0.65
 		amount = 1
 	}
-	# BB: Richelieu	
+	# BB: Richelieu
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_heavy_2
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "Richelieu Class"
 		}
 		requested_factories = 1
 		progress = 0.60
 		amount = 1
 	}
-	 # CL: La Galissonnière class (x4) ("Jean de Vienne" "Marseillaise" "Gloire" "Montcalm") ("Georges Leygues" launched 24-Mar 1936)
+	# CL: La Galissonnière class (x4) ("Jean de Vienne" "Marseillaise" "Gloire" "Montcalm") ("Georges Leygues" launched 24-Mar 1936)
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_1
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "La Galissonnière Class"
 		}
-		name = "Jean de Vienne" 
+		name = "Jean de Vienne"
 		requested_factories = 1
 		progress = 0.35
 		amount = 1
@@ -170,10 +170,10 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_1
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "La Galissonnière Class"
 		}
-		name = "Marseillaise" 
+		name = "Marseillaise"
 		requested_factories = 1
 		progress = 0.15
 		amount = 1
@@ -181,10 +181,10 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_1
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "La Galissonnière Class"
 		}
-		name = "Gloire" 
+		name = "Gloire"
 		requested_factories = 1
 		progress = 0.15
 		amount = 1
@@ -192,10 +192,10 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_1
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "La Galissonnière Class"
 		}
-		name = "Montcalm" 
+		name = "Montcalm"
 		requested_factories = 1
 		progress = 0.15
 		amount = 1
@@ -204,7 +204,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_2
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "Redoutable Class"
 		}
 		requested_factories = 1
@@ -214,7 +214,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_2
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "Redoutable Class"
 		}
 		requested_factories = 1
@@ -224,16 +224,16 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_2
-			creator = "FRA" 
+			creator = "FRA"
 			version_name = "Redoutable Class"
 		}
 		requested_factories = 1
 		progress = 0.25
 		amount = 2
 	}
-	
-	
-	
+
+
+
 }
 
 #####################

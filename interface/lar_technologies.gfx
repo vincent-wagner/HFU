@@ -1,7 +1,7 @@
 spriteTypes = {
 
 	# technologies we need to override in DLC go in this file
-	
+
 	### scout_planes
 
 
@@ -9,7 +9,7 @@ spriteTypes = {
 		name = "GFX_scout_plane1_medium"
 		texturefile = "gfx/interface/technologies/generic_scout_plane_1.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_scout_plane2_medium"
 		texturefile = "gfx/interface/technologies/generic_scout_plane_2.dds"
@@ -19,12 +19,12 @@ spriteTypes = {
 		name = "GFX_ENG_scout_plane1_medium"
 		texturefile = "gfx/interface/technologies/eng_scout_plane_1.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_ENG_scout_plane2_medium"
 		texturefile = "gfx/interface/technologies/eng_scout_plane_2.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_GER_scout_plane1_medium"
 		texturefile = "gfx/interface/technologies/ger_scout_plane_1.dds"
@@ -321,7 +321,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SPR_strategic_bomber3_medium"
 		texturefile = "gfx/interface/technologies/spr_strategic_bomber_equipment_3.dds"
-	}	
+	}
 
 	SpriteType = {
 		name = "GFX_SPR_early_fighter_medium"
@@ -367,22 +367,22 @@ spriteTypes = {
 		name = "GFX_SPR_basic_light_tank_medium"
 		texturefile = "gfx/interface/technologies/spr_basic_light_tank.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_SPR_improved_light_tank_medium"
 		texturefile = "gfx/interface/technologies/spr_imp_light_tank.dds"
-	}	
-	
+	}
+
 	SpriteType = {
 		name = "GFX_SPR_advanced_light_tank_medium"
 		texturefile = "gfx/interface/technologies/spr_adv_light_tank.dds"
-	}	
-	
+	}
+
 	SpriteType = {
 		name = "GFX_SPR_basic_medium_tank_medium"
 		texturefile = "gfx/interface/technologies/spr_basic_medium_tank.dds"
-	}	
-	
+	}
+
 	SpriteType = {
 		name = "GFX_SPR_improved_medium_tank_medium"
 		texturefile = "gfx/interface/technologies/spr_imp_medium_tank.dds"
@@ -396,13 +396,13 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SPR_main_battle_tank_medium"
 		texturefile = "gfx/interface/technologies/spr_main_battle_tank.dds"
-	}	
+	}
 
 	SpriteType = {
 		name = "GFX_SPR_basic_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/spr_basic_heavy_tank.dds"
-	}	
-	
+	}
+
 	SpriteType = {
 		name = "GFX_SPR_improved_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/spr_imp_heavy_tank.dds"
@@ -417,7 +417,7 @@ spriteTypes = {
 		name = "GFX_SPR_super_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/spr_superheavy_tank.dds"
 	}
-###PORTUGAL
+	###PORTUGAL
 
 	SpriteType = {
 		name = "GFX_POR_early_fighter_medium"

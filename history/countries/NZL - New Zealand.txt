@@ -6,8 +6,8 @@ set_war_support = 0.15
 add_ideas = reliance_on_natural_rubber
 
 set_variable = {
-    var = min_fuel
-    value = 0.800
+	var = min_fuel
+	value = 0.800
 }
 add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
@@ -18,7 +18,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antitank = 1
 	interwar_antiair = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	early_fighter = 1
@@ -51,7 +51,7 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_ideas = SAF_the_commonwealth
 	add_to_tech_sharing_group = commonwealth_research
-	
+
 }
 
 set_politics = {
@@ -109,9 +109,9 @@ create_country_leader = {
 }
 set_convoys = 100
 add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 650
-         producer = NZL
+	type = infantry_equipment_1
+	amount = 650
+	producer = NZL
 }
 
 create_corps_commander = {

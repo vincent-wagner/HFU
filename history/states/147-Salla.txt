@@ -3,10 +3,10 @@ state=
 	id=147
 	name="STATE_147"
 	manpower = 4630
-	
+
 	state_category = enclave
-	
-	history = {	
+
+	history = {
 		owner = FIN
 		add_core_of = SOV
 		buildings = {
@@ -20,6 +20,6 @@ state=
 	}
 
 	provinces={
-		197 9158 11085 	
+		197 9158 11085
 	}
 }

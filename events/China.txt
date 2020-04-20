@@ -16,27 +16,27 @@ country_event = {
 	title = china.187.t
 	desc = china.187.d
 	picture = GFX_report_event_chinese_soldiers_fighting
-	
+
 	is_triggered_only = yes
 	immediate = {load_OOB = "CHI_ching_chong"
-	
-	
-	
-	
-	
-	
-	 CHI ={ add_equipment_to_stockpile = {
+
+
+
+
+
+
+		CHI ={ add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -200000 }
-			}
-	
-	
-	
-	
+		}
+
+
+
+
 	}
-	
-	option = { 
-	
+
+	option = {
+
 	}
 }
 
@@ -48,9 +48,9 @@ country_event = {
 	title = china.1.t
 	desc = china.1.d
 	picture = GFX_report_event_chinese_soldiers_fighting
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Breaking point!
 		name = china.1.a
 		ai_chance = { factor = 90 }
@@ -81,9 +81,9 @@ country_event = {
 	title = china.2.t
 	desc = china.2.d
 	picture = GFX_report_event_chinese_army_training
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = china.2.a
 		remove_ideas = german_advisors
@@ -96,22 +96,22 @@ country_event = {
 	title = china.3.t
 	desc = china.3.d
 	picture = GFX_report_event_chinese_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = china.3.a
 	}
 }
 
-country_event = { 
-id = china.345
+country_event = {
+	id = china.345
 	title = china.345.t
 	desc = china.345.d
 	picture = GFX_report_event_china_startup
-	
+
 	is_triggered_only = yes
-   option = {
-   name = china.345.a
-   }
-   }
+	option = {
+		name = china.345.a
+	}
+}

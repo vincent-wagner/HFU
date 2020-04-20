@@ -11,7 +11,7 @@
 defined_text = { # Country
 	name = GetDiscoveredInfiltration
 	text = {
-		trigger = {			
+		trigger = {
 			any_state = {
 				OR = {
 					state = 283

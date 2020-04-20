@@ -1,16 +1,16 @@
 war_measures = {
-Fra_move_capital_gabon={
-	icon = generic_civil_support
-	allowed = {
+	Fra_move_capital_gabon={
+		icon = generic_civil_support
+		allowed = {
 			original_tag = FRA
-			
+
 		}
-	visible={has_war=yes}
-	available={
-	539={is_capital=no}}
-	complete_effect={
-	set_capital=539
-	}
+		visible={has_war=yes}
+		available={
+			539={is_capital=no}}
+		complete_effect={
+			set_capital=539
+		}
 	}
 
 }
@@ -80,7 +80,7 @@ VIC_concessions_to_the_germans = {
 	}
 	VIC_send_guest_workers = {
 		available = {
-			
+
 		}
 		visible = { has_any_occupation_cost_trigger = yes }
 		cancel_trigger = {
@@ -117,8 +117,8 @@ VIC_concessions_to_the_germans = {
 		available = {
 			has_country_flag = VIC_send_guest_workers
 		}
-		visible = { 
-		 	has_country_flag = VIC_send_guest_workers
+		visible = {
+			has_country_flag = VIC_send_guest_workers
 		}
 		cost = 0
 		ai_will_do = {
@@ -148,5 +148,5 @@ VIC_concessions_to_the_germans = {
 			}
 			clr_country_flag = VIC_send_guest_workers
 		}
-	}	
+	}
 }

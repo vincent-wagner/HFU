@@ -5,14 +5,14 @@ operations = {
 
 
 
-GER_jaegernotprogramm = {
+	GER_jaegernotprogramm = {
 
 		icon = generic_air
 
 		available = {
 			GER ={has_war_with = SOV}
 			tag=GER
-		
+
 		}
 
 		cost = 50
@@ -22,23 +22,23 @@ GER_jaegernotprogramm = {
 		}
 
 		visible = {
-			
+
 			GER ={has_war_with = SOV}
-			
+
 		}
 
 		complete_effect = {
 			add_timed_idea = { idea = GER_jaegernotprogramm days = 100 }
 		}
 	}
-GER_fuelsavingmeasures = {
+	GER_fuelsavingmeasures = {
 
 		icon = generic_air
 
 		available = {
 			GER ={has_war_with = SOV}
 			tag=GER
-		
+
 		}
 
 		cost = 50
@@ -48,9 +48,9 @@ GER_fuelsavingmeasures = {
 		}
 
 		visible = {
-			
+
 			GER ={has_war_with = SOV}
-			
+
 		}
 
 		complete_effect = {
@@ -62,63 +62,63 @@ GER_fuelsavingmeasures = {
 
 
 	GER_fin = {
-	icon = generic_operation
-	fire_only_once = yes
-	allowed = {
-		tag = GER
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			Date > 1941.1.1
+		}
+
+		available = {
+			Date > 1941.6.1
+		}
+
+
+		complete_effect = {
+			GER =  { puppet = FIN}
+		}
 	}
-	visible = {	
-		Date > 1941.1.1
-	}
-	
-	available = {
-		Date > 1941.6.1	
-	}
-	
-	
-	complete_effect = {
-		GER =  { puppet = FIN}
-	}
-	}
-	
+
 	GER_Anton = {
-	
-	icon = generic_operation
-	
-	fire_only_once = yes
-	allowed = {
-		tag = GER
-	}
-	visible = {
-			
+
+		icon = generic_operation
+
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		visible = {
+
 			tag = GER
 			Date > 1940.1.1
 		}
-	
-	
-	available = {
+
+
+		available = {
 			tag = GER
 			EFR = { has_war_with = ENG }
 			EFR = { is_ai = yes }
 			Date > 1941.6.1
-			
+
 		}
-	
-	days_remove = 30
-	remove_effect = {
-		
-		annex_country = { target = EFR transfer_troops = yes }
-	
+
+		days_remove = 30
+		remove_effect = {
+
+			annex_country = { target = EFR transfer_troops = yes }
+
 		}
-	
+
 	}
-	
+
 	GER_seize_syria = {
-	
+
 		icon = generic_operation
-		
+
 		fire_only_once = yes
-		
+
 		allowed = {
 			tag = GER
 		}
@@ -134,9 +134,9 @@ GER_fuelsavingmeasures = {
 				owns_state = 677
 			}
 		}
-	
+
 		days_remove = 10
-	
+
 		available = {
 			any_country = {
 				is_in_faction_with = ROOT
@@ -147,7 +147,7 @@ GER_fuelsavingmeasures = {
 				controls_state = 454
 			}
 		}
-		
+
 		complete_effect = {
 			hidden_effect = {
 				every_enemy_country = {
@@ -156,9 +156,9 @@ GER_fuelsavingmeasures = {
 						days = 0
 					}
 				}
-			}	
+			}
 		}
-	
+
 		remove_effect = {
 			transfer_state = 553
 			transfer_state = 554
@@ -178,7 +178,7 @@ GER_fuelsavingmeasures = {
 			}
 		}
 	}
-	
+
 	GER_barbarossa_mission = {
 
 		icon = generic_operation
@@ -211,7 +211,7 @@ GER_fuelsavingmeasures = {
 		}
 
 		timeout_effect = {
-			
+
 		}
 
 		ai_will_do = {
@@ -223,13 +223,13 @@ GER_fuelsavingmeasures = {
 #Category only allowed for GER
 GER_military_buildup = {
 
-	
+
 }
 
 special_projects = {
 	GER_begin_heavy_water_production = {
-		allowed = { 
-			original_tag = GER 
+		allowed = {
+			original_tag = GER
 			has_dlc = "La Resistance"
 		}
 		available = {
@@ -245,7 +245,7 @@ special_projects = {
 		visible = {}
 		cost = 0
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
 		cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } } #can be removed via intelligence ops
 		days_remove = 365
@@ -263,10 +263,10 @@ special_projects = {
 
 		icon = generic_construction
 
-			allowed = { 
-		original_tag = GeR
+		allowed = {
+			original_tag = GeR
 		}
-		
+
 		available = {
 			#has_war = yes
 			controls_state = 28
@@ -301,16 +301,16 @@ special_projects = {
 			}
 		}
 		complete_effect = {
-					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
-	
+			add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+
 		}
-	}	
+	}
 	GER_dismantle_czechoslovakian_forts = {
 
 		icon = generic_construction
-		
-		allowed = { 
-		original_tag = GeR
+
+		allowed = {
+			original_tag = GeR
 		}
 
 		available = {
@@ -495,5 +495,5 @@ special_projects = {
 		complete_effect = {
 			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
 		}
-	}	
+	}
 }

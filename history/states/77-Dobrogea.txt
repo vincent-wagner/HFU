@@ -3,7 +3,7 @@ state={
 	id=77
 	name="STATE_77"
 	manpower = 378000
-	
+
 	state_category = wasteland
 
 	history={
@@ -13,13 +13,13 @@ state={
 		owner = ROM
 		buildings = {
 			infrastructure = 5
-			
+
 		}
 		add_core_of = ROM
 		add_core_of = BUL
 	}
 
 	provinces={
-		9614 11597 
+		9614 11597
 	}
 }

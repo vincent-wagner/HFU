@@ -1,6 +1,6 @@
 focus_tree = {
 	id = manchukuo_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -9,47 +9,47 @@ focus_tree = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	
+
 
 	default = no
 
 	continuous_focus_position = { x = 20 y = 1600 }
 
-#	focus = {
-#		id = CHI_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
+	#	focus = {
+		#		id = CHI_
+		#		icon = GFX_
+		#		prerequisite = { focus = }
+		#		mutually_exclusive = { focus =  }
+		#		x = -3
+		#		y = 0
+		#		relative_position_id =
+		#
+		#		cost = 10
+		#
+		#		ai_will_do = {
+			#			factor = 1
+			#		}
+		#
+		#		available = {
+			#
+			#		}
+		#
+		#		bypass = {
+			#
+			#		}
+		#
+		#		cancel_if_invalid = yes
+		#		continue_if_invalid = no
+		#		available_if_capitulated = no
+		#
+		#		complete_tooltip = {
+			#
+			#		}
+		#
+		#		completion_reward = {
+			#
+			#		}
+		#	}
 
 	focus = {
 		id = MAN_pacify_the_countryside
@@ -137,7 +137,7 @@ focus_tree = {
 
 		available = {
 
-		}	
+		}
 
 		bypass = {
 
@@ -311,8 +311,8 @@ focus_tree = {
 		}
 
 		available = {
-				num_of_factories > 35
-			}
+			num_of_factories > 35
+		}
 
 		bypass = {
 
@@ -327,7 +327,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1			
+			add_research_slot = 1
 		}
 	}
 
@@ -371,7 +371,7 @@ focus_tree = {
 			}
 		}
 
-		
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -392,8 +392,8 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = MAN_trade_delegation
 		icon = GFX_goal_generic_trade
@@ -537,12 +537,12 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = wtt_manchukou.11
-				714 = { 			
+			714 = {
 				add_resource = {
 					type = oil
-					amount = 8	
+					amount = 8
 				}
-				}	
+			}
 		}
 	}
 
@@ -631,10 +631,10 @@ focus_tree = {
 				}
 				328 = {
 					is_fully_controlled_by = ROOT
-				} 
+				}
 				610 = {
 					is_fully_controlled_by = ROOT
-				} 
+				}
 				717 = {
 					is_fully_controlled_by = ROOT
 				}
@@ -673,7 +673,7 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-				} 
+				}
 			}
 			if = {
 				limit = { 610 = { is_fully_controlled_by = ROOT } }
@@ -683,7 +683,7 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-				} 
+				}
 			}
 			if = {
 				limit = { 714 = { is_fully_controlled_by = ROOT } }
@@ -725,18 +725,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1.0
 				uses = 3
 				category = excavation_tech
-				}
-			
-		328 = {
+			}
+
+			328 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
 				}
-			}		}
+				}		}
 	}
 
 	focus = {
@@ -776,14 +776,14 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
-				
-							
+
+
 				add_resource = {
 					type = steel
 					amount = 16
 				}
-			
-				
+
+
 			}
 		}
 	}
@@ -857,12 +857,12 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = wtt_manchukou.11
-				714 = { 			
+			714 = {
 				add_resource = {
 					type = oil
-					amount = 12	
+					amount = 12
 				}
-				}
+			}
 		}
 	}
 

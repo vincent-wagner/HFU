@@ -4,13 +4,13 @@ is_available_fighter_HUN = {
 	OR = {
 		AND = {
 			has_tech = fighter1
-			HUN = { 
+			HUN = {
 				NOT = { has_tech = fighter1}
 			}
 		}
 		AND = {
 			has_tech = fighter2
-			HUN = { 
+			HUN = {
 				NOT = { has_tech = fighter2}
 			}
 		}
@@ -24,13 +24,13 @@ is_available_heavy_fighter_HUN = {
 	OR = {
 		AND = {
 			has_tech = heavy_fighter1
-			HUN = { 
+			HUN = {
 				NOT = { has_tech = heavy_fighter1}
 			}
 		}
 		AND = {
 			has_tech = heavy_fighter2
-			HUN = { 
+			HUN = {
 				NOT = { has_tech = heavy_fighter2}
 			}
 		}
@@ -44,13 +44,13 @@ is_available_cas_HUN = {
 	OR = {
 		AND = {
 			has_tech = CAS1
-			HUN = { 
+			HUN = {
 				NOT = { has_tech = CAS1}
 			}
 		}
 		AND = {
 			has_tech = CAS2
-			HUN = { 
+			HUN = {
 				NOT = { has_tech = CAS2}
 			}
 		}
@@ -64,13 +64,13 @@ is_available_tac_HUN = {
 	OR = {
 		AND = {
 			has_tech = tactical_bomber1
-			HUN = { 
+			HUN = {
 				NOT = { has_tech = tactical_bomber1}
 			}
 		}
 		AND = {
 			has_tech = tactical_bomber2
-			HUN = { 
+			HUN = {
 				NOT = { has_tech = tactical_bomber2}
 			}
 		}

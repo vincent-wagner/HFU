@@ -1,5 +1,5 @@
 ideas = {
-	country = {	
+	country = {
 		JAP_defense_of_homeland = {
 			allowed = {
 				always = no

@@ -10,7 +10,7 @@ set_rule = {can_be_spymaster = no}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
@@ -30,8 +30,8 @@ set_technology = {
 	fleet_in_being = 1
 }
 set_variable = {
-    var = min_fuel
-    value = 0.800
+	var = min_fuel
+	value = 0.800
 }
 if = {
 	limit = {
@@ -48,7 +48,7 @@ if = {
 }
 if = {
 	limit = {
-		 has_dlc = "Man the Guns"
+		has_dlc = "Man the Guns"
 	}
 	set_technology = {
 		early_ship_hull_light = 1
@@ -71,7 +71,7 @@ if = {
 	add_ideas = AST_great_depression_1
 	add_ideas = SAF_the_commonwealth
 	add_to_tech_sharing_group = commonwealth_research
-	
+
 }
 
 set_politics = {
@@ -83,7 +83,7 @@ set_politics = {
 
 set_popularities = {
 	democratic = 100
-	
+
 }
 
 create_country_leader = {
@@ -99,9 +99,9 @@ create_country_leader = {
 
 set_convoys = 100
 add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 2088
-         producer = AST
+	type = infantry_equipment_1
+	amount = 2088
+	producer = AST
 }
 
 create_corps_commander = {
@@ -109,10 +109,10 @@ create_corps_commander = {
 	gfx = "GFX_AST_leslie_morshead"
 	traits = { infantry_leader trait_mountaineer trickster}
 	skill = 4
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 5
-    logistics_skill = 2
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
 }
 
 
@@ -122,40 +122,40 @@ create_corps_commander = {
 	gfx = "GFX_AST_thomas_blamey"
 	traits = { commando cavalry_leader panzer_leader}
 	skill = 4
-    attack_skill = 4
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Henry Wynter"
 	gfx = "GFX_AST_henry_wynter"
 	traits = {panzer_leader desert_fox trait_engineer}
 	skill = 4
-    attack_skill = 4
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Alan Vasey"
 	gfx = "GFX_AST_alan_vasey"
 	traits = { hill_fighter infantry_leader naval_invader }
 	skill = 4
-    attack_skill = 3
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 1
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Horace Robertson"
 	gfx = "GFX_AST_horace_robertson"
 	traits = { desert_fox infantry_leader }
 	skill = 4
-    attack_skill = 4
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
 	name = "John Northcott"
@@ -191,7 +191,7 @@ create_navy_leader = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-	
+
 	create_equipment_variant = {
 		name = "Sydney Class"
 		type = light_cruiser_1
@@ -202,7 +202,7 @@ if = {
 			ship_anti_air_upgrade = 2
 		}
 	}
-	
+
 	create_equipment_variant = {
 		name = "Canberra Class"
 		type = heavy_cruiser_1
@@ -216,7 +216,7 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "Man the Guns" } 
+	limit = { has_dlc = "Man the Guns" }
 	### Ship Variants ###
 	# Light Cruisers #
 	create_equipment_variant = {

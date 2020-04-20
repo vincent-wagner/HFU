@@ -6,12 +6,12 @@ LAT_DD_HISTORICAL = {
 	for_countries = { LAT }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
-	fallback_name = "Iznicinatajs %d"					
+	fallback_name = "Iznicinatajs %d"
 
-	unique = {											
-		"Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce" 
+	unique = {
+		"Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce"
 	}
 }
 
@@ -23,11 +23,11 @@ LAT_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
+
 	fallback_name = "Gaismas Kruizeri %d"
 
 	unique = {
-		"Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce" 
+		"Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce"
 	}
 }
 
@@ -39,11 +39,11 @@ LAT_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
+
 	fallback_name = "Smagais Kruizeri %d"
 
 	unique = {
-		"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera" 
+		"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera"
 	}
 }
 
@@ -56,11 +56,11 @@ LAT_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
-	fallback_name = "Linijkugis %d"		
+
+	fallback_name = "Linijkugis %d"
 
 	unique = {
-		"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" 
+		"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne"
 	}
 }
 
@@ -72,11 +72,11 @@ LAT_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	
-	fallback_name = "Linijkreiseris %d"		
+
+	fallback_name = "Linijkreiseris %d"
 
 	unique = {
-		"Valmiera" "Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce" 
+		"Valmiera" "Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce"
 	}
 }
 
@@ -88,12 +88,12 @@ LAT_CV_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Lidmasinu Parvadatajs %d"	
+
+	fallback_name = "Lidmasinu Parvadatajs %d"
 
 	unique = {
-		"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera" "Cesis" "Liepaja" 
-		"Priekule" "Daugavpils" "Aglona" "Auce" "Virsaitis" "Namejs" 
+		"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera" "Cesis" "Liepaja"
+		"Priekule" "Daugavpils" "Aglona" "Auce" "Virsaitis" "Namejs"
 	}
 }
 
@@ -105,10 +105,10 @@ LAT_SS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
+
 	fallback_name = "Zemudene %d"
-	
+
 	unique = {
-		"Ronis" "Spidola" 
+		"Ronis" "Spidola"
 	}
 }

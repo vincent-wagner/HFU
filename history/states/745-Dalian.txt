@@ -2,7 +2,7 @@ state={
 	id=745
 	name="STATE_745"
 	provinces={
-		1150 6851 
+		1150 6851
 	}
 	state_category = large_town
 	history=
@@ -12,7 +12,7 @@ state={
 		add_core_of = MAN
 
 		victory_points = {
-			1150 1 
+			1150 1
 		}
 		buildings = {
 			infrastructure = 5
@@ -24,7 +24,7 @@ state={
 			}
 		}
 
-	
+
 	}
 	manpower=1000005
 	buildings_max_level_factor=1.000

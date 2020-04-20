@@ -12,78 +12,78 @@
 		cavalry = { x = 1 y = 3 }
 		cavalry = { x = 1 y = 4 }
 	}
-	support = { 
+	support = {
 		military_police = { x = 0 y = 0 }
-	} 
+	}
 }
 division_template = {
 	name = "Hohei Shidan" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
 	division_names_group = JAP_INF_01
-									# 1 engineering regiment, 1 recon regiment
+	# 1 engineering regiment, 1 recon regiment
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		artillery_brigade = { x = 0 y = 4 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
 		artillery_brigade = { x = 1 y = 4 }
-        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		artillery_brigade = { x = 2 y = 3 }
-	infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
 		infantry = { x = 3 y = 2 }
 		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
-       	engineer = { x = 0 y = 0 }
-       	artillery = { x = 0 y = 1 }
-	recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
 	}
 }
 division_template = {
 	name = "Dokuritsu Konsei Ryodan" 	# Independent Mixed Brigade: 5 infantry battalions (4k men total), 1 field artillery basttalion - abstracted into infantry,
 	division_names_group = JAP_IMB_01
-										# 1 engineering battalion
+	# 1 engineering battalion
 	regiments = {
-	light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
 		light_armor = { x = 0 y = 3 }
-	light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
 		light_armor = { x = 1 y = 2 }
 		light_armor = { x = 1 y = 3 }
-	light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 0 }
 		light_armor = { x = 2 y = 1 }
 		light_armor = { x = 2 y = 2 }
 		light_armor = { x = 2 y = 3 }
-	motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
 		motorized = { x = 3 y = 2 }
 		motorized = { x = 3 y = 3 }
-	motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 0 }
 		motorized = { x = 4 y = 1 }
 		motorized = { x = 4 y = 2 }
 		motorized = { x = 4 y = 3 }
 	}
 	support = {
-       	engineer = { x = 0 y = 0 }
-	recon = { x = 0 y = 1 }
-	artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 	priority = 2
 }
 
 division_template = {
-	name = "Jidousha Shidan" 			# Motorized divisions - 4 motorized infantry regiments (3k men each), 1 recon regiment, 
+	name = "Jidousha Shidan" 			# Motorized divisions - 4 motorized infantry regiments (3k men each), 1 recon regiment,
 	division_names_group = JAP_MOT_01
-										#1 engineer regiment, 1 mounted artillery regiment
+	#1 engineer regiment, 1 mounted artillery regiment
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -126,21 +126,21 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2  } 
+		recon = { x = 0 y = 2  }
 	}
 	priority = 2
 }
 division_template = {
 	name = "Chuton-chi Shidan" 			# Garrison template - represents Imperial Manchukuo Army infantry divisions: 2 infantry regiments (3k men) -- militia (lowest equipment, experience)
 	division_names_group = JAP_GAR_01
-										# Also represents (over-sized) IJN Base Defense Unit (island, city and naval base garrisons): 2 infantry rgts (3k men), 1 field artillery rgt (abstracted), 1 engineering rgt
+	# Also represents (over-sized) IJN Base Defense Unit (island, city and naval base garrisons): 2 infantry rgts (3k men), 1 field artillery rgt (abstracted), 1 engineering rgt
 	regiments = {
-	infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 0 y = 4 }
-	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
@@ -189,7 +189,7 @@ units = {
 		location = 12421 #Asahigawa
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.4
-	}division = { # "7 'Kuma' Hohei Shidan"
+		}division = { # "7 'Kuma' Hohei Shidan"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
@@ -237,7 +237,7 @@ units = {
 #########################
 ## STARTING PRODUCTION ##
 #########################
-instant_effect = 
+instant_effect =
 {
 	add_equipment_production = {
 		equipment = {
@@ -252,7 +252,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -262,7 +262,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0.4
@@ -272,7 +272,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_0
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -282,7 +282,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = cv_nav_bomber_equipment_1
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0.2
@@ -291,7 +291,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = CAS_equipment_1
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0.2
@@ -300,7 +300,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0.1
@@ -309,7 +309,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = anti_air_equipment_1
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -318,7 +318,7 @@ instant_effect =
 	add_equipment_production = {
 		equipment = {
 			type = transport_plane_equipment_1
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0.3

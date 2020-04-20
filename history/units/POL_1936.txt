@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Dywizja Piechoty"		
+	name = "Dywizja Piechoty"
 	division_names_group = POL_INF_01
 
 	regiments = {
@@ -15,7 +15,7 @@
 		infantry = { x = 2 y = 3 }
 	}
 	support = {
-        recon = { x = 0 y = 0 }
+		recon = { x = 0 y = 0 }
 	}
 }
 

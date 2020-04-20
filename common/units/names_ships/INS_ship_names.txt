@@ -6,13 +6,13 @@ INS_DD_HISTORICAL = {
 	for_countries = { INS }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
-	prefix = "KRI "							
-	fallback_name = "Destroyer %d"					
+	prefix = "KRI "
+	fallback_name = "Destroyer %d"
 
-	unique = {											
-		"Mandau" "Rencong" "Badik" "Keris" "Todak" "Hiu" "Layang" "Lemadang" "Pandrong" "Sura" "Clurit" "Kujang" "Beladau" "Alamang" "Parang" "Siwar" "Surik" 
+	unique = {
+		"Mandau" "Rencong" "Badik" "Keris" "Todak" "Hiu" "Layang" "Lemadang" "Pandrong" "Sura" "Clurit" "Kujang" "Beladau" "Alamang" "Parang" "Siwar" "Surik"
 		"Terapang" "Sampari" "Tombak" "Halasan" "Badau" "Selawaku" "Ajak" "Andau" "Singa" "Tongkak" "Kakap" "Kerapu" "Tongkol" "Barakuda" "Boa" "Welang"
 	}
 }
@@ -26,13 +26,13 @@ INS_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
-	prefix = "KRI "							
+
+	prefix = "KRI "
 	fallback_name = "Light Cruiser %d"
 
 	unique = {
-		"Diponegoro" "Sultan Hasanuddin" "Sultan Iskandar Muda" "Frans Kaisiepo" "Bung Tomo" "John Lie" "Usman Harun" "Fatahillah" "Malahayati" "Nala" 
-		"Kapitan Pattimura" "Untung Suropati" "Nuku" "Lambung Mangkurat" "Cut Nyak Dien" "Sultan Thaha Syaifudin" "Sutanto" "Sutedi Senoputra" "Wiratno" 
+		"Diponegoro" "Sultan Hasanuddin" "Sultan Iskandar Muda" "Frans Kaisiepo" "Bung Tomo" "John Lie" "Usman Harun" "Fatahillah" "Malahayati" "Nala"
+		"Kapitan Pattimura" "Untung Suropati" "Nuku" "Lambung Mangkurat" "Cut Nyak Dien" "Sultan Thaha Syaifudin" "Sutanto" "Sutedi Senoputra" "Wiratno"
 		"Tjiptadi" "Hasan Basri" "Imam Bonjol" "Teuku Umar" "Silas Papare"
 	}
 }
@@ -45,13 +45,13 @@ INS_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
-	prefix = "KRI "							
+
+	prefix = "KRI "
 	fallback_name = "Heavy Cruiser %d"
 
 	unique = {
-		"Diponegoro" "Sultan Hasanuddin" "Sultan Iskandar Muda" "Frans Kaisiepo" "Bung Tomo" "John Lie" "Usman Harun" "Fatahillah" "Malahayati" "Nala" 
-		"Kapitan Pattimura" "Untung Suropati" "Nuku" "Lambung Mangkurat" "Cut Nyak Dien" "Sultan Thaha Syaifudin" "Sutanto" "Sutedi Senoputra" "Wiratno" 
+		"Diponegoro" "Sultan Hasanuddin" "Sultan Iskandar Muda" "Frans Kaisiepo" "Bung Tomo" "John Lie" "Usman Harun" "Fatahillah" "Malahayati" "Nala"
+		"Kapitan Pattimura" "Untung Suropati" "Nuku" "Lambung Mangkurat" "Cut Nyak Dien" "Sultan Thaha Syaifudin" "Sutanto" "Sutedi Senoputra" "Wiratno"
 		"Tjiptadi" "Hasan Basri" "Imam Bonjol" "Teuku Umar" "Silas Papare"
 	}
 }
@@ -64,12 +64,12 @@ INS_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
-	prefix = "KRI "							
-	fallback_name = "Battleship %d"		
+
+	prefix = "KRI "
+	fallback_name = "Battleship %d"
 
 	unique = {
-		"Palembang" "Balikpapan" "Makassar" "Padang" "Medan" 
+		"Palembang" "Balikpapan" "Makassar" "Padang" "Medan"
 	}
 }
 
@@ -81,12 +81,12 @@ INS_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	
-	prefix = "KRI "							
-	fallback_name = "Battlecruiser %d"		
+
+	prefix = "KRI "
+	fallback_name = "Battlecruiser %d"
 
 	unique = {
- 		"Jakarta" "Bandung" "Semarang" "Surabaya" "Malang" 
+		"Jakarta" "Bandung" "Semarang" "Surabaya" "Malang"
 	}
 }
 
@@ -98,9 +98,9 @@ INS_CV_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "KRI "							
-	fallback_name = "Carrier %d"		
+
+	prefix = "KRI "
+	fallback_name = "Carrier %d"
 
 	unique = {
 		"Sumatra" "Java" "Kalimantan" "Sulawesi" "Nusa Tenggara" "Papua" "Maluku" "Aceh"
@@ -116,10 +116,10 @@ INS_SS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
-	prefix = "KRI "							
+
+	prefix = "KRI "
 	fallback_name = "Submarine %d"
-	
+
 	unique = {
 		"Nagapasa" "Ardadedali" "Alugoro" "Cakra" "Nanggala"
 	}

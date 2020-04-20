@@ -6,12 +6,12 @@ BUL_DD_HISTORICAL = {
 	for_countries = { BUL }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
-	fallback_name = "Razrushitel %d"					
+	fallback_name = "Razrushitel %d"
 
-	unique = {											
-		"Druzki" "Smeli" "Khrabri" "Strogi" "Letyashchi" "Shumni" "Bodri" "Zheleznyakov" "Georgi Dimitrov" "Vasil Levski" "Khristo Botev" "Nadezhda" 
+	unique = {
+		"Druzki" "Smeli" "Khrabri" "Strogi" "Letyashchi" "Shumni" "Bodri" "Zheleznyakov" "Georgi Dimitrov" "Vasil Levski" "Khristo Botev" "Nadezhda"
 	}
 }
 
@@ -23,11 +23,11 @@ BUL_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
+
 	fallback_name = "Svetlina Kraitser %d"
 
 	unique = {
-		"Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" 
+		"Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir"
 	}
 }
 
@@ -39,11 +39,11 @@ BUL_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
+
 	fallback_name = "Tezhuk Kraitser %d"
 
 	unique = {
-		"Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" 
+		"Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir"
 	}
 }
 
@@ -56,11 +56,11 @@ BUL_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
-	fallback_name = "Lineen Korab %d"		
+
+	fallback_name = "Lineen Korab %d"
 
 	unique = {
-		"Drzki" "Zheleznjakov" "Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" 
+		"Drzki" "Zheleznjakov" "Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven"
 	}
 }
 
@@ -72,11 +72,11 @@ BUL_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	
-	fallback_name = "Boen Kraitser %d"		
+
+	fallback_name = "Boen Kraitser %d"
 
 	unique = {
-		"Drzki" "Zheleznjakov" "Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" 
+		"Drzki" "Zheleznjakov" "Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven"
 	}
 }
 
@@ -88,11 +88,11 @@ BUL_CV_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Samoletonosach %d"	
+
+	fallback_name = "Samoletonosach %d"
 
 	unique = {
-		"Nadezhda" "Struma" "Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" 
+		"Nadezhda" "Struma" "Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven"
 	}
 }
 
@@ -104,11 +104,11 @@ BUL_SS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
+
 	fallback_name = "Podvodnitsa %d"
-	
+
 	unique = {
-		"Slava" "Pobeda" "Druzki" "Smeli" "Khrabri" "Strogi" "Letyashchi" "Shumni" 
+		"Slava" "Pobeda" "Druzki" "Smeli" "Khrabri" "Strogi" "Letyashchi" "Shumni"
 	}
 }
 
@@ -121,9 +121,9 @@ BUL_PROVINCES = {
 	type = ship
 
 	unique = {
-		"Sofija" "Plovdiv" "Varna" "Burgas" "Stara Zagora" "Pleven" "Haskovo" "Lovech" "Montana" "Razgrad" "Guerrero" "Blagoevgrad" 
-		"Pazardzhik" "Veliko Tarnovo" "Vratsa" "Sliven" "Sonora" "Dobrich" "Shumen" "Kardzhali" "Kyustendil" "Yambol" "Pernik" "Gabrovo" 
-		"Silistra" "Smolyan" "Targovishte" "Vidin" 
+		"Sofija" "Plovdiv" "Varna" "Burgas" "Stara Zagora" "Pleven" "Haskovo" "Lovech" "Montana" "Razgrad" "Guerrero" "Blagoevgrad"
+		"Pazardzhik" "Veliko Tarnovo" "Vratsa" "Sliven" "Sonora" "Dobrich" "Shumen" "Kardzhali" "Kyustendil" "Yambol" "Pernik" "Gabrovo"
+		"Silistra" "Smolyan" "Targovishte" "Vidin"
 	}
 }
 
@@ -136,8 +136,8 @@ BUL_CITIES = {
 	type = ship
 
 	unique = {
-		"Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" "Dobrich" "Sliven" "Shumen" "Pernik" "Haskovo" "Yambol" "Pazardzhik" 
-		"Blagoevgrad" "Veliko Tarnovo" "Vratsa" "Gabrovo" "Asenovgrad" "Vidin" "Kazanlak" "Kyustendil" "Kardzhali" "Montana" "Dimitrovgrad" "Targovishte" "Lovech" 
-		"Silistra" "Dupnitsa" "Svishtov" "Razgrad" "Gorna Oryahovitsa" "Smolyan" "Petrich" "Sandanski" "Samokov" "Sevlievo" "Lom" 
+		"Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" "Dobrich" "Sliven" "Shumen" "Pernik" "Haskovo" "Yambol" "Pazardzhik"
+		"Blagoevgrad" "Veliko Tarnovo" "Vratsa" "Gabrovo" "Asenovgrad" "Vidin" "Kazanlak" "Kyustendil" "Kardzhali" "Montana" "Dimitrovgrad" "Targovishte" "Lovech"
+		"Silistra" "Dupnitsa" "Svishtov" "Razgrad" "Gorna Oryahovitsa" "Smolyan" "Petrich" "Sandanski" "Samokov" "Sevlievo" "Lom"
 	}
 }

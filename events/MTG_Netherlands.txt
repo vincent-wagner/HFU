@@ -8,7 +8,7 @@ country_event = {
 	picture = GFX_report_event_hol_cabinet_de_geer
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.10.a
@@ -36,13 +36,13 @@ country_event = {
 	picture = GFX_report_event_hol_cabinet_gerbrandy
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.14.a
 		add_popularity = {
-		    ideology = democratic
-		    popularity = -0.05
+			ideology = democratic
+			popularity = -0.05
 		}
 		retire_country_leader = yes
 		create_country_leader = {
@@ -74,7 +74,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
-	
+
 	# Oh, well then...
 	option = {
 		name = mtg_netherlands.21.a
@@ -95,7 +95,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
-	
+
 	# Goodbye, cruel world!
 	option = {
 		name = mtg_netherlands.22.a
@@ -116,15 +116,15 @@ country_event = {
 	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.63.a
-		if = { 
-		limit = { original_tag = HOL }
-		remove_ideas = HOL_preparing_evacuation_of_gold_reserves
-		add_legitimacy = 20
-		add_political_power = 100
+		if = {
+			limit = { original_tag = HOL }
+			remove_ideas = HOL_preparing_evacuation_of_gold_reserves
+			add_legitimacy = 20
+			add_political_power = 100
 		}
 	}
 }
@@ -149,7 +149,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.66.a
@@ -186,7 +186,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.66.a

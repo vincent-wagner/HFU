@@ -65,7 +65,7 @@ defined_text = { # global
 	text = {
 		trigger = {
 			OR={check_variable = {Root.selected_cheat=1}
-			Root={has_country_flag=cheating}}
+				Root={has_country_flag=cheating}}
 		}
 		localization_key = CHEAT1
 	}
@@ -81,67 +81,67 @@ defined_text = { # global
 		}
 		localization_key = CHEAT3
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=4}
 		}
 		localization_key = CHEAT4
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=5}
 		}
 		localization_key = CHEAT5
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=6}
 		}
 		localization_key = CHEAT6
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=7}
 		}
 		localization_key = CHEAT7
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=8}
 		}
 		localization_key = CHEAT8
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=9}
 		}
 		localization_key = CHEAT9
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=10}
 		}
 		localization_key = CHEAT10
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=11}
 		}
 		localization_key = CHEAT11
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=12}
 		}
 		localization_key = CHEAT12
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=13}
 		}
 		localization_key = CHEAT13
 	}
-		text = {
+	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=14}
 		}

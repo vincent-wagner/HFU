@@ -1,14 +1,14 @@
 ideas = {
 
-	mobilization_laws = { 
+	mobilization_laws = {
 		law = yes
 
 		disarmed_nation = {
-						
+
 			cost = 150
 			removal_cost = -1
 			level = 7
-			
+
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
 			}
@@ -16,16 +16,16 @@ ideas = {
 			modifier = {
 				conscription = 0.01
 			}
-			
+
 			cancel_if_invalid = no
 		}
-		
+
 		volunteer_only = {
-						
+
 			cost = 150
 			removal_cost = -1
 			level = 6
-			
+
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
 				if = {
@@ -40,25 +40,25 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 1
+				factor = 1
 
-   				modifier = {
+				modifier = {
 					factor = 60 # being disarmed is bad in a wargame yo
-					has_idea = disarmed_nation 
+					has_idea = disarmed_nation
 				}
 			}
 
 			modifier = {
 				conscription = 0.015
 			}
-			
+
 			default = yes
-			
+
 			cancel_if_invalid = no
 		}
-		
+
 		limited_conscription = {
-					
+
 			cost = 150
 			removal_cost = -1
 			level = 5
@@ -82,7 +82,7 @@ ideas = {
 					}
 					has_completed_focus = CAN_commit_to_the_war
 				}
-				
+
 
 				if = {
 					limit = {
@@ -98,7 +98,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 1
+				factor = 1
 				modifier = {
 					#Prio if low on manpower
 					factor = 20
@@ -110,12 +110,12 @@ ideas = {
 					factor = 20
 				}
 			}
-			
+
 			cancel_if_invalid = no
 		}
-		
+
 		extensive_conscription = {
-			
+
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
 				OR = {
@@ -125,12 +125,12 @@ ideas = {
 						has_war = yes
 						enemies_strength_ratio > 0.5
 						#any_enemy_country = {
-						#	strength_ratio = {
-						#		tag = ROOT 
-						#		ratio > 0.5
-						#	}
-						#}
-					}					
+							#	strength_ratio = {
+								#		tag = ROOT
+								#		ratio > 0.5
+								#	}
+							#}
+					}
 				}
 				has_war_support > 0.2
 				#Special rules AST in TFV
@@ -140,7 +140,7 @@ ideas = {
 						has_dlc = "Together for Victory"
 					}
 					has_completed_focus = AST_citizen_military_forces
-				}				
+				}
 				if = {
 					limit = {
 						original_tag = CAN
@@ -148,7 +148,7 @@ ideas = {
 					}
 					has_completed_focus = CAN_commit_to_the_war
 				}
-				
+
 
 				if = {
 					limit = {
@@ -160,7 +160,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 1
+				factor = 1
 				modifier = {
 					#Prio if low on manpower
 					factor = 20
@@ -173,26 +173,26 @@ ideas = {
 					tag = CHI
 					has_manpower < 200000
 				}
-				
+
 			}
-			
+
 			cost = 150
 			removal_cost = -1
 			level = 4
-			
+
 			modifier = {
 				conscription = 0.05
 				#industrial_capacity_factory = -0.1
 				#production_speed_buildings_factor = -0.1
 				training_time_factor = 0.1
 			}
-			
+
 			cancel_if_invalid = no
 		}
-		
+
 		service_by_requirement = {
-			
-			
+
+
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
 				OR = {
@@ -202,23 +202,23 @@ ideas = {
 						has_war = yes
 						enemies_strength_ratio > 0.6
 						#any_enemy_country = {
-						#	strength_ratio = {
-						#		tag = ROOT 
-						#		ratio > 0.6
-						#	}
-						#}
+							#	strength_ratio = {
+								#		tag = ROOT
+								#		ratio > 0.6
+								#	}
+							#}
 					}
 				}
 				OR = {
 					has_war_support > 0.6
 					surrender_progress > 0
 				}
-				
+
 				AND = {
-				
-				
-				not = {has_completed_focus = GER_endsieg}
-				
+
+
+					not = {has_completed_focus = GER_endsieg}
+
 				}
 
 				if = {
@@ -235,7 +235,7 @@ ideas = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-						has_completed_focus = CAN_compromise_with_quebec
+					has_completed_focus = CAN_compromise_with_quebec
 				}
 				if = {
 					limit = {
@@ -255,7 +255,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 1
+				factor = 1
 				modifier = {
 					#Prio if low on manpower
 					factor = 20
@@ -294,7 +294,7 @@ ideas = {
 				}
 
 			}
-			
+
 			cost = 150
 			removal_cost = -1
 			level = 3
@@ -306,13 +306,13 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 				training_time_factor = 0.2
 			}
-			
+
 			cancel_if_invalid = no
 		}
-		
+
 		all_adults_serve = {
-			
-			
+
+
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
 				has_war = yes
@@ -322,11 +322,11 @@ ideas = {
 				}
 				enemies_strength_ratio > 0.75
 				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT 
-				#		ratio > 0.75
-				#	}
-				#}
+					#	strength_ratio = {
+						#		tag = ROOT
+						#		ratio > 0.75
+						#	}
+					#}
 
 				if = {
 					limit = {
@@ -342,9 +342,9 @@ ideas = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-					
-						has_completed_focus = CAN_compromise_with_quebec
-									
+
+					has_completed_focus = CAN_compromise_with_quebec
+
 				}
 				if = {
 					limit = {
@@ -364,7 +364,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 1
+				factor = 1
 				modifier = {
 					#Prio if low on manpower
 					factor = 20
@@ -392,14 +392,14 @@ ideas = {
 					factor = 10
 					original_tag = SOV
 					date > 1943.1.1
-					has_manpower < 2000000	
+					has_manpower < 2000000
 				}
 			}
-		
+
 			cost = 150
 			removal_cost = -1
 			level = 2
-			
+
 			modifier = {
 				conscription = 0.2
 				industrial_capacity_factory = -0.3
@@ -408,13 +408,13 @@ ideas = {
 				#XP from reinforcement penalty (small)
 				training_time_factor = 0.3
 			}
-			
+
 			cancel_if_invalid = no
 		}
-		
+
 		scraping_the_barrel = {
-			
-			
+
+
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
 				has_war = yes
@@ -424,11 +424,11 @@ ideas = {
 				}
 				enemies_strength_ratio > 1
 				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT 
-				#		ratio > 1
-				#	}
-				#}
+					#	strength_ratio = {
+						#		tag = ROOT
+						#		ratio > 1
+						#	}
+					#}
 				if = {
 					limit = {
 						original_tag = AST
@@ -443,9 +443,9 @@ ideas = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-	
-						has_completed_focus = CAN_compromise_with_quebec
-					
+
+					has_completed_focus = CAN_compromise_with_quebec
+
 				}
 				if = {
 					limit = {
@@ -465,12 +465,12 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 1
+				factor = 1
 				modifier = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  500
-				}				
+				}
 				modifier = {
 					#Lower chance if has decent amount
 					factor = 0.5
@@ -494,7 +494,7 @@ ideas = {
 				production_speed_buildings_factor = -0.4
 				training_time_factor = 0.5
 			}
-			
+
 			cancel_if_invalid = no
 		}
 	}

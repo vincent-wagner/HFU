@@ -1,11 +1,11 @@
 technologies = {
-	
+
 	early_fighter = {
 
 		enable_equipments = {
 			fighter_equipment_0
 		}
-	
+
 		path = {
 			leads_to_tech = fighter1
 			research_cost_coeff = 1
@@ -18,48 +18,48 @@ technologies = {
 			leads_to_tech = naval_bomber1
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1933
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 2 }
 		}
-		
+
 		categories = {
 			light_air
 			light_fighter
 			air_equipment
 		}
-		
+
 		sub_technologies = {
 			cv_early_fighter
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 2
 				is_major = yes
 			}
 		}
 	}
-	
+
 	cv_early_fighter = {
 
 		enable_equipments = {
 			cv_fighter_equipment_0
 		}
-	
+
 		research_cost = 0.7 #Carrier Variant
 		start_year = 1933
-		
+
 		categories = {
 			naval_air
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1.5
 			modifier = {
@@ -79,18 +79,18 @@ technologies = {
 			}
 		}
 	}
-	
+
 	fighter1 = {
 
 		enable_equipments = {
 			fighter_equipment_1
 		}
-	
+
 		path = {
 			leads_to_tech = fighter2
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1936
 
@@ -98,69 +98,69 @@ technologies = {
 			name = air_techs_folder
 			position = { x = 0 y = 4 }
 		}
-		
+
 		categories = {
 			light_air
 			light_fighter
 			air_equipment
 		}
-		
+
 		sub_technologies = {
 			cv_fighter1
 		}
-		
+
 		ai_will_do = {
 			factor = 4
-			
+
 			modifier = {
 				factor = 2
 				is_major = yes
 			}
-			
+
 			modifier = {
 				factor = 1.2
 				date > "1937.1.1"
 			}
-			
+
 			modifier = {
 				factor = 1.2
 				date > "1938.1.1"
 			}
-			
+
 			modifier = {
 				factor = 1.2
 				date > "1939.1.1"
 			}
-			
+
 			modifier = {
 				factor = 5
 				date > "1940.1.1"
 			}
 		}
 	}
-	
+
 	cv_fighter1 = {
 
 		enable_equipments = {
 			cv_fighter_equipment_1
 		}
-	
+
 		research_cost = 0.7 #Carrier Variant
 		start_year = 1936
-		
+
 		categories = {
 			naval_air
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 2
 				tag = USA
 			}
-			
+
 			modifier = {
 				factor = 2
 				tag = JAP
@@ -184,16 +184,16 @@ technologies = {
 			}
 		}
 	}
-	
+
 	fighter2 = {
 
 		enable_equipments = {
 			fighter_equipment_2
 		}
-	
+
 		path = {
 		}
-				
+
 
 		research_cost = 2
 		start_year = 1940
@@ -205,20 +205,20 @@ technologies = {
 			name = secret_weapons_folder
 			position = { x = 6 y = 8 }
 		}
-		
+
 		categories = {
 			light_air
 			light_fighter
 			air_equipment
 		}
-		
+
 		sub_technologies = {
 			cv_fighter2
 		}
-		
+
 		ai_will_do = {
 			factor = 4
-			
+
 			modifier = {
 				factor = 4
 				is_major = yes
@@ -228,7 +228,7 @@ technologies = {
 				factor = 2
 				original_tag = GER
 			}
-			
+
 			modifier = {
 				add = -3
 				original_tag = SOV
@@ -238,46 +238,46 @@ technologies = {
 				factor = 1.2
 				date > "1941.1.1"
 			}
-			
+
 			modifier = {
 				factor = 1.2
 				date > "1942.1.1"
 			}
-			
+
 			modifier = {
 				factor = 1.2
 				date > "1943.1.1"
 			}
-			
+
 			modifier = {
 				factor = 5
 				date > "1944.1.1"
 			}
 		}
 	}
-	
+
 	cv_fighter2 = {
 
 		enable_equipments = {
 			cv_fighter_equipment_2
 		}
-	
+
 		research_cost = 0.7 #Carrier Variant
 		start_year = 1940
-		
+
 		categories = {
 			naval_air
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 2
 				tag = USA
 			}
-			
+
 			modifier = {
 				factor = 2.5
 				tag = JAP
@@ -309,12 +309,12 @@ technologies = {
 		enable_equipments = {
 			CAS_equipment_1
 		}
-	
+
 		path = {
 			leads_to_tech = CAS2
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1936
 
@@ -322,25 +322,25 @@ technologies = {
 			name = air_techs_folder
 			position = { x = -4 y = 4 }
 		}
-		
+
 		sub_technologies = {
 			cv_CAS1
 		}
-		
+
 		categories = {
 			light_air
 			cas_bomber
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 2
 				tag = GER
 			}
-			
+
 			modifier = {
 				factor = 100
 				tag = SOV
@@ -353,21 +353,21 @@ technologies = {
 
 		}
 	}
-	
+
 	cv_CAS1 = {
 
 		enable_equipments = {
 			cv_CAS_equipment_1
 		}
-	
+
 		research_cost = 0.5 #Carrier Variant
 		start_year = 1936
-		
+
 		categories = {
 			naval_air
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -401,16 +401,16 @@ technologies = {
 			}
 		}
 	}
-	
+
 	CAS2 = {
 
 		enable_equipments = {
 			CAS_equipment_2
 		}
-	
+
 		path = {
 		}
-		
+
 		research_cost = 2
 		start_year = 1940
 
@@ -418,20 +418,20 @@ technologies = {
 			name = air_techs_folder
 			position = { x = -4 y = 6 }
 		}
-		
+
 		sub_technologies = {
 			cv_CAS2
 		}
-		
+
 		categories = {
 			light_air
 			cas_bomber
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 2
 				tag = GER
@@ -451,28 +451,28 @@ technologies = {
 					has_war_with = SOV
 				}
 			}
-			
+
 			modifier = {
 				factor = 3
 				tag = SOV
 			}
 		}
 	}
-	
+
 	cv_CAS2 = {
 
 		enable_equipments = {
 			cv_CAS_equipment_2
 		}
-	
+
 		research_cost = 0.5 #Carrier Variant
 		start_year = 1940
-		
+
 		categories = {
 			naval_air
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -506,29 +506,29 @@ technologies = {
 		enable_equipments = {
 			nav_bomber_equipment_1
 		}
-	
+
 		path = {
 			leads_to_tech = naval_bomber2
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = air_techs_folder
 			position = { x = 4 y = 4 }
 		}
-		
+
 		sub_technologies = {
 			cv_naval_bomber1
 		}
-		
+
 		categories = {
 			naval_air
 			naval_bomber
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -543,31 +543,31 @@ technologies = {
 				factor = 5
 				tag = USA
 			}
-			
+
 			modifier = {
 				factor = 5
 				tag = JAP
 			}
 		}
 	}
-	
+
 	cv_naval_bomber1 = {
 
 		enable_equipments = {
 			cv_nav_bomber_equipment_1
 		}
-	
+
 		research_cost =  0.7 #Carrier Variant
 		start_year = 1936
-		
+
 		categories = {
 			naval_air
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0
 				OR = {
@@ -599,33 +599,33 @@ technologies = {
 			}
 		}
 	}
-	
+
 	naval_bomber2 = {
 
 		enable_equipments = {
 			nav_bomber_equipment_2
 		}
-	
+
 		path = {
 		}
-		
+
 		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 4 y = 6 }
 		}
-		
+
 		sub_technologies = {
 			cv_naval_bomber2
 		}
-		
+
 		categories = {
 			naval_air
 			air_equipment
 			naval_bomber
 		}
-		
+
 		ai_will_do = {
 			factor = 1.5
 			modifier = {
@@ -647,32 +647,32 @@ technologies = {
 				factor = 5
 				tag = USA
 			}
-			
+
 			modifier = {
 				factor = 5
 				tag = JAP
 			}
 		}
 	}
-	
+
 	cv_naval_bomber2 = {
 
 		enable_equipments = {
 			cv_nav_bomber_equipment_2
 		}
-	
+
 		research_cost = 0.7 #Carrier Variant
 		start_year = 1940
-		
+
 		categories = {
 			naval_air
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 5 #if you have carriers, you definitely want these!
-			
-		modifier = {
+
+			modifier = {
 			}
 			modifier = {
 				factor = 2.5
@@ -704,7 +704,7 @@ technologies = {
 		enable_equipments = {
 			tac_bomber_equipment_0
 		}
-	
+
 		path = {
 			leads_to_tech = heavy_fighter1
 			research_cost_coeff = 1
@@ -715,70 +715,70 @@ technologies = {
 		}
 
 		#path = {
-		#	leads_to_tech = scout_plane1
-		#	research_cost_coeff = 1
-		#}
-		
+			#	leads_to_tech = scout_plane1
+			#	research_cost_coeff = 1
+			#}
+
 		research_cost = 2
 		start_year = 1933
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 2 }
 		}
-		
+
 		categories = {
 			medium_air
 			tactical_bomber
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	heavy_fighter1 = {
 
 		enable_equipments = {
 			heavy_fighter_equipment_1
 		}
-	
+
 		path = {
 			leads_to_tech = heavy_fighter2
 			research_cost_coeff = 1
 		}
-		
+
 		research_cost = 2
 		start_year = 1936
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 4 }
 		}
-		
+
 		categories = {
 			medium_air
 			air_equipment
 			cat_heavy_fighter
 			light_fighter
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	heavy_fighter2 = {
 
 		enable_equipments = {
 			heavy_fighter_equipment_2
 		}
-	
+
 		path = {
 		}
 		on_research_complete={
 			create_equipment_variant = {
-			name = "Upgraded Heavy Fighter"
-			type = heavy_fighter_equipment_2
+				name = "Upgraded Heavy Fighter"
+				type = heavy_fighter_equipment_2
 				upgrades = {
 					plane_range_upgrade = 5
 					plane_engine_upgrade = 3
@@ -793,14 +793,14 @@ technologies = {
 			name = air_techs_folder
 			position = { x = -2 y = 6 }
 		}
-		
+
 		categories = {
 			medium_air
 			air_equipment
 			cat_heavy_fighter
 			light_fighter
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -810,7 +810,7 @@ technologies = {
 		enable_equipments = {
 			scout_plane_equipment_1
 		}
-	
+
 		path = {
 			leads_to_tech = scout_plane2
 			research_cost_coeff = 1
@@ -822,13 +822,13 @@ technologies = {
 			name = air_techs_folder
 			position = { x = 6 y = 4 }
 		}
-		
+
 		categories = {
 			medium_air
 			air_equipment
 			cat_scout_plane
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -851,26 +851,26 @@ technologies = {
 			}
 		}
 	}
-	
+
 	scout_plane2 = {
 
 		enable_equipments = {
 			scout_plane_equipment_2
 		}
-		
+
 		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 6 y = 6 }
 		}
-		
+
 		categories = {
 			medium_air
 			air_equipment
 			cat_scout_plane
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -889,13 +889,13 @@ technologies = {
 			}
 		}
 	}
-	
+
 	tactical_bomber1 = {
 
 		enable_equipments = {
 			tac_bomber_equipment_1
 		}
-	
+
 		path = {
 			leads_to_tech = tactical_bomber2
 			research_cost_coeff = 1
@@ -908,16 +908,16 @@ technologies = {
 			name = air_techs_folder
 			position = { x = 2 y = 4 }
 		}
-		
+
 		categories = {
 			medium_air
 			tactical_bomber
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 1.2
 				is_major = yes
@@ -935,7 +935,7 @@ technologies = {
 				is_major = yes
 				date > "1938.1.1"
 			}
-			
+
 			modifier = {
 				factor = 5
 				is_major = yes
@@ -943,32 +943,32 @@ technologies = {
 			}
 		}
 	}
-	
+
 	tactical_bomber2 = {
 
 		enable_equipments = {
 			tac_bomber_equipment_2
 		}
-	
+
 		path = {
 		}
-		
+
 		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 2 y = 6 }
 		}
-		
+
 		categories = {
 			medium_air
 			tactical_bomber
 			air_equipment
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 1.2
 				is_major = yes
@@ -986,7 +986,7 @@ technologies = {
 				is_major = yes
 				date > "1941.1.1"
 			}
-			
+
 			modifier = {
 				factor = 5
 				is_major = yes
@@ -999,13 +999,13 @@ technologies = {
 		enable_equipments = {
 			strat_bomber_equipment_1
 		}
-	
+
 		path = {
 			leads_to_tech = strategic_bomber2
 			research_cost_coeff = 1
 		}
-		
-				allow = {
+
+		allow = {
 			always=no
 		}
 
@@ -1015,80 +1015,80 @@ technologies = {
 			name = air_techs_folder
 			position = { x = 0 y = 4 }
 		}
-		
+
 		categories = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
 		}
 		allow_branch = {
-			
-		always=no
+
+			always=no
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 5
 				tag = ENG
 			}
-			
+
 			modifier = {
 				factor = 5
 				tag = USA
 			}
 		}
 	}
-	
+
 	strategic_bomber2 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_2
 		}
-	
+
 		path = {
 			leads_to_tech = strategic_bomber3
 			research_cost_coeff = 1
 		}
-		
+
 		allow = {
 			always=no
 		}
-		
+
 		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 6 }
 		}
-		
+
 		categories = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 5
 				tag = ENG
 			}
-			
+
 			modifier = {
 				factor = 5
 				tag = USA
 			}
 		}
 	}
-	
+
 	strategic_bomber3 = {
 
 		enable_equipments = {
 			strat_bomber_equipment_3
 		}
-		
+
 		path = {
 			leads_to_tech = jet_strategic_bomber1
 			research_cost_coeff = 1
@@ -1097,28 +1097,28 @@ technologies = {
 		allow = {
 			always=no
 		}
-		
+
 		research_cost = 2
 		start_year = 1944
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 8 }
 		}
-		
+
 		categories = {
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
 		}
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 5
 				tag = ENG
 			}
-			
+
 			modifier = {
 				factor = 5
 				tag = USA
@@ -1131,7 +1131,7 @@ technologies = {
 		enable_equipments = {
 			rocket_suicide_equipment_1
 		}
-				
+
 		research_cost = 1.5 #Carrier Variant
 		start_year = 1944
 
@@ -1141,10 +1141,10 @@ technologies = {
 		}
 
 		#folder = {
-		#	name = air_techs_folder
-		#	position = { x = -2 y = 8 }
-		#}
-		
+			#	name = air_techs_folder
+			#	position = { x = -2 y = 8 }
+			#}
+
 		ai_will_do = {
 			factor = 0
 		}

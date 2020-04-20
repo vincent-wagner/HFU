@@ -1,6 +1,6 @@
 focus_tree = {
 	id = china_nationalist_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
@@ -9,47 +9,47 @@ focus_tree = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	
+
 
 	default = no
 
 	continuous_focus_position = { x = 20 y = 1000 }
 
-#	focus = {
-#		id = CHI_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
+	#	focus = {
+		#		id = CHI_
+		#		icon = GFX_
+		#		prerequisite = { focus = }
+		#		mutually_exclusive = { focus =  }
+		#		x = -3
+		#		y = 0
+		#		relative_position_id =
+		#
+		#		cost = 10
+		#
+		#		ai_will_do = {
+			#			factor = 1
+			#		}
+		#
+		#		available = {
+			#
+			#		}
+		#
+		#		bypass = {
+			#
+			#		}
+		#
+		#		cancel_if_invalid = yes
+		#		continue_if_invalid = no
+		#		available_if_capitulated = no
+		#
+		#		complete_tooltip = {
+			#
+			#		}
+		#
+		#		completion_reward = {
+			#
+			#		}
+		#	}
 	shared_focus = CHI_invite_foreign_investors
 
 	focus = {
@@ -65,7 +65,7 @@ focus_tree = {
 		}
 
 		available = {
-		
+
 		}
 
 		bypass = {
@@ -82,9 +82,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-			
+
 		}
-	 
+
 	}
 
 	focus = {
@@ -194,7 +194,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			CHI_hyper_inflation_level_down = yes 
+			CHI_hyper_inflation_level_down = yes
 		}
 	}
 
@@ -265,7 +265,7 @@ focus_tree = {
 
 		}
 
-		completion_reward = {			
+		completion_reward = {
 			add_war_support = 0.1
 			CHI_hyper_inflation_level_up = yes
 		}
@@ -679,7 +679,7 @@ focus_tree = {
 		prerequisite = { focus = CHI_foreign_threats }
 		x = 0
 		y = 1
-		relative_position_id = CHI_foreign_threats  
+		relative_position_id = CHI_foreign_threats
 
 		cost = 10
 
@@ -690,7 +690,7 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_idea = CHI_army_corruption_1
-			}		
+			}
 		}
 
 		bypass = {
@@ -778,7 +778,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -974,7 +974,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -1062,7 +1062,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {			
+			OR = {
 				has_war = no
 				has_stability > 0.7
 			}
@@ -1166,7 +1166,7 @@ focus_tree = {
 		completion_reward = {
 			CHI_hyper_inflation_level_up = yes
 			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = CHI_mining_commission			
+			show_ideas_tooltip = CHI_mining_commission
 		}
 	}
 

@@ -7,7 +7,7 @@ set_technology = {
 set_country_flag = monroe_doctrine
 
 add_ideas = {
-neutral_idea
+	neutral_idea
 }
 
 set_convoys = 11

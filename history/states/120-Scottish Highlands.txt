@@ -2,7 +2,7 @@ state= {
 	id=120
 	name="STATE_120"
 	manpower = 265873
-	
+
 	state_category = rural
 
 	resources={
@@ -20,10 +20,10 @@ state= {
 			industrial_complex = 1
 			air_base = 1
 			11064 = {
-				naval_base = 8	
+				naval_base = 8
 			}
 			6196 = {
-				naval_base = 1	
+				naval_base = 1
 			}
 		}
 		add_core_of = ENG
@@ -31,5 +31,5 @@ state= {
 
 	provinces=
 	{
-131 284 3159 3178 3373 6046 6062 6104 6196 6205 9075 9090 11064 11161 11266 	}
+		131 284 3159 3178 3373 6046 6062 6104 6196 6205 9075 9090 11064 11161 11266 	}
 }

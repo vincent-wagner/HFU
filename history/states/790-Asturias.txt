@@ -12,7 +12,7 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 			anti_air_building = 10
-			
+
 
 		}
 		add_core_of = SPR
@@ -20,7 +20,7 @@ state={
 	}
 
 	provinces={
-		738 3729 3744 6749 9703 9719 11688 11707 13218 
+		738 3729 3744 6749 9703 9719 11688 11707 13218
 	}
 	manpower=1197252
 	buildings_max_level_factor=1.000

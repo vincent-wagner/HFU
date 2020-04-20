@@ -7,7 +7,7 @@ horst_host_country = {
 		text = "Germany"
 		desc = ""
 	}
-	
+
 	option = {
 		name = ITA
 		text = "Italy"
@@ -93,7 +93,7 @@ horst_host_country = {
 		text = "Brazil"
 		desc = ""
 	}
-		option = {
+	option = {
 		name = MEX
 		text = "Mexico"
 		desc = ""
