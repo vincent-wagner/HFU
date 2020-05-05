@@ -162,7 +162,7 @@ equipment_modules = {
 		add_stats = {
 
 			hg_attack = 11
-			build_cost_ic = 1275
+			build_cost_ic = 1200
 		}
 		multiply_stats = {
 			naval_speed = -0.06
@@ -188,7 +188,7 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 12
-			build_cost_ic = 1350
+			build_cost_ic = 1250
 		}
 		multiply_stats = {
 			naval_speed = -0.06
@@ -219,7 +219,7 @@ equipment_modules = {
 
 		add_stats = {
 			hg_attack = 13
-			build_cost_ic = 1450
+			build_cost_ic = 1300#1450
 		}
 		multiply_stats = {
 			naval_speed = -0.06
@@ -1970,7 +1970,7 @@ equipment_modules = {
 			max_strength = 0.1
 		}
 		build_cost_resources = {
-			steel = 1
+			chromium = 1
 		}
 		add_stats = {
 			armor_value = 45
@@ -2007,7 +2007,7 @@ equipment_modules = {
 			max_strength = 0.15
 		}
 		build_cost_resources = {
-			steel = 1
+			chromium = 1
 		}
 		add_stats = {
 			armor_value = 55
@@ -2040,7 +2040,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_3
 
 		multiply_stats = {
-			build_cost_ic = 0.25
+			build_cost_ic = 0.35
 			naval_speed = -0.20
 			max_strength = 0.1
 		}

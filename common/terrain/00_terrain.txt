@@ -119,7 +119,8 @@ categories =  {
 		sound_type = plains
 
 		units = {
-			attack = -0.35
+			attack = -0.3
+			defence = -0.1
 			#movement = -0.2
 		}
 
