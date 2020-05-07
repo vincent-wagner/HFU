@@ -1,55 +1,55 @@
 focus_tree = {
 	id = yugoslavian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = YUG
 			has_dlc = "Death or Dishonor"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1350 }
 
-#	focus = {
-#		id = YUG_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
+	#	focus = {
+		#		id = YUG_
+		#		icon = GFX_
+		#		prerequisite = { focus = }
+		#		mutually_exclusive = { focus =  }
+		#		x = -3
+		#		y = 0
+		#		relative_position_id =
+		#
+		#		cost = 10
+		#
+		#		ai_will_do = {
+			#			factor = 1
+			#		}
+		#
+		#		available = {
+			#
+			#		}
+		#
+		#		bypass = {
+			#
+			#		}
+		#
+		#		cancel_if_invalid = yes
+		#		continue_if_invalid = no
+		#		available_if_capitulated = no
+		#
+		#		complete_tooltip = {
+			#
+			#		}
+		#
+		#		completion_reward = {
+			#
+			#		}
+		#	}
 
 	###############################
 	##### Democratic/Fascist ######
@@ -129,21 +129,21 @@ focus_tree = {
 					modifier = large_increase
 				}
 			}
-			
+
 			if = {
-			limit = { is_ai = no}
-			add_ideas = YUG_dimitrije_ljotic
+				limit = { is_ai = no}
+				add_ideas = YUG_dimitrije_ljotic
 			}
-			
+
 			if = {
-			limit = { has_idea = YUG_dimitrije_ljotic }
-			add_political_power = 187.5
+				limit = { has_idea = YUG_dimitrije_ljotic }
+				add_political_power = 187.5
 			}
-			
+
 		}
 	}
 
-	
+
 	focus = {
 		id = YUG_attract_foreign_capital
 		icon = GFX_goal_generic_intelligence_exchange
@@ -212,10 +212,10 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = YUG_idea_slovene_nationalism
 			ITA = {
-				add_opinion_modifier = { 
-						target = ROOT
-						modifier = huge_increase
-					}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = huge_increase
+				}
 			}
 		}
 	}
@@ -255,7 +255,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = YUG_greater_yugoslavia
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -301,7 +301,7 @@ focus_tree = {
 		id = YUG_crush_the_ustasa
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = YUG_concessions_for_macedonians }
-		
+
 		x = 0
 		y = 3
 		relative_position_id = YUG_ban_slovene_nationalist_parties
@@ -339,7 +339,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = YUG_all_yugoslavian_regiments
 		icon = GFX_goal_rhineland
@@ -355,7 +355,7 @@ focus_tree = {
 		}
 
 		available = {
-		
+
 		}
 
 		bypass = {
@@ -374,7 +374,7 @@ focus_tree = {
 			add_ideas = YUG_idea_all_yugoslavian_regiments
 		}
 	}
-	
+
 	focus = {
 		id = YUG_invite_german_military_mission
 		icon = GFX_focus_generic_military_mission
@@ -390,7 +390,7 @@ focus_tree = {
 		}
 
 		available = {
-		is_ai = no
+			is_ai = no
 			GER = {
 				NOT = { has_war_with = ROOT }
 				exists = yes
@@ -411,8 +411,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		remove_ideas = anti_german_military
-		swap_ideas = { remove_idea = YUG_idea_serbian_general_staff add_idea = YUG_idea_yugoslavian_general_staff }
+			remove_ideas = anti_german_military
+			swap_ideas = { remove_idea = YUG_idea_serbian_general_staff add_idea = YUG_idea_yugoslavian_general_staff }
 		}
 	}
 
@@ -458,7 +458,7 @@ focus_tree = {
 
 	############################
 	##### SELF GOVERNMENT ######
-	############################	
+	############################
 
 	focus = {
 		id = YUG_concessions_for_macedonians
@@ -765,7 +765,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -790,7 +790,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = YUG_expand_the_university_of_zagreb }
 		mutually_exclusive = { focus = YUG_improve_serbian_rail_network }
-		
+
 		x = 0
 		y = 2
 		relative_position_id = YUG_develop_civilian_industry
@@ -918,7 +918,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-		
+
 		}
 
 		completion_reward = {
@@ -1321,7 +1321,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	############################
 	######## AIR FORCE #########
 	############################
@@ -1699,8 +1699,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-				
-			
+
+
 		}
 	}
 
@@ -2786,7 +2786,7 @@ focus_tree = {
 							}
 							level = 2
 							instant_build = yes
-						}			
+						}
 						add_building_construction = {
 							type = coastal_bunker
 							province = {
@@ -2799,7 +2799,7 @@ focus_tree = {
 					}
 				}
 			}
-			
+
 			if = {
 				limit = { has_full_control_of_state = 105 }
 				105 = {
@@ -2814,7 +2814,7 @@ focus_tree = {
 							}
 							level = 2
 							instant_build = yes
-						}			
+						}
 						add_building_construction = {
 							type = coastal_bunker
 							province = {

@@ -137,7 +137,7 @@ USA_aid_britain = {
 		}
 
 		modifier = {
-			war_support_weekly = 0.002		
+			war_support_weekly = 0.002
 		}
 
 		days_remove = 180
@@ -151,7 +151,7 @@ USA_aid_britain = {
 		}
 	}
 
-	
+
 
 }
 
@@ -216,7 +216,7 @@ foreign_support = {
 			}
 		}
 
-		fire_only_once = no	
+		fire_only_once = no
 
 		days_re_enable = 180
 
@@ -250,18 +250,18 @@ USA_war_plans = {
 			factor = 1
 		}
 		fire_only_once = yes
-		complete_effect = { 
-		
-		
-		ENG = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  } 
-	    FRA = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  } 
-	    SAF = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  } 
-	    NZL = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  } 
-	    AST = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  } 
-	    CAN = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  } 
-		RAJ = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  } 
-		USA = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  }
-	}}
+		complete_effect = {
+
+
+			ENG = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  }
+			FRA = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  }
+			SAF = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  }
+			NZL = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  }
+			AST = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  }
+			CAN = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  }
+			RAJ = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  }
+			USA = { add_timed_idea = { idea = USA_war_plans_1 days = 182 }  }
+			}}
 
 	USA_execute_war_plan_orange = {
 		icon = generic_operation
@@ -304,21 +304,21 @@ USA_war_plans = {
 			factor = 1
 		}
 		fire_only_once = yes
-		complete_effect = { 
-		ENG = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  } 
-	    FRA = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  } 
-	    SAF = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  } 
-	    NZL = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  } 
-	    AST = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  } 
-	    CAN = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  } 
-		RAJ = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  } 
-		USA = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  } 
-		 }  
-		
-		
-		
-		
-		
+		complete_effect = {
+			ENG = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
+			FRA = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
+			SAF = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
+			NZL = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
+			AST = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
+			CAN = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
+			RAJ = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
+			USA = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
+		}
+
+
+
+
+
 	}
 
 }

@@ -3,7 +3,7 @@ units = {
 		name = "Japanese ASW Fleet"
 		naval_base = 9950
 		task_force = {
-			name = "Japanese ASW Task Force 1"				
+			name = "Japanese ASW Task Force 1"
 			location = 9950
 			ship = { name = "ASW1" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
 			ship = { name = "ASW2" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
@@ -15,9 +15,9 @@ units = {
 			ship = { name = "ASW8" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
 			ship = { name = "ASW9" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
 			ship = { name = "ASW10" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
-		}		
+		}
 		task_force = {
-			name = "Japanese ASW Task Force 2"				
+			name = "Japanese ASW Task Force 2"
 			location = 9950
 			ship = { name = "ASW11" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
 			ship = { name = "ASW12" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
@@ -30,7 +30,7 @@ units = {
 			ship = { name = "ASW19" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
 			ship = { name = "ASW20" definition = destroyer equipment = { ship_hull_light_3 = { amount = 1 owner = JAP version_name = "ASW Class" } } }
 
-		}		
+		}
 	}
-}					
-					
+}
+

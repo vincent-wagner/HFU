@@ -13,14 +13,14 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_navy_bonus
-			
+
 			modifier = {
 				industrial_capacity_dockyard = -1
 				industry_air_damage_factor=-0.9
 				consumer_goods_factor=0.05
 			}
 		}
-		
+
 		SPA_preparing_for_war = {
 
 			allowed = {
@@ -30,19 +30,19 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = FRA_army_of_aggression_focus
 
-				modifier = {
-			production_speed_fuel_silo_factor = 0.25
+			modifier = {
+				production_speed_fuel_silo_factor = 0.25
 			}
 		}
-			
-			
-	
-			SPA_scw_veterans = {
+
+
+
+		SPA_scw_veterans = {
 
 			allowed = {
 				always = yes
@@ -59,7 +59,7 @@ ideas = {
 			rule = {
 				can_send_volunteers = yes
 			}
-			
+
 			modifier = {
 				send_volunteer_size = 100
 				send_volunteer_divisions_required = -1.0
@@ -67,9 +67,9 @@ ideas = {
 
 		}
 
-	SPA_anti_france = {
-	
-	allowed = {
+		SPA_anti_france = {
+
+			allowed = {
 				always = yes
 			}
 
@@ -80,18 +80,18 @@ ideas = {
 			removal_cost = -1
 
 			picture = FRA_army_of_aggression_focus
-			
-						targeted_modifier = {
+
+			targeted_modifier = {
 				tag = FRA
 				attack_bonus_against = 0.10
 				defense_bonus_against = 0.10
 			}
-			
+
 			modifier = {
-			war_support_factor = 0.05
+				war_support_factor = 0.05
 			}
-	
-	}
+
+		}
 
 		SPA_death_before_surrender = {
 
@@ -186,7 +186,7 @@ ideas = {
 			modifier = {
 			}
 		}
-		
+
 		SPA_recovering_from_civil_war = {
 
 			name = SPA_recovering_from_civil_war
@@ -1168,7 +1168,7 @@ ideas = {
 			allowed = {
 				original_tag = SPR
 			}
-			
+
 			traits = { prince_of_terror }
 		}
 
@@ -1181,7 +1181,7 @@ ideas = {
 			allowed = {
 				original_tag = SPR
 			}
-			
+
 			traits = { compassionate_gentleman }
 		}
 
@@ -1194,7 +1194,7 @@ ideas = {
 			allowed = {
 				original_tag = SPR
 			}
-			
+
 			traits = { war_industrialist }
 		}
 
@@ -1213,7 +1213,7 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { falangist_industrialist }
 		}
 
@@ -1230,7 +1230,7 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { falangist_figurehead }
 		}
 	}
@@ -1243,17 +1243,17 @@ ideas = {
 			ledger = army
 
 			name = SPA_jose_enrique_varela
-				
+
 			allowed = {
 				original_tag = SPR
 			}
-			
+
 			picture = generic_army_europe_3
-			
+
 			research_bonus = {
 				land_doctrine = 0.10
 			}
-			
+
 			traits = { military_theorist }
 		}
 
@@ -1261,17 +1261,17 @@ ideas = {
 			ledger = air
 
 			name = SPA_emilio_herrera
-					
+
 			allowed = {
 				original_tag = SPR
 			}
-			
+
 			picture = generic_air_europe_3
-			
+
 			research_bonus = {
 				air_doctrine = 0.10
 			}
-			
+
 			traits = { air_warfare_theorist }
 		}
 
@@ -1279,23 +1279,23 @@ ideas = {
 
 		SPA_jose_enrique_varela = { # Carlist
 			ledger = army
-				
+
 			allowed = {
 				original_tag = SPR
 			}
-	
+
 			visible = {
 			}
-	
+
 			available = {
 			}
-			
+
 			picture = SPA_jose_enrique_varela
-			
+
 			research_bonus = {
 				land_doctrine = 0.10
 			}
-			
+
 			traits = { military_theorist }
 		}
 	}
@@ -1308,17 +1308,17 @@ ideas = {
 		SPA_miguel_cabanellas_ferrer_vanilla = {
 
 			name = SPA_miguel_cabanellas_ferrer
-			
+
 			picture = generic_army_europe_3
-			
+
 			allowed = {
 				original_tag = SPR
 			}
-			
 
-			
+
+
 			traits = { army_chief_old_guard }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1328,17 +1328,17 @@ ideas = {
 		SPA_emilio_mola_vidal_vanilla = {
 
 			name = SPA_emilio_mola_vidal
-			
+
 			picture = generic_army_europe_5
-			
+
 			allowed = {
 				original_tag = SPR
 			}
-			
 
-			
+
+
 			traits = { army_chief_offensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1346,9 +1346,9 @@ ideas = {
 
 		### La Resistance ###
 		SPA_rafael_garcia_valino = { # Francoist/Carlist
-			
+
 			picture = SPA_rafael_garcia_valino
-			
+
 			allowed = {
 				original_tag = SPR
 			}
@@ -1358,18 +1358,18 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { army_chief_organizational_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		SPA_heli_rolando_de_tella = { # Francoist/Carlist
-			
+
 			picture = SPA_heli_rolando_de_tella
-			
+
 			allowed = {
 				original_tag = SPR
 			}
@@ -1379,18 +1379,18 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { army_chief_defensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		SPA_miguel_ponte = { # Francoist
-			
+
 			picture = SPA_miguel_ponte
-			
+
 			allowed = {
 				original_tag = SPR
 			}
@@ -1400,9 +1400,9 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { army_chief_drill_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1416,17 +1416,17 @@ ideas = {
 		SPA_juan_yague_blanco_vanilla = {
 
 			name = SPA_juan_yague_blanco
-			
+
 			picture = generic_air_europe_3
-			
+
 			allowed = {
 				original_tag = SPR
 			}
-			
 
-			
+
+
 			traits = { air_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1435,9 +1435,9 @@ ideas = {
 		### La Resistance ###
 
 		SPA_joaquin_garcia_morato = { # Francoist
-			
+
 			picture = SPA_joaquin_garcia_morato
-			
+
 			allowed = {
 				original_tag = SPR
 			}
@@ -1447,9 +1447,9 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { air_chief_ground_support_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1463,17 +1463,17 @@ ideas = {
 		SPA_fransisco_moreno_fernandez_vanilla = {
 
 			name = SPA_fransisco_moreno_fernandez
-			
+
 			picture = generic_navy_europe_2
-			
+
 			allowed = {
 				original_tag = SPR
 			}
-			
 
-			
+
+
 			traits = { navy_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1482,15 +1482,15 @@ ideas = {
 		SPA_luis_carrero_blanco_vanilla = {
 
 			name = SPA_luis_carrero_blanco
-			
+
 			picture = generic_navy_europe_1
-			
+
 			allowed = {
 				original_tag = SPR
 			}
-			
+
 			traits = { navy_chief_old_guard }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1499,9 +1499,9 @@ ideas = {
 		### La Resistance ###
 
 		SPA_luis_carrero_blanco = { # Francoist
-			
+
 			picture = SPA_luis_carrero_blanco
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1512,53 +1512,53 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { navy_chief_decisive_battle_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
 
-	
+
 	high_command = {
 
 		### Vanilla ###
-	
+
 		SPA_joaquin_garcia_morato_vanilla = {
 			ledger = air
 
 			name = SPA_joaquin_garcia_morato
-			
+
 			picture = generic_air_europe_2
 			allowed = {
 				original_tag = SPR
 			}
-			
 
-			
+
+
 			traits = { air_air_combat_training_3 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		SPA_angel_salas_larrazabal_vanilla = {
 			ledger = air
 
 			name = SPA_angel_salas_larrazabal
-			
+
 			picture = generic_air_europe_1
 			allowed = {
 				original_tag = SPR
 			}
-			
 
-			
+
+
 			traits = { air_strategic_bombing_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1568,9 +1568,9 @@ ideas = {
 
 		SPA_emilio_mola = { # Falangist/Francoist
 			ledger = army
-			
+
 			picture = SPA_emilio_mola
-			
+
 			allowed = {
 				original_tag = SPR
 			}
@@ -1581,9 +1581,9 @@ ideas = {
 			available = {
 
 			}
-			
+
 			traits = { army_infantry_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1591,9 +1591,9 @@ ideas = {
 
 		SPA_wilhelm_ritter_von_thoma = { # Falangist/Francoist
 			ledger = army
-			
+
 			picture = SPA_wilhelm_ritter_von_thoma
-			
+
 			allowed = {
 				original_tag = SPR
 			}
@@ -1603,9 +1603,9 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { army_armored_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1613,9 +1613,9 @@ ideas = {
 
 		SPA_enrique_canovas_lacruz = { # Francoist
 			ledger = army
-			
+
 			picture = SPA_enrique_canovas_lacruz
-			
+
 			allowed = {
 				original_tag = SPR
 			}
@@ -1625,9 +1625,9 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { army_logistics_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -1635,9 +1635,9 @@ ideas = {
 
 		SPA_miguel_cabanellas = { # Carlist
 			ledger = army
-			
+
 			picture = SPA_miguel_cabanellas
-			
+
 			allowed = {
 				original_tag = SPR
 			}
@@ -1647,9 +1647,9 @@ ideas = {
 
 			available = {
 			}
-			
+
 			traits = { army_regrouping_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}

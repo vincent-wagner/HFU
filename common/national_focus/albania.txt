@@ -1,36 +1,36 @@
 focus_tree = {
 	id = albania_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			OR={tag = ALB
-			tag = LUX
-			tag=AUS}
-		
+				tag = LUX
+				tag=AUS}
+
 		}
 	}
-	
+
 	default = no
 
-	
-
-	
 
 
 
 
 
-	
 
 
 
-	
 
-	
 
-	
+
+
+
+
+
+
+
 
 
 
@@ -55,7 +55,7 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 3
-			
+
 		}
 	}
 
@@ -71,7 +71,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -84,7 +84,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -95,7 +95,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -145,7 +145,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
 
 		bypass = {
@@ -240,7 +240,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
+		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -312,7 +312,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
+		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -362,7 +362,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -466,7 +466,7 @@ focus_tree = {
 						building = arms_factory
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -478,7 +478,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
+		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -528,7 +528,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -681,8 +681,8 @@ focus_tree = {
 	}
 
 
-	
 
-	
+
+
 
 }

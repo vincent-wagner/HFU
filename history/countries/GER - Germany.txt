@@ -4,8 +4,8 @@ oob = "GER_1936"
 
 set_fuel_ratio = 0.8
 set_variable = {
-    var = min_fuel
-    value = 0.300
+	var = min_fuel
+	value = 0.300
 }
 add_ideas = peace_training
 add_to_tech_sharing_group = axis_research
@@ -14,10 +14,10 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
-	paratroopers = 1 
+	paratroopers = 1
 	motorised_infantry = 1
 	interwar_antitank = 1
 	gw_artillery = 1
@@ -107,68 +107,68 @@ if = {
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 set_country_flag=fuel_system_enabled
 add_timed_idea = {
-    idea = GER_mefo_bills_1
-    days = 731#1369
+	idea = GER_mefo_bills_1
+	days = 731#1369
 }
 set_research_slots = 4
 set_convoys = 300
 add_equipment_to_stockpile = {
-         type = artillery_equipment_1
-         amount = 4000
-         producer = GER
+	type = artillery_equipment_1
+	amount = 4000
+	producer = GER
 }
 add_equipment_to_stockpile = {
-         type = anti_air_equipment_1
-         amount = 500
-         producer = GER
+	type = anti_air_equipment_1
+	amount = 500
+	producer = GER
 }
 add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 20000
-         producer = GER
+	type = infantry_equipment_1
+	amount = 20000
+	producer = GER
 }
 
 add_equipment_to_stockpile = {
-         type = motorized_equipment_1
-         amount = 1000
-         producer = GER
+	type = motorized_equipment_1
+	amount = 1000
+	producer = GER
 }
 add_equipment_to_stockpile = {
-         type = support_equipment_1
-         amount = 700
-         producer = GER
+	type = support_equipment_1
+	amount = 700
+	producer = GER
 }
 add_equipment_to_stockpile = {
-         type = light_tank_equipment_1
-         amount = 720
-         producer = GER
+	type = light_tank_equipment_1
+	amount = 720
+	producer = GER
 }
 add_equipment_to_stockpile = {
-         type = fighter_equipment_1
-         amount = 1000
-         producer = GER
+	type = fighter_equipment_1
+	amount = 1000
+	producer = GER
 }
 add_equipment_to_stockpile = {
-         type = transport_plane_equipment_1
-         amount = 10
-         producer = GER
+	type = transport_plane_equipment_1
+	amount = 10
+	producer = GER
 }
 add_equipment_to_stockpile = {
-         type = nav_bomber_equipment_1
-         amount = 300
-         producer = GER
+	type = nav_bomber_equipment_1
+	amount = 300
+	producer = GER
 }
 add_equipment_to_stockpile = {
-         type = tac_bomber_equipment_1
-         amount = 500
-         producer = GER
+	type = tac_bomber_equipment_1
+	amount = 500
+	producer = GER
 }
 add_equipment_to_stockpile = {
-         type = CAS_equipment_1
-         amount = 600
-         producer = GER
+	type = CAS_equipment_1
+	amount = 600
+	producer = GER
 }
-set_stability = 0.75 
+set_stability = 0.75
 set_war_support = 0.4
 
 #Trade
@@ -199,7 +199,7 @@ add_ideas = {
 	export_focus
 	limited_conscription
 	partial_economic_mobilisation
-	
+
 }
 #add_ideas = GER_mefo_bills_1
 
@@ -512,7 +512,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Hasso von Manteuffel"
-		picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
+	picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
 	traits = { armor_officer trait_cautious }
 	skill = 4
 	id = 25
@@ -585,7 +585,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Erich Raeder"
-		picture = "Portrait_Germany_Erich_Raeder.dds"
+	picture = "Portrait_Germany_Erich_Raeder.dds"
 	traits = { naval_lineage battleship_adherent ironside air_controller }
 	skill = 5
 	id = 27
@@ -597,7 +597,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = ".FazeHeart"
-		picture = "Portrait_Germany_FazeHeart.dds"
+	picture = "Portrait_Germany_FazeHeart.dds"
 	traits = { fleet_protector destroyer_leader }
 	skill = 3
 	attack_skill = 2
@@ -608,7 +608,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Alfred Saalwächter"
-		picture = "Portrait_Germany_Alfred_Saalwachter.dds"
+	picture = "Portrait_Germany_Alfred_Saalwachter.dds"
 	traits = { superior_tactician}
 	skill = 4
 	id = 28
@@ -620,7 +620,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Hermann Boehm"
-		picture = "Portrait_Germany_Hermann_Boehm.dds"
+	picture = "Portrait_Germany_Hermann_Boehm.dds"
 	traits = { craven superior_tactician }
 	skill = 4
 	id = 29
@@ -632,7 +632,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Wilhelm Marschall"
-		picture = "Portrait_Germany_Wilhelm_Marschall.dds"
+	picture = "Portrait_Germany_Wilhelm_Marschall.dds"
 	traits = { }
 	skill = 4
 	id = 30
@@ -644,7 +644,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Günther Lütjens"
-		picture = "Portrait_Germany_Gunter_Lutjens.dds"
+	picture = "Portrait_Germany_Gunter_Lutjens.dds"
 	traits = { gentlemanly superior_tactician fly_swatter blockade_runner }
 	skill = 5
 	id = 31
@@ -725,7 +725,7 @@ if = {
 		name_group = GER_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-        	fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
@@ -733,7 +733,7 @@ if = {
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			rear_1_custom_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_airplane_launcher_1
-    	}
+		}
 	}
 	create_equipment_variant = {
 		name = "Type 24 Class"

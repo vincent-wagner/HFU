@@ -5,10 +5,10 @@ equipments = {
 
 		is_archetype = yes
 		type = convoy
-		picture = archetype_convoy		
+		picture = archetype_convoy
 		group_by = archetype
 		sprite = convoy
-		
+
 		interface_category = interface_category_other_ships
 
 		# Unused by convoys
@@ -31,12 +31,12 @@ equipments = {
 		anti_air_attack = 0.1
 
 
-        #Space taken in convoy
-        lend_lease_cost = 0
-		
+		#Space taken in convoy
+		lend_lease_cost = 0
+
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
-		
+
 		build_cost_ic = 70
 		resources = {
 			#oil = 1
@@ -48,7 +48,7 @@ equipments = {
 		year = 1910
 
 		archetype = convoy
-		type = { 
+		type = {
 			convoy
 		}
 		active = yes

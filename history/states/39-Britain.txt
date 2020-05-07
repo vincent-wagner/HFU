@@ -3,9 +3,9 @@ state={
 	id=39
 	name="STATE_39" # South Tyrol
 	manpower = 641650
-	
+
 	state_category = town
-	
+
 	resources={
 		aluminium=14 # was: 22
 		#chromium=44    #7 from Aegean Islands, 14 from Epirus, 12 from Thessaly/Greece, 11 from Thrace             44 CHROMIUM MOVED TO SICILY
@@ -24,6 +24,6 @@ state={
 	}
 
 	provinces={
-		656 6631 6675 9598 9630 11598 11615 
+		656 6631 6675 9598 9630 11598 11615
 	}
 }

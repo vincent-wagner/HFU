@@ -5,7 +5,7 @@ state=
 	manpower = 365500
 	impassable=yes
 	state_category = rural
-	
+
 	history=
 	{
 		victory_points = {
@@ -20,5 +20,5 @@ state=
 	}
 	provinces=
 	{
-7114 9793 9845 	}
+		7114 9793 9845 	}
 }

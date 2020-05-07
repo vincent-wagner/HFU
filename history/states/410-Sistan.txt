@@ -3,14 +3,14 @@ state={
 	id=410
 	name="STATE_410"
 	manpower = 341053
-	
+
 	state_category = rural
 
 	history={
 		owner = PER
 		buildings = {
 			infrastructure = 2
-					1889 = {
+			1889 = {
 				naval_base = 1
 			}
 		}
@@ -18,6 +18,6 @@ state={
 	}
 
 	provinces={
-		1889 2039 2070 4891 10782 13082 
+		1889 2039 2070 4891 10782 13082
 	}
 }

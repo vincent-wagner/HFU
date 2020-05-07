@@ -1,7 +1,7 @@
 spy_agency = {
 	dont_show_agency_warning = {
 		allowed = {
-			OR = {	
+			OR = {
 				tag = SOV
 				tag = FRA
 				tag = JAP
@@ -39,7 +39,7 @@ spy_agency = {
 	}
 	show_agency_warning = {
 		allowed = {
-			OR = {	
+			OR = {
 				tag = SOV
 				tag = FRA
 				tag = JAP
@@ -77,7 +77,7 @@ spy_agency = {
 	}
 	spy_agency_upgrade = {
 		icon = generic_industry
-		
+
 		allowed = {
 			always = no
 		}
@@ -102,7 +102,7 @@ spy_agency = {
 	}
 	spy_agency_upgrade2 = {
 		icon = generic_industry
-		
+
 		allowed = {
 			always = no
 		}

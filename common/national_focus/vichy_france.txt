@@ -1,9 +1,9 @@
 ﻿focus_tree = {
 	id = vichy_french_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = EFR
@@ -22,7 +22,7 @@
 		}
 		prerequisite = {}
 		mutually_exclusive = { }
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -30,7 +30,7 @@
 		available = {
 			has_country_leader = { ruling_only = yes name = "Philippe Pétain" }
 		}
-		
+
 		bypass = {
 
 		}
@@ -57,19 +57,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -90,19 +90,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_national_revolution
 		}
 		relative_position_id = VIC_the_national_revolution
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -128,19 +128,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_long_term_economic_planning
 		}
 		relative_position_id = VIC_long_term_economic_planning
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -177,19 +177,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_aid_small_businesses
 		}
 		relative_position_id = VIC_aid_small_businesses
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -210,19 +210,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_national_revolution
 		}
 		relative_position_id = VIC_the_national_revolution
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -230,8 +230,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_timed_idea = { 
-				idea = FRA_down_with_marianne 
+			add_timed_idea = {
+				idea = FRA_down_with_marianne
 				days = 730
 			}
 		}
@@ -245,19 +245,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_down_with_marianne
 		}
 		relative_position_id = VIC_down_with_marianne
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -265,8 +265,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_timed_idea = { 
-				idea = FRA_up_with_jean_darc 
+			add_timed_idea = {
+				idea = FRA_up_with_jean_darc
 				days = 730
 			}
 		}
@@ -280,19 +280,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_up_with_jean_darc
 		}
 		relative_position_id = VIC_up_with_jean_darc
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -313,19 +313,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_national_revolution
 		}
 		relative_position_id = VIC_the_national_revolution
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -346,11 +346,11 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_prosecute_the_losers
 		}
 		relative_position_id = VIC_prosecute_the_losers
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -360,7 +360,7 @@
 				is_controlled_by = GER
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -381,19 +381,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_concessions_to_the_germans
 		}
 		relative_position_id = VIC_concessions_to_the_germans
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -415,25 +415,25 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_celebrate_motherhood
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_venerate_the_craftsman
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_mandatory_work_service
 		}
 		relative_position_id = VIC_celebrate_motherhood
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -454,18 +454,18 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_a_nation_reborn
 		}
 		relative_position_id = VIC_a_nation_reborn
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				is_historical_focus_on = yes
 				NOT = {
-					GER = { owns_state = 219 } 
+					GER = { owns_state = 219 }
 				}
 				factor = 0
 			}
@@ -477,7 +477,7 @@
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -497,19 +497,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -530,19 +530,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -563,19 +563,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_legionary_service_order
 		}
 		relative_position_id = VIC_the_legionary_service_order
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -598,11 +598,11 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_the_legionary_service_order
 		}
 		relative_position_id = VIC_the_legionary_service_order
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -621,7 +621,7 @@
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -641,19 +641,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_emergency_powers_to_petain
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 			num_of_military_factories > 34
 		}
@@ -673,19 +673,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_rebuild_the_military
 		}
 		relative_position_id = VIC_rebuild_the_military
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -723,19 +723,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_rebuild_the_military
 		}
 		relative_position_id = VIC_rebuild_the_military
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -755,19 +755,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_hidden_materials
 		}
 		relative_position_id = VIC_hidden_materials
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -793,19 +793,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_rebuild_the_military
 		}
 		relative_position_id = VIC_rebuild_the_military
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -832,19 +832,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_modernize_the_airforce
 		}
 		relative_position_id = VIC_modernize_the_airforce
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -866,19 +866,19 @@
 			y = 0
 		}
 		allow_branch = { has_dlc = "Death or Dishonor" }
-		prerequisite = { 
+		prerequisite = {
 			focus = VIC_learn_from_the_enemy
 		}
 		relative_position_id = VIC_learn_from_the_enemy
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}

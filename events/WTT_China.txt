@@ -1,6 +1,6 @@
 ﻿add_namespace = wtt_china
 
- ##  #  # ### ###   ####  ##  ##   ##  #  #
+##  #  # ### ###   ####  ##  ##   ##  #  #
 #  # ## #  #   #       # #  # # # #  # ## #
 #### # ##  #   #    #  # #### ##  #### # ##
 #  # #  #  #  ###    ##  #  # #   #  # #  #
@@ -52,7 +52,7 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_xian_incident.3.a
 	}
@@ -69,7 +69,7 @@ country_event = {
 	picture = GFX_report_event_china_flying_tigers
 
 	is_triggered_only = yes
-	
+
 	option = { #accept
 		name = wtt_china_shared.10.a
 		set_country_flag = CHI_flying_tigers
@@ -88,7 +88,7 @@ country_event = {
 	picture = GFX_report_event_china_soviet_volunteers
 
 	is_triggered_only = yes
-	
+
 	option = { #accept
 		name = wtt_china_shared.11.a
 		ai_chance = {
@@ -99,11 +99,11 @@ country_event = {
 }
 
 
-###  #  # ###  #   #  ##      ###   ##   ##  ###  
-#  # #  # #  # ## ## #  #     #  # #  # #  # #  # 
-###  #  # ###  # # # ####     ###  #  # #### #  # 
-#  # #  # #  # #   # #  #     #  # #  # #  # #  # 
-###   ##  #  # #   # #  #     #  #  ##  #  # ###  
+###  #  # ###  #   #  ##      ###   ##   ##  ###
+#  # #  # #  # ## ## #  #     #  # #  # #  # #  #
+###  #  # ###  # # # ####     ###  #  # #### #  #
+#  # #  # #  # #   # #  #     #  # #  # #  # #  #
+###   ##  #  # #   # #  #     #  #  ##  #  # ###
 
 add_namespace = wtt_burma_road
 #Info event that Burma road has been closed due to occupation of state
@@ -113,7 +113,7 @@ country_event = {
 	desc = wtt_burma_road.1.desc
 	picture = GFX_report_event_burma_road
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_burma_road.1.a
@@ -125,7 +125,7 @@ country_event = {
 country_event = {
 	id = wtt_burma_road.2
 	title = wtt_burma_road.1.t
-	
+
 	desc = {
 		text = wtt_burma_road.2.desc
 		trigger = {
@@ -142,7 +142,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_burma_road.1.a
@@ -158,7 +158,7 @@ country_event = {
 	picture = GFX_report_event_ledo_road
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_burma_road.3.a
@@ -173,22 +173,22 @@ country_event = {
 	desc = wtt_burma_road.4.desc
 	picture = GFX_report_event_burma_road
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		name = wtt_burma_road.4.a
-		add_offsite_building = { type = arms_factory level = CHI_burma_road_closed_level }			
+		add_offsite_building = { type = arms_factory level = CHI_burma_road_closed_level }
 		set_variable = { CHI_burma_road = CHI_burma_road_closed_level }
 		clear_variable = CHI_burma_road_closed_level
 	}
 
 }
 
-#   ### ###   ##      ###   ##   ##  ###  
-#   #   #  # #  #     #  # #  # #  # #  # 
-#   ##  #  # #  #     ###  #  # #### #  # 
-#   #   #  # #  #     #  # #  # #  # #  # 
-### ### ###   ##      #  #  ##  #  # ###  
+#   ### ###   ##      ###   ##   ##  ###
+#   #   #  # #  #     #  # #  # #  # #  #
+#   ##  #  # #  #     ###  #  # #### #  #
+#   #   #  # #  #     #  # #  # #  # #  #
+### ### ###   ##      #  #  ##  #  # ###
 
 add_namespace = wtt_ledo_road
 #Info event that Ledo road has been closed due to occupation of state
@@ -199,7 +199,7 @@ country_event = {
 	picture = GFX_report_event_nationalist_china_machinegun_firing
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_burma_road.1.a
@@ -211,7 +211,7 @@ country_event = {
 country_event = {
 	id = wtt_ledo_road.2
 	title = wtt_ledo_road.1.t
-	
+
 	desc = {
 		text = wtt_ledo_road.2.desc
 		trigger = {
@@ -228,7 +228,7 @@ country_event = {
 	picture = GFX_report_event_indian_soldiers #TODO_WTT_CD event pic
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_burma_road.1.a
@@ -244,7 +244,7 @@ country_event = {
 	picture = GFX_report_event_ledo_road
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_ledo_road.3.a
@@ -259,22 +259,22 @@ country_event = {
 	desc = wtt_ledo_road.4.desc
 	picture = GFX_report_event_ledo_road
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		name = wtt_ledo_road.4.a
-		add_offsite_building = { type = arms_factory level = CHI_ledo_road_closed_level }			
+		add_offsite_building = { type = arms_factory level = CHI_ledo_road_closed_level }
 		set_variable = { CHI_ledo_road = CHI_ledo_road_closed_level }
 		clear_variable = CHI_ledo_road_closed_level
 	}
 
 }
 
-#  #  ##  #  #  ##  ###     ###   ##  #  # ### ### 
-#  # #  # ## # #  #  #      #  # #  # #  #  #  #   
-#### #### # ## #  #  #      ###  #  # #  #  #  ##  
-#  # #  # #  # #  #  #      #  # #  # #  #  #  #   
-#  # #  # #  #  ##  ###     #  #  ##   ##   #  ### 
+#  #  ##  #  #  ##  ###     ###   ##  #  # ### ###
+#  # #  # ## # #  #  #      #  # #  # #  #  #  #
+#### #### # ## #  #  #      ###  #  # #  #  #  ##
+#  # #  # #  # #  #  #      #  # #  # #  #  #  #
+#  # #  # #  #  ##  ###     #  #  ##   ##   #  ###
 
 add_namespace = wtt_hanoi_route
 #Info event that Hanoi route road has been closed due to occupation of state
@@ -285,7 +285,7 @@ country_event = {
 	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_burma_road.1.a
@@ -297,7 +297,7 @@ country_event = {
 country_event = {
 	id = wtt_hanoi_route.2
 	title = wtt_hanoi_route.1.t
-	
+
 	desc = {
 		text = wtt_hanoi_route.2.desc
 		trigger = {
@@ -314,7 +314,7 @@ country_event = {
 	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_burma_road.1.a
@@ -323,11 +323,11 @@ country_event = {
 }
 
 
-### #  # ###     #  # #  # #   # ###  
- #  #  # #       #  # #  # ## ## #  # 
- #  #### ##      #### #  # # # # ###  
- #  #  # #       #  # #  # #   # #    
- #  #  # ###     #  #  ##  #   # #    
+### #  # ###     #  # #  # #   # ###
+#  #  # #       #  # #  # ## ## #  #
+#  #### ##      #### #  # # # # ###
+#  #  # #       #  # #  # #   # #
+#  #  # ###     #  #  ##  #   # #
 add_namespace = wtt_the_hump
 #Info event that hump route road has been closed due to occupation of state
 country_event = {
@@ -337,7 +337,7 @@ country_event = {
 	picture = GFX_report_event_nationalist_china_machinegun_firing
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_burma_road.1.a
@@ -349,7 +349,7 @@ country_event = {
 country_event = {
 	id = wtt_the_hump.2
 	title = wtt_the_hump.1.t
-	
+
 	desc = {
 		text = wtt_the_hump.2.desc
 		trigger = {
@@ -366,7 +366,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_burma_road.1.a
@@ -382,7 +382,7 @@ country_event = {
 	picture = GFX_report_event_generic_bombers
 
 	is_triggered_only = yes
-	
+
 
 	option = {
 		name = wtt_the_hump.3.a
@@ -397,7 +397,7 @@ country_event = {
 	desc = wtt_the_hump.4.desc
 	picture = GFX_report_event_generic_bombers
 
-	is_triggered_only = yes	
+	is_triggered_only = yes
 
 	option = {
 		name = wtt_the_hump.4.a

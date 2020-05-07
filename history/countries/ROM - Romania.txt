@@ -2,7 +2,7 @@
 oob = "ROM_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ROM_1936_naval_mtg"
+	set_naval_oob = "ROM_1936_naval_mtg"
 	else = {
 		set_naval_oob = "ROM_1936_naval_legacy"
 	}
@@ -14,13 +14,13 @@ set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.6
 set_variable = {
-    var = min_fuel
-    value = 0.800
+	var = min_fuel
+	value = 0.800
 }
 
 # Starting tech
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -69,29 +69,29 @@ if = {
 
 
 add_equipment_to_stockpile = {
-         type = artillery_equipment_1
-         amount = 87
-         producer = ROM
+	type = artillery_equipment_1
+	amount = 87
+	producer = ROM
 }
 add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 12355
-         producer = ROM
+	type = infantry_equipment_1
+	amount = 12355
+	producer = ROM
 }
 add_equipment_to_stockpile = {
-         type = motorized_equipment_1
-         amount = 100
-         producer = ROM
+	type = motorized_equipment_1
+	amount = 100
+	producer = ROM
 }
 add_equipment_to_stockpile = {
-         type = support_equipment_1
-         amount = 300
-         producer = ROM
+	type = support_equipment_1
+	amount = 300
+	producer = ROM
 }
 add_equipment_to_stockpile = {
-         type = fighter_equipment_0
-         amount = 72
-         producer = ROM
+	type = fighter_equipment_0
+	amount = 72
+	producer = ROM
 }
 set_convoys = 100
 
@@ -110,9 +110,9 @@ set_popularities = {
 
 
 add_ideas = {
-	
+
 	partial_economic_mobilisation
-	
+
 }
 
 
@@ -246,7 +246,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Delfinul Class"				
+		name = "Delfinul Class"
 		type = ship_hull_submarine_2
 		name_group = ROM_SS_HISTORICAL
 		parent_version = 0
@@ -258,7 +258,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Marasti Class"				
+		name = "Marasti Class"
 		type = ship_hull_light_1
 		name_group = ROM_DD_HISTORICAL
 		parent_version = 0
@@ -275,7 +275,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Regele Ferdinand Class"	
+		name = "Regele Ferdinand Class"
 		type = ship_hull_light_1
 		name_group = ROM_DD_HISTORICAL
 		parent_version = 0

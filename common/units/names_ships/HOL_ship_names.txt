@@ -6,15 +6,15 @@ HOL_DD_HISTORICAL = {
 	for_countries = { HOL }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
 	prefix = "HrMs "
-	fallback_name = "Torpedobootjager %d"					
+	fallback_name = "Torpedobootjager %d"
 
-	unique = {											
+	unique = {
 		"Piet Hein" "Eversten" "Van Ghent" "Kortenaer" "Van Galen" "Witte de With" "Banckert" "Van Nes" "Gerard Callenburgh" "Isaac Sweers" "Tjerk Hiddes" "Philips van Almonde"
 		"Campbelltown" "Marnix" "Holland" "Zeeland" "Noord-Brabant" "Gelderland" "Friesland" "Groningen" "Limburg" "Overijssel" "Drenthe" "Utrecht" "Rotterdam" "Amsterdam"
-		"Wolf" "Fret" "Bulhond" "Jakhals" "Hermelijn" "Lynx" "Vos" "Panter" 
+		"Wolf" "Fret" "Bulhond" "Jakhals" "Hermelijn" "Lynx" "Vos" "Panter"
 	}
 }
 
@@ -26,12 +26,12 @@ HOL_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
+
 	prefix = "HrMs "
 	fallback_name = "Kruiser %d"
 
 	unique = {
-		"Java" "Sumatra" "De Ruyter" "Tromp" "Jacob van Heemskerck" "De Zeven Provinciën" "Kijkduin" "Gelderland" "Zeeland" "Friesland" "Gelderland" "Noord-Brabant" 
+		"Java" "Sumatra" "De Ruyter" "Tromp" "Jacob van Heemskerck" "De Zeven Provinciën" "Kijkduin" "Gelderland" "Zeeland" "Friesland" "Gelderland" "Noord-Brabant"
 		"Utrecht" "Drenthe" "Brabant" "Limburg"
 	}
 }
@@ -44,7 +44,7 @@ HOL_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
+
 	prefix = "HrMs "
 	fallback_name = "Panterschip %d"
 
@@ -62,12 +62,12 @@ HOL_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
+
 	prefix = "HrMs "
-	fallback_name = "Slagschip %d"		
+	fallback_name = "Slagschip %d"
 
 	unique = {
-		"Reinier Claeszen" "Evertsen" "Piet Hein" "Kortenaer" "Koningin Regentes" "Hertog Hendrik" "Van Speijk" "Witte de With" 
+		"Reinier Claeszen" "Evertsen" "Piet Hein" "Kortenaer" "Koningin Regentes" "Hertog Hendrik" "Van Speijk" "Witte de With"
 	}
 }
 
@@ -79,12 +79,12 @@ HOL_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	
+
 	prefix = "HrMs "
-	fallback_name = "Slagkruiser %d"		
+	fallback_name = "Slagkruiser %d"
 
 	unique = {
-		"Van Speijk" "Witte de With" "Piet Hein" "Kortenaer" "Koningin Regentes" "Hertog Hendrik" 
+		"Van Speijk" "Witte de With" "Piet Hein" "Kortenaer" "Koningin Regentes" "Hertog Hendrik"
 	}
 }
 
@@ -96,12 +96,12 @@ HOL_CV_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-	
+
 	prefix = "HrMs "
-	fallback_name = "Vliegdekschip %d"	
+	fallback_name = "Vliegdekschip %d"
 
 	unique = {
-		"Karel Doorman" "De Zeven Provinciën" "De Ruyter" "Tromp" "Piet Hein" 
+		"Karel Doorman" "De Zeven Provinciën" "De Ruyter" "Tromp" "Piet Hein"
 	}
 }
 
@@ -113,15 +113,15 @@ HOL_SS_OCLASS = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
+
 	prefix = "HrMs "
 	fallback_name = "O-%d"
-	
+
 	ordered = {
 		1 = {"O-%d"}
-		2 = {"O-%d"} 
-		3 = {"O-%d"} 
-		4 = {"O-%d"} 
+		2 = {"O-%d"}
+		3 = {"O-%d"}
+		4 = {"O-%d"}
 		5 = {"O-%d"}
 		6 = {"O-%d"}
 		7 = {"O-%d"}
@@ -152,15 +152,15 @@ HOL_SS_KCLASS = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
+
 	prefix = "HrMs "
 	fallback_name = "K-%s"
-	
+
 	ordered = {
 		1 = {"K-%s"}
-		2 = {"K-%s"} 
-		3 = {"K-%s"} 
-		4 = {"K-%s"} 
+		2 = {"K-%s"}
+		3 = {"K-%s"}
+		4 = {"K-%s"}
 		5 = {"K-%s"}
 		6 = {"K-%s"}
 		7 = {"K-%s"}
@@ -193,7 +193,7 @@ HOL_REGIONS = {
 
 	type = ship
 
-	prefix = "HrMs "							
+	prefix = "HrMs "
 	unique = {
 		"Gelderland" "Zeeland" "Friesland" "Gelderland" "Noord-Brabant" "Utrecht" "Drenthe" "Brabant" "Limburg"
 	}
@@ -207,10 +207,10 @@ HOL_CITIES = {
 
 	type = ship
 
-	prefix = "HrMs "							
+	prefix = "HrMs "
 	unique = {
-		"Rotterdam" "Amsterdam" "Den Haag" "Utrecht" "Eindhoven" "Tilburg" "Groningen" "Nijmegen" "Breda" "Almere Stad" "Enschede" 
-		"Arnhem" "Amersfoort" "Maastricht" "Zwolle" "Deventer" "Venlo" "Zoetermeer" "Roosendaal" "Apeldoorn" 
+		"Rotterdam" "Amsterdam" "Den Haag" "Utrecht" "Eindhoven" "Tilburg" "Groningen" "Nijmegen" "Breda" "Almere Stad" "Enschede"
+		"Arnhem" "Amersfoort" "Maastricht" "Zwolle" "Deventer" "Venlo" "Zoetermeer" "Roosendaal" "Apeldoorn"
 	}
 }
 
@@ -222,9 +222,9 @@ HOL_COLONIES = {
 
 	type = ship
 
-	prefix = "HrMs "							
+	prefix = "HrMs "
 	unique = {
-		"Java" "Sumatra" "Soerabaja" "Celebes" "Batjan" "Ceram" "Ambon" "Banda" "Ternate" "Batavia" "Sulawesi" "Sunda" "Bali" "Papua" "Medan" 
+		"Java" "Sumatra" "Soerabaja" "Celebes" "Batjan" "Ceram" "Ambon" "Banda" "Ternate" "Batavia" "Sulawesi" "Sunda" "Bali" "Papua" "Medan"
 		"Makassar" "Palembang" "Balikpapan" "Manado" "Hollandia"
 	}
 }
@@ -237,7 +237,7 @@ HOL_FISH = {
 
 	type = ship
 
-	prefix = "HrMs "							
+	prefix = "HrMs "
 	unique = {
 		"Dolfijn" "Zeehond" "Zwaardvis" "Tijgerhaai" "Walrus" "Zeeleeuw" "Potvis" "Tonijn" "Zwaardvis" "Bruinvis"
 	}

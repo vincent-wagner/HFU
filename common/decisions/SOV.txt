@@ -55,30 +55,30 @@ operations = {
 }
 
 SOV_mrp = {
-	
-		SOV_prepare_finland = {
+
+	SOV_prepare_finland = {
 
 		icon = generic_prepare_civil_war
 		allowed={tag=SOV}
 		available = {
 			date > 1948.1.1
-			}
+		}
 		fire_only_once = yes
 		cost = 0
 		fire_only_once = yes
 		days_remove = 60
-		visible={date > 1948.1.1}		
+		visible={date > 1948.1.1}
 		ai_will_do = {
 			factor = 1
 		}
-		
-		
+
+
 		complete_effect = {
 			add_named_threat = { threat = 7.5 name = Winter_War_Threat }
 		}
 		remove_effect = {
 			SOV = { activate_decision = SOV_attack_finland  }
-		custom_effect_tooltip= "Preparations completed"
+			custom_effect_tooltip= "Preparations completed"
 		}
 	}
 	SOV_attack_finland = {
@@ -86,27 +86,27 @@ SOV_mrp = {
 		icon = generic_prepare_civil_war
 		allowed={tag=sov}
 		available = {
-			
+
 			custom_trigger_tooltip= {tooltip="Preparations completed" has_country_flag=finland_prepared}
 		}
-			
-		
-		
+
+
+
 		cost = 0
 		fire_only_once = yes
 		visible = {
 			GER={has_completed_focus=GER_mol_rib_pact}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
-		
-		
+
+
 		complete_effect = {
-			SOV = { 
+			SOV = {
 				army_experience = 200
-				transfer_state = 146 
+				transfer_state = 146
 				transfer_state= 147
 				country_event = { id = finland.8 }
 				146 = { remove_core_of = FIN }
@@ -125,7 +125,7 @@ SOV_mrp = {
 #Category only allowed for SOV
 SOV_great_patriotic_war = {
 
-	
+
 	SOV_scorched_earth = {
 
 		icon = generic_scorched_earth
@@ -650,11 +650,11 @@ SOV_great_patriotic_war = {
 					is_controlled_by = SOV
 				}
 				damage_building = {
-						type = infrastructure
-						damage = 3
-					}
+					type = infrastructure
+					damage = 3
+				}
 			}
-			
+
 		}
 
 		ai_will_do = {
@@ -665,61 +665,61 @@ SOV_great_patriotic_war = {
 }
 
 SOV_great_patriotic_war = {
-	
+
 	SOV_move_capital_kazan={
-	icon = generic_civil_support
-	allowed = {
+		icon = generic_civil_support
+		allowed = {
 			original_tag = SOV
-			
+
 		}
-	visible={has_war_with=GER}
-	available={
-	249={is_capital=no}}
-	complete_effect={
-	set_capital=249
-	}
+		visible={has_war_with=GER}
+		available={
+			249={is_capital=no}}
+		complete_effect={
+			set_capital=249
+		}
 	}
 	SOV_move_capital_stalingrad={
-	icon = generic_civil_support
-	allowed = {
+		icon = generic_civil_support
+		allowed = {
 			original_tag = SOV
-			
+
 		}
-	visible={has_war_with=GER}
-	available={
-	217={is_capital=no}}
-	complete_effect={
-	set_capital=217
-	}
+		visible={has_war_with=GER}
+		available={
+			217={is_capital=no}}
+		complete_effect={
+			set_capital=217
+		}
 	}
 	SOV_move_capital_leningrad={
-	icon = generic_civil_support
-	allowed = {
+		icon = generic_civil_support
+		allowed = {
 			original_tag = SOV
-			
+
 		}
-	visible={has_war_with=GER}
-	available={
-	195={is_capital=no}}
-	complete_effect={
-	set_capital=195
-	}
+		visible={has_war_with=GER}
+		available={
+			195={is_capital=no}}
+		complete_effect={
+			set_capital=195
+		}
 	}
 	SOV_move_capital_moscow={
-	icon = generic_civil_support
-	allowed = {
+		icon = generic_civil_support
+		allowed = {
 			original_tag = SOV
-			
+
 		}
-	visible={has_war_with=GER}
-	available={
-	219={is_capital=no}}
-	complete_effect={
-	set_capital=219
+		visible={has_war_with=GER}
+		available={
+			219={is_capital=no}}
+		complete_effect={
+			set_capital=219
+		}
 	}
-	}
-	
-	
+
+
 	#217 "Stalingrad"
 	SOV_hold_stalingrad = {
 
@@ -761,16 +761,16 @@ SOV_great_patriotic_war = {
 		timeout_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
-			217 = { save_event_target_as = state }			
+			217 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.1
 		}
 		#Fail
 		complete_effect = {
-			217 = { save_event_target_as = state }			
+			217 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.2
 		}
 	}
-	
+
 	#195 "Leningrad"
 	SOV_hold_leningrad = {
 

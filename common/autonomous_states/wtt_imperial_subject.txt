@@ -1,13 +1,13 @@
 autonomy_state = {
 	id = autonomy_wtt_imperial_subject
-	
+
 	default = yes
 	is_puppet = no
-	
+
 	min_freedom_level = 0.8
-	
+
 	manpower_influence = 0.5
-	
+
 	rule = {
 		can_not_declare_war = no
 		can_decline_call_to_war = yes
@@ -15,7 +15,7 @@ autonomy_state = {
 		can_be_spymaster = no
 		can_create_collaboration_government = no
 	}
-	
+
 	modifier = {
 		autonomy_manpower_share = 1
 		can_master_build_for_us = 1
@@ -24,11 +24,11 @@ autonomy_state = {
 		cic_to_overlord_factor = 0.1
 		mic_to_overlord_factor = 0.25
 	}
-	
+
 	ai_subject_wants_higher = {
 		factor = 1.0
 	}
-	
+
 	ai_overlord_wants_lower = {
 		factor = 0.0
 	}
@@ -43,15 +43,15 @@ autonomy_state = {
 		original_tag = MAN
 		OR = {
 		}
-			
-		
+
+
 		OR = {
 			has_government = fascism
 			has_government = neutrality
 		}
 		OVERLORD = { original_tag = JAP }
 	}
-	
+
 	can_take_level = {
 		always = no
 	}

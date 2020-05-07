@@ -9,24 +9,24 @@
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		artillery_brigade = { x = 0 y = 4 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
 		artillery_brigade = { x = 1 y = 4 }
-        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		artillery_brigade = { x = 2 y = 3 }
-	infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
 		infantry = { x = 3 y = 2 }
 		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
-       	engineer = { x = 0 y = 0 }
-       	artillery = { x = 0 y = 1 }
-	recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
 	}
 }
 
@@ -36,12 +36,12 @@ division_template = {
 	division_names_group = BUL_INF_01
 
 	regiments = {
-	infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 0 y = 4 }
-	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
@@ -50,7 +50,7 @@ division_template = {
 	priority = 0
 }
 units = {
-	division= {	
+	division= {
 		name = "This is here so you can look at your generals"
 		location = 949
 		division_template = "Pekhotna Divizija"
@@ -81,7 +81,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "BUL" 
+			creator = "BUL"
 		}
 		requested_factories = 1
 		progress = 0.4

@@ -2,7 +2,7 @@
 oob = "USA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "USA_1936_naval_mtg"
+	set_naval_oob = "USA_1936_naval_mtg"
 	else = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
@@ -13,11 +13,11 @@ add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
 add_timed_idea = {
 	idea = USA_wasteful_navy
-    days = 1096
+	days = 1096
 }
 set_variable = {
-    var = min_fuel
-    value = 0.800
+	var = min_fuel
+	value = 0.800
 }
 
 
@@ -41,7 +41,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -105,7 +105,7 @@ if = {
 		mtg_transport = 1
 		improved_airplane_launcher = 1
 	}
-	
+
 }
 
 
@@ -114,58 +114,58 @@ if = {
 
 set_convoys = 700
 add_equipment_to_stockpile = {
-         type = artillery_equipment_1
-         amount = 106
-         producer = USA
+	type = artillery_equipment_1
+	amount = 106
+	producer = USA
 }
 
 add_equipment_to_stockpile = {
-         type = infantry_equipment_1
-         amount = 11111
-         producer = USA
+	type = infantry_equipment_1
+	amount = 11111
+	producer = USA
 }
 
 add_equipment_to_stockpile = {
-         type = support_equipment_1
-         amount = 344
-         producer = USA
+	type = support_equipment_1
+	amount = 344
+	producer = USA
 }
 
 add_equipment_to_stockpile = {
-         type = fighter_equipment_1
-         amount = 500
-         producer = USA
+	type = fighter_equipment_1
+	amount = 500
+	producer = USA
 }
 
 add_equipment_to_stockpile = {
-         type = nav_bomber_equipment_1
-         amount = 100
-         producer = USA
+	type = nav_bomber_equipment_1
+	amount = 100
+	producer = USA
 }
 add_equipment_to_stockpile = {
-         type = tac_bomber_equipment_0
-         amount = 200
-         producer = USA
+	type = tac_bomber_equipment_0
+	amount = 200
+	producer = USA
 }
 add_equipment_to_stockpile = {
-         type = CAS_equipment_1
-         amount = 100
-         producer = USA
+	type = CAS_equipment_1
+	amount = 100
+	producer = USA
 }
 add_equipment_to_stockpile = {
-         type = cv_fighter_equipment_0
-         amount = 136
-         producer = USA
+	type = cv_fighter_equipment_0
+	amount = 136
+	producer = USA
 }
 add_equipment_to_stockpile = {
-         type = cv_CAS_equipment_1
-         amount = 144
-         producer = USA
+	type = cv_CAS_equipment_1
+	amount = 144
+	producer = USA
 }
 add_equipment_to_stockpile = {
-         type = cv_nav_bomber_equipment_1
-         amount = 69
-         producer = USA
+	type = cv_nav_bomber_equipment_1
+	amount = 69
+	producer = USA
 }
 set_politics = {
 	ruling_party = democratic
@@ -175,7 +175,7 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 100
-	
+
 }
 
 add_ideas = {
@@ -206,7 +206,7 @@ create_corps_commander = {
 	traits = {  trickster armor_officer infantry_leader naval_invader panzer_leader war_hero trait_reckless hill_fighter }
 	skill = 6
 
-	attack_skill = 7 
+	attack_skill = 7
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 6
@@ -394,7 +394,7 @@ create_corps_commander = {
 	picture = "Portrait_USA_William_Hood_Simpson.dds"
 	traits = { infantry_officer infantry_leader }
 	skill = 3
-	
+
 	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 2
@@ -427,7 +427,7 @@ create_corps_commander = {
 	name = "Joseph Stilwell"
 	picture = "Portrait_USA_Joseph_Stilwell.dds"
 	traits = { politically_connected infantry_officer harsh_leader }
-	skill = 1 
+	skill = 1
 	id = 601
 	attack_skill = 1
 	defense_skill = 1
@@ -459,7 +459,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Ernest King"
-		picture = "Portrait_USA_Earnest_King.dds"
+	picture = "Portrait_USA_Earnest_King.dds"
 	traits = { caustic_personality blockade_runner superior_tactician }
 	skill = 5
 	attack_skill = 4
@@ -470,7 +470,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Chester W. Nimitz"
-		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+	picture = "Portrait_USA_Chester_W_Nimitz.dds"
 	traits = { gentlemanly blue_water_expert naval_lineage superior_tactician spotter }
 	skill = 5
 	attack_skill = 5
@@ -481,7 +481,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "William Halsey, Jr."
-		picture = "Portrait_USA_William_Halsey_Jr.dds"
+	picture = "Portrait_USA_William_Halsey_Jr.dds"
 	traits = { superior_tactician spotter air_controller }
 	skill = 6
 	attack_skill = 6
@@ -492,7 +492,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Frank Jack Fletcher"
-		picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
+	picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
 	traits = { superior_tactician spotter ironside }
 	skill = 5
 	attack_skill = 5
@@ -503,7 +503,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Raymond A. Spruance"
-		picture = "Portrait_USA_Raymond_A_Spruance.dds"
+	picture = "Portrait_USA_Raymond_A_Spruance.dds"
 	traits = { gentlemanly superior_tactician fly_swatter }
 	skill = 4
 	attack_skill = 4
@@ -514,7 +514,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Harold Rainsford Stark"
-		picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
+	picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
 	traits = { cuts_corners blockade_runner spotter seawolf }
 	skill = 4
 	attack_skill = 4
@@ -525,7 +525,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Arleigh Burke"
-		picture = "Portrait_USA_Arleigh_Burke.dds"
+	picture = "Portrait_USA_Arleigh_Burke.dds"
 	traits = { fleet_protector superior_tactician }
 	skill = 5
 	attack_skill = 7
@@ -536,7 +536,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Charles M. Cooke, Jr."
-		picture = "Portrait_USA_Charles_M_Cooke.dds"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
 	traits = { }
 	skill = 2
 	attack_skill = 1
@@ -895,7 +895,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Colorado Class"				
+		name = "Colorado Class"
 		type = ship_hull_heavy_1
 		name_group = USA_BB_HISTORICAL
 		parent_version = 0
@@ -914,7 +914,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Colorado Class Refit"				
+		name = "Colorado Class Refit"
 		type = ship_hull_heavy_1
 		name_group = USA_BB_HISTORICAL
 		parent_version = 0
@@ -962,7 +962,7 @@ if = {
 			fixed_ship_engine_slot = carrier_ship_engine_1
 			fixed_ship_secondaries_slot = empty
 			front_1_custom_slot = ship_deck_space
-			
+
 		}
 		obsolete = yes
 	}

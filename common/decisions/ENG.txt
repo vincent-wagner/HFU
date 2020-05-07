@@ -1,69 +1,69 @@
 foreign_politics = {
-ENG_get_chromium = {
+	ENG_get_chromium = {
 		icon = generic_operation
 
-			allowed = {
-				tag = ENG
-			}
+		allowed = {
+			tag = ENG
+		}
 
-			available = {
-				NOT={has_country_flag=resource_rights_saf}
-				
-			}
-			
-			cost = 0
+		available = {
+			NOT={has_country_flag=resource_rights_saf}
 
-			visible = {
+		}
+
+		cost = 0
+
+		visible = {
 			SAF={has_completed_focus = SAF_secure_interests_in_africa}
-				}
-				
-			complete_effect = {
-				SAF = {
+		}
+
+		complete_effect = {
+			SAF = {
 				give_resource_rights = { receiver = ENG state = 542 }
 				give_resource_rights = { receiver = ENG state = 771 }
 			}
 			set_country_flag=resource_rights_saf
-			}
 		}
+	}
 
 
-ENG_give_chromium = {
+	ENG_give_chromium = {
 		icon = generic_operation
 
-			allowed = {
-				tag = ENG
-			}
+		allowed = {
+			tag = ENG
+		}
 
-			available = {
-				has_country_flag=resource_rights_saf
-			}
-			
-			cost = 0
+		available = {
+			has_country_flag=resource_rights_saf
+		}
 
-			visible = {
+		cost = 0
+
+		visible = {
 			SAF={has_completed_focus = SAF_secure_interests_in_africa}
 			always=yes
-				}
-				
-			complete_effect = {
-				
-				remove_resource_rights = 542 
-				remove_resource_rights = 771
-				clr_country_flag=resource_rights_saf
-			
-			}
 		}
+
+		complete_effect = {
+
+			remove_resource_rights = 542
+			remove_resource_rights = 771
+			clr_country_flag=resource_rights_saf
+
+		}
+	}
 
 
 }
-	
+
 
 ENG_imperial_conference_decision = {
-	
+
 	ENG_imperial_conference_decision = {
 
 		icon = generic_political_discourse
-		
+
 		available = {
 			hidden_trigger = { always = no }
 		}
@@ -87,7 +87,7 @@ ENG_imperial_conference_decision = {
 		is_good = yes
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -135,8 +135,8 @@ political_actions = {
 		}
 
 		available = {
-			
-			
+
+
 			has_war_with = GER
 		}
 
@@ -181,7 +181,7 @@ political_actions = {
 		}
 
 		available = {
-			
+
 			has_war_with = GER
 			is_in_faction_with = FRA
 			FRA = {
@@ -230,8 +230,8 @@ political_actions = {
 		}
 
 		available = {
-			
-		
+
+
 			has_war_with = GER
 			is_in_faction_with = FRA
 			FRA = { has_capitulated = yes }
@@ -271,14 +271,14 @@ political_actions = {
 }
 
 operations = {
-prepare_operation_overlord = {
+	prepare_operation_overlord = {
 		icon = generic_operation
 		allowed = { original_tag = ENG }
 		available = {
 			Date > 1941.1.1
 			JAP={has_war=yes}
 			always=no # removed because of total mob sealion
-			
+
 		}
 		visible = {
 			Date > 1940.1.1
@@ -298,10 +298,10 @@ prepare_operation_overlord = {
 
 
 			}
-			
+
 		}
 		remove_effect = {
-			
+
 		}
 	}
 }

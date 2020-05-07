@@ -8,7 +8,7 @@ add_namespace = generic
 country_event = {
 	id = generic.1
 	title = generic.1.t
-	desc = { 
+	desc = {
 		text = generic.1.d_neutral_good
 		trigger = {
 			has_government = FROM
@@ -43,15 +43,15 @@ country_event = {
 	id = generic.12
 	title = generic.12.t
 	desc = generic.12.d
-	
+
 	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.12.a
 		custom_effect_tooltip = canals_tt
-	}	
+	}
 }
 
 # Enemy attempting to destroy Panama
@@ -59,15 +59,15 @@ country_event = {
 	id = generic.13
 	title = generic.13.t
 	desc = generic.13.d
-	
+
 	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.12.a
 		custom_effect_tooltip = canals_tt
-	}	
+	}
 }
 
 # Notification event that leader has gotten sick
@@ -75,7 +75,7 @@ unit_leader_event = {
 	id = generic.17
 	title = generic.17.t
 	desc = generic.17.d
-	
+
 	picture = GFX_report_event_military_planning
 	hidden=yes
 	is_triggered_only = yes
@@ -102,7 +102,7 @@ unit_leader_event = {
 				}
 			}
 		}
-	}	
+	}
 }
 
 # Notification event that leader has been wounded
@@ -110,7 +110,7 @@ country_event = {
 	id = generic.18
 	title = generic.18.t
 	desc = generic.18.d
-	
+
 	picture = GFX_report_event_military_planning
 
 	is_triggered_only = yes
@@ -125,7 +125,7 @@ country_event = {
 				}
 			}
 		}
-	}	
+	}
 }
 
 # Notification event that FROM has sent industrial support
@@ -133,7 +133,7 @@ country_event = {
 	id = generic.19
 	title = generic.19.t
 	desc = generic.19.d
-	
+
 	picture = GFX_report_event_generic_factory
 
 	is_triggered_only = yes
@@ -143,7 +143,7 @@ country_event = {
 		effect_tooltip = {
 			add_offsite_building = { type = arms_factory level = 2 }
 		}
-	}	
+	}
 }
 
 #Become a puppet
@@ -162,7 +162,7 @@ country_event = {
 	desc = {
 		text = generic.20.d_enemies
 		trigger = {
-			NOT = { 
+			NOT = {
 				has_opinion = {
 					target = FROM
 					value = 150
@@ -171,13 +171,13 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = generic.20.a
 		trigger = {
-			NOT = { 
+			NOT = {
 				has_opinion = {
 					target = FROM
 					value = 150
@@ -204,15 +204,15 @@ country_event = {
 				factor = 0.5
 			}
 		}
-		effect_tooltip = { 
+		effect_tooltip = {
 			FROM = { puppet = ROOT }
 			if = {
 				limit = {
 					FROM = { is_in_faction = yes }
 				}
 				random_country = {
-					limit = { 
-						is_in_faction_with = FROM 
+					limit = {
+						is_in_faction_with = FROM
 						is_faction_leader = yes
 					}
 					add_to_faction = ROOT
@@ -252,15 +252,15 @@ country_event = {
 				factor = 0.5
 			}
 		}
-		effect_tooltip = { 
+		effect_tooltip = {
 			FROM = { puppet = ROOT }
 			if = {
 				limit = {
 					FROM = { is_in_faction = yes }
 				}
 				random_country = {
-					limit = { 
-						is_in_faction_with = FROM 
+					limit = {
+						is_in_faction_with = FROM
 						is_faction_leader = yes
 					}
 					add_to_faction = ROOT
@@ -286,8 +286,8 @@ country_event = {
 				factor = 2
 			}
 		}
-		effect_tooltip = { 
-			FROM = { 
+		effect_tooltip = {
+			FROM = {
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = ROOT
@@ -307,7 +307,7 @@ country_event = {
 	title = generic.21.t
 	desc = generic.21.d
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -321,8 +321,8 @@ country_event = {
 				ROOT = { is_in_faction = yes }
 			}
 			random_country = {
-				limit = { 
-					is_in_faction_with = ROOT 
+				limit = {
+					is_in_faction_with = ROOT
 					is_faction_leader = yes
 				}
 				add_to_faction = FROM
@@ -338,7 +338,7 @@ country_event = {
 	title = generic.22.t
 	desc = generic.22.d
 	picture = GFX_report_event_generic_read_write
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -346,7 +346,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		ROOT = { 
+		ROOT = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = FROM
@@ -361,7 +361,7 @@ country_event = {
 	id = generic.23
 	title = generic.23.t
 	desc = generic.23.d
-	
+
 	picture = GFX_report_event_czech_soldiers_01
 
 	is_triggered_only = yes
@@ -406,7 +406,7 @@ country_event = {
 				limit = {
 					event_target:demanded_prov_target = { has_state_flag = give_core_to_state_flag }
 				}
-			event_target:demanded_prov_target = { add_core_of = FROM }
+				event_target:demanded_prov_target = { add_core_of = FROM }
 			}
 		}
 		hidden_effect = {
@@ -416,8 +416,8 @@ country_event = {
 
 	option = {
 		name = generic.23.b
-		ai_chance = { 
-			factor = 10 
+		ai_chance = {
+			factor = 10
 			modifier = {
 				factor = 0.5
 				strength_ratio = {
@@ -438,7 +438,7 @@ country_event = {
 	id = generic.24
 	title = generic.24.t
 	desc = generic.24.d
-	
+
 	picture = GFX_report_event_czech_soldiers_01
 
 	is_triggered_only = yes
@@ -450,7 +450,7 @@ country_event = {
 			limit = {
 				event_target:demanded_prov_target = { has_state_flag = give_core_to_state_flag }
 			}
-			event_target:demanded_prov_target = { 
+			event_target:demanded_prov_target = {
 				add_core_of = THIS
 				clr_state_flag = give_core_to_state_flag
 			}
@@ -464,7 +464,7 @@ country_event = {
 	id = generic.25
 	title = generic.25.t
 	desc = generic.25.d
-	
+
 	picture = GFX_report_event_czech_soldiers_01
 
 	is_triggered_only = yes
@@ -475,7 +475,7 @@ country_event = {
 			factor = 90
 		}
 		create_wargoal = {
-			type = annex_everything 
+			type = annex_everything
 			target = FROM
 		}
 		hidden_effect = { clear_global_event_target = demanded_prov_target }

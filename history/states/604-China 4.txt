@@ -4,10 +4,10 @@ state={
 
 	history={
 		owner = CHI
-		
+
 		add_core_of = CHI
 		victory_points = {
-			7940 10 
+			7940 10
 		}
 		buildings = {
 			infrastructure = 1
@@ -18,7 +18,7 @@ state={
 			if = {
 				limit = {
 					NOT = {
-						has_dlc = "Waking the Tiger" 
+						has_dlc = "Waking the Tiger"
 					}
 
 				}
@@ -34,7 +34,7 @@ state={
 	}
 
 	provinces={
-		4914 4964 7940 8018 8037 12899 
+		4914 4964 7940 8018 8037 12899
 	}
 	manpower=1196100
 	buildings_max_level_factor=1.000

@@ -1,38 +1,38 @@
 spriteTypes = {
-	
+
 	# sprite numbers need to be continuous!
 	# base game uses         0 -  43
 	# anniversary DLC uses  44 -  64
 
 
 	###########################################
-### Small images for DIVISION TEMPLATES ###
-    
-    spriteType = { name = "GFX_div_templ_65_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_065.dds" }
+	### Small images for DIVISION TEMPLATES ###
+
+	spriteType = { name = "GFX_div_templ_65_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_065.dds" }
 	spriteType = { name = "GFX_div_templ_66_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_066.dds" }
 	spriteType = { name = "GFX_div_templ_67_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_067.dds" }
 	spriteType = { name = "GFX_div_templ_68_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_068.dds" }
 	spriteType = { name = "GFX_div_templ_69_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_069.dds" }
-	spriteType = { name = "GFX_div_templ_44_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_044.dds" }	
-	spriteType = { name = "GFX_div_templ_45_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_045.dds" }	
-	spriteType = { name = "GFX_div_templ_46_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_046.dds" }	
-	spriteType = { name = "GFX_div_templ_47_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_047.dds" }	
-	spriteType = { name = "GFX_div_templ_48_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_048.dds" }	
-	spriteType = { name = "GFX_div_templ_49_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_049.dds" }	
-	spriteType = { name = "GFX_div_templ_50_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_050.dds" }	
-	spriteType = { name = "GFX_div_templ_51_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_051.dds" }	
-	spriteType = { name = "GFX_div_templ_52_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_052.dds" }	
-	spriteType = { name = "GFX_div_templ_53_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_053.dds" }	
-	spriteType = { name = "GFX_div_templ_54_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_054.dds" }	
-	spriteType = { name = "GFX_div_templ_55_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_055.dds" }	
-	spriteType = { name = "GFX_div_templ_56_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_056.dds" }	
-	spriteType = { name = "GFX_div_templ_57_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_057.dds" }	
-	spriteType = { name = "GFX_div_templ_58_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_058.dds" }	
-	spriteType = { name = "GFX_div_templ_59_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_059.dds" }	
-	spriteType = { name = "GFX_div_templ_60_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_060.dds" }	
-	spriteType = { name = "GFX_div_templ_61_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_061.dds" }	
-	spriteType = { name = "GFX_div_templ_62_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_062.dds" }	
-	spriteType = { name = "GFX_div_templ_63_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_063.dds" }	
+	spriteType = { name = "GFX_div_templ_44_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_044.dds" }
+	spriteType = { name = "GFX_div_templ_45_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_045.dds" }
+	spriteType = { name = "GFX_div_templ_46_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_046.dds" }
+	spriteType = { name = "GFX_div_templ_47_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_047.dds" }
+	spriteType = { name = "GFX_div_templ_48_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_048.dds" }
+	spriteType = { name = "GFX_div_templ_49_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_049.dds" }
+	spriteType = { name = "GFX_div_templ_50_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_050.dds" }
+	spriteType = { name = "GFX_div_templ_51_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_051.dds" }
+	spriteType = { name = "GFX_div_templ_52_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_052.dds" }
+	spriteType = { name = "GFX_div_templ_53_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_053.dds" }
+	spriteType = { name = "GFX_div_templ_54_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_054.dds" }
+	spriteType = { name = "GFX_div_templ_55_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_055.dds" }
+	spriteType = { name = "GFX_div_templ_56_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_056.dds" }
+	spriteType = { name = "GFX_div_templ_57_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_057.dds" }
+	spriteType = { name = "GFX_div_templ_58_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_058.dds" }
+	spriteType = { name = "GFX_div_templ_59_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_059.dds" }
+	spriteType = { name = "GFX_div_templ_60_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_060.dds" }
+	spriteType = { name = "GFX_div_templ_61_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_061.dds" }
+	spriteType = { name = "GFX_div_templ_62_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_062.dds" }
+	spriteType = { name = "GFX_div_templ_63_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_063.dds" }
 	spriteType = { name = "GFX_div_templ_64_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_064.dds" }
 	spriteType = { name = "GFX_div_templ_70_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_70.dds" }
 	spriteType = { name = "GFX_div_templ_71_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_71.dds" }
@@ -100,20 +100,20 @@ spriteTypes = {
 	spriteType = { name = "GFX_div_templ_133_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_133.dds" }
 	spriteType = { name = "GFX_div_templ_134_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_134.dds" }
 	spriteType = { name = "GFX_div_templ_135_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_135.dds" }
-    spriteType = { name = "GFX_div_templ_136_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_65.dds" }
+	spriteType = { name = "GFX_div_templ_136_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_65.dds" }
 	spriteType = { name = "GFX_div_templ_137_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_66.dds" }
 	spriteType = { name = "GFX_div_templ_138_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_67.dds" }
 	spriteType = { name = "GFX_div_templ_139_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_68.dds" }
 	spriteType = { name = "GFX_div_templ_140_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_69.dds" }
 	###########################################
-	
-		### Large images for DIVISION TEMPLATES ###
-	spriteType = { name = "GFX_div_templ_65_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_065.dds" }	
-	spriteType = { name = "GFX_div_templ_66_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_066.dds" }	
-	spriteType = { name = "GFX_div_templ_67_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_067.dds" }	
-	spriteType = { name = "GFX_div_templ_68_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_068.dds" }	
-	spriteType = { name = "GFX_div_templ_69_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_069.dds" }	
-    spriteType = { name = "GFX_div_templ_44_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_044.dds" }
+
+	### Large images for DIVISION TEMPLATES ###
+	spriteType = { name = "GFX_div_templ_65_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_065.dds" }
+	spriteType = { name = "GFX_div_templ_66_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_066.dds" }
+	spriteType = { name = "GFX_div_templ_67_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_067.dds" }
+	spriteType = { name = "GFX_div_templ_68_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_068.dds" }
+	spriteType = { name = "GFX_div_templ_69_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_069.dds" }
+	spriteType = { name = "GFX_div_templ_44_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_044.dds" }
 	spriteType = { name = "GFX_div_templ_45_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_045.dds" }
 	spriteType = { name = "GFX_div_templ_46_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_046.dds" }
 	spriteType = { name = "GFX_div_templ_47_small"										textureFile = "gfx/interface/counters/division_templates_small/custom_template_047.dds" }
@@ -205,5 +205,5 @@ spriteTypes = {
 	spriteType = { name = "GFX_div_templ_138_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_67.dds" }
 	spriteType = { name = "GFX_div_templ_139_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_68.dds" }
 	spriteType = { name = "GFX_div_templ_140_large"										textureFile = "gfx/interface/counters/division_templates_large/custom_template_69.dds" }
-	
+
 }

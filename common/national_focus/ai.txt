@@ -2,12 +2,12 @@ focus_tree = {
 	id = ai
 
 	country = {
-        factor = 0
-        modifier = {
-            add = 20
-            OR = { 
+		factor = 0
+		modifier = {
+			add = 20
+			OR = {
 				tag = TUR
 			}
-        }
-    }
+		}
+	}
 }

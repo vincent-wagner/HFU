@@ -17,11 +17,11 @@ if = {
 }
 add_ideas = {
 	anti_german_military
-	
+
 }
 
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	early_fighter = 1
@@ -78,7 +78,7 @@ create_corps_commander = {
 	gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
 	traits = { urban_assault_specialist }
 	skill = 3
-	
+
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
@@ -88,7 +88,7 @@ create_field_marshal = {
 	name = "Milutin Nedić"
 	gfx = GFX_Portrait_yugoslavia_milutin_nedic
 	traits = { thorough_planner }
-	skill = 3	
+	skill = 3
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2

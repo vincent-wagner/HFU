@@ -1,15 +1,15 @@
 focus_tree = {
 	id = norway_focus
-	
+
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = NOR
-		
+
 		}
 	}
-	
+
 	default = no
 
 	focus = {
@@ -252,13 +252,13 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}			
+			}
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 1.0
 				uses = 1
 				category = air_doctrine
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -442,7 +442,7 @@ focus_tree = {
 						type = air_base
 						level = 2
 						instant_build = yes
-					}				
+					}
 					ROOT = { set_country_flag = aviation_effort_2_AB }
 				}
 			}
@@ -558,19 +558,19 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
-		110 = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
+			110 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
 				}
-				set_country_flag = naval_effort_built
-		
+			}
+			set_country_flag = naval_effort_built
+
 		}
 	}
 
@@ -821,7 +821,7 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1
-				OR = { 
+				OR = {
 					# we dont want chinese minors to go crazy on slots early since they get eaten
 					tag = BEL
 					tag = LUX
@@ -830,7 +830,7 @@ focus_tree = {
 
 					# we also dont want tiny nations to go crazy with slots right away
 					num_of_controlled_states < 2
-				}				
+				}
 			}
 		}
 	}
@@ -847,7 +847,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -860,7 +860,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -871,22 +871,22 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
-					110 = {
+			110 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-						add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -904,7 +904,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
 
 		bypass = {
@@ -930,7 +930,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-					110 = {
+			110 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -977,21 +977,21 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
+		}
 
 		completion_reward = {
-					110 = {
+			110 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-						add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1010,7 +1010,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1033,8 +1033,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-					110 = {
-									add_extra_state_shared_building_slots = 1
+			110 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -1046,7 +1046,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			
+
 
 		}
 	}
@@ -1065,7 +1065,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1089,7 +1089,7 @@ focus_tree = {
 
 		completion_reward = {
 			142 = {
-							add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -1286,18 +1286,18 @@ focus_tree = {
 		id = nor_why_we_fight
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = nor_deterrence }
-		available = { 
-			OR = { 
-				threat > 0.75 
-				has_defensive_war = yes 
+		available = {
+			OR = {
+				threat > 0.75
+				has_defensive_war = yes
 			}
 		}
 
 		continue_if_invalid = yes
-		
+
 		x = 0
 		y = 2
-		relative_position_id = nor_deterrence 
+		relative_position_id = nor_deterrence
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1323,7 +1323,7 @@ focus_tree = {
 					num_of_factories > 50
 				}
 			}
-		}		
+		}
 		x = 0
 		y = 1
 		relative_position_id = nor_why_we_fight
@@ -1353,28 +1353,28 @@ focus_tree = {
 					bonus = 1.0
 					uses = 1
 					category = industry
-				}	
+				}
 				add_tech_bonus = {
 					name = infantry_artillery_bonus #@#
 					bonus = 1.0
 					uses = 1
 					category = infantry_weapons
 					category = artillery
-				}				
-			}			
+				}
+			}
 		}
-	}	
-		
-		focus = {
+	}
+
+	focus = {
 		id = nor_winter_mountain_training
 		icon = GFX_focus_NOR_defense_union
 		available = {
-		OR = {
-		GER = { has_war_with = NOR }
-		date > 1940.6.1
+			OR = {
+				GER = { has_war_with = NOR }
+				date > 1940.6.1
 
+			}
 		}
-		}	
 		x = 19
 		y = 0
 
@@ -1384,29 +1384,29 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-if = {
-limit = { NOT = { NOR = { is_in_faction	= yes }}}
-		ENG = { country_event = { id = britain.1113 } }
-}
-		add_ideas = NOR_training
-		remove_ideas = nor_bad_debuffs2
+			if = {
+				limit = { NOT = { NOR = { is_in_faction	= yes }}}
+				ENG = { country_event = { id = britain.1113 } }
+			}
+			add_ideas = NOR_training
+			remove_ideas = nor_bad_debuffs2
 		}
-		
-		}
-		
-		focus = {
+
+	}
+
+	focus = {
 		id = nor_norway_in_exile
 		icon = GFX_focus_NOR_royal_guards
 		prerequisite = { focus = nor_winter_mountain_training }
 		available = {
-		NOR = { has_capitulated = yes }
-		NOR = { is_ai = no }
-		}		
-				bypass = {
-		AND = {
-		NOR = { controls_state = 110 }
-		date > 1940.7.1
+			NOR = { has_capitulated = yes }
+			NOR = { is_ai = no }
 		}
+		bypass = {
+			AND = {
+				NOR = { controls_state = 110 }
+				date > 1940.7.1
+			}
 		}
 		relative_position_id = nor_winter_mountain_training
 		x = 0
@@ -1417,61 +1417,61 @@ limit = { NOT = { NOR = { is_in_faction	= yes }}}
 		available_if_capitulated = yes
 
 		completion_reward = {
-		remove_ideas = nor_bad_debuffs
-		add_ideas = tot_economic_mobilisation
-		add_legitimacy = 50	
-		add_offsite_building = { type = industrial_complex level = 5 }
-		add_offsite_building = { type = arms_factory level = 8 }
-				add_equipment_to_stockpile = {
-							type = convoy_1
-							amount = 150
-							producer = NOR
-						}
-						
-				retire_country_leader = yes	
-				create_country_leader = {
-					name = "King Haakon VII"
-					desc = "POLITICS_KING_HAAKON_DESC"
-					picture = "portrait_norway_haakon_vii.tga"
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = {
-						
-					}
-					
+			remove_ideas = nor_bad_debuffs
+			add_ideas = tot_economic_mobilisation
+			add_legitimacy = 50
+			add_offsite_building = { type = industrial_complex level = 5 }
+			add_offsite_building = { type = arms_factory level = 8 }
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 150
+				producer = NOR
+			}
+
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "King Haakon VII"
+				desc = "POLITICS_KING_HAAKON_DESC"
+				picture = "portrait_norway_haakon_vii.tga"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+
 				}
-				create_field_marshal = {
- 	name = "King Haakon VII"
- 	portrait_path = "gfx/leaders/NOR/portrait_norway_haakon_vii.tga"
- 	traits = {   }
-	skill = 2
- 	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-			
-						
+
+			}
+			create_field_marshal = {
+				name = "King Haakon VII"
+				portrait_path = "gfx/leaders/NOR/portrait_norway_haakon_vii.tga"
+				traits = {   }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+
+
 		}
-		
-		}
-		
-					
-		
-		focus = {
+
+	}
+
+
+
+	focus = {
 		id = nor_ruges_plan
 		icon = GFX_focus_NOR_army
 		mutually_exclusive = { focus = nor_fleischers_plan }
 		prerequisite = { focus = nor_norway_in_exile }
 		available = {
-		NOR = { is_ai = no }
-		}	
-		bypass = {
-		AND = {
-		NOR = { controls_state = 110 }
-		date > 1940.7.1
+			NOR = { is_ai = no }
 		}
-		}		
+		bypass = {
+			AND = {
+				NOR = { controls_state = 110 }
+				date > 1940.7.1
+			}
+		}
 		relative_position_id = nor_norway_in_exile
 		x = -1
 		y = 1
@@ -1481,36 +1481,36 @@ limit = { NOT = { NOR = { is_in_faction	= yes }}}
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
-		add_manpower = 250000
-							army_experience = 30
-							add_ideas = NOR_army_buffs
 
-		
+			add_manpower = 250000
+			army_experience = 30
+			add_ideas = NOR_army_buffs
+
+
 		}
-						}
-		
-		
-		
-		
-		focus = {
+	}
+
+
+
+
+	focus = {
 		id = nor_fleischers_plan
 		icon = GFX_focus_NOR_expand_the_forsvaret
 		mutually_exclusive = { focus = nor_ruges_plan }
 		prerequisite = { focus = nor_norway_in_exile }
-		
+
 		available = {
-		NOR = { is_ai = no }
-		}		
-				bypass = {
-		AND = {
-		NOR = { controls_state = 110 }
-		date > 1940.7.1
+			NOR = { is_ai = no }
 		}
+		bypass = {
+			AND = {
+				NOR = { controls_state = 110 }
+				date > 1940.7.1
+			}
 		}
-		
+
 		relative_position_id = nor_norway_in_exile
-		
+
 		x = 1
 		y = 1
 		cost = 10
@@ -1518,25 +1518,25 @@ limit = { NOT = { NOR = { is_in_faction	= yes }}}
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_manpower = 150000
-							army_experience = 90
-							add_ideas = NOR_spec_ops
+			add_manpower = 150000
+			army_experience = 90
+			add_ideas = NOR_spec_ops
 		}
-		
-		}
-		
-			focus = {
+
+	}
+
+	focus = {
 		id = nor_train_with_sas
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = nor_fleischers_plan }
 		available = {
-		NOR = { is_ai = no }
-		}		
-				bypass = {
-		AND = {
-		NOR = { controls_state = 110 }
-		date > 1940.7.1
+			NOR = { is_ai = no }
 		}
+		bypass = {
+			AND = {
+				NOR = { controls_state = 110 }
+				date > 1940.7.1
+			}
 		}
 		relative_position_id = nor_fleischers_plan
 		x = 0
@@ -1547,36 +1547,36 @@ limit = { NOT = { NOR = { is_in_faction	= yes }}}
 		available_if_capitulated = yes
 
 		completion_reward = {
-							add_tech_bonus = {
-							bonus = 1.0
-							uses = 3
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = mountaineers_tech
+				category = marine_tech
+				category = para_tech
+			}
+			ENG = {
+				add_tech_bonus = {
+					bonus = 3.0
+					uses = 1
 					category = mountaineers_tech
-			category = marine_tech
-			category = para_tech
-					}
-					ENG = {
-					add_tech_bonus = {
-							bonus = 3.0
-							uses = 1
-					category = mountaineers_tech
-					}
+				}
+			}
 		}
-		}
-		}
-		
-			focus = {
+	}
+
+	focus = {
 		id = nor_drill_exile_army
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = nor_ruges_plan }
 		available = {
-		NOR = { is_ai = no }
-		}	
-		bypass = {
-		AND = {
-		NOR = { controls_state = 110 }
-		date > 1940.7.1
+			NOR = { is_ai = no }
 		}
-		}		
+		bypass = {
+			AND = {
+				NOR = { controls_state = 110 }
+				date > 1940.7.1
+			}
+		}
 		relative_position_id = nor_ruges_plan
 		x = 0
 		y = 1
@@ -1586,29 +1586,29 @@ limit = { NOT = { NOR = { is_in_faction	= yes }}}
 		available_if_capitulated = yes
 
 		completion_reward = {
-				add_tech_bonus = {
-							bonus = 1.0
-							uses = 2
-							category = land_doctrine
-						}
-													add_ideas = NOR_army_buffs2
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			add_ideas = NOR_army_buffs2
 		}
-		
-		}
-		
-		
-			focus = {
+
+	}
+
+
+	focus = {
 		id = nor_prepare_operation_crofter
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = nor_drill_exile_army focus = nor_train_with_sas }
 		available = {
-		NOR = { is_ai = no }
-		}		
-		bypass = {
-		AND = {
-		NOR = { controls_state = 110 }
-		date > 1940.7.1
+			NOR = { is_ai = no }
 		}
+		bypass = {
+			AND = {
+				NOR = { controls_state = 110 }
+				date > 1940.7.1
+			}
 		}
 		relative_position_id = nor_drill_exile_army
 		x = 1
@@ -1619,23 +1619,23 @@ limit = { NOT = { NOR = { is_in_faction	= yes }}}
 		available_if_capitulated = yes
 
 		completion_reward = {
-				add_tech_bonus = {
-							bonus = 3.0
-							uses = 1
-					category = tp_tech
-					}
-		
+			add_tech_bonus = {
+				bonus = 3.0
+				uses = 1
+				category = tp_tech
+			}
+
 		}
-		
-		}
-			
-						focus = {
+
+	}
+
+	focus = {
 		id = nor_operation_crofter
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = nor_prepare_operation_crofter  }
 		available = {
-		NOR = { is_ai = no }
-		}		
+			NOR = { is_ai = no }
+		}
 		relative_position_id = nor_prepare_operation_crofter
 		x = 0
 		y = 1
@@ -1645,13 +1645,13 @@ limit = { NOT = { NOR = { is_in_faction	= yes }}}
 		available_if_capitulated = yes
 
 		completion_reward = {
-					
-					add_timed_idea = { idea = NOR_crofter days = 90 }
-					remove_ideas = nor_bad_debuffs
+
+			add_timed_idea = { idea = NOR_crofter days = 90 }
+			remove_ideas = nor_bad_debuffs
 		}
-		
-		}
-		
+
+	}
+
 
 
 }

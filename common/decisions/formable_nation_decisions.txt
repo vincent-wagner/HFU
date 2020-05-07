@@ -22,7 +22,7 @@ form_greater_german_reich_category = {
 			has_full_control_of_state = 153
 			has_full_control_of_state = 28
 			has_full_control_of_state = 8
-			
+
 			all_owned_state = {
 				is_fully_controlled_by = ROOT
 			}

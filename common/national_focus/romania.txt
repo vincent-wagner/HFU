@@ -1,9 +1,9 @@
 focus_tree = {
 	id = romanian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = ROM
@@ -11,46 +11,46 @@ focus_tree = {
 			has_dlc = "Death or Dishonor"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1100 }
 
-#	focus = {
-#		id = ROM_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
+	#	focus = {
+		#		id = ROM_
+		#		icon = GFX_
+		#		prerequisite = { focus = }
+		#		mutually_exclusive = { focus =  }
+		#		x = -3
+		#		y = 0
+		#		relative_position_id =
+		#
+		#		cost = 10
+		#
+		#		ai_will_do = {
+			#			factor = 1
+			#		}
+		#
+		#		available = {
+			#
+			#		}
+		#
+		#		bypass = {
+			#
+			#		}
+		#
+		#		cancel_if_invalid = yes
+		#		continue_if_invalid = no
+		#		available_if_capitulated = no
+		#
+		#		complete_tooltip = {
+			#
+			#		}
+		#
+		#		completion_reward = {
+			#
+			#		}
+		#	}
 
 	############################
 	##### CATEGORY HERE ! ######
@@ -121,14 +121,14 @@ focus_tree = {
 			add_popularity = { ideology = fascism popularity = 0.05 }
 			add_opinion_modifier = { target = GER modifier = ROM_trade_treaty_with_germany }
 			GER = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany }
-				
+
 			}
 			add_relation_modifier = { target = GER modifier = ROM_oil_agreement}
 		}
 	}
 
 
-	
+
 	focus = {
 		id = ROM_german_romanian_oil_exploitation_company
 		icon = GFX_goal_generic_oil_refinery
@@ -158,7 +158,7 @@ focus_tree = {
 
 		completion_reward = {
 			46 = {
-				
+
 				add_resource = {
 					type = oil
 					amount = 8
@@ -166,7 +166,7 @@ focus_tree = {
 			}
 			GER = {
 				56 = {
-					
+
 					add_resource = {
 						type = oil
 						amount = 4
@@ -176,7 +176,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	############################
 	##### INDUSTRY BRANCH ######
 	############################
@@ -185,7 +185,7 @@ focus_tree = {
 		id = ROM_civil_works
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = ROM_preserve_greater_romania }
-		x = 1 
+		x = 1
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
@@ -218,7 +218,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = ROM_agrarian_reform
@@ -398,7 +398,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			81 = {				
+			81 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -570,7 +570,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -621,7 +621,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Carol II"
 				desc = "POLITICS_CAROL_II_DESC"
-				picture = GFX_Portrait_romania_Carol_II				
+				picture = GFX_Portrait_romania_Carol_II
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
@@ -664,7 +664,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = ROM_revise_the_constitution
 		icon = GFX_goal_generic_forceful_treaty
@@ -680,7 +680,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -691,7 +691,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = no
@@ -716,11 +716,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -783,7 +783,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -829,7 +829,7 @@ focus_tree = {
 			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
 			GER = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
-			
+
 			#Cancel guarantees
 			diplomatic_relation = {
 				country = YUG
@@ -856,7 +856,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_idea = ROM_king_carol_ii_hedonist	
+			has_idea = ROM_king_carol_ii_hedonist
 		}
 
 		bypass = {
@@ -873,16 +873,16 @@ focus_tree = {
 				limit = { has_country_leader = { id = 550 } }
 				retire_country_leader = yes
 			}
-		
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-			
+
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+
 			if = {
 				limit = {
 					has_idea = ROM_constitutional_guarantees
-				}				
+				}
 				else = {
 					if = {
 						limit = {
@@ -901,11 +901,11 @@ focus_tree = {
 		}
 	}
 
-	
 
-	
 
-	
+
+
+
 
 	############################
 	######## AIR BRANCH ########
@@ -962,7 +962,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-						79 = {
+			79 = {
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -1077,7 +1077,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 
 	############################
 	####### ARMY BRANCH ########
@@ -1111,7 +1111,7 @@ focus_tree = {
 			army_experience = 25
 		}
 	}
-		focus = {
+	focus = {
 		id = ROM_license_german_equipment
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_army_maneuvers }
@@ -1142,17 +1142,17 @@ focus_tree = {
 
 
 		completion_reward = {
-		country_event = DOD_romania.120
+			country_event = DOD_romania.120
 			add_relation_modifier = {
 				target = GER
 				modifier = ROM_license_german_equipment
 			}
-			add_ideas =  ROM_acquire_modern_tanks 
+			add_ideas =  ROM_acquire_modern_tanks
 		}
 	}
-			
-	
-		focus = {
+
+
+	focus = {
 		id = ROM_army_maneuvers2
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = ROM_army_maneuvers }
@@ -1184,7 +1184,7 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
-			}
+		}
 	}
 
 	focus = {
@@ -1223,7 +1223,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {		
+	focus = {
 		id = ROM_vanatori_de_munte
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = ROM_army_maneuvers2 }
@@ -1394,8 +1394,8 @@ focus_tree = {
 			add_ideas = ROM_reserve_divisions
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = ROM_form_peasant_militias
 		icon = GFX_goal_generic_political_pressure
@@ -1427,8 +1427,8 @@ focus_tree = {
 			add_ideas = ROM_a_deal_with_the_devil_2
 		}
 	}
-	
-		focus = {
+
+	focus = {
 		id = ROM_iron_guard
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_form_peasant_militias }
@@ -1443,7 +1443,7 @@ focus_tree = {
 		}
 
 		available = {
-		has_government = fascism
+			has_government = fascism
 		}
 
 		bypass = {
@@ -1461,7 +1461,7 @@ focus_tree = {
 
 
 
-focus = {
+	focus = {
 		id = ROM_foreign_equipment
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_license_german_equipment }
@@ -1489,16 +1489,16 @@ focus = {
 
 
 		completion_reward = {
-						add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
 				category = support_tech
 			}
-			
+
 		}
 	}
-	
-			focus = {
+
+	focus = {
 		id = ROM_foreign_equipment1
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_foreign_equipment }
@@ -1526,7 +1526,7 @@ focus = {
 
 
 		completion_reward = {
-						add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
 				technology = interwar_antiair
@@ -1536,7 +1536,7 @@ focus = {
 				technology = antiair4
 				technology = antiair5
 			}
-			
+
 		}
 	}
 
@@ -1573,13 +1573,13 @@ focus = {
 			add_tech_bonus = {
 				name = ROM_the_maresal
 				bonus = 1.0
-				
+
 				uses = 1
 				category = cat_heavy_armor
 			}
 		}
 	}
-		focus = {
+	focus = {
 		id = ROM_mobile_tank_destroyers
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = ROM_the_maresal }
@@ -1705,7 +1705,7 @@ focus = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = ROM_transports
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = ROM_expand_the_galati_shipyards }
@@ -1739,7 +1739,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ROM_expand_the_marine_regiment
 		icon = GFX_goal_generic_amphibious_assault
@@ -1776,7 +1776,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ROM_ig_farben_romania
 		icon = GFX_goal_generic_oil_refinery
@@ -1804,8 +1804,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				46={
-				
+			46={
+
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = fuel_silo
@@ -1813,7 +1813,7 @@ focus = {
 					instant_build = yes
 				}
 			}
-				add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 3.0
 				uses = 2
 				category = excavation_tech
@@ -1821,5 +1821,5 @@ focus = {
 
 
 		}
-	
-}
+
+	}

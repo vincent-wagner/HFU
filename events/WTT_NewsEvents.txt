@@ -8,11 +8,11 @@ news_event = {
 	title = wtt_news.18.t
 	desc = wtt_news.18.desc
 	picture = GFX_news_event_election_vote
-	
+
 	major = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.18.a
 		trigger = {
@@ -35,7 +35,7 @@ news_event = {
 	picture = GFX_news_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.25.a
 		trigger = {
@@ -79,7 +79,7 @@ news_event = {
 	picture = GFX_news_event_china_flying_tigers
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.34.a
 		trigger = {
@@ -140,7 +140,7 @@ news_event = {
 	picture = GFX_news_event_020
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.40.a
 		trigger = {
@@ -409,7 +409,7 @@ news_event = {
 	picture = GFX_news_event_020
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.42.a
 		trigger = {
@@ -474,7 +474,7 @@ news_event = {
 	picture = GFX_news_event_020
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.43.a
 		trigger = {
@@ -539,7 +539,7 @@ news_event = {
 	picture = GFX_news_event_japanese_army_parade
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.44.a
 		trigger = {
@@ -576,8 +576,8 @@ news_event = {
 		name = wtt_news.44.e
 		trigger = {
 			is_literally_china = yes
-			NOT = { 
-				is_subject_of = MAN 
+			NOT = {
+				is_subject_of = MAN
 				is_in_faction_with = MAN
 			}
 		}
@@ -592,7 +592,7 @@ news_event = {
 	picture = GFX_news_event_generic_rally_3
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.45.a
 		trigger = {
@@ -631,7 +631,7 @@ news_event = {
 	picture = GFX_news_event_polish_army
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.47.a
 		trigger = {
@@ -665,7 +665,7 @@ news_event = {
 	option = {
 		name = wtt_news.47.d
 		trigger = {
-			tag = USA 
+			tag = USA
 		}
 	}
 }
@@ -677,7 +677,7 @@ news_event = {
 	picture = GFX_news_event_japanese_parade
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.48.a
 		trigger = {
@@ -700,9 +700,9 @@ news_event = {
 		name = wtt_news.48.d
 		trigger = {
 			NOT = {
-			 	original_tag = MAN
-			 	original_tag = JAP
-			 	is_literally_china = yes
+				original_tag = MAN
+				original_tag = JAP
+				is_literally_china = yes
 			}
 		}
 	}
@@ -716,7 +716,7 @@ news_event = {
 	picture = GFX_news_event_generic_ruins
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.50.a
 		trigger = {
@@ -742,7 +742,7 @@ news_event = {
 		name = wtt_news.50.d
 		trigger = {
 			NOT = {
-			 	has_war_with = GER
+				has_war_with = GER
 			}
 			NOT = {
 				original_tag = GER
@@ -761,7 +761,7 @@ news_event = {
 	picture = GFX_news_event_generic_ruins
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.50.a
 		trigger = {
@@ -787,7 +787,7 @@ news_event = {
 		name = wtt_news.50.d
 		trigger = {
 			NOT = {
-			 	has_war_with = GER
+				has_war_with = GER
 			}
 			NOT = {
 				original_tag = GER
@@ -807,7 +807,7 @@ news_event = {
 	picture = GFX_news_event_generic_ruins
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.50.a
 		trigger = {
@@ -833,7 +833,7 @@ news_event = {
 		name = wtt_news.50.d
 		trigger = {
 			NOT = {
-			 	has_war_with = GER
+				has_war_with = GER
 			}
 			NOT = {
 				original_tag = GER
@@ -854,7 +854,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_news.69.a
 		trigger = {
@@ -889,7 +889,7 @@ news_event = {
 	is_triggered_only = yes
 
 	fire_for_sender = no
-	
+
 	option = {
 		name = wtt_news.1000.a
 		trigger = {
@@ -907,7 +907,7 @@ news_event = {
 	is_triggered_only = yes
 
 	fire_for_sender = no
-	
+
 	option = {
 		name = wtt_news.1001.a
 		trigger = {

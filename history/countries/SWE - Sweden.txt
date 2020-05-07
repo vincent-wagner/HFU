@@ -1,4 +1,4 @@
-﻿capital = 141	
+﻿capital = 141
 
 set_research_slots = 0
 
@@ -32,12 +32,12 @@ set_stability = 0.9
 
 
 create_country_leader = {
-	name = "Greta Thunberg"
+	name = "Per Albin Hansson"
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
 	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		stout_defender
+		#
 	}
 }

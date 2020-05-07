@@ -1,6 +1,6 @@
 prospect_for_resources = {
 	develop_yunnan_aluminium_deposits = { #325
-		
+
 		icon = aluminium
 
 		allowed = {
@@ -9,14 +9,16 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 325
 		}
 		highlight_states = {
 			state = 325
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 325
 			325 = {
 				NOT = {
@@ -37,19 +39,19 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			325 = { set_state_flag = yunnan_aluminium_developed } 
+		remove_effect = {
+			325 = { set_state_flag = yunnan_aluminium_developed }
 			325 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
 				}
 			}
-		}	
+		}
 	}
 
 	develop_sichuan_aluminium_deposits = { #605
-		
+
 		icon = aluminium
 
 		allowed = {
@@ -58,14 +60,16 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 605
 		}
 		highlight_states = {
 			state = 605
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 605
 			605 = {
 				NOT = {
@@ -86,26 +90,27 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			605 = { set_state_flag = sichuan_aluminium_developed } 
+		remove_effect = {
+			605 = { set_state_flag = sichuan_aluminium_developed }
 			605 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
 				}
 			}
-		}	
+		}
 	}
 
 	develop_luzon_chromium_deposits = { #623
-		
+
 		icon = chromium
 
 		allowed = {
 			OR = { tag = MAN tag = JAP }
 		}
 
-		available = {
+		available = {
+
 			controls_state = 623
 			num_of_civilian_factories_available_for_projects > 2
 			has_tech = excavation3
@@ -114,7 +119,8 @@ prospect_for_resources = {
 			state = 623
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 623
 			623 = {
 				NOT = {
@@ -135,8 +141,8 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 5
 		}
-		remove_effect = { 
-			623 = { set_state_flag = luzon_chromium_developed } 
+		remove_effect = {
+			623 = { set_state_flag = luzon_chromium_developed }
 			623 = {
 				add_resource = {
 					type = chromium
@@ -147,7 +153,7 @@ prospect_for_resources = {
 	}
 
 	develop_mindanao_steel_deposits = { #627
-		
+
 		icon = steel
 
 		allowed = {
@@ -160,11 +166,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 627
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 627
 			627 = {
 				NOT = {
@@ -185,8 +193,8 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			627 = { set_state_flag = mindanao_steel_developed } 
+		remove_effect = {
+			627 = { set_state_flag = mindanao_steel_developed }
 			627 = {
 				add_resource = {
 					type = steel
@@ -197,7 +205,7 @@ prospect_for_resources = {
 	}
 
 	develop_samar_steel_deposits = { #625
-		
+
 		icon = steel
 
 		allowed = {
@@ -206,7 +214,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 625
 		}
 
@@ -214,7 +223,8 @@ prospect_for_resources = {
 			state = 625
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 625
 			625 = {
 				NOT = {
@@ -236,19 +246,19 @@ prospect_for_resources = {
 			factor = 1
 		}
 
-		remove_effect = { 
-			625 = { set_state_flag = samar_steel_developed } 
+		remove_effect = {
+			625 = { set_state_flag = samar_steel_developed }
 			625 = {
 				add_resource = {
 					type = steel
 					amount = 6
 				}
 			}
-		}	
+		}
 	}
 
 	develop_nauru_tungsten_deposits = { #725
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -257,7 +267,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 725
 		}
 
@@ -265,7 +276,8 @@ prospect_for_resources = {
 			state = 725
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 725
 			725 = {
 				NOT = {
@@ -303,7 +315,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_tonkin_aluminium_deposits = { #671
-		
+
 		icon = aluminium
 
 		allowed = {
@@ -312,7 +324,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 671
 		}
 
@@ -320,7 +333,8 @@ prospect_for_resources = {
 			state = 671
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 671
 			671 = {
 				NOT = {
@@ -353,16 +367,17 @@ prospect_for_resources = {
 		}
 	}
 	develop_singapore_aluminium_deposits = { #336
-		
+
 		icon = aluminium
 
 		allowed = {
 			OR = { tag = MAN tag = JAP tag = ENG }
 		}
 
-		available = {	
+		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 336
 		}
 
@@ -370,7 +385,8 @@ prospect_for_resources = {
 			state = 336
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 336
 			336 = {
 				NOT = {
@@ -403,7 +419,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_tasmania_aluminium_deposits = { #518
-		
+
 		icon = aluminium
 
 		allowed = {
@@ -412,7 +428,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 518
 		}
 
@@ -420,7 +437,8 @@ prospect_for_resources = {
 			state = 518
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 518
 			518 = {
 				NOT = {
@@ -456,14 +474,15 @@ prospect_for_resources = {
 	}
 
 	develop_nigeria_rubber_plantations = { #558
-		
+
 		icon = rubber
 
 		allowed = {
 			OR = { tag = GER tag = ITA tag = ENG }
 		}
 
-		available = {
+		available = {
+
 			controls_state = 558
 			num_of_civilian_factories_available_for_projects > 1
 		}
@@ -472,7 +491,8 @@ prospect_for_resources = {
 			state = 558
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 558
 			558 = {
 				NOT = {
@@ -513,7 +533,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_ems_oil_fields = { #56
-		
+
 		icon = oil
 
 		allowed = {
@@ -526,11 +546,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 56
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 56
 			has_tech = excavation3
 			56 = {
@@ -567,7 +589,7 @@ prospect_for_resources = {
 	}
 
 	develop_matzen_oil_fields = { #4
-		
+
 		icon = oil
 
 		allowed = {
@@ -576,7 +598,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 4
 		}
 
@@ -584,7 +607,8 @@ prospect_for_resources = {
 			state = 4
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 4
 			has_tech = excavation3
 			4 = {
@@ -620,7 +644,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_friesland_oil_fields = { #36
-		
+
 		icon = oil
 
 		allowed = {
@@ -633,11 +657,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 36
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 36
 			has_tech = excavation3
 			36 = {
@@ -666,12 +692,12 @@ prospect_for_resources = {
 					type = oil
 					amount = 6
 				}
-				
+
 			}
 		}
 	}
 	develop_newfoundland_steel = { #331
-		
+
 		icon = steel
 
 		allowed = {
@@ -684,11 +710,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 331
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 331
 			331 = {
 				NOT = {
@@ -727,7 +755,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_quebec_steel = { #466
-		
+
 		icon = steel
 
 		allowed = {
@@ -739,14 +767,16 @@ prospect_for_resources = {
 			num_of_civilian_factories_available_for_projects > 2
 			466 = {
 				infrastructure > 2
-			}
+			}
+
 			controls_state = 466
 		}
 		highlight_states = {
 			state = 466
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 466
 			466 = {
 				NOT = {
@@ -781,7 +811,7 @@ prospect_for_resources = {
 	}
 
 	develop_arkansas_aluminium_deposits = { #372
-		
+
 		icon = aluminium
 
 		allowed = {
@@ -794,16 +824,18 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 372
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 372
 			372 = {
 				NOT = {
-					has_state_flag = { 
-						flag = arkansas_aluminium_developed 
+					has_state_flag = {
+						flag = arkansas_aluminium_developed
 						value = 5
 					}
 				}
@@ -865,7 +897,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_new_york_aluminium_deposits = { #358
-		
+
 		icon = aluminium
 
 		allowed = {
@@ -876,11 +908,13 @@ prospect_for_resources = {
 		}
 		available = {
 			has_tech = construction2
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 358
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 358
 			358 = {
 				NOT = {
@@ -947,7 +981,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_tennessee_aluminium_deposits = { #368
-		
+
 		icon = aluminium
 
 		allowed = {
@@ -955,7 +989,8 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_tech = construction2
+			has_tech = construction2
+
 			controls_state = 368
 			num_of_civilian_factories_available_for_projects > 14
 		}
@@ -964,12 +999,13 @@ prospect_for_resources = {
 			state = 368
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 368
 			368 = {
 				NOT = {
-					has_state_flag = { 
-						flag = tennessee_aluminium_developed 
+					has_state_flag = {
+						flag = tennessee_aluminium_developed
 						value = 5
 					}
 				}
@@ -1031,7 +1067,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_washington_aluminium_deposits = { #386
-		
+
 		icon = aluminium
 
 		allowed = {
@@ -1039,7 +1075,8 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_tech = construction2
+			has_tech = construction2
+
 			controls_state = 386
 			num_of_civilian_factories_available_for_projects > 14
 		}
@@ -1048,12 +1085,13 @@ prospect_for_resources = {
 			state = 386
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 386
 			386 = {
 				NOT = {
-					has_state_flag = { 
-						flag = washington_aluminium_developed 
+					has_state_flag = {
+						flag = washington_aluminium_developed
 						value = 5
 					}
 				}
@@ -1115,7 +1153,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_idaho_tungsten_deposits = { #387
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -1128,16 +1166,18 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 387
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 387
 			387 = {
 				NOT = {
-					has_state_flag = { 
-						flag = idaho_tungsten_developed 
+					has_state_flag = {
+						flag = idaho_tungsten_developed
 						value = 5
 					}
 				}
@@ -1199,7 +1239,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_california_tungsten_deposits = { #378
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -1212,16 +1252,18 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 378
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 378
 			378 = {
 				NOT = {
-					has_state_flag = { 
-						flag = california_tungsten_developed 
+					has_state_flag = {
+						flag = california_tungsten_developed
 						value = 5
 					}
 				}
@@ -1283,7 +1325,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_minnesota_steel_deposits = { #391
-		
+
 		icon = steel
 
 		allowed = {
@@ -1292,7 +1334,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 391
 		}
 
@@ -1300,12 +1343,13 @@ prospect_for_resources = {
 			state = 391
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 391
 			391 = {
 				NOT = {
-					has_state_flag = { 
-						flag = minnesota_steel_developed 
+					has_state_flag = {
+						flag = minnesota_steel_developed
 						value = 5
 					}
 				}
@@ -1367,7 +1411,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_pennsylvania_steel_deposits = { #360
-		
+
 		icon = steel
 
 		allowed = {
@@ -1380,16 +1424,18 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 360
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 360
 			360 = {
 				NOT = {
-					has_state_flag = { 
-						flag = pennsylvania_steel_developed 
+					has_state_flag = {
+						flag = pennsylvania_steel_developed
 						value = 5
 					}
 				}
@@ -1452,7 +1498,7 @@ prospect_for_resources = {
 	}
 
 	develop_ohio_steel_deposits = { #261
-		
+
 		icon = steel
 
 		allowed = {
@@ -1461,7 +1507,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 261
 		}
 
@@ -1469,12 +1516,13 @@ prospect_for_resources = {
 			state = 261
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 261
 			261 = {
 				NOT = {
-					has_state_flag = { 
-						flag = ohio_steel_developed 
+					has_state_flag = {
+						flag = ohio_steel_developed
 						value = 5
 					}
 				}
@@ -1536,7 +1584,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_indiana_steel_deposits = { #396
-		
+
 		icon = steel
 
 		allowed = {
@@ -1549,16 +1597,18 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 396
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 396
 			396 = {
 				NOT = {
-					has_state_flag = { 
-						flag = indiana_steel_developed 
+					has_state_flag = {
+						flag = indiana_steel_developed
 						value = 5
 					}
 				}
@@ -1621,7 +1671,7 @@ prospect_for_resources = {
 	}
 
 	develop_montana_chromium_deposits = { #388
-		
+
 		icon = chromium
 
 		allowed = {
@@ -1634,17 +1684,19 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 388
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 388
 			has_tech = excavation3
 			388 = {
 				NOT = {
-					has_state_flag = { 
-						flag = montana_chromium_developed 
+					has_state_flag = {
+						flag = montana_chromium_developed
 						value = 5
 					}
 				}
@@ -1707,7 +1759,7 @@ prospect_for_resources = {
 	}
 
 	develop_california_chromium_deposits = { #378
-		
+
 		icon = chromium
 
 		allowed = {
@@ -1720,17 +1772,19 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 378
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 378
 			has_tech = excavation3
 			378 = {
 				NOT = {
-					has_state_flag = { 
-						flag = california_chromium_developed 
+					has_state_flag = {
+						flag = california_chromium_developed
 						value = 5
 					}
 				}
@@ -1841,7 +1895,7 @@ prospect_for_resources = {
 
 	develop_palau_aluminium_deposits = { #647
 		icon = aluminium
-		
+
 		highlight_states = {
 			state = 647
 		}
@@ -1881,12 +1935,12 @@ prospect_for_resources = {
 					type = aluminium
 					amount = 12
 				}
-				set_state_flag = palau_aluminium_developed				
+				set_state_flag = palau_aluminium_developed
 			}
 		}
 	}
 	develop_cornwall_tungsten_deposits_1 = { #123
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -1895,7 +1949,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 123
 		}
 
@@ -1903,7 +1958,8 @@ prospect_for_resources = {
 			state = 123
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 123
 			123 = {
 				NOT = {
@@ -1941,7 +1997,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_cornwall_tungsten_deposits_2 = { #123
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -1950,7 +2006,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 4
+
 			controls_state = 123
 		}
 
@@ -1958,7 +2015,8 @@ prospect_for_resources = {
 			state = 123
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 123
 			123 = {
 				NOT = {
@@ -1993,7 +2051,7 @@ prospect_for_resources = {
 	}
 
 	develop_caucasus_tungsten_deposits_1 = { #233
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -2002,7 +2060,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 233
 		}
 
@@ -2010,7 +2069,8 @@ prospect_for_resources = {
 			state = 233
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 233
 			233 = {
 				NOT = {
@@ -2049,7 +2109,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_caucasus_tungsten_deposits_2 = { #233
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -2058,7 +2118,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 4
+
 			controls_state = 233
 		}
 
@@ -2066,7 +2127,8 @@ prospect_for_resources = {
 			state = 233
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 233
 			233 = {
 				NOT = {
@@ -2106,7 +2168,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_kyzyl_tungsten_deposits = { #404 State not found
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -2115,7 +2177,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 404
 		}
 
@@ -2123,7 +2186,8 @@ prospect_for_resources = {
 			state = 404
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 404
 			has_tech = excavation3
 			404 = {
@@ -2162,8 +2226,8 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_chelyabinsk_steel_deposits = { #572 
-		
+	develop_chelyabinsk_steel_deposits = { #572
+
 		icon = steel
 
 		allowed = {
@@ -2172,7 +2236,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction4
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 4
+
 			controls_state = 572
 			has_tech = construction3
 		}
@@ -2181,20 +2246,21 @@ prospect_for_resources = {
 			state = 572
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 572
 			has_tech = construction3
 			572 = {
 				NOT = {
-					has_state_flag = { 
-						flag = chelyabinsk_steel_developed 
+					has_state_flag = {
+						flag = chelyabinsk_steel_developed
 						value = 3
 					}
 				}
 			}
 		}
 
-		
+
 
 		cost = 10
 		days_remove = 90
@@ -2214,21 +2280,21 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			572 = { 
+			572 = {
 				if = {
 					limit = {
 						not = {
-							has_state_flag = chelyabinsk_steel_developed 
+							has_state_flag = chelyabinsk_steel_developed
 						}
 					}
 					set_state_flag = {
-						flag = chelyabinsk_steel_developed 
+						flag = chelyabinsk_steel_developed
 						value = 1
 					}
 				}
 				else = {
 					modify_state_flag = {
-						flag = chelyabinsk_steel_developed 
+						flag = chelyabinsk_steel_developed
 						value = 1
 					}
 				}
@@ -2242,7 +2308,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_zlatoust_steel_deposits_1 = { #573
-		
+
 		icon = steel
 
 		allowed = {
@@ -2251,7 +2317,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 573
 		}
 
@@ -2259,7 +2326,8 @@ prospect_for_resources = {
 			state = 573
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 573
 			573 = {
 				NOT = {
@@ -2298,7 +2366,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_zlatoust_steel_deposits_2 = { #573
-		
+
 		icon = steel
 
 		allowed = {
@@ -2307,7 +2375,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = construction4
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 4
+
 			controls_state = 573
 		}
 
@@ -2315,7 +2384,8 @@ prospect_for_resources = {
 			state = 573
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 573
 			573 = {
 				NOT = {
@@ -2355,7 +2425,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_kursk_steel_deposits = { #220
-		
+
 		icon = steel
 
 		allowed = {
@@ -2368,16 +2438,18 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 8
+			num_of_civilian_factories_available_for_projects > 8
+
 			controls_state = 220
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 220
 			220 = {
 				NOT = {
-					has_state_flag = { 
-						flag = kursk_steel_developed 
+					has_state_flag = {
+						flag = kursk_steel_developed
 						value = 5
 					}
 				}
@@ -2440,7 +2512,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_kursk_steel_deposits_2 = { #220
-		
+
 		icon = steel
 
 		allowed = {
@@ -2453,20 +2525,22 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 11
+
 			controls_state = 220
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 220
 			220 = {
 				NOT = {
-					has_state_flag = { 
-						flag = kursk_steel_developed_2 
+					has_state_flag = {
+						flag = kursk_steel_developed_2
 						value = 5
 					}
 				}
-				has_state_flag = { 
+				has_state_flag = {
 					flag = kursk_steel_developed
 					value = 5
 				}
@@ -2529,7 +2603,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_kursk_steel_deposits_3 = { #220
-		
+
 		icon = steel
 
 		allowed = {
@@ -2542,20 +2616,22 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 220
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 220
 			220 = {
 				NOT = {
-					has_state_flag = { 
-						flag = kursk_steel_developed_3 
+					has_state_flag = {
+						flag = kursk_steel_developed_3
 						value = 5
 					}
 				}
-				has_state_flag = { 
+				has_state_flag = {
 					flag = kursk_steel_developed_2
 					value = 5
 				}
@@ -2618,7 +2694,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_Belgorod_steel_deposits = { #240
-		
+
 		icon = steel
 
 		allowed = {
@@ -2631,16 +2707,18 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation2
-			num_of_civilian_factories_available_for_projects > 8
+			num_of_civilian_factories_available_for_projects > 8
+
 			controls_state = 240
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 240
 			240 = {
 				NOT = {
-					has_state_flag = { 
-						flag = Belgorod_steel_developed 
+					has_state_flag = {
+						flag = Belgorod_steel_developed
 						value = 5
 					}
 				}
@@ -2703,7 +2781,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_Belgorod_steel_deposits_2 = { #240
-		
+
 		icon = steel
 
 		allowed = {
@@ -2716,20 +2794,22 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 11
+
 			controls_state = 240
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 240
 			240 = {
 				NOT = {
-					has_state_flag = { 
-						flag = Belgorod_steel_developed_2 
+					has_state_flag = {
+						flag = Belgorod_steel_developed_2
 						value = 5
 					}
 				}
-				has_state_flag = { 
+				has_state_flag = {
 					flag = Belgorod_steel_developed
 					value = 5
 				}
@@ -2792,7 +2872,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_Belgorod_steel_deposits_3 = { #240
-		
+
 		icon = steel
 
 		allowed = {
@@ -2805,20 +2885,22 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 14
+			num_of_civilian_factories_available_for_projects > 14
+
 			controls_state = 240
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 240
 			240 = {
 				NOT = {
-					has_state_flag = { 
-						flag = Belgorod_steel_developed_3 
+					has_state_flag = {
+						flag = Belgorod_steel_developed_3
 						value = 5
 					}
 				}
-				has_state_flag = { 
+				has_state_flag = {
 					flag = Belgorod_steel_developed_2
 					value = 5
 				}
@@ -2881,7 +2963,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_uralsk_chromium_deposits_1 = { #407
-		
+
 		icon = chromium
 
 		allowed = {
@@ -2890,7 +2972,8 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 407
 		}
 
@@ -2898,7 +2981,8 @@ prospect_for_resources = {
 			state = 407
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 407
 			407 = {
 				NOT = {
@@ -2937,7 +3021,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_uralsk_chromium_deposits_2 = { #407
-		
+
 		icon = chromium
 
 		allowed = {
@@ -2945,7 +3029,8 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_tech = excavation5
+			has_tech = excavation5
+
 			controls_state = 407
 			num_of_civilian_factories_available_for_projects > 4
 		}
@@ -2954,7 +3039,8 @@ prospect_for_resources = {
 			state = 407
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 407
 			407 = {
 				NOT = {
@@ -2992,11 +3078,11 @@ prospect_for_resources = {
 				}
 			}
 		}
-	}	
-	
+	}
+
 
 	develop_chosen_tungsten_deposits = { #527
-		
+
 		icon = tungsten
 
 		allowed = {
@@ -3009,16 +3095,18 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 4
+
 			controls_state = 527
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 527
 			527 = {
 				NOT = {
-					has_state_flag = { 
-						flag = chosin_tungsten_developed 
+					has_state_flag = {
+						flag = chosin_tungsten_developed
 						value = 5
 					}
 				}
@@ -3076,7 +3164,7 @@ prospect_for_resources = {
 	}
 
 	develop_abu_dhabi_oil_fields  = { #658
-		
+
 		icon = oil
 
 		allowed = {
@@ -3089,11 +3177,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 6
+			num_of_civilian_factories_available_for_projects > 6
+
 			controls_state = 658
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 658
 			has_tech = excavation5
 			658 = {
@@ -3129,7 +3219,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_kuwait_oil_fields = { #656
-		
+
 		icon = oil
 
 		allowed = {
@@ -3137,7 +3227,8 @@ prospect_for_resources = {
 		}
 
 		available = {
-			has_tech = excavation5
+			has_tech = excavation5
+
 			controls_state = 656
 			num_of_civilian_factories_available_for_projects > 11
 		}
@@ -3146,13 +3237,14 @@ prospect_for_resources = {
 			state = 656
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 656
 			has_tech = excavation2
 			656 = {
 				NOT = {
-					has_state_flag = { 
-						flag = kuwait_oil_developed 
+					has_state_flag = {
+						flag = kuwait_oil_developed
 						value = 5
 					}
 				}
@@ -3208,7 +3300,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_khuzestan_oil_fields   = { #413
-		
+
 		icon = oil
 
 		allowed = {
@@ -3221,11 +3313,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 8
+			num_of_civilian_factories_available_for_projects > 8
+
 			controls_state = 413
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 413
 			has_tech = excavation2
 			413 = {
@@ -3261,7 +3355,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_fars_oil_fields = { #412
-		
+
 		icon = oil
 
 		allowed = {
@@ -3274,11 +3368,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 412
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 412
 			has_tech = excavation3
 			412 = {
@@ -3314,7 +3410,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_baghdad_oil_fields  = { #291
-		
+
 		icon = oil
 
 		allowed = {
@@ -3327,11 +3423,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			num_of_civilian_factories_available_for_projects > 11
+			num_of_civilian_factories_available_for_projects > 11
+
 			controls_state = 291
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 291
 			has_tech = excavation4
 			291 = {
@@ -3367,7 +3465,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_mosul_oil_fields   = { #676
-		
+
 		icon = oil
 
 		allowed = {
@@ -3379,11 +3477,13 @@ prospect_for_resources = {
 		}
 
 		available = {
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 4
+
 			controls_state = 676
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 676
 			has_tech = excavation3
 			676 = {
@@ -3419,7 +3519,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_eastern_desert_oil_fields   = { #457
-		
+
 		icon = oil
 
 		allowed = {
@@ -3432,11 +3532,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
+			num_of_civilian_factories_available_for_projects > 2
+
 			controls_state = 457
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 457
 			has_tech = excavation2
 			457 = {
@@ -3472,7 +3574,7 @@ prospect_for_resources = {
 		}
 	}
 	develop_qatar_oil_fields   = { #765
-		
+
 		icon = oil
 
 		allowed = {
@@ -3485,11 +3587,13 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 5
+			num_of_civilian_factories_available_for_projects > 5
+
 			controls_state = 765
 		}
 
-		visible = {
+		visible = {
+
 			controls_state = 765
 			has_tech = excavation2
 			765 = {

@@ -11,7 +11,7 @@ country_event = {
 	picture = GFX_report_event_generic_funeral
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = NZL
 		has_government = democratic
@@ -22,11 +22,11 @@ country_event = {
 	mean_time_to_happen = {
 		days = 7
 	}
-	
+
 	#ok I guess
 	option = {
-			name = tfv_new_zealand.7.a
-			create_country_leader = {
+		name = tfv_new_zealand.7.a
+		create_country_leader = {
 			name = "Peter Fraser"
 			desc = "POLITICS_PETER_FRASER_DESC"
 			picture = "Portrait_NewZealand_Peter_Fraser.dds"

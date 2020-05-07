@@ -8,10 +8,10 @@
 
 focus_tree = {
 	id = hungarian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = HUN
@@ -19,7 +19,7 @@ focus_tree = {
 			has_dlc = "Death or Dishonor"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1600 }
@@ -152,8 +152,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_threat = 1
-		    remove_ideas = HUN_treaty_of_triannon
-			#make Horthy or King dude leader. depending on focus picked earlier	
+			remove_ideas = HUN_treaty_of_triannon
+			#make Horthy or King dude leader. depending on focus picked earlier
 			if = {
 				limit = {
 					has_completed_focus = HUN_strengthen_fascists
@@ -163,8 +163,8 @@ focus_tree = {
 					limit = {
 						has_country_leader = { id = 500 }
 					}
-					hidden_effect = { 
-						retire_country_leader = yes 
+					hidden_effect = {
+						retire_country_leader = yes
 					}
 				}
 			}
@@ -180,7 +180,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = HUN_trade_deal_with_germany
 		icon = GFX_goal_generic_trade
@@ -275,8 +275,8 @@ focus_tree = {
 						is_in_faction = yes
 					}
 					ROM = {
-						is_in_faction = yes 
-					}					
+						is_in_faction = yes
+					}
 				}
 			}
 			modifier = {
@@ -307,8 +307,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_state_core = 76
-			add_state_core = 83
-			
+			#add_state_core = 83
+
 			add_state_core = 664
 			add_state_core = 45
 			add_state_core = 764
@@ -317,7 +317,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = HUN_demand_southern_slovakia
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -333,11 +333,11 @@ focus_tree = {
 		}
 
 		available = {
-			has_army_manpower = { size > 100000 }
+			#has_army_manpower = { size > 100000 }
 		}
 
 		bypass = {
-				owns_state = 664
+			owns_state = 664
 		}
 
 		cancel_if_invalid = yes
@@ -349,7 +349,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			transfer_state = 664	
+			transfer_state = 664
 			CZE = { country_event = { id = DOD_hungary.80 } }
 		}
 	}
@@ -526,13 +526,13 @@ focus_tree = {
 
 			}
 			154 = {
-				
+
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-	
+
 			}
 		}
 	}
@@ -743,7 +743,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			random_state = {
@@ -779,7 +779,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = HUN_invite_foreign_investors
@@ -862,7 +862,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				prioritize = { 43 }
 				limit = {
-					ROOT = { has_full_control_of_state = PREV } 
+					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -997,7 +997,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-						random_state = {
+			random_state = {
 				limit = {
 					has_state_flag = HUN_domestic_arms_industry_AF2
 				}
@@ -1038,7 +1038,7 @@ focus_tree = {
 				}
 				set_state_flag = HUN_domestic_arms_industry_AF1
 			}
-						random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1073,7 +1073,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = HUN_aeronautic_technology_institute
@@ -1138,8 +1138,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-search_filters = { FOCUS_FILTER_INDUSTRY }
-		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1149,8 +1149,8 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 						include_locked = yes
 					}
 					is_core_of = ROOT
-					
-					
+
+
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1193,7 +1193,7 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 
@@ -1379,7 +1379,7 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-				add_tech_bonus = {
+			add_tech_bonus = {
 				name = HUN_cas_focus
 				bonus = 1.0
 				uses = 1
@@ -1474,8 +1474,8 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 		}
 	}
 
-	
-		focus = {
+
+	focus = {
 		id = HUN_mobile_corps_doctrine
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = HUN_mobile_focus }
@@ -1508,11 +1508,11 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 				bonus = 1.0
 				uses = 1
 				category = cat_mobile_warfare
-												category = cat_superior_firepower
+				category = cat_superior_firepower
 			}
 		}
 	}
-	
+
 	focus = {
 		id = HUN_the_botond
 		icon = GFX_goal_generic_army_motorized
@@ -1588,7 +1588,7 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 		}
 	}
 
-		focus = {
+	focus = {
 		id = HUN_armored_warfare
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = HUN_mobile_focus }
@@ -1616,17 +1616,17 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-				add_tech_bonus = {
+			add_tech_bonus = {
 				name = HUN_mobile_corps_doctrine
 				bonus = 1.0
 				uses = 1
 				category = cat_mobile_warfare
-								category = cat_superior_firepower
+				category = cat_superior_firepower
 			}
 		}
 	}
 
-	
+
 	focus = {
 		id = HUN_develop_tanks
 		icon = GFX_goal_generic_army_tanks
@@ -1772,7 +1772,7 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 				uses = 2
 				category = infantry_weapons
 			}
-				add_tech_bonus = {
+			add_tech_bonus = {
 				name = HUN_danuvia_submachine_guns
 				bonus = 1.0
 				uses = 2
@@ -1780,7 +1780,7 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 				technology = support_weapons2
 				technology = support_weapons3
 				technology = support_weapons4
-				}
+			}
 		}
 	}
 
@@ -1818,13 +1818,13 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 				uses = 2
 				category = artillery
 			}
-					add_tech_bonus = {
+			add_tech_bonus = {
 				name = HUN_artillery_effort
 				bonus = 1.0
 				uses = 2
 				technology = infantry_at
 				technology = infantry_at2
-				}
+			}
 		}
 	}
 
@@ -1865,13 +1865,13 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 						name = "Light Division"
 						division_names_group = HUN_INF_01
 						priority = 2
-		
+
 						regiments = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
-				
-		    	   		 	infantry = { x = 1 y = 0 }
+
+							infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
 						}
@@ -1886,13 +1886,13 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 							name = "Light Division"
 							division_names_group = HUN_INF_01
 							priority = 2
-			
+
 							regiments = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
-					
-			    	   		 	infantry = { x = 1 y = 0 }
+
+								infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
 							}
@@ -1901,14 +1901,14 @@ search_filters = { FOCUS_FILTER_INDUSTRY }
 								artillery = { x = 0 y = 1 }
 								engineer = { x = 0 y = 1 }
 							}
-						}					
+						}
 					}
-				}	
+				}
 				random_owned_controlled_state = {
 					prioritize = { 43 }
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					create_unit = {
-						division = "name = \"1. Light Division\" division_template = \"Light Division\" start_experience_factor = 1.0" 
+						division = "name = \"1. Light Division\" division_template = \"Light Division\" start_experience_factor = 1.0"
 						owner = HUN
 					}
 				}

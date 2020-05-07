@@ -53,7 +53,7 @@ ideas = {
 			}
 		}
 
-		
+
 		CRO_catholic_dominance = {
 
 			picture = ENG_the_war_to_end_all_wars
@@ -71,12 +71,12 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-                political_power_factor = 0.1
+				political_power_factor = 0.1
 				consumer_goods_factor = -0.05
 			}
 		}
-		
-		
+
+
 		EFR_german_war_repairs = {
 			removal_cost = -1
 			allowed = {
@@ -107,7 +107,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				justify_war_goal_time = 5.0 
+				justify_war_goal_time = 5.0
 				enemy_justify_war_goal_time = 5.0
 				join_faction_tension = 2.00
 				lend_lease_tension = 2
@@ -132,7 +132,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-                production_speed_infrastructure_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
 				production_speed_industrial_complex_factor = 0.10
 				industry_repair_factor = 0.05
 			}
@@ -238,45 +238,45 @@ ideas = {
 				consumer_goods_factor = -0.02
 			}
 		}
-		
+
 		EFR_neutrality_idea = {
-			
+
 			picture = neutrality_idea
 
 			allowed = {
 				tag = EFR
 			}
-			
-			removal_cost = -1
-			
-			
 
-			
+			removal_cost = -1
+
+
+
+
 
 			cancel_if_invalid = yes
-			
+
 			modifier = {
-				justify_war_goal_time = 5.0 
+				justify_war_goal_time = 5.0
 				enemy_justify_war_goal_time = 5.0
 				join_faction_tension = 2.00
 				lend_lease_tension = 2
 				send_volunteers_tension = 0.20
 				guarantee_tension = 2.0
 				ai_get_ally_desire_factor = -500
- 								
+
 			}
 			targeted_modifier = {
 				tag = Ger
 				extra_trade_to_target_factor = 1
 				trade_cost_for_target_factor = -0.8
 
-			} 
+			}
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 	political_advisor = {
 
 		EFR_marcel_deat = {
@@ -385,37 +385,37 @@ ideas = {
 
 		VIC_charles_huntziger = {
 			ledger = army
-					
-					
+
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
+
 			picture = generic_army_europe_4
-			
+
 			research_bonus = {
 				land_doctrine = 0.10
 			}
-			
+
 			traits = { military_theorist }
 		}
 
 		VIC_lucien_lacaze = {
 			ledger = navy
-					
-					
+
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
+
 			picture = generic_navy_europe_1
-			
+
 			research_bonus = {
 				naval_doctrine = 0.10
 			}
-			
+
 			traits = { naval_theorist }
 		}
 	}
@@ -423,33 +423,33 @@ ideas = {
 	army_chief = {
 
 		VIC_eugene_bridoux = {
-			
+
 			picture = generic_army_europe_1
-			
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
+
 			traits = { army_chief_reform_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		VIC_maxime_weygand = {
-			
+
 			picture = generic_army_europe_3
-			
+
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = EFR
 				has_government = fascism
 			}
-			
+
 			traits = { army_chief_defensive_3 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -457,39 +457,39 @@ ideas = {
 	}
 
 	air_chief = {
-		
+
 
 		VIC_jean_marie_bergeret = {
-			
+
 			picture = generic_air_europe_2
-			
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
 
-			
+
+
 			traits = { air_chief_safety_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		VIC_jean_romatet = {
-			
+
 			picture = generic_air_europe_3
-			
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
 
-			
+
+
 			traits = { air_chief_ground_support_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -500,36 +500,36 @@ ideas = {
 	navy_chief = {
 
 		VIC_jean_francois_darlan = {
-			
+
 			picture = generic_navy_europe_1
-			
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
 
-			
+
+
 			traits = { navy_chief_maneuver_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		VIC_jean_marie_abrial = {
-			
+
 			picture = generic_navy_europe_1
-			
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
 
-			
+
+
 			traits = { navy_anti_submarine_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -541,37 +541,37 @@ ideas = {
 
 		VIC_jean_francois_jannekeyn = {
 			ledger = navy
-			
+
 			picture = generic_air_europe_1
-			
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
 
-			
+
+
 			traits = { air_naval_strike_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-	
+
 		VIC_jean_de_laborde = {
 			ledger = navy
-			
+
 			picture = generic_navy_europe_2
 
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
 
-			
+
+
 			traits = { navy_capital_ship_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -579,18 +579,18 @@ ideas = {
 
 		VIC_marcel_bruno_gensoul = {
 			ledger = navy
-			
+
 			picture = generic_navy_europe_1
-			
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
 
-			
+
+
 			traits = { navy_screen_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -598,18 +598,18 @@ ideas = {
 
 		VIC_pierre_le_gloan = {
 			ledger = air
-			
+
 			picture = generic_air_europe_2
-			
+
 			allowed = {
 				original_tag = EFR
 				has_government = fascism
 			}
-			
 
-			
+
+
 			traits = { air_air_superiority_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}

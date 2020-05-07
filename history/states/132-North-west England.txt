@@ -2,9 +2,9 @@ state= {
 	id=132
 	name="STATE_132" # Lancashire
 	manpower = 5770454
-	
+
 	state_category = metropolis
-	
+
 	resources={
 		steel=31 # was: 56
 		aluminium=2 # was: 4
@@ -13,12 +13,12 @@ state= {
 	history= {
 		owner = ENG
 		victory_points = {
-			6384 30 
+			6384 30
 		}
 		victory_points = {
-			6318 5 
+			6318 5
 		}
-		
+
 		buildings = {
 			infrastructure = 8
 			arms_factory = 1
@@ -39,5 +39,5 @@ state= {
 	}
 	provinces= {
 		3205 6318 6335 6384
- 	}
+	}
 }

@@ -6,14 +6,14 @@ NOR_DD_HISTORICAL = {
 	for_countries = { NOR }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
 	prefix = "HNoMS "
-	fallback_name = "Ødeleggeren %d"					
+	fallback_name = "Ødeleggeren %d"
 
-	unique = {											
-		"Svenner" "Stord" "Oslo" "Bergen" "Trondheim" "Stavanger" "Arendal" "Haugesund" "Tromsø" "Glaisdale" "Eskdale" 
-		"Sleipner" "Gyller" "Aeger" "Odin" "Balder" "Draug" "Troll" "Garm" 
+	unique = {
+		"Svenner" "Stord" "Oslo" "Bergen" "Trondheim" "Stavanger" "Arendal" "Haugesund" "Tromsø" "Glaisdale" "Eskdale"
+		"Sleipner" "Gyller" "Aeger" "Odin" "Balder" "Draug" "Troll" "Garm"
 	}
 }
 
@@ -25,12 +25,12 @@ NOR_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
+
 	prefix = "HNoMS "
 	fallback_name = "Lys Kryśseren %d"
 
 	unique = {
-		"Oslo" "Bergen" "Trondheim" "Stavanger" "Akershus" "Nidaros" "Narvik" "Norge" "Eidsvold" "Tordenskjold" "Harald Haarfagre" 
+		"Oslo" "Bergen" "Trondheim" "Stavanger" "Akershus" "Nidaros" "Narvik" "Norge" "Eidsvold" "Tordenskjold" "Harald Haarfagre"
 	}
 }
 
@@ -42,7 +42,7 @@ NOR_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
+
 	prefix = "HNoMS "
 	fallback_name = "Tung Kryśseren %d"
 
@@ -60,12 +60,12 @@ NOR_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
+
 	prefix = "HNoMS "
-	fallback_name = "Slagskip %d"		
+	fallback_name = "Slagskip %d"
 
 	unique = {
-		"Vestlandet" "Finnmark" "Norge" "Eidsvold" "Akershus" "Bergen" "Nidaros" "Narvik" "Tordenskjold" "Harald Haarfagre" 
+		"Vestlandet" "Finnmark" "Norge" "Eidsvold" "Akershus" "Bergen" "Nidaros" "Narvik" "Tordenskjold" "Harald Haarfagre"
 	}
 }
 
@@ -77,12 +77,12 @@ NOR_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	
+
 	prefix = "HNoMS "
-	fallback_name = "SlagkRyśser %d"		
+	fallback_name = "SlagkRyśser %d"
 
 	unique = {
-		"Vestlandet" "Finnmark" "Norge" "Eidsvold" "Akershus" "Bergen" "Nidaros" "Narvik" "Tordenskjold" "Harald Haarfagre" 
+		"Vestlandet" "Finnmark" "Norge" "Eidsvold" "Akershus" "Bergen" "Nidaros" "Narvik" "Tordenskjold" "Harald Haarfagre"
 	}
 }
 
@@ -94,12 +94,12 @@ NOR_CV_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-	
+
 	prefix = "HNoMS "
-	fallback_name = "Hangarskip %d"	
+	fallback_name = "Hangarskip %d"
 
 	unique = {
-		"Eidsvold" "Olav den Hellige" "Haakon Haakonsson" "Sigurd Jorsalfar" "Uredd" "Ula" "Utsira" "Utstein" "Utvær" "Uthaug" 
+		"Eidsvold" "Olav den Hellige" "Haakon Haakonsson" "Sigurd Jorsalfar" "Uredd" "Ula" "Utsira" "Utstein" "Utvær" "Uthaug"
 	}
 }
 
@@ -111,12 +111,12 @@ NOR_SS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
+
 	prefix = "HNoMS "
 	fallback_name = "Ubåt %d"
-	
+
 	unique = {
-			"Uredd" "Ula" "Utstein" "Uthaug" "Utvær" "Utsira" "Kya" "Kaura" "Kinn" 
-			"Kinn" "Kya" "Kobben" "Kunna" "Kaura" "Sklinna" "Skolpen" "Stadt" "Stord" "Svenner" 
+		"Uredd" "Ula" "Utstein" "Uthaug" "Utvær" "Utsira" "Kya" "Kaura" "Kinn"
+		"Kinn" "Kya" "Kobben" "Kunna" "Kaura" "Sklinna" "Skolpen" "Stadt" "Stord" "Svenner"
 	}
 }

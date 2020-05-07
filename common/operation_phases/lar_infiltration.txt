@@ -4,10 +4,10 @@ infiltration_paradrop = {
 	outcome = infiltration_paradrop_outcome
 	picture = "GFX_phase_infiltration_airplane"
 	icon = "GFX_phase_infiltration_airplane_small"
-	
+
 	equipment = {
 	}
-	
+
 }
 
 infiltration_submarine = {
@@ -16,7 +16,7 @@ infiltration_submarine = {
 	outcome = infiltration_submarine_outcome
 	picture = "GFX_phase_infiltration_submarine"
 	icon = "GFX_phase_infiltration_submarine_small"
-	
+
 	requirements = {
 		FROM = {
 			any_state = {
@@ -27,7 +27,7 @@ infiltration_submarine = {
 	}
 
 	equipment = {
-		
+
 	}
 }
 
@@ -37,22 +37,22 @@ infiltration_border = {
 	outcome = infiltration_border_outcome
 	picture = "GFX_phase_infiltration_border"
 	icon = "GFX_phase_infiltration_border_small"
-	
+
 	requirements = {
 		FROM = {
 			any_neighbor_country = {
 				NOT = {
 					has_war_with = ROOT
 				}
-				NOT = { 
+				NOT = {
 					has_war_with = FROM
 				}
-			}			
+			}
 		}
 	}
 
 	equipment = {
-		
+
 	}
 }
 
@@ -62,7 +62,7 @@ infiltration_diplomatic = {
 	outcome = infiltration_diplomatic_outcome
 	picture = "GFX_phase_infiltration_diplomatic"
 	icon = "GFX_phase_infiltration_diplomatic_small"
-	
+
 	equipment = {
 		civilian_factories = {
 			amount = 1

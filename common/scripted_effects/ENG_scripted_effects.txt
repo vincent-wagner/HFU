@@ -209,7 +209,7 @@ ENG_imperial_conference_clear_in_progress_flags = {
 		clr_country_flag = ENG_extensive_diplomatic_pressure_flag
 		clr_country_flag = ENG_imperial_appeasement_flag
 	}
-	
+
 }
 
 

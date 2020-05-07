@@ -2,8 +2,8 @@
 #		Format:
 #
 #		<diplomatic action tag>_enabled_trigger = {
-#			<trigger contents>
-#		}
+	#			<trigger contents>
+	#		}
 #
 #		ROOT is the country initiating the diplomatic action.
 #		FROM is the recipient or target of the diplomatic action.
@@ -15,20 +15,20 @@
 #		Example: (Germany is prevented from declaring war on the Soviet Union.)
 #
 #		DIPLOMACY_WAR_ENABLE_TRIGGER = {
-#			if = {
-#				limit = {
-#					tag = GER
-#				}
-#				custom_trigger_tooltip = {
-#					tooltip = PREVENT_GER_WAR_ON_SOV
-#					FROM = {
-#						NOT = {
-#							tag = SOV
-#						}
-#					}
-#				}
-#			}
-#		}
+	#			if = {
+		#				limit = {
+			#					tag = GER
+			#				}
+		#				custom_trigger_tooltip = {
+			#					tooltip = PREVENT_GER_WAR_ON_SOV
+			#					FROM = {
+				#						NOT = {
+					#							tag = SOV
+					#						}
+				#					}
+			#				}
+		#			}
+	#		}
 
 # This specifically overrides the rule check as to whether or not you can guarantee other ideologies
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
@@ -107,11 +107,11 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				rule = allow_release_nations
 				option = FREE
 			}
-			
+
 		}
 		always = no
 	}
-	
+
 	if = {
 		limit = {
 			has_game_rule = {
@@ -375,7 +375,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 			}
 		}
 		hidden_trigger={OR={NOT={OR={tag=Jap tag=MAN}}
-		FROM={OR={tag=Jap tag=MAN}}}}
+				FROM={OR={tag=Jap tag=MAN}}}}
 	}
 	if = {
 		limit = {
@@ -432,11 +432,11 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 			}
 		}
 		hidden_trigger={OR = {
-			NOT={
-			From={OR={tag=Jap tag=MAN}}}
-			OR={tag=Jap tag=MAN}
-		}}
-		
+				NOT={
+					From={OR={tag=Jap tag=MAN}}}
+				OR={tag=Jap tag=MAN}
+				}}
+
 	}
 	if = {
 		limit = {
@@ -686,7 +686,7 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 		}
 	}
 }
- DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
 	if = {
 		limit = {
 			has_game_rule = {

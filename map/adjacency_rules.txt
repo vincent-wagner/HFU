@@ -40,14 +40,14 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-	
+
 	required_provinces = { 3938 }
 	is_disabled = {
 		NOT = {
 			tag=SPR
-		
+
 		}
-		
+
 	}
 }
 
@@ -84,14 +84,14 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-	
+
 	required_provinces = { 896 }
 	is_disabled = {
 		NOT = {
 			tag=SPR
-		
+
 		}
-		
+
 	}
 }
 #Vladistrait
@@ -127,14 +127,14 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-	
+
 	required_provinces = { 12657 }
 	is_disabled = {
 		NOT = {
 			tag=SOV
-		
+
 		}
-		
+
 	}
 }
 
@@ -172,7 +172,7 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-	
+
 	required_provinces = { 12049 1155 4073 9947 }
 
 	is_disabled = {
@@ -186,7 +186,7 @@ adjacency_rule
 		}
 		tooltip = disable_canal_tt
 	}
-		
+
 	icon = 12049
 	offset = { 1 0 -6 }
 }
@@ -224,10 +224,10 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-	
+
 	required_provinces = { 4135}
-	
-	icon = 5407	
+
+	icon = 5407
 	offset = { -31.0 0.0 -2.0 }
 	is_disabled = {
 		OR= {
@@ -276,9 +276,9 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-	
+
 	required_provinces = { 6287 3277 3325 3260 394 }
-	
+
 	icon = 2455
 	offset = { -26 0 -13 }
 }
@@ -316,7 +316,7 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-	
+
 	required_provinces = { 4624 7617 }
 
 	is_disabled = {
@@ -326,7 +326,7 @@ adjacency_rule
 		}
 		tooltip = disable_canal_tt
 	}
-		
+
 	icon = 7617
 	offset = { -3 0 -2 }
 }
@@ -364,9 +364,9 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-	
+
 	required_provinces = { 9833 11829 }
-	
+
 	icon = 9833
 	offset = { -2 0 -9 }
 }
@@ -404,9 +404,9 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-	
+
 	required_provinces = { 11366 317 3231 }
-		
+
 	icon = 11366
 	offset = { 5 0 -6 }
 }

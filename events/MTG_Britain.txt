@@ -1,4 +1,4 @@
-﻿add_namespace = mtg_britain 
+﻿add_namespace = mtg_britain
 
 # Abdication Crisis Edward VIII
 country_event = {
@@ -14,7 +14,7 @@ country_event = {
 		NOT = { has_country_flag = ENG_edward_abdicating }
 		has_dlc = "Man the Guns"
 	}
-	
+
 	fire_only_once = yes
 
 	mean_time_to_happen = { days = 14 }
@@ -34,11 +34,11 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			remove_ideas = ENG_king_edward
-			add_ideas = ENG_george_vi		
+			add_ideas = ENG_george_vi
 		}
 	}
 
@@ -46,7 +46,7 @@ country_event = {
 		name = britain.17.a
 		effect_tooltip = {
 			remove_ideas = ENG_king_edward
-			add_ideas = ENG_george_vi		
+			add_ideas = ENG_george_vi
 		}
 	}
 }
@@ -59,7 +59,7 @@ country_event = {
 	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_britain.22.a
@@ -85,7 +85,7 @@ country_event = {
 	picture = GFX_report_event_imperial_conference
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_britain.82.a
@@ -148,7 +148,7 @@ country_event = {
 			set_country_flag = ENG_imperial_defense_flag
 		}
 	}
-	
+
 	# Ask them if they want to agree to commit
 	option = {
 		name = mtg_britain.83.a
@@ -192,7 +192,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Accept
 	option = {
 		name = mtg_britain.84.a
@@ -247,7 +247,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_britain.85.a
@@ -299,7 +299,7 @@ country_event = {
 			set_country_flag = ENG_imperial_trade_flag
 		}
 	}
-	
+
 	# Ask them if they want to agree to commit
 	option = {
 		name = mtg_britain.83.a
@@ -343,7 +343,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Accept
 	option = {
 		name = mtg_britain.88.a
@@ -401,7 +401,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_britain.89.a
@@ -446,7 +446,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_britain.90.a
@@ -487,7 +487,7 @@ country_event = {
 			set_country_flag = ENG_imperial_economy_flag
 		}
 	}
-	
+
 	# Ask them if they want to agree to commit
 	option = {
 		name = mtg_britain.83.a
@@ -530,7 +530,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Accept
 	option = {
 		name = mtg_britain.92.a
@@ -584,7 +584,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_britain.93.a
@@ -636,7 +636,7 @@ country_event = {
 			set_country_flag = ENG_imperial_appeasement_flag
 		}
 	}
-	
+
 	# Ask them if they want to agree to commit
 	option = {
 		name = mtg_britain.83.a
@@ -679,7 +679,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Accept
 	option = {
 		name = mtg_britain.96.a
@@ -713,7 +713,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_britain.97.a

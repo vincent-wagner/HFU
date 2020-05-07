@@ -10,9 +10,9 @@ country_event = {
 	title = soviet.1.t
 	desc = soviet.1.d
 	picture = GFX_report_event_japanese_transport_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Push back
 		name = soviet.1.a
 		ai_chance = { factor = 75 }
@@ -60,22 +60,22 @@ country_event = {
 	title = soviet.2.t
 	desc = soviet.2.d
 	picture = GFX_report_event_dead_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = soviet.2.a
 		if = {
-	
-limit = { 
-				original_tag = SOV 
-			} 
-			
+
+			limit = {
+				original_tag = SOV
+			}
+
 			561 = { add_manpower = -30000 }
 			army_experience = 10
-		}		
+		}
 
-		
+
 	}
 }
 
@@ -85,21 +85,21 @@ country_event = {
 	title = soviet.3.t
 	desc = soviet.3.d
 	picture = GFX_report_event_dead_soldiers
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		if = {
-limit = { 
-				original_tag = SOV 
-			} 
-			
+			limit = {
+				original_tag = SOV
+			}
+
 			561 = { add_manpower = -20000 }
-					add_political_power = -25
-		army_experience = 5
-			
-			
-		}		
+			add_political_power = -25
+			army_experience = 5
+
+
+		}
 
 
 
@@ -113,9 +113,9 @@ country_event = {
 	title = soviet.6.t
 	desc = soviet.6.d
 	picture = GFX_report_event_soviet_invasion_map
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = soviet.6.a
 		annex_country = { target = EST }
@@ -127,9 +127,9 @@ country_event = {
 	title = soviet.8.t
 	desc = soviet.8.d
 	picture = GFX_report_event_soviet_tank_parade
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = soviet.8.a
 		annex_country = { target = LAT }
@@ -142,9 +142,9 @@ country_event = {
 	title = soviet.10.t
 	desc = soviet.10.d
 	picture = GFX_report_event_soviet_tank_parade
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = soviet.10.a
 		annex_country = { target = LIT }
@@ -155,21 +155,21 @@ country_event = {
 	title = soviet.21.t
 	desc = soviet.21.d
 	picture = GFX_report_event_chinese_japanese_handshake
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = soviet.21.a
 
-					CHI = {
-				remove_ideas = CHI_division
-				set_rule = { can_create_factions = yes }
-				create_faction = chinese_united_front
-				 
-			
-				news_event = { id = news.288 days = 1 }
-			}
+		CHI = {
+			remove_ideas = CHI_division
+			set_rule = { can_create_factions = yes }
+			create_faction = chinese_united_front
+
+
+			news_event = { id = news.288 days = 1 }
 		}
+	}
 }
 
 
@@ -182,7 +182,7 @@ country_event = {
 	picture = GFX_report_event_soviet_in_riga
 
 	is_triggered_only = yes
-	
+
 	trigger = {
 		tag = SOV
 		FROM = {
@@ -191,9 +191,9 @@ country_event = {
 		}
 		NOT = { has_country_flag = estonia_demand }
 	}
-	
-	immediate = { set_country_flag = estonia_demand } 
-		
+
+	immediate = { set_country_flag = estonia_demand }
+
 	option = {
 		name = soviet.32.a
 		EST = { country_event = { days = 2 id = baltic.1 } }
@@ -212,7 +212,7 @@ country_event = {
 	picture = GFX_report_event_soviet_in_riga
 
 	is_triggered_only = yes
-	
+
 	trigger = {
 		tag = SOV
 		FROM = {
@@ -221,9 +221,9 @@ country_event = {
 		}
 		NOT = { has_country_flag = latvia_demand }
 	}
-	
-	immediate = { set_country_flag = latvia_demand } 
-		
+
+	immediate = { set_country_flag = latvia_demand }
+
 	option = {
 		name = soviet.33.a
 		LAT = { country_event = { days = 2 id = baltic.2 } }
@@ -234,7 +234,7 @@ country_event = {
 		#
 	}
 }
-# Oppress Lithuania 
+# Oppress Lithuania
 country_event = {
 	id = soviet.34
 	title = soviet.34.t
@@ -242,7 +242,7 @@ country_event = {
 	picture = GFX_report_event_soviet_in_riga
 
 	is_triggered_only = yes
-	
+
 	trigger = {
 		tag = SOV
 		FROM = {
@@ -251,9 +251,9 @@ country_event = {
 		}
 		NOT = { has_country_flag = lithuania_demand }
 	}
-	
-	immediate = { set_country_flag = lithuania_demand } 
-		
+
+	immediate = { set_country_flag = lithuania_demand }
+
 	option = {
 		name = soviet.34.a
 		LIT = { country_event = { days = 2 id = baltic.3 } }
@@ -370,7 +370,7 @@ country_event = {
 				limit = { has_idea = SOV_great_patriotic_war_2 }
 				remove_ideas = SOV_great_patriotic_war_2
 				add_ideas = SOV_great_patriotic_war_3
-			}			
+			}
 			country_event = { id = soviet.41 days = 146 }
 		}
 	}
@@ -391,12 +391,12 @@ country_event = {
 	trigger = {	has_idea = officers_purged_5 }
 
 	immediate = {
-	hidden_effect = {
+		hidden_effect = {
 			remove_ideas = officers_purged_5
 			add_timed_idea = {
 				idea = officers_purged_6
 				days = 730
-			}		
+			}
 			country_event = { id = soviet.42 days = 146 }
 		}
 	}
@@ -427,7 +427,7 @@ country_event = {
 				limit = { has_idea = SOV_great_patriotic_war_3 }
 				remove_ideas = SOV_great_patriotic_war_3
 				add_ideas = SOV_great_patriotic_war_4
-			}			
+			}
 			country_event = { id = soviet.43 days = 146 }
 		}
 	}
@@ -484,7 +484,7 @@ country_event = {
 				limit = { has_idea = SOV_great_patriotic_war_4 }
 				remove_ideas = SOV_great_patriotic_war_4
 				add_ideas = SOV_great_patriotic_war_5
-			}					
+			}
 			country_event = { id = soviet.45 days = 146 }
 		}
 	}
@@ -532,99 +532,99 @@ country_event = {
 		if = {
 			limit = { has_idea = SOV_great_patriotic_war_5 }
 			remove_ideas = SOV_great_patriotic_war_5
-		}	
+		}
 	}
 }
 
 
 
 country_event ={
-    id=soviet.1488
+	id=soviet.1488
 	title = soviet.1488.t
-    desc = soviet.1488.d
+	desc = soviet.1488.d
 	picture = GFX_report_soviet.1488
-	fire_only_once = yes 
+	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		SOV = {
-			country_event = { id = soviet.1488 days = 10 } 
+			country_event = { id = soviet.1488 days = 10 }
 		}
 	}
 	option = {
-	   name = soviet.1488.a
-	   create_field_marshal = {
-	name = "Konstantin Rokossovsky"
-	id = 1488
-	picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-	traits = {  winter_specialist  brilliant_strategist panzer_leader panzer_expert ranger organizer  logistics_wizard aggressive_assaulter organisational_leader inspirational_leader }
-	skill = 7
-	
-	attack_skill = 7
-	defense_skill = 6
-	planning_skill = 5
-	logistics_skill = 5
-}
-	   create_field_marshal = {
-	name = "Georgy Zhukov"
-	id = 1489
-		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { winter_specialist panzer_leader panzer_expert winter_expert trickster expert_improviser scavenger ranger }
-	skill = 7
-	attack_skill = 7
-	defense_skill = 5
-	planning_skill = 3
-	logistics_skill = 5
-}
- 	   create_field_marshal = {
-	name = "Aleksandr Vasilevsky"
-	id = 1487
-		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
-	traits = { winter_specialist winter_expert ranger infantry_leader infantry_expert scavenger trickster skilled_staffer }
-	skill = 7
-	
-	attack_skill = 3
-	defense_skill = 6
-	planning_skill = 3
-	logistics_skill = 6
-}
- 
- 
- remove_unit_leader = 410
- remove_unit_leader = 402
- remove_unit_leader = 407
+		name = soviet.1488.a
+		create_field_marshal = {
+			name = "Konstantin Rokossovsky"
+			id = 1488
+			picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
+			traits = {  winter_specialist  brilliant_strategist panzer_leader panzer_expert ranger organizer  logistics_wizard aggressive_assaulter organisational_leader inspirational_leader }
+			skill = 7
 
-}		
-}
+			attack_skill = 7
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+		}
+		create_field_marshal = {
+			name = "Georgy Zhukov"
+			id = 1489
+			picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+			traits = { winter_specialist panzer_leader panzer_expert winter_expert trickster expert_improviser scavenger ranger }
+			skill = 7
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+		}
+		create_field_marshal = {
+			name = "Aleksandr Vasilevsky"
+			id = 1487
+			picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
+			traits = { winter_specialist winter_expert ranger infantry_leader infantry_expert scavenger trickster skilled_staffer }
+			skill = 7
+
+			attack_skill = 3
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 6
+		}
 
 
-   country_event = {
-   id = soviet.140
-   title = soviet.140.t
-   desc = soviet.140.d
-   picture = GFX_report_event_ussr_startup
-   fire_only_once = yes
-   is_triggered_only = yes
-   option = {
-   name = soviet.140.a
-   }
-   }
-   #Finland mission
+		remove_unit_leader = 410
+		remove_unit_leader = 402
+		remove_unit_leader = 407
+
+	}
+}
+
+
+country_event = {
+	id = soviet.140
+	title = soviet.140.t
+	desc = soviet.140.d
+	picture = GFX_report_event_ussr_startup
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = soviet.140.a
+	}
+}
+#Finland mission
 country_event = {
 	id = soviet.141
 	title = finland.20.t
 	desc = finland.20.d
 	picture = GFX_report_event_finnish_soldiers_snow
-	
+
 	is_triggered_only = yes
 
 
 	option = {
-				name = finland.141.a
-				set_country_flag = SOV_justify_finland
+		name = finland.141.a
+		set_country_flag = SOV_justify_finland
 		activate_decision = SOV_prepare_finland
 		FIN = { country_event = finland.21 }
-			}
+	}
 
 }
-   
+

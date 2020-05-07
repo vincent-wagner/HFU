@@ -10,9 +10,9 @@ country_event = {
 	title = election.1.t
 	desc = election.1.d
 	picture = GFX_report_event_election_vote
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = election.1.a
 	}
@@ -24,15 +24,15 @@ country_event = {
 	title = election.2.t
 	desc = election.2.d
 	picture = GFX_report_event_airplane_factory
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
@@ -51,7 +51,7 @@ country_event = {
 	}
 
 	option = {
-		ai_chance = { 
+		ai_chance = {
 			base = 1
 		}
 		name = election.2.a
@@ -76,15 +76,15 @@ country_event = {
 	title = election.3.t
 	desc = election.3.d
 	picture = GFX_report_event_tank_factory
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
@@ -151,21 +151,21 @@ country_event = {
 	title = election.14.t
 	desc = election.14.d
 	picture = GFX_report_event_tank_factory
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = yes
 	}
-	
+
 	option = {
 		name = election.14.a
 		ai_chance = {
@@ -184,7 +184,7 @@ country_event = {
 			modifier = {
 				add = 3
 				can_lose_democracy_support = yes
-			}			
+			}
 			modifier = {
 				add = 1
 				can_lose_unity = no
@@ -210,29 +210,29 @@ country_event = {
 	title = election.15.t
 	desc = election.15.d
 	picture = GFX_report_event_gathering_protest
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
+		NOT = {
+			AND = {
+				tag = USA
 				date < 1949.1.1
-			} 
+			}
 		}
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = yes
 		any_war_score < 20
 	}
-	
+
 	option = {
 		ai_chance = {
 			base = 0
 			modifier = {
 				add = 3
 				can_lose_democracy_support = no
-			}			
+			}
 		}
 		name = election.15.a
 		add_political_power = -50
@@ -246,7 +246,7 @@ country_event = {
 			modifier = {
 				add = 10
 				can_lose_democracy_support = yes
-			}			
+			}
 			modifier = {
 				add = 1
 				can_lose_unity = no

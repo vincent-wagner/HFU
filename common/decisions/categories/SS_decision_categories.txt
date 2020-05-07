@@ -1,4 +1,4 @@
-SS_demands = { 
+SS_demands = {
 	allowed = {
 		original_tag = GER
 	}

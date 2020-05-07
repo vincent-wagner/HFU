@@ -8,38 +8,38 @@ country_event = {
 	picture = GFX_report_event_generic_factory
 
 	is_triggered_only = yes
-	
+
 	#Air
 	option = {
 		name = wtt_manchukou.11.a
-		if = { 
-		limit = { original_tag = MAN }
-		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_air }
+		if = {
+			limit = { original_tag = MAN }
+			add_timed_idea = { days = 1825 idea = MAN_five_year_plan_air }
 		}
-	}	
+	}
 	#Tank
 	option = {
 		name = wtt_manchukou.11.b
-				if = { 
-		limit = { original_tag = MAN }
-		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_tank }
+		if = {
+			limit = { original_tag = MAN }
+			add_timed_idea = { days = 1825 idea = MAN_five_year_plan_tank }
 		}
-	}	
+	}
 	#Industry
 	option = {
 		name = wtt_manchukou.11.c
-				if = { 
-		limit = { original_tag = MAN }
-		add_timed_idea = { days = 1825 idea = MAN_five_year_plan_industry }
+		if = {
+			limit = { original_tag = MAN }
+			add_timed_idea = { days = 1825 idea = MAN_five_year_plan_industry }
 		}
 	}
 }
 
-###   ##  #  # ###  ### ###      ##  ##  ###   ##  ###  ##   ##  ### 
-#  # #  # ## # #  #  #   #      #   #  # #  # #  #  #  #  # #    #   
-###  #### # ## #  #  #   #       #  #### ###  #  #  #  #### # ## ##  
-#  # #  # #  # #  #  #   #        # #  # #  # #  #  #  #  # #  # #   
-###  #  # #  # ###  ###  #      ##  #  # ###   ##   #  #  #  ##  ### 
+###   ##  #  # ###  ### ###      ##  ##  ###   ##  ###  ##   ##  ###
+#  # #  # ## # #  #  #   #      #   #  # #  # #  #  #  #  # #    #
+###  #### # ## #  #  #   #       #  #### ###  #  #  #  #### # ## ##
+#  # #  # #  # #  #  #   #        # #  # #  # #  #  #  #  # #  # #
+###  #  # #  # ###  ###  #      ##  #  # ###   ##   #  #  #  ##  ###
 
 add_namespace = wtt_manchukou_bandit_sabotage
 #Bandit sabotage - factory sabotaged
@@ -50,7 +50,7 @@ country_event = {
 	picture = GFX_report_event_generic_ruins
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_manchukou_bandit_sabotage.21.a #okay
 		random_owned_state = {
@@ -74,7 +74,7 @@ country_event = {
 	picture = GFX_report_event_generic_ruins
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_manchukou_bandit_sabotage.21.a #okay
 		random_owned_state = {
@@ -98,7 +98,7 @@ country_event = {
 	picture = GFX_report_event_generic_train
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = wtt_manchukou_bandit_sabotage.21.a #okay
 		random_owned_state = {

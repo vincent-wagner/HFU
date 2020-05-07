@@ -1,61 +1,61 @@
 focus_tree = {
 	id = south_african_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = SAF
 			has_dlc = "Together for Victory"
 		}
-		
+
 		#modifier = {
-		#	add = 10
-		#	original_tag = SAF
-		#	has_dlc = "Together for Victory"
-		#}
+			#	add = 10
+			#	original_tag = SAF
+			#	has_dlc = "Together for Victory"
+			#}
 	}
-	
+
 	default = no
 
 
 
-#	focus = {
-#		id = SAF_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
+	#	focus = {
+		#		id = SAF_
+		#		icon = GFX_
+		#		prerequisite = { focus = }
+		#		mutually_exclusive = { focus =  }
+		#		x = -3
+		#		y = 0
+		#		relative_position_id =
+		#
+		#		cost = 10
+		#
+		#		ai_will_do = {
+			#			factor = 1
+			#		}
+		#
+		#		available = {
+			#
+			#		}
+		#
+		#		bypass = {
+			#
+			#		}
+		#
+		#		cancel_if_invalid = yes
+		#		continue_if_invalid = no
+		#		available_if_capitulated = no
+		#
+		#		complete_tooltip = {
+			#
+			#		}
+		#
+		#		completion_reward = {
+			#
+			#		}
+		#	}
 
 
 
@@ -80,7 +80,7 @@ focus_tree = {
 				threat > 0.2
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -111,7 +111,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -125,8 +125,8 @@ focus_tree = {
 		}
 	}
 
-	
-	
+
+
 	focus = {
 		id = SAF_reconstitute_the_cape_corps
 		icon = GFX_goal_generic_allies_build_infantry
@@ -144,7 +144,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -178,7 +178,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -209,7 +209,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -245,7 +245,7 @@ focus_tree = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -255,7 +255,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_political_power = 120
+			add_political_power = 120
 		}
 	}
 
@@ -276,7 +276,7 @@ focus_tree = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -287,10 +287,10 @@ focus_tree = {
 
 		completion_reward = {
 			SAF = {
-   				modify_tech_sharing_bonus = {
-         			id = commonwealth_research
-         			bonus = 0.1  # we get 20% higher bonus from this group
-    			}
+				modify_tech_sharing_bonus = {
+					id = commonwealth_research
+					bonus = 0.1  # we get 20% higher bonus from this group
+				}
 			}
 		}
 	}
@@ -312,7 +312,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -321,7 +321,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = SAF_ossewabrandwag
 				add_idea = SAF_ossewabrandwag_2
@@ -346,7 +346,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -378,7 +378,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -409,7 +409,7 @@ focus_tree = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -419,17 +419,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = SAF_zambia 
-								show_effect_tooltip = no 
-								show_modifiers = no }
-								
-								unlock_decision_tooltip = { decision = SAF_rhodesia
-								show_effect_tooltip = no 
-								show_modifiers = no }
-								
-								unlock_decision_tooltip = { decision = SAF_east_africa
-								show_effect_tooltip = no 
-								show_modifiers = no }
+			unlock_decision_tooltip = { decision = SAF_zambia
+				show_effect_tooltip = no
+				show_modifiers = no }
+
+			unlock_decision_tooltip = { decision = SAF_rhodesia
+				show_effect_tooltip = no
+				show_modifiers = no }
+
+			unlock_decision_tooltip = { decision = SAF_east_africa
+				show_effect_tooltip = no
+				show_modifiers = no }
 		}
 	}
 
@@ -454,7 +454,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -485,7 +485,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -502,7 +502,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = SAF_voortrekker_monument
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = SAF_native_laws_amendment_act }
@@ -518,7 +518,7 @@ focus_tree = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -551,7 +551,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -598,7 +598,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -668,7 +668,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -677,7 +677,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_heavy_engineering
 				bonus = 1.0
@@ -704,7 +704,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -751,7 +751,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -810,7 +810,7 @@ focus_tree = {
 
 		available = {
 		}
-		
+
 		bypass = {
 
 		}
@@ -847,7 +847,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -907,7 +907,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -938,7 +938,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -969,7 +969,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1008,7 +1008,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1045,7 +1045,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1081,7 +1081,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1121,7 +1121,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1158,7 +1158,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1194,7 +1194,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1230,7 +1230,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1239,7 +1239,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		completion_reward = {			
+		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_equipment_effort
 				bonus = 1.0
@@ -1258,7 +1258,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1267,7 +1267,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1276,7 +1276,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_mechanization_effort
 				bonus = 1.0
@@ -1303,7 +1303,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1341,7 +1341,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1357,14 +1357,14 @@ focus_tree = {
 				uses = 2
 				category = armor
 			}
-		    add_tech_bonus = {
+			add_tech_bonus = {
 				name = SAF_armor_effort
 				bonus = 1.0
 				uses = 1
 				category = cat_light_armor
 				category = cat_medium_armor
 			}
-		
+
 		}
 	}
 
@@ -1377,7 +1377,7 @@ focus_tree = {
 		id = SAF_commit_to_the_five_year_plan
 		icon = GFX_goal_generic_build_airforce
 		x = 17
-		y = 0	
+		y = 0
 
 		cost = 5
 
@@ -1388,7 +1388,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1399,7 +1399,7 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
-			random_state = {				
+			random_state = {
 				limit = {
 					has_state_flag = SAF_commit_to_the_five_year_plan_AB
 				}
@@ -1461,7 +1461,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1500,7 +1500,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1538,7 +1538,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1575,7 +1575,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1596,7 +1596,7 @@ focus_tree = {
 
 	focus = {
 		id = SAF_secure_the_cape_sea_route
-		icon = GFX_goal_generic_air_bomber 
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = SAF_perfect_the_cab_rank_technique focus = SAF_replace_the_blenheim }
 		x = 1
 		y = 3
@@ -1611,7 +1611,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1647,7 +1647,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1676,7 +1676,7 @@ focus_tree = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 21
-		y = 0		
+		y = 0
 
 		cost = 5
 
@@ -1687,7 +1687,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1699,10 +1699,10 @@ focus_tree = {
 		complete_tooltip = {
 			navy_experience = 25
 			719={set_building_level = {
-						type = naval_base
-						level =20
-						instant_build = yes
-						province = 1468
+					type = naval_base
+					level =20
+					instant_build = yes
+					province = 1468
 					}}
 			random_state = {
 				limit = {
@@ -1720,10 +1720,10 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 25
 			719={set_building_level = {
-						type = naval_base
-						level =20
-						instant_build = yes
-						province = 1468
+					type = naval_base
+					level =20
+					instant_build = yes
+					province = 1468
 					}}
 			random_owned_controlled_state = {
 				prioritize = { 681 719 }
@@ -1742,7 +1742,7 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = SAF_seaward_defence_force_DY
-			}			
+			}
 			add_tech_bonus = {
 				name = SAF_seaward_defence_force
 				bonus = 1.0
@@ -1770,7 +1770,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1811,7 +1811,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1847,7 +1847,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1933,7 +1933,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1974,7 +1974,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2012,7 +2012,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2056,7 +2056,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2083,7 +2083,7 @@ focus_tree = {
 				add_building_construction = {
 					type = coastal_bunker
 					province = {
-						all_provinces = yes							
+						all_provinces = yes
 						limit_to_naval_base = yes
 					}
 					level = 1
@@ -2092,4 +2092,4 @@ focus_tree = {
 			}
 		}
 	}
-}		
+}

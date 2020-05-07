@@ -86,10 +86,10 @@ country_event = {
 	picture = GFX_report_event_japanese_reply
 
 	is_triggered_only = yes
-	
+
 	option = { #"We'll make the Japs pay!"
-		name =  panay_incident.5.b 
-	
+		name =  panay_incident.5.b
+
 		add_political_power = -10
 		add_war_support = -0.02
 		add_stability = 0.05

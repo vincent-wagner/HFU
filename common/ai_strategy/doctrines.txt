@@ -11,7 +11,7 @@ stop_making_horsies = {
 		type = role_ratio
 		id = cavalry
 		value = -100 # -100% cav
-	}		
+	}
 }
 
 ############
@@ -37,11 +37,11 @@ no_cavalry = {
 	abort = {
 		always = no
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = cavalry
-		value = -100 
+		value = -100
 	}
 }
 
@@ -53,13 +53,13 @@ mobile_warfare_ratios = {
 	abort = {
 		always = no
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = armor
 		value = 10
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
@@ -74,7 +74,7 @@ superior_firepower_ratios = {
 	abort = {
 		has_tech = concentrated_fire_plans
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
@@ -86,7 +86,7 @@ superior_firepower_ratios = {
 		id = artillery
 		value = 15
 	}
-	
+
 }
 
 ## Later in superior_firepower tree
@@ -97,13 +97,13 @@ concentrated_fire_plans_ratios = {
 	abort = {
 		always = no
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = -5
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = armor
@@ -115,7 +115,7 @@ concentrated_fire_plans_ratios = {
 		id = cas
 		value = 5
 	}
-	
+
 }
 
 
@@ -126,20 +126,20 @@ grand_battle_plan_ratios = {
 	abort = {
 		always = no
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = 10
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = anti_tank
 		value = 5
-	}	
+	}
 
-	
+
 }
 
 
@@ -150,12 +150,12 @@ mass_assault_ratios = {
 	abort = {
 		has_tech = large_front_operations
 	}
-	
+
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = 25
-	}	
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -185,5 +185,5 @@ large_front_operations_ratios = {
 		id = armor
 		value = 10
 	}
-	
+
 }

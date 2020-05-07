@@ -6,15 +6,15 @@ GRE_DD_HISTORICAL = {
 	for_countries = { GRE }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { ship_hull_light destroyer }
 
 	prefix = "RHS "
-	fallback_name = "Metafero %s"					
+	fallback_name = "Metafero %s"
 
-	unique = {											
-		"Vasilefs Georgios I" "Vasilissa Olga" "Salamis" "Navarinon" "Aspis" "Kimon" "Lonchi" "Nearchos" "Sfendoni" "Theyella" "Themistocles" "Kriti" 
+	unique = {
+		"Vasilefs Georgios I" "Vasilissa Olga" "Salamis" "Navarinon" "Aspis" "Kimon" "Lonchi" "Nearchos" "Sfendoni" "Theyella" "Themistocles" "Kriti"
 		"Aetos" "Ierax" "Leon" "Panthir" "Kountouriotis" "Hydra" "Psara" "Spetsai" "Pindos" "Adrias" "Hastings" "Kanaris" "Miaoulis"
-		"Themistokles" "Astings" "Kriti" "Aigaion" "Aetos" "Ierax" "Leon" "Panthir" 
+		"Themistokles" "Astings" "Kriti" "Aigaion" "Aetos" "Ierax" "Leon" "Panthir"
 	}
 }
 
@@ -26,12 +26,12 @@ GRE_CL_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
-	
+
 	prefix = "RHS "
 	fallback_name = "Elafri Katadromiko %s"
 
 	unique = {
-		"Elli" "Apostolis" "Kriezis" "Sakhtouris" "Tompazis" "Ellis" "Piraievs" "Kikladhes" "Alexandros" "Pátrai" 
+		"Elli" "Apostolis" "Kriezis" "Sakhtouris" "Tompazis" "Ellis" "Piraievs" "Kikladhes" "Alexandros" "Pátrai"
 	}
 }
 
@@ -43,12 +43,12 @@ GRE_CA_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
+
 	prefix = "RHS "
 	fallback_name = "Vari Katadromiko %s"
 
 	unique = {
-		"Georgios Averof" "Piraievs" "Kikladhes" "Alexandros" "Pátrai" "Kríti" "Nísoi Aiyaíou" "Kithira" "Kefallinia" 
+		"Georgios Averof" "Piraievs" "Kikladhes" "Alexandros" "Pátrai" "Kríti" "Nísoi Aiyaíou" "Kithira" "Kefallinia"
 	}
 }
 
@@ -61,12 +61,12 @@ GRE_BB_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
-	
+
 	prefix = "RHS "
-	fallback_name = "Thorikto %s"		
+	fallback_name = "Thorikto %s"
 
 	unique = {
-		"Kilkis" "Athinai" "Thessalia" "Ipiros" "Peloponnisos" 
+		"Kilkis" "Athinai" "Thessalia" "Ipiros" "Peloponnisos"
 	}
 }
 
@@ -78,12 +78,12 @@ GRE_BC_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
-	
+
 	prefix = "RHS "
-	fallback_name = "Thoriktou %s"		
+	fallback_name = "Thoriktou %s"
 
 	unique = {
-		"Athinai" "Thessalia" "Ipiros" "Peloponnisos" "Kilkis" 
+		"Athinai" "Thessalia" "Ipiros" "Peloponnisos" "Kilkis"
 	}
 }
 
@@ -95,12 +95,12 @@ GRE_CV_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
-	
+
 	prefix = "RHS "
-	fallback_name = "Aeroplanoforo %s"	
+	fallback_name = "Aeroplanoforo %s"
 
 	unique = {
-		"Ellas" "Socrates" "Vasilefs Georgios" "Vasilissa Olga" "Hydra" "Spetsai" "Psara" 
+		"Ellas" "Socrates" "Vasilefs Georgios" "Vasilissa Olga" "Hydra" "Spetsai" "Psara"
 	}
 }
 
@@ -112,12 +112,12 @@ GRE_SS_HISTORICAL = {
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
-	
+
 	prefix = "RHS "
 	fallback_name = "Ypobrychio %s"
-	
+
 	unique = {
-		"Katsonis" "Papanikolis" "Protefs" "Nirefs" "Triton" "Glafkos" "Mastrozos" "Pipinos" "Delfin" "Argonautis" "Triaina" "Amfitriti" "Xifias" 
-		"Poseidon" "Okeanos" 
+		"Katsonis" "Papanikolis" "Protefs" "Nirefs" "Triton" "Glafkos" "Mastrozos" "Pipinos" "Delfin" "Argonautis" "Triaina" "Amfitriti" "Xifias"
+		"Poseidon" "Okeanos"
 	}
 }
