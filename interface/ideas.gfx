@@ -17,6 +17,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_k_e_voroshilov.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_tradeback_is_cancer"
+		texturefile = "gfx/interface/ideas/idea_cancer.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_kirov_plant"
 		texturefile = "gfx/interface/ideas/idea_kirov_plant.dds"
 	}

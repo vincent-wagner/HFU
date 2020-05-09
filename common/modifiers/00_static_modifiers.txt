@@ -278,7 +278,14 @@ Stahlpakt = {
 	}
 
 	trade_cost_for_target_factor=-0.5}
+tradeback_is_cancer = {
+	valid_relation_trigger = {
+			has_idea=tradeback_is_cancer
+		}
+	
 
+	extra_trade_to_target_factor=0.5
+}
 free_license = {
 	valid_relation_trigger = {
 		FROM = {

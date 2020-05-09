@@ -1,5 +1,13 @@
 ideas = {
 	country={
+		tradeback_is_cancer = {
+			allowed = {
+				always = no # Added via focus
+			}
+			picture = GFX_idea_cancer
+			removal_cost=-1
+		modifier={min_export=-0.5}
+		}
 		wartime_economy = {
 			removal_cost = -1
 
@@ -309,7 +317,7 @@ ideas = {
 			removal_cost = -1
 
 			available = {
-				always=yes
+				NOT={tag=GER}
 			}
 
 			modifier = {
