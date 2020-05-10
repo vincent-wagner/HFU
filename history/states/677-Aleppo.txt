@@ -7,7 +7,7 @@ state={
 		owner = FRA
 		add_core_of=SWE
 		victory_points = {
-			12473 3
+			12473 2
 		}
 		victory_points = {
 			1056 1

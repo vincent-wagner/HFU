@@ -42,10 +42,15 @@ country_event = {
 	picture = GFX_report_event_soviet_tanks_snow
 
 	is_triggered_only = yes
+	option = {
+		name = iran.3.b
+		trigger={NOT={tag=ENG}}
 
+
+	}
 	option = {
 		name = iran.3.a
-
+		trigger={tag=ENG}
 
 		ENG = {
 			transfer_state = 413

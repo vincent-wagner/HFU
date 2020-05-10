@@ -23,10 +23,9 @@ add_timed_idea = {
 	idea = FRA_civs
 	days = 365
 }
-add_timed_idea = {
-	idea = Phoney_War
-	days = 1460
-}
+add_ideas = Phoney_War
+	
+
 set_country_flag=no_naval_base
 # Starting tech
 set_technology = {

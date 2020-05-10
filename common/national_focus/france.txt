@@ -883,7 +883,7 @@
 				name = FRA_methodical_battle
 				category = land_doctrine
 				uses = 2
-				bonus = 2
+				bonus = 1
 			}
 		}
 	}
@@ -1057,7 +1057,7 @@
 				name = FRA_battle_of_maneuver
 				category = land_doctrine
 				uses = 2
-				bonus = 2
+				bonus = 1
 			}
 		}
 	}

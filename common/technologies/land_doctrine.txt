@@ -2549,10 +2549,7 @@ technologies = {
 			default_morale = 0.05
 		}
 
-		army_core_defence_factor = 0.2
-		army_core_attack_factor = 0.2
-		army_attack_factor = -0.1
-		army_defence_factor = -0.1
+		
 		enable_tactic = tactic_relentless_assault
 		enable_tactic = tactic_human_wave_tactics
 		path = {
@@ -2587,13 +2584,7 @@ technologies = {
 				factor = 2
 			}
 
-			modifier = {
-				factor = 0.4
 
-				OR = {
-					tag = CHI
-				}
-			}
 
 		}
 
@@ -2714,7 +2705,10 @@ technologies = {
 		xp_research_bonus = 1.00
 		supply_consumption_factor = -0.20
 
-
+		army_core_defence_factor = 0.2
+		army_core_attack_factor = 0.2
+		army_attack_factor = -0.1
+		army_defence_factor = -0.1
 		attrition = -0.1 #take 10% less attrition losses
 		enable_tactic = tactic_overwhelming_fire
 		enable_tactic = tactic_default_overwhelming_fire

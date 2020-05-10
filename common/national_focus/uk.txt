@@ -3161,7 +3161,7 @@ focus_tree = {
 		completion_reward = {
 			SOV = { country_event = { id = iran.2}}
 
-			ENG = { country_event = { id = iran.3 } }
+			hidden_effect={every_country= { limit={NOT={tag=SOV}} country_event = { id = iran.3 } }}
 		}
 	}
 }
