@@ -653,9 +653,7 @@ focus_tree = {
 		prerequisite = { focus = air_rearmament_focus }
 		prerequisite = { focus = naval_rearmament_focus }
 		available = {
-			if = {
-				date > 1942.1.1
-			}
+			date > 1942.1.1
 		}
 
 		continue_if_invalid = yes
