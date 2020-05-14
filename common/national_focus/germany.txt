@@ -2123,14 +2123,6 @@ focus_tree = {
 				news_event = { hours = 6 id = news.36 }
 			}
 
-
-
-
-
-			HUN = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
-			ROM = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
-			BUL = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
-			ITA = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
 		}
 
 	}
@@ -2701,6 +2693,7 @@ focus_tree = {
 				give_resource_rights = { receiver = GER state = 666 }
 
 			}
+			set_global_flag=GER_resource_rights_swe
 		}
 
 	}
@@ -3576,16 +3569,13 @@ focus_tree = {
 
 		completion_reward = {
 
-			FRA={ every_owned_state= {
-					limit={is_coastal=yes is_on_continent = europe }
-					add_state_modifier = {
-						modifier = { max_dig_in=15 }
-						}}}
-			every_controlled_state= {
-				limit={is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN}
+			
+			every_owned_state= {
+				limit={is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN is_core_of=FRA}
 				}
+				set_state_flag=atlantikwall
 				add_state_modifier = {
-					modifier = { max_dig_in=10 }
+					modifier = { naval_invasion_penalty=0.25 }
 					}}
 
 

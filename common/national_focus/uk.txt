@@ -13,19 +13,6 @@ focus_tree = {
 
 	default = no
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 	focus = {
 		id = crypto_bomb_focus
 		available = {
@@ -2752,44 +2739,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = ENG_pressure_sweden
-		prerequisite = { focus = ENG_home_defence }
-		available = {
-
-
-
-			GER = { has_completed_focus = GER_pressure_sweden }
-
-			NOR_axis=yes
-
-
-		}
-
-
-		icon = GFX_focus_ENG_coerce_sweden
-		relative_position_id = ENG_home_defence
-		x = 2
-		y = 1
-		cost = 1
-
-		completion_reward = {
-			GER = {
-				remove_resource_rights = 666
-			}
-			SWE = {
-				give_resource_rights = { receiver = ENG state = 666 }
-
-			}
-
-
-
-
-
-
-		}
-
-	}
+	
 	focus = {
 		id = ENG_southern_thrust
 		icon = GFX_focus_ENG_attack_iran

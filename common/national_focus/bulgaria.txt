@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 10
+			
 			tag = BUL
 		}
 	}
@@ -19,7 +19,9 @@ focus_tree = {
 		x = 5
 		y = 0
 		cost = 10
-
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -34,7 +36,9 @@ focus_tree = {
 		x = 7
 		y = 1
 		cost = 10
-
+		ai_will_do = {
+			factor = 2
+		} 
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -50,7 +54,9 @@ focus_tree = {
 	focus = {
 		id = BUL_University_Of_Sofia
 		prerequisite = { focus = BUL_Radar_Testing }
-
+		ai_will_do = {
+			factor = 2
+		}
 		icon = GFX_focus_research
 		x = 7
 		y = 2
@@ -134,7 +140,9 @@ focus_tree = {
 		x = 7
 		y = 3
 		cost = 5
-
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -153,7 +161,10 @@ focus_tree = {
 		x = 11
 		y = 0
 		cost = 10
-
+		ai_will_do = {
+			factor = 10
+			
+		}
 		available_if_capitulated = yes
 
 		bypass = {
@@ -246,13 +257,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Highway_Development
 		cost = 10
-
+		ai_will_do = {
+			
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}
 
 		bypass = {
@@ -322,7 +336,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 2
+			factor = 4
 		}
 
 		bypass = {
@@ -391,7 +405,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 4
 		}
 
 		cancel_if_invalid = yes
@@ -425,7 +439,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 4
 		}
 
 		bypass = {
@@ -496,7 +510,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 2
+			factor = 4 
 		}
 
 		bypass =
@@ -605,7 +619,9 @@ focus_tree = {
 		x = 7
 		y = 4
 		cost = 5
-
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 
 		ai_will_do = {
@@ -629,7 +645,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = BUL_Dig_Deep}
 		prerequisite = {focus = BUL_Expand_Western_Mines}
-
+		ai_will_do = {
+			factor = 2
+		}
 		x = 6
 		y = 5
 		cost = 5
@@ -977,7 +995,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Highway_Development
 		cost = 10
-
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 
 
@@ -1107,7 +1127,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = bul_naval_effort
 		cost = 10
-
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			air_experience = 125
@@ -1129,7 +1151,9 @@ focus_tree = {
 		x = 16
 		y = 0
 		cost = 10
-
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1408,7 +1432,9 @@ focus_tree = {
 		x = 21
 		y = 0
 		cost = 10
-
+		ai_will_do = {
+			factor = 0
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {

@@ -572,13 +572,13 @@ ideas = {
 		HUN_jeno_ratz = {
 			ledger = air
 
-			picture = generic_air_europe_3
+			picture = generic_army_europe_3
 
 			allowed = {
 				original_tag = HUN
 			}
 
-			traits = { air_air_combat_training_2 }
+			traits = { army_commando_1 }
 
 			ai_will_do = {
 				factor = 1

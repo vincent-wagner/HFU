@@ -29,16 +29,13 @@ focus_tree = {
 
 		completion_reward = {
 
-			GER={FRA={ every_owned_state= {
-						limit={is_coastal=yes is_on_continent = europe }
-						add_state_modifier = {
-							modifier = { max_dig_in=-10 }
-							}}}
-				every_owned_state= {
-					limit={is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN}}
-					add_state_modifier = {
-						modifier = { max_dig_in=-10 }
-						}}}
+				GER={every_owned_state={
+					limit={has_state_flag=atlantikwall}
+				
+				
+				add_state_modifier = {
+					modifier = { naval_invasion_penalty=-0.25 }
+					}}}
 
 		}
 	}

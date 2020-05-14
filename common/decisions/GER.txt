@@ -8,7 +8,9 @@ operations = {
 	GER_jaegernotprogramm = {
 
 		icon = generic_air
-
+		allowed = {
+			tag = GER
+		}
 		available = {
 			GER ={has_war_with = SOV}
 			tag=GER
@@ -34,7 +36,9 @@ operations = {
 	GER_fuelsavingmeasures = {
 
 		icon = generic_air
-
+		allowed = {
+			tag = GER
+		}
 		available = {
 			GER ={has_war_with = SOV}
 			tag=GER
@@ -80,6 +84,32 @@ operations = {
 			GER =  { puppet = FIN}
 		}
 	}
+	GER_pressure_sweden = {
+		icon = generic_operation
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			date > 1940.1.1
+		}
+
+		available = {
+			
+			has_completed_focus=GER_pressure_sweden
+			NOR_axis=yes
+			NOT={has_global_flag=GER_resource_rights_swe}
+		}
+		cost=50
+		days_remove=30
+		remove_effect = {
+			SWE = {
+				give_resource_rights = { receiver = GER state = 666 }
+
+			}
+			set_global_flag=GER_resource_rights_swe
+		}
+	}
 
 	GER_Anton = {
 
@@ -97,10 +127,13 @@ operations = {
 
 
 		available = {
-			tag = GER
-			EFR = { has_war_with = ENG }
-			EFR = { is_ai = yes }
-			Date > 1941.6.1
+			OR={
+			AND={EFR = { has_war_with = ENG }
+			
+			Date > 1941.6.1}
+			date>1942.1.1
+			}
+			
 
 		}
 

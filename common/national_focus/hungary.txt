@@ -983,41 +983,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = HUN_domestic_arms_industry_AF1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = HUN_domestic_arms_industry_AF2
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = HUN_domestic_arms_industry_AF3
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
+		
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1036,38 +1002,8 @@ focus_tree = {
 				}
 				set_state_flag = HUN_domestic_arms_industry_AF1
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = HUN_domestic_arms_industry_AF2
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = HUN_domestic_arms_industry_AF3
-			}
+			
+			
 		}
 	}
 
@@ -1408,7 +1344,7 @@ focus_tree = {
 		id = HUN_mobile_focus
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_home_defense }
+	
 		x = -2
 		y = 1
 		relative_position_id = HUN_army_maneuvers
@@ -1475,8 +1411,8 @@ focus_tree = {
 				name = HUN_mobile_corps_doctrine
 				bonus = 1.0
 				uses = 1
-				category = cat_mobile_warfare
-				category = cat_superior_firepower
+				category = land_doctrine
+				
 			}
 		}
 	}
@@ -1588,8 +1524,7 @@ focus_tree = {
 				name = HUN_mobile_corps_doctrine
 				bonus = 1.0
 				uses = 1
-				category = cat_mobile_warfare
-				category = cat_superior_firepower
+				category = land_doctrine
 			}
 		}
 	}
@@ -1672,8 +1607,8 @@ focus_tree = {
 		id = HUN_home_defense
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_mobile_focus }
-		x = 2
+		
+		x = 3
 		y = 1
 		relative_position_id = HUN_army_maneuvers
 
@@ -1696,12 +1631,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = militarism_focus
 			add_tech_bonus = {
 				name = HUN_home_defense
 				bonus = 1.0
-				uses = 3
-				category = cat_grand_battle_plan
-				category = cat_mass_assault
+				uses = 1
+				category = land_doctrine
+				
 			}
 		}
 	}
@@ -1710,7 +1646,7 @@ focus_tree = {
 		id = HUN_danuvia_submachine_guns
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = HUN_home_defense }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = HUN_home_defense
 
@@ -1757,8 +1693,8 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = HUN_danuvia_submachine_guns }
 		x = 0
-		y = 2
-		relative_position_id = HUN_home_defense
+		y = 1
+		relative_position_id = HUN_danuvia_submachine_guns
 
 		cost = 10
 
@@ -1799,9 +1735,9 @@ focus_tree = {
 	focus = {
 		id = HUN_light_infantry_divisions_doctrine
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = HUN_danuvia_submachine_guns }
-		x = 2
-		y = 2
+		prerequisite = { focus = HUN_home_defense }
+		x = 1
+		y = 1
 		relative_position_id = HUN_home_defense
 
 		cost = 10
@@ -1889,9 +1825,9 @@ focus_tree = {
 		id = HUN_form_parachute_battalions
 		icon = GFX_focus_generic_paratrooper
 		prerequisite = { focus = HUN_light_infantry_divisions_doctrine }
-		x = 2
-		y = 3
-		relative_position_id = HUN_home_defense
+		x = 0
+		y = 1
+		relative_position_id = HUN_light_infantry_divisions_doctrine
 
 		cost = 10
 

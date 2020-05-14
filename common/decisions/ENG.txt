@@ -26,7 +26,32 @@ foreign_politics = {
 		}
 	}
 
+	ENG_pressure_sweden= {
+		icon = generic_operation
+		fire_only_once = no
+		allowed = {
+			tag = ENG
+		}
+		visible = {
+			date > 1940.1.1
+		}
 
+		available = {
+			
+			GER={has_completed_focus=GER_pressure_sweden}
+			NOR_axis=no
+			has_global_flag=GER_resource_rights_swe
+		}
+		cost=50
+		days_remove=30
+		remove_effect = {
+			SWE = {
+				give_resource_rights = { receiver = ENG state = 666 }
+
+			}
+			clr_global_flag=GER_resource_rights_swe
+		}
+	}
 	ENG_give_chromium = {
 		icon = generic_operation
 
