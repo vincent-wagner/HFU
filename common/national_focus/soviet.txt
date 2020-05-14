@@ -140,6 +140,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
+			remove_ideas = peace_training
 			add_ideas=Fast_Training
 			add_ideas = SOV_the_great_war
 			#add_political_power = 100
@@ -540,7 +541,18 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 20
-
+			351={set_building_level = {
+						type = air_base
+						level = 20
+						
+						instant_build = yes
+					}}
+			248={set_building_level = {
+						type = air_base
+						level = 20
+						
+						instant_build = yes
+					}}
 			195 = {
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
 				hidden_effect = {
@@ -608,7 +620,24 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 20
-
+			407={set_building_level = {
+						type = air_base
+						level = 20
+						
+						instant_build = yes
+					}}
+			251={set_building_level = {
+						type = air_base
+						level = 20
+						
+						instant_build = yes
+					}}
+			652={set_building_level = {
+						type = air_base
+						level = 20
+						
+						instant_build = yes
+					}}
 			217 = {
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
 				hidden_effect = {
@@ -680,7 +709,12 @@ focus_tree = {
 					level = 20
 					instant_build = yes
 					}}
-
+			252={set_building_level = {
+						type = air_base
+						level = 20
+						
+						instant_build = yes
+					}}
 			248={set_building_level = {
 					type = air_base
 					level = 20
