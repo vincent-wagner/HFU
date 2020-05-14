@@ -551,14 +551,15 @@ focus_tree = {
 		complete_tooltip = {
 
 		}
-
+		
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_fighter_focus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = light_fighter
 			}
+			air_experience = 25
 		}
 	}
 
@@ -677,7 +678,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_modern_fighters
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				technology = early_fighter
 				technology = fighter1

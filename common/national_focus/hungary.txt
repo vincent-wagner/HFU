@@ -721,7 +721,6 @@ focus_tree = {
 		id = HUN_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_domestic_arms_industry }
 		x = -1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -961,7 +960,6 @@ focus_tree = {
 		id = HUN_domestic_arms_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_civilian_industry }
 		x = 1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -1075,37 +1073,7 @@ focus_tree = {
 
 
 
-	focus = {
-		id = HUN_aeronautic_technology_institute
-		icon = GFX_focus_research
-		prerequisite = { focus = HUN_domestic_arms_industry }
-		x = 1
-		y = 1
-		relative_position_id = HUN_domestic_arms_industry
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
+	
 
 
 	############################

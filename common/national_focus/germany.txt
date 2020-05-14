@@ -3579,7 +3579,7 @@ focus_tree = {
 			FRA={ every_owned_state= {
 					limit={is_coastal=yes is_on_continent = europe }
 					add_state_modifier = {
-						modifier = { max_dig_in=10 }
+						modifier = { max_dig_in=15 }
 						}}}
 			every_controlled_state= {
 				limit={is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN}

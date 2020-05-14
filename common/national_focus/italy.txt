@@ -1669,46 +1669,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_special_forces
-		icon = GFX_goal_generic_special_forces
-		text = special_forces
-		prerequisite = { focus = ITA_modernized_army focus = ITA_modernized_artillery }
-		x = 1
-		y = 1
-		relative_position_id = ITA_modernized_army
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = special_bonus
-				bonus = 1.0
-				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-			}
-			add_tech_bonus = {
-				name = special_bonus
-				ahead_reduction = 2
-				uses = 1
-				technology = tech_mountaineers2
-			}
-		}
-	}
-
-	focus = {
 		id = ITA_armored_effort
 		icon = GFX_focus_ITA_tank
-		prerequisite = { focus = ITA_special_forces }
-		x = 0
-		y = 1
-		relative_position_id = ITA_special_forces
+		prerequisite = { focus = ITA_modernized_army focus = ITA_modernized_artillery }
+		x = -2
+		y = 2
+		relative_position_id = ITA_army_primacy
 		cost = 10
 		ai_will_do = {
 			factor = 1

@@ -172,28 +172,28 @@
 			ship = { name = "HMS Wishart" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
 			ship = { name = "HMS Wrestler" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
 			# Submarine Division 21
-			ship = { name = "HMS Oxley" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS Oxley" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Swordfish" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Sturgeon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Seahorse" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Starfish" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			# Submarine Division 22
-			ship = { name = "HMS H32" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS L26" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS L27" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS H32" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS L26" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS L27" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			# Submarine Division 51
-			ship = { name = "HMS Oberon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Thames" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS Oberon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Thames" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			# Submarine Division 52
-			ship = { name = "HMS L23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS H28" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS H31" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS H33" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS H34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS H43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS H44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS H49" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS H50" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS L23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS H28" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS H31" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS H33" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS H34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS H43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS H44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS H49" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS H50" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Glorious" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = ENG version_name = "Courageous Class" } }
 				air_wings = {
 					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 1 } #historical 36
@@ -258,9 +258,9 @@
 			ship = { name = "HMS Salmon" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Porpoise" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			# Submarine Division 12
-			ship = { name = "HMS Otway" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Osiris" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Oswald" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS Otway" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Osiris" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Oswald" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Berwick" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS York" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Orion" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
@@ -274,8 +274,8 @@
 			ship = { name = "HMS Cumberland" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Ajax" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
 			# Submarine Division 71
-			ship = { name = "HMS Severn" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Clyde" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS Severn" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Clyde" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Hermes" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = ENG version_name = "Hermes Class" } }
 				air_wings = {
 					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 1 }
@@ -302,20 +302,43 @@
 			ship = { name = "HMS Achilles" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Leander Class" } } }		# to RNZN 1941
 			ship = { name = "HMS Leander" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Leander Class" } } }		# to RNZN 1941
 			# Submarine Division 41
-			ship = { name = "HMS Olympus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Parthian" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Proteus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Regent" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Rover" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS Olympus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Parthian" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Proteus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Regent" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Rover" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			# Submarine Division 42
-			ship = { name = "HMS Odin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Orpheus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Otus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
-			ship = { name = "HMS Pandora" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+			ship = { name = "HMS Odin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Orpheus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Otus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
+			ship = { name = "HMS Pandora" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
 			ship = { name = "HMS Perseus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS Phoenix" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS Rainbow" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS Regulus" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
+				ship = { name = "HMS Undine" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Unity" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Ursula" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Umpire" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Una" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Unbeaten" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Undaunted" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Union" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Unique" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Upholder" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Upright" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Urchin" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Urge" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Usk" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Utmost" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Uproar" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Ultimatum" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Umbra" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Unbending" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS Unbroken" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+				ship = { name = "HMS United" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "U Class" } } }
+
+
 		}
 	}
 }

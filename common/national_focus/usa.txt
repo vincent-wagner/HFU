@@ -130,7 +130,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
+			
 		}
 
 		bypass = {
@@ -169,8 +169,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
-			not = { has_country_flag = USA_great_depression_cooldown }
+			date > 1938.1.1
 		}
 
 		bypass = {
@@ -205,8 +204,7 @@ focus_tree = {
 
 
 		available = {
-			congress_medium_support_trigger = yes
-			not = { has_country_flag = USA_great_depression_cooldown }
+			date > 1938.8.1
 		}
 
 		cancel_if_invalid = no
@@ -715,28 +713,29 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = USA_the_giant_wakes }
 		available = {
-
+			date > 1942.1.1
 		}
 		x = 1
 		y = 1
 		relative_position_id = USA_the_giant_wakes
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "La Resistance"
-					}
-				}
-				add_ideas = office_of_strategic_services
-			}
-			else = {
-				add_ideas = office_of_strategic_services_lar
-			}
+			create_field_marshal = {
+				name = "Douglas MacArthur"
+				id = 57
+				picture = "Portrait_USA_Douglas_MacArthur.dds"
+				traits = {  offensive_doctrine brilliant_strategist media_personality politically_connected infantry_leader naval_invader jungle_rat }
+			skill = 7
+
+			attack_skill = 8
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+}
 		}
 	}
 
