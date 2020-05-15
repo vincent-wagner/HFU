@@ -316,11 +316,11 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.04
 			max_strength = 0.35
-			lg_armor_piercing = 1
+			lg_armor_piercing = 1.5
 		}
 		add_average_stats = {
 			hg_armor_piercing = 18
-			surface_visibility = 8.5
+			surface_visibility = 6
 		}
 		can_convert_from = {
 			module_category = ship_light_battery
@@ -345,11 +345,11 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.06
 			max_strength = 0.4
-			lg_armor_piercing = 1
+			lg_armor_piercing = 1.5
 		}
 		add_average_stats = {
 			hg_armor_piercing = 21
-			surface_visibility = 8.5
+			surface_visibility = 6
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
@@ -374,11 +374,11 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.07
 			max_strength = 0.45
-			lg_armor_piercing = 1
+			lg_armor_piercing = 1.5
 		}
 		add_average_stats = {
 			hg_armor_piercing = 24
-			surface_visibility = 8.5
+			surface_visibility = 6
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
@@ -403,11 +403,11 @@ equipment_modules = {
 		multiply_stats = {
 			naval_speed = -0.08
 			max_strength = 0.50
-			lg_armor_piercing = 1
+			lg_armor_piercing = 1.5
 		}
 		add_average_stats = {
 			hg_armor_piercing = 27
-			surface_visibility = 8.5
+			surface_visibility = 6
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
@@ -1542,7 +1542,7 @@ equipment_modules = {
 
 
 		add_stats = {
-			torpedo_attack = 18
+			torpedo_attack = 9
 			build_cost_ic = 80
 		}
 
@@ -1559,7 +1559,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 22
+			torpedo_attack = 11
 			build_cost_ic = 100
 		}
 
@@ -1580,7 +1580,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 28
+			torpedo_attack = 14
 			build_cost_ic = 120
 		}
 		can_convert_from = {
@@ -1597,7 +1597,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 34
+			torpedo_attack = 17
 			build_cost_ic = 140
 		}
 		can_convert_from = {
@@ -2049,7 +2049,7 @@ equipment_modules = {
 		}
 		add_stats = {
 			armor_value = 70
-			surface_visibility = 10
+			surface_visibility = 15
 		}
 		dismantle_cost_ic = 8200
 

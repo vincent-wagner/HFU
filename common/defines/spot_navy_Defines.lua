@@ -24,15 +24,21 @@ NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.8	-- damage penalty at 
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.4   -- screening efficiency (screen to capital ratio) at 0% positioning
 
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 1.5 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
+NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.5 -- chance for critical hit from torpedo.
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0 -- cost to unassign/replace pride of the fleet
 
 NDefines.NNavy.CARRIER_STACK_PENALTY = 5 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.167 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		75.0,	-- big guns
-		145.0,	-- torpedos
+		80.0,	-- big guns
+		140.0,	-- torpedos
 		40.0,	-- small guns
+	}
+NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
+		1.0,	-- big guns
+		2.0,	-- torpedos
+		1.0,	-- small guns
 	}
 
 
@@ -55,7 +61,7 @@ NDefines.NNavy.NAVAL_COMBAT_SUB_DETECTION_FACTOR = 5.0      -- balance value for
 NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 8		-- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
 NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 16		-- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
 NDefines.NNavy.SUBMARINE_REVEAL_BASE_CHANCE = 30		-- Base factor for submarine detection. It's modified by the difference of a spotter's submarines detection vs submarine visibility. Use this variable for game balancing. setting this too low will cause bad spotting issues.
-NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.3									-- hidden subs get faster escape speed
+NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.5									-- hidden subs get faster escape speed
 NDefines.NNavy.ESCAPE_SPEED_SUB_BASE = -0.20
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1
 
@@ -106,5 +112,5 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.5
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.4		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 3.5        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
-NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 4.0
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 2.5        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 3.0
