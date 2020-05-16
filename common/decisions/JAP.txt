@@ -35,7 +35,8 @@ foreign_politics = {
 
 		available = {
 			MAN = { is_ai = yes }
-		}
+			MAN = { has_completed_focus = MAN_national_defense_state }
+			}
 
 		fire_only_once = yes
 		cost = 0
