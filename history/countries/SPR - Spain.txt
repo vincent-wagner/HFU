@@ -49,16 +49,17 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 47
-	fascism = 46
-	communism = 7
+	democratic = 5
+	fascism = 60
+	communism = 5
+	neutrality = 30
 }
 
 set_convoys = 200

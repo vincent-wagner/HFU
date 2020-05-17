@@ -53,16 +53,6 @@ country_event = {
 					army_experience = 100
 					air_experience = 200}
 
-				set_politics = {
-					ruling_party = fascism
-				}
-
-				set_popularities = {
-					democratic = 0
-					neutrality = 0
-					fascism = 100
-					communism = 0
-				}
 				set_global_flag = spanish_civil_war
 
 				set_stability = 1
