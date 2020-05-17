@@ -84,7 +84,6 @@ set_technology = {
 	scout_plane1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
-	strategic_bomber1 = 1
 	CAS1 = 1
 	naval_bomber1 = 1
 	electronic_mechanical_engineering = 1
