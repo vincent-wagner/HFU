@@ -54,7 +54,7 @@ units = {
 		name = "This is here so you can look at your generals"
 		location = 949
 		division_template = "Pekhotna Divizija"
-		start_experience_factor = 0
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 }

@@ -93,7 +93,7 @@ units = {
 		name = "This is here so you can look at your generals"
 		location = 1814
 		division_template = "District Force"
-		start_experience_factor = 0
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 }
