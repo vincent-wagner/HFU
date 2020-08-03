@@ -1804,8 +1804,12 @@ equipment_modules = {
 			surface_detection = 7
 			sub_detection = 2.5
 			build_cost_ic = 150
+			
 		}
 		multiply_stats = {
+			hg_attack = 0.08
+			lg_attack = 0.1
+			torpedo_attack = 0.1
 			naval_speed = -0.01
 		}
 	}
@@ -1823,6 +1827,9 @@ equipment_modules = {
 			convert_cost_ic = 80
 		}
 		multiply_stats = {
+			hg_attack = 0.12
+			lg_attack = 0.15
+			torpedo_attack = 0.15
 			naval_speed = -0.01
 		}
 	}

@@ -2251,7 +2251,7 @@ focus_tree = {
 				target = SOV
 			}
 			SOV={remove_ideas=Fast_Training }
-
+			
 			GER = {
 				add_timed_idea = { idea = GER_barbarossa days = 100 }
 				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
@@ -2272,8 +2272,15 @@ focus_tree = {
 				add_timed_idea = { idea = GER_barbarossa days = 100 }
 			}
 
-			hidden_effect={41={set_building_level = {type = infrastructure
-						level = 10}
+			hidden_effect={
+				every_country={
+					add_ideas=speed3
+				}
+				41={
+					set_building_level = {
+						type = infrastructure
+						level = 10
+					}
 				}
 				118 = {
 
