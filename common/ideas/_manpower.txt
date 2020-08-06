@@ -75,22 +75,8 @@ ideas = {
 					}
 					has_completed_focus = AST_citizen_military_forces
 				}
-				if = {
-					limit = {
-						original_tag = CAN
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = CAN_commit_to_the_war
-				}
+				
 
-
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
 			}
 
 			modifier = {

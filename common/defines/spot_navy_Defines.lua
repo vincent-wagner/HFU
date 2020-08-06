@@ -65,7 +65,7 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.5									-- hidden subs get faster e
 NDefines.NNavy.ESCAPE_SPEED_SUB_BASE = -0.20
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1
 
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.3 --was 0.25	-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25 -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.8	--- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
 
@@ -112,5 +112,5 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.5
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.4		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 2.5        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 3 --was 2.5 but i increased overall naval damage        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 3.0

@@ -2550,8 +2550,13 @@ focus_tree = {
 				JAP = { add_ideas = war_in_our_neigbour }
 			}
 			army_experience=70
-			remove_resource_rights = 724
-
+			
+			add_resource = {
+				type=rubber
+				amount=-20
+				state=64
+			}
+			
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 
 			GER = {
@@ -3571,7 +3576,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1941.1.1
+			date > 1940.9.1
 		}
 
 		completion_reward = {
@@ -3587,8 +3592,9 @@ focus_tree = {
 
 
 			add_ideas = GER_atlantikwall_idea
+			custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that doesnt have any coastal forts."
 			99 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3600,7 +3606,7 @@ focus_tree = {
 			}
 
 			58 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3612,7 +3618,7 @@ focus_tree = {
 			}
 
 			59 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3624,7 +3630,7 @@ focus_tree = {
 			}
 
 			56 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3636,7 +3642,7 @@ focus_tree = {
 			}
 
 			36 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3648,7 +3654,7 @@ focus_tree = {
 			}
 
 			7 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3660,7 +3666,7 @@ focus_tree = {
 			}
 
 			35 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3672,7 +3678,7 @@ focus_tree = {
 			}
 
 			6 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3684,7 +3690,7 @@ focus_tree = {
 			}
 
 			29 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3696,7 +3702,7 @@ focus_tree = {
 			}
 
 			785 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3708,7 +3714,7 @@ focus_tree = {
 			}
 
 			15 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3720,7 +3726,7 @@ focus_tree = {
 			}
 
 			14 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3732,7 +3738,7 @@ focus_tree = {
 			}
 
 			30 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3744,7 +3750,7 @@ focus_tree = {
 			}
 
 			23 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3757,7 +3763,7 @@ focus_tree = {
 
 
 			19 = {
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
 					level = 1
 					province = {
@@ -3780,7 +3786,7 @@ focus_tree = {
 				}
 
 				142 = {
-					set_building_level = {
+					add_building_construction = {
 						type = coastal_bunker
 						level = 1
 						province = {
@@ -3804,7 +3810,7 @@ focus_tree = {
 				}
 
 				143 = {
-					set_building_level = {
+					add_building_construction = {
 						type = coastal_bunker
 						level = 1
 						province = {
@@ -3828,7 +3834,7 @@ focus_tree = {
 				}
 
 				144 = {
-					set_building_level = {
+					add_building_construction = {
 						type = coastal_bunker
 						level = 1
 						province = {

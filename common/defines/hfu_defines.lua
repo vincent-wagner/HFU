@@ -50,7 +50,7 @@ NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0	-- IC cost equipment for 
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 5000000
 
 ---------------------------------------------------------------
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 1000				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 10000				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- down from 7 | why not allow Luxembourg to cap faster
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
 
@@ -217,7 +217,7 @@ NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
-NDefines.NMilitary.SLOWEST_SPEED = 3 --back to 4
+NDefines.NMilitary.SLOWEST_SPEED = 2 --back to 4
 NDefines.NMilitary.TRAINING_ATTRITION = 0.01
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999

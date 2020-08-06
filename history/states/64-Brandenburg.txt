@@ -7,7 +7,9 @@ state={
 
 	state_category = megalopolis
 
-
+	resources={
+		rubber=20 # was: 16
+	}
 	history={
 		owner = GER
 		victory_points = {
