@@ -15,11 +15,6 @@ state={
 		victory_points = {
 			6606 3
 		}
-		add_resource = {
-		type=aluminium
-		amount=30
-		days=14
-		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 6

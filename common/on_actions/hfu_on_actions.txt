@@ -30,6 +30,20 @@ on_actions = {
 
 	on_startup={
 		effect{
+			161 = {
+				add_resource = {
+					type=aluminium
+					amount=30
+					days=1460
+				}
+			}
+			50 = {
+				add_resource = {
+					type=aluminium
+					amount=30
+					days=1460
+				}
+			}
 			every_country={
 				limit={	has_country_flag=fuel_system_enabled}
 				add_to_array={GLOBAL.fuel_system_manager=THIS.id}

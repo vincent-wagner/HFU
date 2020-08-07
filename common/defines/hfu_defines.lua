@@ -1,7 +1,12 @@
 --Horst defines:
 
 --------------------------------------------------------------
+--new graphics
+NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.9 -- 0.6
+NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.9 -- 0.8
+--NDefines.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.2
 --test
+NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
 NDefines_Graphics.NGraphics.BORDER_WIDTH = 1
 NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 3
 NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 5

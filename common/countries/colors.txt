@@ -9,7 +9,7 @@ ENG = {
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
-	color = rgb { 125 13 24 }
+	color = rgb { 156 47 38 }
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
@@ -58,7 +58,7 @@ LAT = {
 	color_ui = rgb { 124 125 184 }
 }
 SPR = {
-	color = rgb { 242 205 94 }
+	color = rgb { 242 205 50 }
 	color_ui = rgb { 255 255 122 }
 }
 ITA = {
@@ -118,8 +118,8 @@ CHI = {
 	color_ui = hsv { 0.18 0.3 0.9 }
 }
 JAP = {
-	color = hsv { 0.05 0.3 1 }
-	color_ui = hsv { 0.05 0.25 1.2 }
+	color = rgb { 255 255 255 }
+	color_ui = rgb { 255 255 255 }
 }
 NZL = {
 	color = rgb { 152 130 191 }
@@ -138,7 +138,7 @@ USA = {
 	color_ui = rgb { 87 160 255 }
 }
 RAJ = {
-	color = rgb { 204 102 0 }
+	color = rgb { 240 133 30 }
 	color_ui = rgb { 255 128 0 }
 }
 INS = {
@@ -146,7 +146,7 @@ INS = {
 	color_ui = rgb { 128  158  118 }
 }
 MAN = {
-	color = rgb { 255  120  71 }
+	color = rgb { 212  96  20 }
 	color_ui = rgb { 255  120  71 }
 }
 SWI = {
