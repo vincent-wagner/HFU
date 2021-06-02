@@ -1,10 +1,10 @@
-﻿capital = 284
+capital = 272
 oob = "NZL_1936"
 # Starting tech
-set_stability = 0.8
+set_stability = 0.55
 set_war_support = 0.15
+set_research_slots = 3
 add_ideas = reliance_on_natural_rubber
-
 set_variable = {
 	var = min_fuel
 	value = 0.800
@@ -12,6 +12,14 @@ set_variable = {
 add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
 set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
+	desertinfantry_at = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	tech_mountaineers = 1
+	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gwtank = 1
@@ -71,16 +79,12 @@ if = {
 		improved_secondary_battery = 1
 		basic_fire_control_system = 1
 	}
-
 }
-
 if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_ideas = SAF_the_commonwealth
 	add_to_tech_sharing_group = commonwealth_research
-
 }
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.11.27"
@@ -100,7 +104,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Sidney Holland"
 	desc = "POLITICS_SIDNEY_HOLLAND_DESC"
@@ -111,7 +114,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "John Ormond"
 	desc = "POLITICS_JOHN_ORMOND_DESC"
@@ -122,7 +124,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Elsie Farrelly"
 	desc = "POLITICS_JOHN_ORMOND_DESC"
@@ -140,7 +141,6 @@ add_equipment_to_stockpile = {
 	amount = 650
 	producer = NZL
 }
-
 create_corps_commander = {
 	name = "Bernard Freyberg"
 	gfx = "GFX_NZL_bernard_freyberg"
@@ -151,7 +151,6 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Robert Row"
 	gfx = "GFX_NZL_robert_row"
@@ -162,7 +161,6 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "William Stevens"
 	gfx = "GFX_NZL_william_stevens"
@@ -173,7 +171,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 4
 }
-
 create_corps_commander = {
 	name = "Dan the Man"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
@@ -184,7 +181,6 @@ create_corps_commander = {
 	planning_skill = 6
 	logistics_skill = 2
 }
-
 create_navy_leader = {
 	name = "Edmund Rupert Drummond"
 	gfx = "GFX_NZL_edmund_drummond"
@@ -195,7 +191,6 @@ create_navy_leader = {
 	maneuvering_skill = 9
 	coordination_skill = 6
 }
-
 create_navy_leader = {
 	name = "Peter Phipps"
 	gfx = "GFX_NZL_peter_phipps"
@@ -206,8 +201,6 @@ create_navy_leader = {
 	maneuvering_skill = 2
 	coordination_skill = 3
 }
-
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -244,3 +237,4 @@ if = {
 		}
 	}
 }
+

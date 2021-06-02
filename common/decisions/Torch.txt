@@ -3,8 +3,11 @@ operations = {
 		icon = generic_operation
 		allowed = { original_tag = ENG }
 		available = {
-			Date > 1941.1.1
 			EFR = { exists = yes}
+			OR={Date > 1941.1.1
+			AND={415={is_controlled_by_ROOT_or_ally = yes } 413={is_controlled_by_ROOT_or_ally = yes }}
+			}
+			
 		}
 		visible = {
 			EFR = { exists = yes}
@@ -14,7 +17,7 @@ operations = {
 			factor = 1
 		}
 		fire_only_once = yes
-		days_remove = 30
+		days_remove = 45
 		complete_effect = {
 			hidden_effect = {
 				every_enemy_country = {
@@ -42,15 +45,30 @@ operations = {
 		ai_will_do = {
 			factor = 1
 		}
-		activation = {                          # The mission appears and starts counting down under these circumstances:
-			has_war_with = GER                       # War with Germany
+		activation = {
+			has_war_with = GER
 		}
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 7
 		complete_effect = {
-
-			FRA = {transfer_state = 461
-				transfer_state = 462
+			ITA = { transfer_state = 584
+				transfer_state = 1
+				transfer_state = 422
+				transfer_state = 32
+				transfer_state = 21
+			}
+			FRA={
+				if = {
+				limit={exists=yes}
+				transfer_state = 425
+				transfer_state = 426
+				}
+				else={
+					USA={
+						transfer_state = 425
+						transfer_state = 426
+					}
+				}
 			}
 			hidden_effect = {
 				EFR={
@@ -74,32 +92,10 @@ operations = {
 				}
 			}
 			custom_effect_tooltip = "Vichy France goes to war with everyone in the allies"
-
-
-
 		}
 		remove_effect = {
-			if = {
-				limit = {
-					665 = {is_fully_controlled_by = EFR}
-					1 = {is_fully_controlled_by = EFR}
-					458 = {is_fully_controlled_by = EFR}
-					32 = {is_fully_controlled_by = EFR}
-					21 = {is_fully_controlled_by = EFR}
-
-				}
-
-				ITA = { transfer_state = 665
-					transfer_state = 1
-					transfer_state = 458
-					transfer_state = 32
-					transfer_state = 21
-				}
-			}
-
 			GER = { puppet = EFR }
 			EFR = { remove_ideas = EFR_neutrality_idea}
-
 		}
 	}
 	EFR_joining_faction = {
@@ -124,3 +120,4 @@ operations = {
 		}
 	}
 }
+

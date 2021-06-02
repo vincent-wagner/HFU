@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	ger_reichswerke_decision_ui = {
+		window_name = "ger_reichswerke_decision_ui_window"
+		context_type = decision_category
+
+		visible = {
+			original_tag = GER
+			has_completed_focus = GER_u_verlagerung
+		}
+
+
+
+
+	}
+
+}
+

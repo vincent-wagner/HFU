@@ -1,32 +1,24 @@
 focus_tree = {
 	id = greece_focus
-
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = GRE
-
 		}
 	}
-
 	default = no
-
-
 	focus = {
 		id = gre_aviation_effort
 		icon = GFX_goal_generic_air_doctrine
 		x = 1
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
 		complete_tooltip = {
-
 		}
 		completion_reward = {
-			182 = {
+			175 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -35,10 +27,7 @@ focus_tree = {
 				ROOT = { set_country_flag = aviation_effort_2_AB }
 			}
 		}
-
 	}
-
-
 	focus = {
 		id = gre_aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
@@ -47,15 +36,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = gre_aviation_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		complete_tooltip = {
-
 		}
 		completion_reward = {
-			182 = {
+			175 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -64,24 +49,18 @@ focus_tree = {
 				ROOT = { set_country_flag = aviation_effort_2_AB }
 			}
 		}
-
 	}
-
 	focus = {
 		id = gre_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 5
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			185 = {
+			178 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -91,8 +70,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	focus = {
 		id = gre_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
@@ -101,15 +78,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = gre_production_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			185 = {
+			178 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -119,7 +92,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = gre_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
@@ -128,15 +100,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = gre_production_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			185 = {
+			178 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -146,22 +114,17 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = gre_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 3
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			185 = {
+			178 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -171,7 +134,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = gre_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
@@ -180,24 +142,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = gre_construction_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
-
 		}
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			186 = {
+			179 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -207,7 +161,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = gre_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
@@ -216,16 +169,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = gre_construction_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			185 = {
+			178 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -234,7 +182,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = gre_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
@@ -243,13 +190,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = gre_infrastructure_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			47 = {
 				add_building_construction = {
@@ -258,10 +201,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
 	}
-
 	focus = {
 		id = gre_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
@@ -270,24 +211,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = gre_infrastructure_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
-
 		}
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-			186 = {
+			179 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -297,31 +230,23 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = gre_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 7
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		available = {
 			any_state = {
 				is_coastal = yes
 				is_controlled_by = ROOT
 			}
 		}
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
-
-			731 = {
+			649 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
@@ -331,6 +256,5 @@ focus_tree = {
 			}
 		}
 	}
-
-
 }
+

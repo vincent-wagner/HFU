@@ -4,42 +4,37 @@ state={
 	resources={
 		steel=4.000
 	}
-
 	history={
 		owner = HOL
 		add_core_of = HOL
 		victory_points = {
-			391 40
+			356 40
 		}
 		victory_points = {
-			3211 10
+			2997 10
 		}
 		victory_points = {
-			9498 20
+			8722 20
 		}
 		buildings = {
 			infrastructure = 8
 			arms_factory = 4
-			industrial_complex = 3
+			industrial_complex = 5
 			dockyard = 3
 			air_base = 5
-			3314 = {
+			3098 = {
 				naval_base = 5
-
 			}
-			9498 = {
+			8722 = {
 				naval_base = 10
-
 			}
-
 		}
-
 	}
-
 	provinces={
-		68 391 3211 3314 9498
+		65 356 2997 3098 8722
 	}
 	manpower=4123000
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 }
+

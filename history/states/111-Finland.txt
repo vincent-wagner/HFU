@@ -1,41 +1,37 @@
-
 state={
 	id=111
-	name="STATE_111" # Uusimaa
+	name="STATE_111"
 	manpower = 1670190
-
 	state_category = city
-
 	history={
 		owner = FIN
 		victory_points = {
-			11105 15
+			10074 15
 		}
 		victory_points = {
-			3083 1
+			2888 1
 		}
 		victory_points = {
-			3137 1
+			2934 1
 		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 3
 			industrial_complex = 2
 			dockyard = 1
 			air_base = 5
-			11105 = {
+			10074 = {
 				naval_base = 5
 				coastal_bunker = 2
 			}
-			3083 = {
+			2888 = {
 				naval_base = 3
 				coastal_bunker = 1
 			}
 		}
 		add_core_of = FIN
 	}
-
 	provinces={
-		32 52 67 169 204 3009 3025 3061 3083 3117 3137 3161 6009 6047 6066 6082 6108 6144 6163 6186 9073 9094 9129 9160 9167 9183 9194 11056 11066 11105 11138 11172 11211 13100 13101 13102 13103 13105 13106 13107
+		32 51 64 150 178 2821 2837 2869 2888 2915 2934 2954 5565 5597 5613 5627 5649 5678 5692 5709 8349 8367 8396 8417 8424 8435 8443 10034 10042 10074 10099 10127 10157 11764 11765 11766 11767 11769 11770 11771
 	}
 }
+

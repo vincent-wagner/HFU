@@ -1,23 +1,17 @@
-
 state={
 	id=104
 	name="STATE_104"
 	manpower =2457400
-
-
 	state_category = town
-
 	resources={
-		#aluminium=7 # was: 10 moved to Emilia Romagna
 	}
-
 	history={
 		owner = YUG
 		victory_points = {
-			11899 5
+			10790 5
 		}
 		victory_points = {
-			6983 3
+			6456 3
 		}
 		buildings = {
 			infrastructure = 5
@@ -26,8 +20,8 @@ state={
 		}
 		add_core_of = YUG
 	}
-
 	provinces={
-		606 953 982 3985 6614 6619 6799 6942 6957 6983 9586 9588 9591 9894 9922 11572 11574 11741 11845 11872 11899
+		571 904 928 3723 6118 6123 6301 6422 6434 6456 8810 8811 8814 9087 9110 10500 10502 10662 10749 10770 10790
 	}
 }
+

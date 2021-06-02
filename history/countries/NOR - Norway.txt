@@ -1,5 +1,4 @@
-﻿capital = 110
-
+capital = 110
 oob = "NOR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,27 +7,33 @@ if = {
 		set_naval_oob = "NOR_1936_naval_legacy"
 	}
 }
-
 set_research_slots = 3
-
 add_ideas = {
 	limited_conscription
+	push_on_limit
 }
-
 set_stability = 0.9
 set_war_support = 0.1
+
 set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	gw_artillery = 1
-	interwar_antiair = 1
+	tech_mountaineers = 1
 	tech_support = 1
 	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
 	early_fighter = 1
 	early_bomber = 1
-	tech_recon = 1
+	CAS1 = 1
+	trench_warfare = 1
 }
-add_timed_idea = { idea = no_training days= 730 }
+add_timed_idea = { idea = no_training days= 1095 }
+add_ideas = peace_training
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 1800
@@ -58,10 +63,8 @@ if = {
 		coastal_defense_ships = 1
 	}
 }
-
 set_convoys = 200		# biggest merchant marine in the world
 set_stability = 0.7
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.10.16"
@@ -73,7 +76,6 @@ set_popularities = {
 	fascism = 2
 	communism = 2
 }
-
 create_country_leader = {
 	name = "Johan Nygaardsvold"
 	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
@@ -84,7 +86,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Vidkun Quisling"
 	desc = "POLITICS_VIDKUN_QUISLING_DESC"
@@ -95,7 +96,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Johan Ludwig Mowinckel"
 	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
@@ -106,7 +106,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Adam Egede-Nissen"
 	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
@@ -117,7 +116,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_corps_commander = {
 	name = "Carl Gustav Fleischer"
 	portrait_path = "gfx/leaders/NOR/portrait_norway_carl_gustav_flesicher.tga"
@@ -128,7 +126,6 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 4
 }
-
 create_navy_leader = {
 	name = "Elias Corneliussen"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
@@ -139,7 +136,6 @@ create_navy_leader = {
 	maneuvering_skill = 3
 	coordination_skill = 1
 }
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -227,3 +223,4 @@ if = {
 		}
 	}
 }
+

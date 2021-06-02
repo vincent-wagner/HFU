@@ -1,29 +1,25 @@
-
 state={
 	id=39
-	name="STATE_39" # South Tyrol
+	name="STATE_39"
 	manpower = 641650
-
 	state_category = town
-
 	resources={
-		aluminium=14 # was: 22
-		#chromium=44    #7 from Aegean Islands, 14 from Epirus, 12 from Thessaly/Greece, 11 from Thrace             44 CHROMIUM MOVED TO SICILY
+		aluminium=30
+		tungsten=50
 	}
-
 	history={
 		victory_points = {
-			11598 1
+			10525 1
 		}
 		owner = ITA
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			industrial_complex = 6
 		}
 		add_core_of = ITA
 	}
-
 	provinces={
-		656 6631 6675 9598 9630 11598 11615
+		621 6135 6178 8821 8849 10525 10539
 	}
 }
+

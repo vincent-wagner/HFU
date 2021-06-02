@@ -1,15 +1,12 @@
-﻿capital = 307
-
+capital = 285
 set_research_slots = 0
 # Starting tech
 set_technology = {
 }
 set_country_flag = monroe_doctrine
-
 add_ideas = {
 	neutral_idea
 }
-
 set_convoys = 11
 set_politics = {
 	ruling_party = fascism
@@ -22,7 +19,6 @@ set_popularities = {
 	fascism = 80
 	communism = 15
 }
-
 create_country_leader = {
 	name = "Eleazar López Contreras"
 	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
@@ -33,3 +29,4 @@ create_country_leader = {
 		#
 	}
 }
+

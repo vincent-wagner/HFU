@@ -1,0 +1,475 @@
+units = {
+	division = {
+		name = "Japan Divisions"
+		location =6424
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =6424
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =6424
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9090
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9090
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9090
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =922
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =922
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =922
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =8979
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =8979
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =8979
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =6311
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =6311
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =6311
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =1511
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =1511
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =1511
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =11332
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =11332
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =11332
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9653
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9653
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9653
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =8994
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =8994
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =8994
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9592
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9592
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9592
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =7029
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =7029
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =7029
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =1577
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =1577
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =1577
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =4307
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =4307
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =4307
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =7298
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =7298
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =7298
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =11440
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =11440
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =11440
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =1751
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =1751
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =1751
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =4545
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =4545
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =4545
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9764
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9764
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Divisions"
+		location =9764
+		division_template = "Japan Divisions"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Tanks"
+		location =4545
+		division_template = "Japan Tanks"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Tanks"
+		location =6424
+		division_template = "Japan Tanks"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Tanks"
+		location =6424
+		division_template = "Japan Tanks"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Tanks"
+		location =4545
+		division_template = "Japan Tanks"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "Japan Tanks"
+		location =11440
+		division_template = "Japan Tanks"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+}
+

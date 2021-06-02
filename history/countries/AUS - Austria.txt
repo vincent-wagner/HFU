@@ -1,9 +1,6 @@
-﻿capital = 4
-
+capital = 4
 oob = "AUS_1936"
-
 set_research_slots = 0
-
 set_technology = {
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -23,16 +20,13 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
 	neutrality = 73
 	fascism = 25
 	democratic = 1
 	communism = 1
 }
-
 set_stability = 0.50
-
 create_country_leader = {
 	name = "Kurt Schuschnigg"
 	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
@@ -43,3 +37,4 @@ create_country_leader = {
 		#
 	}
 }
+

@@ -26,15 +26,16 @@ sub_units = {
 			light_tank_destroyer_equipment = 30
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -10
 		default_morale = 0.3
 		max_strength = 0.6
 		training_time = 180
 		weight = 1
 		supply_consumption = 0.2
-
+		initiative = 0.01
 		suppression = 1.5
-
+		 hard_attack = 0.15
+		  
 		forest = {
 			attack = -0.2
 			movement = -0.4
@@ -43,7 +44,8 @@ sub_units = {
 			attack = -0.1
 		}
 		jungle = {
-			attack = -0.3
+			attack = -0.2
+			defence = -0.2
 			movement = -0.4
 		}
 		marsh = {
@@ -87,17 +89,19 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			medium_tank_destroyer_equipment = 24
+			medium_tank_destroyer_equipment = 50
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -10
 		default_morale = 0.3
 		max_strength = 0.6
 		training_time = 180
 		weight = 1.25
 		supply_consumption = 0.22
-
+		initiative = 0.01
 		suppression = 1.5
+		hard_attack = 0.15
+		  
 
 		forest = {
 			attack = -0.3
@@ -107,11 +111,14 @@ sub_units = {
 			attack = -0.1
 		}
 		mountain = 	{
-			attack = -0.2
+			attack = -0.4
+			defence= -0.3
+			movement = -0.1
 		}
 		jungle = {
-			attack = -0.4
-			movement = -0.4
+			attack = -0.3
+			movement = -0.1
+			defence= -0.3
 		}
 		marsh = {
 			attack = -0.1
@@ -119,7 +126,7 @@ sub_units = {
 		}
 		urban = {
 			attack = -0.4
-			defence = -0.1
+			defence = -0.3
 		}
 		river = {
 			attack = -0.2
@@ -155,17 +162,18 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			heavy_tank_destroyer_equipment = 20
+			heavy_tank_destroyer_equipment = 40
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -10
 		default_morale = 0.3
 		max_strength = 0.6
 		weight = 1.5
 		supply_consumption = 0.3
-
+		initiative = 0.01
 		suppression = 1.5
-
+		hard_attack = 0.15
+		  
 		forest = {
 			attack = -0.40
 			movement = -0.40
@@ -174,19 +182,22 @@ sub_units = {
 			attack = -0.20
 		}
 		mountain = 	{
-			attack = -0.3
+			attack = -0.4
+			defence= -0.3
+			movement = -0.1
 		}
 		jungle = {
-			attack = -0.6
-			movement = -0.4
+			attack = -0.5
+			movement = -0.3
+			defence = -0.5
 		}
 		marsh = {
 			attack = -0.4
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.5
-			defence = -0.2
+			attack = -0.45
+			defence = -0.35
 		}
 		river = {
 			attack = -0.4
@@ -221,18 +232,19 @@ sub_units = {
 		}
 
 		combat_width = 2
-
+		initiative = 0.01
 		need = {
-			super_heavy_tank_destroyer_equipment = 14 #was 7, but IC was halved
+			super_heavy_tank_destroyer_equipment = 28 #was 7, but IC was halved
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -10
 		default_morale = 0.3
 		max_strength = 0.6
 		training_time = 180
 		weight = 1.75
 		supply_consumption = 0.4
-
+		hard_attack = 0.15
+		  
 		forest = {
 			attack = -0.5
 			movement = -0.4
@@ -241,19 +253,23 @@ sub_units = {
 			attack = -0.3
 		}
 		mountain = 	{
-			attack = -0.4
+			attack = -0.5
+			defence= -0.4
+			movement = -0.2
 		}
 		jungle = {
-			attack = -0.7
+			attack = -0.6
 			movement = -0.4
+			defence = -0.6
 		}
 		marsh = {
 			attack = -0.5
+			defence = -0.4
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.6
-			defence = -0.2
+			attack = -0.55
+			defence = -0.45
 		}
 		river = {
 			attack = -0.5
@@ -293,6 +309,9 @@ sub_units = {
 		need = {
 			modern_tank_destroyer_equipment = 24
 		}
+		 hard_attack = 0.15
+		  
+		
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.3
@@ -300,7 +319,7 @@ sub_units = {
 		training_time = 180
 		weight = 1.5
 		supply_consumption = 0.25
-
+		initiative = 0.01
 		forest = {
 			attack = -0.3
 			movement = -0.4

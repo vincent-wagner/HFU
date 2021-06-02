@@ -1,4 +1,4 @@
-﻿capital = 276
+capital = 268
 oob = "CAN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -12,16 +12,22 @@ set_variable = {
 	value = 0.800
 }
 set_rule = {can_be_spymaster = no}
-
-set_research_slots = 3
+set_research_slots = 4
 set_country_flag = monroe_doctrine
-set_stability = 0.8
+set_stability = 0.55
 set_war_support = 0.15
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
-
 # Starting tech
 set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
+	desertinfantry_at = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	tech_mountaineers = 1
+	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -83,7 +89,6 @@ if = {
 		basic_fire_control_system = 1
 	}
 }
-
 if = {
 	limit = { NOT = { has_dlc = "Together for Victory" } }
 	set_cosmetic_tag = CAN_ALY
@@ -94,24 +99,17 @@ if = {
 	add_ideas = CAN_conscription_crisis
 	add_ideas = SAF_the_commonwealth
 	set_cosmetic_tag = CAN_UK
-
-
 	add_to_tech_sharing_group = commonwealth_research
-
 }
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = yes
 }
-
 set_popularities = {
 	democratic = 100
-
 }
-
 create_country_leader = {
 	name = "Mackenzie King"
 	desc = "POLITICS_MACKENZIE_KING_DESC"
@@ -122,7 +120,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Adrien Arcand"
 	desc = "POLITICS_ADRIEN_ARCAND_DESC"
@@ -133,7 +130,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Tim Buck"
 	desc = "POLITICS_TIM_BUCK_DESC"
@@ -144,7 +140,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "J. S. Woodsworth"
 	desc = "POLITICS_JS_WOODSWORTH_DESC"
@@ -155,7 +150,6 @@ create_country_leader = {
 		#
 	}
 }
-
 set_convoys = 100
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
@@ -163,7 +157,6 @@ add_equipment_to_stockpile = {
 	producer = CAN
 }
 set_stability = 0.75
-
 create_corps_commander = {
 	name = "Thomas Victor Anderson"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
@@ -174,27 +167,25 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 5
 }
-
 create_field_marshal = {
 	name = "Charles Foulkes"
 	gfx = "GFX_CAN_charles_foulkes"
-	traits = {panzer_leader infantry_leader hill_fighter }
+	traits = {panzer_leader infantry_leader organizer }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Percival John Montague"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { infantry_leader naval_invader }
+	traits = { panzer_leader commando }
 	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 5
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
 }
 create_corps_commander = {
 	name = "Bert Hoffmeister"
@@ -206,7 +197,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
 create_navy_leader = {
 	name = "Leonard W. Murray"
 	gfx = "GFX_CAN_leonard_warren_murray"
@@ -217,7 +207,6 @@ create_navy_leader = {
 	maneuvering_skill = 3
 	coordination_skill = 3
 }
-
 create_navy_leader = {
 	name = "H.T. Baillie-Grohman"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
@@ -248,7 +237,6 @@ create_navy_leader = {
 	maneuvering_skill = 6
 	coordination_skill = 5
 }
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -265,7 +253,6 @@ if = {
 		}
 	}
 }
-
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	### Ship Variants ###
@@ -304,3 +291,4 @@ if = {
 		}
 	}
 }
+

@@ -1,63 +1,145 @@
-
-
-#Category only allowed for SOV
-
-
-operations = {
-	sov_spawn = {
-		icon = eng_blackshirt_march
-		fire_only_once = yes
-		allowed = {tag = SOV}
+debug_decisions = {
+	Test_Soviet_Front_Debug_Full_Infra_Damage = {
+		icon = generic_prepare_civil_war
+		allowed={ tag = sov }
 		available = {
-			has_war = no
-			date > 1941.1.1
+			is_ai = no
 		}
+		cost = 0
+		fire_only_once = yes
 		visible = {
+			is_ai = no
 		}
 		complete_effect = {
-			hidden_effect = {
-				division_template = {
-					name = "Filler"
-					regiments = {
-						infantry = { x = 0 y = 0 }
+			
+				ENG = {
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = convoy_count
+						producer = ENG
 					}
 				}
-				load_oob = "sov_spawn"
+			SOV = {
+				transfer_state = 96
+				transfer_state = 95
+				transfer_state = 94
+				transfer_state = 93
+				transfer_state = 91
+				transfer_state = 97
+				transfer_state = 89
+				transfer_state = 698
+				transfer_state = 680
+				transfer_state = 78
+				annex_country = { target = LAT }
+				annex_country = { target = EST }
+				annex_country = { target = LIT }
 			}
-			custom_effect_tooltip = "Spawns a 2w division in every province between Moscow and the Axis front. g
-			They would require 6.5M manpower and 650K guns to fully equip as 20w"
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+				annex_country = { target = POL }
+			}
+			every_state = {
+				limit = {
+					is_core_of = SOV
+					NOT = { has_state_flag = scorched_infrastructure_done }
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				set_state_flag = scorched_infrastructure_done
+			}
 		}
 	}
-	sov_spawn2 = {
-		icon = eng_blackshirt_march
-		fire_only_once = yes
-		allowed = {tag = SOV}
+	Test_Soviet_Front_Debug_Partial_Infra_Damage = {
+		icon = generic_prepare_civil_war
+		allowed={ tag = sov }
 		available = {
-			has_war = no
-			date > 1941.1.1
+			is_ai = no
 		}
+		cost = 0
+		fire_only_once = yes
 		visible = {
+			is_ai = no
 		}
 		complete_effect = {
-			hidden_effect = {
-				division_template = {
-					name = "Filler"
-					regiments = {
-						infantry = { x = 0 y = 0 }
-					}
-				}
-				load_oob = "sov_spawn"
+			SOV = {
+				transfer_state = 96
+				transfer_state = 95
+				transfer_state = 94
+				transfer_state = 93
+				transfer_state = 91
+				transfer_state = 97
+				transfer_state = 89
+				transfer_state = 698
+				transfer_state = 680
+				transfer_state = 78
+				annex_country = { target = LAT }
+				annex_country = { target = EST }
+				annex_country = { target = LIT }
 			}
-			custom_effect_tooltip = "Spawns a 2w division in every province between Moscow and the Axis front. g
-			They would require 6.5M manpower and 650K guns to fully equip as 20w"
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+				annex_country = { target = POL }
+			}
+			every_state = {
+				limit = {
+					is_core_of = SOV
+					NOT = { has_state_flag = scorched_infrastructure_done }
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+				set_state_flag = scorched_infrastructure_done
+			}
+		}
+	}
+	Test_Soviet_Front_Debug_NO_Infra_Damage = {
+		icon = generic_prepare_civil_war
+		allowed={ tag = sov }
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			is_ai = no
+		}
+		complete_effect = {
+			SOV = {
+				transfer_state = 96
+				transfer_state = 95
+				transfer_state = 94
+				transfer_state = 93
+				transfer_state = 91
+				transfer_state = 97
+				transfer_state = 89
+				transfer_state = 698
+				transfer_state = 680
+				transfer_state = 78
+				annex_country = { target = LAT }
+				annex_country = { target = EST }
+				annex_country = { target = LIT }
+			}
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+				annex_country = { target = POL }
+			}
 		}
 	}
 }
-
 SOV_mrp = {
-
 	SOV_prepare_finland = {
-
 		icon = generic_prepare_civil_war
 		allowed={tag=SOV}
 		available = {
@@ -71,8 +153,6 @@ SOV_mrp = {
 		ai_will_do = {
 			factor = 1
 		}
-
-
 		complete_effect = {
 			add_named_threat = { threat = 7.5 name = Winter_War_Threat }
 		}
@@ -82,36 +162,27 @@ SOV_mrp = {
 		}
 	}
 	SOV_attack_finland = {
-
 		icon = generic_prepare_civil_war
 		allowed={tag=sov}
 		available = {
-
 			custom_trigger_tooltip= {tooltip="Preparations completed" has_country_flag=finland_prepared}
 		}
-
-
-
 		cost = 0
 		fire_only_once = yes
 		visible = {
 			GER={has_completed_focus=GER_mol_rib_pact}
 		}
-
 		ai_will_do = {
 			factor = 1
 		}
-
-
 		complete_effect = {
 			SOV = {
 				army_experience = 200
-				transfer_state = 146
-				transfer_state= 147
+				transfer_state = 142
+				transfer_state= 143
 				country_event = { id = finland.8 }
-				146 = { remove_core_of = FIN }
-				147 = { remove_core_of = FIN }
-				activate_decision = war_bonds
+				142 = { remove_core_of = FIN }
+				143 = { remove_core_of = FIN }
 			}
 			hidden_effect = {
 				FIN = {
@@ -121,755 +192,636 @@ SOV_mrp = {
 		}
 	}
 }
-
-#Category only allowed for SOV
 SOV_great_patriotic_war = {
-
-
-	SOV_scorched_earth = {
-
-		icon = generic_scorched_earth
-
+	SOV_scorched_earth_mission = {
+		icon = revolt
+		priority = 100
+		allowed = {
+			original_tag = SOV
+		}
 		available = {
-			has_war = yes
-			any_enemy_country = {
-				is_major = yes
-			}
-			surrender_progress > 0
+			has_war = no
 		}
-
-		cost = 50
+		days_mission_timeout = 30
 		fire_only_once = yes
-		visible = {
-			has_war = yes
-			any_enemy_country = {
-				is_major = yes
-			}
-			surrender_progress > 0
+		is_good = yes
+		activation = {
+			has_war_with = GER
+			always=no
 		}
-
-		complete_effect = {
-			set_country_flag = SOV_scorched_earth
-			unlock_decision_tooltip = SOV_scorched_earth_baltics
-			unlock_decision_tooltip = SOV_scorched_earth_byelorussia
-			unlock_decision_tooltip = SOV_scorched_earth_ukraine
-			unlock_decision_tooltip = SOV_scorched_earth_stalingrad
-			unlock_decision_tooltip = SOV_scorched_earth_caucasus
-			unlock_decision_tooltip = SOV_scorched_earth_moscow
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 0
-				SOV_save_pp_for_manpower_trouble = yes
-			}
-		}
-	}
-	SOV_scorched_earth_baltics = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 24
-			}
-		}
-
-		cost = 50
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			OR = {
-				controls_state = 189
-				controls_state = 11
-				controls_state = 190
-				controls_state = 12
-				controls_state = 191
-				controls_state = 13
-			}
-			has_country_flag = SOV_scorched_earth
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -25
-			}
-			if = {
-				limit = {
-					controls_state = 189
-				}
-				189 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 11
-				}
-				11 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 190
-				}
-				190 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 12
-				}
-				12 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 191
-				}
-				191 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					controls_state = 13
-				}
-				13 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_scorched_earth_byelorussia = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			any_of = {
-				array = BLR.core_states
-				var:v = { is_controlled_by = SOV }
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
+		timeout_effect = {
 			every_state = {
 				limit = {
-					is_core_of = BLR
-					is_controlled_by = SOV
+					is_core_of = SOV
+					NOT = { is_fully_controlled_by = SOV }
+					NOT = { has_state_flag = scorched_infrastructure_done }
 				}
 				damage_building = {
 					type = infrastructure
-					damage = 3
+					damage = 5
 				}
+				set_state_flag = scorched_infrastructure_done
 			}
 		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_scorched_earth_ukraine = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			any_state = {
-				is_core_of = UKR
-				is_controlled_by = SOV
-			}
-			has_equipment = {
-				support_equipment > 74
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			any_state = {
-				is_core_of = UKR
-				is_controlled_by = SOV
-			}
-		}
-
 		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -75
-			}
-			every_state = {
-				limit = {
-					is_core_of = UKR
-					is_controlled_by = SOV
-				}
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
 		}
 	}
-	SOV_scorched_earth_caucasus = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			OR = {
-				420 = { CONTROLLER = { has_war_with = SOV } }
-				419 = { CONTROLLER = { has_war_with = SOV } }
-				353 = { CONTROLLER = { has_war_with = SOV } }
-				354 = { CONTROLLER = { has_war_with = SOV } }
-				137 = { CONTROLLER = { has_war_with = SOV } }
-				218 = { CONTROLLER = { has_war_with = SOV } }
-				238 = { CONTROLLER = { has_war_with = SOV } }
-				237 = { CONTROLLER = { has_war_with = SOV } }
-				236 = { CONTROLLER = { has_war_with = SOV } }
-				231 = { CONTROLLER = { has_war_with = SOV } }#sneaky QA naval invasion check
-				233 = { CONTROLLER = { has_war_with = SOV } }
-				234 = { CONTROLLER = { has_war_with = SOV } }
-			}
-			has_country_flag = SOV_scorched_earth
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
-			if = {
-				limit = {
-					229 = { is_controlled_by = SOV}
-				}
-				229 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					230 = { is_controlled_by = SOV}
-				}
-				230 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					231 = { is_controlled_by = SOV}
-				}
-				231 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					232 = { is_controlled_by = SOV}
-				}
-				232 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					233 = { is_controlled_by = SOV}
-				}
-				233 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					234 = { is_controlled_by = SOV}
-				}
-				234 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					235 = { is_controlled_by = SOV}
-				}
-				235 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_scorched_earth_stalingrad = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			OR = {
-				227 = { CONTROLLER = { has_war_with = SOV } }
-				228 = { CONTROLLER = { has_war_with = SOV } }
-				218 = { CONTROLLER = { has_war_with = SOV } }
-				245 = { CONTROLLER = { has_war_with = SOV } }
-				237 = { CONTROLLER = { has_war_with = SOV } }
-				236 = { CONTROLLER = { has_war_with = SOV } }
-				231 = { CONTROLLER = { has_war_with = SOV } }#sneaky QA naval invasion check
-				238 = { CONTROLLER = { has_war_with = SOV } }
-				260 = { CONTROLLER = { has_war_with = SOV } }
-				239 = { CONTROLLER = { has_war_with = SOV } }
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
-			if = {
-				limit = {
-					245 = { is_controlled_by = SOV}
-				}
-				245 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					217 = { is_controlled_by = SOV}
-				}
-				217 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					218 = { is_controlled_by = SOV}
-				}
-				218 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					238 = { is_controlled_by = SOV}
-				}
-				238 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					237 = { is_controlled_by = SOV}
-				}
-				237 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					236 = { is_controlled_by = SOV}
-				}
-				236 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-			if = {
-				limit = {
-					265 = { is_controlled_by = SOV}
-				}
-				265 = {
-					damage_building = {
-						type = infrastructure
-						damage = 3
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	SOV_scorched_earth_moscow = {
-
-		icon = generic_scorched_earth
-
-		available = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			has_equipment = {
-				support_equipment > 49
-			}
-		}
-
-		cost = 75
-		fire_only_once = yes
-		visible = {
-			has_war = yes
-			has_country_flag = SOV_scorched_earth
-			OR = {
-				207 = { CONTROLLER = { has_war_with = SOV } }
-				210 = { CONTROLLER = { has_war_with = SOV } }
-				241 = { CONTROLLER = { has_war_with = SOV } }
-				193 = { CONTROLLER = { has_war_with = SOV } }
-				225 = { CONTROLLER = { has_war_with = SOV } }
-				240 = { CONTROLLER = { has_war_with = SOV } }
-			}
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = -50
-			}
-			every_state = {
-				limit = {
-					OR = {
-						state = 220
-						state = 222
-						state = 224
-						state = 243
-						state = 205
-						state = 242
-						state = 246
-						state = 219
-					}
-					is_controlled_by = SOV
-				}
-				damage_building = {
-					type = infrastructure
-					damage = 3
-				}
-			}
-
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-}
-
-SOV_great_patriotic_war = {
-
 	SOV_move_capital_kazan={
 		icon = generic_civil_support
 		allowed = {
 			original_tag = SOV
-
 		}
 		visible={has_war_with=GER}
 		available={
-			249={is_capital=no}}
+			242={is_capital=no}}
 		complete_effect={
-			set_capital=249
+			set_capital=242
 		}
 	}
 	SOV_move_capital_stalingrad={
 		icon = generic_civil_support
 		allowed = {
 			original_tag = SOV
-
 		}
 		visible={has_war_with=GER}
 		available={
-			217={is_capital=no}}
+			210={is_capital=no}}
 		complete_effect={
-			set_capital=217
+			set_capital=210
 		}
 	}
 	SOV_move_capital_leningrad={
 		icon = generic_civil_support
 		allowed = {
 			original_tag = SOV
-
 		}
 		visible={has_war_with=GER}
 		available={
-			195={is_capital=no}}
+			188={is_capital=no}}
 		complete_effect={
-			set_capital=195
+			set_capital=188
 		}
 	}
 	SOV_move_capital_moscow={
 		icon = generic_civil_support
 		allowed = {
 			original_tag = SOV
-
 		}
 		visible={has_war_with=GER}
 		available={
-			219={is_capital=no}}
+			212={is_capital=no}}
 		complete_effect={
-			set_capital=219
+			set_capital=212
 		}
 	}
-
-
-	#217 "Stalingrad"
-	SOV_hold_stalingrad = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		#Fail trigger
+	SOV_hero_city_brzesc_litewski = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
 		available = {
-			NOT = { controls_state = 217 }
+			controls_state = 94
 		}
-
-		days_mission_timeout = 180
-
+		visible = {
+			controls_state = 94
+		}
+		cost = 50
 		fire_only_once = yes
-
-		is_good = yes
-
-		activation = {
-			has_war_with = GER
-			has_civil_war = no
-			217 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
+		complete_effect = {
+			94 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =3171
 					}
-					NOT = { is_fully_controlled_by = ROOT }
 				}
 			}
 		}
-
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			217 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.1
-		}
-		#Fail
-		complete_effect = {
-			217 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.2
+		ai_will_do = {
+			factor = 1
 		}
 	}
-
-	#195 "Leningrad"
-	SOV_hold_leningrad = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		#Fail trigger
+	SOV_hero_city_odessa = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
 		available = {
-			NOT = { controls_state = 195 }
+			controls_state = 185
 		}
-
-		days_mission_timeout = 180
-
+		visible = {
+			controls_state = 185
+		}
+		cost = 50
 		fire_only_once = yes
-
-		is_good = yes
-
-		activation = {
-			has_war_with = GER
-			has_civil_war = no
+		complete_effect = {
+			185 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =10593
+						id =11909
+						id =11910
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_kiev = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 195
+		}
+		visible = {
+			controls_state = 195
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
 			195 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =490
+						id =11903
+						id =11905
+						id =11906
+						id =11904
 					}
-					NOT = { is_fully_controlled_by = ROOT }
 				}
 			}
 		}
-
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			195 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.3
-		}
-		#Fail
-		complete_effect = {
-			195 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.4
+		ai_will_do = {
+			factor = 1
 		}
 	}
-
-	#219 "Moscow"
-	SOV_hold_moscow = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		#Fail trigger
+	SOV_hero_city_dnipropetrovsk_zaporozhe = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
 		available = {
-			NOT = { controls_state = 219 }
+			controls_state = 219
+			controls_state = 193
 		}
-
-		days_mission_timeout = 180
-
+		visible = {
+			controls_state = 219
+			controls_state = 193
+		}
+		cost = 50
 		fire_only_once = yes
-
-		is_good = yes
-
-		activation = {
-			has_war_with = GER
-			has_civil_war = no
+		complete_effect = {
 			219 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =10365
 					}
-					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+			193 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =10333
+					}
 				}
 			}
 		}
-
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			219 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.5
+		ai_will_do = {
+			factor = 1
 		}
-		#Fail
+	}
+	SOV_hero_city_gomel = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 234
+		}
+		visible = {
+			controls_state = 234
+		}
+		cost = 50
+		fire_only_once = yes
 		complete_effect = {
-			219 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.6
+			234 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =8524
+						id =11915
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_bryansk = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 217
+		}
+		visible = {
+			controls_state = 217
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			217 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =3119
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_kharkov = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 214
+		}
+		visible = {
+			controls_state = 214
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			214 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =383
+						id =11914
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_voronezh = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 253
+		}
+		visible = {
+			controls_state = 253
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			253 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =378
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_leningrad = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 188
+		}
+		visible = {
+			controls_state = 188
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			188 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =2944
+						id =135
+						id =10062
+						id =10218
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_stalingrad = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 210
+		}
+		visible = {
+			controls_state = 210
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			210 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =3306
+						id =10402
+						id =463
+						id =11895
+						id =11896
+						id =11898
+						id =11897
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_minsk = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 199
+		}
+		visible = {
+			controls_state = 199
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			199 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =10301
+						id =11916
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_tula = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 216
+		}
+		visible = {
+			controls_state = 216
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			216 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =5776
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_vitebsk_smolensk = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 200
+			controls_state = 235
+		}
+		visible = {
+			controls_state = 200
+			controls_state = 235
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			200 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =10183
+						id =11918
+					}
+				}
+			}
+			235 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =275
+						id =11917
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_sevastopol = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 133
+		}
+		visible = {
+			controls_state = 133
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			133 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =3458
+						id =11907
+						id =11908
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_rostov = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 211
+		}
+		visible = {
+			controls_state = 211
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			211 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =8641
+						id =11913
+						id =11912
+						id =11911
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_krasnodar = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 227
+		}
+		visible = {
+			controls_state = 227
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			227 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =3505
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_rzhev = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 239
+		}
+		visible = {
+			controls_state = 239
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			239 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =10280
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_kalinin = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 240
+		}
+		visible = {
+			controls_state = 240
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			240 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =5759
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_moscow = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 212
+		}
+		visible = {
+			controls_state = 212
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			212 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =11901
+						id =11902
+						id =5889
+						id =11900
+						id =11899
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SOV_hero_city_baku = {
+		icon = generic_scorched_earth
+		allowed = { original_tag = SOV }
+		available = {
+			controls_state = 222
+		}
+		visible = {
+			controls_state = 222
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			222 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =7094
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }
+

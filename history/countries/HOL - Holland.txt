@@ -1,5 +1,4 @@
-﻿capital = 7
-
+capital = 7
 oob = "HOL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,12 +7,12 @@ if = {
 		set_naval_oob = "HOL_1936_naval_legacy"
 	}
 }
-
 set_research_slots = 3
 set_stability = 0.75
 set_war_support = 0
-
 set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -26,8 +25,8 @@ set_technology = {
 	fuel_refining = 1
 	marines = 1
 }
-
-add_timed_idea = { idea = no_training days= 730 }
+add_timed_idea = { idea = no_training days= 1095 }
+add_ideas = peace_training
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 3600
@@ -39,7 +38,6 @@ if = {
 	}
 	set_technology = { bicycle_infantry = 1 }
 }
-
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -69,22 +67,15 @@ if = {
 		mtg_transport = 1
 	}
 }
-
 # DIPLOMACY
 set_autonomy = {
 	target = INS
 	autonomous_state = autonomy_integrated_puppet
 }
-
-
-
-
 set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
-
 add_ideas = {
 	HOL_wilhelmina
 }
-
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -107,11 +98,8 @@ set_popularities = {
 	fascism = 4
 	communism = 3
 }
-
-set_convoys = 150
+set_convoys = 50
 set_stability = 0.75
-
-
 create_country_leader = {
 	name = "Hendrikus Colijn"
 	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
@@ -122,7 +110,6 @@ create_country_leader = {
 		strict_austerity_adherent
 	}
 }
-
 create_field_marshal = {
 	name = "Izaak Reijnders"
 	id = 980
@@ -134,7 +121,6 @@ create_field_marshal = {
 	planning_skill = 1
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Godfried van Voorst tot Voorst"
 	gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
@@ -145,8 +131,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -307,3 +291,4 @@ if = {
 		}
 	}
 }
+

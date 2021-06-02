@@ -1,11 +1,8 @@
-
 state={
 	id=109
-	name="STATE_109" # Croatia
+	name="STATE_109"
 	manpower = 2224400
-
 	state_category = large_town
-
 	history={
 		owner = YUG
 		buildings = {
@@ -13,12 +10,12 @@ state={
 			industrial_complex = 3
 		}
 		victory_points = {
-			11581 3
+			10509 3
 		}
 		add_core_of = YUG
 	}
-
 	provinces={
-		624 3592 3596 3627 6647 9595 9611 11577 11580 11581 11594
+		589 3369 3373 3403 6151 8818 8833 10505 10508 10509 10521
 	}
 }
+

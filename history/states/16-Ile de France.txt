@@ -1,16 +1,22 @@
-
 state={
 	id=16
 	name="STATE_16"
 	manpower = 7038500
-
 	state_category = metropolis
-
-
 	history={
+	
+		add_province_modifier = {
+			static_modifiers = { paris_city }
+			province = {
+				id =10434
+				id =8747
+				id =8758
+			}
+		}
+			
 		owner = FRA
 		victory_points = {
-			11506 50
+			8747 50
 		}
 		buildings = {
 			infrastructure = 8
@@ -27,8 +33,8 @@ state={
 			}
 		}
 	}
-
 	provinces={
-		6547 6949 9507 9523 9534 9725 11491 11506 11518
+		6051 6428 8731 8747 8758 8942 10419 10434 10446 11866
 	}
 }
+

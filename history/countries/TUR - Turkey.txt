@@ -1,15 +1,11 @@
-﻿capital = 49
+capital = 49
 set_research_slots = 0
-
 add_ideas = {
 	limited_conscription
 	neutral_idea
 }
-
 set_technology = {
 }
-
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.2.8"
@@ -20,10 +16,8 @@ set_popularities = {
 	democratic = 10
 	neutrality = 90
 }
-
 set_convoys = 1
 set_stability = 0.55
-
 # Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
 create_country_leader = {
 	name = "Ismet Inönü"
@@ -35,7 +29,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Mustafa Kemal Atatürk"
 	desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
@@ -46,3 +39,4 @@ create_country_leader = {
 		#
 	}
 }
+

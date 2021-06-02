@@ -1,13 +1,8 @@
-﻿capital = 3
-
+capital = 3
 oob = "SWI_1936"
-
 set_research_slots = 0
-
 set_technology = {
 }
-
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.10.27"
@@ -19,14 +14,11 @@ set_popularities = {
 	fascism = 2
 	communism = 2
 }
-
 add_ideas = {
 	neutrality_idea
 	neutral_idea
 }
-
 set_stability = 0.85
-
 create_country_leader = {
 	name = "Federal Council"
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
@@ -37,3 +29,4 @@ create_country_leader = {
 		#
 	}
 }
+

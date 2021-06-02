@@ -29,7 +29,6 @@
 			#				}
 		#			}
 	#		}
-
 # This specifically overrides the rule check as to whether or not you can guarantee other ideologies
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
 	NOT = {
@@ -39,7 +38,6 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME = {
 		}
 	}
 }
-
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 	if = {
 		limit = {
@@ -84,7 +82,6 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 		}
 	}
 }
-
 DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 	if = {
 		limit = {
@@ -99,7 +96,6 @@ DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 		}
 	}
 }
-
 DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
@@ -107,11 +103,9 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				rule = allow_release_nations
 				option = FREE
 			}
-
 		}
 		always = no
 	}
-
 	if = {
 		limit = {
 			has_game_rule = {
@@ -374,8 +368,25 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		hidden_trigger={OR={NOT={OR={tag=Jap tag=MAN}}
-				FROM={OR={tag=Jap tag=MAN}}}}
+		
+		hidden_trigger={
+			OR={
+				AND={tag=JAP FROM={tag=MAN}}
+				AND={tag=MAN FROM={tag=JAP}}
+				NOT={
+					OR={
+						tag=Jap 
+						tag=MAN 
+						AND={
+							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
+						}
+					}
+					FROM={OR={tag=Jap tag=MAN AND={
+							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
+						}}}
+				}
+				}
+			}
 	}
 	if = {
 		limit = {
@@ -431,12 +442,25 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		hidden_trigger={OR = {
+		
+		hidden_trigger={
+			OR={
+				AND={tag=JAP FROM={tag=MAN}}
+				AND={tag=MAN FROM={tag=JAP}}
 				NOT={
-					From={OR={tag=Jap tag=MAN}}}
-				OR={tag=Jap tag=MAN}
-				}}
-
+					OR={
+						tag=Jap 
+						tag=MAN 
+						AND={
+							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
+						}
+					}
+					FROM={OR={tag=Jap tag=MAN AND={
+							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
+						}}}
+				}
+				}
+			}
 	}
 	if = {
 		limit = {
@@ -530,7 +554,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 				option = ALWAYS_FREE
 			}
 		}
-		always = yes
+		always = no
 	}
 	if = {
 		limit = {
@@ -801,3 +825,4 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		}
 	}
 }
+

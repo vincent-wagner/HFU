@@ -3,7 +3,7 @@ sub_units = {
 	artillery_brigade = {
 		sprite = artillery
 		map_icon_category = infantry
-		priority = 1198
+		priority = 1000
 		ai_priority = 100
 		active = yes
 
@@ -35,8 +35,8 @@ sub_units = {
 		supply_consumption = 0.15
 
 		#Line artillery bonuses
-		soft_attack = 0.25
-
+		soft_attack = 0.29
+		initiative = 0.015
 		forest = {
 			attack = -0.2
 			movement = -0.2
@@ -77,7 +77,7 @@ sub_units = {
 	mot_artillery_brigade = {
 		sprite = artillery
 		map_icon_category = infantry
-		priority = 1198
+		priority = 1000
 		ai_priority = 100
 		active = yes
 
@@ -92,8 +92,9 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_artillery
+			category_mobile_artillery
 		}
-
+		soft_attack = 0.25
 		combat_width = 3
 		transport = motorized_equipment
 		manpower = 500
@@ -101,7 +102,7 @@ sub_units = {
 			artillery_equipment = 36
 			motorized_equipment = 50
 		}
-
+		initiative = 0.015
 		max_strength = 0.6
 		max_organisation = 0
 		default_morale = 0.1
@@ -171,14 +172,14 @@ sub_units = {
 		need = {
 			rocket_artillery_equipment = 36
 		}
-
+		initiative = 0.015
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 0.6
+		max_strength = -10
 		training_time = 120
 		weight = 0.5
-
+		soft_attack = 0.04
 		supply_consumption = 0.15
 
 		forest = {
@@ -236,6 +237,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_artillery
+			category_mobile_artillery
 		}
 
 		combat_width = 3
@@ -248,10 +250,10 @@ sub_units = {
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 0.6
+		max_strength = -10
 		training_time = 120
 		weight = 0.5
-
+		initiative = 0.015
 		supply_consumption = 0.15
 
 		forest = {
@@ -310,6 +312,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_artillery
+			category_mobile_artillery
 		}
 
 		combat_width = 3
@@ -318,14 +321,17 @@ sub_units = {
 			motorized_rocket_equipment = 20
 			motorized_equipment = 15
 		}
-
+		initiative = 0.015
 		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
+		max_organisation = 7
+		default_morale = 0.15
+		max_strength = 7
 		training_time = 120
-		weight = 0.5
+		weight = 0.75
 
+		soft_attack = 12
+		breakthrough = 6
+		defense = 2
 
 		supply_consumption = 0.15
 

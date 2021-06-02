@@ -1,4 +1,4 @@
-﻿capital = 275
+capital = 267
 oob = "SAF_1936"
 set_stability = 0.6
 set_war_support = 0.15
@@ -12,6 +12,14 @@ add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
 # Starting tech
 set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
+	desertinfantry_at = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	tech_mountaineers = 1
+	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -22,8 +30,6 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
 	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
@@ -32,7 +38,6 @@ set_technology = {
 	fuel_silos = 1
 	motorised_infantry = 1
 }
-
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -86,17 +91,14 @@ if = {
 		improved_secondary_battery = 1
 		basic_fire_control_system = 1
 	}
-
 }
 if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_ideas = SAF_ossewabrandwag
 	add_ideas = SAF_history_of_segregation
 	add_ideas = SAF_the_commonwealth
-
 	add_to_tech_sharing_group = commonwealth_research
 }
-
 set_convoys = 100
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
@@ -124,7 +126,6 @@ set_popularities = {
 	fascism = 20
 	communism = 5
 }
-
 create_country_leader = {
 	name = "J. B. M. Hertzog"
 	desc = "POLITICS_J_B_M_HERTZOG_DESC"
@@ -135,8 +136,6 @@ create_country_leader = {
 		#
 	}
 }
-
-
 create_country_leader = {
 	name = "D. F. Malan"
 	desc = "POLITICS_DF_MALAN_DESC"
@@ -147,7 +146,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Moses Kotane"
 	desc = "POLITICS_MOSES_KOTANE_DESC"
@@ -158,7 +156,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Pixley Ka Isaka Seme"
 	desc = "POLITICS_PIXLEY_SEME_DESC"
@@ -169,12 +166,12 @@ create_country_leader = {
 		#
 	}
 }
-
 create_corps_commander = {
 	name = "George Edwin Brink"
 	gfx = "GFX_SAF_george_edwin_brink"
-	traits = { desert_fox panzer_leader trickster trait_engineer }
+	traits = { desert_fox panzer_leader trickster trait_engineer infantry_leader cavalry_leader}
 	skill = 4
+	id = 633
 	attack_skill = 5
 	defense_skill = 3
 	planning_skill = 4
@@ -183,7 +180,8 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Jan Smuts"
 	gfx = "GFX_SAF_jan_smuts"
-	traits = { desert_fox panzer_leader ambusher organizer }
+	traits = { desert_fox panzer_leader organizer infantry_leader cavalry_leader}
+	id = 634
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -200,3 +198,4 @@ create_navy_leader = {
 	maneuvering_skill = 2
 	coordination_skill = 2
 }
+

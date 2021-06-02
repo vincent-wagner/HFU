@@ -16,12 +16,9 @@
 		military_police = { x = 0 y = 0 }
 	}
 }
-
 division_template = {
 	name = "Infanterie-Division"
-
 	division_names_group = GER_Inf_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -49,36 +46,9 @@ division_template = {
 		anti_air = { x = 0 y = 3  }
 	}
 }
-
-division_template = {
-	name = "Garnison"
-
-	division_names_group = GER_Inf_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		anti_air = { x = 0 y = 1  }
-	}
-	priority = 0
-}
-
 division_template = {
 	name = "Panzer-Division"
-
 	division_names_group = GER_Arm_01
-
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -103,128 +73,110 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
 	}
 }
-
-
 division_template = {
-	name = "SS-Division"
-
+	name = "Brandenburgers"
 	division_names_group = GER_Inf_01
 	is_locked = yes
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-		artillery_brigade = { x = 0 y = 4 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
-		artillery_brigade = { x = 1 y = 4 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-		artillery_brigade = { x = 2 y = 3 }
-		mountaineers = { x = 3 y = 0 }
-		mountaineers = { x = 3 y = 1 }
-		mountaineers = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
+		ss = { x = 0 y = 0 }
+		ss = { x = 0 y = 1 }
+		ss = { x = 0 y = 2 }
+		ss = { x = 0 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		ss = { x = 1 y = 0 }
+		ss = { x = 1 y = 1 }
+		ss = { x = 1 y = 2 }
+		ss = { x = 1 y = 3 }
+		artillery_brigade = { x = 3 y = 1 }
+		ss = { x = 2 y = 0 }
+		ss = { x = 2 y = 1 }
+		ss = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 2 }
+		ss = { x = 0 y = 4 }
+		ss = { x = 1 y = 4 }
+		ss = { x = 2 y = 3 }
+		anti_tank_brigade = { x = 2 y = 4 }
+		anti_air_brigade = { x = 3 y = 4 }
+		anti_air_brigade = { x = 3 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 		recon = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
-		logistics_company = { x = 0 y = 4  }
+		anti_tank = { x = 0 y = 4  }
 		signal_company = { x = 0 y = 5  }
 	}
 	priority = 2
 }
 units = {
-
-	##### Oberkommando des Heeres #####
-	### 1. Armee (Wehrmacht-Gruppenkommando) ###
-	# II. Armeekorps
 	division= {
 		name = "SS-Division Leibstandarte SS Adolf Hitler"
-		location = 6334
-		division_template = "SS-Division"
+		location =5844
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Totenkopf"
-		location = 6334
-		division_template = "SS-Division"
+		location =5844
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Das Reich"
-
-		location = 6334
-		division_template = "SS-Division"
+		location =5844
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Wiking"
-		location = 6334
-		division_template = "SS-Division"
+		location =5844
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Nibelungen"
-		location = 6334
-		division_template = "SS-Division"
+		location =5844
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Polizei"
-		location = 6334
-		division_template = "SS-Division"
+		location =5844
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Nord"
-		location = 6334
-		division_template = "SS-Division"
+		location =5844
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Prinz Eugen"
-		location = 6334
-		division_template = "SS-Division"
+		location =5844
+		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Florian Geyer"
-		location = 6334
+		location =5844
 		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Hitlerjugend"
-		location = 6334
+		location =5844
 		division_template = "Panzer-Division"
 		start_experience_factor = 1
 	}
-
 }
-
-
-
-
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
-
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -234,7 +186,6 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -244,7 +195,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -263,7 +213,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_2
@@ -273,7 +222,6 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -283,7 +231,6 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1
@@ -294,7 +241,6 @@ instant_effect = {
 		progress = 0.15
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = CAS_equipment_1
@@ -304,7 +250,6 @@ instant_effect = {
 		progress = 0.2
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = tac_bomber_equipment_1
@@ -316,4 +261,3 @@ instant_effect = {
 	}
 }
 
-#####################

@@ -1,37 +1,32 @@
-
 state={
 	id=110
 	name="STATE_110"
 	resources={
 		aluminium=20.000
 	}
-
 	history={
 		victory_points = {
-			6115 15
+			5656 15
 		}
 		owner = NOR
 		buildings = {
 			infrastructure = 6
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 3
 			dockyard = 1
 			air_base = 4
-			6115 = {
+			5656 = {
 				naval_base = 6
 				coastal_bunker = 3
-
 			}
-
 		}
 		add_core_of = NOR
-
 	}
-
 	provinces={
-		10 14 27 100 111 133 144 179 3007 3021 3094 3105 3136 3171 6042 6072 6080 6115 6151 6160 6184 9036 9103 9157 9174 9204 11028 11029 11078 11113 11135 11151 11184 11206
+		10 14 27 96 105 122 133 159 2819 2833 2899 2907 2933 2962 5592 5618 5625 5656 5683 5690 5708 8316 8374 8414 8429 8453 10012 10013 10050 10081 10096 10110 10138 10154
 	}
 	manpower=1410219
 	buildings_max_level_factor=1.000
 	state_category=city
 }
+

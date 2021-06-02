@@ -1,27 +1,17 @@
-﻿###########################
-# French Events
-###########################
-
 add_namespace = france
-
-# Japan demands Indochina
 country_event = {
 	id = france.1
 	title = france.1.t
 	desc = france.1.d
 	picture = GFX_report_event_japan_army_mountainside
-
 	is_triggered_only = yes
-
-	option = { # Accept demands
+	option = {
 		name = france.1.a
 		JAP = {
 			country_event = { days = 5 id = japan.6 }
 		}
 	}
 }
-
-
 country_event = {
 	id = france.12
 	title = france.12.t
@@ -30,50 +20,33 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	hidden=yes
-	option = { # Agree
+	option = {
 		name = france.12.a
-		add_timed_idea = {
-			idea = FRA_snakemodding
-			days = 45
-		}
+		
 	}
 }
-
 country_event = {
 	id = france.10
 	title = france.10.t
 	desc = france.10.d
 	picture = GFX_report_event_worried_french
-	
 	is_triggered_only = yes
-		
-	fire_only_once = no 
-	
+	fire_only_once = no
 	option = {
 		name = france.10.a
-		
-		
 	}
-	
 }
 country_event = {
 	id = france.11
 	title = france.11.t
 	desc = france.11.d
 	picture = GFX_report_event_worried_french
-	
 	is_triggered_only = yes
-		
-	fire_only_once = no 
-	
+	fire_only_once = no
 	option = {
 		name = france.11.a
-		
-		
 	}
-	
 }
-
 country_event = {
 	id = france.13
 	title = france.13.t
@@ -82,9 +55,10 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	hidden=yes
-	option = { # Agree
+	option = {
 		FRA ={
-		remove_ideas = Phoney_War
+			remove_ideas = Phoney_War
+			remove_ideas = tradeback_is_cancer
 		}
 		EFR ={inherit_technology = FRA}
 		EFR ={transfer_state =20}
@@ -92,10 +66,6 @@ country_event = {
 		GER = { country_event = {id=france.14 days=2} }
 	}
 }
-
-
-
-# France wants Armistice (Germany)
 country_event = {
 	id = france.14
 	title = france.14.t
@@ -103,29 +73,25 @@ country_event = {
 	picture = GFX_report_event_german_parade_paris
 	fire_only_once = yes
 	is_triggered_only = yes
-
-	option = { # Agree
+	option = {
 		name = france.14.a
 		set_global_flag = achievement_france_surrender
 		set_global_flag = fall_of_france
 		add_political_power = 100
 		add_timed_idea={idea=GER_triumph_in_france days=730}
-
-
-
 		GER={
-			set_variable={collabo=has_collaboration@FRA}
-			multiply_variable={collabo=100}
-
+			#set_variable={collabo=has_collaboration@FRA}
+			#multiply_variable={collabo=100}
+			#add_to_variable= {pow_other_sources = 100}
 		}
-		FRA={transfer_navy = {
+		FRA={
+			#pow_before_annex=yes
+			#clear_variable = getting_annexed
+			transfer_navy = {
 				target = VEN
 				}}
 		EFR ={annex_country = { target = FRA transfer_troops = no }}
-
-
 		EFR = {
-
 			every_state = {
 				limit = { is_core_of = FRA }
 				add_core_of = EFR
@@ -139,7 +105,6 @@ country_event = {
 				fascism = 100
 			}
 		}
-
 		EFR = {
 			add_ideas = EFR_neutrality_idea
 			diplomatic_relation = { country = ENG relation = non_aggression_pact }
@@ -153,35 +118,37 @@ country_event = {
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
 		}
 		if = {
-			limit = {Date < 1939.11.1}
-
+			limit = {has_global_flag=Fall_of_france_oct}
 			ITA = {
-				transfer_state = 735
+				transfer_state = 653
 				transfer_state = 32
 				transfer_state = 21
 				transfer_state = 1
-				transfer_state = 458
-				transfer_state = 665
+				transfer_state = 422
+				transfer_state = 584
 			}
 		}
-
+		else = {
+			ITA = {
+				transfer_state = 653
+				transfer_state = 422
+				transfer_state = 584
+			}
+		}
 		JAP = {
 			EFR = { country_event = { id = france.1 } }
-			transfer_state = 286
-			transfer_state = 670
-			transfer_state = 671
-			transfer_state = 741
-			transfer_state = 728
+			transfer_state = 274
+			transfer_state = 589
+			transfer_state = 590
+			transfer_state = 659
+			transfer_state = 646
 		}
-
-
 		GER = {
-
 			transfer_state = 28
 			transfer_state = 17
 			transfer_state = 18
 			transfer_state = 29
-			transfer_state = 785
+			transfer_state = 699
 			transfer_state = 16
 			transfer_state = 15
 			transfer_state = 14
@@ -190,40 +157,41 @@ country_event = {
 			transfer_state = 24
 			transfer_state = 30
 			transfer_state = 27
-
 		}
 		FRA = {
 			change_tag_from = EFR
 		}
-
 		FRA = {
 			add_ideas = FRA_no_training_queue
 			add_ideas = FRA_defeatism
-			transfer_state = 539
-			transfer_state = 772
-			transfer_state = 773
-			transfer_state = 774
-			transfer_state = 660
-			transfer_state = 310
-			transfer_state = 635
-			transfer_state = 734
-			transfer_state = 641
-			transfer_state = 320
-			transfer_state = 694
-			transfer_state = 706
-			transfer_state = 713
-			transfer_state = 708
-			transfer_state = 295
-			transfer_state = 538
-			transfer_state = 718
-			transfer_state = 768
-			transfer_state = 769
+			transfer_state = 466
+			transfer_state = 686
+			transfer_state = 687
+			transfer_state = 688
+			transfer_state = 580
+			transfer_state = 288
+			transfer_state = 556
+			transfer_state = 652
+			transfer_state = 562
+			transfer_state = 290
+			transfer_state = 612
+			transfer_state = 624
+			transfer_state = 631
+			transfer_state = 626
+			transfer_state = 282
+			transfer_state = 465
+			transfer_state = 636
+			transfer_state = 682
+			transfer_state = 683
+			transfer_state = 648
 			set_cosmetic_tag = FRA_FREE
-			clr_country_flag = no_naval_base
+			set_technology = {
+				naval_base_allowed = 1
+				popup = no
+			}
 			remove_ideas = FRA_protected_by_the_maginot_line
 			set_country_flag = free_france
-			set_capital = 539
-
+			set_capital = 466
 			country_event = france.20
 		}
 		ENG = { add_to_faction = FRA }
@@ -247,10 +215,6 @@ country_event = {
 		GER = { country_event = {id=france.15 days=10} }
 	}
 }
-
-
-
-
 country_event = {
 	id = france.187
 	title = france.187.t
@@ -261,11 +225,8 @@ country_event = {
 	hidden = yes
 	option = {
 		FRA = {set_equipment_fraction = 0}
-
 	}
 }
-
-#Capital captured by non french faction
 country_event = {
 	id = france.15
 	title = france.15.t
@@ -273,63 +234,56 @@ country_event = {
 	picture = GFX_report_event_german_parade_paris
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	option = {
 		name = france.15.a
-
+		16 = {
+		remove_province_modifier = {
+			static_modifiers = { paris_city }
+			province = {
+				id =10434
+				id =8747
+			}
+		}
+		}
 		GER = {
-
 			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
-				amount = 3000
-				producer = FRA
+				type = infantry_equipment
+				amount = 80000
+				producer = GER
 			}
 			add_equipment_to_stockpile = {
-				type = anti_air_equipment_1
+				type = artillery_equipment
+				amount = 8000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
 				amount = 2000
-				producer = FRA
-			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 30000
-				producer = FRA
-			}
-
-			add_equipment_to_stockpile = {
-				type = motorized_equipment_1
-				amount = 2000
-				producer = FRA
+				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment
 				amount = 2000
-				producer = FRA
+				producer = GER
 			}
 		}
-
 	}
 }
-
-#Capital captured by non french faction
 country_event = {
 	id = france.16
 	title = france.16.t
 	desc = france.16.d
 	picture = GFX_report_event_french_resistance_02
-
 	is_triggered_only = yes
-
 	option = {
 		name = france.16.a
 		remove_ideas = FRA_victors_of_wwi
 		remove_ideas = FRA_disjointed_government
-
 		set_country_flag = casablanca_capital
-
 		if = {
-			limit = { 461 = { is_owned_by = FRA }
+			limit = { 425 = { is_owned_by = FRA }
 			}
-			set_capital = 461
+			set_capital = 425
 		}
 	}
 }
@@ -338,9 +292,7 @@ country_event = {
 	title = france.20.t
 	desc = france.20.d
 	picture = GFX_report_event_degaulle_churchill
-
 	is_triggered_only = yes
-
 	option = {
 		custom_effect_tooltip = france.20.a_tt
 		set_country_flag = france_de_gaulle
@@ -352,24 +304,19 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
-
 				}
 			}
 		}
-
 		name = france.20.a
 	}
 }
-# French strikes
 country_event = {
 	id = france.21
 	title = france.21.t
 	desc = france.21.d
 	picture = GFX_report_event_worker_protests
-
 	is_triggered_only = yes
 	fire_only_once = yes
-
 	option = {
 		ai_chance = {
 			base = 15
@@ -396,16 +343,13 @@ country_event = {
 		}
 	}
 }
-# Revoke Worker rights
 country_event = {
 	id = france.22
 	title = france.22.t
 	desc = france.22.d
 	picture = GFX_report_event_airplane_factory
-
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	option = {
 		ai_chance = {
 			factor = 2
@@ -429,17 +373,12 @@ country_event = {
 		}
 	}
 }
-
-
 news_event = {
 	id = france.34
 	title = france.34.title
 	desc = france.34.desc
-
 	picture = GFX_news_event_degaulle_churchill
-
 	is_triggered_only = yes
-
 	option = {
 		name = france.34.a
 		trigger = {
@@ -451,7 +390,6 @@ news_event = {
 			}
 		}
 	}
-
 	option = {
 		name = france.34.b
 		trigger = {
@@ -466,8 +404,6 @@ news_event = {
 		}
 	}
 }
-
-
 country_event = {
 	id = france.145
 	title = france.145.t
@@ -479,8 +415,6 @@ country_event = {
 		name = france.145.a
 	}
 }
-
-
 country_event = {
 	id = france.146
 	title = france.146.t
@@ -488,16 +422,14 @@ country_event = {
 	picture = GFX_report_event_fra_por_colony
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	option = {
 		name = france.146.a
 		RAJ = {
-			transfer_state = 321
-			321 = { add_extra_state_shared_building_slots = 1 }
+			transfer_state = 291
+			291 = { add_extra_state_shared_building_slots = 1 }
 		}
 	}
 }
-
 country_event = {
 	id = france.147
 	title = france.147.t
@@ -505,16 +437,13 @@ country_event = {
 	picture = GFX_report_event_fra_por_colony
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	option = {
 		name = france.147.a
 		SAF = {
-			transfer_state = 544
-			321 = { add_extra_state_shared_building_slots = 1 }
+			291 = { add_extra_state_shared_building_slots = 1 }
 		}
 	}
 }
-
 country_event = {
 	id = france.148
 	title = france.148.t
@@ -522,11 +451,11 @@ country_event = {
 	picture = GFX_report_event_fra_por_colony
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	option = {
 		name = france.148.a
 		ENG = {
-			transfer_state = 702
+			transfer_state = 620
 		}
 	}
 }
+

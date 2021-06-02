@@ -1,5 +1,4 @@
-﻿capital = 111
-
+capital = 111
 oob = "FIN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,15 +7,18 @@ if = {
 		set_naval_oob = "FIN_1936_naval_legacy"
 	}
 }
-
 set_research_slots = 3
-
+add_timed_idea = {
+	idea = fin_sisu
+	days = 2190
+}
+add_timed_idea = { idea = no_training days= 1000 }
 add_ideas = {
-	limited_conscription
 	idea_EFR_neutrality
 }
-
 set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
@@ -53,13 +55,11 @@ if = {
 		coastal_defense_ships = 1
 	}
 }
-
 set_convoys = 25
 add_manpower=100000
 add_ideas = {
 	limited_conscription
 }
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.7.1"
@@ -82,7 +82,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Aimo Aaltonen"
 	desc = "POLITICS_AIMO_AALTONEN_DESC"
@@ -93,7 +92,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Vilho Annala"
 	desc = "POLITICS_VILHO_ANNALA_DESC"
@@ -104,7 +102,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Kyösti Kallio"
 	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
@@ -115,13 +112,6 @@ create_country_leader = {
 		#
 	}
 }
-
-
-
-add_ideas = {
-	fin_sisu
-}
-
 create_field_marshal = {
 	name = "Carl Gustaf Emil Mannerheim"
 	picture = "portrait_fin_carl_mannerheim.dds"
@@ -133,7 +123,6 @@ create_field_marshal = {
 	planning_skill = 5
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Erik Heinrichs"
 	portrait_path = "gfx/leaders/FIN/Erik_Heinrichs.tga"
@@ -144,7 +133,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Harry Alfthan"
 	portrait_path = "gfx/leaders/FIN/Harry_Alfthan.tga"
@@ -155,7 +143,6 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 2
 }
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -207,3 +194,4 @@ if = {
 		}
 	}
 }
+

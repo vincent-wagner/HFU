@@ -1,31 +1,148 @@
 foreign_politics = {
-	ENG_get_chromium = {
+	ENG_annex_saf = {
 		icon = generic_operation
-
+		available = {
+			SAF = { is_ai = yes }
+			date>1939.1.1
+		}
 		allowed = {
 			tag = ENG
 		}
-
+		cost = 0
+		visible = {
+			SAF= { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			SAF = {
+				pow_before_annex=yes
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	ENG_annex_ast = {
+		icon = generic_operation
+		available = {
+			AST = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = ENG
+		}
+		cost = 0
+		visible = {
+			AST= { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			AST = {
+				pow_before_annex=yes
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = AST
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	ENG_annex_can = {
+		icon = generic_operation
+		available = {
+			CAN = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = ENG
+		}
+		cost = 0
+		visible = {
+			CAN= { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			CAN = {
+				pow_before_annex=yes
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = CAN
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	ENG_annex_nzl = {
+		icon = generic_operation
+		available = {
+			NZL = { is_ai = yes }
+			date>1939.1.1
+			AST = { is_ai = yes }
+		}
+		allowed = {
+			tag = ENG
+		}
+		cost = 0
+		visible = {
+			NZL= { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			NZL = {
+				pow_before_annex=yes
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = NZL
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	ENG_get_chromium = {
+		icon = generic_operation
+		allowed = {
+			tag = ENG
+		}
 		available = {
 			NOT={has_country_flag=resource_rights_saf}
-
 		}
-
 		cost = 0
-
 		visible = {
 			SAF={has_completed_focus = SAF_secure_interests_in_africa}
 		}
-
 		complete_effect = {
 			SAF = {
-				give_resource_rights = { receiver = ENG state = 542 }
-				give_resource_rights = { receiver = ENG state = 771 }
+				give_resource_rights = { receiver = ENG state = 468 }
+				give_resource_rights = { receiver = ENG state = 685 }
 			}
 			set_country_flag=resource_rights_saf
 		}
 	}
-
 	ENG_pressure_sweden= {
 		icon = generic_operation
 		fire_only_once = no
@@ -35,86 +152,61 @@ foreign_politics = {
 		visible = {
 			date > 1940.1.1
 		}
-
 		available = {
-			
 			GER={has_completed_focus=GER_pressure_sweden}
-			NOR_axis=no
+			NOR_axis=yes
 			has_global_flag=GER_resource_rights_swe
 		}
 		cost=50
 		days_remove=30
 		remove_effect = {
 			SWE = {
-				give_resource_rights = { receiver = ENG state = 666 }
-
+				remove_resource_rights = 666
+				give_resource_rights = { receiver = ENG state = 585 }
 			}
 			clr_global_flag=GER_resource_rights_swe
 		}
 	}
 	ENG_give_chromium = {
 		icon = generic_operation
-
 		allowed = {
 			tag = ENG
 		}
-
 		available = {
 			has_country_flag=resource_rights_saf
 		}
-
 		cost = 0
-
 		visible = {
 			SAF={has_completed_focus = SAF_secure_interests_in_africa}
 			always=yes
 		}
-
 		complete_effect = {
-
 			remove_resource_rights = 542
 			remove_resource_rights = 771
 			clr_country_flag=resource_rights_saf
-
 		}
 	}
-
-
 }
-
-
 ENG_imperial_conference_decision = {
-
 	ENG_imperial_conference_decision = {
-
 		icon = generic_political_discourse
-
 		available = {
 			hidden_trigger = { always = no }
 		}
-
 		days_mission_timeout = 60
-
 		fire_only_once = yes
-
 		activation = {
 			tag = ENG
 			has_country_flag = ENG_imperial_conference_timer_flag
 		}
-
 		visible = {
 			tag = ENG
 			has_country_flag = ENG_imperial_conference_timer_flag
 		}
-
 		cancel_if_not_visible = no
-
 		is_good = yes
-
 		complete_effect = {
-
 		}
-
 		timeout_effect = {
 			custom_effect_tooltip = imperial_conference_ends_tt
 			every_country = {
@@ -148,34 +240,23 @@ ENG_imperial_conference_decision = {
 		}
 	}
 }
-
 political_actions = {
-
 	hold_blood_toil_tears_sweat_speech = {
-
 		icon = generic_political_discourse
-
 		allowed = {
 			tag = ENG
 		}
-
 		available = {
-
-
 			has_war_with = GER
 		}
-
 		cost = 10
-
 		fire_only_once = yes
-
 		visible = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 		}
-
 		complete_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
@@ -191,33 +272,21 @@ political_actions = {
 			}
 			set_country_flag = blood_toil_tears_sweat_speech
 		}
-
 		ai_will_do = {
-			factor = 200 #Gotta allow the Americans to help
+			factor = 200
 		}
 	}
-
 	hold_fight_on_the_beaches_speech = {
-
 		icon = generic_political_discourse
-
 		allowed = {
 			tag = ENG
 		}
-
 		available = {
-
 			has_war_with = GER
 			is_in_faction_with = FRA
-			FRA = {
-				surrender_progress > 0.2
-			}
 		}
-
 		cost = 5
-
 		fire_only_once = yes
-
 		visible = {
 			tag = ENG
 			has_government = democratic
@@ -225,7 +294,6 @@ political_actions = {
 			has_country_flag = blood_toil_tears_sweat_speech
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 		}
-
 		complete_effect = {
 			add_war_support = 0.05
 			if = {
@@ -240,32 +308,21 @@ political_actions = {
 			}
 			set_country_flag = fight_on_the_beaches_speech
 		}
-
 		ai_will_do = {
-			factor = 200 #Gotta allow the Americans to help
+			factor = 200
 		}
 	}
-
 	hold_this_was_their_finest_hour_speech = {
-
 		icon = generic_political_discourse
-
 		allowed = {
 			tag = ENG
 		}
-
 		available = {
-
-
 			has_war_with = GER
 			is_in_faction_with = FRA
-			FRA = { has_capitulated = yes }
 		}
-
 		cost = 5
-
 		fire_only_once = yes
-
 		visible = {
 			tag = ENG
 			has_government = democratic
@@ -273,7 +330,6 @@ political_actions = {
 			has_country_flag = fight_on_the_beaches_speech
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 		}
-
 		complete_effect = {
 			add_war_support = 0.05
 			if = {
@@ -288,45 +344,8 @@ political_actions = {
 			}
 			set_country_flag = this_was_their_finest_hour_speech
 		}
-
 		ai_will_do = {
-			factor = 200 #Gotta allow the Americans to help
-		}
-	}
-}
-
-operations = {
-	prepare_operation_overlord = {
-		icon = generic_operation
-		allowed = { original_tag = ENG }
-		available = {
-			Date > 1941.1.1
-			JAP={has_war=yes}
-			always=no # removed because of total mob sealion
-
-		}
-		visible = {
-			Date > 1940.1.1
-			always=no # removed because of total mob sealion
-		}
-		is_good = yes
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = no
-		days_remove = 10
-		complete_effect = {
-			JAP={
-				set_province_controller=507
-				set_province_controller=221
-				set_province_controller=9562
-
-
-			}
-
-		}
-		remove_effect = {
-
+			factor = 200
 		}
 	}
 }

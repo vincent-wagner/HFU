@@ -1,8 +1,23 @@
 spriteTypes = {
-
+	spriteType = {
+		name = "GFX_idea_ansaldo"
+		texturefile = "gfx/interface/ideas/idea_ansaldo.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_odero_terni_orlando"
+		texturefile = "gfx/interface/ideas/idea_odero_terni_orlando.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_home_of_the_free_2"
+		texturefile = "gfx/interface/ideas/USA_home_of_the_free_2.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_Waffen_SS"
 		texturefile = "gfx/interface/ideas/Waffen_SS.dds"
+	}
+	spriteType = {
+		name = "GFX_pow_camp_ww1"
+		texturefile = "gfx/interface/pow_camp_ww1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_chelyabinsk_tractor_plant"
@@ -803,7 +818,10 @@ spriteTypes = {
 		name = "GFX_idea_limited_exports"
 		texturefile = "gfx/interface/ideas/idea_generic_limited_exports.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_limited_exports_axis"
+		texturefile = "gfx/interface/ideas/idea_generic_limited_exports.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_free_trade"
 		texturefile = "gfx/interface/ideas/idea_generic_free_trade.dds"
@@ -4643,4 +4661,17 @@ spriteTypes = {
 		name = "GFX_idea_rubber"
 		texturefile = "gfx/interface/ideas/rubber.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_USA_america_free_of_fascism"
+		texturefile = "gfx/interface/ideas/idea_USA_america_free_of_fascism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_usa_last_bastion_of_liberty"
+		texturefile = "gfx/interface/ideas/idea_usa_last_bastion_of_liberty.dds"
+	}
+
+
+
+
+
 }

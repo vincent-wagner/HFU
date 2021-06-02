@@ -1,22 +1,18 @@
-
 state={
 	id=17
-	name="STATE_17" # Lorraine
+	name="STATE_17"
 	manpower = 1517500
-
 	state_category = city
-
 	resources={
-		steel=28 # was: 48
+		steel=28
 	}
-
 	history={
 		owner = FRA
 		victory_points = {
-			9642 5
+			8860 5
 		}
 		victory_points = {
-			11516 5
+			10444 5
 		}
 		buildings = {
 			infrastructure = 7
@@ -25,8 +21,8 @@ state={
 		}
 		add_core_of = FRA
 	}
-
 	provinces={
-		521 698 3646 3666 6698 9642 9658 11488 11516 11642
+		486 661 3421 3438 6200 8860 8876 10416 10444 10565
 	}
 }
+

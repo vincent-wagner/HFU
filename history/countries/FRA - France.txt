@@ -1,4 +1,4 @@
-﻿capital = 16
+capital = 16
 oob = "FRA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -12,29 +12,34 @@ set_variable = {
 	value = 0.800
 }
 set_rule = {can_be_spymaster = no}
-
 set_research_slots = 4
-set_stability = 0.5
+set_stability = 0.40
 set_war_support = 0.15
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
-#add_ideas = low_economic_mobilisation
+add_ideas = tradeback_is_cancer
 add_timed_idea = {
 	idea = FRA_civs
 	days = 365
 }
-add_ideas = Phoney_War
-	
-
-set_country_flag=no_naval_base
+add_timed_idea = {
+	idea = Phoney_War
+	days = 1460
+}
 # Starting tech
 set_technology = {
+	airfield_allowed = 1
+	desertinfantry_at = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	tech_mountaineers = 1
+	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	tech_mountaineers = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -42,9 +47,8 @@ set_technology = {
 	basic_light_tank = 1
 	improved_light_tank = 1
 	early_fighter = 1
+	fighter1 = 1
 	naval_bomber1 = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
 	CAS1 = 1
@@ -93,7 +97,6 @@ if = {
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 	}
-
 }
 if = {
 	limit = {
@@ -103,7 +106,6 @@ if = {
 		armored_car1 = 1
 	}
 }
-
 set_convoys = 300
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
@@ -117,7 +119,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 4200
+	amount = 10000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
@@ -130,10 +132,19 @@ add_equipment_to_stockpile = {
 	amount = 3300
 	producer = FRA
 }
-
+add_equipment_to_stockpile = {
+	type = fighter_equipment_1
+	amount = 2000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = cas_equipment_1
+	amount = 500
+	producer = FRA
+}
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 400
+	amount = 2000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
@@ -158,7 +169,6 @@ set_popularities = {
 	neutrality = 15
 	communism = 20
 }
-
 add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government
@@ -168,7 +178,6 @@ add_ideas = {
 	FRA_political_violence
 	FRA_inefficient_economy_2
 }
-
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
 	name = "Édouard Daladier"
@@ -180,18 +189,17 @@ create_country_leader = {
 		stout_defender
 	}
 }
-
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
 	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
 	traits = { trickster brilliant_strategist cavalry_officer war_hero infantry_leader }
+	id = 635
 	skill = 4
 	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 4
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Alphonse Juin"
 	picture = "Portrait_France_Alphonse_Juin.dds"
@@ -202,7 +210,6 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 4
 }
-
 create_field_marshal = {
 	name = "Maurice Gamelin"
 	picture = "Portrait_France_Maurice_Gamelin.dds"
@@ -213,7 +220,6 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 1
 }
-
 create_field_marshal = {
 	name = "Maxime Weygand"
 	picture = "Portrait_France_Maxime_Weygand.dds"
@@ -224,7 +230,6 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-
 create_field_marshal = {
 	name = "Alphonse Georges"
 	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
@@ -235,7 +240,6 @@ create_field_marshal = {
 	planning_skill = 4
 	logistics_skill = 2
 }
-
 create_field_marshal = {
 	name = "Antoine-Marie-Benoît Besson"
 	picture = "Portrait_France_Generic_land_2.dds"
@@ -246,7 +250,6 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Charles De Gaulle"
 	picture = "Portrait_France_Charles_De_Gaulle.dds"
@@ -258,7 +261,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Philippe Leclerc"
 	picture = "portrait_france_philippe_leclerc.dds"
@@ -269,7 +271,6 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Henri Giraud"
 	picture = "portrait_france_henri_giraud.dds"
@@ -280,7 +281,6 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Charles Huntziger"
 	picture = "portrait_france_charles_huntziger.dds"
@@ -291,7 +291,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Gaston-Henri Billotte"
 	picture = "Portrait_France_Generic_land_1.dds"
@@ -302,7 +301,6 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "Henry Freydenberg"
 	picture = "Portrait_France_Generic_land_3.dds"
@@ -313,18 +311,16 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-
 create_corps_commander = {
 	name = "René Olry"
 	picture = "Portrait_France_Generic_land_5.dds"
-	traits = { old_guard infantry_officer trait_mountaineer }
+	traits = { old_guard infantry_officer infantry_leader trait_mountaineer }
 	skill = 3
-	attack_skill = 2
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 2
 }
-
 create_navy_leader = {
 	name = "François Darlan"
 	picture = "Portrait_France_Francois_Darlan.dds"
@@ -336,7 +332,6 @@ create_navy_leader = {
 	maneuvering_skill = 9
 	coordination_skill = 6
 }
-
 create_navy_leader = {
 	name = "Jean-Marie Charles Abrial"
 	picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
@@ -347,7 +342,6 @@ create_navy_leader = {
 	maneuvering_skill = 3
 	coordination_skill = 2
 }
-
 create_navy_leader = {
 	name = "Jean-Pierre Esteva"
 	picture = "Portrait_France_Jean-Pierre_Esteva.dds"
@@ -358,7 +352,6 @@ create_navy_leader = {
 	maneuvering_skill = 2
 	coordination_skill = 2
 }
-
 create_navy_leader = {
 	name = "René-Émile Godfroy"
 	picture = "Portrait_France_Rene-Emile_Godfroy.dds"
@@ -369,7 +362,6 @@ create_navy_leader = {
 	maneuvering_skill = 2
 	coordination_skill = 2
 }
-
 create_navy_leader = {
 	name = "Jean de Laborde"
 	picture = "Portrait_France_Jean_de_Laborde.dds"
@@ -380,7 +372,6 @@ create_navy_leader = {
 	maneuvering_skill = 1
 	coordination_skill = 1
 }
-
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = {
@@ -392,7 +383,6 @@ if = {
 		female = yes
 		nationalities = { FRA }
 	}
-
 	create_operative_leader = {
 		name = "Odette Samson"
 		GFX = GFX_portrait_odette_samson
@@ -402,7 +392,6 @@ if = {
 		female = yes
 		nationalities = { FRA }
 	}
-
 	create_operative_leader = {
 		name = "René Joyeuse"
 		GFX = GFX_portrait_rene_joyeuse
@@ -411,7 +400,6 @@ if = {
 		available_to_spy_master = yes
 		nationalities = { FRA }
 	}
-
 	create_operative_leader = {
 		name = "Gilbert Renault"
 		GFX = GFX_portrait_gilbert_renault
@@ -421,7 +409,6 @@ if = {
 		nationalities = { FRA }
 	}
 }
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -750,3 +737,4 @@ if = {
 		}
 	}
 }
+

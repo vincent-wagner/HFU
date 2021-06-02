@@ -1,4 +1,5 @@
 ﻿l_english:
+
  RSI_fascism:0 "Italian Social Republic"
  RSI_fascism_DEF:0 "the Italian Social Republic"
  RSI_fascism_ADJ:0 "Italian"
@@ -13,8 +14,16 @@
  MAL_subject:0 "$OVERLORDADJ$ Malaya"
  LBA_subject:0 "$OVERLORDADJ$ North Africa"
  SAU_subject:0 "$OVERLORDADJ$ Central Arabia"
- MAL_UK_democratic:0 "British Malaya"
- MAL_UK_democratic_DEF:0 "British Malaya"
+ MAL_UK_democratic:0 "South West Pacific Area"
+ MAL_UK_democratic_DEF:0 "South West Pacific Area"
+ RAJ_LW_democratic:0 "India"
+ RAJ_LW_democratic_DEF:0 "India"
+ RAJ_LW_neutrality:0 "India"
+ RAJ_LW_neutrality_DEF:0 "India"
+ RAJ_LW_2_democratic:0 "British Far East"
+ RAJ_LW_2_democratic_DEF:0 "The British Far East"
+ RAJ_LW_2_neutrality:0 "British Far East"
+ RAJ_LW_2_neutrality_DEF:0 "The British Far East"
  RAJ_UK_democratic:0 "British Raj"
  RAJ_UK_democratic_DEF:0 "the British Raj"
  RAJ_UK_neutrality:0 "British Raj"
@@ -272,16 +281,16 @@
  HUN_EMPIRE_fascism:0 "Austro-Hungarian Empire"
  HUN_EMPIRE_democratic:0 "Danubian Confederation"
  HUN_EMPIRE_communism:0 "Association of Autonomous States"
- HUN_GREATER_neutrality:0 "Greater Hungary"
- HUN_GREATER_fascism:0 "Greater Hungary"
+ HUN_GREATER_neutrality:0 "Kingdom of Hungary"
+ HUN_GREATER_fascism:0 "Kingdom of Hungary"
  HUN_GREATER_democratic:0 "Hungarian Federal Republic"
  HUN_GREATER_communism:0 "Balkan Socialist Union"
  HUN_EMPIRE_neutrality_DEF:0 "Austria-Hungary"
  HUN_EMPIRE_fascism_DEF:0 "the Austro-Hungarian Empire"
  HUN_EMPIRE_democratic_DEF:0 "the Danubian Confederation"
  HUN_EMPIRE_communism_DEF:0 "the Association of Autonomous States"
- HUN_GREATER_neutrality_DEF:0 "Greater Hungary"
- HUN_GREATER_fascism_DEF:0 "Greater Hungary"
+ HUN_GREATER_neutrality_DEF:0 "the Kingdom of Hungary"
+ HUN_GREATER_fascism_DEF:0 "the Kingdom of Hungary"
  HUN_GREATER_democratic_DEF:0 "the Hungarian Federal Republic"
  HUN_GREATER_communism_DEF:0 "the Balkan Socialist Union"
  HUN_MONARCHY_democratic:0 "Kingdom of Hungary"
@@ -916,3 +925,17 @@
  VAPE_democratic_DEF:0 "the Vape Nation"
  VAPE_fascism_DEF:0 "the Vape Nation"
  VAPE_communism_DEF:0 "the Vape Nation"
+ 
+ ALB_reichskommissariat:0 "Reichskommissariat Moskowein"
+ EST_reichskommissariat:0 "Reichskommissariat Ostland"
+ LAT_reichskommissariat:0 "Reichskommissariat Ukraine"
+ LIT_reichskommissariat:0 "Reichskommissariat Kaukasien"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

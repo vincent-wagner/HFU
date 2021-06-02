@@ -1,5 +1,4 @@
 ﻿
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -11,3 +10,4 @@ instant_effect = {
 		efficiency = 50
 	}
 }
+

@@ -1,12 +1,10 @@
-﻿capital = 419
-
+capital = 385
 oob = "PER_1936"
 set_research_slots = 0
 # Starting tech
 set_technology = {
 }
 add_ideas = no_training
-
 set_convoys = 1
 set_politics = {
 	ruling_party = neutrality
@@ -17,7 +15,6 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
-
 create_country_leader = {
 	name = "Reza Shah Pahlavi"
 	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
@@ -28,3 +25,4 @@ create_country_leader = {
 		#
 	}
 }
+

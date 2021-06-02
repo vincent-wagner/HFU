@@ -1,16 +1,12 @@
-﻿capital = 12
+capital = 12
 set_research_slots = 0
 oob = "LAT_1936"
-
 add_ideas = {
 	limited_conscription
 }
-
 set_technology = {}
 add_ideas = no_training
 set_convoys = 1
-
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1931.10.3"
@@ -23,8 +19,6 @@ set_popularities = {
 	communism = 15
 	neutrality = 40
 }
-
-
 create_country_leader = {
 	name = "Karlis Ulmanis"
 	desc = "POLITICS_KARLIS_ULMANIS_DESC"
@@ -35,6 +29,6 @@ create_country_leader = {
 		#
 	}
 }
-
 ### VARIANTS ###
 # 1936 Start #
+

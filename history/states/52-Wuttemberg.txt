@@ -1,21 +1,18 @@
-
 state={
 	id=52
 	name="STATE_52"
 	manpower = 2679413
 	resources={
-		aluminium=60 # was: 30
+		aluminium=60
 	}
-
 	state_category = city
-
 	history={
 		owner = GER
 		victory_points = {
-			692 20
+			655 20
 		}
 		victory_points = {
-			708 3 #10
+			671 3
 		}
 		buildings = {
 			infrastructure = 7
@@ -24,15 +21,14 @@ state={
 			air_base = 6
 		}
 		add_core_of = GER
-
 		1939.1.1 = {
 			buildings = {
 				air_base = 10
 			}
 		}
 	}
-
 	provinces={
-		692 707 708 3688 3705 6540 6693 9652 9666 11620 11638 11653
+		655 670 671 3460 3477 6044 6195 8870 8883 10544 10561 10576
 	}
 }
+

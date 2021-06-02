@@ -1,5 +1,4 @@
 #scripted trigger for Hungary
-
 is_available_fighter_HUN = {
 	OR = {
 		AND = {
@@ -19,7 +18,6 @@ is_available_fighter_HUN = {
 		has_war_with = HUN
 	}
 }
-
 is_available_heavy_fighter_HUN = {
 	OR = {
 		AND = {
@@ -39,7 +37,6 @@ is_available_heavy_fighter_HUN = {
 		has_war_with = HUN
 	}
 }
-
 is_available_cas_HUN = {
 	OR = {
 		AND = {
@@ -59,7 +56,6 @@ is_available_cas_HUN = {
 		has_war_with = HUN
 	}
 }
-
 is_available_tac_HUN = {
 	OR = {
 		AND = {
@@ -79,3 +75,4 @@ is_available_tac_HUN = {
 		has_war_with = HUN
 	}
 }
+

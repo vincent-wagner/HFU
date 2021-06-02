@@ -1,18 +1,109 @@
-﻿###########################
-# Italian Events
-###########################
-
 add_namespace = italy
-
-# Albania Yields
+country_event = {
+	id = italy.187
+	title = italy.187.t
+	desc = italy.187.d
+	picture = GFX_report_event_royal_parade
+	is_triggered_only = yes
+	option = {
+		name = italy.187.a
+		set_technology = {
+			basic_medium_tank = 1
+			improved_medium_tank = 1
+		}
+		division_template = {
+			name = "Afrikakorps"
+			regiments = {
+				medium_armor = { x = 0 y = 0 }
+				medium_armor = { x = 0 y = 1 }
+				medium_armor = { x = 0 y = 2 }
+				medium_armor = { x = 0 y = 3 }
+				medium_armor = { x = 1 y = 0 }
+				medium_armor = { x = 1 y = 1 }
+				medium_armor = { x = 1 y = 2 }
+				medium_armor = { x = 1 y = 3 }
+				medium_armor = { x = 2 y = 0 }
+				medium_armor = { x = 2 y = 1 }
+				medium_armor = { x = 2 y = 2 }
+				motorized = { x = 3 y = 0 }
+				motorized = { x = 3 y = 1 }
+				motorized = { x = 3 y = 2 }
+				motorized = { x = 3 y = 3 }
+				motorized = { x = 4 y = 0 }
+				motorized = { x = 4 y = 1 }
+				motorized = { x = 4 y = 2 }
+				motorized = { x = 4 y = 3 }
+				mot_anti_air_brigade= { x = 3 y = 4 }
+				mot_anti_air_brigade = { x = 4 y = 4 }
+			}
+			support = {
+				mot_recon = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+				logistics_company = { x = 0 y = 3 }
+				signal_company = { x = 0 y = 4 }
+			}
+		}
+		413 = {
+			for_loop_effect = {
+				end = 4
+				create_unit = {
+					division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
+					owner = ITA
+				}
+				}}
+	}
+	option = {
+		name = italy.187.b
+		GER ={	division_template = {
+				name = "Afrikakorps"
+				regiments = {
+					medium_armor = { x = 0 y = 0 }
+					medium_armor = { x = 0 y = 1 }
+					medium_armor = { x = 0 y = 2 }
+					medium_armor = { x = 0 y = 3 }
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					medium_armor = { x = 1 y = 3 }
+					medium_armor = { x = 2 y = 0 }
+					medium_armor = { x = 2 y = 1 }
+					medium_armor = { x = 2 y = 2 }
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					motorized = { x = 4 y = 0 }
+					motorized = { x = 4 y = 1 }
+					motorized = { x = 4 y = 2 }
+					motorized = { x = 4 y = 3 }
+					mot_anti_air_brigade= { x = 3 y = 4 }
+					mot_anti_air_brigade = { x = 4 y = 4 }
+				}
+				support = {
+					mot_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }
+				}
+				}}
+		413 = {
+			for_loop_effect = {
+				end = 4
+				create_unit = {
+					division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
+					owner = GER
+				}
+				}}
+	}
+}
 country_event = {
 	id = italy.1
 	title = italy.1.t
 	desc = italy.1.d
 	picture = GFX_report_event_royal_parade
-
 	is_triggered_only = yes
-
 	option = {
 		name = italy.1.a
 		annex_country = { target = ALB }
@@ -25,18 +116,13 @@ country_event = {
 		}
 	}
 }
-
-
-# Albania Receives Ultimatum
 country_event = {
 	id = italy.3
 	title = italy.3.t
 	desc = italy.3.d
 	picture = GFX_report_event_albanian_king_zog
-
 	is_triggered_only = yes
-
-	option = { # Yield
+	option = {
 		name = italy.3.a
 		ai_chance = {
 			base = 40
@@ -58,7 +144,7 @@ country_event = {
 				factor = 0.5
 				OR = {
 					has_government = communism
-					has_government = fascism #glorious Albania will never yield!
+					has_government = fascism
 				}
 			}
 		}
@@ -68,108 +154,55 @@ country_event = {
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 }
-
-
-# Italian-German Treaty (Germans)
-country_event = {
-	id = italy.5
-	title = italy.5.t
-	desc = italy.5.d
-	picture = GFX_report_event_german_italian_pact
-
-	is_triggered_only = yes
-
-	option = {
-		name = italy.5.a	#sounds good
-		ITA = {
-			country_event = { days = 1 id = italy.6 }
-		}
-		# REVISIT Balance research bonus, also in event below
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 1
-			technology = tech_mountaineers2
-		}
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 2
-			category = naval_doctrine
-		}
-	}
-
-}
-
-# Germans Accept Italian-German Treaty
-country_event = {
-	id = italy.6
-	title = italy.6.t
-	desc = italy.6.d
-	picture = GFX_report_event_physics_lab_01
-
-	is_triggered_only = yes
-
-	option = {
-		name = italy.6.a
-		# REVISIT Balance research bonus
-		add_tech_bonus = {
-			name = synth_bonus
-			bonus = 1.0
-			uses = 1
-			category = synth_resources
-		}
-		add_tech_bonus = {
-			name = armor_bonus
-			bonus = 1.0
-			uses = 2
-			category = armor
-		}
-		ITA = {
-			add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
-		}
-	}
-}
-
-
-# Request Balearic Islands from Spain
 country_event = {
 	id = italy.9
 	title = italy.9.t
 	desc = italy.9.d
 	picture = GFX_report_event_merchant_ship_01
-
 	is_triggered_only = yes
-
+	immediate = {
+		173 = {
+			set_building_level= {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
 	option = {
 		name = italy.9.a
 		country_event = { id = italy.10 }
 		effect_tooltip = {
-			ITA = { transfer_state = 177 }
+			ITA = { transfer_state = 173 }
+
+
 			remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
 		}
-
 		hidden_effect = {
 			news_event = { id = news.190 }
 		}
 	}
 }
-
-# Spain Gives Up Balearic Islands
 country_event = {
 	id = italy.10
 	title = italy.10.t
 	desc = italy.10.d
 	picture = GFX_report_event_merchant_ship_01
-
 	is_triggered_only = yes
-
 	option = {
 		name = italy.10.a
-		ITA = { transfer_state = 177 }
+		ITA = { transfer_state = 173 }
+		173 = {
+			set_demilitarized_zone = no
+			set_building_level= {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+		}
 		remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
 	}
 }
-
-
 country_event = {
 	id = italy.145
 	title = italy.145.t
@@ -181,7 +214,6 @@ country_event = {
 		name = italy.145.a
 	}
 }
-
 country_event = {
 	id = italy.147
 	title = italy.147.t
@@ -189,27 +221,17 @@ country_event = {
 	picture = GFX_VolchovPock
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	option = {
 		name = italy.147.a
-
 		hidden_effect = {
 			GER = { country_event = { id = italy.148 days = 14 } }
 		}
-
 		add_political_power = -50
-
 	}
-
 	option = {
 		name = italy.147.b
-
 	}
-
-
 }
-
-
 country_event = {
 	id = italy.148
 	title = italy.148.t
@@ -220,21 +242,15 @@ country_event = {
 	option = {
 		name = italy.148.a
 		add_political_power = -50
-
 		hidden_effect = {
 			GER = { country_event = { id = italy.149 days = 21 } }
 		}
-
-
 	}
-
 	option = {
 		name = italy.148.b
 		add_political_power = 50
 	}
 }
-
-
 country_event = {
 	id = italy.149
 	title = italy.149.t
@@ -242,8 +258,6 @@ country_event = {
 	picture = GFX_gran_sasso
 	fire_only_once = yes
 	is_triggered_only = yes
-
-
 	option = {
 		name = italy.149.a
 		ITA = { retire_country_leader = yes
@@ -257,26 +271,19 @@ country_event = {
 					lombardy
 				}
 			}
-
 			GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } }
-
 			add_tech_bonus = {
 				bonus = 3.0
 				uses = 1
 				technology = paratroopers
 			}
 		}
-
-
 		hidden_effect = {
 			ITA = { country_event = { id = italy.150 days = 21 } }
 			ITA = { country_event = { id = italy.151 days = 1 } }
 		}
-
 	}
-
 }
-
 country_event = {
 	id = italy.150
 	title = italy.150.t
@@ -284,22 +291,16 @@ country_event = {
 	picture = GFX_BandaKoch
 	fire_only_once = yes
 	is_triggered_only = yes
-
-
 	option = {
 		name = italy.150.a
-
 		add_popularity = { ideology = fascism popularity = 0.3 }
-
 		add_tech_bonus = {
 			bonus = 3.0
 			uses = 1
 			technology = tech_military_police
 		}
-
 	}
 }
-
 country_event = {
 	id = italy.151
 	title = italy.151.t
@@ -307,34 +308,21 @@ country_event = {
 	picture = GFX_gran_sasso
 	fire_only_once = yes
 	is_triggered_only = yes
-
-
 	option = {
 		name = italy.151.a
-
 		set_cosmetic_tag =  RSI
 		remove_ideas = victor_emmanuel
-
 	}
 }
-
-
-
-
-
 country_event = {
 	id = italy.153
 	title = italy.153.t
 	desc = italy.153.d
 	picture = GFX_report_event_italy_startup
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = italy.153.a
-
-
 		ITA = {
 			annex_country = {
 				target = GRE
@@ -342,16 +330,10 @@ country_event = {
 			}
 			add_threat = 4.6
 		}
-
-		BUL = { transfer_state = 184 }
-
-
+		BUL = { transfer_state = 177 }
 	}
-
 	option = {
 		name = italy.153.b
-
-
 		ITA = {
 			annex_country = {
 				target = GRE
@@ -359,30 +341,20 @@ country_event = {
 			}
 			add_threat = 4.6
 		}
-
 	}
-
 }
-
-
-
-
 country_event = {
 	id = italy.155
 	title = italy.155.t
 	desc = italy.155.d
 	picture = GFX_report_event_italy_startup
 	fire_only_once = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = italy.155.a
-
-		HUN = { transfer_state = 764
+		HUN = { transfer_state = 678
 			transfer_state = 45
 		}
-
 		ITA = {
 			annex_country = {
 				target = YUG
@@ -390,14 +362,9 @@ country_event = {
 			}
 			add_threat = 6.2
 		}
-
 	}
-
 	option = {
 		name = italy.155.b
-
-
-
 		ITA = {
 			annex_country = {
 				target = YUG
@@ -405,13 +372,6 @@ country_event = {
 			}
 			add_threat = 6.2
 		}
-
 	}
-
 }
-
-
-
-
-
 

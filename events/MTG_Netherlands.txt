@@ -1,15 +1,10 @@
-﻿add_namespace = mtg_netherlands
-
-# New government forms
+add_namespace = mtg_netherlands
 country_event = {
 	id = mtg_netherlands.10
 	title = mtg_netherlands.10.t
 	desc = mtg_netherlands.10.d
 	picture = GFX_report_event_hol_cabinet_de_geer
-
 	is_triggered_only = yes
-
-	# Ok
 	option = {
 		name = mtg_netherlands.10.a
 		set_party_name = { ideology = democratic long_name = HOL_CHU_party_long name = HOL_CHU_party }
@@ -26,18 +21,12 @@ country_event = {
 		remove_ideas = HOL_weak_government
 	}
 }
-
-
-# Replace the Defeatist Government
 country_event = {
 	id = mtg_netherlands.14
 	title = mtg_netherlands.14.t
 	desc = mtg_netherlands.14.d
 	picture = GFX_report_event_hol_cabinet_gerbrandy
-
 	is_triggered_only = yes
-
-	# Ok
 	option = {
 		name = mtg_netherlands.14.a
 		add_popularity = {
@@ -63,19 +52,12 @@ country_event = {
 		}
 	}
 }
-
-
-
-# Event for INS informing of NL preparing to integrate
 country_event = {
 	id = mtg_netherlands.21
 	title = mtg_netherlands.21.t
 	desc = mtg_netherlands.21.d
 	picture = GFX_report_event_generic_sign_treaty1
-
 	is_triggered_only = yes
-
-	# Oh, well then...
 	option = {
 		name = mtg_netherlands.21.a
 		effect_tooltip = {
@@ -86,38 +68,23 @@ country_event = {
 		}
 	}
 }
-
-# Event for INS informing of NL moving capital to Batavia
 country_event = {
 	id = mtg_netherlands.22
 	title = mtg_netherlands.22.t
 	desc = mtg_netherlands.22.d
 	picture = GFX_report_event_generic_sign_treaty2
-
 	is_triggered_only = yes
-
-	# Goodbye, cruel world!
 	option = {
 		name = mtg_netherlands.22.a
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 }
-
-# EVENTS 38-40 removed!
-
-### Prince Bernhard Shenanigans ###
-
-
-# Event for HOL notifying of evacuation of gold reserves
 country_event = {
 	id = mtg_netherlands.63
 	title = mtg_netherlands.63.t
 	desc = mtg_netherlands.63.d
 	picture = GFX_report_event_merchant_ship_01
-
 	is_triggered_only = yes
-
-	# Ok
 	option = {
 		name = mtg_netherlands.63.a
 		if = {
@@ -128,9 +95,6 @@ country_event = {
 		}
 	}
 }
-
-
-# Gateway to Europe notification event of ENG taking the lead
 country_event = {
 	id = mtg_netherlands.66
 	title = mtg_netherlands.66.t
@@ -147,18 +111,13 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_generic_sign_treaty3
-
 	is_triggered_only = yes
-
-	# Ok
 	option = {
 		name = mtg_netherlands.66.a
 		trigger = {
 			original_tag = HOL
 		}
 	}
-
-	# Ok
 	option = {
 		name = mtg_netherlands.66.b
 		trigger = {
@@ -166,8 +125,6 @@ country_event = {
 		}
 	}
 }
-
-# Gateway to Europe notification event of GER taking the lead
 country_event = {
 	id = mtg_netherlands.67
 	title = mtg_netherlands.67.t
@@ -184,18 +141,13 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_generic_sign_treaty3
-
 	is_triggered_only = yes
-
-	# Ok
 	option = {
 		name = mtg_netherlands.66.a
 		trigger = {
 			original_tag = HOL
 		}
 	}
-
-	# Ok
 	option = {
 		name = mtg_netherlands.67.b
 		trigger = {
@@ -203,11 +155,4 @@ country_event = {
 		}
 	}
 }
-
-# Hidden event removing Shell-shocked spectator spirit
-
-
-# Event complaining about unneeded flooding
-
-
 

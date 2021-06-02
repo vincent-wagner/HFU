@@ -1,6 +1,2 @@
-﻿###########################
-#ss recruitment events
-###########################
-
 add_namespace = ss_recruitment_event
 

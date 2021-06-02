@@ -1,4 +1,4 @@
-﻿capital = 48
+capital = 48
 oob = "BUL_1936"
 set_research_slots = 3
 add_ideas = {
@@ -10,8 +10,15 @@ set_variable = {
 	value = 0.800
 }
 set_rule = {can_be_spymaster = no}
-
 set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
+	desertinfantry_at = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	tech_mountaineers = 1
+	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -34,14 +41,12 @@ add_equipment_to_stockpile = {
 	producer = BUL
 }
 set_convoys = 100
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1931.6.21"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
 	democratic = 5
 	fascism = 35
@@ -57,7 +62,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Georgi Dimitrov"
 	desc = "POLITICS_GEORGI_DIMITROV_DESC"
@@ -68,7 +72,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Nikola Petkov"
 	desc = "POLITICS_NIKOLA_PETKOV_DESC"
@@ -79,36 +82,53 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
-	name = "Hristo Lukov"
-	desc = "POLITICS_HRISTO_LUKOV_DESC"
-	picture = "GFX_Portrait_bulgaria_hristo_lukov"
+	name = "Boris III"
+	desc = "POLITICS_BORIS_III_DESC"
+	picture = "Portrait_Bulgaria_Boris_III.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
 		#
 	}
 }
-
 create_corps_commander = {
 	name = "Nikola Totev Markov"
 	portrait_path = "gfx/leaders/BUL/Nikola_Totev_Markov.tga"
-	traits = {panzer_leader infantry_leader trait_engineer ranger urban_assault_specialist}
+	traits = {infantry_leader trickster commando }
 	skill = 5
 	attack_skill = 5
-	defense_skill = 3
+	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 4
 }
-
 create_field_marshal = {
 	name = "Konstantin Ivanov Bekyarov"
 	portrait_path = "gfx/leaders/BUL/Konstantin_Ivanov_Bekyarov.tga"
 	traits = { organizer panzer_leader infantry_leader}
 	skill = 5
 	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
 }
+	create_corps_commander = { #DLC
+		name = "Georgi Popov"
+		gfx = GFX_portrait_bul_georgi_popov
+		traits = { infantry_leader ranger trait_mountaineer }
+ 	skill = 5
+ 	attack_skill = 5
+ 	defense_skill = 3
+ 	planning_skill = 2
+ 	logistics_skill = 2
+	}
+	create_corps_commander = { 
+		name = "Nikola Hadzhipetkov"
+		portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
+		traits = { infantry_leader trait_engineer panzer_leader urban_assault_specialist}
+ 		skill = 5
+ 		attack_skill = 3
+ 		defense_skill = 3
+ 		planning_skill = 2
+ 		logistics_skill = 3
+	}

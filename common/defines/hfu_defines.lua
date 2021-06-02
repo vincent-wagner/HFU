@@ -1,6 +1,12 @@
 --Horst defines:
 
 --------------------------------------------------------------
+---nukes
+--NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT =0
+--NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT =0.1
+--NDefines.NMilitary.NUKE_DELAY_HOURS =12
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.15
+---
 --new graphics
 NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.9 -- 0.6
 NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.9 -- 0.8
@@ -18,20 +24,25 @@ NDefines.NTechnology.MAX_SUBTECHS = 4
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
-NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.1, 0.035  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.2, 0.04, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
  -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
-
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   --vanilla 6 --> 20% bonus damage instead of 40% extra damage dice if our armor outclasses enemy
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
+NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 0
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 70
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
+NDefines.NProduction.BASE_FACTORY_EFFICIENCY_ARCHETYPE_CHANGE_FACTOR = 30
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350	
 ---------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
-
+NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 1.4 --controlls strat bombing damage was too strong on 5 but might need to be high to actually damage something
+NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0.2
 ----------------------------------------------------------------------------------------------------------------------------
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
@@ -43,13 +54,17 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0				-- WAS 30 | This many d
 NDefines.NDiplomacy.FRONT_IS_DANGEROUS = 0
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12
 NDefines.NDiplomacy.MIN_TRUST_VALUE = -500 							-- WAS -100 | this is added to support embargoing nations to prevent trade memes from players in an opposing faction | Min opinion value cap.
-
+NDefines.NDiplomacy.LL_TO_OVERLORD_AUTONOMY_DAILY_BASE = 0		-- If puppet lend leases equipment to overlord of at least same tech level as they have, they gain autonomy
+NDefines.NDiplomacy.LL_TO_OVERLORD_AUTONOMY_DAILY_FACTOR = 0	-- If puppet lend leases equipment to overlord of at least same tech level as they have, they gain autonomy
+NDefines.NDiplomacy.LL_TO_PUPPET_AUTONOMY_DAILY_BASE = 0		-- If overlord lend leases equipment to puppet of higher tech level as they have, puppet losses autonomy
+NDefines.NDiplomacy.LL_TO_PUPPET_AUTONOMY_DAILY_FACTOR = 0     -- If overlord lend leases equipment to puppet of higher tech level as they have, puppet losses autonomy
 ---------------------------------------------------------------
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST 
+NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 1  --was 2
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 |                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0	-- License production tech bonus
-NDefines.NProduction.BASE_LICENSE_IC_COST = 0			-- Base IC cost for lended license
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0.4			-- Base IC cost for lended license
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0	-- IC cost equipment for every year of equipment after 1936
 
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 5000000
@@ -61,7 +76,6 @@ NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999
 
 NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  WAS 30 | days to transfer escaping divisions to host nation
 NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- WAS 10
-NDefines.NCountry.BASE_FUEL_GAIN = 30.0							-- base amount of fuel gained hourly, independent of excess oil
 
 NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0				-- Weight of the country score.
 NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0					-- Based on number of armies.
@@ -70,6 +84,8 @@ NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (whi
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
+NDefines.NCountry.STARTING_COMMAND_POWER = 100.0
+NDefines.NCountry.BASE_MAX_COMMAND_POWER = 200
 ---------------------------------------------------------------
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0						-- down from 0.02 | Chances one ship get damage each hour while on training 		 0.0001	
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0
@@ -96,8 +112,8 @@ NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
 
 
 
-NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
-NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
+--NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
+--NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
 NDefines_Graphics.NAirGfx.MAX_PATROL_SCENARIOS = 0
 NDefines_Graphics.NAirGfx.MAX_DOGFIGHTS_SCENARIOS = 0
 NDefines_Graphics.NAirGfx.MAX_TRANSPORT_SCENARIOS = 0
@@ -162,14 +178,16 @@ NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 
 
 --HFU defines:
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 100
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 50
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED=0
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50 -- Was 30, exists to help speed 5 macro
 
 --generals
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
+NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 0
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0
 NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT={1, 1, 1, 0}
 NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 0.0
@@ -196,33 +214,57 @@ NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 5
 
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
-NDefines.NBuildings.MAX_BUILDING_LEVELS=20
+NDefines.NBuildings.MAX_BUILDING_LEVELS = 99
+NDefines.NBuildings.BASE_FACTORY_REPAIR = 0.3 --doesnt work
+--NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.075
+NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3 --swapped prio so imports go first
+NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3
+NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 3
 -------------------------------------
 --Combat 
-
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.06        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.048   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
+NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.003 -- vanilla is 0.005
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.04    -- air global damage modifier
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.04    -- global damage modifier
-	
-	
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.025    -- global damage modifier
+NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.75 --vanilla 
+--NDefines.NMilitary.PEN_VS_AVERAGE = 0.4 --vanilla 0.4
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.6 }
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.6
 NDefines.NMilitary.RECON_SKILL_IMPACT = 7
+NDefines.NMilitary.LEND_LEASE_FIELD_EXPERIENCE_SCALE = 0.1
+NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.005
+NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.6
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.10
-NDefines.NBuildings.INFRA_TO_SUPPLY = 3
-NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
+
+NDefines.NBuildings.INFRA_TO_SUPPLY = 1.9
+NDefines.NCountry.VP_TO_SUPPLY_BASE = 0
+NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 1
+NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.8
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
+NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.02
+--NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0 --not sure yet
+--Halving overall fuel
+NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.22 --0.5
+NDefines.NAir.FUEL_COST_MULT = 0.15 --0.35
+NDefines.NNavy.FUEL_COST_MULT = 0.04 --0.1
+NDefines.NCountry.BASE_FUEL_GAIN = 12		--was 30 before					-- base amount of fuel gained hourly, independent of excess oil
+NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.8 --vanilla 2
+NDefines.NCountry.BASE_FUEL_CAPACITY = 50000 --vanilla same
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 2 --back to 4
+NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 10
+NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 20
 NDefines.NMilitary.TRAINING_ATTRITION = 0.01
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999
@@ -231,20 +273,25 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.4
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.4     -- large river crossing
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.3
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1	
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0	
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20			
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20		
 -------------------------------------
 --Air changes
+NDefines.NAir.CAPACITY_PENALTY=0.869
 NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.11						-- Vanilla 0,10
-NDefines.NAir.DISRUPTION_FACTOR = 5
-NDefines.NAir.ESCORT_FACTOR = 2.5 		
-        
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.04			--0.11 prev			-- Vanilla 0,10
+NDefines.NAir.DISRUPTION_FACTOR = 6
+NDefines.NAir.ESCORT_FACTOR = 4  --2.5		
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002 --0.001 in vanilla
+NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 3 --2 in vanilla
+NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0.75  --0.001 in vanilla
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
 
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
@@ -253,23 +300,40 @@ NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                        -- WAS 10, lowe
 NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
 NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.003 
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.15
-
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.7 
-                       
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02
-NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001
-
+NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 25 --vanilla 5 there are no planes in vanilla :D                    
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.00875 --linear NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR*air_attack*thisdefine=casreduction
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0
+NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
+		0.0, -- AIR_SUPERIORITY
+		0.0, -- CAS		
+		0.0, -- INTERCEPTION	
+		0.0, -- STRATEGIC_BOMBER
+		0.0, -- NAVAL_BOMBER	
+		0.0, -- DROP_NUKE		
+		0.0, -- PARADROP		
+		0.0, -- NAVAL_KAMIKAZE	
+        0.0, -- PORT_STRIKE		
+		0.0, -- AIR_SUPPLY		
+		0.0, -- TRAINING
+		0.0, -- NAVAL_MINES_PLANTING
+		0.0, -- NAVAL_MINES_SWEEPING
+		0.0, -- Mission Recon
+	}
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3    --Vanilla 0.3
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.45          --Vanilla -0.35
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.35          --Vanilla -0.35 
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 50 --see plot in mod/resources
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.333
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 400.0
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.000 
 
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.5                --Vanilla 0.8	
-NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 2.0
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.60	-- Vanilla 0,75
-NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 1
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.70	-- Vanilla 0,75
+NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0
 
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
 
@@ -279,12 +343,12 @@ NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 3
 
 NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
 NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0.002		-- Amount of stability recovered daily from propaganda effort
-NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 0.6
+NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 1 --was 0.6
 NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0				-- Base amount of daily ideology drift provoked by an operative
 NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0.2
 NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.2
-NDefines.NOperatives.AGENCY_CREATION_DAYS = 0						-- Number of days needed to create an intelligence agency
-NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0
+NDefines.NOperatives.AGENCY_CREATION_DAYS = 999						-- Number of days needed to create an intelligence agency
+NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 999
 NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 150						-- Number of days needed to upgrade an intelligence agency
 NDefines.NOperatives.BASE_COUNTER_INTELLIGENCE_RATING = 0.5						-- Number of days needed to upgrade an intelligence agency
 NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 0					-- Number of political power used to become Spy Master
@@ -344,7 +408,7 @@ NDefines.NMilitary.PLAN_PORVINCE_RESISTANCE_BASE_IMPORTANCE = 1 -- Used when cal
 --NDefines.NMilitary.PLAN_AREA_DEFENSE_ENEMY_UNIT_FACTOR = -2.0		-- Factor applied to province score in area defense order per enemy unit in that province
 NDefines.NMilitary.PLAN_AREA_DEFENSE_FORT_IMPORTANCE = 1	--you need less divs on a city tile/fort and not more --Used when calculating the calue of defense area provinces for the battle plan system works as multipliers on the rest
 NDefines.NMilitary.PLAN_AREA_DEFENSE_COASTAL_FORT_IMPORTANCE = 1-- Used when calculating the calue of defense area provinces for the battle plan system
-NDefines.NMilitary.PLAN_AREA_DEFENSE_COAST_NO_FORT_IMPORTANCE = 1-- Used when calculating the calue of defense area provinces for the battle plan system
+NDefines.NMilitary.PLAN_AREA_DEFENSE_COAST_NO_FORT_IMPORTANCE = 2-- Used when calculating the calue of defense area provinces for the battle plan system
 	
 --NDefines.NMilitary.PLAN_STICKINESS_FACTOR = 100.0					-- Factor used in unitcontroller when prioritizing units for locations
 	
@@ -356,7 +420,8 @@ NDefines.NMilitary.PLAN_PROVINCE_PRIO_DISTRIBUTION_DPP_LOW = 1	--2-- At what div
 NDefines.NAI.PLAN_FRONTUNIT_DISTANCE_FACTOR	= 30 --- closer units move first but domino is not possible
 --NDefines.NAI.REDEPLOY_DISTANCE_VS_ORDER_SIZE = 100
 NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 3				--should really help--	-- If a units path is at least this long to reach its front location it will strategically redeploy.
-NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.25		-- scales initiative for reinforce chance
+NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.5		-- scales initiative for reinforce chance
+NDefines.NMilitary.REINFORCE_CHANCE = 0.0
 	
 	
 

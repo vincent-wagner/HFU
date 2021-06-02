@@ -1,28 +1,23 @@
-
 state={
 	id=108
 	name="STATE_108"
 	resources={
-		#steel=3.000   moved to Campania
 	}
-
 	history={
 		victory_points = {
-			9602 3
+			8824 3
 		}
 		owner = YUG
 		buildings = {
 			infrastructure = 4
-
 		}
 		add_core_of = YUG
-
 	}
-
 	provinces={
-		630 833 867 3922 3939 6940 6953 6970 6998 9602 9756 9849 9874 9890 9906 11887
+		595 796 829 3672 3686 6421 6431 6446 6466 8824 8972 9052 9071 9084 9097 10781
 	}
 	manpower=1533000
 	buildings_max_level_factor=1.000
 	state_category=town
 }
+

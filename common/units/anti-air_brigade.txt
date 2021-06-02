@@ -21,6 +21,7 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
+			category_anti_air
 		}
 
 		combat_width = 1
@@ -32,7 +33,7 @@ sub_units = {
 		manpower = 500
 		training_time = 120
 		weight = 0.5
-
+		initiative = 0.005
 		supply_consumption = 0.05
 
 		need = {
@@ -80,10 +81,12 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
+			category_anti_air
+			category_mobile_artillery
 		}
 
 		combat_width = 1
-
+		initiative = 0.005
 		#Size Definitions
 		max_organisation = 0
 		default_morale = 0.1

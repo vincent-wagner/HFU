@@ -1,6 +1,6 @@
-﻿capital = 285
+capital = 273
 oob = "AST_1936"
-set_stability = 0.8
+set_stability = 0.65
 set_war_support = 0.15
 set_research_slots = 3
 add_ideas = reliance_on_natural_rubber
@@ -8,6 +8,14 @@ add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
 # Starting tech
 set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
+	desertinfantry_at = 1
+	shocktroops = 1
+	jungletroops = 1
+	jaegers = 1
+	tech_mountaineers = 1
+	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -18,23 +26,18 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
 	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
 	motorised_infantry = 1
 	fuel_silos = 1
 	interwar_antitank = 1
-
 	fleet_in_being = 1
 }
 set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-
-
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -82,7 +85,6 @@ if = {
 	}
 	set_naval_oob = "AST_1936_naval"
 }
-
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -90,21 +92,16 @@ if = {
 	add_ideas = AST_great_depression_1
 	add_ideas = SAF_the_commonwealth
 	add_to_tech_sharing_group = commonwealth_research
-
 }
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
 }
-
 set_popularities = {
 	democratic = 100
-
 }
-
 create_country_leader = {
 	name = "John Curtin"
 	desc = "POLITICS_JOHN_CURTIN_DESC"
@@ -115,35 +112,30 @@ create_country_leader = {
 		#
 	}
 }
-
 set_convoys = 100
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 2088
 	producer = AST
 }
-
-create_corps_commander = {
+create_field_marshal = {
 	name = "Leslie Morshead"
 	gfx = "GFX_AST_leslie_morshead"
-	traits = { infantry_leader trait_mountaineer trickster}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 5
-	logistics_skill = 2
+	traits = { commando panzer_leader trait_engineer ranger infantry_leader trait_mountaineer}
+	skill = 5
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 3
 }
-
-
-
 create_corps_commander = {
 	name = "Thomas Blamey"
 	gfx = "GFX_AST_thomas_blamey"
-	traits = { commando cavalry_leader panzer_leader}
+	traits = { infantry_leader organizer panzer_leader trait_engineer}
 	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
 	logistics_skill = 3
 }
 create_corps_commander = {
@@ -151,9 +143,9 @@ create_corps_commander = {
 	gfx = "GFX_AST_henry_wynter"
 	traits = {panzer_leader desert_fox trait_engineer}
 	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 1
 	logistics_skill = 3
 }
 create_corps_commander = {
@@ -161,7 +153,7 @@ create_corps_commander = {
 	gfx = "GFX_AST_alan_vasey"
 	traits = { hill_fighter infantry_leader naval_invader }
 	skill = 4
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 1
@@ -169,9 +161,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Horace Robertson"
 	gfx = "GFX_AST_horace_robertson"
-	traits = { desert_fox infantry_leader }
+	traits = { desert_fox infantry_leader trait_mountaineer }
 	skill = 4
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 1
 	planning_skill = 3
 	logistics_skill = 3
@@ -179,24 +171,23 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "John Northcott"
 	gfx = "GFX_AST_john_northcott"
-	traits = { armor_officer panzer_leader jungle_rat}
+	traits = {infantry_leader jungle_rat trickster}
 	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 5
 }
 create_navy_leader = {
 	name = "Harold Farncomb"
 	gfx = "GFX_AST_harold_farncomb"
-	traits = { naval_lineage }
+	traits = {}
 	skill = 4
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 3
 	maneuvering_skill = 3
 	coordination_skill = 4
 }
-
 create_navy_leader = {
 	name = "Victor Crutchley"
 	gfx = "GFX_AST_victor_crutchley"
@@ -210,7 +201,6 @@ create_navy_leader = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-
 	create_equipment_variant = {
 		name = "Sydney Class"
 		type = light_cruiser_1
@@ -221,7 +211,6 @@ if = {
 			ship_anti_air_upgrade = 2
 		}
 	}
-
 	create_equipment_variant = {
 		name = "Canberra Class"
 		type = heavy_cruiser_1
@@ -233,7 +222,6 @@ if = {
 		}
 	}
 }
-
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	### Ship Variants ###
@@ -328,3 +316,4 @@ if = {
 		obsolete = yes
 	}
 }
+

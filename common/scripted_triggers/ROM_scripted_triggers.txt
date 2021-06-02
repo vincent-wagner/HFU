@@ -1,5 +1,4 @@
 #scripted trigger for Hungary
-
 is_available_fighter_ROM = {
 	OR = {
 		AND = {
@@ -19,7 +18,6 @@ is_available_fighter_ROM = {
 		has_war_with = ROM
 	}
 }
-
 is_available_heavy_fighter_ROM = {
 	OR = {
 		AND = {
@@ -39,7 +37,6 @@ is_available_heavy_fighter_ROM = {
 		has_war_with = ROM
 	}
 }
-
 is_available_cas_ROM = {
 	OR = {
 		AND = {
@@ -59,7 +56,6 @@ is_available_cas_ROM = {
 		has_war_with = ROM
 	}
 }
-
 is_available_tac_ROM = {
 	OR = {
 		AND = {
@@ -79,3 +75,4 @@ is_available_tac_ROM = {
 		has_war_with = ROM
 	}
 }
+

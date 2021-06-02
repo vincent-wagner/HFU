@@ -1,0 +1,20 @@
+######################################
+category = {
+ name = "Speeches"
+ soundeffects = {
+	sp_ger_goebbels
+	sp_ger_anschluss
+	sp_jap_banzai
+	sp_usa_roosevelt
+	sp_ita_musso
+	sp_uk_chur
+	sp_sov_stalin
+	sp_sacred_war
+	sp_von_finnland
+	sp_ger_doctor
+	sp_ger_doctor_2
+	marschlied_panzergrenadiere
+	eisenhower
+ }
+ 
+}

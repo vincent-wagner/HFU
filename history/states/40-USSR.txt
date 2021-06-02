@@ -1,16 +1,12 @@
-
 state={
 	id=40
-	name="STATE_40" # Barnaul
+	name="STATE_40"
 	manpower = 2107451
-
 	state_category = large_town
-
 	history={
 		owner = SOV
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 4
 		}
 		add_core_of = SOV
 		1939.1.1 = {
@@ -19,11 +15,11 @@ state={
 			}
 		}
 		victory_points = {
-			1794 1
+			1708 1
 		}
 	}
-
 	provinces={
-		1297 1779 1794 1797 4803 7680 10537 10546 11410 12515 12528 12613
+		1242 1697 1708 1711 4487 7111 9684 9690 10338 11362 11369 11436
 	}
 }
+

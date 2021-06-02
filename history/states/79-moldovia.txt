@@ -3,11 +3,10 @@ state=
 	id=79
 	name="STATE_79"
 	manpower = 2806400
-
 	state_category = large_city
-
 	history=
 	{
+		add_state_modifier={modifier={local_supplies = 2}}
 		owner = ROM
 		buildings = {
 			infrastructure = 5
@@ -15,14 +14,15 @@ state=
 			air_base = 6
 		}
 		victory_points = {
-			9716 1
+			8933 4
 		}
 		victory_points = {
-			6706 1
+			6208 4
 		}
 		add_core_of = ROM
 	}
 	provinces=
 	{
-		723 744 3728 3741 6584 6706 6729 6747 6761 9701 9716 11534 11652 11655 11672 11689 	}
+		686 707 3499 3512 6088 6208 6231 6249 6263 8918 8933 10462 10575 10578 10595 10611}
 }
+

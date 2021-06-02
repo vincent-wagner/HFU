@@ -1,5 +1,4 @@
-﻿capital = 37
-
+capital = 37
 oob = "DEN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,7 +7,6 @@ if = {
 		set_naval_oob = "DEN_1936_naval_legacy"
 	}
 }
-
 set_research_slots = 3
 set_stability = 0.9
 set_war_support = 0.1
@@ -21,7 +19,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
-	cv_early_fighter = 1
 }
 add_timed_idea = { idea = no_training days= 730 }
 add_equipment_to_stockpile = {
@@ -56,7 +53,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.10.22"
@@ -68,10 +64,7 @@ set_popularities = {
 	fascism = 1
 	communism = 2
 }
-
-
 set_convoys = 40
-
 create_country_leader = {
 	name = "Thorvald Stauning"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
@@ -82,7 +75,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Frits Clausen"
 	desc = "POLITICS_FRITS_CLAUSEN_DESC"
@@ -93,7 +85,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Aksel Larsen"
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
@@ -104,7 +95,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Peter Rochegune Munch"
 	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
@@ -115,8 +105,6 @@ create_country_leader = {
 		#
 	}
 }
-
-
 create_corps_commander = {
 	name = "Wilhelm Wain Prior"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
@@ -127,7 +115,6 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 2
 }
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -187,3 +174,4 @@ if = {
 		}
 	}
 }
+

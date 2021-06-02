@@ -1,9 +1,6 @@
-﻿capital = 107
-
+capital = 107
 oob = "YUG_1936"
-
 set_research_slots = 3
-
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
@@ -17,10 +14,10 @@ if = {
 }
 add_ideas = {
 	anti_german_military
-
 }
-
 set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
@@ -33,7 +30,8 @@ set_technology = {
 	interwar_antiair = 1
 	superior_firepower = 1
 }
-add_timed_idea = { idea = no_training days= 730 }
+add_timed_idea = { idea = no_training days= 1095 }
+add_ideas = peace_training
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 2700
@@ -43,10 +41,7 @@ add_equipment_to_stockpile = {
 	amount = 175
 }
 add_manpower = 175000
-
-
 set_convoys = 10
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.5.3"
@@ -59,9 +54,7 @@ set_popularities = {
 	communism = 15
 	neutrality = 60
 }
-
 set_stability = 0.6
-
 create_country_leader = {
 	name = "Prince Paul"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
@@ -72,13 +65,11 @@ create_country_leader = {
 		#
 	}
 }
-
 create_corps_commander = {
 	name = "Ivan Gošnjak"
 	gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
 	traits = { urban_assault_specialist }
 	skill = 3
-
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
@@ -94,3 +85,4 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 3
 }
+

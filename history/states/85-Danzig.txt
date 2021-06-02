@@ -2,18 +2,17 @@ state={
 	id=85
 	name="STATE_85"
 	manpower = 1080100
-
 	state_category = city
 	history={
 		owner = POL
 		victory_points = {
-			362 10
+			330 10
 		}
 		victory_points = {
-			3295 5
+			3079 5
 		}
 		victory_points = {
-			279 1
+			251 1
 		}
 		buildings = {
 			infrastructure = 6
@@ -21,7 +20,7 @@ state={
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 3
-			362 = {
+			330 = {
 				naval_base = 5
 			}
 		}
@@ -30,8 +29,8 @@ state={
 			add_claim_by = GER
 		}
 	}
-
 	provinces={
-		243 279 334 362 389 3295 3324 6347 9263
+		215 251 302 330 354 3079 3108 5856 8501
 	}
 }
+

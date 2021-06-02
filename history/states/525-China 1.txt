@@ -1,0 +1,16 @@
+state={
+	id=525
+	name="STATE_601"
+	resources={
+	}
+	history={
+		
+	}
+	provinces={
+		4136 4659 4708 4723 7411 7422 9849 9923
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
+

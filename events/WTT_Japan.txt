@@ -1,26 +1,10 @@
-﻿add_namespace = wtt_japan
-
-#Jakob ID 1-100
-#Drikus ID 101-200
-#Gabriel ID 201-300
-
-##  #   # ### ###  #    ##  ###  ###
-#  # #   # #   #  # #   #  # #  # #  #
-#  #  # #  ##  ###  #   #  # ###  #  #
-#  #  # #  #   #  # #   #  # #  # #  #
-##    #   ### #  # ###  ##  #  # ###
-
-#Japans asks to take overlordship if country has capitulated
+add_namespace = wtt_japan
 country_event = {
 	id = wtt_japan.1
 	title = wtt_japan.1.t
 	desc = wtt_japan.1.desc
 	picture = GFX_report_event_japanese_transport_soldiers
-
 	is_triggered_only = yes
-
-	#Accept transfer puppet
-	#Checking for puppet in decision that fires event.
 	option = {
 		name = wtt_japan.1.a
 		ai_chance = {
@@ -31,46 +15,43 @@ country_event = {
 			}
 			FROM = { puppet = INS }
 		}
-
 		if = {
 			limit = { ROOT = { tag = FRA } }
 			if = {
 				limit = {
-					670 = {
+					589 = {
 						is_fully_controlled_by = FRA
 					}
 				}
-				FROM = { transfer_state = 670 }
+				FROM = { transfer_state = 589 }
 			}
 			if = {
 				limit = {
-					671 = {
+					590 = {
 						is_fully_controlled_by = FRA
 					}
 				}
-				FROM = { transfer_state = 671 }
+				FROM = { transfer_state = 590 }
 			}
 			if = {
 				limit = {
-					286 = {
+					274 = {
 						is_fully_controlled_by = FRA
 					}
 				}
-				FROM = { transfer_state = 286 }
+				FROM = { transfer_state = 274 }
 			}
 			if = {
 				limit = {
-					741 = {
+					659 = {
 						is_fully_controlled_by = FRA
 					}
 				}
-				FROM = { transfer_state = 741 }
+				FROM = { transfer_state = 659 }
 			}
 		}
 		FROM = { country_event = { id = wtt_japan.2 days = 1 } }
 	}
-
-	#Refuse
 	option = {
 		name = wtt_japan.1.b
 		ai_chance = {
@@ -79,18 +60,12 @@ country_event = {
 		FROM = { country_event = { id = wtt_japan.3 days = 1 } }
 	}
 }
-
-#Answer from wtt_japan.1 - FROM accepts
 country_event = {
 	id = wtt_japan.2
 	title = wtt_japan.2.t
 	desc = wtt_japan.2.desc
 	picture = GFX_report_event_generic_sign_treaty3
-
 	is_triggered_only = yes
-
-	#Accept transfer puppet
-	#Checking for puppet in decision that fires event.
 	option = {
 		name = wtt_japan.2.a
 		ai_chance = {
@@ -102,31 +77,29 @@ country_event = {
 				}
 				puppet = INS
 			}
-
 			if = {
 				limit = { FROM = { tag = ENG }
 				}
 				puppet = MAL
 			}
-
 			if = {
 				limit = { FROM = { tag = FRA } }
 				if = {
-					limit = { 670 = { is_fully_controlled_by = ROOT } }
-					transfer_state = 670
+					limit = { 589 = { is_fully_controlled_by = ROOT } }
+					transfer_state = 589
 				}
 				if = {
-					limit = { 671 = { is_fully_controlled_by = ROOT } }
-					transfer_state = 671
+					limit = { 590 = { is_fully_controlled_by = ROOT } }
+					transfer_state = 590
 				}
 				if = {
-					limit = { 286 = { is_fully_controlled_by = ROOT } }
-					transfer_state = 286
+					limit = { 274 = { is_fully_controlled_by = ROOT } }
+					transfer_state = 274
 				}
 				if = {
-					limit = { 741 = { is_fully_controlled_by = ROOT }
+					limit = { 659 = { is_fully_controlled_by = ROOT }
 					}
-					transfer_state = 741
+					transfer_state = 659
 				}
 			}
 			hidden_effect = {
@@ -135,17 +108,12 @@ country_event = {
 		}
 	}
 }
-
-#Answer from wtt_japan.1 - FROM refuses
 country_event = {
 	id = wtt_japan.3
 	title = wtt_japan.3.t
 	desc = wtt_japan.3.desc
 	picture = GFX_report_event_japanese_transport_soldiers
-
 	is_triggered_only = yes
-
-
 	option = {
 		name = wtt_japan.3.a
 		ai_chance = {
@@ -153,24 +121,12 @@ country_event = {
 		}
 	}
 }
-
-#  #  ##  #  #     ##   ##   ##  ###  ###  ##  ## ###  ##  #  #     ###   ##   ##  ###
-## # #  # ## #    #  # #    #    #  # #   #   #    #  #  # ## #     #  # #  # #  #  #
-# ## #  # # ## ## #### # ## # ## ###  ##   #   #   #  #  # # ##     ###  #### #     #
-#  # #  # #  #    #  # #  # #  # #  # #     #   #  #  #  # #  #     #    #  # #  #  #
-#  #  ##  #  #    #  #  ##   ##  #  # ### ##  ##  ###  ##  #  #     #    #  #  ##   #
-
-
-#Japan propose NAP to ROOT
 country_event = {
 	id = wtt_japan.11
 	title = wtt_japan.11.t
 	desc = wtt_japan.11.desc
 	picture = GFX_report_event_japan_europe_pact
-
 	is_triggered_only = yes
-
-	#Accept NAP
 	option = {
 		name = wtt_japan.11.a
 		ai_chance = {
@@ -183,9 +139,6 @@ country_event = {
 		}
 		FROM = { country_event = { id = wtt_japan.12 days = 1 } }
 	}
-
-
-	#Refuse NAP
 	option = {
 		name = wtt_japan.11.b
 		ai_chance = {
@@ -194,16 +147,12 @@ country_event = {
 		FROM = { country_event = { id = wtt_japan.13 days = 1 } }
 	}
 }
-
-#Japan propose NAP to ROOT
 country_event = {
 	id = wtt_japan.12
 	title = wtt_japan.12.t
 	desc = wtt_japan.12.desc
 	picture = GFX_report_event_japan_europe_pact
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_japan.12.a
 		ai_chance = {
@@ -218,16 +167,12 @@ country_event = {
 		}
 	}
 }
-
-#Japan propose NAP to ROOT
 country_event = {
 	id = wtt_japan.13
 	title = wtt_japan.13.t
 	desc = wtt_japan.13.desc
 	picture = GFX_report_event_japan_europe_pact
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_japan.13.a
 		ai_chance = {
@@ -235,24 +180,12 @@ country_event = {
 		}
 	}
 }
-
-
-### #   # ###  ### ###  ###  ##  #       ###  ##  #   # ### #   #   #
-#  ## ## #  # #   #  #  #  #  # #       #   #  # ## ##  #  #    # #
-#  # # # ###  ##  ###   #  #### #       ##  #### # # #  #  #     #
-#  #   # #    #   #  #  #  #  # #       #   #  # #   #  #  #     #
-### #   # #    ### #  # ### #  # ###     #   #  # #   # ### ###   #
-
-
-#Event from Communist China: turn over Manchuria OR ELSE
 country_event = {
 	id = wtt_japan.40
 	title = wtt_japan.40.t
 	desc = wtt_japan.40.desc
 	picture = GFX_report_event_japanese_chinese_surrender
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_japan.40.a
 		ai_chance = {
@@ -260,90 +193,90 @@ country_event = {
 		}
 		if = {
 			limit = {
-				controls_state = 610
+				controls_state = 534
 			}
 			FROM = {
-				transfer_state = 610
+				transfer_state = 534
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 609
+				controls_state = 533
 			}
 			FROM = {
-				transfer_state = 609
+				transfer_state = 533
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 716
+				controls_state = 634
 			}
 			FROM = {
-				transfer_state = 716
+				transfer_state = 634
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 745
+				controls_state = 663
 			}
 			FROM = {
-				transfer_state = 745
+				transfer_state = 663
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 328
+				controls_state = 295
 			}
 			FROM = {
-				transfer_state = 328
+				transfer_state = 295
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 717
+				controls_state = 635
 			}
 			FROM = {
-				transfer_state = 717
+				transfer_state = 635
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 714
+				controls_state = 632
 			}
 			FROM = {
-				transfer_state = 714
+				transfer_state = 632
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 715
+				controls_state = 633
 			}
 			FROM = {
-				transfer_state = 715
+				transfer_state = 633
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 761
+				controls_state = 675
 			}
 			FROM = {
-				transfer_state = 761
+				transfer_state = 675
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 611
+				controls_state = 535
 			}
 			FROM = {
-				transfer_state = 611
+				transfer_state = 535
 			}
 		}
 		if = {
 			limit = {
-				controls_state = 612
+				controls_state = 536
 			}
 			FROM = {
-				transfer_state = 612
+				transfer_state = 536
 			}
 		}
 	}
@@ -357,16 +290,12 @@ country_event = {
 		}
 	}
 }
-
-#Event to MAN. Japan sends guns
 country_event = {
 	id = wtt_japan.41
 	title = wtt_japan.41.t
 	desc = wtt_japan.41.desc
 	picture = GFX_report_event_
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_japan.41.a
 		ai_chance = {
@@ -384,17 +313,12 @@ country_event = {
 		}
 	}
 }
-
-# Liberate Manchuria notification event
 country_event = {
 	id = wtt_japan.101
 	title = wtt_japan.101.t
 	desc = wtt_japan.101.desc
 	picture = GFX_report_event_japanese_soldiers_03
-
 	is_triggered_only = yes
-
-	# Yes we will ally
 	option = {
 		name = wtt_japan.101.a
 		ai_chance = {
@@ -405,8 +329,6 @@ country_event = {
 			country_event = { id = wtt_japan.102 days = 1 }
 		}
 	}
-
-	# No ty
 	option = {
 		name = wtt_japan.101.b
 		ai_chance = {
@@ -417,46 +339,33 @@ country_event = {
 		}
 	}
 }
-
-# Liberate Manchuria alliance notification event for Japan
 country_event = {
 	id = wtt_japan.102
 	title = wtt_japan.101.t
 	desc = wtt_japan.102.desc
 	picture = GFX_report_event_japanese_soldiers_03
-
 	is_triggered_only = yes
-
 	option = {
 		name = excellent
 		effect_tooltip = { add_to_faction = FROM }
 	}
 }
-
-# Liberate Manchuria alliance rejected notification event for Japan
 country_event = {
 	id = wtt_japan.103
 	title = wtt_japan.101.t
 	desc = wtt_japan.103.desc
 	picture = GFX_report_event_japanese_soldiers_03
-
 	is_triggered_only = yes
-
 	option = {
 		name = unfortunate
 	}
 }
-
-# Event for USA - Root demanding full sovereignty for the Phillipines
 country_event = {
 	id = wtt_japan.104
 	title = wtt_japan.104.t
 	desc = wtt_japan.104.desc
 	picture = GFX_report_event_japanese_parade
-
 	is_triggered_only = yes
-
-	# They deserve freedom
 	option = {
 		name = wtt_japan.104.a
 		ai_chance = {
@@ -464,10 +373,8 @@ country_event = {
 		}
 		set_autonomy = { target = PHI autonomy_state = autonomy_free }
 		JAP = { country_event = { id = wtt_japan.105 days = 1 } }
-		"PHI" = { country_event = { id = wtt_japan.107 days = 1 } }
+		PHI = { country_event = { id = wtt_japan.107 days = 1 } }
 	}
-
-	# Never!
 	option = {
 		name = wtt_japan.104.b
 		ai_chance = {
@@ -476,16 +383,12 @@ country_event = {
 		JAP = { country_event = { id = wtt_japan.106 days = 1 } }
 	}
 }
-
-# Notification event for Japan upon USA giving full sovereignty to the Phillipines
 country_event = {
 	id = wtt_japan.105
 	title = wtt_japan.104.t
 	desc = wtt_japan.105.desc
 	picture = GFX_report_event_generic_usa_treaty
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_japan.105.a
 		ai_chance = {
@@ -496,16 +399,12 @@ country_event = {
 		}
 	}
 }
-
-# Notification event for Japan upon USA denying full sovereignty to the Phillipines
 country_event = {
 	id = wtt_japan.106
 	title = wtt_japan.104.t
 	desc = wtt_japan.106.desc
 	picture = GFX_report_event_generic_usa_treaty
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_japan.106.a
 		ai_chance = {
@@ -517,16 +416,12 @@ country_event = {
 		}
 	}
 }
-
-# Notification event for Phillipines upon USA giving full sovereignty to the Phillipines
 country_event = {
 	id = wtt_japan.107
 	title = wtt_japan.104.t
 	desc = wtt_japan.107.desc
 	picture = GFX_report_event_generic_usa_treaty
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_japan.107.a
 		ai_chance = {
@@ -540,52 +435,12 @@ country_event = {
 		}
 	}
 }
-
-# Coup placing Hirohito back in full control of the country
-country_event = {
-	id = wtt_japan.108
-	title = wtt_japan.108.t
-	desc = wtt_japan.108.desc
-	picture = GFX_report_event_japanese_parade
-
-	is_triggered_only = yes
-
-	option = {
-		name = wtt_japan.108.a
-		set_politics = { ruling_party = neutrality elections_allowed = no }
-		add_popularity = { ideology = neutrality popularity = 0.9 }
-		add_timed_idea = { idea = JAP_military_purges days = 90 }
-		create_country_leader = {
-			name = "Hirohito"
-			desc = "POLITICS_Hirohito_DESC"
-			picture = "Portrait_Japan_Hirohito.dds"
-			expire = "1989.1.1"
-			ideology = despotism
-			traits = {
-				warrior_code
-				emperor_showa
-			}
-			id = 700 #Hirohito
-		}
-		hidden_effect = { news_event = { id = wtt_news.27 hours = 6 } }
-	}
-}
-
-### ###  ### ###   ##  ###  ### ### ### ###     ###   ##   ##  ###
-#  #  #  #  #  # #  # #  #  #   #   #  #       #  # #  # #  #  #
-#  ###   #  ###  #### ###   #   #   #  ##      ###  #### #     #
-#  #  #  #  #    #  # #  #  #   #   #  #       #    #  # #  #  #
-#  #  # ### #    #  # #  #  #  ###  #  ###     #    #  #  ##   #
-
-# Event for Germany to accept Tripartite Pact
 country_event = {
 	id = wtt_japan.109
 	title = wtt_japan.109.t
 	desc = wtt_japan.109.desc
 	picture = GFX_report_event_japan_europe_pact
-
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			FROM = { save_event_target_as = JAP_initiator }
@@ -599,63 +454,44 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
-		name = wtt_japan.109.a #accept
-
-
+		name = wtt_japan.109.a
 		GER = {
 			add_opinion_modifier = { target = ITA modifier = tripartite_pact_opinion }
 			add_opinion_modifier = { target = JAP modifier = tripartite_pact_opinion }
 		}
-
 		hidden_effect = {
 			GER = {
 				add_opinion_modifier = { target = MAN modifier = tripartite_pact_opinion }
 			}
-
 		}
-
-
-
-
 		event_target:ITA_fascism = {
 			country_event = { id = wtt_japan.110 hours = 6 }
 		}
 	}
 }
-
-# Event for Italy to accept Tripartite Pact
 country_event = {
 	id = wtt_japan.110
 	title = wtt_japan.109.t
 	desc = wtt_japan.110.desc
 	picture = GFX_report_event_japan_europe_pact
-
 	is_triggered_only = yes
-
 	option = {
-		name = wtt_japan.109.a ##accept
-
+		name = wtt_japan.109.a
 		ITA = {
 			add_opinion_modifier = { target = GER modifier = tripartite_pact_opinion }
 			add_opinion_modifier = { target = JAP modifier = tripartite_pact_opinion }
 		}
-
 		event_target:JAP_initiator = { country_event = { id = wtt_japan.111 hours = 6 } }
 		event_target:GER_fascism = { country_event = { id = wtt_japan.113 hours = 6 } }
 	}
 }
-
-#Notification event that Tripartite Pact has been signed
 country_event = {
 	id = wtt_japan.111
 	title = wtt_japan.111.t
 	desc = wtt_japan.111.desc
 	picture = GFX_report_event_japan_europe_pact
-
 	is_triggered_only = yes
-
 	option = {
 		name = excellent
 		ai_chance = {
@@ -665,54 +501,35 @@ country_event = {
 			add_opinion_modifier = { target = ITA modifier = tripartite_pact_opinion }
 			add_opinion_modifier = { target = GER modifier = tripartite_pact_opinion }
 		}
-
 	}
 }
-
-#Notification event for GER that ITA has accepted Tripartite Pact
 country_event = {
 	id = wtt_japan.113
 	title = wtt_japan.113.t
 	desc = wtt_japan.113.desc
 	picture = GFX_report_event_japan_europe_pact
-
 	is_triggered_only = yes
-
 	option = {
 		name = excellent
 	}
 }
-
-###   ##  ###  ###  ### ###       ##   ##  #  # ### #   ###  ##  ###  ##
-#  # #  # #  # #  # #   #  #     #  # #  # ## # #   #    #  #  #  #  #
-###  #  # ###  #  # ##  ###      #    #  # # ## ##  #    #  #     #   #
-#  # #  # #  # #  # #   #  #     #  # #  # #  # #   #    #  #  #  #    #
-###   ##  #  # ###  ### #  #      ##   ##  #  # #   ### ###  ##   #  ##
-
 add_namespace = japan_border_conflict
-
-#initial border incident against Soviet Union
 country_event = {
 	id = japan_border_conflict.1
 	title = japan_border_conflict.1.t
 	desc = japan_border_conflict.1.desc
 	picture = GFX_report_event_japan_army_mountainside
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan_border_conflict.1.a
 	}
 }
-#Japan wins
 country_event = {
 	id = japan_border_conflict.2
 	title = japan_border_conflict.2.t
 	desc = japan_border_conflict.2.desc
 	picture = GFX_report_event_japanese_transport_soldiers
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan_border_conflict.2.a
 		trigger = {
@@ -731,7 +548,6 @@ country_event = {
 				bonus = 1.0
 			}
 		}
-
 	}
 	option = {
 		name = japan_border_conflict.2.b
@@ -741,19 +557,15 @@ country_event = {
 		if = {
 			limit = { original_tag = SOV}
 			army_experience = 20
-
 		}
 	}
 }
-#Japan loses
 country_event = {
 	id = japan_border_conflict.3
 	title = japan_border_conflict.3.t
 	desc = japan_border_conflict.3.desc
 	picture = GFX_report_event_japanese_soldiers_03
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan_border_conflict.3.a
 		trigger = {
@@ -762,7 +574,6 @@ country_event = {
 		if = {
 			limit = { original_tag = JAP}
 			army_experience = 25
-
 		}
 	}
 	option = {
@@ -778,19 +589,14 @@ country_event = {
 				bonus = 1.0
 			}
 		}
-
 	}
 }
-
-#stalemate
 country_event = {
 	id = japan_border_conflict.4
 	title = japan_border_conflict.4.t
 	desc = japan_border_conflict.4.desc
 	picture = GFX_report_event_japanese_army_parade
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan_border_conflict.4.a
 		trigger = {
@@ -800,7 +606,6 @@ country_event = {
 			limit = { original_tag = JAP}
 			army_experience = 50
 		}
-
 	}
 	option = {
 		name = japan_border_conflict.3.b
@@ -811,22 +616,16 @@ country_event = {
 			limit = { original_tag = SOV}
 			army_experience = 50
 		}
-
 	}
 }
-
-#japan escalates
 country_event = {
 	id = japan_border_conflict.5
 	title = japan_border_conflict.5.t
 	desc = japan_border_conflict.5.desc
 	picture = GFX_report_event_japanese_parade
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan_border_conflict.5.a
-
 	}
-
 }
+

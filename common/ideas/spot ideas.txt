@@ -7,14 +7,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-
 			picture = chi_war_of_resistance3
-
 			modifier = {
-				army_core_attack_factor = 0.3
-				army_core_defence_factor = 0.3
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
 			}
 		}
 		JAP_faction_trade = {
@@ -69,3 +66,4 @@ ideas = {
 		}
 	}
 }
+

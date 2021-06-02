@@ -1,149 +1,212 @@
-#Adjacency rules are special rules for adjacencies
-#If smbd who is at war fights over canal/strait it is considered closed
-#Enemy status is considered if any of sides controlling the chanel is at war with country
-#Friend status is considered non of sides controlling the chanel is at war with country and one of controllers is ally of giving military access
-#Every one else is considered as neutral according to canal/strait
-#Military access considered as being friend
-#Rules needs linking from the straits that are affected by the rule ( adjacency_rule_id )
-
-#Name is how you refer to the rule in adjecencies.csv
-#Spain Strait
-adjacency_rule
-{
+adjacency_rule={
+	name = "Adriatic Strait"
+	contested =
+	{
+		army = no
+		navy = yes
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = {6452 10684}
+	icon =5420
+	offset = { 7 0 14 }
+}
+adjacency_rule={
+	name = "IRAN_CANAL"
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	required_provinces = {4298 7368}
+	icon =9915
+	offset = { 5 0 -6 }
+}
+adjacency_rule={
 	name = "Berlin-Madrid"
-
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-
-	required_provinces = { 3938 }
+	required_provinces = {3685}
 	is_disabled = {
 		NOT = {
 			tag=SPR
-
 		}
-
 	}
 }
-
-#Spain Strait2
-adjacency_rule
-{
-	name = "Vienna-Madrid"
-
-	contested =
-	{
+adjacency_rule={
+	name = "Kazan-Siberia"
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-
-	required_provinces = { 896 }
-	is_disabled = {
-		NOT = {
-			tag=SPR
-
-		}
-
-	}
-}
-#Vladistrait
-adjacency_rule
-{
-	name = "Amur-Khabarovsk"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = yes
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = yes
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-
-	required_provinces = { 12657 }
+	required_provinces = {5848}
 	is_disabled = {
 		NOT = {
 			tag=SOV
-
 		}
-
 	}
 }
-
-
-#Suez Canal
+adjacency_rule
+{
+	name = "Vienna-Madrid"
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = {854}
+	is_disabled = {
+		NOT = {
+			tag=SPR
+		}
+	}
+}
+adjacency_rule
+{
+	name = "Amur-Khabarovsk"
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = {11470}
+	is_disabled = {
+		NOT = {
+			tag=SOV
+		}
+	}
+}
 adjacency_rule
 {
 	name = "SUEZ_CANAL"
-
 	contested =
 	{
 		army = no
@@ -172,9 +235,7 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-
-	required_provinces = { 12049 1155 4073 9947 }
-
+	required_provinces = {1100 3809 9132 10936}
 	is_disabled = {
 		OR = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
@@ -186,16 +247,12 @@ adjacency_rule
 		}
 		tooltip = disable_canal_tt
 	}
-
-	icon = 12049
+	icon =10936
 	offset = { 1 0 -6 }
 }
-
-#Gibraltar Strait
 adjacency_rule
 {
 	name = "GIBRALTAR_STRAIT"
-
 	contested =
 	{
 		army = no
@@ -224,10 +281,8 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-
-	required_provinces = { 4135 13235}
-
-	icon = 13235
+	required_provinces = {3867 11883}
+	icon =11883
 	offset = { 2.0 0.0 -4.0 }
 	is_disabled = {
 		OR= {
@@ -237,17 +292,50 @@ adjacency_rule
 			}
 			AND = {
 				tag = USA
-				SOV = {has_war = no}
+				date<1942.6.1
 			}
 		}
 	}
 }
-
-#Øresund - (Østersøen <-> Kattegat/Skagerak/Nordsøen)
+adjacency_rule
+{
+	name = "ADEN_STRAIT"
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = {4702 4634}
+	icon =2595
+	offset = { -10.0 0.0 7.0 }
+	
+}
 adjacency_rule
 {
 	name = "DANISH_BELTS_STRAIT"
-
 	contested =
 	{
 		army = no
@@ -276,18 +364,13 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-
-	required_provinces = { 6287 3277 3325 3260 394 }
-
-	icon = 2455
+	required_provinces = {359 3045 3062 3109 5801}
+	icon =2274
 	offset = { -26 0 -13 }
 }
-
-#Panama Canal
 adjacency_rule
 {
 	name = "PANAMA_CANAL"
-
 	contested =
 	{
 		army = no
@@ -316,9 +399,7 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-
-	required_provinces = { 4624 7617 }
-
+	required_provinces = {4335 7058}
 	is_disabled = {
 		OR = {
 			has_global_flag = PANAMA_CANAL_BLOCKED
@@ -326,16 +407,12 @@ adjacency_rule
 		}
 		tooltip = disable_canal_tt
 	}
-
-	icon = 7617
+	icon =7058
 	offset = { -3 0 -2 }
 }
-
-#Turkish Straits
 adjacency_rule
 {
 	name = "BOSPHORUS_STRAIT"
-
 	contested =
 	{
 		army = no
@@ -362,20 +439,15 @@ adjacency_rule
 		army = no
 		navy = no
 		submarine = no
-		trade = yes
+		trade = no
 	}
-
-	required_provinces = { 9833 11829 }
-
-	icon = 9833
+	required_provinces = {9037 848}
+	icon =9037
 	offset = { -2 0 -9 }
 }
-
-#Kiel Canal
 adjacency_rule
 {
 	name = "KIEL_CANAL"
-
 	contested =
 	{
 		army = no
@@ -404,9 +476,43 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-
-	required_provinces = { 11366 317 3231 }
-
-	icon = 11366
+	required_provinces = {286 3016 10297}
+	icon =10297
 	offset = { 5 0 -6 }
 }
+adjacency_rule
+{
+	name = "LENINGRAD_CANAL"
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	required_provinces = {10062 10218 135}
+	icon =10218
+	offset = { 0 0 -1 }
+}
+

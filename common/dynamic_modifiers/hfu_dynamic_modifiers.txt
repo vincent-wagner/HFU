@@ -1,5 +1,48 @@
 Ostarbeiter = {
 	industrial_capacity_factory = barb_factory_output
-	consumer_goods_factor=-0.1
+	consumer_goods_factor=ostarbeiter_cg
 
+}
+POW_industry = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = pow_industrial_capacity
+	industrial_capacity_dockyard= pow_dockyard_capacity
+	local_resources_factor  = pow_resource_gain
+	production_speed_air_base_factor = pow_fortification
+	production_speed_infrastructure_factor = pow_infrastructure_speed
+	production_speed_bunker_factor = pow_fortification
+	production_speed_coastal_bunker_factor = pow_fortification
+	production_speed_anti_air_building_factor = pow_fortification
+
+}
+JAP_volunteer_workers_in_burma = {
+	state_production_speed_buildings_factor = 1.0
+
+}
+JAP_attack = {
+	max_dig_in = -7.5
+
+}
+SOV_noob = {
+	max_dig_in = 7.5
+	dig_in_speed_factor = 1
+}
+pacific_war = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = pacific_status
+	industrial_capacity_dockyard = pacific_status_negative
+
+}
+pacific_war_minor = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = ENG.pacific_status
+	industrial_capacity_dockyard = ENG.pacific_status_negative
+
+}
+Atlantikwall={
+	naval_invasion_penalty=GER.pacific_status
+}
+Atlantikwall_visual = {
+		icon = "FRA_fortification_focus"
+	naval_mine_hit_chance=GER.pacific_status
 }
