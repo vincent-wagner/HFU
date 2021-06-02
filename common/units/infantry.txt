@@ -304,7 +304,7 @@ sub_units = {
 		#Size Definitions
 		max_strength = 28
 		max_organisation = 70
-		default_morale = 0.6
+		default_morale = 0.7
 		manpower = 1000
 
 		#Misc Abilities
@@ -312,7 +312,7 @@ sub_units = {
 		suppression = 1
 		weight = 0.5
 		initiative = 0.01
-		supply_consumption = 0.05
+		supply_consumption = 0.04
 		supply_consumption_factor=-0.01
 		breakthrough = 0.2
 
@@ -322,7 +322,7 @@ sub_units = {
 
 		desert = {
 			attack = 0.1
-			defence = 0.15
+			defence = 0.1
 			movement = 0.3
 		}
 
@@ -444,10 +444,7 @@ sub_units = {
 			infantry_equipment = 300
 		}
 		jungle = {
-
 			attack = 0.15
-
-
 		}
 		marsh = {
 			attack = 0.35
@@ -514,6 +511,16 @@ sub_units = {
 			attack = 0.4
 			defence = 0.1
 			movement = 0.2
+		}
+		marsh = {
+			attack = 0.1
+			defence = 0.1
+			movement = 0.1
+		}
+		forest = {
+			attack = 0.2
+			defence = 0.1
+			movement = 0.1
 		}
 
 
