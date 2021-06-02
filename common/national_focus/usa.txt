@@ -1747,7 +1747,6 @@ focus_tree = {
 				FRA = {add_timed_idea={idea= USA_overlord days=60}}
 				SAF = {add_timed_idea={idea= USA_overlord days=60}}
 				CAN = {add_timed_idea={idea= USA_overlord days=60}}
-				NZL = {add_timed_idea={idea= USA_overlord days=60}}
 				AST = {add_timed_idea={idea= USA_overlord days=60}}
 				RAJ = {add_timed_idea={idea= USA_overlord days=60}}
 			}
@@ -1889,7 +1888,6 @@ focus_tree = {
 				FRA = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
 				SAF = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
 				CAN = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				NZL = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
 				AST = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
 				RAJ = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
 			}

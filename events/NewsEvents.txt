@@ -1874,7 +1874,6 @@ news_event = {
 		FRA = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 		CAN = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 		SAF = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
-		NZL = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 		AST = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 		RAJ = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 	}
@@ -2029,7 +2028,6 @@ news_event = {
 		FRA={add_ideas={ENG_lose_in_africa}}
 		CAN={add_ideas={ENG_lose_in_africa}}
 		SAF={add_ideas={ENG_lose_in_africa}}
-		NZL={add_ideas={ENG_lose_in_africa}}
 		AST={add_ideas={ENG_lose_in_africa}}
 		RAJ={add_ideas={ENG_lose_in_africa}}
 	}
@@ -2390,7 +2388,6 @@ news_event = {
 			2 = { is_controlled_by = USA }
 			2 = { is_controlled_by = AST }
 			2 = { is_controlled_by = CAN }
-			2 = { is_controlled_by = NZL }
 			2 = { is_controlled_by = SAF }
 		}
 		OR = {
@@ -2413,7 +2410,6 @@ news_event = {
 				TAG = USA
 				TAG = AST
 				TAG = CAN
-				TAG = NZL
 				TAG = SAF
 				TAG = ITA
 				TAG = GER
@@ -2428,7 +2424,6 @@ news_event = {
 				TAG = USA
 				TAG = AST
 				TAG = CAN
-				TAG = NZL
 				TAG = SAF
 			}
 		}
@@ -2505,7 +2500,6 @@ news_event = {
 				TAG = AST
 				TAG = FRA
 				TAG = CAN
-				TAG = NZL
 				TAG = SAF
 				TAG = GER
 			}
@@ -2520,7 +2514,6 @@ news_event = {
 				TAG = AST
 				TAG = FRA
 				TAG = CAN
-				TAG = NZL
 				TAG = SAF
 			}
 		}
@@ -5081,56 +5074,6 @@ news_event = {
 				is_in_faction_with = ENG
 			}
 			NOT = { TAG = SAF }
-		}
-	}
-}
-news_event = {
-	id = news.270
-	title = news.270.t
-	desc = news.270.desc
-	picture = GFX_news_event_glorious_vehicle
-	major = yes
-	fire_only_once = yes
-	trigger = {
-		NZL = { has_tech = basic_light_tank }
-	}
-	option = {
-		name = news.270.a
-		trigger = {
-			TAG = NZL
-		}
-	}
-	option = {
-		name = news.270.b
-		trigger = {
-			NOT = {
-				TAG = NZL
-			}
-		}
-	}
-}
-news_event = {
-	id = news.271
-	title = news.271.t
-	desc = news.271.desc
-	picture = GFX_news_event_glorious_vehicle
-	major = yes
-	fire_only_once = yes
-	trigger = {
-		NZL = { has_tech = super_heavy_tank }
-	}
-	option = {
-		name = news.271.a
-		trigger = {
-			TAG = NZL
-		}
-	}
-	option = {
-		name = news.271.b
-		trigger = {
-			NOT = {
-				TAG = NZL
-			}
 		}
 	}
 }

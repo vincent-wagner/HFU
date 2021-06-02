@@ -511,15 +511,14 @@ news_event = {
 		trigger = {
 			is_literally_china = yes
 			OR = {
-				is_subject_of = MAN
-				is_in_faction_with = MAN
+				
 			}
 		}
 	}
 	option = {
 		name = wtt_news.44.b
 		trigger = {
-			original_tag = MAN
+			
 		}
 	}
 	option = {
@@ -532,7 +531,6 @@ news_event = {
 		name = wtt_news.44.d
 		trigger = {
 			NOT = {
-				original_tag = MAN
 				original_tag = JAP
 				is_literally_china = yes
 			}
@@ -542,10 +540,6 @@ news_event = {
 		name = wtt_news.44.e
 		trigger = {
 			is_literally_china = yes
-			NOT = {
-				is_subject_of = MAN
-				is_in_faction_with = MAN
-			}
 		}
 	}
 }
@@ -642,7 +636,7 @@ news_event = {
 	option = {
 		name = wtt_news.48.b
 		trigger = {
-			original_tag = MAN
+			
 		}
 	}
 	option = {
@@ -655,7 +649,6 @@ news_event = {
 		name = wtt_news.48.d
 		trigger = {
 			NOT = {
-				original_tag = MAN
 				original_tag = JAP
 				is_literally_china = yes
 			}

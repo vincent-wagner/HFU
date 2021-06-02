@@ -5,9 +5,8 @@ state={
 		oil = 5
 	}
 	history={
-		owner = MAN
+		owner = JAP
 		add_core_of = CHI
-		add_core_of = MAN
 		buildings = {
 			infrastructure = 4
 		}

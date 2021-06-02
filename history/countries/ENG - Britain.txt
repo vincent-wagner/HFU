@@ -196,11 +196,6 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
-	set_autonomy = {
-		target = NZL
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-	}
 	else = {
 		puppet = RAJ
 	}
@@ -230,7 +225,6 @@ add_to_faction = ENG
 add_to_faction = FRA
 add_to_faction = CAN
 add_to_faction = AST
-add_to_faction = NZL
 add_to_faction = SAF
 add_to_faction = USA
 give_military_access = RAJ

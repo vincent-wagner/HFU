@@ -171,19 +171,6 @@ bookmarks = {
 
 			}
 		}
-		"NZL"={
-			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-
-			}
-			focuses = {
-				NZL_bob_semple_tank
-				NZL_the_first_labor_government
-				NZL_maori_conscription
-			}
-		}
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
@@ -260,24 +247,6 @@ bookmarks = {
 
 			}
 		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obedience
-				MAN_develop_aluminum_sources
-			}
-		}
-
-
-
-
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

@@ -4,7 +4,7 @@ state={
 	manpower = 899836
 	state_category = city
 	history={
-		owner = NZL
+		owner = AST
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
@@ -23,7 +23,7 @@ state={
 		victory_points = {
 			4265 5
 		}
-		add_core_of = NZL
+		add_core_of = AST
 	}
 	provinces={
 		1506 1643 1668 1702 1714 1724 4265 4326 4417 4441 4488 7122 7165 7200 7235 7288 9509 9543 9740 9827 11232 11429 11439 11477

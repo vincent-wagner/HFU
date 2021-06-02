@@ -371,12 +371,6 @@ ideas = {
 				
 			}
 			targeted_modifier = {
-				tag = NZL
-				defense_bonus_against  = -0.1
-				attack_bonus_against  = -0.1
-				
-			}
-			targeted_modifier = {
 				tag = CAN
 				defense_bonus_against  = -0.1
 				attack_bonus_against  = -0.1

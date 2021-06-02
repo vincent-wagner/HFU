@@ -9,7 +9,6 @@ state={
 	{
 		owner = JAP
 		add_core_of = CHI
-		add_core_of = MAN
 		victory_points = {
 			1095 1
 		}
@@ -17,7 +16,7 @@ state={
 			infrastructure = 5
 			air_base = 1
 			1095 = {
-				naval_base = 5
+				naval_base = 20
 				coastal_bunker = 1
 			}
 		}

@@ -41,9 +41,6 @@ country_event = {
 				HUN = {
 					army_experience = 100
 				}
-				MAN = {
-					army_experience = 100
-				}
 				set_global_flag = spanish_civil_war
 				set_stability = 1
 				set_war_support = 1

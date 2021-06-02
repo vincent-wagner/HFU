@@ -2,7 +2,7 @@ war_measures = {
 	Manpower = {
 		icon = generic_industry
 		allowed = {
-			OR={tag=CAN tag=SAF tag=NZL tag=AST tag=IRE}
+			OR={tag=CAN tag=SAF tag=AST}
 		}
 		available = {
 			has_war = yes

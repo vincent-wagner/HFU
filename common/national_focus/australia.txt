@@ -2139,7 +2139,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = AST_classify_aliens
-			NZL = {add_ideas = AST_classify_aliens}
 		}
 	}
 	focus = {

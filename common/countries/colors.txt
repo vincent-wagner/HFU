@@ -121,10 +121,6 @@ JAP = {
 	color = rgb { 220 220 220 }
 	color_ui = rgb { 220 220 220 }
 }
-NZL = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
-}
 PER = {
 	color = rgb { 71 113 97 }
 	color_ui = rgb { 92 147 126 }
@@ -144,10 +140,6 @@ RAJ = {
 INS = {
 	color = rgb { 128  158  118 }
 	color_ui = rgb { 128  158  118 }
-}
-MAN = {
-	color = rgb { 212  96  20 }
-	color_ui = rgb { 255  120  71 }
 }
 SWI = {
 	color = rgb { 224 5 5 }

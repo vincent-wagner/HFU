@@ -323,10 +323,6 @@ anti_cross_faction_trade_allies = {
 		target = AST
 		modifier = anti_cross_faction_trade
 	}
-	add_opinion_modifier = {
-		target = NZL
-		modifier = anti_cross_faction_trade
-	}
 }
 anti_cross_faction_trade_all = {
 	ENG = {
@@ -342,9 +338,6 @@ anti_cross_faction_trade_all = {
 		anti_cross_faction_trade_axis = yes
 	}
 	AST = {
-		anti_cross_faction_trade_axis = yes
-	}
-	NZL = {
 		anti_cross_faction_trade_axis = yes
 	}
 	SAF = {

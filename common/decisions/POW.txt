@@ -101,7 +101,7 @@ POW = {
 				multiply_temp_variable = {increase = 0.5}
 				add_to_variable={POW_recruit_workers_for_army_production_cost = increase}
 			}
-			add_to_variable = {pow_industrial_capacity =0.025}
+			add_to_variable = {pow_industrial_capacity =0.01}
 			custom_effect_tooltip = POW_recruit_workers_tt5
 			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
 					add_dynamic_modifier = { modifier = POW_industry }

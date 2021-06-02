@@ -91,38 +91,6 @@ foreign_politics = {
 			}
 		}
 	}
-	
-	ENG_annex_nzl = {
-		icon = generic_operation
-		available = {
-			NZL = { is_ai = yes }
-			date>1939.1.1
-			AST = { is_ai = yes }
-		}
-		allowed = {
-			tag = ENG
-		}
-		cost = 0
-		visible = {
-			NZL= { is_ai = yes }
-		}
-		fire_only_once = yes
-		complete_effect = {
-			NZL = {
-				pow_before_annex=yes
-				every_owned_state={
-					limit={is_core_of=PREV}
-					add_core_of = ENG
-				}
-			}
-			ENG = {
-				annex_country = {
-					target = NZL
-					transfer_troops = yes
-				}
-			}
-		}
-	}
 	ENG_get_chromium = {
 		icon = generic_operation
 		allowed = {
@@ -227,10 +195,6 @@ ENG_imperial_conference_decision = {
 						AND = {
 							is_subject_of = ENG
 							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
 						}
 					}
 				}

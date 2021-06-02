@@ -7,9 +7,8 @@ state={
 		rubber=3
 	}
 	history={
-		owner = NZL
-		add_core_of=NZL
-		add_core_of=SWE
+		owner = AST	
+		add_core_of=AST
 		buildings = {
 			infrastructure = 3
 			4016 = {

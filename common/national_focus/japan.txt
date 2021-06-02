@@ -149,9 +149,6 @@ focus_tree = {
 				CAN = { add_war_support = 0.1
 					army_experience = 100
 					air_experience = 200}
-				NZL = { add_war_support = 0.1
-					army_experience = 100
-					air_experience = 200}
 				RAJ = { add_war_support = 0.1
 					army_experience = 100
 					air_experience = 200}
@@ -178,9 +175,6 @@ focus_tree = {
 					air_experience = 200}
 				ROM = {
 					army_experience = 150
-					air_experience = 200}
-				MAN = {
-					army_experience = 300
 					air_experience = 200}
 				USA = {
 					country_event = { id = panay_incident.2 days = 20 }
@@ -212,11 +206,6 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-
-			if={limit={country_exists = MAN}
-				MAN={add_ideas=wartime_economy_man
-					add_ideas=closed_economy}
-			}
 			add_threat = 20
 			CHI = {set_equipment_fraction = 0}
 			annex_country = {
@@ -249,10 +238,7 @@ focus_tree = {
 					army_experience = 100
 				}
 				CAN = {
-					army_experience = 100
-				}
-				NZL = {
-					army_experience = 100
+					army_experience = 150
 				}
 				RAJ = {
 					army_experience = 100
@@ -332,7 +318,6 @@ focus_tree = {
 				unlock_decision_category_tooltip = prospect_for_resources
 			}
 			add_timed_idea = { idea = SPA_preparing_for_war days = 365 }
-			MAN = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
 		}
 	}
 	focus = {
@@ -653,10 +638,8 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			add_political_power = 50
-			MAN = {
-				MAN_low_legitimacy_level_down = yes
-			}
+			add_political_power = 100
+			
 		}
 	}
 	focus = {
@@ -713,24 +696,20 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
-			MAN = {
-				295 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
+			295 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
 		completion_reward = {
-			MAN = {
-				295 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
+			295 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
@@ -1077,11 +1056,6 @@ focus_tree = {
 				}
 			}
 			add_ideas = JAP_superior_will
-			hidden_effect={
-				MAN = {
-				add_ideas = JAP_superior_will
-				}
-			}
 		}
 	}
 	focus = {
@@ -1454,9 +1428,6 @@ focus_tree = {
 				category = marine_tech
 			}
 			hidden_effect={
-				MAN = {
-				add_ideas = JAP_expand_the_snlf
-				}
 				division_template = {
 					name = "Rikuhentai"
 					division_names_group = JAP_MAR_01
@@ -1877,10 +1848,6 @@ focus_tree = {
 			JAP = {
 				add_timed_idea = { idea = JAP_banzai days = 180 }
 			}
-			MAN = {
-				add_timed_idea = { idea = JAP_banzai days = 180 }
-				add_ideas = closed_economy
-			}
 			custom_effect_tooltip = tooltip_jap_war
 			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 90 }
 			hidden_effect={
@@ -2224,7 +2191,6 @@ focus_tree = {
 			633 = { add_extra_state_shared_building_slots = 2 }
 			534 = { add_extra_state_shared_building_slots = 2 }
 			295 = { add_extra_state_shared_building_slots = 2 }
-			MAN = { 	MAN_low_legitimacy_level_down = yes }
 		}
 	}
 	focus = {

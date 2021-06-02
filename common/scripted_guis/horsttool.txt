@@ -17,7 +17,7 @@ scripted_gui = {
 
 			observer_click = { owner = {
 					set_temp_variable = { ROOT.marks = this}
-					PHI = {change_tag_from =var:marks}
+					DEN = {change_tag_from =var:marks}
 
 				}
 

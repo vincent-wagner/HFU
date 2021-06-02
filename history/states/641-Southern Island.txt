@@ -7,7 +7,7 @@ state={
 	}
 	state_category = rural
 	history={
-		owner = NZL
+		owner = AST
 		buildings = {
 			infrastructure = 5
 			air_base = 1
@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			2041 1
 		}
-		add_core_of = NZL
+		add_core_of = AST
 	}
 	provinces={
 		2036 2038 2041 4500 4775 7248 7518 7522 7529 7532 9775 11453 11672 11675 11678 11680

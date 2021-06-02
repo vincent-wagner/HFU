@@ -114,7 +114,6 @@ country_event = {
 			diplomatic_relation = { country = CAN relation = non_aggression_pact }
 			diplomatic_relation = { country = RAJ relation = non_aggression_pact }
 			diplomatic_relation = { country = AST relation = non_aggression_pact }
-			diplomatic_relation = { country = NZL relation = non_aggression_pact }
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
 		}
 		if = {

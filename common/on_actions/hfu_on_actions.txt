@@ -117,7 +117,6 @@ on_actions = {
 				add_ideas=no_agency_passive_defense
 				
 			}
-			GER = {set_variable = {ostarbeiter_cg=-0.1}}
 			every_country={
 				limit={is_playable_country=yes}
 				add_ideas=research_35
@@ -232,9 +231,6 @@ on_actions = {
 				JAP={
 					share_intel_with_allies=yes
 				}
-				MAN={if={limit={country_exists=MAN}
-						share_intel_with_allies=yes
-						}}
 			}
 			if={limit = {is_in_faction_with = ENG}
 				SOV={
@@ -274,8 +270,6 @@ on_actions = {
 						tag = JAP
 						tag = RAJ
 						tag = AST
-						tag = NZL
-						tag = MAN
 						tag = BUL
 						tag = ROM
 						tag = HUN
@@ -501,10 +495,7 @@ on_actions = {
 			if = {
 				limit = {
 					ROOT = {
-						OR = {
 							tag = JAP
-							tag = MAN
-						}
 					}
 					FROM.FROM = {
 						AND = {
@@ -538,13 +529,6 @@ on_actions = {
 								state = 656
 							}
 							USA = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-							NZL = {
 								divisions_in_state = {
 									type = infantry
 									size < 1
@@ -641,7 +625,6 @@ on_actions = {
 					OR={
 						tag=AST
 						tag=RAJ
-						tag=NZL
 						tag=FRA
 						tag=SAF
 						}}

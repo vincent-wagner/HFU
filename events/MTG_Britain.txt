@@ -93,10 +93,6 @@ country_event = {
 						is_subject_of = ENG
 						tag = AST
 					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
-					}
 				}
 			}
 			add_opinion_modifier = { target = ROOT modifier = ENG_imperial_conference_opinion }
@@ -142,10 +138,6 @@ country_event = {
 					AND = {
 						is_subject_of = ENG
 						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
 					}
 				}
 			}
@@ -275,10 +267,6 @@ country_event = {
 					AND = {
 						is_subject_of = ENG
 						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
 					}
 				}
 			}
@@ -440,10 +428,6 @@ country_event = {
 						is_subject_of = ENG
 						tag = AST
 					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
-					}
 				}
 			}
 			country_event = { id = mtg_britain.92 hours = 48 random_hours = 24 }
@@ -572,10 +556,6 @@ country_event = {
 					AND = {
 						is_subject_of = ENG
 						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
 					}
 				}
 			}

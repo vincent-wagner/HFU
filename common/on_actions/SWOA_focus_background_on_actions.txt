@@ -44,9 +44,6 @@ on_actions = {
 			AST = {
 				set_variable = { show_background = 9 }
 			}
-			NZL = {
-				set_variable = { show_background = 9 }
-			}
 		}
 	}
 }

@@ -47,16 +47,8 @@ on_actions = {
 				set_variable={host = AST.id}
 			}
 			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = NZL}}
-				set_variable={host = NZL.id}
-			}
-			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = JAP}}
 				set_variable={host = JAP.id}
-			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = MAN}}
-				set_variable={host = MAN.id}
 			}
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = SOV}}
@@ -65,18 +57,6 @@ on_actions = {
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = FRA}}
 				set_variable={host = FRA.id}
-			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = BRA}}
-				set_variable={host = BRA.id}
-			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = MEX}}
-				set_variable={host = MEX.id}
-			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = IRE}}
-				set_variable={host = IRE.id}
 			}
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = SPR}}

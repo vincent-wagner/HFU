@@ -302,14 +302,6 @@ country_event = {
 			base = 10
 		}
 		effect_tooltip = {
-			JAP = {
-				send_equipment = {
-					target = MAN
-					equipment = infantry_equipment
-					amount = 2000
-					old_prioritised = yes
-				}
-			}
 		}
 	}
 }
@@ -371,9 +363,7 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		set_autonomy = { target = PHI autonomy_state = autonomy_free }
 		JAP = { country_event = { id = wtt_japan.105 days = 1 } }
-		PHI = { country_event = { id = wtt_japan.107 days = 1 } }
 	}
 	option = {
 		name = wtt_japan.104.b
@@ -395,7 +385,6 @@ country_event = {
 			base = 1
 		}
 		effect_tooltip = {
-			FROM = { set_autonomy = { target = PHI autonomy_state = autonomy_free } }
 		}
 	}
 }
@@ -428,7 +417,6 @@ country_event = {
 			base = 1
 		}
 		effect_tooltip = {
-			FROM = { set_autonomy = { target = PHI autonomy_state = autonomy_free } }
 		}
 		hidden_effect = {
 			news_event = { id = wtt_news.26 hours = 6 }
@@ -459,12 +447,7 @@ country_event = {
 		GER = {
 			add_opinion_modifier = { target = ITA modifier = tripartite_pact_opinion }
 			add_opinion_modifier = { target = JAP modifier = tripartite_pact_opinion }
-		}
-		hidden_effect = {
-			GER = {
-				add_opinion_modifier = { target = MAN modifier = tripartite_pact_opinion }
-			}
-		}
+		}	
 		event_target:ITA_fascism = {
 			country_event = { id = wtt_japan.110 hours = 6 }
 		}

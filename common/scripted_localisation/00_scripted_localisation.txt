@@ -202,7 +202,6 @@ defined_text = {
 	text = {
 		trigger = {
 			AST = { is_subject_of = ENG }
-			NZL = { is_subject_of = ENG }
 		}
 		localization_key = AST_NZL_PUPPET
 	}
@@ -210,7 +209,6 @@ defined_text = {
 		trigger = {
 			AND = {
 				AST = { is_subject_of = ENG }
-				NZL = { not = { is_subject_of = ENG } }
 			}
 		}
 		localization_key = AST_democratic
@@ -218,7 +216,6 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				NZL = { is_subject_of = ENG }
 				AST = { not = { is_subject_of = ENG } }
 			}
 		}

@@ -32,7 +32,6 @@ country_event = {
 			white_peace = ITA
 			white_peace = SPR
             		white_peace = JAP
-           		white_peace = MAN
             		set_capital = 496		
 		}
 		

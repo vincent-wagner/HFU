@@ -229,7 +229,6 @@ news_event = {
 				original_tag = SAF
 				original_tag = RAJ
 				original_tag = AST
-				original_tag = NZL
 			}
 		}
 	}
@@ -245,7 +244,6 @@ news_event = {
 						original_tag = SAF
 						original_tag = RAJ
 						original_tag = AST
-						original_tag = NZL
 					}
 				}
 			}
