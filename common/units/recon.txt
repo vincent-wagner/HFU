@@ -204,10 +204,9 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Support nerfs to combat abilities
-		breakthrough 	= -0.5
-		defense 		= -0.5
-		hard_attack 	= -0.9
-
+		breakthrough 	= 5
+		defense 		= 5
+		soft_attack = 10
 		essential = {
 			armored_car_equipment
 		}
