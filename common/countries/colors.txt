@@ -5,8 +5,8 @@ GER = {
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
+	color = rgb { 179 11 0 }
+	color_ui = rgb { 179 11 0 }
 }
 SOV = {
 	color = rgb { 156 47 38 }
