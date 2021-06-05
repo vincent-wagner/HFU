@@ -677,48 +677,6 @@ JAP_ARM_01 =
 	}
 }
 
-JAP_PAR_01 =
-{
-	name = "Paratrooper Division"
-
-	for_countries = { JAP }
-
-	can_use = { always = yes }
-
-	division_types = { "paratrooper" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { JAP_INF_01 }
-
-	fallback_name = "%d Kuteiheishidan"
-
-	# Names with numbers (only one number per entry).
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d Kuteiheishidan" }
-		2 = { "%d Kuteiheishidan" }
-		3 = { "%d Kuteiheishidan" }
-		4 = { "%d Kuteiheishidan" }
-		5 = { "%d Kuteiheishidan" }
-		6 = { "%d Kuteiheishidan" }
-		7 = { "%d Kuteiheishidan" }
-		8 = { "%d Kuteiheishidan" }
-		9 = { "%d Kuteiheishidan" }
-		10 = { "%d Kuteiheishidan" }
-		11 = { "%d Kuteiheishidan" }
-		12 = { "%d Kuteiheishidan" }
-		13 = { "%d Kuteiheishidan" }
-		14 = { "%d Kuteiheishidan" }
-		15 = { "%d Kuteiheishidan" }
-		16 = { "%d Kuteiheishidan" }
-		17 = { "%d Kuteiheishidan" }
-		18 = { "%d Kuteiheishidan" }
-		19 = { "%d Kuteiheishidan" }
-		20 = { "%d Kuteiheishidan" }
-	}
-}
-
 JAP_MAR_01 =
 {
 	name = "Marine Division"

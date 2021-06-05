@@ -1,7 +1,7 @@
 state={
 	id=167
 	name="STATE_171"
-	manpower = 2295085
+	manpower = 1
 	state_category = city
 	history={
 		owner = SPR
@@ -9,9 +9,6 @@ state={
 			6236 3
 		}
 		buildings = {
-			infrastructure = 6
-			anti_air_building = 10
-			arms_factory = 1
 		}
 		add_core_of = SPR
 	}

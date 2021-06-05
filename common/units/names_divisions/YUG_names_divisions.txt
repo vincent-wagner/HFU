@@ -348,35 +348,3 @@ YUG_MTN_01 =
 
 	}
 }
-
-YUG_PAR_01 = 
-{
-	name = "Paratrooper Divisions"
-
-	for_countries = { YUG }
-
-	can_use = { always = yes }
-
-	division_types = { "paratrooper" }
-
-	# Number reservation system will tie to another group.
-
-	fallback_name = "%d. Padobranska Divizija"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Padobranska Divizija" }
-		2 = { "%d. Padobranska Divizija" }
-		3 = { "%d. Padobranska Divizija" }
-		4 = { "%d. Padobranska Divizija" }
-		5 = { "%d. Padobranska Divizija" }
-		6 = { "%d. Padobranska Divizija" }
-		7 = { "%d. Padobranska Divizija" }
-		8 = { "%d. Padobranska Divizija" }
-		9 = { "%d. Padobranska Divizija" }
-		10 = { "%d. Padobranska Divizija" }
-
-	}
-}

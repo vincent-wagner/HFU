@@ -4,9 +4,6 @@ on_actions = {
 			100 = usa.6
 		}
 		random_events = {
-			100 = spain.9
-		}
-		random_events = {
 			100 = election.2
 			100 = election.3
 			100 = election.14

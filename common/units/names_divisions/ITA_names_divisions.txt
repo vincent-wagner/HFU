@@ -449,35 +449,6 @@ ITA_MNT_01 = {
 	}
 }
 
-ITA_PAR_01 = {
-	name = "Paratrooper Division"
-
-	for_countries = { ITA }
-
-	can_use = { always = yes }
-
-	division_types = { "paratrooper" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { ITA_INF_01 }
-
-	fallback_name = "%da Divisione Paracadutisti"
-
-	# Names with numbers (only one number per entry).
-	# It's okay to have gaps in numbering.
-	ordered = {
-		80 = { "%da Divisione Aviotrasportabile 'La Spezia'" } 						# Created in '41
-		185 = { "%da Divisione Paracadutisti 'Folgore'" } 							# Created in '42
-		184 = { "%da Divisione Paracadutisti 'Nembo'" } 							# Created in '42
-		183 = { "%da Divisione Paracadutisti 'Ciclone'" } 							# Created in '43
-		181 = { "%da Divisione Paracadutisti" }										# Filler divisions start here
-		182 = { "%da Divisione Paracadutisti" }
-		186 = { "%da Divisione Paracadutisti" }
-		187 = { "%da Divisione Paracadutisti" }
-		188 = { "%da Divisione Paracadutisti" }
-		189 = { "%da Divisione Paracadutisti" }
-	}
-}
 
 ITA_GAR_01 = {
 	name = "Garrison Division"

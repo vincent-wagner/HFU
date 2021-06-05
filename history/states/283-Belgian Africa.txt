@@ -12,7 +12,6 @@ state=
 			1802 1
 		}
 		buildings = {
-			infrastructure = 2
 		}
 	}
 	provinces=

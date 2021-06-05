@@ -1,10 +1,11 @@
 state={
 	id=70
 	name="STATE_70"
-	manpower = 1230500
-	state_category = city
+	manpower = 1530500
+	state_category = megalopolis
 	resources={
-		tungsten=1
+		tungsten = 180
+		steel = 100
 	}
 	history={
 		owner = CZE
@@ -15,7 +16,7 @@ state={
 			10467 5
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 8
 			arms_factory = 2
 			air_base = 3
 		}

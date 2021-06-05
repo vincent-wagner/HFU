@@ -86,18 +86,6 @@ division_template = {
 	priority = 0
 }
 division_template = {
-	name = "Vozdushno-Desantnaya"
-	division_names_group = SOV_PAR_01
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 1 y = 0 }
-		paratrooper = { x = 1 y = 1 }
-		paratrooper = { x = 1 y = 2 }
-	}
-}
-division_template = {
 	name = "Tankovaya Korpus"
 	division_names_group = SOV_ARM_02
 	regiments = {
@@ -178,12 +166,6 @@ units = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "LVO Voz.-Desantnye Voyska"
-		location =5699
-		division_template = "Vozdushno-Desantnaya"
-		start_experience_factor = 0.3
 	}
 	division= {
 		division_name = {
@@ -415,12 +397,6 @@ units = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "BVO Voz.-Desantnye Voyska"
-		location =10301
-		division_template = "Vozdushno-Desantnaya"
-		start_experience_factor = 0.3
 	}
 	division= {
 		division_name = {
@@ -1083,12 +1059,6 @@ units = {
 		start_equipment_factor = 0.7
 	}
 	division= {
-		name = "MVO Voz.-Desantnye Voyska"
-		location =5889
-		division_template = "Vozdushno-Desantnaya"
-		start_experience_factor = 0.3
-	}
-	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 14
@@ -1189,12 +1159,6 @@ units = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "KOVO Voz.-Desantnye Voyska"
-		location =490
-		division_template = "Vozdushno-Desantnaya"
-		start_experience_factor = 0.3
 	}
 	division= {
 		division_name = {
@@ -1622,12 +1586,6 @@ units = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "OdVO Voz.-Desantnye Voyska"
-		location =3458
-		division_template = "Vozdushno-Desantnaya"
-		start_experience_factor = 0.3
 	}
 	division= {
 		division_name = {
