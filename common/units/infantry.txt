@@ -199,10 +199,6 @@ sub_units = {
 		initiative = 0.01
 		supply_consumption = 0.04
 		supply_consumption_factor=-0.01
-
-		hardness = -1
-		armor = -1
-
 		transport = infantry_equipment
 		need = {
 			infantry_equipment = 150
