@@ -15,33 +15,55 @@ if = {
 add_ideas = {
 	anti_german_military
 }
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
 set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1
-	tech_support = 1
-	tech_engineers = 1
+	desertinfantry_at = 1
+	shocktroops = 1
 	tech_mountaineers = 1
-	early_fighter = 1
-	gwtank = 1
+	marines = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	interwar_antitank = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	superior_firepower = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1= 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	interwar_antitank = 1
+	radio = 1
+	radio_detection = 1
 }
-add_timed_idea = { idea = no_training days= 1095 }
 add_ideas = peace_training
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 2700
+	amount = 5000
 }
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 175
+	amount = 300
 }
 add_manpower = 175000
-set_convoys = 10
+set_convoys = 200
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.5.3"

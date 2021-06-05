@@ -27,13 +27,30 @@ operations = {
 				}
 				set_variable={Global.super_event=3}
 				show_super_event=yes
-				ENG = { add_to_faction = YUG }
-				ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
-				YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				YUG = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 				YUG={declare_war_on_enemy_faction = yes}
-				
-				
+				76={remove_core_of=ROM}
 			}
+		HUN = {transfer_state = 76
+			transfer_state = 45
+			transfer_state = 678
+		}
+		ROM = { remove_state_core = 76 }
+		77 = {remove_core_of = ROM}
+		BUL = {
+			transfer_state = 106
+			transfer_state = 77
+		}
+		ITA = {
+			add_ideas = alpine_forts
+			transfer_state = 105
+		}
+		GER = {
+			transfer_state = 102
+			transfer_state = 107
+			transfer_state = 108
+			
+		}
 		}
 		remove_effect = {
 			ENG = { add_to_faction = GRE }

@@ -217,21 +217,7 @@ political_actions = {
 	anti_democratic_raids = {
 		icon = generic_civil_support
 		allowed = {
-			OR = {
-				tag = SOV
-				tag = JAP
-				tag = RAJ
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = SAF
-				tag = FIN
-				tag = EFR
-			}
+			is_playable_country =yes
 		}
 		visible = {
 			NOT = { has_government = democratic }
@@ -257,19 +243,7 @@ political_actions = {
 	}
 	anti_communist_raids = {
 		allowed = {
-			OR = {
-				tag = JAP
-				tag = RAJ
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = FIN
-				tag = EFR
-			}
+			is_playable_country =yes
 		}
 		icon = generic_civil_support
 		visible = {
@@ -408,11 +382,10 @@ political_actions = {
 		allowed = {
 			OR = {
 				tag = JAP
-				tag = MAN
-				tag = BUL
+				tag = CZE
 				tag = ROM
 				tag = HUN
-				tag = SPR
+				tag = YUG
 				tag = GER
 				tag = ITA
 				tag = FIN
@@ -442,9 +415,7 @@ political_actions = {
 				tag = FRA
 				tag = RAJ
 				tag = AST
-				tag = NZL
 				tag = ENG
-				tag = IRE
 				tag = SAF
 				tag = USA
 				tag = CAN
@@ -494,7 +465,7 @@ political_actions = {
 				tag = RAJ
 				tag = AST
 				tag = SAF
-				tag = EFR
+				tag = YUG
 				tag = ROM
 				tag = BUL
 			}
