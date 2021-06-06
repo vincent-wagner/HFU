@@ -247,7 +247,7 @@ country_event = {
 		GER = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 80000
+				amount = 300000
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
@@ -264,6 +264,23 @@ country_event = {
 				type = anti_tank_equipment
 				amount = 2000
 				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 6000
+				producer = GER
+			}
+		}
+		ENG = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100000
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 2000
+				producer = ENG
 			}
 		}
 	}

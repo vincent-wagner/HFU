@@ -35,6 +35,7 @@ ideas={
 			picture = neutrality_idea
 			modifier = {
 				training_time_factor = 1000
+				industrial_capacity_factory = -200
 			}
 		}
 	}
