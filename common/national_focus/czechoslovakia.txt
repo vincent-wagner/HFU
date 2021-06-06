@@ -672,17 +672,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_industrial_legacy
 		cost = 10
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
-		}
 		available = {
 			CZE = { controls_state = 9 }
 			CZE = { controls_state = 75 }
@@ -807,17 +796,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_industrial_legacy
 		cost = 5
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 0.5
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 0.5
-				has_completed_focus = CZE_german_leanings
-			}
-		}
 		available = {
 			CZE = { controls_state = 9 }
 			CZE = { controls_state = 70 }
@@ -984,17 +962,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_industrial_legacy
 		cost = 5
-		ai_will_do = {
-			factor = 80
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
-		}
 		available = {
 		}
 		bypass = {
@@ -1017,17 +984,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = CZE_arms_exports_1
 		cost = 5
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
-		}
 		available = {
 		}
 		bypass = {
@@ -1050,17 +1006,6 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_arms_exports_1
 		cost = 5
-		ai_will_do = {
-			factor = 70
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_german_leanings
-			}
-		}
 		available = {
 		}
 		bypass = {
@@ -1103,18 +1048,10 @@ focus_tree = {
 		id = CZE_democratic_bastion
 		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = CZE_political_direction }
-		mutually_exclusive = { focus = CZE_go_right focus = CZE_go_left }
 		x = 0
 		y = 1
 		relative_position_id = CZE_political_direction
 		cost = 5
-		ai_will_do = {
-			factor = 90
-			modifier = {
-				factor = 0
-				has_completed_focus = CZE_german_leanings
-			}
-		}
 		available = {
 		}
 		bypass = {
@@ -1187,7 +1124,7 @@ focus_tree = {
 	focus = {
 		id = CZE_bonus_research_slot_1
 		icon = GFX_focus_research
-		prerequisite = { focus = CZE_the_romanian_question focus = CZE_defensive_preparations focus = CZE_the_polish_question }
+		prerequisite = { focus = CZE_defensive_preparations }
 		x = 0
 		y = 3
 		relative_position_id = CZE_democratic_bastion
@@ -1240,22 +1177,10 @@ focus_tree = {
 		id = CZE_trust_in_the_west
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = CZE_strategy_decisions }
-		mutually_exclusive = { focus = CZE_german_leanings focus = CZE_an_entente_of_our_own }
 		x = 0
 		y = 1
 		relative_position_id = CZE_strategy_decisions
 		cost = 10
-		ai_will_do = {
-			factor = 90
-			modifier = {
-				factor = 0
-				has_completed_focus = CZE_go_right
-			}
-			modifier = {
-				factor = 2
-				has_completed_focus = CZE_go_left
-			}
-		}
 		available = {
 		}
 		bypass = {
