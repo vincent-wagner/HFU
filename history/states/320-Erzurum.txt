@@ -1,14 +1,18 @@
 state={
 	id=320
 	name="STATE_353"
-	manpower = 1
+	manpower = 50142
 	state_category = rural
+	buildings_max_level_factor=1.000
 	history={
-		owner = TUR
-		add_core_of = TUR
+		owner = YUG
+		add_core_of = YUG
+		buildings = {
+			infrastructure = 4
+		}
 	}
 	provinces={
-		617
+		796 829 9052 9071 6421
 	}
 }
 

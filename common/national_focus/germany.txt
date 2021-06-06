@@ -3663,7 +3663,8 @@
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		    CZE = {
+		    GER =  { set_autonomy = { target = CZE autonomy_state = autonomy_satellite } }
+			CZE = {
 			set_popularities = {
 	        fascism = 100
 	        }
