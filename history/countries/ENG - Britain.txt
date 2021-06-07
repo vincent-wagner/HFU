@@ -132,12 +132,12 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 100000
+	amount = 20000
 	producer = ENG
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 2500
+	amount = 500
 	producer = ENG
 }
 add_equipment_to_stockpile = {
