@@ -28,7 +28,6 @@ focus_tree = {
 				name = codebreaking_bonus
 				bonus = 1.0
 				uses = 3
-				category = decryption_tech
 				category = computing_tech
 			}
 		}
@@ -538,10 +537,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			125 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
@@ -827,10 +826,10 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 50
 			132 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = ENG_naval_rearmament_focus_1dockyard
@@ -843,6 +842,12 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = ENG_naval_rearmament_focus_1dockyard
+			}
+			add_tech_bonus = {
+				name = naval_rearmament_focus
+				bonus = 1
+				uses = 2
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1078,36 +1083,7 @@ focus_tree = {
 			has_dlc = "Man the Guns"
 		}
 		available_if_capitulated = yes
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = ENG_expand_the_repair_yards_2dockyard }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = ENG_expand_the_repair_yards_2dockyard
-			}
 			add_ideas = ENG_expand_the_repair_yards
 		}
 	}
@@ -1655,10 +1631,10 @@ focus_tree = {
 				}
 			}
 			117 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1799,10 +1775,10 @@ focus_tree = {
 				}
 			}
 			118 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1968,10 +1944,10 @@ focus_tree = {
 				}
 			}
 			120 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2129,10 +2105,10 @@ focus_tree = {
 				}
 			}
 			121 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2767,13 +2743,36 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_issue_gasmasks
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			OR = {
+				date > 1938.8.1
+				has_equipment = {
+					medium_tank_equipment_2 = 1
+				}
+			}
+		}
 		completion_reward = {
+			custom_effect_tooltip = "If you have medium 2 and at least 1 in stockpile you get 2 doctrine bonuses for mw or airland battle"
 			remove_ideas = ENG_the_war_to_end_all_wars
 			set_rule = { can_send_volunteers = yes }
+			army_experience=100
+			if = {
+				limit = {
+					has_equipment = {
+						medium_tank_equipment_2 = 1
+					}
+				}
+				add_tech_bonus = {
+					name = ENG_military_training_act
+					bonus = 1
+					uses = 2
+					category = tank_land_doctrine
+				}
+			}
 		}
 	}
 	focus = {
