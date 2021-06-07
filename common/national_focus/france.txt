@@ -801,7 +801,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = FRA_artillery_focus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = artillery
 			}
 		}

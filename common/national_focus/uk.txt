@@ -42,7 +42,14 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = crypto_bomb_focus
-		cost = 5
+		available = {
+			AND = {
+			date > 1941.10.1
+			has_tech = improved_heavy_tank
+			has_tech = mechanised_infantry
+			}
+		}
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -72,6 +79,53 @@ focus_tree = {
 					category = radar_tech
 				}
 			}
+		create_equipment_variant = {
+					name = "Churchill Tank"
+					type = heavy_tank_equipment_2
+					upgrades = {
+						tank_gun_upgrade = 5
+						tank_armor_upgrade = 5
+						tank_reliability_upgrade = 3
+						}
+				}				
+		division_template = {
+					name = "Royal Tank Division"
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 0 y = 2 }
+						heavy_armor = { x = 0 y = 3 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 1 y = 1 }
+						heavy_armor = { x = 1 y = 2 }
+						heavy_armor = { x = 1 y = 3 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 2 y = 1 }
+						heavy_armor = { x = 2 y = 2 }
+						heavy_armor = { x = 2 y = 3 }
+						mechanized = { x = 3 y = 0 }
+						mechanized = { x = 3 y = 1 }
+						mechanized = { x = 3 y = 2 }
+						mechanized = { x = 3 y = 3 }
+						mechanized = { x = 4 y = 0 }
+						mechanized = { x = 4 y = 1 }
+						mechanized = { x = 4 y = 2 }
+						mechanized = { x = 4 y = 3 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						signal_company = { x = 0 y = 4 }
+					}
+				}
+				124 = {
+				create_unit = {
+							division = "name = \"Royal Tank Division\" division_template = \"Royal Tank Division\" start_experience_factor = 0.3"
+							owner = ENG
+						}
+				}
 		}
 	}
 	focus = {
@@ -2223,7 +2277,7 @@ focus_tree = {
     				type = chromium
    				amount = 10
     				state = 404#raj
-			}
+			}		
 		}
 	}
 	focus = {
@@ -2488,13 +2542,19 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ENG_motion_of_no_confidence
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = british_arms_discount
+			add_tech_bonus = {
+				name = ENG_artillery_focus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -2662,7 +2722,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
