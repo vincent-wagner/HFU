@@ -8,7 +8,6 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
 # Starting tech
 set_technology = {
@@ -94,6 +93,7 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_ideas = SAF_ossewabrandwag
 	add_ideas = SAF_history_of_segregation
+	add_ideas = neutral_idea
 	add_ideas = SAF_the_commonwealth
 	add_to_tech_sharing_group = commonwealth_research
 }

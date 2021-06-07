@@ -9,11 +9,11 @@ add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
 	export_focus
+	neutral_idea
 	limited_conscription
 	partial_economic_mobilisation
 	never_surrender
 }
-add_ideas = peace_training
 set_variable = {
 	var = min_fuel
 	value = 0.800

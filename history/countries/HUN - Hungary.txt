@@ -7,7 +7,6 @@ capital = 43
      var = min_fuel
      value = 0.800
  }
- add_ideas = peace_training
  set_rule = {can_be_spymaster = no}
  set_technology = {
 	airfield_allowed = 1
@@ -43,6 +42,7 @@ capital = 43
  	}
  	add_ideas = {
  		HUN_treaty_of_triannon
+		neutral_idea
  	}
  }
  set_politics = {
@@ -167,7 +167,7 @@ capital = 43
  create_field_marshal = {
  	name = "Ferenc Feketehalmy-Czeydner"
  	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
- 	traits = { panzer_leader ranger organizer trait_engineer infantry_leader trait_mountaineer}
+ 	traits = { panzer_leader organizer trait_engineer infantry_leader trait_mountaineer}
  	skill = 6
  	attack_skill = 5
  	defense_skill = 2

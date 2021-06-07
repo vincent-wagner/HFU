@@ -4,7 +4,7 @@ set_stability = 0.65
 set_war_support = 0.15
 set_research_slots = 3
 add_ideas = reliance_on_natural_rubber
-add_ideas = peace_training
+add_ideas = neutral_idea
 set_rule = {can_be_spymaster = no}
 # Starting tech
 set_technology = {

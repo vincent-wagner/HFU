@@ -10,7 +10,7 @@ if = {
 add_ideas = peace_training
 create_intelligence_agency = yes
 set_research_slots = 4
-set_stability = 0.40
+set_stability = 0.41
 set_war_support = 0.55
 # Starting tech
 set_technology = {
@@ -181,7 +181,7 @@ create_corps_commander = {
 	name = "Georgy Zhukov"
 	id = 410
 	picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { winter_specialist winter_expert armor_officer media_personality war_hero panzer_leader ranger organizer }
+	traits = { winter_specialist winter_expert armor_officer media_personality war_hero panzer_leader organizer hill_fighter }
 	skill = 6
 	attack_skill = 4
 	defense_skill = 2

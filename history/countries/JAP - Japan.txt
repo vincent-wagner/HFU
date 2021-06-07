@@ -10,6 +10,7 @@
  	closed_economy
  	limited_conscription
  	partial_economic_mobilisation
+	neutral_idea
  	JAP_faction_trade
  	JAP_zaibatsus
  	JAP_duplicate_research_efforts
@@ -17,7 +18,6 @@
 	never_surrender
  }
  create_intelligence_agency = yes
- add_ideas = peace_training
  set_variable = {
      var = min_fuel
      value = 0.800

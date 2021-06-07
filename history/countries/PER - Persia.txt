@@ -5,6 +5,7 @@ set_research_slots = 0
 set_technology = {
 }
 add_ideas = no_training
+add_ideas = neutral_idea
 set_convoys = 1
 set_politics = {
 	ruling_party = neutrality
