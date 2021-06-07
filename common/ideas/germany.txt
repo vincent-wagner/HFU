@@ -942,16 +942,14 @@ ideas = {
 			equipment_bonus = {
 				medium_tank_equipment = {
 					reliability = 0.1
-					soft_attack = 0.1
-					hard_attack = 0.1
-					armor_value = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
+					build_cost_ic = 0.05
 					hardness = 0.05
-					build_cost_ic = 0.075
 				}
 				medium_tank_aa_equipment = {
 					reliability = -0.1
 					air_attack = 0.1
-					armor_value = 0.1
 					build_cost_ic = 0.05
 				}
 			}
@@ -1076,10 +1074,11 @@ ideas = {
 			equipment_bonus = {
 				medium_tank_equipment = {
 					reliability = 0.1
-					soft_attack = 0.1
-					hard_attack = 0.1
-					armor_value = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
+					build_cost_ic = 0.05
 					hardness = 0.05
+					armor_value = 0.1
 				}
 				medium_tank_aa_equipment = {
 					air_attack = 0.1
