@@ -5,15 +5,30 @@
 		task_force = {
 			name = "Australian Squadron"
 			location =11269
-			ship = { name = "HMAS Canberra" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } }	}
-			ship = { name = "HMAS Australia" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
-			ship = { name = "HMAS Sydney" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Sydney Class" } } }
-			ship = { name = "HMAS Adelaide" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "Town Class" } } }
-			ship = { name = "HMAS Vampire" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
-			ship = { name = "HMAS Vendetta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
-			ship = { name = "HMAS Voyager" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
-			ship = { name = "HMAS Waterhen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "V/W Class" } } }
-			ship = { name = "HMAS Stuart" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "S Class" } } }
+			ship = { name = "HMAS Canberra" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Canberra Class" } }	}
+			ship = { name = "HMAS Australia" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Sydney" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Adelaide" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+			ship = { name = "HMAS Vampire" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS Vendetta" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS Voyager" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS Waterhen" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS q" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS qq" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS qqq" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS qqqq" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS qqqqq" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS w" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS ww" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS www" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS wwww" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS wwwww" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS a" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS aa" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS aaa" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS aaaa" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS aaaaa" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
+			ship = { name = "HMAS Stuart" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "E/F/G/H Class" } } }
 		}
 	}
 }

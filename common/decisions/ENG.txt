@@ -91,6 +91,23 @@ foreign_politics = {
 			}
 		}
 	}
+	ENG_britannia_rules = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = uk_waves_focus
+		}
+		allowed = {
+			tag = ENG
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			add_timed_idea = {
+				idea = britannia_rules_the_waves
+				days = 60
+			}
+		}
+	}
 	ENG_get_chromium = {
 		icon = generic_operation
 		allowed = {

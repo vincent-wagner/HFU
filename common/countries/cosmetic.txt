@@ -182,10 +182,6 @@ GER_greater_german_reich = {
 	color = rgb { 54 54 54 }
 	color_ui = rgb { 115 115 115 }
 }
-YUG_croatia = {
-	color = rgb { 230  70  180 }
-	color_ui = rgb { 230 255 122 }
-}
 
 CHI_power_struggle_defeated = {
 	color = rgb { 152 130 191 }

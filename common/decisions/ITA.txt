@@ -3,7 +3,7 @@ operations = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 		allowed = { tag = ITA }
-		available = { has_completed_focus = ITA_greece_war_goal}
+		available = {date > 1940.01.01}
 		cost = 0
 		days_remove = 20
 		complete_effect = {
@@ -21,48 +21,17 @@ operations = {
 					type = annex_everything
 				}
 			}
-			hidden_effect = {
-			YUG = {set_cosmetic_tag = YUG_croatia}
-			ITA =  { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } }
-				 YUG = {
-			set_popularities = {
-	        fascism = 100
-	        }
-			set_politics = {
-	        ruling_party = fascism
-            elections_allowed = no
-            }
-			} 
+			hidden_effect = { 
 				every_country = {limit = {check_variable= { speeches_enabled > 0}  }
 					scoped_sound_effect = "sp_ita_musso"
 				}
 				set_variable={Global.super_event=3}
 				show_super_event=yes
-				YUG = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+				ENG = { add_to_faction = YUG }
+				ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+				YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				YUG={declare_war_on_enemy_faction = yes}
-				76={remove_core_of=ROM}
-			}
-		HUN = {transfer_state = 76
-			transfer_state = 45
-			transfer_state = 678
-		}
-		ROM = { remove_state_core = 76 }
-		77 = {remove_core_of = ROM}
-		BUL = {
-			transfer_state = 106
-			transfer_state = 77
-		}
-		ITA = {
-			add_ideas = alpine_forts
-			transfer_state = 105
-			transfer_state = 320
-		}
-		GER = {
-			transfer_state = 102
-			transfer_state = 107
-			transfer_state = 108
-			
-		}
+		    }
 		}
 		remove_effect = {
 			ENG = { add_to_faction = GRE }

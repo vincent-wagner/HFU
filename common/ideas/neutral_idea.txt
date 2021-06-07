@@ -25,6 +25,8 @@ ideas={
 				enemy_justify_war_goal_time = 100.0
 				ai_get_ally_desire_factor = -100
 				consumer_goods_factor = 1
+				industrial_capacity_factory = -100
+				industrial_capacity_dockyard = -100
 			}
 		}
 		no_training = {
@@ -35,7 +37,6 @@ ideas={
 			picture = neutrality_idea
 			modifier = {
 				training_time_factor = 1000
-				industrial_capacity_factory = -200
 			}
 		}
 	}

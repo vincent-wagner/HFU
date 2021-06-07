@@ -7,9 +7,6 @@ state={
 	history={
 		owner = YUG
 		add_core_of = YUG
-		buildings = {
-			infrastructure = 4
-		}
 	}
 	provinces={
 		796 829 9052 9071 6421

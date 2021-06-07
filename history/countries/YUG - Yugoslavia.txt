@@ -10,15 +10,14 @@ if = {
 		YUG_idea_macedonian_opposition
 		YUG_idea_slovene_nationalism
 		YUG_idea_serbian_general_staff
+		
 	}
 }
+add_timed_idea = { idea = no_training days= 1095 }
 add_ideas = {
 	anti_german_military
 }
-set_variable = {
-	var = min_fuel
-	value = 0.800
-}
+
 set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1
@@ -80,16 +79,6 @@ create_country_leader = {
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Ante Pavelic"
-	desc = "ANTE_PAVELIC_DESC"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
 	traits = {
 		#
 	}

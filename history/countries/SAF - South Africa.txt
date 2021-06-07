@@ -8,7 +8,6 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-add_ideas = peace_training
 set_rule = {can_be_spymaster = no}
 # Starting tech
 set_technology = {
@@ -167,7 +166,7 @@ create_country_leader = {
 create_corps_commander = {
 	name = "George Edwin Brink"
 	gfx = "GFX_SAF_george_edwin_brink"
-	traits = { desert_fox panzer_leader trickster trait_engineer infantry_leader cavalry_leader}
+	traits = { desert_fox panzer_leader trickster trait_engineer infantry_leader cavalry_leader naval_invader }
 	skill = 4
 	id = 633
 	attack_skill = 5
