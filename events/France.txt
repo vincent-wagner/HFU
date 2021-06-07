@@ -271,18 +271,6 @@ country_event = {
 				producer = GER
 			}
 		}
-		ENG = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 100000
-				producer = ENG
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = 2000
-				producer = ENG
-			}
-		}
 	}
 }
 country_event = {

@@ -54,6 +54,18 @@ ideas = {
 				industry_repair_factor=0.25
 				consumer_goods_factor = 0.03
 				}}
+		GER_panther_program = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = panther_program
+			modifier = {
+				war_support_weekly = -0.005
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
 		GER_Albert_Speer_idea = {
 			allowed = {
 				always = yes
@@ -79,6 +91,8 @@ ideas = {
 				enemy_army_bonus_air_superiority_factor = -0.1
 				army_core_defence_factor = 0.2
 				army_core_attack_factor = 0.2
+				war_support_weekly = -0.01
+				war_support_factor = 0.1
 			}
 		}
 		GER_Waffen_SS = {
@@ -623,7 +637,64 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = generic_navy_bonus
-			modifier={research_speed_factor = 0.25
+			modifier={
+			research_speed_factor = 0.25
+			}
+		}
+		GER_hungerplan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			modifier = {
+				industrial_capacity_factory = 0.2
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		GER_mass_production1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			modifier = {
+				industrial_capacity_factory = -4
+			}
+		}
+		GER_mass_production2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = -0.5
+				war_support_weekly = -0.01
+				war_support_factor = 0.1
+			}
+		}
+		GER_mass_production3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			modifier = {
+				industrial_capacity_factory = 1
 			}
 		}
 		GER_trade_interdiction = {
@@ -998,19 +1069,32 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+			available = {
+				has_completed_focus = GER_rocket_interceptor
+			}
 			modifier = { tank_manufacturer_cost_factor = -1 }
 			equipment_bonus = {
 				medium_tank_equipment = {
-					hard_attack = 0.10 soft_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+					reliability = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					armor_value = 0.1
+					hardness = 0.05
 				}
 				medium_tank_aa_equipment = {
-					air_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+					air_attack = 0.1
+					armor_value = 0.1
 				}
 				medium_tank_artillery_equipment = {
-					soft_attack = 0.15  armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+					soft_attack = 0.15  
+					armor_value = 0.1
+					hardness = 0.05 
 				}
 				medium_tank_destroyer_equipment = {
-					hard_attack = 0.15 ap_attack = 0.1 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+					hard_attack = 0.15 
+					ap_attack = 0.1 
+					armor_value = 0.1
+					hardness = 0.05
 				}
 			}
 			ai_will_do = {

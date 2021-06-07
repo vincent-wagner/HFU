@@ -10,6 +10,14 @@ sound =
 }
 sound =
 {
+	name = "sp_ger_war"
+	file = "speeches/sp_ger_war.wav"
+	always_load = yes
+	volume = 1.5
+ 
+}
+sound =
+{
 	name = "sp_ger_doctor"
 	file = "speeches/sp_ger_doctor.wav"
 	always_load = yes

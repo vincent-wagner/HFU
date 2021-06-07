@@ -9,7 +9,6 @@ spriteTypes = {
 		name = "GFX_GOAL_infantry_equipment"
 		texturefile = "gfx/interface/goals/raj/GOAL_infantry_equipment.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_GOAL_electrical_infrastructure"
 		texturefile = "gfx/interface/goals/raj/GOAL_electrical_infrastructure.dds"

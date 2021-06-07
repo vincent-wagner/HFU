@@ -1401,6 +1401,24 @@
 		}
 	}
 	focus = {
+		id = GER_stuka
+		icon = GFX_focus_GER_endsieg
+		prerequisite = { focus = GER_rocketry_focus }
+		x = 0
+		y = 1
+		available={date>1941.7.1}
+		relative_position_id = GER_rocketry_focus
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+		add_timed_idea = { idea = GER_hungerplan  days = 400 }
+		}
+	}
+	focus = {
 		id = GER_raseiniai
 		icon = GFX_GER_mobile_fortresses
 		text="Battle of Raseiniai"
@@ -1693,20 +1711,19 @@
 	}
 	focus = {
 		id = GER_rocket_interceptor
-		icon = GFX_focus_GER_peenemunde_research_jet_engine
+		icon = GFX_focus_GER_modern_infantry
 		prerequisite = { focus = GER_fighter_3 }
-		available={date>1942.6.1}
 		x = 0
 		y = 1
 		relative_position_id = GER_fighter_3
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			set_technology = { advanced_rocket_engines = 1}
+		add_timed_idea = {idea=GER_panther_program days=30}
 		}
 	}
 	focus = {
@@ -1739,27 +1756,6 @@
 				bonus = 1.0
 				uses = 2
 				category = jet_technology
-			}
-		}
-	}
-	focus = {
-		id = GER_stuka
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_rocketry_focus }
-		x = 0
-		y = 1
-		available={date>1941.6.1}
-		relative_position_id = GER_rocketry_focus
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			set_technology = {
-				rocket_artillery4= 1
-				motorized_rocket_unit= 1
 			}
 		}
 	}
@@ -1961,7 +1957,12 @@
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 producer = GER }
+			add_war_support = -0.1
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 60000 producer = GER }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 4300 producer = GER }
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 2400 producer = GER }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 1280 producer = GER }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 1600 producer = GER }
 			hidden_effect={
 				division_template = {
 					name = "Volkssturm"
@@ -2038,7 +2039,7 @@
 	}
 	focus = {
 		id = GER_nero
-		icon = GFX_focus_GER_implement_scorched_earth_tactics
+		icon = GFX_focus_GER_goal_Operation_Schwarzes_Gold
 		prerequisite = { focus = GER_albert_speer }
 		relative_position_id = GER_albert_speer
 		x = 1
@@ -2051,6 +2052,9 @@
 		}
 		available_if_capitulated = no
 		completion_reward = {
+		add_ideas = GER_mass_production2
+		add_timed_idea={idea=GER_mass_production1 days=14}
+		add_timed_idea={idea=GER_mass_production3 days=28}
 		}
 	}
 	focus = {
