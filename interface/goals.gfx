@@ -2910,5 +2910,17 @@ spriteTypes = {
 		name = "GFX_focus_JAP_yen"
 		texturefile = "gfx/interface/goals/JAP_yen.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SOV_leningrad_designs"
+		textureFile = "gfx/interface/goals/SOV_leningrad_designs.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_mechanization_effort"
+		textureFile = "gfx/interface/goals/SOV_mechanization_effort.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SOV_winter_camps"
+		textureFile = "gfx/interface/goals/SOV_winter_camps.dds"
+	}
 
 }

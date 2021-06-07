@@ -8,6 +8,20 @@ focus_tree = {
 		}
 	}
 	default = no
+
+	focus = {
+		id = SOV_great_purge
+		icon = GFX_focus_SOV_purge
+		x = 10
+		y = 0
+		cost = 10
+		completion_reward = {
+			swap_ideas = { remove_idea = trotskyite_plot
+				add_idea = trotskyite_plot_purged}
+			add_ideas = officers_purged
+		}
+	}
+	
 	focus = {
 		id = SOV_finish_five_year_plan
 		icon = GFX_focus_SOV_finish_five_year_plan
@@ -1231,7 +1245,7 @@ focus_tree = {
 		id = SOV_stalin_constitution
 		icon = GFX_focus_SOV_stalin
 		prerequisite = { focus = SOV_great_purge }
-		x = 11
+		x = 10
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1247,6 +1261,7 @@ focus_tree = {
 		id = SOV_collectivist_propaganda
 		icon = GFX_focus_SOV_worker_cluture
 		prerequisite = { focus = SOV_stalin_constitution }
+		mutually_exclusive = { focus = SOV_positive_heroism }
 		x = -2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -1277,27 +1292,32 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_militarized_schools
-		icon = GFX_focus_SOV_militarized_schools
-		prerequisite = { focus = SOV_workers_culture }
-		x = 9
-		y = 4
+		id = SOV_cas
+		icon = GFX_focus_SOV_cas
+		prerequisite = { focus = SOV_transpolar_flights }
+		x = 12
+		y = 5
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = militarized_schools
+			add_tech_bonus = {
+				name = coastal_command_focus
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
+			}
 		}
 	}
 	focus = {
 		id = SOV_women_pilots
 		icon = GFX_focus_SOV_women_in_aviation
-		prerequisite = { focus = SOV_militarized_schools }
+		prerequisite = { focus = SOV_cas }
 		x = 0
 		y = 1
-		relative_position_id = SOV_militarized_schools
+		relative_position_id = SOV_cas
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1324,6 +1344,7 @@ focus_tree = {
 		id = SOV_positive_heroism
 		icon = GFX_focus_SOV_postive_heroism
 		prerequisite = { focus = SOV_stalin_constitution }
+		mutually_exclusive = { focus = SOV_collectivist_propaganda }
 		x = 0
 		y = 1
 		relative_position_id = SOV_stalin_constitution
@@ -1358,10 +1379,10 @@ focus_tree = {
 	focus = {
 		id = SOV_socialist_science
 		icon = GFX_focus_SOV_socialist_science
-		prerequisite = { focus = SOV_progress_cult }
+		prerequisite = { focus = SOV_workers_culture }
 		x = 0
 		y = 1
-		relative_position_id = SOV_progress_cult
+		relative_position_id = SOV_workers_culture
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1372,33 +1393,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_mobilization
-		icon = GFX_focus_SOV_mobilization
-		#text = extra_tech_slot
-		prerequisite = { focus = SOV_socialist_science }
-		x = 0
-		y = 1
-		relative_position_id = SOV_socialist_science
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			if = {
-			limit={has_idea=volunteer_only}
-			add_ideas=limited_conscription
-			}
-			else_if = {
-			limit={has_idea=limited_conscription}
-			add_ideas=extensive_conscription
-			}
-		}
-	}
-	focus = {
 		id = SOV_aviation_cult
 		icon = GFX_focus_SOV_aviation_cult
-		prerequisite = { focus = SOV_positive_heroism }
+		prerequisite = { focus = SOV_socialist_realism }
 		x = 2
 		y = 1
 		relative_position_id = SOV_positive_heroism
@@ -1443,7 +1440,7 @@ focus_tree = {
 		id = SOV_transpolar_flights
 		icon = GFX_focus_SOV_transpolar_flights
 		prerequisite = { focus = SOV_aviation_cult }
-		x = 13
+		x = 12
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -1461,26 +1458,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = SOV_cas
-		icon = GFX_focus_SOV_cas
-		prerequisite = { focus = SOV_transpolar_flights }
-		x = 13
-		y = 5
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = coastal_command_focus
-				bonus = 1.0
-				uses = 2
-				category = cas_bomber
-			}
-		}
-	}
+	
 	focus = {
 		id = SOV_ocean_going_navy
 		icon = GFX_goal_generic_navy_battleship
@@ -1625,19 +1603,22 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_great_purge
-		icon = GFX_focus_SOV_purge
-		available = {
-		}
-		x = 10
-		y = 0
+		id = SOV_militarized_schools
+		icon = GFX_focus_SOV_militarized_schools
+		prerequisite = { focus = SOV_great_purge }
+		x = 4
+		y = 1
+		relative_position_id = SOV_great_purge
 		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = { remove_idea = trotskyite_plot
-				add_idea = trotskyite_plot_purged}
-			add_ideas = officers_purged
+			add_ideas = militarized_schools
 		}
 	}
+
 	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
@@ -2086,10 +2067,16 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = konstantin_rokossovsky
-				add_idea = konstantin_rokossovsky_2
-			}
+            if = {
+            limit = {has_completed_focus = SOV_positive_heroism}
+            swap_ideas = {
+                remove_idea = konstantin_rokossovsky
+                add_idea = konstantin_rokossovsky_2
+            }}
+            else = {
+            custom_effect_tooltip = available_chief_of_army
+            show_ideas_tooltip = konstantin_rokossovsky
+            add_political_power = 150}
 		}
 	}
 	focus = {
@@ -2135,5 +2122,65 @@ focus_tree = {
 			add_timed_idea= {idea= SOV_bagration days=100}
 		}
 	}
-}
+focus = {
+	id = SOV_leningrad_designs
+	icon = GFX_focus_SOV_leningrad_designs
+	prerequisite = { focus = SOV_progress_cult }
+	x = 0
+	y = 1
+	relative_position_id = SOV_progress_cult
+	cost = 5
+	completion_reward = {
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = okmo
+    }
 
+        }
+	
+focus = {
+	id = SOV_mechanization_effort
+	icon = GFX_focus_SOV_mechanization_effort
+	prerequisite = { focus = SOV_leningrad_designs }
+	x = 0
+	y = 1
+	relative_position_id = SOV_leningrad_designs
+	cost = 5
+	completion_reward = {
+		add_tech_bonus = {
+			name = SOV_armored_infantry
+			uses = 1
+			bonus = 1
+			category = motorized_equipment
+		}
+	}
+			}	
+focus = {
+    id = SOV_winter_camps
+	prerequisite = { focus = SOV_socialist_science }
+	icon = GFX_focus_SOV_winter_camps
+	x = 0
+	y = 1
+	relative_position_id = SOV_socialist_science
+	cost = 10
+	completion_reward = {
+		custom_effect_tooltip = "GG go next."
+		245 = {
+			
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+			}
+		}
+		246 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			}
+		}
+}

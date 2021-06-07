@@ -6,18 +6,53 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		GRE = { has_capitulated = yes}
+		YUG = { has_capitulated = yes}
 	}
 	immediate = {
-		BUL = {
+	    76={remove_core_of=ROM}
+	    HUN = {
+            transfer_state = 76
+			transfer_state = 45
+			transfer_state = 678
+		}
+		ROM = { remove_state_core = 76 }
+		if = {
+			limit = {country_exists = BUL }
+			77 = {remove_core_of = ROM}
+			BUL = {
+			transfer_state = 106
 			transfer_state = 649
 			transfer_state = 177
+			transfer_state = 77
+			}
 		}
+		else = {
+			ITA = {
+				transfer_state = 106
+				transfer_state = 649
+				transfer_state = 177
+			}
+		}
+		# if = {
+				# limit= {CRO={OR={exists = no is_ai=yes}}}
 		ITA = {
+			add_ideas = alpine_forts
+			transfer_state = 103
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 105
+			#transfer_state = 108
+			#transfer_state = 107
 			transfer_state = 178
 			transfer_state = 47
 			transfer_state = 179
+			transfer_state = 320
 		}
 		GER = {
+		    transfer_state = 102
+			transfer_state = 108
+			transfer_state = 107
+			
 			if={
 				limit={
 					175={

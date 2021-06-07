@@ -746,7 +746,16 @@ focus_tree = {
 				name = ITA_four_year_plan
 				bonus = 1
 				uses = 2
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 	}
@@ -843,7 +852,16 @@ focus_tree = {
 				name = ITA_four_year_plan
 				bonus = 1.0
 				uses = 1
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
 			}
 		}
 	}
@@ -2288,7 +2306,6 @@ focus_tree = {
 			add_state_core = 105
 			add_state_core = 44
 			add_state_core = 159
-			add_state_core = 320
 		}
 	}
 	focus = {

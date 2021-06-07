@@ -22,17 +22,6 @@ operations = {
 				}
 			}
 			hidden_effect = {
-			YUG = {set_cosmetic_tag = YUG_croatia}
-			ITA =  { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } }
-				 YUG = {
-			set_popularities = {
-	        fascism = 100
-	        }
-			set_politics = {
-	        ruling_party = fascism
-            elections_allowed = no
-            }
-			} 
 				every_country = {limit = {check_variable= { speeches_enabled > 0}  }
 					scoped_sound_effect = "sp_ita_musso"
 				}
@@ -55,7 +44,6 @@ operations = {
 		ITA = {
 			add_ideas = alpine_forts
 			transfer_state = 105
-			transfer_state = 320
 		}
 		GER = {
 			transfer_state = 102

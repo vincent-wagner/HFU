@@ -1,7 +1,8 @@
 capital = 41
 oob = "SPR_1936"
-add_ideas = neutrality_idea
-add_ideas =	neutral_idea
+add_ideas = { 
+neutral_idea
+}
 set_rule = {can_be_spymaster = no}
 set_research_slots = 0
 set_technology = {

@@ -107,12 +107,7 @@ focus_tree = {
 		relative_position_id = NDA_resource44
 		available_if_capitulated = yes
 		completion_reward = {
-			GER = {
-				swap_ideas={
-					remove_idea = GER_mefo_bills_1
-					add_idea = GER_mefo_bills_2
-				}
-			}
+			
 			every_country={
 				limit={is_playable_country=yes}
 				swap_ideas={
@@ -122,6 +117,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = NDA_resource111
 		icon = GFX_goal_generic_consumer_goods
@@ -138,9 +134,9 @@ focus_tree = {
 					remove_idea = research_38
 					add_idea = research_38_mid
 				}
-			}
-		}
+			}	
 	}
+}
 	focus = {
 		id = NDA_resource11
 		icon = GFX_goal_generic_consumer_goods

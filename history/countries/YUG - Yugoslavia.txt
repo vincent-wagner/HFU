@@ -71,7 +71,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	neutrality = 100
+	democratic = 15
+	fascism = 10
+	communism = 15
+	neutrality = 60
 }
 set_stability = 0.6
 create_country_leader = {
@@ -80,16 +83,6 @@ create_country_leader = {
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Ante Pavelic"
-	desc = "ANTE_PAVELIC_DESC"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
 	traits = {
 		#
 	}
