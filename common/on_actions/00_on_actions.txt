@@ -239,22 +239,6 @@ on_actions = {
 	on_capitulation = {
 		effect = {
 			if = {
-				limit = {
-					NOT = { original_tag = GER }
-					NOT = { has_government = fascism }
-					NOT = { has_civil_war = yes }
-					NOT = {
-						AND = {
-							FROM = {
-								original_tag = SPR
-							}
-							original_tag = SPR
-						}
-					}
-				}
-				news_event = { id = country_capitulated.0 days = 0 }
-			}
-			if = {
 				limit = { tag = FRA }
 				set_global_flag = FRA_already_surrendered
 				set_variable = { global.FRA_capitulation_days = global.num_days }
