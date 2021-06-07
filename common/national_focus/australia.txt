@@ -969,6 +969,14 @@ focus_tree = {
 				}
 				set_state_flag = AST_cockatoo_island_shipyards_DY
 			}
+			random_owned_controlled_state = {
+				limit = { is_in_home_area = yes }
+				prioritize = { 273 }
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
 		}
 	}
 	focus = {
@@ -1014,7 +1022,7 @@ focus_tree = {
 				name = AST_protect_overseas_commerce
 				bonus = 10
 				uses = 5
-				category = fleet_in_being_tree
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1213,6 +1221,69 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+			}
+			random_owned_controlled_state = {
+				limit = { is_in_home_area = yes }
+				prioritize = { 273 }
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					creator = "AST"
+					version_name = "Canberra Class"
+				}
+				name = "HMAS Papua"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					creator = "AST"
+					version_name = "Canberra Class"
+				}
+				name = "HMAS Australia"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					creator = "AST"
+					version_name = "Canberra Class"
+				}
+				name = "HMAS New Zealand"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					creator = "AST"
+					version_name = "Canberra Class"
+				}
+				name = "HMAS Melbourne"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_2
+					creator = "AST"
+					version_name = "Canberra Class"
+				}
+				name = "HMAS Guadalcanal"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
 			}
 		}
 	}
