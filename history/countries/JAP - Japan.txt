@@ -10,7 +10,6 @@
  	closed_economy
  	limited_conscription
  	partial_economic_mobilisation
-	neutral_idea
  	JAP_faction_trade
  	JAP_zaibatsus
  	JAP_duplicate_research_efforts

@@ -2105,28 +2105,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_greece_war_goal
-		icon = GFX_focus_ITA_balkan
-		prerequisite = { focus = ITA_pact_of_steel }
-		available = {
-			date>1939.12.30
-		}
-		x = 3
-		y = 1
-		relative_position_id = ITA_pact_of_steel
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			unlock_decision_tooltip=ITA_join_war
-			hidden_effect = {
-				news_event = { hours = 6 id = news.186 }
-				102 = {	add_claim_by  = GER}
-			}
-		}
-	}
-	focus = {
 		id = ITA_rommel
 		icon = GFX_focus_GER_army_inno_1
 		available = {
@@ -2262,7 +2240,7 @@ focus_tree = {
 	focus = {
 		id = ITA_sword_of_islam
 		icon = GFX_ITA_Generic_Ultranat_Eagle
-		prerequisite = { focus = ITA_greece_war_goal }
+		prerequisite = { focus = ITA_pact_of_steel }
 		cost = 5
 		available = {
 			Date > 1942.1.1
@@ -2272,9 +2250,9 @@ focus_tree = {
 			has_full_control_of_state = 413
 			has_full_control_of_state = 415
 		}
-		x = 1
+		x = 5
 		y = 1
-		relative_position_id = ITA_greece_war_goal
+		relative_position_id = ITA_pact_of_steel
 		ai_will_do = {
 			factor = 10
 		}
@@ -2290,12 +2268,12 @@ focus_tree = {
 	focus = {
 		id = ITA_Illyricum
 		icon = GFX_ITA_Mare_Nostrum
-		prerequisite = { focus = ITA_greece_war_goal }
+		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
 		}
-		x = -1
+		x = 3
 		y = 1
-		relative_position_id = ITA_greece_war_goal
+		relative_position_id = ITA_pact_of_steel
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -2306,6 +2284,7 @@ focus_tree = {
 			add_state_core = 105
 			add_state_core = 44
 			add_state_core = 159
+			add_state_core = 320
 		}
 	}
 	focus = {

@@ -92,18 +92,6 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
-			}
-			focuses = {
-				ITA_pact_of_steel
-				ITA_greece_war_goal
-			}
-		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism

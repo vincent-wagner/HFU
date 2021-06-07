@@ -3,7 +3,6 @@ set_research_slots = 0
 oob = "LAT_1936"
 add_ideas = {
 	limited_conscription
-	neutral_idea
 }
 set_technology = {}
 add_ideas = no_training

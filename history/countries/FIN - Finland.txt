@@ -15,7 +15,6 @@ add_timed_idea = {
 add_timed_idea = { idea = no_training days= 1000 }
 add_ideas = {
 	idea_EFR_neutrality
-	neutral_idea
 }
 set_technology = {
 	airfield_allowed = 1

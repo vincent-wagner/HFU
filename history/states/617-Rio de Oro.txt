@@ -7,6 +7,8 @@ state={
 		owner = SPR
 		add_core_of=SWE
 		buildings = {
+			infrastructure = 1
+			anti_air_building = 10
 		}
 		victory_points = {
 			7408 1

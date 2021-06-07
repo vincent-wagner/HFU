@@ -10,6 +10,7 @@ state={
 			9130 3
 		}
 		buildings = {
+			infrastructure = 3
 		}
 	}
 	provinces={

@@ -15,10 +15,7 @@ if = {
 add_ideas = {
 	anti_german_military
 }
-set_variable = {
-	var = min_fuel
-	value = 0.800
-}
+
 set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1
@@ -71,10 +68,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 15
-	fascism = 10
-	communism = 15
-	neutrality = 60
+	neutrality = 100
 }
 set_stability = 0.6
 create_country_leader = {
