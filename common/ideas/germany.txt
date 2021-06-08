@@ -709,6 +709,83 @@ ideas = {
 			modifier={convoy_raiding_efficiency_factor = 0.2
 			}
 		}
+		GER_reequipPZR = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				medium_tank_aa_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			modifier = {
+				war_support_weekly = -0.005
+				army_armor_attack_factor = -0.1
+			}
+		}
+		GER_reequipINF = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			modifier = {
+				war_support_weekly = -0.005
+				army_infantry_defence_factor = -0.1
+				army_org_Factor = -0.1
+			}
+		}
+		GER_reequipAIR = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+					air_attack = -0.1
+					air_agility = -0.05
+				}
+			}
+			modifier = {
+				war_support_weekly = -0.005
+			}
+		}
 		GER_monsoon_boats = {
 			allowed = {
 				always = no

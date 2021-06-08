@@ -1,4 +1,10 @@
 ﻿l_english:
+ GER_reequipAIR:0 "Reequip Luftwaffe"
+ GER_reequipAIR_desc:0 "We should reinforce our Luftwaffe for the comming spring offensive"
+ GER_reequipPZR:0 "Reequip Panzerwaffe"
+ GER_reequipPZR_desc:0 "We should reinforce our Panzerwaffe for the comming spring offensive"
+ GER_reequipINF:0 "Reequip Infantry"
+ GER_reequipINF_desc:0 "We should reinforce our Infantry for the comming spring offensive"
  RAJ_agrarian_society_2:0 "Agrarian Society"
  RAJ_lions_of_the_great_war:0 "Indian Army"
  RAJ_guns:0 "Factory Jabalpur"
