@@ -1745,7 +1745,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 		custom_effect_tooltip = "MAN Designer will be available"
-		add_timed_idea = {idea=GER_panther_program days=30}
+		add_timed_idea = {idea=GER_panther_program days=60}
 		add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1
@@ -1791,6 +1791,7 @@ focus_tree = {
 				improved_rocket_engines = 1
 				jet_engines = 1
 			}
+			add_war_support = 0.15
 		}
 	}
 	focus = {
@@ -3098,13 +3099,81 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_reequip_INF
+		icon = goal_ger_heer
+		relative_position_id = GER_winter_defense
+		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack }
+		mutually_exclusive = { focus = GER_reequip_AIR focus = GER_reequip_PZR }
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+        available = {
+			has_war_with = SOV
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea={ idea = GER_reequipINF days = 60}
+		}
+	}
+
+	focus = {
+		id = GER_reequip_PZR
+		icon = GFX_GOAL_GER_standard_panzer
+		relative_position_id = GER_winter_defense
+		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack }	
+		mutually_exclusive = { focus = GER_reequip_AIR focus = GER_reequip_INF }
+		x = 4
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+        available = {
+			has_war_with = SOV
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea={ idea = GER_reequipPZR days = 60}
+		}
+	}
+
+	focus = {
+		id = GER_reequip_AIR
+		icon = GFX_GOAL_GER_sonic_planes
+		relative_position_id = GER_winter_defense
+		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack }	
+		mutually_exclusive = { focus = GER_reequip_PZR focus = GER_reequip_INF }
+		x = 6
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+        available = {
+			has_war_with = SOV
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea={ idea = GER_reequipAIR days = 60}
+		}
+	}
+	focus = {
 		id = GER_russische_befreiungsarmee
 		icon = GFX_GER_SS_armed_branch
 		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack }
 		available = {
 			has_idea=heinrich_himmler
 		}
-		x = -2
+		x = -1
 		y = 2
 		relative_position_id = GER_moscow
 		cost = 2
@@ -3146,7 +3215,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 2
+		x = 1
 		y = 2
 		relative_position_id = GER_moscow
 		cost = 2
@@ -3508,8 +3577,8 @@ focus_tree = {
 			NOT={has_idea=GER_barbarossa_2}
 			NOT={has_idea=GER_barbarossa_3}
 		}
-		relative_position_id = GER_moscow
-		x = 0
+		relative_position_id = GER_winter_attack
+		x = 1
 		y = 2
 		cost = 1
 		ai_will_do = {
