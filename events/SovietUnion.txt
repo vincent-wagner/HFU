@@ -595,7 +595,7 @@ country_event = {
 	fire_only_once = no
 	immediate = {
 		every_unit_leader = {
-		boost_planning = 1
+		boost_planning = 0.5
 		}
 	}
 }

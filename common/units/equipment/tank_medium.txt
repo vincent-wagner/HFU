@@ -136,11 +136,11 @@
     		maximum_speed = 10
     		#Defensive Abilities
     		defense = 10
-    		breakthrough = 62
+    		breakthrough = 57
     		armor_value = 90
     		#Offensive Abilities
-    		soft_attack = 23
-    		hard_attack = 23
+    		soft_attack = 22
+    		hard_attack = 22
     		ap_attack = 95
     		air_attack = 0
     		    build_cost_ic = 16 
@@ -399,7 +399,7 @@
     		armor_value = 70
     		#Offensive Abilities
     		soft_attack = 2.5
-    		hard_attack = 35
+    		hard_attack = 37
     		ap_attack = 88
     		air_attack = 0
     		    build_cost_ic = 13 

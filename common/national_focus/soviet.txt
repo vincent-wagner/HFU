@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = SOV_great_purge
 		icon = GFX_focus_SOV_purge
-		x = 10
+		x = 11
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = SOV_finish_five_year_plan
 		icon = GFX_focus_SOV_finish_five_year_plan
-		x = 4
+		x = 1
 		y = 1
 		prerequisite = { focus = SOV_great_purge }
 		cost = 5
@@ -60,7 +60,7 @@ focus_tree = {
 	focus = {
 		id = SOV_start_five_year_plan
 		icon = GFX_sov_stalin_writing
-		x = 3
+		x = 0
 		y = 2
 		prerequisite = { focus = SOV_finish_five_year_plan }
 		cost = 5
@@ -90,7 +90,7 @@ focus_tree = {
 	focus = {
 		id = SOV_capitals_of_socialism
 		icon = GFX_focus_GER_leningrad
-		x = 5
+		x = 2
 		y = 2
 		prerequisite = { focus = SOV_finish_five_year_plan }
 		cost = 10
@@ -555,7 +555,7 @@ focus_tree = {
 				name = "T-34/85"
 				type = medium_tank_equipment_2
 				upgrades = {
-					tank_gun_upgrade = 10
+					tank_gun_upgrade = 7
 					tank_reliability_upgrade = 5
 					tank_engine_upgrade = 5
 					}}
@@ -608,16 +608,14 @@ focus_tree = {
 		completion_reward = {
 			every_unit_leader = {
 				limit={has_id=402}
-				promote_leader = yes
 				add_skill_level=1
 				add_attack=3
 				add_logistics = 2
 				add_planning = 1
-				add_unit_leader_trait=organizer
-				add_unit_leader_trait=aggressive_assaulter
-				add_unit_leader_trait=logistics_wizard
-				add_unit_leader_trait=inspirational_leader
-				add_unit_leader_trait=organisational_leader
+				add_unit_leader_trait=trait_engineer
+				add_unit_leader_trait=trickster
+				add_unit_leader_trait=fortress_buster
+				add_unit_leader_trait=expert_improviser
 			}
 			every_unit_leader = {
 				limit={has_id=410}
@@ -625,10 +623,12 @@ focus_tree = {
 				add_skill_level=1
 				add_attack=2
 				add_defense=1
-				add_unit_leader_trait=trickster
 				add_unit_leader_trait=expert_improviser
 				add_unit_leader_trait=scavenger
 				add_unit_leader_trait=trait_engineer
+				add_unit_leader_trait=inspirational_leader
+				add_unit_leader_trait=organisational_leader
+				add_unit_leader_trait=aggressive_assaulter
 			}
 			every_unit_leader = {
 				limit={has_id=407}
@@ -1245,7 +1245,7 @@ focus_tree = {
 		id = SOV_stalin_constitution
 		icon = GFX_focus_SOV_stalin
 		prerequisite = { focus = SOV_great_purge }
-		x = 10
+		x = 11
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1295,7 +1295,7 @@ focus_tree = {
 		id = SOV_cas
 		icon = GFX_focus_SOV_cas
 		prerequisite = { focus = SOV_transpolar_flights }
-		x = 12
+		x = 13
 		y = 5
 		cost = 5
 		ai_will_do = {
@@ -1383,7 +1383,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_workers_culture
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1440,7 +1440,7 @@ focus_tree = {
 		id = SOV_transpolar_flights
 		icon = GFX_focus_SOV_transpolar_flights
 		prerequisite = { focus = SOV_aviation_cult }
-		x = 12
+		x = 13
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -1602,23 +1602,6 @@ focus_tree = {
 
 		}
 	}
-	focus = {
-		id = SOV_militarized_schools
-		icon = GFX_focus_SOV_militarized_schools
-		prerequisite = { focus = SOV_great_purge }
-		x = 4
-		y = 1
-		relative_position_id = SOV_great_purge
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_ideas = militarized_schools
-		}
-	}
-
 	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
@@ -2037,12 +2020,12 @@ focus_tree = {
 	focus = {
 		id = SOV_barb_1
 		icon = GFX_SOV_soviet_women
-		prerequisite = { focus = SOV_move_industry_to_urals }
+		prerequisite = { focus = SOV_great_purge }
 		available = {
 		}
-		x = -2
+		x = 11
 		y = 1
-		relative_position_id = SOV_move_industry_to_urals
+		relative_position_id = SOV_great_purge
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2129,7 +2112,7 @@ focus = {
 	x = 0
 	y = 1
 	relative_position_id = SOV_progress_cult
-	cost = 5
+	cost = 10
 	completion_reward = {
 		custom_effect_tooltip = available_designer
 		show_ideas_tooltip = okmo
@@ -2144,11 +2127,11 @@ focus = {
 	x = 0
 	y = 1
 	relative_position_id = SOV_leningrad_designs
-	cost = 5
+	cost = 10
 	completion_reward = {
 		add_tech_bonus = {
 			name = SOV_armored_infantry
-			uses = 1
+			uses = 2
 			bonus = 1
 			category = motorized_equipment
 		}
@@ -2166,21 +2149,199 @@ focus = {
 		custom_effect_tooltip = "GG go next."
 		245 = {
 			
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 3
 					instant_build = yes
 			}
 		}
 		246 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
 			}
-		}
+		}		
+focus = {
+			id = SOV_trans_volga_railways
+			icon = GFX_focus_SOV_transvolga
+			x = -5
+			y = 1
+			cost = 5
+			relative_position_id = SOV_great_purge
+			prerequisite = { focus = SOV_great_purge }
+			ai_will_do = {
+				factor = 1
+			}
+			available_if_capitulated = yes
+			complete_tooltip = {
+				every_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			completion_reward = {
+				241 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				246 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				245 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}		
+focus = {
+	id = SOV_long_term
+	icon = GFX_focus_SOV_long_term
+	prerequisite = { focus = SOV_trans_volga_railways }
+	relative_position_id = SOV_trans_volga_railways
+	cost = 10
+	available = {
+		date > 1938.6.1 }
+	x = 1
+	y = 1
+	mutually_exclusive = {
+		focus = SOV_short_term }
+	completion_reward = { 
+		add_timed_idea = {idea = peoples_commissariat_focus2 days = 900}
+	}
 }
+focus = {
+id = SOV_short_term
+icon = GFX_focus_SOV_short_term
+prerequisite = {focus = SOV_trans_volga_railways}
+relative_position_id = SOV_trans_volga_railways
+x = -1
+y = 1
+mutually_exclusive = {
+	focus = SOV_long_term }
+cost = 10
+available = {
+	date > 1938.6.1 }
+completion_reward = { 
+	249 = {
+		add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+			type = arms_factory
+			level = 5
+			instant_build = yes
+			}
+		}
+	374 = {
+		add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+			type = arms_factory
+			level = 5
+			instant_build = yes
+			}
+		}
+	513 = {
+		add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+			type = arms_factory
+			level = 5
+			instant_build = yes
+			}
+		}
+	492 = {
+		add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+			type = arms_factory
+			level = 5
+			instant_build = yes
+			}
+		}
+	489 = {
+		add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+			type = arms_factory
+			level = 5
+			instant_build = yes
+			}
+              }
+        }
+    }
+focus = {
+	id = SOV_technological_advancment
+	icon = GFX_focus_SOV_technology_advancment
+	cost = 10
+	relative_position_id = SOV_start_five_year_plan
+	prerequisite = { focus = SOV_long_term focus = SOV_short_term }
+	available = {
+		date > 1940.1.1
+	}
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+
+	 }
+focus = {
+	id = SOV_militarized_schools
+	icon = GFX_focus_SOV_militarized_schools
+	prerequisite = { focus = SOV_technological_advancment }
+	x = 0
+	y = 1
+	relative_position_id = SOV_technological_advancment
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+	available_if_capitulated = yes
+	completion_reward = {
+	add_ideas = militarized_schools
+		}
+	}
+focus = {
+	id = SOV_modernize_the_tank_corp
+	icon = GFX_focus_SOV_modernize_tank
+	cost = 10
+	prerequisite = { focus = SOV_winter_camps focus = SOV_mechanization_effort }
+	relative_position_id = SOV_winter_camps 
+	x = 1
+	y = 1
+	completion_reward = { 
+		add_tech_bonus = {
+		name = armor
+		uses = 1
+		bonus = 1
+		technology = advanced_medium_tank
+
+	}
+}
+
+
+}	
+	
+
+
+
+

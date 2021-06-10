@@ -170,6 +170,20 @@ ideas = {
 				navy_max_range_factor = -0.50
 			}
 		}
+		peoples_commissariat_focus2 = {
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_production_bonus
+
+            modifier = {
+                production_speed_arms_factory_factor = 0.10
+                consumer_goods_factor = -0.025
+            }
+        }
 		Order_227 = {
 			removal_cost = -1
 			allowed = {
@@ -410,15 +424,13 @@ ideas = {
 					instant = yes
 					build_cost_ic = 100
 				}
-				category_army = {
-					breakthrough = 0.10
-				}
 			}
 			modifier = {
 				license_naval_purchase_cost = 400
 				#army_defence_factor = -0.05
-				max_dig_in = -2
+				max_dig_in = -7
 				air_attack_factor =-0.15
+				planning_speed = -0.2
 			}
 		}
 		officers_purged_2 = {

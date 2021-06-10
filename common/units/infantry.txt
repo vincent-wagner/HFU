@@ -441,6 +441,10 @@ sub_units = {
 
 		combat_width = 2
 
+		#Offensive Abilities
+		soft_attack = 0.1
+		hard_attack = 1.0
+
 		#Size Definitions
 		max_strength = 35
 		max_organisation = 60
