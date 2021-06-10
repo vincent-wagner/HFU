@@ -1,7 +1,0 @@
-######################################
-category = {
- name = "earrape"
- soundeffects = {
-	earrape_sound_effect
- }
-}
