@@ -21,10 +21,6 @@ add_timed_idea = {
 	idea = FRA_civs
 	days = 365
 }
-add_timed_idea = {
-	idea = Phoney_War
-	days = 1460
-}
 # Starting tech
 set_technology = {
 	airfield_allowed = 1
