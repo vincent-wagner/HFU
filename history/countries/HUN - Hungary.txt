@@ -42,6 +42,7 @@ capital = 43
  	}
  	add_ideas = {
  		HUN_treaty_of_triannon
+		neutral_idea
  	}
  }
  set_politics = {

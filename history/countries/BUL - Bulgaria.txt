@@ -1,43 +1,16 @@
 capital = 48
 oob = "BUL_1936"
-set_research_slots = 3
-add_ideas = {
-	limited_conscription
-}
-add_ideas = peace_training
-set_variable = {
-	var = min_fuel
-	value = 0.800
-}
+set_research_slots = 0
+add_ideas = no_training
+add_ideas = neutrality_idea
+add_ideas =	neutral_idea
 set_rule = {can_be_spymaster = no}
 set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1
-	desertinfantry_at = 1
-	shocktroops = 1
-	tech_mountaineers = 1
-	marines = 1
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1
-	tech_engineers = 1
-	motorised_infantry = 1
-	early_fighter = 1
-	fuel_silos = 1
-	gw_artillery = 1
-	gwtank = 1
-	mtg_transport = 1
-	interwar_antitank = 1
-	interwar_antiair = 1
-	tech_recon = 1
 }
-set_stability = 0.7
-set_war_support = 0.60
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 3143
-	producer = BUL
-}
+set_stability = 1
+set_war_support = 1
 set_convoys = 100
 set_politics = {
 	ruling_party = neutrality
@@ -46,9 +19,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 5
-	fascism = 35
-	neutrality = 60
+	neutrality = 100
 }
 create_country_leader = {
 	name = "Boris III"
@@ -90,43 +61,3 @@ create_country_leader = {
 		#
 	}
 }
-create_corps_commander = {
-	name = "Nikola Totev Markov"
-	portrait_path = "gfx/leaders/BUL/Nikola_Totev_Markov.tga"
-	traits = {infantry_leader trickster commando }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 4
-}
-create_field_marshal = {
-	name = "Konstantin Ivanov Bekyarov"
-	portrait_path = "gfx/leaders/BUL/Konstantin_Ivanov_Bekyarov.tga"
-	traits = { organizer panzer_leader infantry_leader}
-	skill = 5
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-	create_corps_commander = { #DLC
-		name = "Georgi Popov"
-		gfx = GFX_portrait_bul_georgi_popov
-		traits = { infantry_leader ranger trait_mountaineer }
- 	skill = 5
- 	attack_skill = 5
- 	defense_skill = 3
- 	planning_skill = 2
- 	logistics_skill = 2
-	}
-	create_corps_commander = { 
-		name = "Nikola Hadzhipetkov"
-		portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
-		traits = { infantry_leader trait_engineer panzer_leader urban_assault_specialist}
- 		skill = 5
- 		attack_skill = 3
- 		defense_skill = 3
- 		planning_skill = 2
- 		logistics_skill = 3
-	}

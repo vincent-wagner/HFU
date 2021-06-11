@@ -873,6 +873,15 @@ ideas = {
 				}
 				NOT = {
 					AND = {
+						OR = {
+							is_literally_china = yes
+							tag = MAN
+						}
+						has_dlc = "Waking the Tiger"
+					}
+				}
+				NOT = {
+					AND = {
 						OR = { tag = MEX }
 						has_dlc = "Man the Guns"
 					}
@@ -899,6 +908,12 @@ ideas = {
 					AND = {
 						OR = { tag = AST tag = CAN tag = NZL tag = RAJ }
 						has_dlc = "Together for Victory"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = MAN }
+						has_dlc = "Waking the Tiger"
 					}
 				}
 				NOT = {
@@ -933,6 +948,12 @@ ideas = {
 				}
 				NOT = {
 					AND = {
+						OR = { tag = CHI tag = MAN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+				NOT = {
+					AND = {
 						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
@@ -957,6 +978,12 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { tag = YUG }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = MAN }
+						has_dlc = "Waking the Tiger"
+					}
 				}
 				NOT = {
 					AND = {
@@ -991,6 +1018,14 @@ ideas = {
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
 				}
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					NOT = {
+						OR = { tag = CHI tag = MAN }
+					}
+				}
 				NOT = {
 					AND = {
 						OR = { tag = MEX tag = HOL }
@@ -1016,6 +1051,12 @@ ideas = {
 				}
 				NOT = {
 					AND = {
+						OR = { tag = CHI tag = MAN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+				NOT = {
+					AND = {
 						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
 					}
@@ -1034,6 +1075,15 @@ ideas = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+				}
+				NOT = {
+					AND = {
+						has_DLC = "Waking the Tiger"
+						OR = {
+							original_tag = MAN
+							is_literally_china = yes
+						}
+					}
 				}
 				NOT = {
 					AND = {
@@ -1061,6 +1111,12 @@ ideas = {
 				}
 				NOT = {
 					AND = {
+						OR = { tag = CHI tag = MAN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+				NOT = {
+					AND = {
 						OR = { tag = HOL }
 						has_dlc = "Man the Guns"
 					}
@@ -1082,6 +1138,12 @@ ideas = {
 				}
 				NOT = {
 					AND = {
+						OR = { tag = CHI tag = MAN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
+				NOT = {
+					AND = {
 						OR = { tag = HOL }
 						has_dlc = "Man the Guns"
 					}
@@ -1100,6 +1162,12 @@ ideas = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = MAN }
+						has_dlc = "Waking the Tiger"
+					}
 				}
 				NOT = {
 					AND = {

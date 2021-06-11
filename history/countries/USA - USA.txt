@@ -145,6 +145,7 @@ add_ideas = {
 	USA_first_deal
 	great_depression
 	free_trade
+	neutral_idea
 	USA_segregation
 }
 # DIPLOMACY

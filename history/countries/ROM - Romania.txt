@@ -63,6 +63,7 @@ if = {
 	}
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
+		neutral_idea
 	}
 }
 #Kick off kings crazy life

@@ -1,7 +1,7 @@
 state={
 	id=174
 	name="STATE_178"
-	manpower = 561347
+	manpower = 1
 	state_category = small_island
 	history={
 		owner = SPR
@@ -9,8 +9,6 @@ state={
 			11749 1
 		}
 		buildings = {
-			infrastructure = 3
-			anti_air_building = 10
 		}
 		add_core_of = SPR
 	}

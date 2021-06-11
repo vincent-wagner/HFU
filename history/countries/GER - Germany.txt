@@ -33,15 +33,6 @@ CZE={
 	add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
 	add_timed_idea ={idea=tradeback_is_cancer days=1461}
 }
-SPR={
-	add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
-	add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
-	add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
-	add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
-	add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
-	add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
-	add_timed_idea ={idea=tradeback_is_cancer days=1461}
-}
 HUN={
 	add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
 	add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
@@ -59,7 +50,7 @@ ROM={add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
 	add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
 	add_timed_idea ={idea=tradeback_is_cancer days=1459}
 }
-BUL={add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
+YUG={add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
 	add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
 	add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
 	add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
@@ -254,7 +245,7 @@ add_to_faction = ROM
 add_to_faction = ITA
 add_to_faction = HUN
 add_to_faction = BUL
-add_to_faction = SPR
+add_to_faction = YUG
 add_ideas = {
 	sour_loser
 	general_staff

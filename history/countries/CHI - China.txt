@@ -9,8 +9,8 @@ set_technology = {
 add_ideas = {
 	german_advisors
 	CHI_division
+	neutral_idea
 }
-add_timed_idea = { idea = no_training days= 1095 }
 if = {
 	limit = {
 		has_dlc = "Waking the Tiger"
