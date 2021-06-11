@@ -54,6 +54,18 @@ ideas = {
 				industry_repair_factor=0.25
 				consumer_goods_factor = 0.03
 				}}
+		GER_panther_program = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = panther_program
+			modifier = {
+				war_support_weekly = -0.005
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
 		GER_Albert_Speer_idea = {
 			allowed = {
 				always = yes
@@ -79,6 +91,8 @@ ideas = {
 				enemy_army_bonus_air_superiority_factor = -0.1
 				army_core_defence_factor = 0.2
 				army_core_attack_factor = 0.2
+				war_support_weekly = -0.01
+				war_support_factor = 0.1
 			}
 		}
 		GER_Waffen_SS = {
@@ -229,7 +243,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_build_infrastructure
 			modifier = {
-				production_speed_infrastructure_factor = 0.5
+				production_speed_infrastructure_factor = 0.2
 			}
 		}
 		GER_align_hungary = {
@@ -598,39 +612,6 @@ ideas = {
 			modifier={naval_speed_factor = 0.1 navy_visibility = -0.1 navy_fuel_consumption_factor= -0.5
 			}
 		}
-		GER_rebuild_our_glory1 = {
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_production_bonus
-			modifier = {
-				stability_weekly = 0.01
-				war_support_weekly = 0.01
-				
-			}
-		}
-		GER_rethink_our_old_plans1 = {
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_central_management
-			modifier = {
-				production_speed_industrial_complex_factor = 0.4
-			}
-		}
-		GER_hermann_goering_plan1 = {
-			allowed = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_central_management
-			modifier = {
-				production_speed_arms_factory_factor = 0.15
-				consumer_goods_factor = 0.025
-			}
-		}
 		GER_all_options = {
 			allowed = {
 				always = no
@@ -656,7 +637,64 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = generic_navy_bonus
-			modifier={research_speed_factor = 0.10
+			modifier={
+			research_speed_factor = 0.25
+			}
+		}
+		GER_hungerplan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			modifier = {
+				industrial_capacity_factory = 0.2
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		GER_mass_production1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			modifier = {
+				industrial_capacity_factory = -4
+			}
+		}
+		GER_mass_production2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = -0.5
+				war_support_weekly = -0.01
+				war_support_factor = 0.1
+			}
+		}
+		GER_mass_production3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			modifier = {
+				industrial_capacity_factory = 1
 			}
 		}
 		GER_trade_interdiction = {
@@ -669,6 +707,83 @@ ideas = {
 			removal_cost = -1
 			picture = generic_navy_bonus
 			modifier={convoy_raiding_efficiency_factor = 0.2
+			}
+		}
+		GER_reequipPZR = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				medium_tank_aa_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			modifier = {
+				war_support_weekly = -0.005
+				army_armor_attack_factor = -0.1
+			}
+		}
+		GER_reequipINF = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			modifier = {
+				war_support_weekly = -0.005
+				army_infantry_defence_factor = -0.1
+				army_org_Factor = -0.1
+			}
+		}
+		GER_reequipAIR = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+					air_attack = -0.1
+					air_agility = -0.05
+				}
+			}
+			modifier = {
+				war_support_weekly = -0.005
 			}
 		}
 		GER_monsoon_boats = {
@@ -765,6 +880,9 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_completed_focus = GER_west_wall
+			}
 			traits = { fortification_engineer quartermaster_general	}
 			ai_will_do = {
 				factor = 0.5
@@ -801,7 +919,7 @@ ideas = {
 			}
 		}
 		joseph_goebbels = {
-		    cost = 150
+		    cost = 100
 			allowed = {
 				original_tag = GER
 			}
@@ -902,13 +1020,13 @@ ideas = {
 				medium_tank_equipment = {
 					reliability = 0.1
 					soft_attack = 0.15
-					hard_attack = 0.1
+					hard_attack = 0.15
 					build_cost_ic = 0.05
+					hardness = 0.05
 				}
 				medium_tank_aa_equipment = {
 					reliability = -0.1
 					air_attack = 0.1
-					armor_value = 0.1
 					build_cost_ic = 0.05
 				}
 			}
@@ -1026,19 +1144,33 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+			available = {
+				has_completed_focus = GER_rocket_interceptor
+			}
 			modifier = { tank_manufacturer_cost_factor = -1 }
 			equipment_bonus = {
 				medium_tank_equipment = {
-					hard_attack = 0.10 soft_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+					reliability = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
+					build_cost_ic = 0.05
+					hardness = 0.05
+					armor_value = 0.1
 				}
 				medium_tank_aa_equipment = {
-					air_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+					air_attack = 0.1
+					armor_value = 0.1
 				}
 				medium_tank_artillery_equipment = {
-					soft_attack = 0.15  armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+					soft_attack = 0.15  
+					armor_value = 0.1
+					hardness = 0.05 
 				}
 				medium_tank_destroyer_equipment = {
-					hard_attack = 0.15 ap_attack = 0.1 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+					hard_attack = 0.15 
+					ap_attack = 0.1 
+					armor_value = 0.1
+					hardness = 0.05
 				}
 			}
 			ai_will_do = {
@@ -1065,13 +1197,16 @@ ideas = {
 			}
 			equipment_bonus = {
 				heavy_tank_equipment = {
-					reliability = 0.1 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
+					build_cost_ic = -0.075 reliability = 0.1 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
 				}
 				heavy_tank_destroyer_equipment = {
-					reliability = 0.1 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
+					build_cost_ic = -0.075 reliability = 0.1 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
 				}
 				heavy_tank_artillery_equipment = {
-					reliability = 0.10 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
+					build_cost_ic = -0.075 reliability = 0.10 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
+				}
+				super_heavy_tank_equipment = {
+					build_cost_ic = -0.075 reliability = 0.1 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
 				}
 			}
 		}
@@ -1613,7 +1748,7 @@ ideas = {
 				fascism_drift = 0.2
 			}
 		}
-	
+	}
 }
 #       hugo_sperrle = {
 	#	        ledger = air

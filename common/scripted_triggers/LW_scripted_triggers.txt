@@ -14,7 +14,7 @@ is_playable_country = {
 		tag = FIN
 		tag = USA
 		tag = CAN
-		tag = YUG
+		tag = BUL
 		tag = CZE
 	}
 }

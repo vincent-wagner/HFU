@@ -28,7 +28,6 @@ focus_tree = {
 				name = codebreaking_bonus
 				bonus = 1.0
 				uses = 3
-				category = decryption_tech
 				category = computing_tech
 			}
 		}
@@ -43,7 +42,14 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = crypto_bomb_focus
-		cost = 5
+		available = {
+			AND = {
+			date > 1941.10.1
+			has_tech = improved_heavy_tank
+			has_tech = mechanised_infantry
+			}
+		}
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -73,6 +79,53 @@ focus_tree = {
 					category = radar_tech
 				}
 			}
+		create_equipment_variant = {
+					name = "Churchill Tank"
+					type = heavy_tank_equipment_2
+					upgrades = {
+						tank_gun_upgrade = 5
+						tank_armor_upgrade = 5
+						tank_reliability_upgrade = 3
+						}
+				}				
+		division_template = {
+					name = "Royal Tank Division"
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 0 y = 2 }
+						heavy_armor = { x = 0 y = 3 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 1 y = 1 }
+						heavy_armor = { x = 1 y = 2 }
+						heavy_armor = { x = 1 y = 3 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 2 y = 1 }
+						heavy_armor = { x = 2 y = 2 }
+						heavy_armor = { x = 2 y = 3 }
+						mechanized = { x = 3 y = 0 }
+						mechanized = { x = 3 y = 1 }
+						mechanized = { x = 3 y = 2 }
+						mechanized = { x = 3 y = 3 }
+						mechanized = { x = 4 y = 0 }
+						mechanized = { x = 4 y = 1 }
+						mechanized = { x = 4 y = 2 }
+						mechanized = { x = 4 y = 3 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						signal_company = { x = 0 y = 4 }
+					}
+				}
+				124 = {
+				create_unit = {
+							division = "name = \"Royal Tank Division\" division_template = \"Royal Tank Division\" start_experience_factor = 0.3"
+							owner = ENG
+						}
+				}
 		}
 	}
 	focus = {
@@ -346,6 +399,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = shadow_scheme_focus_tt
+			add_tech_bonus = {
+				name = shadow_scheme_focus
+				bonus = 1.0
+				uses = 1
+				technology = artillery1
+			}
 		}
 	}
 	focus = {
@@ -506,6 +565,12 @@ focus_tree = {
 				}
 				set_state_flag = royal_ordinance_focus_2AF
 			}
+			add_tech_bonus = {
+				name = royal_ordinance_focus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -526,10 +591,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			125 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
@@ -556,9 +621,9 @@ focus_tree = {
 	}
 	focus = {
 		id = UK_secret_focus
-		prerequisite = { focus = maud_focus }
+		prerequisite = { focus = royal_ordinance_focus }
 		icon = GFX_goal_generic_secret_weapon
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = royal_ordinance_focus
 		cost = 5
@@ -815,10 +880,10 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 50
 			132 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = ENG_naval_rearmament_focus_1dockyard
@@ -831,6 +896,12 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = ENG_naval_rearmament_focus_1dockyard
+			}
+			add_tech_bonus = {
+				name = naval_rearmament_focus
+				bonus = 1
+				uses = 2
+				category = naval_doctrine
 			}
 		}
 	}
@@ -968,7 +1039,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_timed_idea = {idea = britannia_rules_the_waves days = 60}
+			custom_effect_tooltip = ENG_waves_tt
 				every_unit_leader = {
 				limit={has_id=985}
 				add_skill_level=2
@@ -1066,36 +1137,7 @@ focus_tree = {
 			has_dlc = "Man the Guns"
 		}
 		available_if_capitulated = yes
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = ENG_expand_the_repair_yards_2dockyard }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = ENG_expand_the_repair_yards_2dockyard
-			}
 			add_ideas = ENG_expand_the_repair_yards
 		}
 	}
@@ -1756,10 +1798,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_australia_focus_2dockyards
@@ -1811,38 +1853,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			AST = {
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_new_zealand_focus_1IC
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_new_zealand_focus_2dockyards
-				}
 				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
@@ -1922,7 +1932,7 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
-							size > 1
+							size > 2
 							include_locked = yes
 						}
 					}
@@ -1930,22 +1940,6 @@ focus_tree = {
 					add_building_construction = {
 						type = industrial_complex
 						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_canada_focus_2IC
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = industrial_complex
-						level = 3
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_canada_focus_1IC
@@ -2045,22 +2039,6 @@ focus_tree = {
 		completion_reward = {
 			SAF = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_south_africa_focus_2IC
-				}
 				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
@@ -2299,7 +2277,7 @@ focus_tree = {
     				type = chromium
    				amount = 10
     				state = 404#raj
-			}
+			}		
 		}
 	}
 	focus = {
@@ -2564,13 +2542,19 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ENG_motion_of_no_confidence
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = british_arms_discount
+			add_tech_bonus = {
+				name = ENG_artillery_focus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -2738,7 +2722,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 5
+		cost = 4
 		ai_will_do = {
 			factor = 1
 		}
@@ -2755,13 +2739,33 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_issue_gasmasks
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			OR = {
+				date > 1938.8.1
+				has_tech = improved_medium_tank
+			}
+		}
 		completion_reward = {
+			custom_effect_tooltip = "If you have medium 2 you get 2 doctrine bonuses for mw or airland battle"
 			remove_ideas = ENG_the_war_to_end_all_wars
 			set_rule = { can_send_volunteers = yes }
+			army_experience=100
+			if = {
+				limit = {
+					has_tech = improved_medium_tank
+				}
+				add_tech_bonus = {
+					name = ENG_military_training_act
+					bonus = 1
+					uses = 2
+					category = tank_land_doctrine
+					category = cat_mobile_warfare
+				}
+			}
 		}
 	}
 	focus = {

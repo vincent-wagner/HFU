@@ -9,7 +9,6 @@ add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
 	export_focus
-	neutral_idea
 	limited_conscription
 	partial_economic_mobilisation
 	never_surrender

@@ -421,46 +421,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		CZE_gustav_husak = {
-			picture = generic_political_advisor_europe_2
-			allowed = {
-				original_tag = CZE
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "Death or Dishonor" }
-					has_completed_focus = CZE_go_left
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			traits = { communist_revolutionary }
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		CZE_konrad_henlein = {
-			picture = generic_political_advisor_europe_3
-			allowed = {
-				original_tag = CZE
-			}
-			available = {
-				if = {
-					limit = { has_dlc = "Death or Dishonor" }
-					has_completed_focus = CZE_go_right
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			traits = { fascist_demagogue }
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 	}
 	# MILITARY
 	army_chief = {
