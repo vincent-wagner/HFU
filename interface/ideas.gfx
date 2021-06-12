@@ -2,10 +2,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ansaldo"
 		texturefile = "gfx/interface/ideas/idea_ansaldo.dds"
+	}
+		spriteType = {
+	name = "GFX_idea_panther_program"
+		texturefile = "gfx/interface/ideas/GER_4year.dds"
 	}	
 	spriteType = {
 		name = "GFX_idea_odero_terni_orlando"
 		texturefile = "gfx/interface/ideas/idea_odero_terni_orlando.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mass_production"
+		texturefile = "gfx/interface/ideas/GER_eco.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_home_of_the_free_2"
@@ -4669,12 +4677,9 @@ spriteTypes = {
 		name = "GFX_idea_usa_last_bastion_of_liberty"
 		texturefile = "gfx/interface/ideas/idea_usa_last_bastion_of_liberty.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_glory"
-		textureFile = "gfx/interface/ideas/ger/idea_glory.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_rethink"
-		textureFile = "gfx/interface/ideas/ger/idea_rethink.dds"
-	}
+
+
+
+
+
 }
