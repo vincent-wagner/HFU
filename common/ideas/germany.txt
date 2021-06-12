@@ -1,5 +1,74 @@
 ideas = {
 	country = {
+		
+		GER_hungerplan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			modifier = {
+				industrial_capacity_factory = 0.2
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		GER_mass_production1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			modifier = {
+				industrial_capacity_factory = -4
+			}
+		}
+		GER_mass_production2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = -0.5
+				war_support_weekly = -0.01
+				war_support_factor = 0.1
+			}
+		}
+		GER_mass_production3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = mass_production
+			modifier = {
+				industrial_capacity_factory = 1
+			}
+		}
+		GER_panther_program = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = panther_program
+			modifier = {
+				war_support_weekly = -0.005
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
 		GER_africa_hp = {
 			allowed = {
 				always = no
@@ -65,7 +134,10 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.1
 				line_change_production_efficiency_factor = 0.1
-				}}
+				war_support_weekly = -0.01
+				war_support_factor = 0.1
+			}
+		}
 		GER_totaler_krieg = {
 			allowed = {
 				always = no

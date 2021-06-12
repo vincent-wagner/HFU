@@ -1,5 +1,13 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_idea_mass_production"
+		texturefile = "gfx/interface/ideas/GER_eco.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_panther_program"
+		texturefile = "gfx/interface/ideas/GER_4year.dds"
+	}	
+	spriteType = {
 		name = "GFX_idea_ansaldo"
 		texturefile = "gfx/interface/ideas/idea_ansaldo.dds"
 	}	
