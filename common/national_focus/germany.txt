@@ -978,7 +978,7 @@
 	focus = {
 			id = GER_hermann_goering_plan
 			icon = GFX_focus_GER_hermann_goering
-			cost = 10
+			cost = 5
 			x = -1
 			y = 1
 			mutually_exclusive = { focus = GER_rethink_our_old_plans }
@@ -991,7 +991,7 @@
 	focus = {
 		id = GER_rethink_our_old_plans
 		icon = GFX_focus_GER_rethink_our_plans
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
 		mutually_exclusive = { focus = GER_hermann_goering_plan }
@@ -1325,6 +1325,9 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			date > 1941.6.1
+		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1370,15 +1373,37 @@ focus = {
 			add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 100 producer = GER }
 			add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 100 producer = GER }
 		}
+	}		
+	focus = {
+		id = GER_stuka
+		icon = GFX_focus_GER_endsieg
+		prerequisite = { focus = GER_german_engineering }
+		x = 4
+		y = 1
+		relative_position_id = GER_german_engineering
+		available = {
+			date > 1941.7.1
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+		add_timed_idea = { idea = GER_hungerplan  days = 400 }
+		}
 	}
 	focus = {
 		id = GER_rocket_interceptor
 		icon = GFX_focus_GER_modern_infantry
-		prerequisite = { focus = GER_german_engineering }
-		x = 4
+		prerequisite = { focus = GER_stuka }
+		x = 0
 		y = 1
-		available={}
-		relative_position_id = GER_german_engineering
+		available = {
+			date > 1941.11.1
+		}
+		relative_position_id = GER_stuka
 		cost = 2
 		ai_will_do = {
 			factor = 1
@@ -1393,34 +1418,18 @@ focus = {
 				uses = 1
 				category = cas_bomber
 			}
-		}
-	}
-	focus = {
-		id = GER_stuka
-		icon = GFX_focus_GER_endsieg
-		prerequisite = { focus = GER_rocket_interceptor }
-		x = 0
-		y = 1
-		available={}
-		relative_position_id = GER_rocket_interceptor
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-		add_timed_idea = { idea = GER_hungerplan  days = 400 }
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = GER_MAN
 		}
 	}
 	focus = {
 		id = GER_jet_fighter
 		icon = GFX_focus_GER_Me262
-		prerequisite = { focus = GER_stuka }
+		prerequisite = { focus = GER_rocket_interceptor }
 		available={date>1943.5.1}
 		x = 0
 		y = 1
-		relative_position_id = GER_stuka
+		relative_position_id = GER_rocket_interceptor
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1594,7 +1603,22 @@ focus = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 producer = GER }
+			add_equipment_to_stockpile = { 
+			type = infantry_equipment_1 amount = 60000 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = artillery_equipment_1 amount = 5000 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = anti_air_equipment_1 amount = 3200 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = anti_tank_equipment_1 amount = 1440 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = support_equipment_1 amount = 1600 producer = GER
+			}
+			
 			hidden_effect={
 				division_template = {
 					name = "Volkssturm"
@@ -3334,7 +3358,10 @@ focus = {
 		id = GER_alta
 		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_around_maginot }
-		available = {date > 1940.01.01}
+		available = {
+		date > 1940.01.01
+		date < 1941.01.01
+		}
 		bypass = {
 			NOT = {FRA = {has_full_control_of_state =16}}
 		}
