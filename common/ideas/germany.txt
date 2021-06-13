@@ -62,7 +62,7 @@ ideas = {
 			removal_cost = -1
 			picture = panther_program
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.3
 				research_speed_factor = 0.1
 				army_armor_attack_factor = -0.1
 			}
