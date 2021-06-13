@@ -152,6 +152,7 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
+				AST_cac_boomerang
 				AST_squash_the_squanderbugs
 				AST_rats_of_tobruk
 
