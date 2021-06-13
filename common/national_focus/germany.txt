@@ -1439,30 +1439,6 @@ focus = {
 		}
 	}
 	focus = {
-		id = GER_russische_befreiungsarmee
-		icon = GFX_GER_SS_armed_branch
-		prerequisite = { focus = GER_rocket_interceptor }
-		available = {
-			has_idea=heinrich_himmler
-		}
-		x = 0
-		y = 1
-		relative_position_id = GER_rocket_interceptor
-		cost = 2
-		completion_reward = {
-			add_ideas = GER_Waffen_SS
-			custom_effect_tooltip = "Ten fully equipped SS-Divisions will spawn in Duisburg."
-				51 = {
-					for_loop_effect = {
-						end = 10
-						create_unit = {
-							division = "name = \"SS-Panzergrenadier\" division_template = \"Brandenburgers\" start_experience_factor = 2.0"
-							owner = GER
-						}
-						}}
-		}
-	}
-	focus = {
 		id = GER_jet_fighter
 		icon = GFX_focus_GER_Me262
 		prerequisite = { focus = GER_panzer_4_ausfg }
@@ -1728,6 +1704,30 @@ focus = {
         }
 	}
 	focus = {
+		id = GER_russische_befreiungsarmee
+		icon = GFX_GER_SS_armed_branch
+		prerequisite = { focus = GER_rocket_interceptor }
+		available = {
+			has_idea=heinrich_himmler
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_rocket_interceptor
+		cost = 2
+		completion_reward = {
+			add_ideas = GER_Waffen_SS
+			custom_effect_tooltip = "Ten fully equipped SS-Divisions will spawn in Duisburg."
+				51 = {
+					for_loop_effect = {
+						end = 10
+						create_unit = {
+							division = "name = \"SS-Panzergrenadier\" division_template = \"Brandenburgers\" start_experience_factor = 2.0"
+							owner = GER
+						}
+						}}
+		}
+	}
+	focus = {
 		id = GER_nero
 		icon = GFX_focus_GER_goal_Operation_Schwarzes_Gold
 		prerequisite = { focus = GER_albert_speer }
@@ -1966,171 +1966,7 @@ focus = {
 			}
 		}
 	}
-	focus = {
-		id = GER_endsieg
-		icon = GFX_GER_endsieg
-		prerequisite = { focus = GER_mineraloelsicherungsplan focus = GER_volkssturm }
-		prerequisite = { focus = GER_alpenfestung  }
-		prerequisite = { focus = GER_nero }
-		relative_position_id = GER_mineraloelsicherungsplan
-		x = 2
-		y = 1
-		cost = 2
-		available = {
-			count_triggers={
-				amount=4
-				14= {is_controlled_by_ROOT_or_ally=no}
-				30= {is_controlled_by_ROOT_or_ally=no}
-				16= {is_controlled_by_ROOT_or_ally=no}
-				15= {is_controlled_by_ROOT_or_ally=no}
-				6= {is_controlled_by_ROOT_or_ally=no}
-				29= {is_controlled_by_ROOT_or_ally=no}
-				35= {is_controlled_by_ROOT_or_ally=no}
-				36= {is_controlled_by_ROOT_or_ally=no}
-				7= {is_controlled_by_ROOT_or_ally=no}
-				699= {is_controlled_by_ROOT_or_ally=no}
-				677= {is_controlled_by_ROOT_or_ally=no}
-				46= {is_controlled_by_ROOT_or_ally=no}
-				2= {is_controlled_by_ROOT_or_ally=no}
-				10= {is_controlled_by_ROOT_or_ally=no}
-			}
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = no
-		completion_reward = {
-			custom_effect_tooltip = "Deploys the last reserves of the Reich"
-			hidden_effect ={
-				division_template = {
-					name = "SS-Panzergrenadier"
-					regiments = {
-						heavy_armor = { x = 0 y = 0 }
-						heavy_armor = { x = 0 y = 1 }
-						heavy_armor = { x = 0 y = 2 }
-						heavy_armor = { x = 0 y = 3 }
-						heavy_armor = { x = 1 y = 0 }
-						heavy_armor = { x = 1 y = 1 }
-						heavy_armor = { x = 1 y = 2 }
-						heavy_armor = { x = 1 y = 3 }
-						heavy_armor = { x = 2 y = 0 }
-						heavy_armor = { x = 2 y = 1 }
-						heavy_armor = { x = 2 y = 2 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-						motorized = { x = 4 y = 2 }
-						motorized = { x = 4 y = 3 }
-						mot_anti_air_brigade = { x = 4 y = 4 }
-						mot_anti_air_brigade = { x = 4 y = 5 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3}
-						anti_tank = {x = 0 y = 4}
-					}
-				}
-				64 = {
-					for_loop_effect = {
-						end = 1
-						create_unit = {
-							division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
-							owner = GER
-						}
-					}
-				}
-				division_template = {
-					name = "Panzergrenadiere"
-					regiments = {
-						mechanized = { x = 0 y = 0 }
-						mechanized = { x = 0 y = 1 }
-						mechanized = { x = 0 y = 2 }
-						mechanized = { x = 0 y = 3 }
-						mechanized = { x = 1 y = 0 }
-						mechanized = { x = 1 y = 1 }
-						mechanized = { x = 1 y = 2 }
-						mechanized = { x = 1 y = 3 }
-						mechanized = { x = 2 y = 0 }
-						mechanized = { x = 2 y = 1 }
-						mechanized = { x = 2 y = 2 }
-						mechanized = { x = 2 y = 3 }
-						mot_anti_air_brigade = { x = 3 y = 0 }
-						mot_anti_air_brigade = { x = 3 y = 1 }
-						mot_anti_tank_brigade = { x = 3  y = 2}
-						mot_anti_tank_brigade = { x = 3 y = 3}
-						mot_artillery_brigade = { x = 4 y = 0 }
-						mot_artillery_brigade = { x = 4 y = 1 }
-						mot_artillery_brigade = { x = 4 y = 2 }
-						mot_artillery_brigade = { x = 4 y = 3 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3}
-						anti_tank = {x = 0 y = 4}
-						signal_company = {x = 0 y = 5}
-					}
-				}
-				64 = {
-					for_loop_effect = {
-						end = 15
-						create_unit = {
-							division = "name = \"Panzergrenadiere\" division_template = \"Panzergrenadiere\" start_experience_factor = 2.0"
-							owner = GER
-						}
-					}
-				}
-				division_template = {
-					name = "Panzerjagd-Division"
-					regiments = {
-						medium_armor = { x = 0 y = 0 }
-						medium_armor = { x = 0 y = 1 }
-						medium_armor = { x = 0 y = 2 }
-						medium_armor = { x = 0 y = 3 }
-						medium_armor = { x = 1 y = 0 }
-						medium_armor = { x = 1 y = 1 }
-						medium_armor = { x = 1 y = 2 }
-						medium_armor = { x = 1 y = 3 }
-						medium_armor = { x = 2 y = 0 }
-						medium_armor = { x = 2 y = 1 }
-						medium_armor = { x = 2 y = 2 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-						motorized = { x = 4 y = 2 }
-						motorized = { x = 4 y = 3 }
-						mot_anti_air_brigade = { x = 4 y = 4 }
-						mot_anti_air_brigade = { x = 4 y = 5 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3}
-						anti_tank = {x = 0 y = 4}
-					}
-				}
-				64 = {
-					for_loop_effect = {
-						end = 6
-						create_unit = {
-							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
-							owner = GER
-						}
-					}
-				}
-			}
-		}
-	}
+
 	focus = {
 		id = GER_exploit_occupied_territories
 		icon = GFX_focus_GER_money
@@ -4545,6 +4381,171 @@ focus = {
 				}
 			}
 			add_timed_idea={idea=GER_mineraloelsicherungsplan days=180}
+		}
+	}
+	focus = {
+		id = GER_endsieg
+		icon = GFX_GER_endsieg
+		prerequisite = { focus = GER_mineraloelsicherungsplan focus = GER_volkssturm }
+		prerequisite = { focus = GER_alpenfestung  }
+		prerequisite = { focus = GER_nero }
+		relative_position_id = GER_mineraloelsicherungsplan
+		x = 2
+		y = 1
+		cost = 2
+		available = {
+			count_triggers={
+				amount=4
+				14= {is_controlled_by_ROOT_or_ally=no}
+				30= {is_controlled_by_ROOT_or_ally=no}
+				16= {is_controlled_by_ROOT_or_ally=no}
+				15= {is_controlled_by_ROOT_or_ally=no}
+				6= {is_controlled_by_ROOT_or_ally=no}
+				29= {is_controlled_by_ROOT_or_ally=no}
+				35= {is_controlled_by_ROOT_or_ally=no}
+				36= {is_controlled_by_ROOT_or_ally=no}
+				7= {is_controlled_by_ROOT_or_ally=no}
+				699= {is_controlled_by_ROOT_or_ally=no}
+				677= {is_controlled_by_ROOT_or_ally=no}
+				46= {is_controlled_by_ROOT_or_ally=no}
+				2= {is_controlled_by_ROOT_or_ally=no}
+				10= {is_controlled_by_ROOT_or_ally=no}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = "Deploys the last reserves of the Reich"
+			hidden_effect ={
+				division_template = {
+					name = "SS-Panzergrenadier"
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 0 y = 2 }
+						heavy_armor = { x = 0 y = 3 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 1 y = 1 }
+						heavy_armor = { x = 1 y = 2 }
+						heavy_armor = { x = 1 y = 3 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 2 y = 1 }
+						heavy_armor = { x = 2 y = 2 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 4 y = 0 }
+						motorized = { x = 4 y = 1 }
+						motorized = { x = 4 y = 2 }
+						motorized = { x = 4 y = 3 }
+						mot_anti_air_brigade = { x = 4 y = 4 }
+						mot_anti_air_brigade = { x = 4 y = 5 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						anti_air = {x = 0 y = 3}
+						anti_tank = {x = 0 y = 4}
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 1
+						create_unit = {
+							division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
+							owner = GER
+						}
+					}
+				}
+				division_template = {
+					name = "Panzergrenadiere"
+					regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 0 y = 3 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+						mechanized = { x = 1 y = 3 }
+						mechanized = { x = 2 y = 0 }
+						mechanized = { x = 2 y = 1 }
+						mechanized = { x = 2 y = 2 }
+						mechanized = { x = 2 y = 3 }
+						mot_anti_air_brigade = { x = 3 y = 0 }
+						mot_anti_air_brigade = { x = 3 y = 1 }
+						mot_anti_tank_brigade = { x = 3  y = 2}
+						mot_anti_tank_brigade = { x = 3 y = 3}
+						mot_artillery_brigade = { x = 4 y = 0 }
+						mot_artillery_brigade = { x = 4 y = 1 }
+						mot_artillery_brigade = { x = 4 y = 2 }
+						mot_artillery_brigade = { x = 4 y = 3 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						anti_air = {x = 0 y = 3}
+						anti_tank = {x = 0 y = 4}
+						signal_company = {x = 0 y = 5}
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 15
+						create_unit = {
+							division = "name = \"Panzergrenadiere\" division_template = \"Panzergrenadiere\" start_experience_factor = 2.0"
+							owner = GER
+						}
+					}
+				}
+				division_template = {
+					name = "Panzerjagd-Division"
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						medium_armor = { x = 0 y = 2 }
+						medium_armor = { x = 0 y = 3 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 1 y = 1 }
+						medium_armor = { x = 1 y = 2 }
+						medium_armor = { x = 1 y = 3 }
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 4 y = 0 }
+						motorized = { x = 4 y = 1 }
+						motorized = { x = 4 y = 2 }
+						motorized = { x = 4 y = 3 }
+						mot_anti_air_brigade = { x = 4 y = 4 }
+						mot_anti_air_brigade = { x = 4 y = 5 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						anti_air = {x = 0 y = 3}
+						anti_tank = {x = 0 y = 4}
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 6
+						create_unit = {
+							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
+							owner = GER
+						}
+					}
+				}
+			}
 		}
 	}
 }
