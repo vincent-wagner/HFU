@@ -56,17 +56,9 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			42 = { set_demilitarized_zone = no }
-			51 = { set_demilitarized_zone = no }
-			add_political_power = 150
-			add_war_support = 0.1
-			army_experience = 100
-			add_named_threat = { threat = 5 name = GER_rhineland
-				hidden_effect = {
-					news_event = { hours = 6 id = news.25 }
-				}
-			}
+			51 = {set_demilitarized_zone = no}
 			42 = { 
+				set_demilitarized_zone = no
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -77,27 +69,27 @@
 						level = 3
 						province =8799
 						instant_build = yes
-				}
+					}
 				add_building_construction = {
 						type = bunker
 						level = 3
 						province =10459
 						instant_build = yes
-				}
-		        	add_building_construction = {
+					}
+				add_building_construction = {
 						type = bunker
 						level = 3
 						province =528
 						instant_build = yes
-				}
+					}
 				add_building_construction = {
 						type = bunker
 						level = 3
 						province =3335
 						instant_build = yes
-				}				
+					}				
 			}
-				50 = { 		
+			50 = { 		
 				add_building_construction = {
 						type = bunker
 						level = 3
@@ -123,8 +115,14 @@
 						instant_build = yes
 					}	
 			}
-		
-		
+			add_political_power = 150
+			add_war_support = 0.1
+			army_experience = 100
+			add_named_threat = { threat = 5 name = GER_rhineland
+				hidden_effect = {
+					news_event = { hours = 6 id = news.25 }
+				}
+			}
 		}
 	}
 	focus = {
@@ -1037,7 +1035,7 @@
 	focus = {
 			id = GER_hermann_goering_plan
 			icon = GFX_focus_GER_hermann_goering
-			cost = 10
+			cost = 5
 			x = -1
 			y = 1
 			mutually_exclusive = { focus = GER_rethink_our_old_plans }
@@ -1050,7 +1048,7 @@
 	focus = {
 		id = GER_rethink_our_old_plans
 		icon = GFX_focus_GER_rethink_our_plans
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
 		mutually_exclusive = { focus = GER_hermann_goering_plan }
@@ -1314,10 +1312,9 @@ focus = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				name = mech_army_bonus
-				ahead_reduction = 1
 				technology = advanced_medium_tank
 			}
 			add_tech_bonus = {
@@ -1374,54 +1371,25 @@ focus = {
 		}
 	}
 	focus = {
-		id = GER_ural_bomber
-		icon = GFX_focus_GER_Amerika_Bomber
-		prerequisite = { focus = GER_fighter_3 }
-		x = 0
-		y = 1
-		relative_position_id = GER_fighter_3
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		available={}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-		    add_tech_bonus = {
-			name = bomber_bonus
-			bonus = 1.5
-			uses = 1
-			category = cas_bomber
-		}	
-			add_tech_bonus = {
-				name = GER_ural_bomber
-				bonus = 3.0
-				uses = 3
-				category = cat_strategic_bomber
-			}
-			add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 100 producer = GER }
-			add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 100 producer = GER }
-		}
-	}
-	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_GER_New_Missile_Designs		
-		prerequisite = { focus =  GER_ural_bomber }
+		prerequisite = { focus = GER_fighter_3 }
 		available={date>1941.6.1}
 		x = 0
 		y = 1
-		relative_position_id =  GER_ural_bomber
+		relative_position_id = GER_fighter_3
 		cost = 2
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			date > 1941.6.1
 		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			set_technology = {
 				rocket_engines = 1
-				experimental_rockets = 1
 			}
 			add_ideas = GER_rocketry_idea
 			add_tech_bonus = {
@@ -1439,13 +1407,60 @@ focus = {
 		}
 	}
 	focus = {
-		id = GER_rocket_interceptor
-		icon = GFX_focus_GER_modern_infantry
+		id = GER_ural_bomber
+		icon = GFX_focus_GER_Amerika_Bomber
+		prerequisite = { focus = GER_rocketry_focus }
+		x = 0
+		y = 1
+		relative_position_id = GER_rocketry_focus
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		available={date>1941.8.1}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_ural_bomber
+				bonus = 3.0
+				uses = 3
+				category = cat_strategic_bomber
+			}
+			add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 100 producer = GER }
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 100 producer = GER }
+		}
+	}		
+	focus = {
+		id = GER_stuka
+		icon = GFX_focus_GER_endsieg
 		prerequisite = { focus = GER_german_engineering }
 		x = 4
 		y = 1
-		available={SOV = {has_war = yes}}
 		relative_position_id = GER_german_engineering
+		available = {
+			date > 1941.7.1
+		}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+		add_timed_idea = { idea = GER_hungerplan  days = 400 }
+		}
+	}
+	focus = {
+		id = GER_rocket_interceptor
+		icon = GFX_focus_GER_modern_infantry
+		prerequisite = { focus = GER_stuka }
+		x = 0
+		y = 1
+		available = {
+			date > 1941.11.1
+		}
+		relative_position_id = GER_stuka
 		cost = 2
 		ai_will_do = {
 			factor = 1
@@ -1454,40 +1469,24 @@ focus = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 		add_timed_idea = {idea=GER_panther_program days=60}
-        }
-	}
-	focus = {
-		id = GER_russische_befreiungsarmee
-		icon = GFX_GER_SS_armed_branch
-		prerequisite = { focus = GER_rocket_interceptor }
-		available = {
-			has_idea=heinrich_himmler
-		}
-		x = 0
-		y = 1
-		relative_position_id = GER_rocket_interceptor
-		cost = 2
-		completion_reward = {
-			add_ideas = GER_Waffen_SS
-			custom_effect_tooltip = "Ten fully equipped SS-Divisions will spawn in Duisburg."
-				51 = {
-					for_loop_effect = {
-						end = 10
-						create_unit = {
-							division = "name = \"SS-Panzergrenadier\" division_template = \"Brandenburgers\" start_experience_factor = 2.0"
-							owner = GER
-						}
-						}}
+		add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = GER_MAN
 		}
 	}
 	focus = {
 		id = GER_jet_fighter
 		icon = GFX_focus_GER_Me262
-		prerequisite = { focus = GER_rocketry_focus }
+		prerequisite = { focus = GER_rocket_interceptor }
 		available={date>1943.5.1}
 		x = 0
 		y = 1
-		relative_position_id = GER_rocketry_focus
+		relative_position_id = GER_rocket_interceptor
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1661,7 +1660,22 @@ focus = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 producer = GER }
+			add_equipment_to_stockpile = { 
+			type = infantry_equipment_1 amount = 60000 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = artillery_equipment_1 amount = 5000 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = anti_air_equipment_1 amount = 3200 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = anti_tank_equipment_1 amount = 1440 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = support_equipment_1 amount = 1600 producer = GER
+			}
+			
 			hidden_effect={
 				division_template = {
 					name = "Volkssturm"
@@ -1692,29 +1706,29 @@ focus = {
 		}
 	}
 	focus = {
-		id = GER_stuka
-		icon = GFX_focus_GER_endsieg
+		id = GER_u_verlagerung
+		icon = GFX_focus_GER_underground_industry
 		prerequisite = { focus = GER_albert_speer }
+		relative_position_id = GER_albert_speer
 		x = -2
 		y = 1
-		available={}
-		relative_position_id = GER_albert_speer
 		cost = 3
-		ai_will_do = {
-			factor = 1
+		available = {
 		}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
 		completion_reward = {
-		add_timed_idea = { idea = GER_hungerplan  days = 185 }
-		SOV = {add_timed_idea = { idea = SOV_guerilla  days = 185 }}
+			unlock_decision_tooltip = GER_underground_mills
+			unlock_decision_tooltip = GER_underground_refs
 		}
 	}
 	focus = {
 		id = GER_mineraloelsicherungsplan
 		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = GER_stuka }
-		relative_position_id = GER_stuka
+		prerequisite = { focus = GER_u_verlagerung }
+		relative_position_id = GER_u_verlagerung
 		x = 0
 		y = 2
 		cost =3
@@ -2160,7 +2174,6 @@ focus = {
 		icon = GFX_focus_GER_anschluss
 		prerequisite = { focus = GER_rhineland }
 		available = {
-		date > 1937.7.1
 		}
 		cancel_if_invalid = no
 		x = 3
@@ -2236,7 +2249,6 @@ focus = {
 		
 		available = {
 			date > 1939.6.1
-			has_completed_focus = GER_demand_memel
 		}
 		cancel = {
 		}
@@ -2750,22 +2762,27 @@ focus = {
 		}
 	}
 	focus = {
-		id = GER_u_verlagerung
-		icon = GFX_focus_GER_underground_industry
-		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack}
-		relative_position_id = GER_winter_defense
-		x = -3
-		y = 1
-		cost = 3
+		id = GER_russische_befreiungsarmee
+		icon = GFX_GER_SS_armed_branch
+		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack }
 		available = {
+			has_idea=heinrich_himmler
 		}
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = no
+		x = -2
+		y = 2
+		relative_position_id = GER_moscow
+		cost = 2
 		completion_reward = {
-			unlock_decision_tooltip = GER_underground_mills
-			unlock_decision_tooltip = GER_underground_refs
+			add_ideas = GER_Waffen_SS
+			custom_effect_tooltip = "Ten fully equipped SS-Divisions will spawn in Duisburg."
+				51 = {
+					for_loop_effect = {
+						end = 10
+						create_unit = {
+							division = "name = \"SS-Panzergrenadier\" division_template = \"Brandenburgers\" start_experience_factor = 2.0"
+							owner = GER
+						}
+						}}
 		}
 	}
 	focus = {
@@ -3398,7 +3415,10 @@ focus = {
 		id = GER_alta
 		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_around_maginot }
-		available = {date > 1940.01.01}
+		available = {
+		date > 1940.01.01
+		date < 1941.01.01
+		}
 		bypass = {
 			NOT = {FRA = {has_full_control_of_state =16}}
 		}

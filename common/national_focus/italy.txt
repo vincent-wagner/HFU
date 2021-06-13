@@ -1063,6 +1063,53 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITA_road_rome
+		prerequisite = { focus = ITA_highway }
+		relative_position_id = ITA_highway
+		icon = GFX_focus_GER_summon_fritz_todt
+		available = {
+			date > 1938.04.1
+		}
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ITA
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					is_core_of = GER
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
 		id = ITA_refs
 		prerequisite = { focus = ITA_oil }
 		relative_position_id = ITA_oil
