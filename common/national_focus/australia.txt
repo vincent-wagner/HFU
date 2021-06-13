@@ -477,41 +477,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AST_cac_boomerang
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = AST_expand_the_raaf }
-		x = -1
-		y = 1
-		relative_position_id = AST_expand_the_raaf
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_cac_boomerang
-				bonus = 0.5
-				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-			}
-		}
-	}
-	focus = {
 		id = AST_expand_northern_presence
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = AST_expand_the_raaf }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = AST_expand_the_raaf
 		cost = 5
 		ai_will_do = {
@@ -553,41 +523,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AST_cac_woomera
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = AST_expand_the_raaf }
-		relative_position_id = AST_expand_the_raaf
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_cac_woomera
-				bonus = 3.0
-				uses = 1
-				category = tactical_bomber
-				category = naval_air
-			}
-		}
-	}
-	focus = {
 		id = AST_volunteer_air_observers_corps
 		icon = GFX_goal_generic_radar
-		prerequisite = { focus = AST_cac_boomerang focus = AST_expand_northern_presence }
+		prerequisite = { focus = AST_expand_northern_presence }
 		relative_position_id = AST_expand_the_raaf
-		x = -1
-		y = 3
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -668,42 +609,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AST_naval_bombers
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = AST_cac_woomera }
-		x = 1
-		y = 3
-		relative_position_id = AST_expand_the_raaf
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH  }
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_naval_bombers
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = naval_bomber
-			}
-		}
-	}
-	focus = {
 		id = AST_death_from_down_under
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = AST_volunteer_air_observers_corps }
 		x = -1
-		y = 5
+		y = 3
 		relative_position_id = AST_expand_the_raaf
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -834,39 +746,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AST_womens_auxilliary_australian_air_force
-		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = AST_volunteer_air_observers_corps focus = AST_naval_bombers }
-		x = 0
-		y = 4
-		relative_position_id = AST_expand_the_raaf
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {  }
-		completion_reward = {
-			air_experience = 50
-			set_rule = {
-				can_generate_female_aces = yes
-			}
-		}
-	}
-	focus = {
 		id = AST_dominate_the_skies
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = AST_womens_auxilliary_australian_air_force }
+		prerequisite = { focus = AST_volunteer_air_observers_corps }
 		x = 1
-		y = 5
+		y = 3
 		relative_position_id = AST_expand_the_raaf
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -926,7 +812,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 11
 		y = 0
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -986,7 +872,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1033,7 +919,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1074,7 +960,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = AST_cockatoo_island_shipyards
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1122,7 +1008,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = AST_cockatoo_island_shipyards
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1170,7 +1056,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = AST_cockatoo_island_shipyards
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1294,7 +1180,7 @@ focus_tree = {
 		x = -1
 		y = 4
 		relative_position_id = AST_cockatoo_island_shipyards
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1343,7 +1229,7 @@ focus_tree = {
 		x = 1
 		y = 4
 		relative_position_id = AST_cockatoo_island_shipyards
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2239,13 +2125,7 @@ focus_tree = {
 		completion_reward = {
 			modify_tech_sharing_bonus = {
 				id = commonwealth_research
-				bonus = 0.03
-			}
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = AST_support_the_policy_of_appeasement
-				}
+				bonus = 0.05
 			}
 		}
 	}
@@ -2270,6 +2150,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_manpower = 5000
+			add_political_power = 120
 		}
 	}
 	focus = {
@@ -2292,7 +2173,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
 		completion_reward = {
-			add_political_power = 120
+			modify_tech_sharing_bonus = {
+				id = commonwealth_research
+				bonus = 0.05
+			}
 			add_autonomy_ratio = {
 				value = 0.1
 				localization = AST_adopt_westminster
@@ -2302,41 +2186,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AST_CSIR
-		icon = GFX_goal_tfv_generic_tech_sharing
-		prerequisite = { focus = AST_adopt_westminster }
-		x = -1
-		y = 3
-		relative_position_id = AST_support_the_policy_of_appeasement
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			AST = {
-				modify_tech_sharing_bonus = {
-					id = commonwealth_research
-					bonus = 0.05
-				}
-			}
-		}
-	}
-	focus = {
 		id = AST_swpa_protector
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = AST_adopt_westminster }
-		x = 1
+		x = 0
 		y = 3
 		relative_position_id = AST_support_the_policy_of_appeasement
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2425,50 +2281,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-		}
-	}
-	focus = {
-		id = AST_empire_air_training_scheme
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
-		x = -1
-		y = 4
-		relative_position_id = AST_support_the_policy_of_appeasement
-		cost = 5
-		ai_will_do = {
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  }
-		completion_reward = {
-			add_ideas = AST_empire_air_training_scheme
-		}
-	}
-	focus = {
-		id = AST_commonwealth_aircraft_corporation
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
-		x = 1
-		y = 4
-		relative_position_id = AST_support_the_policy_of_appeasement
-		cost = 10
-		ai_will_do = {
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {  FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = AST_commonwealth_aircraft_corporation
 		}
 	}
 }
