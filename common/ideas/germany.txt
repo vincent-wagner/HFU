@@ -11,8 +11,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_acquire_tanks
 			modifier = {
-				industrial_capacity_factory = 0.2
-				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.05
 			}
 		}
 		GER_mass_production1 = {
@@ -39,6 +39,8 @@ ideas = {
 			picture = mass_production
 			modifier = {
 				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = -0.5
+				war_support_weekly = -0.01
 				war_support_factor = 0.1
 			}
 		}
@@ -62,9 +64,9 @@ ideas = {
 			removal_cost = -1
 			picture = panther_program
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.3
-				research_speed_factor = 0.1
-				army_armor_attack_factor = -0.1
+				war_support_weekly = -0.005
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 		GER_africa_hp = {
@@ -145,10 +147,11 @@ ideas = {
 				has_government = fascism
 			}
 			modifier = {
-				dig_in_speed_factor = 0.5
+				dig_in_speed_factor = 0.25
 				enemy_army_bonus_air_superiority_factor = -0.1
 				army_core_defence_factor = 0.2
 				army_core_attack_factor = 0.2
+				war_support_weekly = -0.01
 			}
 		}
 		GER_Waffen_SS = {
@@ -470,7 +473,6 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				army_armor_attack_factor = 0.15
-				supply_consumption_factor = 0.2
 			}
 		}
 		GER_barbarossa_3 = {
@@ -484,10 +486,8 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				army_org_Factor = 0.1
-				army_defence_factor = 0.1
-				max_dig_in_factor=0.20
-				winter_attrition_factor = -0.1
-				army_speed_factor = 0.10
+				max_dig_in_factor=0.10
+				winter_attrition_factor = -0.2
 			}
 		}
 		GER_zitadelle = {
@@ -697,7 +697,12 @@ ideas = {
 			removal_cost = -1
 			picture = generic_central_management
 			modifier = {
+<<<<<<< HEAD
 				production_speed_arms_factory_factor = 0.15
+=======
+				production_speed_arms_factory_factor = 0.20
+				consumer_goods_factor = 0.025
+>>>>>>> parent of 61765348 (Revert "Tank, Motorized and Mech changes")
 			}
 		}
 		GER_all_options = {
@@ -853,7 +858,6 @@ ideas = {
 			}
 			available = {
 				has_completed_focus = GER_four_year_plan
-				NOT = { has_completed_focus = GER_demand_sudetenland }
 			}
 			traits = { captain_of_industry }
 			ai_will_do = {
@@ -977,7 +981,6 @@ ideas = {
 				medium_tank_aa_equipment = {
 					reliability = -0.1
 					air_attack = 0.1
-					armor_value = 0.1
 					build_cost_ic = 0.05
 				}
 			}
@@ -1096,19 +1099,18 @@ ideas = {
 				armor = 0.15
 			}
 			modifier = { tank_manufacturer_cost_factor = -1 }
-			available = {
-				has_completed_focus = GER_rocket_interceptor
-			}
 			equipment_bonus = {
 				medium_tank_equipment = {
-					reliability = 0.1
-					soft_attack = 0.15
-					hard_attack = 0.15
+					hard_attack = 0.10 soft_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
 				}
 				medium_tank_aa_equipment = {
-					reliability = -0.1
-					air_attack = 0.1
-					armor_value = 0.1
+					air_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				}
+				medium_tank_artillery_equipment = {
+					soft_attack = 0.15  armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.15 ap_attack = 0.1 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
 				}
 			}
 			ai_will_do = {
@@ -1247,17 +1249,14 @@ ideas = {
 				armor = 0.15
 			}
 			equipment_bonus = {
-				medium_tank_equipment = {
-					hard_attack = 0.10 soft_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				light_tank_equipment = {
+					build_cost_ic = -0.12 reliability = 0.05
 				}
-				medium_tank_aa_equipment = {
-					air_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				light_tank_destroyer_equipment = {
+					build_cost_ic = -0.12 reliability = 0.05
 				}
-				medium_tank_artillery_equipment = {
-					soft_attack = 0.15  armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
-				}
-				medium_tank_destroyer_equipment = {
-					hard_attack = 0.15 ap_attack = 0.1 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.075
+				light_tank_artillery_equipment = {
+					build_cost_ic = -0.12 reliability = 0.05
 				}
 			}
 		}
