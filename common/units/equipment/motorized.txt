@@ -14,15 +14,15 @@ equipments = {
 		
 		interface_category = interface_category_land
 		
-		maximum_speed = 11
+		maximum_speed = 12
 		reliability = 0.8
-		hardness = 0.2
-		defense = 10
+		hardness = 0.1
+		defense = 5
 
 		#Space taken in convoy
 		lend_lease_cost = 0.5
 
-		build_cost_ic = 4
+		build_cost_ic = 2.5
 		resources = {
 			#oil = 1
 			rubber = 1

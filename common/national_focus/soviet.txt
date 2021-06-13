@@ -2091,7 +2091,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_uranus }
 		available = {
 			NOT = {has_idea = SOV_uranus}
-			date > 1943.07.01
+			date > 1943.08.01
 		}
 		x = 0
 		y = 1
@@ -2332,8 +2332,7 @@ focus = {
 		add_tech_bonus = {
 		name = armor
 		uses = 1
-		bonus = 1.1
-		ahead_reduction = 1
+		bonus = 1
 		technology = advanced_medium_tank
 
 	}

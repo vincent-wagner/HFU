@@ -177,7 +177,7 @@ technologies = {
 		}
 		motorized={
 			need = {
-				motorized_equipment = -10
+				motorized_equipment = -20
 			}
 		}
 		mot_anti_tank_brigade={
@@ -201,7 +201,7 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			custom_effect_tooltip = "Each Motorized Batallion requires 10 less Motorized Equipment"
+			custom_effect_tooltip = "Each Motorized Batallion requires 20 less Motorized Equipment"
 			custom_effect_tooltip = "Each Motorized Artillery requires Batallion 25 less Motorized Equipment"
 		}
 		doctrine = yes
@@ -242,7 +242,7 @@ technologies = {
 
 		mechanized={
 			need = {
-				mechanized_equipment = -5
+				mechanized_equipment = -10
 			}
 		}
 		path = {
@@ -251,7 +251,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = "Each Mechanized Batallion requires 5 less Mechanized Equipment"
+			custom_effect_tooltip = "Each Mechanized Batallion requires 10 less Mechanized Equipment"
 		}
 		doctrine = yes
 		research_cost = 4.00
