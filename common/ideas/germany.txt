@@ -698,6 +698,7 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
+				consumer_goods_factor = 0.025
 			}
 		}
 		GER_all_options = {

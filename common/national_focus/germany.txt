@@ -1044,7 +1044,7 @@
 			relative_position_id = GER_extra_tech_slot
 			prerequisite = { focus = GER_extra_tech_slot }
 			completion_reward = { 
-				add_timed_idea = { idea = GER_hermann_goering_plan1  days = 700 }
+				add_ideas = GER_hermann_goering_plan1
 		}
 	}		
 	focus = {
