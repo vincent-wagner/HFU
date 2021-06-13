@@ -621,9 +621,9 @@ focus_tree = {
 	}
 	focus = {
 		id = UK_secret_focus
-		prerequisite = { focus = royal_ordinance_focus }
+		prerequisite = { focus = maud_focus }
 		icon = GFX_goal_generic_secret_weapon
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = royal_ordinance_focus
 		cost = 5
@@ -2746,24 +2746,27 @@ focus_tree = {
 		available = {
 			OR = {
 				date > 1938.8.1
-				has_tech = improved_medium_tank
+				has_equipment = {
+					medium_tank_equipment_2 = 1
+				}
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = "If you have medium 2 you get 2 doctrine bonuses for mw or airland battle"
+			custom_effect_tooltip = "If you have medium 2 and at least 1 in stockpile you get 2 doctrine bonuses for mw or airland battle"
 			remove_ideas = ENG_the_war_to_end_all_wars
 			set_rule = { can_send_volunteers = yes }
 			army_experience=100
 			if = {
 				limit = {
-					has_tech = improved_medium_tank
+					has_equipment = {
+						medium_tank_equipment_2 = 1
+					}
 				}
 				add_tech_bonus = {
 					name = ENG_military_training_act
 					bonus = 1
 					uses = 2
 					category = tank_land_doctrine
-					category = cat_mobile_warfare
 				}
 			}
 		}
