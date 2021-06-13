@@ -86,21 +86,27 @@ sub_units = {
 		initiative = 0.01
 		supply_consumption = 0.08
 		supply_consumption_factor=-0.01
-		breakthrough = 0.20
+		defense = -0.2
+		hardness = -1
+		transport = infantry_equipment
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 150
+			light_tank_artillery_equipment = 15
 		}
 		urban = {
 			attack = 0.15
 			movement = 0.1
-			defence = 0.1
-
+			defence = 0.05
 		}
 		fort = {
 			attack = 0.2
 			movement = 0.1
 		}
-
+		forest = {
+			attack = 0.2
+			defence = 0.05
+			movement = 0.1
+		}
 	}
 	
 	ss = {
@@ -200,15 +206,21 @@ sub_units = {
 		supply_consumption = 0.04
 		supply_consumption_factor=-0.01
 		transport = infantry_equipment
+		hardness = -1
 		need = {
 			infantry_equipment = 150
 			armored_car_equipment = 15
 		}
 
 		desert = {
-			attack = 0.1
+			attack = 0.2
 			defence = 0.1
 			movement = 0.3
+		}
+		hills = {
+			attack = 0.2
+			defence = 0.05
+			movement = 0.1
 		}
 
 	}
@@ -401,17 +413,17 @@ sub_units = {
 		}
 		mountain = {
 			attack = 0.4
-			defence = 0.1
+			defence = 0.05
 			movement = 0.2
 		}
 		marsh = {
 			attack = 0.1
-			defence = 0.1
+			defence = 0.05
 			movement = 0.1
 		}
 		forest = {
 			attack = 0.2
-			defence = 0.1
+			defence = 0.05
 			movement = 0.1
 		}
 
