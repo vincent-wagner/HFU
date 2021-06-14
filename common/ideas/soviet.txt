@@ -187,7 +187,7 @@ ideas = {
 
             modifier = {
                 production_speed_arms_factory_factor = 0.10
-                consumer_goods_factor = -0.02
+                consumer_goods_factor = -0.025
             }
         }
 		Order_227 = {
@@ -730,20 +730,7 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
-				stability_weekly = 0.01
-			}
-		}
-		SOV_positive_heroism1 = {
-			removal_cost = -1
-			picture = generic_communism_drift_bonus
-			allowed = {
-				always = no # Added via focus
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			modifier = {
-				stability_factor = 0.1
+				stability_factor = 0.2
 			}
 		}
 	}
