@@ -1272,7 +1272,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = 120
-			add_ideas = SOV_collectivist_propaganda
+			add_timed_idea = { idea = SOV_collectivist_propaganda days = 140 }
 		}
 	}
 	focus = {
@@ -1358,6 +1358,7 @@ focus_tree = {
 			show_ideas_tooltip = konstantin_rokossovsky
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = georgy_zhukov
+			add_ideas = SOV_positive_heroism1
 		}
 	}
 	focus = {

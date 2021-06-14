@@ -1037,20 +1037,20 @@
 	focus = {
 			id = GER_hermann_goering_plan
 			icon = GFX_focus_GER_hermann_goering
-			cost = 5
+			cost = 10
 			x = -1
 			y = 1
 			mutually_exclusive = { focus = GER_rethink_our_old_plans }
 			relative_position_id = GER_extra_tech_slot
 			prerequisite = { focus = GER_extra_tech_slot }
 			completion_reward = { 
-				add_timed_idea = {idea= GER_hermann_goering_plan1 days=700}
+				add_ideas = GER_hermann_goering_plan1
 		}
 	}		
 	focus = {
 		id = GER_rethink_our_old_plans
 		icon = GFX_focus_GER_rethink_our_plans
-		cost = 5
+		cost = 10
 		x = 1
 		y = 1
 		mutually_exclusive = { focus = GER_hermann_goering_plan }
@@ -2166,6 +2166,9 @@ focus = {
 		prerequisite = { focus = GER_mol_rib_pact }
 		bypass = {
 		}
+		available = {
+			date > 1939.8.1
+		}
 		cancel_if_invalid = no
 		x = 0
 		y = 1
@@ -2282,7 +2285,7 @@ focus = {
 		relative_position_id = GER_weserubung
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 			NOR_axis=yes
 		}
@@ -2315,7 +2318,7 @@ focus = {
 		x = -1
 		y = 1
 		relative_position_id = GER_danzig_or_war
-		cost = 3
+		cost = 1
 		ai_will_do = {
 		}
 		completion_reward = {
