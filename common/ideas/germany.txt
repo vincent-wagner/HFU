@@ -812,6 +812,21 @@ ideas = {
 				consumer_goods_factor = 0.20
 			}
 		}
+		GER_messerschmitt_transport_plane = {
+			allowed = {
+				original_tag = GER
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_air_bonus
+			equipment_bonus = {
+				transport_plane_equipment = {
+					air_range = 0.3 instant=yes
+				}
+			}
+		}
 		GER_ss_factory_rerouted = {
 			allowed = {
 				original_tag = GER

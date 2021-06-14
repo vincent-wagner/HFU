@@ -55,6 +55,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/USA_tank_experiments.dds"
 	}
 	spriteType = {
+		name = "Ger_goal_air_armada"
+		texturefile = "gfx/interface/goals/Ger_goal_air_armada.dds"
+	}
+	spriteType = {
 		name = "GFX_focus_USA_liberty_ships"
 		texturefile = "gfx/interface/goals/USA_liberty_ships.dds"
 	}

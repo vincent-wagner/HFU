@@ -549,6 +549,21 @@
 		}
 	}
 	focus = {
+		id = GER_new_transport_plane
+		icon = Ger_goal_air_armada
+		prerequisite = { Focus = GER_strategic_air_effort Focus = GER_tactical_air_effort }
+		x = 1
+		y = 1
+		relative_position_id = GER_strategic_air_effort
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = GER_messerschmitt_transport_plane
+		}
+	}
+	focus = {
 		id = GER_soviet_treaty
 		icon = GFX_focus_GER_soviet_treaty
 		prerequisite = { focus = GER_army_innovation }
