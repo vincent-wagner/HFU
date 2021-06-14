@@ -471,9 +471,9 @@ equipments = {
     		year = 1945
     		archetype =jet_fighter_equipment
     		priority = 20
-    		    build_cost_ic = 68 
+    		    build_cost_ic = 65 
 	 	lend_lease_cost = 13   
-    		air_range = 1250
+    		air_range = 1200
     		maximum_speed = 950
     		air_agility = 72
     		air_attack = 50
@@ -485,8 +485,8 @@ equipments = {
     			jet_fighter_equipment_1_f
     		}
     		resources = {
-    			aluminium = 5
-				tungsten = 0
+    			aluminium = 3
+    			tungsten = 2
     			rubber = 1
     		}
     	}
@@ -495,9 +495,9 @@ equipments = {
     		archetype =jet_fighter_equipment
     		family = jet_fighter_equipment_1
     		priority = 20
-    		    build_cost_ic = 68
+    		    build_cost_ic = 65 
 	 	lend_lease_cost = 13   
-    		air_range = 1250
+    		air_range = 1200
     		maximum_speed = 950
     		air_agility = 72
     		air_attack = 50
@@ -509,8 +509,8 @@ equipments = {
     			jet_fighter_equipment_1
     		}
     		resources = {
-    			aluminium = 5
-				tungsten = 0
+    			aluminium = 3
+    			tungsten = 2
     			rubber = 1
     		}
     	}
