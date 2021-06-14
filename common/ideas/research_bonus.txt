@@ -312,6 +312,7 @@ ideas = {
 				training_time_factor = -0.2
 				air_strategic_bomber_bombing_factor = 0.2
 				political_power_gain = 0.2
+				line_change_production_efficiency_factor = 0.2
 			}
 			removal_cost = -1
 			allowed_civil_war = {
@@ -337,6 +338,7 @@ ideas = {
 				training_time_factor = -0.2
 				air_strategic_bomber_bombing_factor = 0.2
 				political_power_gain = 0.2
+				line_change_production_efficiency_factor = 0.2
 			}
 			removal_cost = -1
 			allowed_civil_war = {
@@ -366,6 +368,7 @@ ideas = {
 				training_time_factor = -0.3
 				air_strategic_bomber_bombing_factor = 0.3
 				political_power_gain = 0.3
+				line_change_production_efficiency_factor = 0.2
 			}
 			research_bonus = {
 				year_1918=0.4

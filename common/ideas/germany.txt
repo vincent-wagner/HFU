@@ -12,7 +12,6 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				industrial_capacity_factory = 0.2
-				line_change_production_efficiency_factor = 0.1
 			}
 		}
 		GER_mass_production1 = {
