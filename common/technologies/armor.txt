@@ -530,6 +530,10 @@ technologies = {
 			leads_to_tech = improved_medium_tank
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = basic_heavy_tank
+			research_cost_coeff = 0.5
+		}
 		research_cost = 2
 		start_year = 1939
 		categories = {
@@ -1154,7 +1158,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = basic_medium_tank
-			research_cost_coeff = 0.7
+			research_cost_coeff = 0.5
 		}
 		enable_subunits = {
 			heavy_armor
@@ -1452,7 +1456,7 @@ technologies = {
 
 		path = {
 			leads_to_tech = advanced_medium_tank
-			research_cost_coeff = 0.7
+			research_cost_coeff = 0.5
 		}
 		path = {
 			leads_to_tech = super_heavy_tank
