@@ -1465,10 +1465,16 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 100
 			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.1
-				uses = 2
-				category = armor
+				name = GER_soviet_treaty
+				ahead_reduction = 1
+				bonus = 1
+				technology = basic_medium_tank
+			}
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				bonus = 1.5
+				uses = 1
+				technology = basic_heavy_tank
 			}
 		}
 	}
