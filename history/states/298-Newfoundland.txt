@@ -4,10 +4,9 @@ state={
 	manpower = 255060
 	state_category = rural
 	history={
-		owner = ENG
+		owner = CAN
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 			11352 = {
 				naval_base = 1
 			}

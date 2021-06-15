@@ -65,7 +65,7 @@ ideas = {
 			removal_cost = -1
 			picture = saf_history_of_segregation
 			modifier = {
-				conscription_factor = -0.55
+				conscription_factor = -0.40
 			}
 		}
 		SAF_history_of_segregation_2 = {
@@ -78,7 +78,7 @@ ideas = {
 			removal_cost = -1
 			picture = saf_history_of_segregation_2
 			modifier = {
-				conscription_factor = -0.40
+				conscription_factor = -0.20
 			}
 		}
 		SAF_emergency_workers = {
