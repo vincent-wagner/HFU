@@ -1,14 +1,16 @@
 state={
 	id=319
 	name="STATE_352"
-	manpower = 1
+	manpower = 1524516
 	state_category = rural
 	history={
-		owner = TUR
-		add_core_of = TUR
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SWE
 	}
 	provinces={
-		826
+		6621 4573 11555 11928 9918 1151 10888 9276 974 1010
 	}
 }
-
