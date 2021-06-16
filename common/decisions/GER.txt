@@ -1113,8 +1113,15 @@ special_projects = {
 		complete_effect = {
 			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
 		}
+	}	
+	Research_of_the_Panzerwerfer_43 = {
+	    available = { date > 1941.06.22 }
+		fire_only_once = yes
+		complete_effect = {
+		    set_technology = { panzerwerfer_tech = 1 }
+	    } 
 	}
-}
+	}
 GER_reichswerke_four_year_plan = {
 	GER_underground_mills = {
 		icon = arms_factory
