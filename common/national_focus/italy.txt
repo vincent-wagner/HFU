@@ -1050,7 +1050,7 @@ focus_tree = {
 				has_state_flag = sirte_oil_developed
 			}
 		}
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1072,7 +1072,7 @@ focus_tree = {
 				controls_state = 413
 			}
 		}
-		x = 0
+		x = -1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1110,7 +1110,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		available = {
 		}
-		x = 2
+		x = 1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1438,7 +1438,6 @@ focus_tree = {
 		relative_position_id = ITA_desert_warfare_2
 		icon = GFX_focus_research
 		available = {
-			NOT={has_completed_focus=ITA_italian_air}
 			date > 1940.10.1
 		}
 		x = 0
@@ -1572,9 +1571,7 @@ focus_tree = {
 		id = ITA_german_air_cooperation
 		icon = GFX_focus_ITA_german_air_cooperation
 		prerequisite = { focus = ITA_naval_air_effort }
-		
-		mutually_exclusive = { focus = ITA_italian_air}
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_naval_air_effort
 		cost = 10
@@ -1583,41 +1580,12 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_relation_modifier = {
-				target = GER
-				modifier = ita_air_sharing
-			}
-			custom_effect_tooltip=ITA_german_air_cooperation_tt
-		}
-	}
-	focus = {
-		id = ITA_italian_air
-		icon = GFX_focus_GER_air_innovation_2
-		prerequisite = { focus = ITA_naval_air_effort }
-		mutually_exclusive = { focus = ITA_german_air_cooperation}
-		x = 1
-		y = 1
-		relative_position_id = ITA_naval_air_effort
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_research_slot = 1
-			add_political_power = 100
-			air_experience = 1000
+		add_ideas = GER_air_innovations_2_idea
 			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1
-				uses = 1
-				technology=fighter2
-			}
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1
-				uses = 1
-				technology=cas2
+				name = radar_tech_bonus
+				bonus = 1.0
+				uses = 2
+				category = radar_tech
 			}
 		}
 	}
@@ -1677,10 +1645,9 @@ focus_tree = {
 		id = ITA_air_innovation_2
 		icon = GFX_goal_generic_build_airforce
 		text = air_innovation_2
-		prerequisite = {  focus = ITA_german_air_cooperation focus = ITA_italian_air}
-		available = {date >1941.1.1}
-		bypass={has_completed_focus = ITA_italian_air}
-		x = 1
+		prerequisite = {  focus = ITA_german_air_cooperation}
+		available = {date >1940.10.1}
+		x = 0
 		y = 1
 		relative_position_id = ITA_german_air_cooperation
 		cost = 5
@@ -1690,13 +1657,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			hidden_effect={
-				activate_decision=ITA_disable_ll
-			}
-			add_timed_idea={
-				idea = ITA_retention
-				days =30
-			}
 			if= {limit={NOT={has_idea=macchi}}
 				add_ideas=macchi
 			if= {limit={NOT={
@@ -1734,9 +1694,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			OR= { has_completed_focus= ITA_italian_air
-				date >1941.3.1}
-			     has_tech=cas2 has_tech=fighter2}
+		 date >1941.3.1
+		}	
 		relative_position_id = ITA_air_innovation_2
 		cost = 5
 		ai_will_do = {

@@ -851,17 +851,19 @@ country_event = {
 	option = {
 		name = germany.56.a
 		ai_chance = { factor = 100 }
-		transfer_state = 73
+		HUN ={transfer_state = 73
+		transfer_state = 583}
 		hidden_effect = {
-			GER = {
-				transfer_state = 9
-				transfer_state = 75
-			}
+		GER = {
+			annex_country = {
+            target = CZE
+            transfer_troops = yes
+        }
 		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.61 }
 		}
-	}
+	}}
 }
 country_event = {
 	id = germany.74
