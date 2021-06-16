@@ -142,7 +142,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = light_tank_equipment_1
-	amount = 180
+	amount = 400
 	producer = ENG
 }
 add_equipment_to_stockpile = {
