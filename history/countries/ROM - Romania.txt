@@ -86,11 +86,6 @@ add_equipment_to_stockpile = {
 	amount = 300
 	producer = ROM
 }
-add_equipment_to_stockpile = {
-	type = fighter_equipment_0
-	amount = 72
-	producer = ROM
-}
 set_convoys = 200
 set_politics = {
 	ruling_party = neutrality

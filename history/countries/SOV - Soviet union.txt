@@ -40,6 +40,8 @@ set_technology = {
 	CAS1 = 1
 	early_bomber = 1
 	naval_bomber1 = 1
+	heavy_fighter1 = 1
+	tactical_bomber1 = 1
 	mass_assault = 1
 	fleet_in_being = 1
 	fuel_silos = 1
@@ -140,8 +142,13 @@ add_equipment_to_stockpile = {
 	producer = SOV
 }
 add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_0
-	amount = 400
+	type = tac_bomber_equipment_1
+	amount = 300
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = heavy_fighter_equipment_1
+	amount = 100
 	producer = SOV
 }
 set_politics = {
