@@ -1,0 +1,10 @@
+technologies = {
+    panzerwerfer_tech = {
+		enable_equipments = {
+			motorized_rocket_equipment_2
+		}
+		enable_subunits = {
+			motorized_rocket_brigade
+		}
+	}
+	}
