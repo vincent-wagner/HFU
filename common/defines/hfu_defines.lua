@@ -219,7 +219,6 @@ NDefines.NBuildings.MAX_BUILDING_LEVELS = 99
 NDefines.NBuildings.BASE_FACTORY_REPAIR = 0.3 --doesnt work
 --NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.075
 NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3 --swapped prio so imports go first
@@ -227,7 +226,7 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3
 NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 3
 -------------------------------------
 --Combat 
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.048   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.0432   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.003 -- vanilla is 0.005
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.04    -- air global damage modifier
@@ -243,8 +242,8 @@ NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.005
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
-NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.6
-NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20
+NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.7
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 30
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.10
 
@@ -300,7 +299,7 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.144	-- How
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                        -- WAS 10, lowered to prevent some exploits with aces | biggest bonus we can get from having a small wing with an ace on
 NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
 NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.003 
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.15
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.2
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1

@@ -23,7 +23,7 @@ state={
 		add_core_of = SPR
 	}
 	provinces={
-		776 899 3582 6373 6392 6678 9020 9044 9046 10659 10744
+		 899 3582 6373 6392 6678 9020 9044 9046 10744
 	}
 	manpower=668365
 	buildings_max_level_factor=1.000
