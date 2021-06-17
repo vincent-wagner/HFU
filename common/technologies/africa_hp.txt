@@ -30,7 +30,7 @@ technologies = {
 			level = 20
 		}
 		category_army = {
-			breakthrough = 0.10
+			breakthrough = 0.15
 		}
 	}
 	africa_hp_off = {

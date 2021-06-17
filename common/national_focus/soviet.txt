@@ -1359,6 +1359,7 @@ focus_tree = {
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = georgy_zhukov
 			add_ideas = SOV_positive_heroism1
+			
 		}
 	}
 	focus = {
@@ -1368,7 +1369,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_positive_heroism
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2113,7 +2114,7 @@ focus = {
 	x = 0
 	y = 1
 	relative_position_id = SOV_progress_cult
-	cost = 10
+	cost = 5
 	completion_reward = {
 		custom_effect_tooltip = available_designer
 		show_ideas_tooltip = okmo
@@ -2131,10 +2132,16 @@ focus = {
 	cost = 10
 	completion_reward = {
 		add_tech_bonus = {
-			name = SOV_armored_infantry
-			uses = 2
-			bonus = 1
-			category = motorized_equipment
+			name = mech_army_bonus
+				bonus = 1.0
+				uses = 1
+				technology = mechanised_infantry
+		}
+		add_tech_bonus = {
+			name = mech_army_bonus
+				bonus = 1.0
+				uses = 1
+				technology = mechanised_infantry2
 		}
 	}
 			}	
@@ -2242,47 +2249,55 @@ available = {
 	date > 1938.6.1 }
 completion_reward = { 
 	249 = {
-		add_extra_state_shared_building_slots = 5
+		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
-			level = 5
+			level = 6
 			instant_build = yes
 			}
 		}
 	374 = {
-		add_extra_state_shared_building_slots = 5
+		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
-			level = 5
+			level = 6
 			instant_build = yes
 			}
 		}
 	513 = {
-		add_extra_state_shared_building_slots = 5
+		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
-			level = 5
+			level = 6
 			instant_build = yes
 			}
 		}
 	492 = {
-		add_extra_state_shared_building_slots = 5
+		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
-			level = 5
+			level = 6
 			instant_build = yes
 			}
 		}
 	489 = {
-		add_extra_state_shared_building_slots = 5
+		add_extra_state_shared_building_slots = 6
 			add_building_construction = {
 			type = arms_factory
-			level = 5
+			level = 6
 			instant_build = yes
 			}
-              }
-        }
+        }	
+	318 = {
+		add_extra_state_shared_building_slots = 6
+			add_building_construction = {
+			type = arms_factory
+			level = 6
+			instant_build = yes
+			}
+			}
     }
+}	
 focus = {
 	id = SOV_technological_advancment
 	icon = GFX_focus_SOV_technology_advancment
