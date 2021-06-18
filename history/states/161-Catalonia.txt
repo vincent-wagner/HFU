@@ -5,15 +5,6 @@ state={
 	state_category = large_city
 	history={
 		owner = SPR
-		victory_points = {
-			8978 15
-		}
-		victory_points = {
-			6442 1
-		}
-		victory_points = {
-			6411 1
-		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 1

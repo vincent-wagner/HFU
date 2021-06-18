@@ -1,20 +1,6 @@
 ideas = {
 	hidden_ideas = {
 
-		ITA_production_boost = {
-			removal_cost = -1
-			allowed = {
-				always = no # Added via focus
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			picture = generic_morale_bonus
-			modifier = {
-				industrial_capacity_factory=1
-			}
-
-		}
 		ITA_retention = {
 			allowed = {
 				always = no
@@ -43,6 +29,22 @@ ideas = {
 		}
 	}
 	country = {
+	    ITA_production_boost = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_morale_bonus
+			equipment_bonus = {
+				fighter_equipment_alt = {
+					build_cost_ic = -0.5 instant = yes
+				}
+			}
+
+		}
 		ITA_atlantikschlacht = {
 			allowed = {
 				always = no

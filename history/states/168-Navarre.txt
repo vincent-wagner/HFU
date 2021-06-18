@@ -18,7 +18,7 @@ state={
 		add_core_of = SPR
 	}
 	provinces={
-		885 3508 3679 3681 9060
+	    3681
 	}
 }
 

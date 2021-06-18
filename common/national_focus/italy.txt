@@ -1673,6 +1673,24 @@ focus_tree = {
 			set_technology={
 				fighter2_alt=1
 			}
+			create_equipment_variant = {
+				name = "Homeland Fighter Upgraded"
+				type = fighter_equipment_alt_2
+				upgrades = {
+						plane_engine_upgrade=5
+					    plane_range_upgrade=5
+			    } 
+			}
+			add_equipment_production = {
+					equipment = {
+						type = fighter_equipment_alt_2
+						creator = "ITA"
+						version_name = "Homeland Fighter Upgraded"
+					}
+					requested_factories = 150
+					progress = 0.1
+					efficiency = 100
+			}
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 3
@@ -2023,46 +2041,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_rommel
-		icon = GFX_focus_GER_army_inno_1
-		available = {
-			AND ={
-				ITA={controls_state =413}
-				date > 1941.2.21
-			}
-		}
-		relative_position_id=ITA_motorized
-		prerequisite= {focus=ITA_motorized}
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_timed_idea= {idea= ITA_production_boost days=30}
-			GER = {remove_unit_leader = 4}
-			ITA={
-				country_event = { id = italy.187}
-				create_corps_commander = {
-					name = "Erwin Rommel"
-					picture = "Portrait_Germany_Erwin_Rommel.dds"
-					traits = { commando panzer_leader panzer_expert desert_fox trait_engineer hill_fighter}
-					skill = 5
-					id =1771
-					attack_skill = 6
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 6
-					}}}}
-	focus = {
 		id = ITA_desert_fox
 		icon = GFX_focus_ger_osttruppen
 		mutually_exclusive = { focus = ITA_desert_fox_2}
-		prerequisite = { focus = ITA_rommel }
+		prerequisite = { focus = ITA_motorized }
+		available = {has_war = yes}
 		x = 1
 		y = 1
-		relative_position_id = ITA_rommel
+		relative_position_id = ITA_motorized
 		cost = 0
 		ai_will_do = {
 			factor = 10
@@ -2075,10 +2061,11 @@ focus_tree = {
 		id = ITA_desert_fox_2
 		icon = GFX_ITA_appoint_ambrosio
 		mutually_exclusive = { focus = ITA_desert_fox}
-		prerequisite = { focus = ITA_rommel }
+		prerequisite = { focus = ITA_motorized }
+		available = {has_war = yes}
 		x = -1
 		y = 1
-		relative_position_id = ITA_rommel
+		relative_position_id = ITA_motorized
 		cost = 0
 		ai_will_do = {
 			factor = 10
@@ -2094,9 +2081,12 @@ focus_tree = {
 		available = {
 			ITA ={  controls_state=412  }
 		}
-		relative_position_id = ITA_desert_fox
-		x = -1
-		y = 1
+		bypass = {
+		date > 1941.2.21
+		}
+		relative_position_id = ITA_motorized
+		x = 0
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -2155,6 +2145,38 @@ focus_tree = {
 				}
 			}
 			}}
+	focus = {
+		id = ITA_rommel
+		icon = GFX_focus_GER_army_inno_1
+		available = {
+			AND ={
+				date > 1941.2.21
+			}
+		}
+		relative_position_id=ITA_egypt
+		prerequisite= {focus=ITA_egypt}
+		x = 0
+		y =1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_timed_idea= {idea= ITA_production_boost days=30}
+			GER = {remove_unit_leader = 4}
+			ITA={
+				create_corps_commander = {
+					name = "Erwin Rommel"
+					picture = "Portrait_Germany_Erwin_Rommel.dds"
+					traits = { commando panzer_leader panzer_expert desert_fox trait_engineer hill_fighter}
+					skill = 5
+					id =1771
+					attack_skill = 6
+					defense_skill = 3
+					planning_skill = 3
+					logistics_skill = 6
+					}}}}
+	
 	focus = {
 		id = ITA_sword_of_islam
 		icon = GFX_ITA_Generic_Ultranat_Eagle
