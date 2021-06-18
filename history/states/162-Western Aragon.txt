@@ -6,15 +6,6 @@ state={
 	}
 	history={
 		owner = SPR
-		victory_points = {
-			3582 3
-		}
-		victory_points = {
-			9044 1
-		}
-		victory_points = {
-			6678 1
-		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
@@ -23,7 +14,7 @@ state={
 		add_core_of = SPR
 	}
 	provinces={
-		 899 3582 6373 6392 6678 9020 9044 9046 10744
+		 3582 
 	}
 	manpower=668365
 	buildings_max_level_factor=1.000
