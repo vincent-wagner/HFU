@@ -4,6 +4,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GER_eco.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_mobilize_the_reich"
+		texturefile = "gfx/interface/ideas/GER_endsieg_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_blau"
+		texturefile = "gfx/interface/ideas/GER_barbarossa_idea_1.dds"
+	}
+	spriteType = {
 	    name = "GFX_idea_panther_program"
 		texturefile = "gfx/interface/ideas/GER_4year.dds"
 	}	
@@ -11,6 +19,10 @@ spriteTypes = {
 		name = "GFX_idea_ansaldo"
 		texturefile = "gfx/interface/ideas/idea_ansaldo.dds"
 	}	
+	spriteType = {
+		name = "GFX_idea_blitzkrieg"
+		texturefile = "gfx/interface/ideas/GER_barbarossa_idea_2.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_odero_terni_orlando"
 		texturefile = "gfx/interface/ideas/idea_odero_terni_orlando.dds"

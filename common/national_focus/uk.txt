@@ -485,26 +485,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_special_air_service
-		prerequisite = { focus = uk_service_focus }
-		available = {
-		}
-		continue_if_invalid = yes
-		icon = GFX_focus_eng_special_air_service
-		x = 0
-		y = 1
-		relative_position_id = uk_service_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = ENG_special_air_service_idea
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ENG_david_stirling
-		}
-	}
-	focus = {
 		id = royal_ordinance_focus
 		available = {
 		}
@@ -690,38 +670,6 @@ focus_tree = {
 					level = 10
 					instant_build = yes
 				}
-			}
-		}
-	}
-	focus = {
-		id = ENG_chiefs_of_staff_committee
-		prerequisite = { focus = ENG_special_air_service }
-		available = {
-			date > 1942.1.1
-		}
-		continue_if_invalid = yes
-		icon = GFX_focus_eng_chiefs_of_staff_committee
-		x = 0
-		y = 1
-		relative_position_id = ENG_special_air_service
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			army_experience = 10
-			navy_experience = 10
-			air_experience = 10
-			add_ideas = ENG_chiefs_of_staff_committee_idea
-			create_corps_commander = {
-				name = "Miles Dempsey"
-				picture = "Portrait_Britain_Miles_Dempsey.dds"
-				traits = { brilliant_strategist infantry_leader naval_invader trickster trait_engineer skilled_staffer }
-				skill = 7
-				attack_skill = 7
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 2
 			}
 		}
 	}
@@ -1013,12 +961,12 @@ focus_tree = {
 				add_skill_level=2
 				add_unit_leader_trait=ironside
 				add_unit_leader_trait=air_controller
+			}	
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
 				category = naval_doctrine
 				}
-			}
 		}
 	}
 	focus = {
@@ -1223,6 +1171,58 @@ focus_tree = {
 			navy_experience = 25
 			air_experience = 25
 			add_ideas = ENG_service_overseas_idea
+		}
+	}
+	focus = {
+		id = ENG_special_air_service
+		prerequisite = { focus = uk_service_focus }
+		available = {
+		}
+		continue_if_invalid = yes
+		icon = GFX_focus_eng_special_air_service
+		x = 0
+		y = 1
+		relative_position_id = uk_service_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ENG_special_air_service_idea
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ENG_david_stirling
+		}
+	}
+	focus = {
+		id = ENG_chiefs_of_staff_committee
+		prerequisite = { focus = ENG_special_air_service }
+		available = {
+			date > 1942.1.1
+		}
+		continue_if_invalid = yes
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		x = 0
+		y = 1
+		relative_position_id = ENG_special_air_service
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+			add_ideas = ENG_chiefs_of_staff_committee_idea
+			create_corps_commander = {
+				name = "Miles Dempsey"
+				picture = "Portrait_Britain_Miles_Dempsey.dds"
+				traits = { brilliant_strategist infantry_leader naval_invader trickster trait_engineer skilled_staffer }
+				skill = 7
+				attack_skill = 7
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 2
+			}
 		}
 	}
 	focus = {
@@ -1566,12 +1566,13 @@ focus_tree = {
 	focus = {
 		id = uk_commonwealth_focus
 		prerequisite = { focus = uk_colonial_focus }
+		mutually_exclusive = { focus = uk_exploit_commonwealth}
 		available = {
 		}
 		bypass = {
 		}
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = uk_colonial_focus
 		cost = 5
@@ -1590,7 +1591,73 @@ focus_tree = {
 			}
 		}
 	}
-	
+	focus = {
+		id = uk_exploit_commonwealth
+		prerequisite = { focus = uk_colonial_focus }
+		mutually_exclusive = { focus = uk_commonwealth_focus}
+		available = {
+		}
+		bypass = {
+		}
+		icon = GFX_GOAL_move_industry
+		x = -1
+		y = 1
+		relative_position_id = uk_colonial_focus
+		cost = 30
+		available_if_capitulated = yes
+		completion_reward = {
+			117 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			118 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			119 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			121 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			120 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_country = {
+				limit = {
+					OR={original_tag = CAN
+					original_tag = AST
+					original_tag = RAJ
+					original_tag = SAF}
+					is_in_faction_with = ROOT
+				}
+				add_stability = -0.1
+			}
+		}
+	}	
 	focus = {
 		id = uk_india_focus
 		prerequisite = { focus = uk_commonwealth_focus }
@@ -1600,7 +1667,7 @@ focus_tree = {
 		available = {
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
@@ -1702,7 +1769,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civilian
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
@@ -1811,7 +1878,6 @@ focus_tree = {
 			}
 			}}
 	focus = {
-<<<<<<< Updated upstream
 		id = uk_new_zealand_focus
 		prerequisite = { focus = uk_australia_focus }
 		ai_will_do = {
@@ -1859,8 +1925,6 @@ focus_tree = {
 			}
 			}}
 	focus = {
-=======
->>>>>>> Stashed changes
 		id = uk_canada_focus
 		prerequisite = { focus = uk_commonwealth_focus }
 		ai_will_do = {
@@ -1896,7 +1960,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
@@ -1970,7 +2034,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = -1
+		x = -2
 		y = 2
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
@@ -2081,10 +2145,13 @@ focus_tree = {
 			}}
 	focus = {
 		id = ENG_imperial_conference
-		prerequisite = { focus = uk_canada_focus }
-		prerequisite = { focus = uk_south_africa_focus }
-		prerequisite = { focus = uk_india_focus }
-		prerequisite = { focus = uk_australia_focus }
+		prerequisite = { 
+			focus = uk_south_africa_focus
+			focus = uk_india_focus
+			focus = uk_australia_focus
+			focus = uk_canada_focus
+			focus = uk_exploit_commonwealth
+		}
 		available = {
 			date > 1938.3.1
 		}

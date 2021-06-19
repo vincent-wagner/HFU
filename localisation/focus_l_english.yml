@@ -1,5 +1,7 @@
 ﻿l_english:
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
+ uk_exploit_commonwealth:0 "Exploit the Commonwealth"
+ uk_exploit_commonwealth_desc:0 "My Commonwealth is retarded please help!"
  ITA_italian_air: "Italian Aircraft R&D"
  generic_focus:0 "National Focus"
  uk_eri_focus: "British Administration in Eritrea"
@@ -156,8 +158,7 @@
  GER_jet_fighter:0 "Me 262"
  GER_assault_rifles:0 "The Sturmgewehr"
  GER_vampir:0 "Nachtsichtgerät Vampir"
- GER_stuka:0 "Hungerplan"
- GER_stuka_desc:0 "The war can only be continued if the entire Wehrmacht is fed from Russia in the third year of the war"
+ GER_stuka:0 "Mobilize the Reich"
  JAP_modern_at_guns:0 "Modern AT Guns"
  GER_v2:0 "Vergeltungswaffe 2"
  GER_panzer_4_ausfg:0 "Panzer IV Ausf. G"
