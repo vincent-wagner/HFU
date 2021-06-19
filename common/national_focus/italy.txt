@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = ITA_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 28
+		x = 27
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -630,7 +630,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		available = {
 		}
-		x = 4
+		x = 2
 		y = 0
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1206,7 +1206,7 @@ focus_tree = {
 	focus = {
 		id = ITA_army_primacy
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 13
+		x = 12
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1504,7 +1504,7 @@ focus_tree = {
 		id = ITA_air_innovation
 		icon = GFX_goal_generic_build_airforce
 		text = "Regia Aeronautica"
-		x = 21
+		x = 20
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1757,7 +1757,7 @@ focus_tree = {
 		available = {
 		}
 		available_if_capitulated = yes
-		x = 37
+		x = 36
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -2044,10 +2044,10 @@ focus_tree = {
 		id = ITA_desert_fox
 		icon = GFX_focus_ger_osttruppen
 		mutually_exclusive = { focus = ITA_desert_fox_2}
-		prerequisite = { focus = ITA_motorized }
+		prerequisite = { focus = ITA_egypt }
 		available = {has_war = yes}
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = ITA_motorized
 		cost = 0
 		ai_will_do = {
@@ -2061,10 +2061,10 @@ focus_tree = {
 		id = ITA_desert_fox_2
 		icon = GFX_ITA_appoint_ambrosio
 		mutually_exclusive = { focus = ITA_desert_fox}
-		prerequisite = { focus = ITA_motorized }
+		prerequisite = { focus = ITA_egypt }
 		available = {has_war = yes}
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = ITA_motorized
 		cost = 0
 		ai_will_do = {
@@ -2077,7 +2077,7 @@ focus_tree = {
 	focus = {
 		id = ITA_egypt
 		icon = GFX_focus_usa_guarantee_the_american_dream
-		prerequisite = { focus = ITA_desert_fox focus = ITA_desert_fox_2 }
+		prerequisite = { focus = ITA_motorized}
 		available = {
 			ITA ={  controls_state=412  }
 		}
@@ -2086,7 +2086,7 @@ focus_tree = {
 		}
 		relative_position_id = ITA_motorized
 		x = 0
-		y = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -2154,9 +2154,9 @@ focus_tree = {
 			}
 		}
 		relative_position_id=ITA_egypt
-		prerequisite= {focus=ITA_egypt}
+		prerequisite= {focus = ITA_desert_fox focus = ITA_desert_fox_2}
 		x = 0
-		y =1
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -2180,7 +2180,7 @@ focus_tree = {
 	focus = {
 		id = ITA_sword_of_islam
 		icon = GFX_ITA_Generic_Ultranat_Eagle
-		prerequisite = { focus = ITA_pact_of_steel }
+		prerequisite = { focus = ITA_Illyricum }
 		cost = 5
 		available = {
 			Date > 1942.1.1
@@ -2190,9 +2190,9 @@ focus_tree = {
 			has_full_control_of_state = 413
 			has_full_control_of_state = 415
 		}
-		x = 5
+		x = 0
 		y = 1
-		relative_position_id = ITA_pact_of_steel
+		relative_position_id = ITA_Illyricum
 		ai_will_do = {
 			factor = 10
 		}
