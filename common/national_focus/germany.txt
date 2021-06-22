@@ -4461,7 +4461,7 @@ focus = {
 		set_technology = {
 			rocket_engines = 1
 			experimental_rockets = 1
-				}
+			}
 				add_ideas = GER_rocketry_idea
 				add_tech_bonus = {
 					name = GER_rocketry_focus
@@ -4475,6 +4475,7 @@ focus = {
 	id = GER_raseiniai
 	icon = GFX_GER_mobile_fortresses
 	text="Battle of Raseiniai"
+	relative_position_id =  GER_rocketry_focus
 	prerequisite = { focus = GER_rocketry_focus }
 	available = {
 				has_war_with = SOV
