@@ -56,6 +56,63 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+		    42 = { 
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province =8799
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province =10459
+						instant_build = yes
+				}
+		        	add_building_construction = {
+						type = bunker
+						level = 3
+						province =528
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province =3335
+						instant_build = yes
+				}				
+			}
+				50 = { 		
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province =3307
+						instant_build = yes
+					}
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province =6046
+						instant_build = yes
+					}
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province =6214
+						instant_build = yes
+					}
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province =10563
+						instant_build = yes
+					}	
+			}
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
 			add_political_power = 150
