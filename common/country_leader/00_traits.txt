@@ -1,5 +1,5 @@
 leader_traits = {
-       
+
 	dictator = {
 		random = no
 		political_power_factor = 0.25
@@ -1352,13 +1352,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-    infrastructure_expert = {
-		sprite = 13
-		production_speed_infrastructure_factor = 0.30
-		ai_will_do = {
-			factor = 1
-		}
-	}
+
 	rustungsorganisator = {
 		sprite = 10
 		random = yes
@@ -1381,16 +1375,7 @@ leader_traits = {
 			factor = 2
 		}
 	}
-    
-	industrial_genius = {
-		sprite = 13
-		production_speed_industrial_complex_factor = 0.15
-		production_speed_infrastructure_factor = 0.15
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
+
 	captain_of_industry = {
 		sprite = 10
 		random = yes

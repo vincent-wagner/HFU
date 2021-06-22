@@ -56,7 +56,17 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-		    42 = { 
+			42 = { set_demilitarized_zone = no }
+			51 = { set_demilitarized_zone = no }
+			add_political_power = 150
+			add_war_support = 0.1
+			army_experience = 100
+			add_named_threat = { threat = 5 name = GER_rhineland
+				hidden_effect = {
+					news_event = { hours = 6 id = news.25 }
+				}
+			}
+			42 = { 
 				set_building_level = {
 					type = air_base
 					level = 10
@@ -113,16 +123,8 @@
 						instant_build = yes
 					}	
 			}
-			42 = { set_demilitarized_zone = no }
-			51 = { set_demilitarized_zone = no }
-			add_political_power = 150
-			add_war_support = 0.1
-			army_experience = 100
-			add_named_threat = { threat = 5 name = GER_rhineland
-				hidden_effect = {
-					news_event = { hours = 6 id = news.25 }
-				}
-			}
+		
+		
 		}
 	}
 	focus = {
@@ -496,24 +498,15 @@
 		ai_will_do = {
 			factor = 1
 		}
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_ideas = GER_strategic_air_effort_idea
-		}
-	}
-	focus = {
-		id = GER_new_transport_plane
-		icon = Ger_goal_air_armada
-		prerequisite = { Focus = GER_strategic_air_effort Focus = GER_tactical_air_effort }
-		x = 1
-		y = 1
-		relative_position_id = GER_strategic_air_effort
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = GER_messerschmitt_transport_plane
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+			}
 		}
 	}
 	focus = {
@@ -556,6 +549,21 @@
 		}
 	}
 	focus = {
+		id = GER_new_transport_plane
+		icon = Ger_goal_air_armada
+		prerequisite = { Focus = GER_strategic_air_effort Focus = GER_tactical_air_effort }
+		x = 1
+		y = 1
+		relative_position_id = GER_strategic_air_effort
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = GER_messerschmitt_transport_plane
+		}
+	}
+	focus = {
 		id = GER_soviet_treaty
 		icon = GFX_focus_GER_soviet_treaty
 		prerequisite = { focus = GER_army_innovation }
@@ -583,6 +591,12 @@
 				name = GER_soviet_treaty
 				ahead_reduction = 2
 				technology = basic_medium_tank
+			}
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				bonus = 1.5
+				uses = 1
+				technology = basic_heavy_tank
 			}
 			add_tech_bonus = {
 				name = GER_soviet_treaty
@@ -1069,7 +1083,7 @@
 		x = 3
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 9
 		}
@@ -1087,6 +1101,22 @@
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1352,9 +1382,98 @@ focus = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
-			technology = fighter3
+			category = light_fighter
 			bonus = 1
-			ahead_reduction = 1
+			uses = 1
+			}
+		}
+	}
+	focus = {
+		id = GER_ural_bomber
+		icon = GFX_focus_GER_Amerika_Bomber
+		prerequisite = { focus = GER_fighter_3 }
+		x = 0
+		y = 1
+		relative_position_id = GER_fighter_3
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		available={}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+		    add_tech_bonus = {
+			name = bomber_bonus
+			bonus = 1.5
+			uses = 1
+			category = cas_bomber
+		}	
+			add_tech_bonus = {
+				name = GER_ural_bomber
+				bonus = 3.0
+				uses = 3
+				category = cat_strategic_bomber
+			}
+			add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 100 producer = GER }
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 100 producer = GER }
+		}
+	}
+	focus = {
+		id = GER_rocketry_focus
+		icon = GFX_focus_GER_New_Missile_Designs		
+		prerequisite = { focus =  GER_ural_bomber }
+		available={date>1941.6.1}
+		x = 0
+		y = 1
+		relative_position_id =  GER_ural_bomber
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_technology = {
+				rocket_engines = 1
+				experimental_rockets = 1
+			}
+			add_ideas = GER_rocketry_idea
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = GER_jet_fighter
+		icon = GFX_focus_GER_Me262
+		prerequisite = { focus = GER_panzer_4_ausfg }
+		available={date>1943.5.1}
+		x = 0
+		y = 1
+		relative_position_id = GER_panzer_4_ausfg
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_technology = {
+				jet_fighter1= 1
+			}
+			add_tech_bonus = {
+			category = light_fighter
+			bonus = 1
 			uses = 1
 			}
 		}
@@ -1515,7 +1634,22 @@ focus = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 producer = GER }
+			add_war_support = -0.2
+			add_equipment_to_stockpile = { 
+			type = infantry_equipment_1 amount = 60000 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = artillery_equipment_1 amount = 5000 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = anti_air_equipment_1 amount = 3200 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = anti_tank_equipment_1 amount = 1440 producer = GER
+			}
+			add_equipment_to_stockpile = { 
+			type = support_equipment_1 amount = 1600 producer = GER
+			}		
 			hidden_effect={
 				division_template = {
 					name = "Volkssturm"
@@ -1546,53 +1680,71 @@ focus = {
 		}
 	}
 	focus = {
-		id = GER_u_verlagerung
-		icon = GFX_focus_GER_underground_industry
-		prerequisite = { focus = GER_albert_speer }
-		relative_position_id = GER_albert_speer
-		x = -2
+		id = GER_stuka
+		icon = GFX_focus_GER_endsieg
+		prerequisite = { focus = GER_german_engineering }
+		x = 4
 		y = 1
+		available={
+		date > 1941.7.1
+		}
+		relative_position_id = GER_german_engineering
 		cost = 3
-		available = {
-		}
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
-		available_if_capitulated = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			unlock_decision_tooltip = GER_underground_mills
-			unlock_decision_tooltip = GER_underground_refs
+		add_timed_idea = { idea = GER_hungerplan  days = 400 }
+		SOV = {add_timed_idea = { idea = SOV_guerilla  days = 185 }}
 		}
 	}
 	focus = {
-		id = GER_mineraloelsicherungsplan
-		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = GER_u_verlagerung }
-		relative_position_id = GER_u_verlagerung
+		id = GER_rocket_interceptor
+		icon = GFX_focus_GER_modern_infantry
+		prerequisite = { focus = GER_stuka }
 		x = 0
-		y = 2
-		cost =3
-		available = {
-		}
+		y = 1
+		available={SOV = {has_war = yes}}
+		relative_position_id = GER_stuka
+		cost = 2
 		ai_will_do = {
-			factor = 4
+			factor = 1
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			64 = {
-				add_extra_state_shared_building_slots=3
-				add_building_construction = {
-					type = fuel_silo
-					level = 3
-					instant_build = yes
-				}
-			}
-			add_timed_idea={idea=GER_mineraloelsicherungsplan days=180}
+		add_timed_idea = {idea=GER_panther_program days=60}
+        }
+	}
+	focus = {
+		id = GER_russische_befreiungsarmee
+		icon = GFX_GER_SS_armed_branch
+		prerequisite = { focus = GER_rocket_interceptor }
+		available = {
+			has_idea=heinrich_himmler
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_rocket_interceptor
+		cost = 2
+		completion_reward = {
+			add_ideas = GER_Waffen_SS
+			custom_effect_tooltip = "Ten fully equipped SS-Divisions will spawn in Duisburg."
+				51 = {
+					for_loop_effect = {
+						end = 10
+						create_unit = {
+							division = "name = \"SS-Panzergrenadier\" division_template = \"Brandenburgers\" start_experience_factor = 2.0"
+							owner = GER
+						}
+						}}
 		}
 	}
 	focus = {
 		id = GER_nero
-		icon = GFX_focus_GER_implement_scorched_earth_tactics
+		icon = GFX_focus_GER_goal_Operation_Schwarzes_Gold
 		prerequisite = { focus = GER_albert_speer }
 		relative_position_id = GER_albert_speer
 		x = 1
@@ -1605,6 +1757,9 @@ focus = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
+		add_ideas = GER_mass_production2
+		add_timed_idea={idea=GER_mass_production1 days=14}
+		add_timed_idea={idea=GER_mass_production3 days=28}
 		}
 	}
 	focus = {
@@ -1826,171 +1981,7 @@ focus = {
 			}
 		}
 	}
-	focus = {
-		id = GER_endsieg
-		icon = GFX_GER_endsieg
-		prerequisite = { focus = GER_mineraloelsicherungsplan focus = GER_volkssturm }
-		prerequisite = { focus = GER_alpenfestung  }
-		prerequisite = { focus = GER_nero }
-		relative_position_id = GER_mineraloelsicherungsplan
-		x = 2
-		y = 1
-		cost = 2
-		available = {
-			count_triggers={
-				amount=4
-				14= {is_controlled_by_ROOT_or_ally=no}
-				30= {is_controlled_by_ROOT_or_ally=no}
-				16= {is_controlled_by_ROOT_or_ally=no}
-				15= {is_controlled_by_ROOT_or_ally=no}
-				6= {is_controlled_by_ROOT_or_ally=no}
-				29= {is_controlled_by_ROOT_or_ally=no}
-				35= {is_controlled_by_ROOT_or_ally=no}
-				36= {is_controlled_by_ROOT_or_ally=no}
-				7= {is_controlled_by_ROOT_or_ally=no}
-				699= {is_controlled_by_ROOT_or_ally=no}
-				677= {is_controlled_by_ROOT_or_ally=no}
-				46= {is_controlled_by_ROOT_or_ally=no}
-				2= {is_controlled_by_ROOT_or_ally=no}
-				10= {is_controlled_by_ROOT_or_ally=no}
-			}
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = no
-		completion_reward = {
-			custom_effect_tooltip = "Deploys the last reserves of the Reich"
-			hidden_effect ={
-				division_template = {
-					name = "SS-Panzergrenadier"
-					regiments = {
-						heavy_armor = { x = 0 y = 0 }
-						heavy_armor = { x = 0 y = 1 }
-						heavy_armor = { x = 0 y = 2 }
-						heavy_armor = { x = 0 y = 3 }
-						heavy_armor = { x = 1 y = 0 }
-						heavy_armor = { x = 1 y = 1 }
-						heavy_armor = { x = 1 y = 2 }
-						heavy_armor = { x = 1 y = 3 }
-						heavy_armor = { x = 2 y = 0 }
-						heavy_armor = { x = 2 y = 1 }
-						heavy_armor = { x = 2 y = 2 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-						motorized = { x = 4 y = 2 }
-						motorized = { x = 4 y = 3 }
-						mot_anti_air_brigade = { x = 4 y = 4 }
-						mot_anti_air_brigade = { x = 4 y = 5 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3}
-						anti_tank = {x = 0 y = 4}
-					}
-				}
-				64 = {
-					for_loop_effect = {
-						end = 1
-						create_unit = {
-							division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
-							owner = GER
-						}
-					}
-				}
-				division_template = {
-					name = "Panzergrenadiere"
-					regiments = {
-						mechanized = { x = 0 y = 0 }
-						mechanized = { x = 0 y = 1 }
-						mechanized = { x = 0 y = 2 }
-						mechanized = { x = 0 y = 3 }
-						mechanized = { x = 1 y = 0 }
-						mechanized = { x = 1 y = 1 }
-						mechanized = { x = 1 y = 2 }
-						mechanized = { x = 1 y = 3 }
-						mechanized = { x = 2 y = 0 }
-						mechanized = { x = 2 y = 1 }
-						mechanized = { x = 2 y = 2 }
-						mechanized = { x = 2 y = 3 }
-						mot_anti_air_brigade = { x = 3 y = 0 }
-						mot_anti_air_brigade = { x = 3 y = 1 }
-						mot_anti_tank_brigade = { x = 3  y = 2}
-						mot_anti_tank_brigade = { x = 3 y = 3}
-						mot_artillery_brigade = { x = 4 y = 0 }
-						mot_artillery_brigade = { x = 4 y = 1 }
-						mot_artillery_brigade = { x = 4 y = 2 }
-						mot_artillery_brigade = { x = 4 y = 3 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3}
-						anti_tank = {x = 0 y = 4}
-						signal_company = {x = 0 y = 5}
-					}
-				}
-				64 = {
-					for_loop_effect = {
-						end = 15
-						create_unit = {
-							division = "name = \"Panzergrenadiere\" division_template = \"Panzergrenadiere\" start_experience_factor = 2.0"
-							owner = GER
-						}
-					}
-				}
-				division_template = {
-					name = "Panzerjagd-Division"
-					regiments = {
-						medium_armor = { x = 0 y = 0 }
-						medium_armor = { x = 0 y = 1 }
-						medium_armor = { x = 0 y = 2 }
-						medium_armor = { x = 0 y = 3 }
-						medium_armor = { x = 1 y = 0 }
-						medium_armor = { x = 1 y = 1 }
-						medium_armor = { x = 1 y = 2 }
-						medium_armor = { x = 1 y = 3 }
-						medium_armor = { x = 2 y = 0 }
-						medium_armor = { x = 2 y = 1 }
-						medium_armor = { x = 2 y = 2 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-						motorized = { x = 4 y = 2 }
-						motorized = { x = 4 y = 3 }
-						mot_anti_air_brigade = { x = 4 y = 4 }
-						mot_anti_air_brigade = { x = 4 y = 5 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3}
-						anti_tank = {x = 0 y = 4}
-					}
-				}
-				64 = {
-					for_loop_effect = {
-						end = 6
-						create_unit = {
-							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
-							owner = GER
-						}
-					}
-				}
-			}
-		}
-	}
+
 	focus = {
 		id = GER_exploit_occupied_territories
 		icon = GFX_focus_GER_money
@@ -2011,7 +2002,7 @@ focus = {
 		icon = GFX_focus_GER_anschluss
 		prerequisite = { focus = GER_rhineland }
 		available = {
-			date > 1937.7.1
+		date > 1937.7.1
 		}
 		cancel_if_invalid = no
 		x = 3
@@ -2087,16 +2078,14 @@ focus = {
 		
 		available = {
 			date > 1939.6.1
+			has_completed_focus = GER_demand_memel
 		}
 		cancel = {
 		}
 		cancel_if_invalid = no
-		x = 20
+		x = 18
 		y = 0
 		cost = 5
-		available = {
-			has_completed_focus= GER_demand_memel
-		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -2189,11 +2178,11 @@ focus = {
 	focus = {
 		id = GER_danzig_or_war
 		icon = GFX_focus_GER_danzig
-		available = {
-			date > 1939.8.1
-		}
 		prerequisite = { focus = GER_mol_rib_pact }
 		bypass = {
+		}
+		available = {
+			date > 1939.8.1
 		}
 		cancel_if_invalid = no
 		x = 0
@@ -2234,6 +2223,7 @@ focus = {
 				}
 				SAF = {	country_event = tfv_south_africa.133 }
 				ENG = { country_event = britain.24
+					add_timed_idea = { idea = ENG_shadow_sheme days = 90}
 					123 = {
 						add_extra_state_shared_building_slots = 5
 						add_building_construction = {
@@ -2311,7 +2301,7 @@ focus = {
 		relative_position_id = GER_weserubung
 		x = 0
 		y = 1
-		cost = 1
+		cost = 2
 		available = {
 			NOR_axis=yes
 		}
@@ -2603,6 +2593,25 @@ focus = {
 				BUL = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
 				SPR = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
 			}
+		}
+	}
+	focus = {
+		id = GER_u_verlagerung
+		icon = GFX_focus_GER_underground_industry
+		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack}
+		relative_position_id = GER_winter_defense
+		x = -3
+		y = 1
+		cost = 3
+		available = {
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			unlock_decision_tooltip = GER_underground_mills
+			unlock_decision_tooltip = GER_underground_refs
 		}
 	}
 	focus = {
@@ -3173,16 +3182,6 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		    CZE = {
-			set_popularities = {
-	        fascism = 100
-	        }
-			set_politics = {
-	        ruling_party = fascism
-            elections_allowed = no
-            }
-			}
-			add_to_faction = CZE
 			add_war_support = 0.1
 			add_political_power = -20
 			set_global_flag = end_of_czechoslovakia
@@ -3191,7 +3190,6 @@ focus = {
 				limit = { NOT = { country_exists = CZE } }
 				country_event = { id = germany.55 hours = 6 }
 			}
-			CZE = {set_cosmetic_tag =  CZE_fascism}
 			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
 		}
 	}
@@ -3261,7 +3259,6 @@ focus = {
 		available = {
 			has_full_control_of_state = 8
 			has_full_control_of_state = 28
-			ITA = {controls_state = 47}
 		}
 		bypass = {
 		}
@@ -3319,7 +3316,7 @@ focus = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 27
+		x = 26
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -4189,16 +4186,14 @@ focus = {
 			GER = {
 				add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 			}
-			hidden_effect={  ROM = {
+			hidden_effect={  
+			    ROM = {
 					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 				}
 				HUN = {
 					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 				}
 				BUL = {
-					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
-				}
-				FIN = {
 					add_timed_idea = { idea = GER_ardennenoffensive days = 45 }
 				}
 				ITA = {
@@ -4236,252 +4231,18 @@ focus = {
 		uses = 1
 		category = land_doctrine
 			}
-			            }	
-	}
-focus = {
-	id = GER_ground_support
-	icon = GFX_focus_GER_GER_ground_support2
-	prerequisite = {  focus = GER_fighter_3 }
-	x = 0
-	y = 1
-	relative_position_id = GER_fighter_3
-	cost = 5
-	completion_reward = {
-		add_tech_bonus = {
-			name = bomber_bonus
-			bonus = 1.5
-			uses = 1
-			category = cas_bomber
-		}	
-						}	
+	    }	
+	}			
+    focus = {	
+		id = GER_raseiniai
+		icon = GFX_GER_mobile_fortresses
+		text="Battle of Raseiniai"
+		prerequisite = { focus = GER_improve_our_military }
+		available = {
+			has_war_with = SOV
+			date>1941.9.1
 		}
-focus = {
-	id = GER_marinestosstrupp
-	icon = GFX_focus_GER_marine
-	prerequisite = {  focus = GER_improve_our_military }
-	x = 0
-	y = 1
-	relative_position_id = GER_improve_our_military
-	cost = 5
-	completion_reward = {
-		add_tech_bonus = {
-		name = GER_special_forces
-		bonus = 2.0
-		ahead_reduction = 1
-		uses = 2
-		category = marine_tech		
-						}	
-	    }
-	}
-focus = {
-	id = GER_reinforce_the_line
-	icon = GFX_focus_GER_reinforce_the_line
-	prerequisite = {  focus = GER_panzer_4_ausfg }
-	x = 0
-	y = 1
-	relative_position_id = GER_panzer_4_ausfg
-	cost = 5
-	completion_reward = {
-	    add_ideas = GER_reinforce_the_line_idea
-		                }	
-	}
-focus = {
-	id = GER_advanced_radar_development
-	icon = GFX_focus_GER_GER_advanced_radar
-	prerequisite = {  focus = GER_ground_support }
-	x = 0
-	y = 1
-	relative_position_id = GER_ground_support
-	cost = 5
-	completion_reward = {
-		set_technology = {advanced_centimetric_radar =1}
-		add_ideas = GER_advanced_radar_idea
-		}
-}							
-focus = {
-	id = GER_develop_mp43
-	icon = GFX_focus_GER_new_weapons
-	prerequisite = {  focus = GER_marinestosstrupp }
-	x = 0
-	y = 1
-	relative_position_id = GER_marinestosstrupp
-	cost = 5
-	completion_reward = {
-		add_tech_bonus = {
-		bonus = 1.0
-		ahead_reduction = 1
-		uses = 1
-	    technology = advanced_infantry_weapons
-		}	
-						}
-}						
-focus = {
-	id = GER_get_better_advisors
-	icon = GFX_focus_GER_get_better_advisors
-    prerequisite = {  focus = GER_rhineland }
-	x = 5
-	y = 1
-	relative_position_id = GER_rhineland
-	cost = 5
-	completion_reward = {
-	add_political_power = 75
-	custom_effect_tooltip = available_political_advisor	
-	show_ideas_tooltip = joachim_von_ribbentrop
-						}
-		}
-focus = {
-	id = GER_keep_our_technology
-	icon = GFX_focus_GER_technology_lead
-	prerequisite = {  focus = GER_get_better_advisors }
-	bypass = {
-		date > 1936.6.1
-	}
-	x = 0
-	y = 1
-	relative_position_id = GER_get_better_advisors
-	cost = 5
-	completion_reward = {
-		custom_effect_tooltip = "This focus will automatically bypass if not taken before June 1936."
-		add_tech_bonus = {
-			bonus = 4.5
-			uses = 3
-			technology = improved_machine_tools
-			technology = concentrated_industry2
-			technology = dispersed_industry2
-			technology = construction2 
-		}
-		64 = {
-			
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = industrial_complex
-				level = 3
-				instant_build = yes
-		}
-	}	
-						}	
-		}
-focus = {
-	id = GER_adjust_the_building_plans
-	icon = GFX_focus_GER_adjust
-	prerequisite = {  focus = GER_keep_our_technology }
-	available = {
-		date > 1938.1.1
-	}
-	bypass = {
-		date > 1939.2.1
-	}
-	x = 0
-	y = 1
-	relative_position_id = GER_keep_our_technology
-	cost = 5
-	completion_reward = {
-		custom_effect_tooltip = "This focus will reduce the infrastructure if the current level is higher than in the foucs. It will bypass if not taken before February 1939."
-		64 ={
-		set_building_level = {
-        type = infrastructure
-        level = 7
-        }
-	}
-		59 ={
-		set_building_level = {
-		type = infrastructure
-		level = 7
-		}
-	}
-		60 ={
-		set_building_level = {
-		type = infrastructure
-		level = 7
-		}
-	}
-		54 ={
-		set_building_level = {
-		type = infrastructure
-		level = 7
-		}
-	}
-	    55 ={
-		set_building_level = {
-		type = infrastructure
-		level = 9
-		}
-	}
-        65 ={
-		set_building_level = {
-		type = infrastructure
-		level = 9
-		}
-	}
-	    66 ={
-		set_building_level = {
-		type = infrastructure
-		level = 9
-		}
-	}
-	    68 ={
-		set_building_level = {
-		type = infrastructure
-		level = 9
-		}
-	}
-
-		                }
-}									 	
-focus = {
-	id = GER_determine_the_investment
-	icon = GFX_focus_GER_determine_the_investment
-	prerequisite = {  focus = GER_adjust_the_building_plans }
-	available = {
-		date > 1939.3.1
-	}
-	x = 0
-	y = 1
-	relative_position_id = GER_adjust_the_building_plans
-	cost = 5
-	completion_reward = {
-		add_ideas = GER_determine_the_investment1			
-						}	
-	    }
-focus = {
-	id = GER_rocketry_focus
-	icon = GFX_focus_GER_New_Missile_Designs
-	prerequisite = { focus =  GER_flak_36 focus = GER_air_innovation_2}
-	available={date>1941.6.1}
-	x = 1
-	y = 1
-	relative_position_id =  GER_flak_36
-	cost = 5
-	ai_will_do = {
-		factor = 1
-		}
-	available_if_capitulated = yes
-	search_filters = { FOCUS_FILTER_RESEARCH }
-	completion_reward = {
-		set_technology = {
-			rocket_engines = 1
-			experimental_rockets = 1
-			}
-				add_ideas = GER_rocketry_idea
-				add_tech_bonus = {
-					name = GER_rocketry_focus
-					bonus = 3.0
-					uses = 2
-					category = rocketry
-				}
-			}
-		}
-focus = {
-	id = GER_raseiniai
-	icon = GFX_GER_mobile_fortresses
-	text="Battle of Raseiniai"
-	relative_position_id =  GER_rocketry_focus
-	prerequisite = { focus = GER_rocketry_focus }
-	available = {
-				has_war_with = SOV
-				date>1941.9.1
-	}
-        x = 0
+		x = 0
 		y = 1
 		relative_position_id = GER_improve_our_military
 		cost = 5
@@ -4509,7 +4270,7 @@ focus = {
 					progress = 0.1
 					efficiency = 50
 				}
-                division_template = {
+				division_template = {
 					name = "SS-Panzergrenadier"
 					regiments = {
 						heavy_armor = { x = 0 y = 0 }
@@ -4541,66 +4302,258 @@ focus = {
 						signal_company = { x = 0 y = 4 }
 					}
 				}
-                677 = {
+				677 = {
 					for_loop_effect = {
 						end = 4
 						create_unit = {
 							division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
 							owner = GER
 						}
-				    }
-				}
+						}}
 			}
-				army_experience = 200
-				add_tech_bonus = {
-					name = at_bonus
-					bonus = 3.0
-					uses = 2
-					category = cat_anti_tank
-		    	}
+			army_experience = 200
+			add_tech_bonus = {
+				name = at_bonus
+				bonus = 2.0
+				name = GER_coal_liquidization
+				bonus = 3.0
+				uses = 2
+				category = cat_anti_tank
+				category = synth_resources
+			}
+		}
+	}	
+	focus = {
+		id = GER_panther_massproduction
+		icon = GFX_focus_GER_king_tiger
+		prerequisite = { focus =  GER_raseiniai }
+		x = 0
+		y = 1
+		relative_position_id =  GER_raseiniai
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date > 1942.5.1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_technology = {
+				advanced_heavy_tank = 1
+			}
 		}
 	}
-focus = {
-	id = GER_russische_befreiungsarmee
-	icon = GFX_GER_SS_armed_branch
-	prerequisite = { focus = GER_raseiniai }
-	available = {
-	has_idea=heinrich_himmler
-	}
-	x = 0
-	y = 1
-	relative_position_id = GER_raseiniai
-	cost = 2
-	completion_reward = {
-	add_ideas = GER_Waffen_SS
-	custom_effect_tooltip = "Ten fully equipped SS-Divisions will spawn in Duisburg."
-	51 = {
-		for_loop_effect = {
-		end = 10
-		create_unit = {
-		division = "name = \"SS-Panzergrenadier\" division_template = \"Brandenburgers\" start_experience_factor = 2.0"
-		owner = GER
-							}
-							}}
+	focus = {
+		id = GER_king_tiger
+		icon = GFX_focus_GER_Standardpanzer
+		prerequisite = { focus = GER_albert_speer}
+		x = -2
+		y = 1
+		relative_position_id = GER_albert_speer
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available = { date > 1942.8.1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_technology = {
+				super_heavy_tank = 1
 			}
 		}
-focus = {
-	id = GER_panther_massproduction
-	icon = GFX_focus_GER_king_tiger
-	prerequisite = { focus =  GER_russische_befreiungsarmee }
-	x = 0
-	y = 1
-	relative_position_id =  GER_russische_befreiungsarmee
-	cost = 2
-	available = {
-		date > 1942.5.1
-			    }
-	available_if_capitulated = yes
-	search_filters = { FOCUS_FILTER_RESEARCH }
-	completion_reward = {
-	set_technology = {
-	advanced_heavy_tank = 1
+	}
+	focus = {
+		id = GER_mineraloelsicherungsplan
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = GER_king_tiger }
+		relative_position_id = GER_king_tiger
+		x = 0
+		y = 2
+		cost =3
+		available = {
+		}
+		ai_will_do = {
+			factor = 4
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots=3
+				add_building_construction = {
+					type = fuel_silo
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_timed_idea={idea=GER_mineraloelsicherungsplan days=180}
+		}
+	}
+	focus = {
+		id = GER_endsieg
+		icon = GFX_GER_endsieg
+		prerequisite = { focus = GER_mineraloelsicherungsplan focus = GER_volkssturm }
+		prerequisite = { focus = GER_alpenfestung  }
+		prerequisite = { focus = GER_nero }
+		relative_position_id = GER_mineraloelsicherungsplan
+		x = 2
+		y = 1
+		cost = 2
+		available = {
+			count_triggers={
+				amount=4
+				14= {is_controlled_by_ROOT_or_ally=no}
+				30= {is_controlled_by_ROOT_or_ally=no}
+				16= {is_controlled_by_ROOT_or_ally=no}
+				15= {is_controlled_by_ROOT_or_ally=no}
+				6= {is_controlled_by_ROOT_or_ally=no}
+				29= {is_controlled_by_ROOT_or_ally=no}
+				35= {is_controlled_by_ROOT_or_ally=no}
+				36= {is_controlled_by_ROOT_or_ally=no}
+				7= {is_controlled_by_ROOT_or_ally=no}
+				699= {is_controlled_by_ROOT_or_ally=no}
+				677= {is_controlled_by_ROOT_or_ally=no}
+				46= {is_controlled_by_ROOT_or_ally=no}
+				2= {is_controlled_by_ROOT_or_ally=no}
+				10= {is_controlled_by_ROOT_or_ally=no}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = "Deploys the last reserves of the Reich"
+			hidden_effect ={
+				division_template = {
+					name = "SS-Panzergrenadier"
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 0 y = 2 }
+						heavy_armor = { x = 0 y = 3 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 1 y = 1 }
+						heavy_armor = { x = 1 y = 2 }
+						heavy_armor = { x = 1 y = 3 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 2 y = 1 }
+						heavy_armor = { x = 2 y = 2 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 4 y = 0 }
+						motorized = { x = 4 y = 1 }
+						motorized = { x = 4 y = 2 }
+						motorized = { x = 4 y = 3 }
+						mot_anti_air_brigade = { x = 4 y = 4 }
+						mot_anti_air_brigade = { x = 4 y = 5 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						anti_air = {x = 0 y = 3}
+						anti_tank = {x = 0 y = 4}
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 1
+						create_unit = {
+							division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
+							owner = GER
+						}
+					}
+				}
+				division_template = {
+					name = "Panzergrenadiere"
+					regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 0 y = 3 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+						mechanized = { x = 1 y = 3 }
+						mechanized = { x = 2 y = 0 }
+						mechanized = { x = 2 y = 1 }
+						mechanized = { x = 2 y = 2 }
+						mechanized = { x = 2 y = 3 }
+						mot_anti_air_brigade = { x = 3 y = 0 }
+						mot_anti_air_brigade = { x = 3 y = 1 }
+						mot_anti_tank_brigade = { x = 3  y = 2}
+						mot_anti_tank_brigade = { x = 3 y = 3}
+						mot_artillery_brigade = { x = 4 y = 0 }
+						mot_artillery_brigade = { x = 4 y = 1 }
+						mot_artillery_brigade = { x = 4 y = 2 }
+						mot_artillery_brigade = { x = 4 y = 3 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						anti_air = {x = 0 y = 3}
+						anti_tank = {x = 0 y = 4}
+						signal_company = {x = 0 y = 5}
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 15
+						create_unit = {
+							division = "name = \"Panzergrenadiere\" division_template = \"Panzergrenadiere\" start_experience_factor = 2.0"
+							owner = GER
+						}
+					}
+				}
+				division_template = {
+					name = "Panzerjagd-Division"
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						medium_armor = { x = 0 y = 2 }
+						medium_armor = { x = 0 y = 3 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 1 y = 1 }
+						medium_armor = { x = 1 y = 2 }
+						medium_armor = { x = 1 y = 3 }
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 4 y = 0 }
+						motorized = { x = 4 y = 1 }
+						motorized = { x = 4 y = 2 }
+						motorized = { x = 4 y = 3 }
+						mot_anti_air_brigade = { x = 4 y = 4 }
+						mot_anti_air_brigade = { x = 4 y = 5 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						anti_air = {x = 0 y = 3}
+						anti_tank = {x = 0 y = 4}
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 6
+						create_unit = {
+							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
+							owner = GER
+						}
+					}
 				}
 			}
 		}
-}	
+	}
+}
