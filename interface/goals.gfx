@@ -1,6 +1,46 @@
 spriteTypes = {
 
 	#### Generic continuous goal icons
+	spriteType = {
+		name = "GFX_focus_SOV_the_great_terror"
+		textureFile = "gfx/interface/goals/sov/SOV_terror.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_get_better_advisors"
+		textureFile = "gfx/interface/goals/ger/GER_get_better_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_technology_lead"
+		textureFile = "gfx/interface/goals/ger/GER_technology_lead.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_adjust"
+		textureFile = "gfx/interface/goals/ger/GER_adjust.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_determine_the_investment"
+		textureFile = "gfx/interface/goals/ger/GER_determine_the_investment.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_reinforce_the_line"
+		textureFile = "gfx/interface/goals/ger/GER_reinforce_the_line.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_GER_ground_support2"
+		textureFile = "gfx/interface/goals/ger/GER_ground_support2.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_GER_advanced_radar"
+		textureFile = "gfx/interface/goals/ger/GER_advanced_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_marine"
+		textureFile = "gfx/interface/goals/ger/GER_marine.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_GER_new_weapons"
+		textureFile = "gfx/interface/goals/ger/GER_new_weapons.dds"
+	}
 	SpriteType = {
 		name = "GFX_GOAL_GER_standard_panzer"
 		texturefile = "gfx/interface/goals/GER_standard_panzer.dds"

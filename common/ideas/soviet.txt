@@ -126,6 +126,42 @@ ideas = {
 		}
 	}
 	country = {
+	    SOV_research_institutes1 = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = generic_production_bonus
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		SOV_manual_labor = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		SOV_the_great_terror = {
+			picture = sov_red_army_reborn
+            modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+			}
+			research_bonus = {
+				land_doctrine = -0.15
+			}
+		}
 		SOV_guerilla = {
 			modifier = {
 				resistance_growth_on_our_occupied_states = 0.1
@@ -358,7 +394,7 @@ ideas = {
 			picture = generic_morale_bonus
 			equipment_bonus = {
 				medium_tank_equipment = {
-					build_cost_ic = -0.10  instant = yes
+					build_cost_ic = -0.075  instant = yes
 				}
 			}
 		}
@@ -760,6 +796,7 @@ ideas = {
 			traits = { popular_figurehead }
 		}
 		SOV_vyacheslav_molotov = {
+		    cost = 50
 			picture = generic_political_advisor_europe_1
 			allowed = {
 				original_tag = SOV
@@ -786,24 +823,14 @@ ideas = {
 			traits = { prince_of_terror }
 		}
 		nikita_khrushchev = {
+		    cost = 75
 			allowed = {
 				original_tag = "SOV"
 			}
-			available =
-			{
-				NOT = { has_country_flag = purged_khrushchev }
-				NOT = { has_country_flag = counter_purge }
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+			available = {
+				has_completed_focus = SOV_great_terror
 			}
-			traits = { communist_revolutionary }
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
+			traits = { infrastructure_expert }
 			ai_will_do = {
 				factor = 0
 			}
