@@ -2369,6 +2369,7 @@ focus = {
 }
 focus = {
 	id = SOV_road_quality
+	icon = GFX_focus_SOV_road_quality
 	cost = 5
 	prerequisite = { focus = SOV_great_terror }
 	relative_position_id = SOV_great_terror
@@ -2378,10 +2379,19 @@ focus = {
 		add_political_power = 75
 		custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = nikita_khrushchev
+	213 = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+		type = industrial_complex
+		level = 3
+		instant_build = yes
+			}
+		}		
 	}
 }
 focus = {
 	id = SOV_industrial_revolution
+	icon = GFX_focus_SOV_industrial_revolution
 	cost = 5
 	prerequisite = { focus = SOV_great_terror }
 	relative_position_id = SOV_great_terror
@@ -2402,6 +2412,7 @@ focus = {
 }
 focus = {
 	id = SOV_develop_modern_guns
+	icon = GFX_focus_SOV_develop_modern_guns
 	cost = 5
 	prerequisite = { focus = SOV_road_quality }
 	relative_position_id = SOV_road_quality
@@ -2423,6 +2434,7 @@ focus = {
 }
 focus = {
 	id = SOV_people_work
+	icon = GFX_focus_SOV_people_work
 	cost = 10
 	prerequisite = { focus = SOV_road_quality }
 	prerequisite = { focus = SOV_industrial_revolution }
@@ -2430,11 +2442,12 @@ focus = {
 	x = 1
 	y = 1
 	completion_reward = { 
-		add_timed_idea = { idea = SOV_manual_labor days = 365 }
+		add_timed_idea = { idea = SOV_manual_labor days = 300 }
 	}
 }
 focus = {
 	id = SOV_research_institutes
+	icon = GFX_focus_SOV_research_institutes
 	cost = 5
 	prerequisite = { focus = SOV_road_quality }
 	relative_position_id = SOV_road_quality
