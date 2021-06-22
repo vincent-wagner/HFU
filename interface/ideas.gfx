@@ -4690,11 +4690,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_usa_last_bastion_of_liberty.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_glory"
-		textureFile = "gfx/interface/ideas/ger/idea_glory.dds"
+		name = "GFX_idea_ger_glory"
+		texturefile = "gfx/interface/ideas/ger/idea_ger_glory.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_rethink"
-		textureFile = "gfx/interface/ideas/ger/idea_rethink.dds"
+		name = "GFX_idea_ger_rethink"
+		texturefile = "gfx/interface/ideas/ger/idea_ger_rethink.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_sov_red_army_reborn"
+		texturefile = "gfx/interface/ideas/sov/SOV_red_army_reborn.dds"
+	}	
 }
