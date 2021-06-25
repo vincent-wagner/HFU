@@ -865,11 +865,14 @@ ideas = {
 			}
 		}
 		ENG_leslie_hore_belisha = {
+			cost = 50
 			allowed = {
 				original_tag = ENG
 			}
 			traits = { captain_of_industry  }
-		}
+			available = {
+				has_completed_focus = shadow_scheme_focus
+			}}
 		ENG_ernest_bevin = {
 			allowed = {
 				original_tag = ENG
