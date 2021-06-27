@@ -112,6 +112,33 @@
 		}}
 	}
 	focus = {
+		id = GER_align_hungary
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = GER_german_war_economy }
+		x = 0
+		y = 1
+		relative_position_id = GER_german_war_economy
+		cost = 5
+		ai_will_do = {
+			factor = 1
+			}
+		available = {
+		}
+		bypass = {
+			}
+			completion_reward = {
+				HUN = {
+					add_timed_idea = { idea = GER_align_hungary days = 100 }
+				}
+				ROM = {
+					add_timed_idea = { idea = GER_align_hungary days = 100 }
+				}
+				BUL = {
+					add_timed_idea = { idea = GER_align_hungary days = 100 }
+				}
+			}
+		}
+	focus = {
 		id = GER_integrate_war_economies
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_align_hungary }
@@ -1486,25 +1513,6 @@ focus = {
 						owner = GER
 					}
 					}}
-		}
-	}
-		focus = {
-		id = GER_u_verlagerung
-		icon = GFX_focus_GER_underground_industry
-		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack}
-		relative_position_id = GER_winter_defense
-		x = -3
-		y = 1
-		cost = 3
-		available = {
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = no
-		completion_reward = {
-			unlock_decision_tooltip = GER_underground_mills
-			unlock_decision_tooltip = GER_underground_refs
 		}
 	}
 	focus = {
@@ -4620,4 +4628,20 @@ focus = {
 				}
 			}
 		}
+focus = {
+	id = GER_u_verlagerung
+	icon = GFX_focus_GER_underground_industry
+	prerequisite = { focus = GER_winter_defense focus = GER_winter_attack}
+	relative_position_id = GER_winter_defense
+	x = -3
+	y = 1
+	cost = 3
+	available = {
+			}
+	available_if_capitulated = no
+	completion_reward = {
+	unlock_decision_tooltip = GER_underground_mills
+	unlock_decision_tooltip = GER_underground_refs
+			}
+		}	
 }	
