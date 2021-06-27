@@ -109,6 +109,7 @@
  henschel_desc:1 "Henschel were responsible for all mass-produced Tiger models, tanks which, after early reliability problems were solved, performed remarkably well."
  GER_MAN:0 "MAN"
  GER_MAN_desc:1 "Most known for the Panther tank, MAN also participated in design and production of earlier Panzer models."
+ GER_panther_program:0 "Die Heimatfront"
  daimler_Benz_AG:0 "Daimler-Benz"
  daimler_Benz_AG_desc:1 "Daimler-Benz was a manufacturer of automobiles, motor vehicles, and high-quality engines."
  GER_totaler:0 "Totaler Krieg"
