@@ -169,6 +169,7 @@ add_ideas = {
 	home_of_revolution
 	closed_economy
 	SOV_home_fleet
+	SOV_the_great_terror
 }
 create_country_leader = {
 	name = "Joseph Stalin"
