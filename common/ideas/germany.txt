@@ -119,7 +119,9 @@ ideas = {
 			removal_cost = -1
 			picture = panther_program
 			modifier = {
-				state_repair_speed_industrial_complex_factor = 0.3
+				min_export = -0.05
+				minimum_training_level = -0.1
+				training_time_factor = -0.1
 			}
 		}
 		GER_africa_hp = {

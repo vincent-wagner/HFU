@@ -84,6 +84,7 @@
 			add_ideas = GER_grosraumwirtschaft
 		}
 	}
+	
 	focus = {
 		id = GER_german_war_economy
 		icon = GFX_focus_GER_german_war_economy
@@ -1522,9 +1523,6 @@ focus = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 		    add_timed_idea = {idea=GER_panther_program days=60}
-			set_technology = {
-				super_heavy_tank = 1
-			}
 		}
 	}
 	focus = {
@@ -4270,11 +4268,12 @@ focus = {
 	cost = 5
 	completion_reward = {
 		add_tech_bonus = {
-		name = GER_special_forces
+		name = GER_panzerfaus^
 		bonus = 2.0
 		ahead_reduction = 1
 		uses = 2
-		category = marine_tech		
+		technology = infantry_at
+		technology = infantry_at2
 						}	
 	    }
 	}
