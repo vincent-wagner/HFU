@@ -2178,6 +2178,28 @@ focus_tree = {
 					}}}}
 	
 	focus = {
+		id = ITA_Illyricum
+		icon = GFX_ITA_Mare_Nostrum
+		prerequisite = { focus = ITA_pact_of_steel }
+		available = {
+		}
+		x = 3
+		y = 1
+		relative_position_id = ITA_pact_of_steel
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -70
+			add_state_core = 105
+			add_state_core = 44
+			add_state_core = 159
+			add_state_core = 320
+		}
+	}
+	focus = {
 		id = ITA_sword_of_islam
 		icon = GFX_ITA_Generic_Ultranat_Eagle
 		prerequisite = { focus = ITA_Illyricum }
@@ -2203,28 +2225,6 @@ focus_tree = {
 			add_state_core = 413
 			add_state_core = 415
 			add_state_core = 265
-		}
-	}
-	focus = {
-		id = ITA_Illyricum
-		icon = GFX_ITA_Mare_Nostrum
-		prerequisite = { focus = ITA_pact_of_steel }
-		available = {
-		}
-		x = 3
-		y = 1
-		relative_position_id = ITA_pact_of_steel
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_stability = -0.05
-			add_political_power = -70
-			add_state_core = 105
-			add_state_core = 44
-			add_state_core = 159
-			add_state_core = 320
 		}
 	}
 	focus = {
@@ -2771,7 +2771,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province =11887
+					province =3661
 					instant_build = yes
 				}
 			}
