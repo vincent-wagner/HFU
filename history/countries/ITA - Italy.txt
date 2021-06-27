@@ -19,6 +19,8 @@ set_variable = {
 }
 # Starting tech
 set_technology = {
+	amphibious_mechanized_infantry = 1
+	armored_car1 = 1
 	airfield_allowed = 1
 	naval_base_allowed = 1
 	desertinfantry_at = 1

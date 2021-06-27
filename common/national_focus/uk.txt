@@ -627,11 +627,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 5
-		ai_will_do = {
-			factor = 3
-		
-		complete_tooltip = {
-		}
 		completion_reward = {
 			air_experience = 25
 			125 = {

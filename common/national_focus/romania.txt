@@ -78,14 +78,14 @@ focus_tree = {
 			46 = {
 				add_resource = {
 					type = oil
-					amount = 8
+					amount = 10
 				}
 			}
 			GER = {
 				56 = {
 					add_resource = {
 						type = oil
-						amount = 4
+						amount = 5
 					}
 				}
 			}
@@ -459,32 +459,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ROM_fortify_the_borders
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = -1
-		y = 1
-		relative_position_id = ROM_institute_royal_dictatorship
-		cost = 2
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_ideas = ROM_fortify_the_borders
-		}
-	}
-	focus = {
 		id = ROM_revise_the_constitution
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 		cost = 10
@@ -511,7 +489,7 @@ focus_tree = {
 		id = ROM_the_royal_foundation
 		icon = GFX_focus_research
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 		cost = 10
@@ -533,7 +511,7 @@ focus_tree = {
 		id = ROM_flexible_foreign_policy
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = ROM_revise_the_constitution }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 		cost = 5
@@ -736,40 +714,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ROM_air_superiority
-		icon = GFX_goal_generic_air_fighter2
+		id = ROM_fortify_the_borders
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ROM_local_development }
 		x = 0
 		y = 1
 		relative_position_id = ROM_local_development
-		cost = 10
-		ai_will_do = {
-			factor = 9
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_air_superiority
-				bonus = 1.0
-				uses = 2
-				category = air_doctrine
-			}
-		}
-	}
-	focus = {
-		id = ROM_cas
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = ROM_air_superiority }
-		x = 0
-		y = 1
-		relative_position_id = ROM_air_superiority
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -781,19 +732,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_cas
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber
-				category = tactical_bomber
-			}
+			add_ideas = ROM_fortify_the_borders
 		}
 	}
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 13
+		x = 11
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -817,7 +762,6 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ROM_army_maneuvers
-		mutually_exclusive = { focus = ROM_the_maresal }
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -838,7 +782,6 @@ focus_tree = {
 				target = GER
 				modifier = ROM_license_german_equipment
 			}
-			add_ideas =  ROM_acquire_modern_tanks
 		}
 	}
 	focus = {
@@ -1124,65 +1067,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ROM_the_maresal
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = ROM_army_maneuvers }
-		mutually_exclusive = { focus = ROM_license_german_equipment }
-		x = -4
-		y = 1
-		relative_position_id = ROM_army_maneuvers
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_the_maresal
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_armor
-			}
-		}
-	}
-	focus = {
-		id = ROM_mobile_tank_destroyers
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = ROM_the_maresal }
-		x = 0
-		y = 1
-		relative_position_id = ROM_the_maresal
-		cost = 10
-		ai_will_do = {
-			factor = 9
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_tech_bonus = {
-				name = ROM_the_maresal
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cat_heavy_armor
-			}
-		}
-	}
-	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 20
+		x = 18
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1267,7 +1154,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
-				category = tp_tech
+				category = marine_tech
 			}
 		}
 	}
@@ -1293,7 +1180,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_expand_the_marine_regiment
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				category = marine_tech
 			}
