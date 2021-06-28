@@ -1,7 +1,7 @@
 capital = 2
 oob = "ITA_1936"
 set_research_slots = 4
-set_stability = 0.75
+set_stability = 0.44
 set_war_support = 0.50
 set_rule = {can_be_spymaster = no}
 create_intelligence_agency = yes
@@ -12,6 +12,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	never_surrender
+	ITA_bad_leadership
 }
 set_variable = {
 	var = min_fuel

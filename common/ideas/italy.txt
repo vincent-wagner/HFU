@@ -169,6 +169,27 @@ ideas = {
 				agency_upgrade_time = -0.30
 			}
 		}
+		ITA_bad_leadership = {
+			allowed = {
+				original_tag = "ITA"
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_advisor_cost_factor = 0.1
+			}
+		}
+		ITA_calm_the_masses = {
+			allowed = {
+				original_tag = "ITA"
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				political_power_factor = -0.1
+			}
+		}
 		ITA_roman = {
 			picture = tfv_can_conscription_crisis
 			allowed = {
@@ -239,6 +260,7 @@ ideas = {
 			}
 		}
 		carlo_scorza = {
+			cost = 75
 			allowed = {
 				original_tag = "ITA"
 			}
@@ -319,14 +341,11 @@ ideas = {
 			}
 		}
 		italy_mario_roatta = {
-			available = {
-				has_intelligence_agency = yes
-			}
 			allowed = {
 				original_tag = ITA
 				has_dlc = "La Resistance"
 			}
-			traits = { head_of_intelligence }
+			traits = { popular_figurehead }
 		}
 	}
 	# MILITARY
