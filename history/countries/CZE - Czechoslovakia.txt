@@ -34,6 +34,7 @@ add_equipment_to_stockpile = {
 set_convoys = 200
 add_manpower = 140000
 set_research_slots = 3
+add_ideas = no_training
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.5.19"
