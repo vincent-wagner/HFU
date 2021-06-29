@@ -262,7 +262,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_demand_southern_slovakia
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_HUN_revisions
 		prerequisite = { focus = HUN_proclaim_greater_hungary }
 		x = 0
 		y = 1

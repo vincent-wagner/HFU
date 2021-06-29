@@ -2,6 +2,14 @@ spriteTypes = {
 
 	#### Generic continuous goal icons
 	spriteType = {
+		name = "GFX_focus_HUN_revisions"
+		textureFile = "gfx/interface/goals/goal_hun_revisionism.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_spqr"
+		textureFile = "gfx/interface/goals/spqr.png"
+	}
+	spriteType = {
 		name = "GFX_focus_SOV_factories_must_grow"
 		textureFile = "gfx/interface/goals/sov/SOV_factories_must_grow.dds"
 	}
