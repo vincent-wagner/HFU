@@ -37,7 +37,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_morale_bonus
+			picture = ita_hitler_visits_rome
 			modifier = {
 			research_speed_factor = 0.1
 			global_building_slots_factor = 0.1
@@ -188,6 +188,7 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
+			picture = ita_bad_leadership
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.05
