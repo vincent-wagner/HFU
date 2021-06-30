@@ -29,7 +29,22 @@ ideas = {
 		}
 	}
 	country = {
-	    ITA_production_boost = {
+	    ITA_hitler_rome = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_morale_bonus
+			modifier = {
+			research_speed_factor = 0.1
+			global_building_slots_factor = 0.1
+			}
+
+		}
+		ITA_production_boost = {
 			removal_cost = -1
 			allowed = {
 				always = no # Added via focus

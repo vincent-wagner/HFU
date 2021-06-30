@@ -2,6 +2,18 @@ spriteTypes = {
 
 	#### Generic continuous goal icons
 	spriteType = {
+		name = "goal_italy_Ultranationalism_2"
+		textureFile = "gfx/interface/goals/Ultranationalism_2.dds"
+	}
+	spriteType = {
+		name = "GOAL_equpiment"
+		textureFile = "gfx/interface/goals/GOAL_equpiment.dds"
+	}
+	spriteType = {
+		name = "ger_alliance_with_italy"
+		textureFile = "gfx/interface/goals/ger_alliance_with_italy.dds"
+	}
+	spriteType = {
 		name = "goal_italy_bring_industry_to_the_mezzogiorno"
 		textureFile = "gfx/interface/goals/goal_italy_bring_industry_to_the_mezzogiorno.dds"
 	}

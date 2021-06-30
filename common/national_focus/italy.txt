@@ -38,20 +38,6 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = naval_effort_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
 		complete_tooltip = {
 			every_state = {
 				limit = {	has_state_flag = GER_naval_rearmament_2dockyards }
@@ -151,13 +137,13 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
 				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
 				category = cl_tech
 				category = ca_tech
@@ -176,7 +162,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.25
 		}
-		available={date>1939.7.1}
 		available_if_capitulated = yes
 		complete_tooltip = {
 		}
@@ -207,54 +192,14 @@ focus_tree = {
 				
 				set_state_flag = GER_plan_z_dockyards
 			}
-			set_technology = {
-				improved_ship_hull_heavy = 1
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 2.0
+				uses = 2
+				category = bb_tech
 			}
-			create_equipment_variant = {
-				name = "Littorio-class"
-				type = ship_hull_heavy_3
-				name_group = ITA_BB_HISTORICAL
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = ship_heavy_battery_3
-					fixed_ship_anti_air_slot = ship_anti_air_3
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-					fixed_ship_radar_slot = empty
-					fixed_ship_engine_slot = heavy_ship_engine_3
-					fixed_ship_secondaries_slot = ship_secondaries_2
-					fixed_ship_armor_slot = ship_armor_bb_3
-					front_1_custom_slot = ship_heavy_battery_3
-					mid_1_custom_slot = ship_anti_air_3
-					mid_2_custom_slot = ship_anti_air_3
-					mid_3_custom_slot = ship_heavy_battery_3
-					rear_1_custom_slot = ship_heavy_battery_3
-				}
-			}
-			custom_effect_tooltip="Adds two Vittorio Veneto Battleships to the production queue, at 85% and 90% complete, respectively."
-			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_heavy_3
-						creator = "ITA"
-						version_name = "Littorio-class"
-					}
-					name = "Vittorio Veneto"
-					requested_factories = 1
-					progress = 0.9
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_heavy_3
-						creator = "ITA"
-						version_name = "Littorio-class"
-					}
-					name = "Littorio"
-					requested_factories = 1
-					progress = 0.85
-					amount = 1
-				}
-			}
+			
+			
 		}
 	}
 	focus = {
@@ -262,7 +207,6 @@ focus_tree = {
 		icon = GFX_goal_italy_cavagnari
 		prerequisite = { focus = ITA_naval_effort }
 		mutually_exclusive = { focus = ITA_plan_z}
-		available={date>1939.7.1}
 		x = 3
 		y = 1
 		relative_position_id = ITA_naval_effort
@@ -271,18 +215,6 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		complete_tooltip = {
-			navy_experience = 25
-			every_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			set_technology={ improved_submarine=1}
-		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			navy_experience = 25
@@ -310,7 +242,12 @@ focus_tree = {
 				
 				
 			}
-			set_technology={ improved_submarine=1}
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 2.0
+				uses = 2
+				category = ss_tech
+			}
 		}
 	}
 	focus = {
@@ -462,6 +399,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_germaniawerft
 		cost = 5
+		available = {date > 1940.01.01}
 		ai_will_do = {
 			factor = 1
 		}
@@ -623,7 +561,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_timed_idea = {idea = ITA_atlantikschlacht days= 365}
+			add_timed_idea = {idea = ITA_atlantikschlacht days= 100}
 		}
 	}
 	focus = {
@@ -728,6 +666,7 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+		add_political_power = 150
 		413 = {
 				add_resource = {
 					type = steel
@@ -1452,66 +1391,33 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_slovenia_dalmatia_claims
-		icon = GFX_goal_generic_demand_territory
+		id = ITA_road_rome
+		icon = ger_alliance_with_italy
 		prerequisite = { focus = ITA_triumph_in_africa}
+		available = {date > 1937.08.01}
 		x = 8
 		y = 1
 		relative_position_id = ITA_triumph_in_africa
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
-		bypass = {
-			NOT = { country_exists = YUG }
-		}
 		completion_reward = {
-			add_state_claim = 102
-			add_state_claim = 103
-			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
+			add_named_threat = { threat = 5 name = ITA_slovenia_dalmatia_claims_threat }
+			add_ideas = ITA_hitler_rome
 			USA = {
 				set_country_flag = { flag = USA_yugoslavia_window days = 60 value = 1 }
-			}
-			YUG = {
-				add_opinion_modifier = { target = ITA modifier = claimed_western_yugoslavia }
-				if = {
-					limit = {
-						ROOT = { has_government = fascism }
-						NOT = { has_government = fascism }
-						NOT = { has_idea_with_trait = fascist_demagogue }
-						fascism < 0.3
-					}
-					add_popularity = {
-						ideology = fascism
-						popularity = -0.07
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { has_government = democratic }
-						NOT = { has_government = democratic }
-						NOT = { has_idea_with_trait = democratic_reformer }
-						democratic < 0.3
-					}
-					add_popularity = {
-						ideology = democratic
-						popularity = -0.07
-					}
-				}
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.192 }
 			}
 		}
 	}
 	focus = {
 		id = ITA_bulgaria_friend
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
+		prerequisite = { focus = ITA_road_rome }
 		x = 0
 		y = 1
-		relative_position_id = ITA_slovenia_dalmatia_claims
-		cost = 10
+		relative_position_id = ITA_road_rome
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1697,6 +1603,7 @@ focus_tree = {
 			add_state_core = 44
 			add_state_core = 159
 			add_state_core = 320
+			add_state_core = 103
 		}
 	}
 focus = {
@@ -1784,7 +1691,7 @@ focus = {
 		prerequisite = { focus = ITA_triumph_in_africa }
 		x = 11
 		y = 1
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1875,7 +1782,7 @@ focus = {
 		x = -1
 		y = 1
 		prerequisite = { focus = ITA_fortification_effort }
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2163,7 +2070,7 @@ focus = {
 		x = 0
 		y = 1
 		prerequisite = { focus = ITA_fortification_effort_3 }
-		cost = 2
+		cost = 3
 		available = {  OR = {NOT = { ITA = {controls_state =152}     }NOT = { ITA = {controls_state =115}     } NOT = { ITA = {controls_state =2}     }NOT = { ITA = {controls_state =153}     }}       }
 		ai_will_do = {
 			factor = 1
@@ -2242,7 +2149,7 @@ focus = {
 		x = 0
 		y = 1
 		prerequisite = { focus = ITA_fortification_effort_2 }
-		cost = 5
+		cost = 3
 		available = {  ITA = {controls_state =582} }
 		ai_will_do = {
 			factor = 1
@@ -2294,6 +2201,152 @@ focus = {
 					type = bunker
 					level = 2
 					province =1006
+					instant_build = yes
+				}
+			}
+		}
+	}
+    focus = {
+		id = ITA_libya
+		prerequisite = { focus = ITA_modernize_our_economy focus = ITA_highway }
+		relative_position_id = ITA_modernize_our_economy
+		icon = GFX_goal_generic_construct_civilian
+		available = {
+		}
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			415  = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 3
+						instant_build = yes
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 6
+						province =10843
+						instant_build = yes
+					}
+				}
+			}
+			581 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+				}
+			}
+			414 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+				}
+			}
+			413 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					set_building_level = {
+						type = air_base
+						level = 10
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+    focus = {
+		id = ITA_refs
+		prerequisite = { focus = ITA_highway focus = ITA_research }
+		relative_position_id = ITA_highway
+		icon = GFX_goal_generic_oil_refinery
+		available = {
+			ITA = {
+				controls_state = 413
+			}
+		}
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+		    add_resource = {
+				type = oil
+				amount = 40
+				state = 414
+			}
+			2 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			154 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2437,6 +2490,7 @@ focus = {
 	focus = {
 		id = ITA_fill_1
 		prerequisite = { focus = ITA_rommel}
+		icon = goal_italy_Ultranationalism_2
 		available = {
 		}
 		relative_position_id = ITA_rommel
@@ -2452,6 +2506,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_fill_2
+		icon = GOAL_equpiment
 		prerequisite = { focus = ITA_fill_1}
 		available = {
 		}
