@@ -10,7 +10,7 @@ state={
 		}
 		owner = NOR
 		buildings = {
-			infrastructure = 6
+			infrastructure = 5
 			arms_factory = 1
 			industrial_complex = 3
 			dockyard = 1
