@@ -2,6 +2,34 @@ spriteTypes = {
 
 	#### Generic continuous goal icons
 	spriteType = {
+		name = "goal_italy_bring_industry_to_the_mezzogiorno"
+		textureFile = "gfx/interface/goals/goal_italy_bring_industry_to_the_mezzogiorno.dds"
+	}
+	spriteType = {
+		name = "ITA_italian_highways"
+		textureFile = "gfx/interface/goals/ITA_italian_highways.dds"
+	}
+	spriteType = {
+		name = "goal_italy_increase_settlements_in_eritrea"
+		textureFile = "gfx/interface/goals/goal_italy_increase_settlements_in_eritrea.dds"
+	}
+	spriteType = {
+		name = "goal_italy_increase_marble_production"
+		textureFile = "gfx/interface/goals/goal_italy_increase_marble_production.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_generic_construct_infrastructure2"
+		textureFile = "gfx/interface/goals/goal_generic_construct_infrastructure2.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_learn_from_ethiopian_war"
+		textureFile = "gfx/interface/goals/goal_ita_learn_from_ethiopian_war.tga"
+	}
+	spriteType = {
+		name = "GFX_focus_military_land_survey"
+		textureFile = "gfx/interface/goals/goal_military_land_survey.dds"
+	}
+	spriteType = {
 		name = "GFX_focus_HUN_revisions"
 		textureFile = "gfx/interface/goals/goal_hun_revisionism.dds"
 	}

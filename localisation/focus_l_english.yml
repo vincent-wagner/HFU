@@ -36,6 +36,8 @@
  GER_motorised_infantry:1 "Motorized Rocket Artillery"
  jet_fighter1:0"Me 262"
  GER_advanced_heavy_tank:0 "Königstiger"
+ ITA_resources:0 "Exploit Our Empire"
+ ITA_colonial:0 "Ethiopian War Logistics"
  ITA_fighter2_alt:0"Homeland Fighter II"
  ITA_fighter3_alt:0"Homeland Fighter III"
  fighter3:0"Fighter III"

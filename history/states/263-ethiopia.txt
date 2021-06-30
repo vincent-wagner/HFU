@@ -13,8 +13,6 @@ state=
 		add_core_of=SWE
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 1
 			air_base = 1
 		}
 		victory_points = {
@@ -28,7 +26,6 @@ state=
 		}
 		1936.6.1 = {
 			owner = ITA
-			add_core_of=SWE
 			add_core_of=SWE
 			controller = ITA
 		}
