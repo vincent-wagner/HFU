@@ -867,7 +867,7 @@ special_projects = {
 		}
 		activation = {has_completed_focus=GER_exploit_occupied_territories}
 		is_good = yes
-		days_mission_timeout = 30
+		days_mission_timeout = 60
 		timeout_effect = {
 			activate_mission=GER_exploit_occupied_territories
 			exploit_occupied_territories=yes
