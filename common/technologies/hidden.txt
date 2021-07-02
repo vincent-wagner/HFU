@@ -7,4 +7,12 @@ technologies = {
 			motorized_rocket_brigade
 		}
 	}
-	}
+	italy_heavy_tank = {
+		enable_equipments = {
+			ITA_heavy_tank_equipment_2
+		}
+		enable_subunits = {
+			heavy_armor
+		}
+	}	
+}

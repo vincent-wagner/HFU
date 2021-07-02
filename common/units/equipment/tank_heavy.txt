@@ -757,11 +757,35 @@ equipments = {
     		hard_attack = 6
     		ap_attack = 88
     		air_attack = 30
-    		    build_cost_ic = 31 
-	 	lend_lease_cost = 6.2   
+    		build_cost_ic = 31 
+	 	    lend_lease_cost = 6.2   
     		resources = {
     			#oil = 1
     			steel = 4
+    			chromium = 3
+    		}
+    	}
+		ITA_heavy_tank_equipment_2 = {
+    		year = 1941
+    		archetype = heavy_tank_equipment
+    		parent = heavy_tank_equipment_1
+    		family = heavy_tank_equipment_2
+    		priority = 90
+    		visual_level = 1
+    		#Misc Abilities
+    		maximum_speed = 6
+    		#Defensive Abilities
+    		defense = 8
+    		breakthrough = 52
+    		armor_value = 110
+    		#Offensive Abilities
+    		soft_attack = 20
+    		hard_attack = 32
+    		ap_attack = 111
+    		build_cost_ic = 33 
+	 	    lend_lease_cost = 6.6   
+    		resources = {
+    			steel = 3
     			chromium = 3
     		}
     	}

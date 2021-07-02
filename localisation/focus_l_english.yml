@@ -1,6 +1,11 @@
 ﻿l_english:
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
+ ITA_Fiat_26:0 "P26/40"
+ ITA_german_rocketry:0 "German Rocket Technology"
+ ITA_roman_legacy:0 "Roman Legacy"
+ ITA_roman_legacy_desc:0 "The German Soldier has impressed the world, however the Italian Bersagliere soldier has impressed the German soldier"
  SOV_factories_must_grow:0 "Our Factories Must Grow"
+ ITA_8_Million_Bayonets:0 "8 Million Bayonets"
  GER_ground_support:0 "Tactical Air Effort"
  SOV_industrial_revolution:0 "Industrial Revolution"
  SOV_research_institutes:0 "Research Institutes"

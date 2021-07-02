@@ -2385,7 +2385,7 @@ focus = {
 		id = ITA_desert_fox
 		icon = GFX_focus_ger_osttruppen
 		prerequisite = { focus = ITA_rommel }
-		available = {has_war = yes}
+		available = {NOT = {has_full_control_of_state = 582 }}
 		x = 0
 		y = 1
 		relative_position_id = ITA_rommel
@@ -2467,7 +2467,7 @@ focus = {
 	    }
 	}
 	focus = {
-		id = ITA_fill_3
+		id = ITA_roman_legacy
 		icon = GFX_focus_ITA_sparta
 		prerequisite = { focus = ITA_egypt}
 		available = {
@@ -2480,15 +2480,14 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-		
+		add_ideas = ITA_roman_legacy
 		}
 	}
 	focus = {
-		id = ITA_fill_1
+		id = ITA_8_Million_Bayonets
 		prerequisite = { focus = ITA_rommel}
 		icon = goal_italy_Ultranationalism_2
-		available = {
-		}
+		available = {NOT = {has_full_control_of_state = 582 has_full_control_of_state = 413}}
 		relative_position_id = ITA_rommel
 		x = 2
 		y = 1
@@ -2497,16 +2496,16 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-		
+		add_timed_idea = {days = 120 idea = GER_reinforce_the_line_idea }
 		}
 	}
 	focus = {
-		id = ITA_fill_2
+		id = ITA_Fiat_26
 		icon = GOAL_equpiment
-		prerequisite = { focus = ITA_fill_1}
+		prerequisite = { focus = ITA_8_Million_Bayonets}
 		available = {
 		}
-		relative_position_id = ITA_fill_1
+		relative_position_id = ITA_8_Million_Bayonets
 		x = 0
 		y = 2
 		cost = 5
@@ -2514,14 +2513,78 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-		
+		    set_technology = {
+		        italy_heavy_tank = 1
+		    }
+		    create_equipment_variant = {
+				name = "Fiat L6/40s"
+				type = ITA_heavy_tank_equipment_2
+				upgrades = {
+					tank_gun_upgrade = 5
+					tank_reliability_upgrade = 5
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ITA_heavy_tank_equipment_2
+					creator = "ITA"
+					version_name = "Fiat"		
+				}
+				requested_factories = 20
+				progress = 0.1
+				efficiency = 50
+			}
+			division_template = {
+				name = "TONK"
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					heavy_armor = { x = 0 y = 2 }
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+					heavy_armor = { x = 1 y = 3 }
+					heavy_armor = { x = 2 y = 0 }
+					heavy_armor = { x = 2 y = 1 }
+					heavy_armor = { x = 2 y = 2 }
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					motorized = { x = 4 y = 0 }
+					motorized = { x = 4 y = 1 }
+					motorized = { x = 4 y = 2 }
+					motorized = { x = 4 y = 3 }
+					mot_anti_air_brigade = { x = 4 y = 4}
+					mot_anti_air_brigade = { x = 4 y = 5 }
+				}
+				support = {
+					light_tank_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }
+					anti_air = { x = 0 y = 5 }
+				}
+			}
+				155 = {
+					for_loop_effect = {
+						end = 4
+						create_unit = {
+							division = "name = \"TONK\" division_template = \"TONK\" start_experience_factor = 2.0"
+							owner = ITA
+						}
+					}
+				} 
 		}
 	}
 	focus = {
-		id = ITA_fill_4
-		icon = GFX_focus_ITA_strike_1
+		id = ITA_german_rocketry
+		icon = GFX_focus_GER_New_Missile_Designs
 		prerequisite = { focus = ITA_rommel}
 		available = {
+		date > 1941.06.01
 		}
 		relative_position_id = ITA_rommel
 		x = 1
@@ -2531,15 +2594,25 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-		
+		    set_technology = {
+			    rocket_engines = 1
+			    experimental_rockets = 1
+		    }
+			add_ideas = GER_rocketry_idea
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 3.0
+				uses = 2
+				category = rocketry
+			}
 		}
+	
 	}
 	focus = {
 		id = ITA_escape_the_cage
 		icon = GFX_focus_ITA_escape_the_cage
 		prerequisite = { focus = ITA_rommel}
-		available = {
-		}
+		available = {NOT = {has_full_control_of_state = 113 has_full_control_of_state = 112}}
 		relative_position_id = ITA_rommel
 		x = -1
 		y = 2
@@ -2548,16 +2621,95 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-		
+		    custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces in Northern Italy that have at least one coastal fort."
+			custom_effect_tooltip="Adds one level of State Anti-Air to every state in Northern Italy that has at least one one level of State Anti-Air."
+		    hidden_effect = { 
+			21 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+		    653 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			158 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			154 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			}	
 		}
 	}
 	focus = {
 		id = ITA_viva_il_duce
 		icon = GFX_focus_ITA_viva_il_duce
-		prerequisite = { focus = ITA_fill_3}
+		prerequisite = { focus = ITA_roman_legacy}
 		prerequisite = { focus = ITA_escape_the_cage}
-		prerequisite = { focus = ITA_fill_4}
-		prerequisite = { focus = ITA_fill_2}
+		prerequisite = { focus = ITA_german_rocketry}
+		prerequisite = { focus = ITA_Fiat_26}
 		available = {
 		}
 		relative_position_id = ITA_rommel

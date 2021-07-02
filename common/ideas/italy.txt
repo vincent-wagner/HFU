@@ -184,6 +184,17 @@ ideas = {
 				agency_upgrade_time = -0.30
 			}
 		}
+		ITA_roman_legacy = {
+			allowed = {
+				original_tag = "ITA"
+			}
+			picture = ita_bad_leadership
+			removal_cost = -1
+			modifier = {
+			army_org_Factor = 0.1
+			army_morale_factor=0.1	
+			}
+		}
 		ITA_bad_leadership = {
 			allowed = {
 				original_tag = "ITA"
@@ -193,6 +204,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				political_advisor_cost_factor = 0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 		ITA_calm_the_masses = {
