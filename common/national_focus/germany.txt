@@ -4366,75 +4366,20 @@ focus = {
 	id = GER_adjust_the_building_plans
 	icon = GFX_focus_GER_adjust
 	prerequisite = {  focus = GER_keep_our_technology }
-	available = {
-		date > 1938.1.1
-	}
-	bypass = {
-		date > 1939.2.1
-	}
 	x = 0
 	y = 1
 	relative_position_id = GER_keep_our_technology
 	cost = 5
 	completion_reward = {
-		custom_effect_tooltip = "This focus will reduce the infrastructure if the current level is higher than in the foucs. It will bypass if not taken before February 1939."
-		64 ={
-		set_building_level = {
-        type = infrastructure
-        level = 7
-        }
-	}
-		59 ={
-		set_building_level = {
-		type = infrastructure
-		level = 7
-		}
-	}
-		60 ={
-		set_building_level = {
-		type = infrastructure
-		level = 7
-		}
-	}
-		54 ={
-		set_building_level = {
-		type = infrastructure
-		level = 7
-		}
-	}
-	    55 ={
-		set_building_level = {
-		type = infrastructure
-		level = 9
-		}
-	}
-        65 ={
-		set_building_level = {
-		type = infrastructure
-		level = 9
-		}
-	}
-	    66 ={
-		set_building_level = {
-		type = infrastructure
-		level = 9
-		}
-	}
-	    68 ={
-		set_building_level = {
-		type = infrastructure
-		level = 9
-		}
-	}
-
-		                }
+		add_ideas = GER_adjust_building_plans
+                        }
 }									 	
 focus = {
 	id = GER_determine_the_investment
 	icon = GFX_focus_GER_determine_the_investment
 	prerequisite = {  focus = GER_adjust_the_building_plans }
 	available = {
-		date > 1939.3.1
+		date > 1940.1.1
 	}
 	x = 0
 	y = 1

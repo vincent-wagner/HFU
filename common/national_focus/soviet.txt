@@ -2061,11 +2061,11 @@ focus = {
 	x = 0
 	y = 1
 	relative_position_id = SOV_leningrad_designs
-	cost = 10
+	cost = 5
 	completion_reward = {
 		add_tech_bonus = {
 			name = mech_army_bonus
-				bonus = 1.5
+				bonus = 1.0
 				uses = 1
 				technology = mechanised_infantry
 		}
@@ -2271,7 +2271,7 @@ focus = {
 focus = {
 	id = SOV_modernize_the_tank_corp
 	icon = GFX_focus_SOV_modernize_tank
-	cost = 10
+	cost = 5
 	prerequisite = { focus = SOV_winter_camps focus = SOV_mechanization_effort }
 	relative_position_id = SOV_winter_camps 
 	x = 1

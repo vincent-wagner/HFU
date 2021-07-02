@@ -752,6 +752,16 @@ ideas = {
 				consumer_goods_factor = 0.015
 			}
 		}
+		GER_adjust_building_plans= {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				global_building_slots_factor=0.15
+			}
+		}
 		GER_all_options = {
 			allowed = {
 				always = no

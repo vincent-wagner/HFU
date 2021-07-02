@@ -46,10 +46,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/goal_hun_revisionism.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_ITA_spqr"
-		textureFile = "gfx/interface/goals/spqr.png"
-	}
-	spriteType = {
 		name = "GFX_focus_SOV_factories_must_grow"
 		textureFile = "gfx/interface/goals/sov/SOV_factories_must_grow.dds"
 	}
@@ -3101,5 +3097,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_ITA_strike_1"
 		textureFile = "gfx/interface/goals/ita/ITA_strike_1.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_spqr"
+		textureFile = "gfx/interface/goals/ita/spqr.dds"
 	}
 }	
