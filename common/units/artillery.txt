@@ -37,9 +37,9 @@ sub_units = {
 		supply_consumption = 0.09
 
 		# Support nerfs to combat abilities
-		defense = -0.4
+		defense = -0.2
 		breakthrough = -0.5
-		soft_attack = -0.6
+		soft_attack = -0.65
 		hard_attack = -0.4
 
 		same_support_type = artillery
@@ -83,9 +83,9 @@ sub_units = {
 		supply_consumption = 0.09
 
 		# Support nerfs to combat abilities
-		defense = -0.4
-		soft_attack = -0.45
+		soft_attack = -0.65
 		hard_attack = -0.5
+		breakthrough = -0.5
 
 
 		can_be_parachuted = yes
@@ -145,8 +145,8 @@ sub_units = {
 		active = yes
 		defense = 2
 		breakthrough = -0.5
-		soft_attack = -0.45
-		hard_attack = -0.3
+		soft_attack = -0.65
+		hard_attack = -0.4
 		armor_value = -1
 		type = {
 			armor

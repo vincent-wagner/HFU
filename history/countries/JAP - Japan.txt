@@ -157,6 +157,11 @@
           producer =JAP
  }
  add_equipment_to_stockpile = {
+	type = amphibious_mechanized_equipment
+	amount = 500
+	producer =JAP
+}
+ add_equipment_to_stockpile = {
           type = fighter_equipment_1
           amount = 1200
           producer = JAP

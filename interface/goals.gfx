@@ -3086,4 +3086,20 @@ spriteTypes = {
 		name = "GFX_focus_GER_rebuild_our_glory"
 		textureFile = "gfx/interface/goals/ger/GER_rebuild_our_glory.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_ITA_viva_il_duce"
+		textureFile = "gfx/interface/goals/ita/ITA_viva_il_duce.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_sparta"
+		textureFile = "gfx/interface/goals/ita/ITA_sparta.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_escape_the_cage"
+		textureFile = "gfx/interface/goals/ita/ITA_escape_the_cage.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_strike_1"
+		textureFile = "gfx/interface/goals/ita/ITA_strike_1.dds"
+	}
 }	

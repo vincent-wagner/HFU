@@ -836,11 +836,6 @@ focus_tree = {
 				    level = 2
 				    instant_build = yes
 				}
-				add_building_construction = {
-				    type = industrial_complex
-				    level = 2
-			        instant_build = yes
-				}
 			}
 		}
 	}
@@ -2473,6 +2468,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_fill_3
+		icon = GFX_focus_ITA_sparta
 		prerequisite = { focus = ITA_egypt}
 		available = {
 		}
@@ -2523,6 +2519,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_fill_4
+		icon = GFX_focus_ITA_strike_1
 		prerequisite = { focus = ITA_rommel}
 		available = {
 		}
@@ -2538,7 +2535,8 @@ focus = {
 		}
 	}
 	focus = {
-		id = ITA_fill_5
+		id = ITA_escape_the_cage
+		icon = GFX_focus_ITA_escape_the_cage
 		prerequisite = { focus = ITA_rommel}
 		available = {
 		}
@@ -2554,9 +2552,10 @@ focus = {
 		}
 	}
 	focus = {
-		id = ITA_fill_6
+		id = ITA_viva_il_duce
+		icon = GFX_focus_ITA_viva_il_duce
 		prerequisite = { focus = ITA_fill_3}
-		prerequisite = { focus = ITA_fill_5}
+		prerequisite = { focus = ITA_escape_the_cage}
 		prerequisite = { focus = ITA_fill_4}
 		prerequisite = { focus = ITA_fill_2}
 		available = {

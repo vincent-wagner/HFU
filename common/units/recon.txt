@@ -204,7 +204,7 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Support nerfs to combat abilities
-		breakthrough 	= 5
+		breakthrough 	= 1
 		defense 		= 5
 		soft_attack = 10
 		essential = {
@@ -285,7 +285,7 @@ sub_units = {
 
 		# Support nerfs to combat abilities
 		defense = -0.5
-		breakthrough = -0.45
+		breakthrough = -0.85
 		soft_attack = -0.9
 		essential = {
 			light_tank_equipment
