@@ -3071,6 +3071,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/sov/SOV_transvolga_railways.dds"
 	}
 	spriteType = {
+		name = "GFX_focus_SOV_work_faster"
+		textureFile = "gfx/interface/goals/sov/SOV_work_faster.dds"
+	}
+	spriteType = {
 		name = "GFX_focus_GER_hermann_goering"
 		textureFile = "gfx/interface/goals/ger/GER_hermann_goering.dds"
 	}

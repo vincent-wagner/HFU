@@ -1526,7 +1526,7 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { date > 1942.8.1}
+		available = { date > 1942.1.1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1555,8 +1555,12 @@ focus = {
 					level = 3
 					instant_build = yes
 				}
+				add_resource = {
+					type = tungsten
+					amount = 100
+				}
 			}
-			add_timed_idea={idea=GER_mineraloelsicherungsplan days=180}
+			add_timed_idea={ idea= GER_mineraloelsicherungsplan days= 180 }
 		}
 	}
 	focus = {

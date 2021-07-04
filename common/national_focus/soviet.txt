@@ -69,6 +69,8 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			add_political_power = 150
+			add_ideas = SOV_industrial_boom
 			514 = {
 				add_resource = {
 					type = steel
@@ -82,7 +84,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = tungsten
-					amount = 30
+					amount = 60
 					state = 506
 				}
 			}
@@ -100,43 +102,28 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			210 = {
-				set_building_level = {
-					type = infrastructure
-					level = 10
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 15
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
 			212 = {
-				set_building_level = {
-					type = infrastructure
-					level = 10
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 15
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
 			188 = {
-				set_building_level = {
-					type = infrastructure
-					level = 10
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 15
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -200,9 +187,22 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SOV_speed_up_production
+        icon = GFX_focus_SOV_work_faster
+		prerequisite = {  focus = SOV_peoples_commissariat }
+		relative_position_id = SOV_peoples_commissariat
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = { idea = SOV_work_faster days = 90 }
+		}
+	}
+	focus = {
 		id = SOV_improve_stalin_line
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SOV_production_effort focus= SOV_southern_thrust}
+		prerequisite = { focus = SOV_production_effort focus= SOV_southern_thrust focus = SOV_speed_up_production }
 		relative_position_id = SOV_peoples_commissariat
 		available = { }
 		x = 0
@@ -439,7 +439,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = "This focus will spawn 20 Elite Divisions in Gorki"
+			custom_effect_tooltip = "This focus will spawn 30 Elite Divisions in Gorki"
 			division_template = {
 				name = "Red Guards"
 				regiments = {
@@ -475,7 +475,7 @@ focus_tree = {
 			}
 			245 = {
 				for_loop_effect = {
-					end = 20
+					end = 30
 					create_unit = {
 						division = "name = \"Red Guards\" division_template = \"Red Guards\" start_experience_factor = 0.4"
 						owner = SOV
@@ -978,7 +978,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_production_effort
 		relative_position_id = SOV_peoples_commissariat
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = -1
+		x = -2
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1300,11 +1300,19 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			air_experience = 250
 			add_tech_bonus = {
-				name = coastal_command_focus
+				name = air_bonus
 				bonus = 1.0
-				uses = 2
-				category = cas_bomber
+				uses = 1
+				technology= cas2
+			}
+			add_tech_bonus = {
+				name = air_bonus
+				ahead_reduction = 1
+				bonus = 1.1
+				uses = 1
+				technology= cas3
 			}
 		}
 	}
@@ -1382,7 +1390,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_workers_culture
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1413,7 +1421,8 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 0.5
+				ahead_reduction = 1
+				bonus = 1.1
 				uses = 1
 				technology= fighter3
 			}
@@ -1570,7 +1579,7 @@ focus_tree = {
 		id = SOV_southern_thrust
 		icon = GFX_focus_SOV_southern_thrust
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
 		cost = 5
@@ -2048,6 +2057,14 @@ focus = {
 	relative_position_id = SOV_progress_cult
 	cost = 5
 	completion_reward = {
+		188 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+		}
 		custom_effect_tooltip = available_designer
 		show_ideas_tooltip = okmo
     }
@@ -2086,7 +2103,6 @@ focus = {
 	relative_position_id = SOV_socialist_science
 	cost = 10
 	completion_reward = {
-		custom_effect_tooltip = "GG go next."
 		245 = {
 			
 				add_extra_state_shared_building_slots = 3
@@ -2164,7 +2180,7 @@ focus = {
 	mutually_exclusive = {
 		focus = SOV_short_term }
 	completion_reward = { 
-		add_timed_idea = {idea = peoples_commissariat_focus2 days = 900}
+		add_timed_idea = {idea = peoples_commissariat_focus2 days = 1000}
 	}
 }
 focus = {
@@ -2220,14 +2236,6 @@ completion_reward = {
 			instant_build = yes
 			}
         }	
-	318 = {
-		add_extra_state_shared_building_slots = 6
-			add_building_construction = {
-			type = arms_factory
-			level = 6
-			instant_build = yes
-			}
-			}
     }
 }	
 focus = {
@@ -2280,7 +2288,7 @@ focus = {
 		add_tech_bonus = {
 		name = armor
 		uses = 1
-		bonus = 1.1
+		bonus = 1.2
 		ahead_reduction = 1
 		technology = advanced_medium_tank
 
@@ -2331,7 +2339,7 @@ focus = {
 	y = 1
 	completion_reward = { 
 		add_tech_bonus {
-            bonus = 1.5
+            bonus = 1.0
 			uses = 2
 			category = construction_tech
 		}
