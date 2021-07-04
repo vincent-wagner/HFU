@@ -172,7 +172,7 @@ focus_tree = {
 			50 = {
 				add_resource = {
 					type = aluminium
-					amount = 25
+					amount = 20
 				}
 			}
 		}
@@ -610,8 +610,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			
-					43 = {add_extra_state_shared_building_slots = 6}
-				
+					43 = {add_extra_state_shared_building_slots = 3}
+					151 = {add_extra_state_shared_building_slots = 3}
 			
 		}
 	}
@@ -654,7 +654,7 @@ focus_tree = {
 				set_state_flag = HUN_expand_the_manfred_weiss_steel_works_IC
 				add_resource = {
 					type = steel
-					amount = 40
+					amount = 30
 				}
 			}
 		}
@@ -690,7 +690,7 @@ focus_tree = {
 			43 = {
 				add_resource = {
 					type = tungsten
-					amount = 40
+					amount = 25
 				}
 				add_resource = {
 					type = chromium
@@ -1042,6 +1042,12 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = HUN_mobile_corps_doctrine
+				bonus = 1.0
+				uses = 1
+				category = mountaineers_tech
 			}
 		}
 	}

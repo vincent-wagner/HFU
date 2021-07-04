@@ -257,6 +257,24 @@ instant_effect =
 	}
 	add_equipment_production = {
 		equipment = {
+			type = amphibious_mechanized_equipment_1
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = gw_armored_car_equipment
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
 			type = nav_bomber_equipment_1
 			creator = "JAP"
 		}

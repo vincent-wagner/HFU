@@ -144,22 +144,27 @@
  add_equipment_to_stockpile = {
           type = motorized_equipment_1
           amount = 1200
-          producer =JAP
+          producer = JAP
  }
  add_equipment_to_stockpile = {
           type = support_equipment_1
           amount = 481
-          producer =JAP
+          producer = JAP
  }
  add_equipment_to_stockpile = {
           type = light_tank_equipment_1
           amount = 360
-          producer =JAP
+          producer = JAP
  }
  add_equipment_to_stockpile = {
 	type = amphibious_mechanized_equipment
 	amount = 500
-	producer =JAP
+	producer = JAP
+}
+add_equipment_to_stockpile = {
+	type = gw_armored_car_equipment
+	amount = 500
+	producer = JAP
 }
  add_equipment_to_stockpile = {
           type = fighter_equipment_1

@@ -1368,7 +1368,7 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = cas_equipment
-				amount = 500
+				amount = 750
 				producer = ITA
 			}
 			add_tech_bonus = {

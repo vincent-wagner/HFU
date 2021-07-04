@@ -70,12 +70,12 @@ if = {
 #Kick off kings crazy life
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 87
+	amount = 100
 	producer = ROM
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 12355
+	amount = 10000
 	producer = ROM
 }
 add_equipment_to_stockpile = {
@@ -83,12 +83,7 @@ add_equipment_to_stockpile = {
 	amount = 100
 	producer = ROM
 }
-add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 300
-	producer = ROM
-}
-set_convoys = 200
+set_convoys = 300
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.12.20"

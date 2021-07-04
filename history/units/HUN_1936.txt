@@ -43,6 +43,126 @@ division_template = {
 		recon = { x = 0 y = 2 }
 	}
 }
+division_template = {
+	name = "Mountaineers"
+	division_names_group = HUN_MTN_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4}
+		mountaineers =  { x = 2 y = 0 }
+		mountaineers =  { x = 2 y = 1 }
+		mountaineers =  { x = 2 y = 2 }
+		artillery_brigade  =  { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Marine Division"
+	division_names_group = HUN_MTN_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4}
+		marine =  { x = 2 y = 0 }
+		marine =  { x = 2 y = 1 }
+		marine =  { x = 2 y = 2 }
+		artillery_brigade  =  { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		marine = { x = 3 y = 0 }
+		marine = { x = 3 y = 1 }
+		marine = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Shock Troopers"
+	division_names_group = HUN_MTN_01
+	regiments = {
+		shocktroop = { x = 0 y = 0 }
+		shocktroop = { x = 0 y = 1 }
+		shocktroop = { x = 0 y = 2 }
+		shocktroop = { x = 0 y = 3 }
+		shocktroop = { x = 1 y = 0 }
+		shocktroop = { x = 1 y = 1 }
+		shocktroop = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4}
+		shocktroop =  { x = 2 y = 0 }
+		shocktroop =  { x = 2 y = 1 }
+		shocktroop =  { x = 2 y = 2 }
+		artillery_brigade  =  { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		shocktroop = { x = 3 y = 0 }
+		shocktroop = { x = 3 y = 1 }
+		shocktroop = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Desert Troopers"
+	division_names_group = HUN_MTN_01
+	regiments = {
+		desertinfantry = { x = 0 y = 0 }
+		desertinfantry = { x = 0 y = 1 }
+		desertinfantry = { x = 0 y = 2 }
+		desertinfantry = { x = 0 y = 3 }
+		desertinfantry = { x = 1 y = 0 }
+		desertinfantry = { x = 1 y = 1 }
+		desertinfantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4}
+		desertinfantry =  { x = 2 y = 0 }
+		desertinfantry =  { x = 2 y = 1 }
+		desertinfantry =  { x = 2 y = 2 }
+		artillery_brigade  =  { x = 2 y = 3 }
+		artillery_brigade = { x = 2 y = 4 }
+		desertinfantry = { x = 3 y = 0 }
+		desertinfantry = { x = 3 y = 1 }
+		desertinfantry = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
 units = {
 	division= {
 		name = "This is here so you can look at your generals"
@@ -91,12 +211,21 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = CAS_equipment_1
+			type = amphibious_mechanized_equipment_1
 			creator = "HUN"
 		}
 		requested_factories = 1
-		progress = 0.2
-		efficiency = 50
+		progress = 0.15
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = gw_armored_car_equipment
+			creator = "HUN"
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
 	}
 }
 

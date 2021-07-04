@@ -339,7 +339,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = mech_army_bonus
-					bonus = 1.1
+					bonus = 1.0
 					uses = 1
 					technology = mechanised_infantry2
 			}
@@ -424,7 +424,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = SPA_fascist_economic_aid
 			swap_ideas = {
 				remove_idea = SPA_recovering_from_civil_war
 				add_idea = SPA_recovering_from_civil_war_2
@@ -452,17 +451,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			707 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-			708 = {
+			41 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -473,36 +462,6 @@ focus_tree = {
 				}
 			}
 			161 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-			172 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-			706 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-			41 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -622,12 +581,6 @@ focus_tree = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-				}
-			}
-			706 = {
-				add_resource = {
-					type = steel
-					amount = 10
 				}
 			}
 			162 = {
@@ -870,12 +823,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			706 = {
-				add_resource = {
-					type = steel
-					amount = 10
-				}
-			}
 			162 = {
 				add_resource = {
 					type = steel

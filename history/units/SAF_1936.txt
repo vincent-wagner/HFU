@@ -116,5 +116,23 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
+	add_equipment_production = {
+		equipment = {
+			type = amphibious_mechanized_equipment_1
+			creator = "SAF"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = gw_armored_car_equipment
+			creator = "SAF"
+		}
+		requested_factories = 1
+		progress = 0.29
+		efficiency = 100
+	}
 }
 
