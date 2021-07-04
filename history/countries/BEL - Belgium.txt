@@ -1,6 +1,6 @@
 capital = 6
 oob = "BEL_1936"
-set_research_slots = 3
+set_research_slots = 0
 set_stability = 0.8
 set_war_support = 0.3 #we see what you are doing there Adolf
 set_technology = {
@@ -18,16 +18,36 @@ set_technology = {
 	fuel_refining = 1
 	marines = 1
 }
+
+add_ideas = neutrality_idea1
 add_timed_idea = { idea = no_training days= 1095 }
 add_ideas = peace_training
+
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 4200
+	amount = 18000
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_2
+	amount = 1000
 }
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 150
+	amount = 1500
 }
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1300
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 1600
+}
+add_equipment_to_stockpile = {
+	type = convoy
+	amount = 230
+}
+
 add_manpower = 80000
 set_politics = {
 	ruling_party = democratic

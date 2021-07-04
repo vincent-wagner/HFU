@@ -7,7 +7,7 @@ if = {
 		set_naval_oob = "HOL_1936_naval_legacy"
 	}
 }
-set_research_slots = 3
+set_research_slots = 0
 set_stability = 0.75
 set_war_support = 0
 set_technology = {
@@ -25,12 +25,33 @@ set_technology = {
 	fuel_refining = 1
 	marines = 1
 }
+
+add_ideas = neutrality_idea1
 add_timed_idea = { idea = no_training days= 1095 }
 add_ideas = peace_training
+
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 3600
+	amount = 13500
 }
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 750
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 800
+}
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 850
+}
+add_equipment_to_stockpile = {
+	type = convoy
+	amount = 350
+}
+
+
 add_manpower = 55000
 if = {
 	limit = {

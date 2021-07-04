@@ -6,6 +6,10 @@ focus_tree = {
 			add = 20
 			OR = {
 				tag = TUR
+				tag = AUS
+				tag = LIT
+				tag = HOL
+				tag = BEL
 			}
 		}
 	}

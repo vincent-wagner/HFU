@@ -8,8 +8,12 @@ state={
 			8500 3
 		}
 		owner = LAT
+		add_extra_state_shared_building_slots = 10
 		buildings = {
-			infrastructure = 5
+			infrastructure = 10
+			arms_factory = 2
+			industrial_complex =  4
+			dockyard = 4
 			8500 = {
 				naval_base = 1
 			}

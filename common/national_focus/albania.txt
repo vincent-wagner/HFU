@@ -6,7 +6,7 @@ focus_tree = {
 			add = 10
 			OR={tag = ALB
 				tag = LUX
-				tag=AUS}
+			}
 		}
 	}
 	default = no

@@ -6,13 +6,16 @@ set_technology = {
 	tech_support = 1
 }
 add_ideas = no_training
+
+add_ideas = neutrality_idea1
+
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 3800
+	amount = 4000
 }
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 100
+	amount = 500
 }
 set_politics = {
 	ruling_party = neutrality

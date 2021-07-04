@@ -5,7 +5,10 @@ add_ideas = {
 	limited_conscription
 }
 set_technology = {}
+
+add_ideas = neutrality_idea1
 add_ideas = no_training
+
 set_convoys = 1
 set_politics = {
 	ruling_party = neutrality

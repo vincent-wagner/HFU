@@ -8,6 +8,20 @@ ideas = {
 			removal_cost=-1
 			modifier={production_lack_of_resource_penalty_factor = -1}
 		}
+		neutrality_idea1 = {
+			allowed = {
+				always = no
+			}
+			picture = GFX_goal_generic_production
+			removal_cost=-1
+			modifier={
+				consumer_goods_factor = 1000
+				production_speed_buildings_factor = -1000
+				research_speed_factor = -1000
+                political_power_gain = -1000
+				industrial_capacity_factory = -1000
+			}
+		}
 		wartime_economy_man = {
 			removal_cost = -1
 			allowed = {

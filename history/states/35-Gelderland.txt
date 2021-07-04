@@ -5,8 +5,9 @@ state={
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 5
+			infrastructure = 7
+			industrial_complex = 6
+			dockyard = 3
 		}
 		victory_points = {
 			3047 5

@@ -28,7 +28,7 @@ sub_units = {
 		}
 
 		max_strength = 1
-		max_organisation = 0
+		max_organisation = -16
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
@@ -174,7 +174,7 @@ sub_units = {
 		}
 		initiative = 0.015
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -16
 		default_morale = 0.1
 		max_strength = -10
 		training_time = 120
