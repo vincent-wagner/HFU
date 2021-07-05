@@ -148,7 +148,15 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = fighter_equipment_1
+<<<<<<< Updated upstream
 	amount = 1500
+=======
+<<<<<<< HEAD
+	amount = 1000
+=======
+	amount = 1500
+>>>>>>> 59cb6d8fb6f7eb286ce15f7b24ad6481d30b0876
+>>>>>>> Stashed changes
 	producer = ENG
 }
 add_equipment_to_stockpile = {
