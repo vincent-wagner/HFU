@@ -220,7 +220,8 @@ update_pacific_war = {
 					add_to_variable={GLOBAL.pacific_status=5}
 				}
 				else={
-					add_to_variable={GLOBAL.pacific_status=10}}
+					add_to_variable={GLOBAL.pacific_status=10}
+				}
 			}
 		}
 	}
