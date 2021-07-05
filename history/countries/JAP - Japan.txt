@@ -6,7 +6,8 @@
  set_research_slots = 5
  set_fuel_ratio = 1.0
  add_ideas = {
- 	state_shintoism
+ 	peace_training
+	state_shintoism
  	closed_economy
  	limited_conscription
  	partial_economic_mobilisation

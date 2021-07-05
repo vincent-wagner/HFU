@@ -11,13 +11,15 @@ focus_tree = {
 	focus = {
 		id = crypto_bomb_focus
 		available = {
-			has_war_with = GER
+			date > 1938.1.1
 		}
 		bypass = {
 		}
+		prerequisite = { focus = uk_extra_tech_slot }
 		icon = GFX_focus_generic_cryptologic_bomb
+		relative_position_id = uk_extra_tech_slot
 		x = 0
-		y = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -36,20 +38,12 @@ focus_tree = {
 		id = tizard_mission_focus
 		available = {
 		}
-		prerequisite = { focus = crypto_bomb_focus }
 		prerequisite = { focus = radar_focus }
 		icon = GFX_goal_generic_scientific_exchange
 		x = 0
-		y = 3
-		relative_position_id = crypto_bomb_focus
-		available = {
-			AND = {
-			date > 1941.10.1
-			has_tech = improved_heavy_tank
-			has_tech = mechanised_infantry
-			}
-		}
-		cost = 3
+		y = 1
+		relative_position_id = radar_focus
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -79,53 +73,6 @@ focus_tree = {
 					category = radar_tech
 				}
 			}
-		create_equipment_variant = {
-					name = "Churchill Tank"
-					type = heavy_tank_equipment_2
-					upgrades = {
-						tank_gun_upgrade = 5
-						tank_armor_upgrade = 5
-						tank_reliability_upgrade = 3
-						}
-				}				
-		division_template = {
-					name = "Royal Tank Division"
-					regiments = {
-						heavy_armor = { x = 0 y = 0 }
-						heavy_armor = { x = 0 y = 1 }
-						heavy_armor = { x = 0 y = 2 }
-						heavy_armor = { x = 0 y = 3 }
-						heavy_armor = { x = 1 y = 0 }
-						heavy_armor = { x = 1 y = 1 }
-						heavy_armor = { x = 1 y = 2 }
-						heavy_armor = { x = 1 y = 3 }
-						heavy_armor = { x = 2 y = 0 }
-						heavy_armor = { x = 2 y = 1 }
-						heavy_armor = { x = 2 y = 2 }
-						heavy_armor = { x = 2 y = 3 }
-						mechanized = { x = 3 y = 0 }
-						mechanized = { x = 3 y = 1 }
-						mechanized = { x = 3 y = 2 }
-						mechanized = { x = 3 y = 3 }
-						mechanized = { x = 4 y = 0 }
-						mechanized = { x = 4 y = 1 }
-						mechanized = { x = 4 y = 2 }
-						mechanized = { x = 4 y = 3 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						logistics_company = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }
-					}
-				}
-				124 = {
-				create_unit = {
-							division = "name = \"Royal Tank Division\" division_template = \"Royal Tank Division\" start_experience_factor = 0.3"
-							owner = ENG
-						}
-				}
 		}
 	}
 	focus = {
@@ -536,12 +483,6 @@ focus_tree = {
 				}
 				set_state_flag = royal_ordinance_focus_2AF
 			}
-			add_tech_bonus = {
-				name = royal_ordinance_focus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-			}
 		}
 	}
 	focus = {
@@ -560,15 +501,6 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = {
-			125 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-				set_state_flag = royal_ordinance_focus_2AF
-			}
 			129 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -591,17 +523,14 @@ focus_tree = {
 	}
 	focus = {
 		id = UK_secret_focus
-		prerequisite = { focus = uk_extra_tech_slot}
+		prerequisite = { focus = ENG_motion_of_no_confidence }
 		icon = GFX_goal_generic_secret_weapon
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = uk_extra_tech_slot
-		cost = 10
+		relative_position_id = ENG_motion_of_no_confidence
+		cost = 5
 		ai_will_do = {
 			factor = 1
-		}
-		available = {
-			date> 1939.1.1
 		}
 		available_if_capitulated = yes
 		completion_reward = {
@@ -797,7 +726,7 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = {
-			add_timed_idea = {idea = britannia_rules_the_waves days=120}
+			add_timed_idea = {idea = britannia_rules_the_waves days=90}
 
 
 		}
@@ -939,6 +868,15 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			125 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = dockyard
+					level = 6
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
 				every_unit_leader = {
 				limit={has_id=985}
 				add_skill_level=2
@@ -2487,11 +2425,11 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_small_arms_focus
-		prerequisite = { focus = ENG_motion_of_no_confidence }
+		prerequisite = { focus = ENG_tank_focus }
 		icon = GFX_goal_generic_production2
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = ENG_motion_of_no_confidence
+		relative_position_id = ENG_tank_focus
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2503,20 +2441,27 @@ focus_tree = {
 				name = ENG_artillery_focus
 				bonus = 1.0
 				uses = 1
-				category = artillery
+				category = artillery		
+			add_tech_bonus = {
+				name = royal_ordinance_focus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
 			}
 		}
 	}
 	focus = {
 		id = ENG_kickstart_the_war_industry
-		prerequisite = { focus = ENG_motion_of_no_confidence }
+		prerequisite = { focus = uk_small_arms_focus }
 		available = {
+			GER = {controls_state = 4}
 		}
 		continue_if_invalid = yes
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = ENG_motion_of_no_confidence
+		relative_position_id = uk_small_arms_focus
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2811,5 +2756,66 @@ focus_tree = {
 			hidden_effect={every_country= { limit={NOT={tag=SOV}} country_event = { id = iran.3 } }}
 		}
 	}
-}
+	focus = {
+		id = ENG_churchill
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = ENG_motion_of_no_confidence }
+		relative_position_id = ENG_motion_of_no_confidence
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+			AND = {
+			date > 1941.10.1
+			has_tech = improved_heavy_tank
+			has_tech = mechanised_infantry
+			}
+		}
+		completion_reward = {
+		create_equipment_variant = {
+					name = "Churchill Tank"
+					type = heavy_tank_equipment_2
+					upgrades = {
+						tank_gun_upgrade = 5
+						tank_armor_upgrade = 5
+						tank_reliability_upgrade = 3
+						}
+				}				
+		division_template = {
+					name = "Royal Tank Division"
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 0 y = 2 }
+						heavy_armor = { x = 0 y = 3 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 1 y = 1 }
+						heavy_armor = { x = 1 y = 2 }
+						heavy_armor = { x = 1 y = 3 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 2 y = 1 }
+						heavy_armor = { x = 2 y = 2 }
+						heavy_armor = { x = 2 y = 3 }
+						mechanized = { x = 3 y = 0 }
+						mechanized = { x = 3 y = 1 }
+						mechanized = { x = 3 y = 2 }
+						mechanized = { x = 3 y = 3 }
+						mechanized = { x = 4 y = 0 }
+						mechanized = { x = 4 y = 1 }
+						mechanized = { x = 4 y = 2 }
+						mechanized = { x = 4 y = 3 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						signal_company = { x = 0 y = 4 }
+					}
+				}
+				124 = {
+				create_unit = {
+							division = "name = \"Royal Tank Division\" division_template = \"Royal Tank Division\" start_experience_factor = 0.3"
+							owner = ENG
+						}}}}
 

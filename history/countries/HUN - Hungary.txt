@@ -38,14 +38,11 @@ capital = 43
           amount = 4500
           producer = HUN
  }
- if = {
- 	limit = {
- 		has_dlc = "Death or Dishonor"
- 	}
  	add_ideas = {
  		HUN_treaty_of_triannon
+		peace_training
  	}
- }
+ 
  set_politics = {
  	ruling_party = neutrality
  	last_election = "1935.3.31"
