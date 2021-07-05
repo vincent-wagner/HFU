@@ -26,138 +26,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_naval_rearmament
-		icon = GFX_focus_GER_naval_rearm
-		x = 38
-		y = 1
-		prerequisite = {
-			focus = ITA_triumph_in_africa
-		}
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		complete_tooltip = {
-			every_state = {
-				limit = {	has_state_flag = GER_naval_rearmament_2dockyards }
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = {	has_state_flag = GER_naval_rearmament_1dockyard }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			
-			add_tech_bonus = {
-				name = naval_doctrine
-				bonus = 1.0
-				uses = 2
-				category = naval_doctrine
-			}
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = GER_naval_rearmament_2dockyards
-			}
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_naval_rearmament_1dockyard
-			}
-		}
-	}
-	focus = {
-		id = ITA_naval_effort
-		text = naval_effort
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = ITA_naval_rearmament }
-		x = 0
-		y = 1
-		relative_position_id = ITA_naval_rearmament
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_naval_effort_2dockyards
-			}
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 3.0
-				uses = 1
-				category = dd_tech
-			}
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 3.0
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-	}
-	focus = {
 		id = ITA_plan_z
 		icon = GFX_goal_italy_campioni
-		prerequisite = { focus = ITA_naval_effort }
+		prerequisite = { focus = ITA_triumph_in_africa }
 		mutually_exclusive = { focus = ITA_u_boat_effort }
-		x = -3
+		x = 22
 		y = 1
-		relative_position_id = ITA_naval_effort
+		relative_position_id = ITA_triumph_in_africa
 		cost = 5
 		ai_will_do = {
 			factor = 0.25
@@ -174,42 +49,33 @@ focus_tree = {
 					uses = 2
 					category = naval_doctrine
 				}
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
+			2 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				
-				set_state_flag = GER_plan_z_dockyards
-			}
-			add_tech_bonus = {
-				name = bb_bonus
-				bonus = 2.0
-				uses = 2
-				category = bb_tech
-			}
-			
+				type = dockyard
+				level = 3
+				instant_build = yes
+				                            }
+				}							
+			154 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+					                        }
+				  }
 			
 		}
 	}
 	focus = {
 		id = ITA_u_boat_effort
 		icon = GFX_goal_italy_cavagnari
-		prerequisite = { focus = ITA_naval_effort }
-		mutually_exclusive = { focus = ITA_plan_z}
-		x = 3
+		prerequisite = { focus = ITA_triumph_in_africa }
+		mutually_exclusive = { focus = ITA_plan_z }
+		x = 30
 		y = 1
-		relative_position_id = ITA_naval_effort
+		relative_position_id = ITA_triumph_in_africa
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -217,93 +83,87 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 50
 			add_tech_bonus = {
 				name = naval_doctrine
 				bonus = 1.0
 				uses = 2
 				category = naval_doctrine
 			}
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 3
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-				
-				
-			}
+			add_timed_idea = { idea = ITA_dockyard_building days = 90 }
+		}
+	}
+	focus = {
+		id = ITA_naval_rearmament
+		icon = GFX_focus_GER_naval_rearm
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = ITA_plan_z
+			focus = ITA_u_boat_effort
+		}
+		relative_position_id = ITA_plan_z
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 2.0
-				uses = 2
-				category = ss_tech
+				bonus = 3.0
+				uses = 1
+				category = dd_tech
 			}
-		}
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 3.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
 	}
+}	
 	focus = {
-		id = ITA_trade_interdiction
-		icon = GFX_focus_ITA_trade_interdiction
-		prerequisite = { focus = ITA_u_boat_effort }
-		x = 1
+		id = ITA_naval_effort
+		text = naval_effort
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = ITA_naval_rearmament }
+		x = 0
 		y = 1
-		relative_position_id = ITA_u_boat_effort
+		relative_position_id = ITA_naval_rearmament
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_trade_interdiction
-				bonus = 2.0
-				uses = 4
+				name = doctrine_bonus
+				bonus = 1
+				uses = 3
 				category = naval_doctrine
 			}
-			add_ideas=GER_trade_interdiction
 		}
 	}
 	focus = {
-		id = ITA_graf_zeppelin
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus=ITA_plan_z}
+		id = ITA_naval_advancement
+		icon = GFX_focus_ITA_trade_interdiction
+		prerequisite = { focus = ITA_plan_z focus = ITA_u_boat_effort }
 		x = 1
 		y = 1
 		relative_position_id = ITA_plan_z
 		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = cv_bonus
-				bonus = 2.0
-				uses = 2
-				category = cv_tech
-			}
+			add_ideas = ITA_naval_advancement
 		}
 	}
 	focus = {
-		id = ITA_naval_air_effort_2
-		text = naval_air_effort
-		icon = GFX_focus_ITA_naval_air_effort_2
-		prerequisite = { focus = ITA_graf_zeppelin  }
+		id = ITA_new_gun
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = ITA_naval_advancement  }
 		x = 0
 		y = 1
-		relative_position_id = ITA_graf_zeppelin
+		relative_position_id = ITA_naval_advancement
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -311,59 +171,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				name = nav_bomber_bonus
+				name = light_gun
 				bonus = 1.0
-				uses = 2
-				category = naval_bomber
+				uses = 1
+				technology = improved_light_battery
 			}
-		}
-	}
-	focus = {
-		id = ITA_recover_from_operation_chariot
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus=ITA_u_boat_effort focus=ITA_plan_z }
-		x = 3
-		y = 1
-		relative_position_id = ITA_plan_z
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available={controls_state=160}
-		bypass = {NOT={controls_state=160}}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			160 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					province=9190
-					level = 10
-					instant_build = yes
-				}
+			add_tech_bonus = {
+				name = light_gun
+				bonus = 1.0
+				uses = 1
+				technology = improved_heavy_battery
 			}
-		}
-	}
-	focus = {
-		id = ITA_fjord_fleet_basing
-		icon = GFX_focus_ger_arado
-		prerequisite = { focus = ITA_recover_from_operation_chariot  }
-		x = 0
-		y = 1
-		relative_position_id = ITA_recover_from_operation_chariot
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_ideas = british_convoy_discount
 		}
 	}
 	focus = {
@@ -380,7 +198,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_ideas=GER_germaniawerft
+			add_ideas= GER_germaniawerft
 			156 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -392,83 +210,120 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_h_class
-		icon = GFX_focus_ITA_h_class
-		prerequisite = { focus = ITA_germaniawerft  }
+		id = ITA_recover_from_operation_chariot
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = ITA_germaniawerft }
 		x = 0
 		y = 1
 		relative_position_id = ITA_germaniawerft
 		cost = 5
-		available = {date > 1940.01.01}
-		ai_will_do = {
-			factor = 1
-		}
+		available={controls_state=152}
+		bypass = {NOT={controls_state=152}}
 		available_if_capitulated = yes
 		completion_reward = {
-			set_technology = {
-				ship_hull_super_heavy = 1
-			}
-			create_equipment_variant = {
-				name = "Roma-Class"
-				type = ship_hull_super_heavy_1
-				name_group = ITA_BB_HISTORICAL
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = ship_super_heavy_battery_1
-					fixed_ship_anti_air_slot = ship_anti_air_2
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_3
-					fixed_ship_radar_slot = empty
-					fixed_ship_engine_slot = heavy_ship_engine_2
-					fixed_ship_secondaries_slot = ship_secondaries_2
-					fixed_ship_armor_slot = ship_armor_shbb
-					front_1_custom_slot = empty
-					front_2_custom_slot = ship_super_heavy_battery_1
-					mid_1_custom_slot = ship_anti_air_2
-					mid_2_custom_slot = ship_secondaries_2
-					mid_3_custom_slot = ship_secondaries_2
-					rear_1_custom_slot = ship_super_heavy_battery_1
-					rear_2_custom_slot = ship_airplane_launcher_2
+			152 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
 				}
-			}
-			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_super_heavy_1
-						creator = "ITA"
-						version_name = "Roma-Class"
-					}
-					name = "Roma"
-					requested_factories = 1
-					progress = 0.5
-					amount = 1
+				set_building_level = {
+					type = bunker
+					province=10887
+					level = 5
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					province=10887
+					level = 5
+					instant_build = yes
 				}
 			}
 		}
 	}
 	focus = {
-		id = ITA_modular_construction
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = ITA_trade_interdiction }
-		x = 0
+		id = ITA_fjord_fleet_basing
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = ITA_u_boat_effort  }
+		x = 1
 		y = 1
-		relative_position_id = ITA_trade_interdiction
+		relative_position_id = ITA_u_boat_effort
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ITA_small_ship_focus
+			154 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+		}
+	}
+}	
+	focus = {
+		id = ITA_h_class
+		icon = GFX_focus_ITA_h_class
+		prerequisite = { focus = ITA_plan_z focus = ITA_u_boat_effort  }
+		x = 3
+		y = 1
+		relative_position_id = ITA_plan_z
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = ITA_battleship
+				uses = 1
+				bonus = 2
+                technology = advanced_battleship
+			}
+	}
+}
+focus = {
+	id = ITA_graf_zeppelin
+	icon = GFX_goal_generic_wolf_pack
+	prerequisite = { focus= ITA_h_class }
+	x = 0
+	y = 1
+	relative_position_id = ITA_h_class
+	cost = 5
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+		custom_effect_tooltip = "Get Carrier 3, designer can be used."
+		navy_experience = 25
+		set_technology = {
+			improved_ship_hull_carrier = 1
+			popup = yes
+	}
+}
+}	
+	focus = {
+		id = ITA_modular_construction
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = ITA_plan_z focus = ITA_u_boat_effort }
+		x = -1
+		y = 1
+		relative_position_id = ITA_u_boat_effort
+		cost = 5
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_ideas = GER_modular_construction
+			add_ideas = ITA_refit_idea
 		}
 	}
 	focus = {
 		id = ITA_u_boot_bunker
-		icon = GFX_focus_ger_arado
-		prerequisite = { focus = ITA_u_boat_effort}
-		x = -1
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = ITA_fjord_fleet_basing }
+		x = 0
 		y = 1
-		relative_position_id =ITA_u_boat_effort
+		relative_position_id = ITA_fjord_fleet_basing
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -494,10 +349,10 @@ focus_tree = {
 	focus = {
 		id = ITA_u_boot_bunker2
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus=ITA_u_boot_bunker  }
+		prerequisite = { focus= ITA_modular_construction  }
 		x = 0
 		y = 1
-		relative_position_id = ITA_u_boot_bunker
+		relative_position_id = ITA_modular_construction
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -531,11 +386,11 @@ focus_tree = {
 	focus = {
 		id = ITA_operation_sealion
 		icon = GFX_focus_ger_arado
-		prerequisite = { focus=ITA_naval_air_effort_2 }
-		prerequisite = { focus = ITA_h_class  }
+		prerequisite = { focus = ITA_new_gun }
+		prerequisite = { focus = ITA_recover_from_operation_chariot  }
 		x = 1
 		y = 1
-		relative_position_id =ITA_h_class
+		relative_position_id = ITA_recover_from_operation_chariot
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -549,12 +404,15 @@ focus_tree = {
 	focus = {
 		id = ITA_atlantikschlacht
 		icon = GFX_focus_ger_arado
-		prerequisite = { focus = ITA_modular_construction focus=ITA_naval_air_effort_2 }
-		prerequisite = { focus = ITA_fjord_fleet_basing }
-		x = 0
+		prerequisite = { 
+			focus = ITA_u_boot_bunker2
+			focus = ITA_new_gun
+			focus = ITA_naval_effort 
+			focus = ITA_graf_zeppelin }
+		x = 1
 		y = 1
 		available={date>1941.6.1}
-		relative_position_id =ITA_fjord_fleet_basing
+		relative_position_id = ITA_graf_zeppelin
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -567,12 +425,12 @@ focus_tree = {
 	focus = {
 		id = ITA_monsoon_boats
 		icon = GFX_focus_ger_arado
-		prerequisite = {  focus = ITA_modular_construction }
+		prerequisite = {  focus = ITA_u_boot_bunker }
 		prerequisite = { focus = ITA_u_boot_bunker2 }
 		x = -1
 		y = 1
 		available={date>1942.1.1}
-		relative_position_id =ITA_modular_construction
+		relative_position_id = ITA_u_boot_bunker
 		cost = 5
 		ai_will_do = {
 			factor = 1

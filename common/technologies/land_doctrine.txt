@@ -784,7 +784,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.15
+			soft_attack = 0.05
 		}
 		path = {
 			leads_to_tech = regimental_combat_teams
@@ -819,7 +819,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.15
+			soft_attack = 0.05
 		}
 		path = {
 			leads_to_tech = sup_mechanized_offensive

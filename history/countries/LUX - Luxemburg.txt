@@ -5,6 +5,8 @@ set_research_slots = 0
 set_technology = {
 	infantry_weapons1 = 1
 }
+
+add_ideas = neutrality_idea1
 set_war_support = 0.1
 set_stability = 0.8
 

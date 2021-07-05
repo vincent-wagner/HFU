@@ -32,7 +32,7 @@
 #                                      the current game version.
 SPR_INF_01 =
 {
-	name = "Republican Infantry"
+	name = "División de Infantería"
 
 	for_countries = { SPR }
 

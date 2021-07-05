@@ -12,7 +12,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = GFX_goal_generic_production
+			picture = neutrality_idea
 			removal_cost=-1
 			modifier={
 				consumer_goods_factor = 1000
