@@ -71,6 +71,7 @@ ideas = {
 				tag = HUN
 				extra_trade_to_target_factor = 0.8
 			}
+    }
 }
 	economy = {
 		law = yes
