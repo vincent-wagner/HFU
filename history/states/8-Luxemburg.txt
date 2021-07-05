@@ -10,10 +10,11 @@ state=
 	history=
 	{
 		owner = LUX
+		add_extra_state_shared_building_slots = 10
 		buildings = {
-			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 4
+			infrastructure = 8
+			arms_factory = 7
+			industrial_complex = 9
 		}
 		victory_points = {6087 5 }
 		add_core_of = LUX

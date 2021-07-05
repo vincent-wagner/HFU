@@ -21,16 +21,19 @@ set_technology = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 15400
+	amount = 35000
 }
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 50
+	amount = 300
 }
 set_convoys = 200
 add_manpower = 140000
-set_research_slots = 3
+set_research_slots = 0
+
+add_ideas = neutrality_idea1
 add_ideas = no_training
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.5.19"

@@ -1254,7 +1254,7 @@ focus = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
-				bonus = 1.5
+				bonus = 1.4
 				uses = 1
 				name = mech_army_bonus
 				ahead_reduction = 1
@@ -4253,9 +4253,10 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = bomber_bonus
-			bonus = 1.5
+			ahead_reduction = 1
+			bonus = 1
 			uses = 1
-			category = cas_bomber
+			technology = CAS3
 		}	
 						}	
 		}
@@ -4314,7 +4315,7 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 		bonus = 1.0
-		ahead_reduction = 1
+		ahead_reduction = 0.5
 		uses = 1
 	    technology = advanced_infantry_weapons
 		}	

@@ -223,12 +223,12 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_1_f
     		}
-    		air_range = 750
-    		maximum_speed = 500
-    		air_agility = 55
-    		air_attack = 22
+    		air_range = 850
+    		maximum_speed = 550
+    		air_agility = 60
+    		air_attack = 24
     		air_defence = 10
-    		    build_cost_ic = 45 
+    		    build_cost_ic = 48.5 
 	 	lend_lease_cost = 9   
     		resources = {
     			#oil = 1
@@ -248,12 +248,12 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_1
     		}
-    		air_range = 750
-    		maximum_speed = 500
-    		air_agility = 55
-    		air_attack = 22
+    		air_range = 850
+    		maximum_speed = 550
+    		air_agility = 60
+    		air_attack = 24
     		air_defence = 10
-    		    build_cost_ic = 45 
+    		    build_cost_ic = 48.5
 	 	lend_lease_cost = 9   
     		resources = {
     			#oil = 1

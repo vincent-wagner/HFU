@@ -10,6 +10,11 @@ focus_tree = {
 				tag = LIT
 				tag = HOL
 				tag = BEL
+				tag = CZE
+				tag = POL
+				tag = DEN	
+				tag = NOR
+				tag = LUX
 			}
 		}
 	}

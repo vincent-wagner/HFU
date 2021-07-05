@@ -1,6 +1,6 @@
 capital = 10
 oob = "POL_1936"
-set_research_slots = 3
+set_research_slots = 0
 # Starting tech
 set_technology = {
 	airfield_allowed = 1
@@ -21,14 +21,26 @@ set_technology = {
 }
 add_timed_idea = { idea = no_training days= 1095 }
 add_ideas = peace_training
+add_ideas = neutrality_idea1
+
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 20600
+	amount = 70000
 }
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 200
+	amount = 1000
 }
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1100
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 1000
+}
+
+
 add_manpower = 320000
 set_convoys = 10
 set_politics = {
