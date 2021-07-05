@@ -9,95 +9,6 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = crypto_bomb_focus
-		available = {
-			date > 1938.1.1
-		}
-		bypass = {
-		}
-		prerequisite = { focus = uk_extra_tech_slot }
-		icon = GFX_focus_generic_cryptologic_bomb
-		relative_position_id = uk_extra_tech_slot
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = codebreaking_bonus
-				bonus = 1.0
-				uses = 3
-				category = computing_tech
-			}
-		}
-	}
-	focus = {
-		id = tizard_mission_focus
-		available = {
-		}
-		prerequisite = { focus = radar_focus }
-		icon = GFX_goal_generic_scientific_exchange
-		x = 0
-		y = 1
-		relative_position_id = radar_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = tizard_mission_focus
-				bonus = 1.0
-				category = light_fighter
-			}
-			add_tech_bonus = {
-				name = tizard_mission_focus
-				bonus = 1.0
-				uses = 2
-				category = radar_tech
-			}
-			USA = {
-				add_tech_bonus = {
-					name = tizard_mission_focus
-					uses = 1
-					bonus = 1.0
-					category = light_fighter
-				}
-				add_tech_bonus = {
-					name = tizard_mission_focus
-					bonus = 1.0
-					uses = 2
-					category = radar_tech
-				}
-			}
-		}
-	}
-	focus = {
-		id = maud_focus
-		available = { }
-		prerequisite = { focus = tizard_mission_focus }
-		icon = GFX_focus_wonderweapons
-		x = 0
-		y = 1
-		relative_position_id = tizard_mission_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = maud_focus
-				bonus = 1.0
-				uses = 2
-				category = nuclear
-			}
-		}
-	}
-	focus = {
 		id = limited_rearmament_focus
 		icon = GFX_focus_ENG_limited
 		x = 5
@@ -327,6 +238,69 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = tizard_mission_focus
+		available = {
+		}
+		prerequisite = { focus = radar_focus }
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 1
+		relative_position_id = radar_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = tizard_mission_focus
+				bonus = 1.0
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = tizard_mission_focus
+				bonus = 1.0
+				uses = 2
+				category = radar_tech
+			}
+			USA = {
+				add_tech_bonus = {
+					name = tizard_mission_focus
+					uses = 1
+					bonus = 1.0
+					category = light_fighter
+				}
+				add_tech_bonus = {
+					name = tizard_mission_focus
+					bonus = 1.0
+					uses = 2
+					category = radar_tech
+				}
+			}
+		}
+	}
+	focus = {
+		id = maud_focus
+		available = { }
+		prerequisite = { focus = tizard_mission_focus }
+		icon = GFX_focus_wonderweapons
+		x = 0
+		y = 1
+		relative_position_id = tizard_mission_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = maud_focus
+				bonus = 1.0
+				uses = 2
+				category = nuclear
+			}
+		}
+	}
+	focus = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		continue_if_invalid = yes
@@ -388,6 +362,32 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = crypto_bomb_focus
+		available = {
+			date > 1938.1.1
+		}
+		bypass = {
+		}
+		prerequisite = { focus = uk_extra_tech_slot }
+		icon = GFX_focus_generic_cryptologic_bomb
+		relative_position_id = uk_extra_tech_slot
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = codebreaking_bonus
+				bonus = 1.0
+				uses = 3
+				category = computing_tech
+			}
 		}
 	}
 	focus = {
@@ -518,33 +518,6 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
-			}
-		}
-	}
-	focus = {
-		id = UK_secret_focus
-		prerequisite = { focus = ENG_motion_of_no_confidence }
-		icon = GFX_goal_generic_secret_weapon
-		x = 2
-		y = 1
-		relative_position_id = ENG_motion_of_no_confidence
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = UK_secret_focus
-				bonus = 1.0
-				uses = 2
-				category = electronics
-			}
-			add_tech_bonus = {
-				name = UK_secret_focus
-				bonus = 1.0
-				uses = 2
-				category = rocketry
 			}
 		}
 	}
@@ -2421,6 +2394,33 @@ focus_tree = {
 			add_timed_idea = {idea = blood_toil_tears_sweat days = 185}
 			hidden_effect ={every_country = {limit = {check_variable= { speeches_enabled > 0}}}
 				scoped_sound_effect="sp_uk_chur"}
+		}
+	}
+	focus = {
+		id = UK_secret_focus
+		prerequisite = { focus = ENG_motion_of_no_confidence }
+		icon = GFX_goal_generic_secret_weapon
+		x = 2
+		y = 1
+		relative_position_id = ENG_motion_of_no_confidence
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
 		}
 	}
 	focus = {
