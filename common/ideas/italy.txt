@@ -29,7 +29,27 @@ ideas = {
 		}
 	}
 	country = {
-	    ITA_hitler_rome = {
+	     ITA_social_republic = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ita_hitler_visits_rome
+			modifier = {
+			stability_factor = 0.1
+			war_support_factor = -0.3
+			war_support_weekly = -0.01
+            conscription = 0.01
+			max_dig_in_factor = 0.25
+			no_supply_grace = 120
+			out_of_supply_factor = -0.2
+			}
+
+		}
+		ITA_hitler_rome = {
 			removal_cost = -1
 			allowed = {
 				always = no # Added via focus

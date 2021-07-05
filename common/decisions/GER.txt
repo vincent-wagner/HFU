@@ -511,6 +511,7 @@ operations = {
 				ENG = { add_to_faction = HOL }
 				ENG = { add_to_faction = BEL }
 				ENG = { add_to_faction = FRA }
+				ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 				LUX = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				FRA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				HOL = { add_to_war = { targeted_alliance = ENG enemy = GER } }

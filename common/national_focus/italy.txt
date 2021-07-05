@@ -736,7 +736,7 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = syndicalism 
@@ -1260,7 +1260,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_naval_air_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1515,6 +1515,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		    add_research_slot = 1
 			add_stability = 0.075
 			GER = {
 				add_tech_bonus = {
@@ -2517,7 +2518,7 @@ focus = {
 		        italy_heavy_tank = 1
 		    }
 		    create_equipment_variant = {
-				name = "Fiat L6/40s"
+				name = "Ansaldo L6/40s"
 				type = ITA_heavy_tank_equipment_2
 				upgrades = {
 					tank_gun_upgrade = 5
@@ -2528,11 +2529,11 @@ focus = {
 				equipment = {
 					type = ITA_heavy_tank_equipment_2
 					creator = "ITA"
-					version_name = "Fiat"		
+					version_name = "Ansaldo L6/40s"		
 				}
-				requested_factories = 20
+				requested_factories = 50
 				progress = 0.1
-				efficiency = 50
+				efficiency = 70
 			}
 			division_template = {
 				name = "TONK"
@@ -2570,9 +2571,9 @@ focus = {
 			}
 				155 = {
 					for_loop_effect = {
-						end = 4
+						end = 3
 						create_unit = {
-							division = "name = \"TONK\" division_template = \"TONK\" start_experience_factor = 2.0"
+							division = "name = \"TONK\" division_template = \"TONK\" start_experience_factor = 0.5"
 							owner = ITA
 						}
 					}
@@ -2711,6 +2712,7 @@ focus = {
 		prerequisite = { focus = ITA_german_rocketry}
 		prerequisite = { focus = ITA_Fiat_26}
 		available = {
+		surrender_progress > 0.5
 		}
 		relative_position_id = ITA_rommel
 		x = 0
@@ -2720,7 +2722,17 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-		
+			if = {
+				limit = { 39 = {is_fully_controlled_by = ITA}  }
+		        GER = {transfer_state = 39}
+		    }
+			if = {
+				limit = { 654 = {is_fully_controlled_by = ITA}  }
+		        GER = {transfer_state = 654}
+		    }
+		    set_cosmetic_tag = ITA_ISR
+		    remove_ideas = victor_emmanuel
+		    add_timed_idea = { days = 120 idea = ITA_social_republic}
 		}
 	}
 	

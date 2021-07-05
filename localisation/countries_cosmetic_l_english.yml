@@ -1,5 +1,4 @@
 ﻿l_english:
-
  CZE_fascism:0 "Slovakia"
  CZE_fascism_ADJ:0 "Slovakian"
  CZE_fascism_DEF:0 "Slovakia"
@@ -569,6 +568,7 @@
  JAP_showa_restoration_democratic_DEF:0 "the State of Japan"
  JAP_showa_restoration_communism_DEF:0 "the Japanese People's Republic"
  GER_greater_german_reich_fascism:0 "Großdeutsches Reich"
+ ITA_ISR_fascism:0 "Italian Social Republic"
  CHI_warlord_PRC_fascism:0 "Chinese Empire"
  CHI_warlord_PRC_fascism_DEF:0 "the Chinese Empire"
  CHI_warlord_PRC_democratic:0 "Chinese Republic"
