@@ -88,6 +88,7 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
+	add_ideas = peace_training
 	add_ideas = AST_great_depression_1
 	add_ideas = SAF_the_commonwealth
 	add_to_tech_sharing_group = commonwealth_research

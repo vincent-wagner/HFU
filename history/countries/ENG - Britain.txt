@@ -111,6 +111,7 @@ if = {
 }
 set_country_flag=fuel_system_enabled
 add_ideas = {
+    peace_training
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
