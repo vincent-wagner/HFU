@@ -187,7 +187,7 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_0_f
     		}
-    		air_range = 570
+    		air_range = 600
     		maximum_speed = 330
     		air_agility = 45
     		air_attack = 9
@@ -205,7 +205,7 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_0
     		}
-    		air_range = 570
+    		air_range = 600
     		maximum_speed = 330
     		air_agility = 45
     		air_attack = 9
@@ -223,7 +223,7 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_1_f
     		}
-    		air_range = 850
+    		air_range = 800
     		maximum_speed = 550
     		air_agility = 60
     		air_attack = 24
@@ -248,7 +248,7 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_1
     		}
-    		air_range = 850
+    		air_range = 800
     		maximum_speed = 550
     		air_agility = 60
     		air_attack = 24
@@ -273,7 +273,7 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_2_f
     		}
-    		air_range = 1000
+    		air_range = 900
     		maximum_speed = 650
     		air_agility = 65
     		air_attack = 27
@@ -298,7 +298,7 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_2
     		}
-    		air_range = 1000
+    		air_range = 900
     		maximum_speed = 650
     		air_agility = 65
     		air_attack = 27
@@ -321,7 +321,7 @@ equipments = {
     		parent = fighter_equipment_2
     		priority = 10
     		can_license = no
-    		air_range = 1000
+    		air_range = 900
     		maximum_speed = 650
     		air_agility = 65
     		air_attack = 27
@@ -347,7 +347,7 @@ equipments = {
     		family = fighter_equipment_alt_2
     		priority = 10
     		can_license = no
-    		air_range = 1000
+    		air_range = 900
     		maximum_speed = 650
     		air_agility = 65
     		air_attack = 27
@@ -375,7 +375,7 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_3_f
     		}
-    		air_range = 1100
+    		air_range = 1000
     		maximum_speed = 720
     		air_agility = 71
     		air_attack = 30
@@ -400,7 +400,7 @@ equipments = {
     		can_convert_from = {
     			fighter_equipment_3
     		}
-    		air_range = 1100
+    		air_range = 1000
     		maximum_speed = 720
     		air_agility = 71
     		air_attack = 30
@@ -422,7 +422,7 @@ equipments = {
     		parent = fighter_equipment_alt_2
     		priority = 10
     		can_license = no
-    		air_range = 1100
+    		air_range = 1000
     		maximum_speed = 720
     		air_agility = 71
     		air_attack = 30
@@ -448,7 +448,7 @@ equipments = {
     		family = fighter_equipment_alt_3
     		priority = 10
     		can_license = no
-    		air_range = 1100
+    		air_range = 1000
     		maximum_speed = 720
     		air_agility = 71
     		air_attack = 30
@@ -604,7 +604,7 @@ equipments = {
     		can_convert_from = {
     			CAS_equipment_2_f
     		}
-    		air_range = 1000
+    		air_range = 900
     		maximum_speed = 550
     		air_agility = 50
     		air_attack = 9
@@ -630,7 +630,7 @@ equipments = {
     		can_convert_from = {
     			CAS_equipment_2
     		}
-    		air_range = 1000
+    		air_range = 900
     		maximum_speed = 550
     		air_agility = 50
     		air_attack = 9
@@ -656,7 +656,7 @@ equipments = {
     		can_convert_from = {
     			CAS_equipment_3_f
     		}
-    		air_range = 1100
+    		air_range = 1000
     		maximum_speed = 650
     		air_agility = 44
     		air_attack = 10
@@ -682,7 +682,7 @@ equipments = {
     		can_convert_from = {
     			CAS_equipment_3
     		}
-    		air_range = 1100
+    		air_range = 1000
     		maximum_speed = 650
     		air_agility = 44
     		air_attack = 10
@@ -707,7 +707,7 @@ equipments = {
     		can_convert_from = {
     			nav_bomber_equipment_1_f
     		}
-    		air_range = 850
+    		air_range = 800
     		maximum_speed = 250
     		air_agility = 30
     		air_attack = 8
@@ -722,7 +722,7 @@ equipments = {
     		can_convert_from = {
     			nav_bomber_equipment_1
     		}
-    		air_range = 850
+    		air_range = 800
     		maximum_speed = 250
     		air_agility = 30
     		air_attack = 8
@@ -738,7 +738,7 @@ equipments = {
     		parent = nav_bomber_equipment_1
     		priority = 60
     		carrier_capable = yes
-    		air_range = 930
+    		air_range = 900
     		maximum_speed = 300
     		air_agility = 35
     		air_attack = 10
@@ -763,7 +763,7 @@ equipments = {
     		family = nav_bomber_equipment_2
     		priority = 60
     		carrier_capable = yes
-    		air_range = 930
+    		air_range = 900
     		maximum_speed = 300
     		air_agility = 35
     		air_attack = 10
