@@ -2072,7 +2072,6 @@ focus_tree = {
 				amount = 800
 				producer = FRA
 					}		
-			}
 			if = {
 				limit = {has_tech = basic_heavy_tank}
 
@@ -2128,7 +2127,8 @@ focus_tree = {
 					country_event = lar_appeal_to_overseas_territories.5
 				}		
 			}
-	}	
+	}
+}		
 	focus = {
 		id = FRA_intervention_in_west_africa
 		icon = GFX_goal_generic_position_armies
