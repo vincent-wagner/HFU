@@ -42,6 +42,22 @@ ideas = {
 			}
 			}}
 	country = {
+		JAP_Civs = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			modifier = {
+				production_speed_arms_factory_factor = -0.4
+				production_speed_dockyard_factor = -0.4
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
 		JAP_banzai = {
 			picture = generic_infantry_bonus
 			allowed = {
@@ -261,6 +277,7 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = 0.10
 			}

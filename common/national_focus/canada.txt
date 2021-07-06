@@ -1462,7 +1462,6 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_cmp_truck
-				ahead_reduction = 2
 				bonus = 3.0
 				uses = 1
 				category = motorized_equipment
