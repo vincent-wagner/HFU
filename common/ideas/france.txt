@@ -137,6 +137,20 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		FRA_research_speed = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
 		FRA_global_investments = {
 			picture = generic_exploit_mines
 			allowed = {
