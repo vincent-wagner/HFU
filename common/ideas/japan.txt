@@ -68,14 +68,14 @@ ideas = {
 				always = yes
 			}
 			modifier = {
+			    naval_invasion_penalty = -0.5
 				amphibious_invasion = 0.5
 				invasion_preparation = -0.5
 				land_reinforce_rate = 0.1
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.5
-				special_forces_attack_factor = 0.05
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
+				extra_marine_supply_grace = 96
+				pocket_penalty = -0.2
 			}
 		}
 		JAP_navy_recover = {
@@ -275,7 +275,6 @@ ideas = {
 			removal_cost = -1
 			picture = jap_zaibatsu_ally
 			modifier = {
-				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05

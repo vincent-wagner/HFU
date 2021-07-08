@@ -22,6 +22,8 @@ set_popularities = {
 	neutrality = 50
 }
 add_ideas=no_surrender
+add_ideas=neutrality_idea
+add_ideas=neutral_idea
 create_country_leader = {
 	name = "A. T. van Starkenborgh Stachouwer"
 	desc = ""

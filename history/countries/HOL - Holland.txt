@@ -89,10 +89,6 @@ if = {
 	}
 }
 # DIPLOMACY
-set_autonomy = {
-	target = INS
-	autonomous_state = autonomy_integrated_puppet
-}
 set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
 add_ideas = {
 	HOL_wilhelmina
