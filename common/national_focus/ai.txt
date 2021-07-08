@@ -16,6 +16,7 @@ focus_tree = {
 				tag = NOR
 				tag = LUX
 				tag = ALB
+				tag = INS
 			}
 		}
 	}
