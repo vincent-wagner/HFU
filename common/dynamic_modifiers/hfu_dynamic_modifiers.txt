@@ -38,6 +38,6 @@ Atlantikwall={
 	naval_invasion_penalty=GER.pacific_status
 }
 Atlantikwall_visual = {
-		icon = "FRA_fortification_focus"
+	icon = "FRA_fortification_focus"
 	naval_mine_hit_chance=GER.pacific_status
 }

@@ -121,7 +121,7 @@ categories =  {
 			#movement = -0.3
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.3
+		enemy_army_bonus_air_superiority_factor = -0.5
 
 		sickness_chance = 1.0
 	}
