@@ -15,7 +15,6 @@ state={
 			1153 5
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 3
 			1153 = {
 				naval_base = 1
