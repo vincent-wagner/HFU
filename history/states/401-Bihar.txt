@@ -2,7 +2,8 @@ state={
 	id=401
 	name="STATE_435"
 	resources={
-		aluminium=60
+		aluminium=50
+        rubber = 5
 	}
 	history={
 		owner = RAJ

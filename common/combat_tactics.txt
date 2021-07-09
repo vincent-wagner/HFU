@@ -22,7 +22,7 @@ tactic_basic_defend_island= {
 	
 	base =  { factor = 999 }
 	picture = defend
-	combat_width = -0.75
+	combat_width = -0.5
 }
 tactic_basic_attack_island = {
 	
@@ -290,6 +290,7 @@ tactic_shock = { #counters delay
 tactic_tactical_withdrawal = { #counters encirclement
 	is_attacker = no
 	trigger = {
+		is_amphibious_invasion = no
 		is_attacker = no
 		phase = no
 		OR = {
@@ -313,6 +314,7 @@ tactic_tactical_withdrawal = { #counters encirclement
 tactic_tw_attack = {
 	is_attacker = yes
 	trigger = {
+		is_amphibious_invasion = no
 		is_attacker = yes
 		phase = tactical_withdrawal
 	}
@@ -328,6 +330,7 @@ tactic_tw_attack = {
 tactic_tw_defend = {
 	is_attacker = no
 	trigger = {
+		is_amphibious_invasion = no
 		is_attacker = no
 		phase = tactical_withdrawal
 	}
@@ -343,6 +346,7 @@ tactic_tw_defend = {
 tactic_tw_chase = {
 	is_attacker = yes
 	trigger = {
+		is_amphibious_invasion = no
 		is_attacker = yes
 		phase = tactical_withdrawal
 	}
@@ -359,6 +363,7 @@ tactic_tw_chase = {
 tactic_tw_evade = {
 	is_attacker = no
 	trigger = {
+		is_amphibious_invasion = no
 		is_attacker = no
 		phase = tactical_withdrawal
 	}
@@ -536,7 +541,6 @@ tactic_seize_bridge = {
 	phase = seize_bridge
 
 	attacker_movement_speed = 0.1
-	combat_width = -0.25
 	attacker = 0.2
 	defender = -0.05
 }
@@ -551,7 +555,6 @@ tactic_attacker_sb_hold = {
 	picture = attacker_sb_hold
 	display_phase = seize_bridge
 
-	combat_width = -0.25
 	attacker = 0.2
 }
 tactic_attacker_sb_skillful_defence = {
@@ -566,7 +569,6 @@ tactic_attacker_sb_skillful_defence = {
 	picture = attacker_sb_skillful_defence
 	display_phase = seize_bridge
 
-	combat_width = -0.25
 	attacker = 0.2
 	defender = -0.1
 }
@@ -581,7 +583,6 @@ tactic_defender_sb_assault = {
 	picture = defender_sb_assault
 	display_phase = seize_bridge
 
-	combat_width = -0.25
 	defender = -0.05
 }
 tactic_defender_sb_reckless_assault = {
@@ -596,7 +597,6 @@ tactic_defender_sb_reckless_assault = {
 	picture = defender_sb_reckless_assault
 	display_phase = seize_bridge
 
-	combat_width = -0.25
 	attacker = 0.25
 	defender = -0.1
 }
@@ -618,7 +618,6 @@ tactic_defender_sb_retake_bridge = {
 	picture = defender_sb_retake_bridge
 	display_phase = seize_bridge
 
-	combat_width = -0.25
 	attacker = 0.1
 	defender = -0.05
 }
@@ -641,7 +640,6 @@ tactic_hold_bridge = {
 	phase = hold_bridge
 
 	attacker_movement_speed = 0.1
-	combat_width = -0.25
 	attacker = 0.2
 	defender = -0.05
 }
@@ -656,7 +654,6 @@ tactic_attacker_hb_attack = {
 	picture = attacker_hb_attack
 	display_phase = hold_bridge
 
-	combat_width = -0.25
 	attacker = 0.1
 }
 tactic_attacker_hb_rush = {
@@ -671,7 +668,6 @@ tactic_attacker_hb_rush = {
 	picture = attacker_hb_rush
 	display_phase = hold_bridge
 
-	combat_width = -0.25
 	attacker = 0.2
 }
 tactic_attacker_hb_storm = {
@@ -689,7 +685,6 @@ tactic_attacker_hb_storm = {
 
 	phase = seize_bridge
 
-	combat_width = -0.25
 	attacker = 0.2
 	defender = 0.05
 }
@@ -705,7 +700,6 @@ tactic_defender_hb_hold = {
 	picture = defender_hb_hold
 	display_phase = hold_bridge
 
-	combat_width = -0.25
 	attacker = 0.2
 	defender = -0.1
 }
@@ -724,7 +718,6 @@ tactic_defender_hb_skillful_defence = {
 	picture = defender_hb_skillful_defence
 	display_phase = hold_bridge
 
-	combat_width = -0.25
 	attacker = 0.1
 	defender = 0.05
 }
@@ -732,6 +725,7 @@ tactic_defender_hb_skillful_defence = {
 tactic_guerrilla_tactics = { #People's army defender tactic. also for German volksturm branch.
 	is_attacker = no
 	trigger = {
+		is_amphibious_invasion = no
 		is_attacker = no
 		phase = no
 		OR = {
@@ -753,6 +747,7 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 tactic_human_wave_tactics = { #People's army attacker tactic
 	is_attacker = yes
 	trigger = {
+		is_amphibious_invasion = no
 		is_attacker = yes
 		phase = no
 		frontage_full = yes

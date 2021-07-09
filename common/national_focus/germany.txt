@@ -2052,7 +2052,7 @@ focus = {
 			add_political_power = 75
 			add_war_support = 0.1
 			add_stability = 0.05
-			add_named_threat = { threat = 10 name = germany.4.t }
+			add_named_threat = { threat = 17 name = germany.4.t }
 			if = {
 				limit = {
 					country_exists = AUS

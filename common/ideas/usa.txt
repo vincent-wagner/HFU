@@ -1226,8 +1226,8 @@ ideas = {
 				has_completed_focus = USA_reach_out_to_the_ware_group
 			}
 			visible = { has_dlc = "Man the Guns" }
-			traits = { captain_of_industry }
-			cost = 50
+			traits = { industrial_genius }
+			cost = 75
 			do_effect = {
 			}
 			ai_will_do = {

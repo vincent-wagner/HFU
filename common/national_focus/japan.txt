@@ -94,7 +94,7 @@ focus_tree = {
 		relative_position_id = JAP_liaison_conference
 		cost = 5
 		available = {
-			date > 1937.1.1
+			date > 1937.07.1
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -127,7 +127,6 @@ focus_tree = {
 			transfer_state = 667
 			transfer_state = 524
 			transfer_state = 523
-			add_threat = 7
 			hidden_effect = {
 				JAP = {
 					army_experience = 950
@@ -382,12 +381,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 4
+					level = 6
 					instant_build = yes
 				}
 				set_state_flag = JAP_zaibatsus_factories
@@ -1623,7 +1617,7 @@ focus_tree = {
 					}
 					name = "Yamato"
 					requested_factories = 1
-					progress = 0.9
+					progress = 0.4
 					amount = 1
 				}
 				add_equipment_production = {
@@ -1634,7 +1628,7 @@ focus_tree = {
 					}
 					name = "Musashi"
 					requested_factories = 1
-					progress = 0.9
+					progress = 0.3
 					amount = 1
 				}
 			}
@@ -1817,28 +1811,22 @@ focus_tree = {
 		}
 		available = {
 			date > 1940.12.31
-		}
-		bypass = {
-			OR = {
-				has_wargoal_against = ENG
-				has_war_with = ENG
-			}
-		}   
+		}  
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		RAJ = {
-		       add_ideas= RAJ_asia_focus
-			   add_timed_idea = {
-               idea = RAJ_famine
-               days = 90
-            }}
+		    RAJ = {
+		        add_ideas= RAJ_asia_focus
+			    add_timed_idea = {
+                    idea = RAJ_famine
+                    days = 90
+				}
+			}
 			set_variable={Global.super_event=4}
 			show_super_event=yes
 			hidden_effect = {
-			
 				every_country = {limit = {check_variable= { speeches_enabled > 0} }
 					scoped_sound_effect = "sp_jap_banzai"
 				}
@@ -1865,38 +1853,13 @@ focus_tree = {
 					limit={is_in_faction_with=ENG NOT={original_tag=USA}}
 					add_dynamic_modifier={modifier=pacific_war_minor}
 				}
-				
-				if= {
-					limit = {USA={NOT={has_completed_focus=USA_swpa}}}
-					ENG = {annex_country = { target = INS transfer_troops = yes }}
+				ENG = {
+				    annex_country = {
+                        target = INS
+                        transfer_troops = yes
+                    }
 				}
-				
-				hidden_effect = {
-					591 = {
-						add_compliance = 100
-					}
-					301 = {
-						add_compliance = 100
-					}
-					302 = {
-						add_compliance = 100
-					}
-					592 = {
-						add_compliance = 100
-					}
-					586 = {
-						add_compliance = 100
-					}
-					587 = {
-						add_compliance = 100
-					}
-					588 = {
-						add_compliance = 100
-					}
-					711 = {
-						add_compliance = 100
-					}
-					}}
+			}
 		}
 	}
 	focus = {

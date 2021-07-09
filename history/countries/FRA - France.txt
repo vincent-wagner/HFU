@@ -127,11 +127,6 @@ add_equipment_to_stockpile = {
 	producer = FRA
 }
 add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	amount = 1000
-	producer = FRA
-}
-add_equipment_to_stockpile = {
 	type = cas_equipment_1
 	amount = 400
 	producer = FRA

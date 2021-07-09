@@ -16,6 +16,10 @@
  	JAP_militarism
 	never_surrender
  }
+ add_timed_idea = {
+	 idea = JAP_Civs
+	 days = 365
+ }
  create_intelligence_agency = yes
  set_variable = {
      var = min_fuel

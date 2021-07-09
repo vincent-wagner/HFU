@@ -1,6 +1,9 @@
 state={
 	id=396
 	name="STATE_430"
+	resources={
+		rubber= 5
+	}
 	history={
 		owner = RAJ
 		victory_points = {
@@ -14,7 +17,7 @@ state={
 		add_core_of = RAJ
 	}
 	provinces={
-		2662 3894 4327 6545 6591 6644 7095 9121 9174 9176 9217 9557 9578 9602 10801 10818 10857 10899 11283 11859
+		2662 3894 4327 6545 6591 7095 9121 9176 9217 9557 9578 9602 10801 10818 10857
 	}
 	manpower=31973300
 	buildings_max_level_factor=1.000
