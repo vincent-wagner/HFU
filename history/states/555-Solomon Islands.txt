@@ -8,6 +8,7 @@ state={
 		owner = AST
 		add_core_of=AST
 		buildings = {
+		    air_base = 5
 			infrastructure = 2
 			1214 = {
 				naval_base = 2

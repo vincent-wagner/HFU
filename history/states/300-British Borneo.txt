@@ -6,7 +6,7 @@ state={
 		oil=17.000
 	}
 	history={
-		owner = INS
+		owner = ENG
 		add_core_of=SWE
 		victory_points = {
 			6836 5
