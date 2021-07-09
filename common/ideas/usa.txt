@@ -652,6 +652,19 @@ ideas = {
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
+		USA_rubber1 = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.5
+			}
+		}
 		USA_national_employment_strategy = {
 			picture = man_five_year_plan_industry
 			allowed = {
