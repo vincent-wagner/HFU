@@ -4,14 +4,14 @@ state={
 	manpower = 10722500
 	state_category = town
 	resources={
-		rubber=3
+		rubber = 5
 		tungsten = 92
 	}
 	history={
 		owner = RAJ
 		add_core_of=RAJ
 		victory_points = {
-			1275 5
+			6988 3
 		}
 		buildings = {
 			infrastructure = 4

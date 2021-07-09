@@ -4,7 +4,7 @@ state={
 	manpower = 19757000
 	state_category = rural
 	resources={
-		rubber=7
+		aluminium = 10
 	}
 	history={
 		owner = ENG

@@ -5,6 +5,7 @@ state={
 	state_category = city
 	resources={
 		steel=21
+		aluminium = 10
 	}
 	history={
 		owner = ENG

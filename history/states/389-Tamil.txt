@@ -4,7 +4,7 @@ state={
 	manpower = 29147500
 	state_category = rural
 	resources={
-		rubber=19
+		steel = 10
 	}
 	history={
 		owner = RAJ

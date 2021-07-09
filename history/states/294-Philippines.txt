@@ -4,6 +4,10 @@ state=
 	name="STATE_327"
 	manpower = 3548684
 	state_category = town
+	resources={
+		rubber = 10
+		oil=10
+	}
 	history=
 	{
 		owner = USA
