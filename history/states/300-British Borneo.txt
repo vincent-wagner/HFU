@@ -6,7 +6,7 @@ state={
 		oil=17.000
 	}
 	history={
-		owner = INS
+		owner = ENG
 		add_core_of=SWE
 		victory_points = {
 			6836 5
@@ -15,7 +15,6 @@ state={
 			1153 5
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 3
 			1153 = {
 				naval_base = 1
