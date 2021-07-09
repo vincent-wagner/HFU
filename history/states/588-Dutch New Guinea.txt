@@ -3,7 +3,7 @@ state={
 	name="STATE_669"
 	manpower = 314300
 	resources={
-		rubber=50
+		rubber=30
 		steel=20
 		oil=10}
 	state_category = pastoral
@@ -11,16 +11,25 @@ state={
 		owner = INS
 		add_core_of = INS
 		victory_points = {
-			11240 10
+			11240 3
+		}
+		victory_points = {
+			9655 1
+		}
+		victory_points = {
+			7031 1
 		}
 		buildings = {
 		    air_base = 5
 			infrastructure = 3
 			11240 = {
-				naval_base = 2
+				naval_base = 5
 			}
-			6996 = {
-				naval_base = 2
+			7031 = {
+				naval_base = 5
+			}
+			9655 = {
+				naval_base = 5
 			}
 		}
 	}

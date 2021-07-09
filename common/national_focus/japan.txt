@@ -1818,6 +1818,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 		    RAJ = {
+				activate_mission = raj_rubber1
 		        add_ideas= RAJ_asia_focus
 			    add_timed_idea = {
                     idea = RAJ_famine

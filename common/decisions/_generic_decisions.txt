@@ -1,4 +1,130 @@
-political_actions = {
+political_actions = {                           
+    raj_rubber1 = {                           
+          allowed = { tag = RAJ tag = JAP }                 
+          available = {                          
+              JAP = { controls_state = 398 }                     
+          }
+          activation = {                          
+			JAP = {
+				has_completed_focus = JAP_strike_on_the_southern_resource_area
+			}                      
+          }
+          is_good = yes                                         
+          days_mission_timeout = 30           
+          timeout_effect = {                    
+			add_resource = {
+				type = rubber
+				amount = -15
+				state = 398
+			}
+			add_resource = {
+				type = rubber
+				amount = 15
+				state = 407
+			}
+			activate_mission = raj_rubber2
+          }
+          complete_effect = {                   
+			398 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}     
+			activate_mission = raj_rubber2       
+          }
+     }
+	 raj_rubber2 = {                           
+		allowed = { tag = RAJ tag = JAP }                 
+		available = {                          
+			JAP = { controls_state = 396 }                     
+		}
+		is_good = yes                                         
+		days_mission_timeout = 45            
+		timeout_effect = {        
+		  add_resource = {
+			  type = rubber
+			  amount = -10
+			  state = 396
+		  } 
+		  add_resource = {
+			type = rubber
+			amount = 10
+			state = 405
+		}
+		activate_mission = raj_rubber3
+		}
+		complete_effect = {                   
+		  398 = {
+			  add_building_construction = {
+				  type = infrastructure
+				  level = 3
+				  instant_build = yes
+			  }
+			  activate_mission = raj_rubber3
+		  }            
+		}
+   }
+   raj_rubber3 = {                           
+	allowed = { tag = RAJ tag = JAP }                 
+	available = {                          
+		JAP = { controls_state = 397 }                     
+	}
+	is_good = yes                                         
+	days_mission_timeout = 30            
+	timeout_effect = {        
+	  add_resource = {
+		  type = rubber
+		  amount = -5
+		  state = 397
+	  } 
+	  add_resource = {
+		type = rubber
+		amount = 5
+		state = 406
+	}
+	activate_mission = raj_rubber4
+	}
+	complete_effect = {                   
+	  397 = {
+		  add_building_construction = {
+			  type = infrastructure
+			  level = 3
+			  instant_build = yes
+		  }
+	  }  
+	  activate_mission = raj_rubber4          
+	}
+	raj_rubber4 = {                           
+		allowed = { tag = RAJ tag = JAP }                 
+		available = {                          
+			JAP = { controls_state = 401 }                     
+		}
+		is_good = yes                                         
+		days_mission_timeout = 30            
+		timeout_effect = {        
+		  add_resource = {
+			  type = rubber
+			  amount = -10
+			  state = 401
+		  } 
+		  add_resource = {
+			type = rubber
+			amount = 10
+			state = 701
+		}
+		}
+		complete_effect = {                   
+		  401 = {
+			  add_building_construction = {
+				  type = infrastructure
+				  level = 3
+				  instant_build = yes
+			  }
+		  }            
+		}
+}
 	improved_worker_conditions_cancel = {
 		icon = generic_industry
 		allowed = {

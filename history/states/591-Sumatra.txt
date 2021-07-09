@@ -3,7 +3,7 @@ state={
 	id=591
 	name="Northern Sumatra"
 	resources={
-		rubber=30.000
+		rubber=20
 		oil=6.000
 		aluminium=28.000
 	}

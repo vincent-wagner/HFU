@@ -3,7 +3,7 @@ state={
 	id=302
 	name="West Java"
 	resources={
-		rubber=40
+		rubber=20
 	}
 
 	history={

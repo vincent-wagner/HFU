@@ -11,15 +11,9 @@ state={
 			4265 = {
 				naval_base = 3
 			}
-			1724 = {
-				naval_base = 2
-			}
 		}
 		victory_points = {
-			1724 10
-		}
-		victory_points = {
-			4265 5
+			4265 10
 		}
 		add_core_of = AST
 	}
