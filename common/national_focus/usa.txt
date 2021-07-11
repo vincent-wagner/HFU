@@ -1647,7 +1647,7 @@ focus_tree = {
 		available = {
 		}
 		bypass = {has_war = yes}
-		x = 8
+		x = 5
 		y = 1
 		relative_position_id = USA_american_dream
 		cost = 5

@@ -452,28 +452,21 @@ focus_tree = {
 		complete_tooltip = {
 		}
 		completion_reward = {
-			air_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 3
-					}
-				}
-				prioritize = {447}
+			714 = {
 				add_building_construction = {
 					type = air_base
-					level = 4
-					instant_build = yes
-				}
-				set_state_flag = AST_expand_the_raaf_AB
+				level = 5
+				instant_build = yes
 			}
-			add_tech_bonus = {
-				name = AST_expand_the_raaf
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
+		}
+		447 = {
+			add_building_construction = {
+				type = air_base
+				level = 5
+				instant_build = yes
+		}
+	}
+			
 		}
 	}
 	focus = {
@@ -498,28 +491,13 @@ focus_tree = {
 		complete_tooltip = {
 		}
 		completion_reward = {
-			air_experience = 25
-			random_owned_controlled_state = {
-				prioritize = { 448 }
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 3
-					}
-				}
+			448 = {
 				add_building_construction = {
 					type = air_base
-					level = 4
-					instant_build = yes
-				}
-				set_state_flag = AST_expand_the_raaf_AB
+				level = 5
+				instant_build = yes
 			}
-			add_tech_bonus = {
-				name = AST_expand_northern_presence
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
+		}
 		}
 	}
 	focus = {
@@ -2197,10 +2175,10 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			303 = {
+			450 = {
 				controller = { is_in_faction_with = ROOT }
 			}
-			300 = {
+			655 = {
 				controller = { is_in_faction_with = ROOT }
 			}
 		}
@@ -2209,78 +2187,46 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = {  }
 		completion_reward = {
-			591 = {
+			450 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
+					province = 4058
+					level = 5
 					instant_build = yes
-				}
-				set_building_level = {
+				}	
+				add_building_construction = {
 					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 3
+					province = 1334
+					level = 5
 					instant_build = yes
 				}
 			}
-			713 = {
+			655 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 5
 					instant_build = yes
 				}
-				set_building_level = {
+				add_building_construction = {
 					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
+					province = 6716
+					level = 5
 					instant_build = yes
-				}
-				set_building_level = {
+				}	
+				add_building_construction = {
 					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 3
+					province = 1231
+					level = 5
 					instant_build = yes
 				}
 			}
-			300 = {
-				set_building_level = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-				set_building_level = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 3
-					instant_build = yes
-				}
-			}
+		}
 		}
 	}
 }

@@ -7,7 +7,7 @@ state={
 		oil=124
 		steel=41
 		tungsten=108
-		rubber=23
+		rubber=15
 		aluminium=4
 		chromium=101
 	}

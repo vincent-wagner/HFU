@@ -28,9 +28,9 @@ sub_units = {
 			anti_tank_equipment = 9
 		}
 		manpower = 300
-		max_organisation = 0
+		max_organisation = -10
 		default_morale = 0.1
-		max_strength = -0.1
+		max_strength = -0.15
 		training_time = 120
 		weight = 0.1
 
@@ -39,7 +39,7 @@ sub_units = {
 		supply_consumption = 0.05
 
 		# Support nerfs to combat abilities
-		defense = -0.70
+		defense = -1
 		breakthrough = -0.70
 		soft_attack = -0.70
 		hard_attack = -0.70

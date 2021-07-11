@@ -4,7 +4,7 @@ state={
 	manpower = 309000
 	state_category = pastoral
 	resources={
-		aluminium=78
+		aluminium=85
 	}
 	history={
 		owner = ENG

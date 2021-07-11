@@ -17,6 +17,9 @@ focus_tree = {
 				tag = LUX
 				tag = ALB
 				tag = INS
+				tag = LIT
+				tag = LAT
+				tag = EST
 			}
 		}
 	}

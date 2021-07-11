@@ -2242,7 +2242,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = lar_appeal_to_overseas_territories.11
 			add_resource = {
-				type = rubber
+				type = steel
 				amount = 30
 				state = 469
 			}
