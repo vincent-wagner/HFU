@@ -324,9 +324,12 @@ focus_tree = {
 		icon = GFX_focus_generic_rubber
 		x = -1
 		y = 1
+		available = {
+			date > 1941.6.1
+		}
 		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
-		cost = 5
+		cost = 2
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			set_technology= {
@@ -356,7 +359,7 @@ focus_tree = {
 			factor = 4
 		}
 		available= {
-			date>1941.1.1
+			date > 1941.6.1
 		}
 		completion_reward = {
 			add_ideas = USA_rubber1

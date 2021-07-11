@@ -5,7 +5,7 @@ state={
 	state_category = rural
 	resources={
 		oil = 10
-		rubber = 15
+		rubber = 10
 		
 	}
 	history={
