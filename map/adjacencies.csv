@@ -18,6 +18,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11884;11876;impassable;-1;-1;-1;-1;-1;;gibraltarspain
 11685;9395;sea;4971;-1;-1;-1;-1;;Portugese Timor-Lesser Sunda
 9358;1044;sea;8104;-1;-1;-1;-1;;Kalimantan-Sulawesi
+9331;1364;sea;4853;-1;-1;-1;-1;;Kalimantan-Sulawesi-2
+9571;4194;sea;4877;-1;-1;-1;-1;;Kalimantan-Sulawesi-3
+4218;6834;sea;4900;-1;-1;-1;-1;;Kalimantan-Sulawesi-4
+4150;9410;sea;6478;-1;-1;-1;-1;;Kalimantan-Sulawesi-5
+3958;11144;sea;202;-1;-1;-1;-1;;Kalimantan-Sulawesi-6
+1576;1255;sea;5120;-1;-1;-1;-1;;Kalimantan-Sulawesi-7
 9448;6885;sea;2694;-1;-1;-1;-1;;Calapan-Cebu
 11003;1169;sea;8033;-1;-1;-1;-1;;Cebu-Samar
 6825;9363;sea;2716;-1;-1;-1;-1;;cebu-mindano
