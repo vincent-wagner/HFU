@@ -306,7 +306,6 @@ tactic_tactical_withdrawal = { #counters encirclement
 
 	phase = tactical_withdrawal
 
-	combat_width = -0.25
 	attacker = -0.25
 	defender = -0.05
 }
@@ -323,7 +322,7 @@ tactic_tw_attack = {
 	picture = tw_attack
 	display_phase = tactical_withdrawal
 
-	combat_width = -0.25
+	combat_width = 0.5 #increased combat width
 	attacker = -0.25
 	defender = -0.1
 }
@@ -339,7 +338,6 @@ tactic_tw_defend = {
 	picture = tw_defend
 	display_phase = tactical_withdrawal
 
-	combat_width = -0.25
 	attacker = -0.3
 	defender = -0.05
 }
@@ -356,7 +354,7 @@ tactic_tw_chase = {
 	display_phase = tactical_withdrawal
 
 
-	combat_width = -0.25
+	combat_width = 0.5 #increased combat width
 	attacker = -0.15
 	defender = -0.05
 }
@@ -372,8 +370,6 @@ tactic_tw_evade = {
 	picture = tw_evade
 	display_phase = tactical_withdrawal
 
-
-	combat_width = -0.25
 	attacker = -0.4
 	defender = -0.1
 }
@@ -415,8 +411,9 @@ tactic_breakthrough = { #counters ambush
 	countered_by = tactic_backhand_blow
 
 	attacker_movement_speed = 0.5
-	attacker = 0.25
+	attacker = 0.20
 	defender = -0.15
+	combat_width = 0.5 #increased combat width
 }
 
 tactic_ambush = { #counters shock
@@ -517,7 +514,7 @@ tactic_backhand_blow = { #counters breakthrough
 
 	attacker_movement_speed = -0.3
 	attacker = -0.2
-	defender = 0.25
+	defender = 0.20
 }
 
 tactic_seize_bridge = {
@@ -539,7 +536,7 @@ tactic_seize_bridge = {
 	picture = seize_bridge
 
 	phase = seize_bridge
-
+    combat_width = 0.5 #increased combat width
 	attacker_movement_speed = 0.1
 	attacker = 0.2
 	defender = -0.05
@@ -554,7 +551,7 @@ tactic_attacker_sb_hold = {
 	base =  { factor = 4 }
 	picture = attacker_sb_hold
 	display_phase = seize_bridge
-
+	combat_width = 0.5 #increased combat width
 	attacker = 0.2
 }
 tactic_attacker_sb_skillful_defence = {
@@ -568,7 +565,7 @@ tactic_attacker_sb_skillful_defence = {
 	base =  { factor = 4 }
 	picture = attacker_sb_skillful_defence
 	display_phase = seize_bridge
-
+	combat_width = 0.5 #increased combat width
 	attacker = 0.2
 	defender = -0.1
 }
@@ -578,7 +575,7 @@ tactic_defender_sb_assault = {
 		is_attacker = no
 		phase = seize_bridge
 	}
-
+	combat_width = 0.5 #increased combat width
 	base =  { factor = 4 }
 	picture = defender_sb_assault
 	display_phase = seize_bridge
@@ -592,7 +589,7 @@ tactic_defender_sb_reckless_assault = {
 		phase = seize_bridge
 		skill < 3
 	}
-
+	combat_width = 0.5 #increased combat width
 	base =  { factor = 4 }
 	picture = defender_sb_reckless_assault
 	display_phase = seize_bridge
@@ -617,7 +614,7 @@ tactic_defender_sb_retake_bridge = {
 	base =  { factor = 4 }
 	picture = defender_sb_retake_bridge
 	display_phase = seize_bridge
-
+	combat_width = 0.5 #increased combat width
 	attacker = 0.1
 	defender = -0.05
 }
@@ -636,7 +633,7 @@ tactic_hold_bridge = {
 
 	base =  { factor = 2 }
 	picture = tactic_hold_bridge
-
+	combat_width = 0.5 #increased combat width
 	phase = hold_bridge
 
 	attacker_movement_speed = 0.1
@@ -649,7 +646,7 @@ tactic_attacker_hb_attack = {
 		is_attacker = yes
 		phase = hold_bridge
 	}
-
+	combat_width = 0.5 #increased combat width
 	base =  { factor = 4 }
 	picture = attacker_hb_attack
 	display_phase = hold_bridge
@@ -663,7 +660,7 @@ tactic_attacker_hb_rush = {
 		phase = hold_bridge
 		skill > 4
 	}
-
+	combat_width = 0.5 #increased combat width
 	base =  { factor = 4 }
 	picture = attacker_hb_rush
 	display_phase = hold_bridge
@@ -680,7 +677,7 @@ tactic_attacker_hb_storm = {
 	base =  { factor = 2 }
 	picture = attacker_hb_storm
 	display_phase = hold_bridge
-
+	combat_width = 0.5 #increased combat width
 	countered_by = tactic_defender_hb_skillful_defence
 
 	phase = seize_bridge
@@ -695,7 +692,7 @@ tactic_defender_hb_hold = {
 		phase = hold_bridge
 		skill < 3
 	}
-
+	combat_width = 0.5 #increased combat width
 	base =  { factor = 2 }
 	picture = defender_hb_hold
 	display_phase = hold_bridge
@@ -717,7 +714,7 @@ tactic_defender_hb_skillful_defence = {
 	base =  { factor = 2 }
 	picture = defender_hb_skillful_defence
 	display_phase = hold_bridge
-
+	combat_width = 0.5 #increased combat width
 	attacker = 0.1
 	defender = 0.05
 }
@@ -739,9 +736,8 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	base =  { factor = 3 }
 	picture = tactic_guerrilla_tactics
 	countered_by = tactic_blitz
-	combat_width = -0.5
-	attacker = -0.6
-	defender = -0.5
+	attacker = -0.4
+	defender = -0.4
 }
 
 tactic_human_wave_tactics = { #People's army attacker tactic
@@ -778,7 +774,7 @@ tactic_banzai_charge = { #Special Japan attacker tactic
 
 	base =  { factor = 4 }
 	picture = tactic_banzai_charge
-
+	combat_width = 0.5 #increased combat width
 	attacker_movement_speed = 0.1
 	attacker = 0.25
 	defender = 0.1
@@ -795,7 +791,7 @@ tactic_infantry_charge = { #GBP -> Infantry attacker tactic
 
 	base =  { factor = 4 }
 	picture = tactic_infantry_charge
-
+	combat_width = 0.5 #increased combat width
 	attacker = 0.1
 	defender = -0.05
 }
@@ -826,7 +822,7 @@ tactic_relentless_assault = { #Deep battle attacker tactic
 
 	base =  { factor = 4 }
 	picture = tactic_relentless_assault
-
+	combat_width = 0.5 #increased combat width
 	attacker_movement_speed = 0.15
 	attacker = 0.2
 	defender = 0.05
@@ -875,7 +871,7 @@ tactic_barrage = { #Superior firepower attacker tactic
 
 	base =  { factor = 4 }
 	picture = tactic_barrage
-
+	combat_width = 0.5 #increased combat width
 	attacker = 0.1
 	defender = -0.2
 }
