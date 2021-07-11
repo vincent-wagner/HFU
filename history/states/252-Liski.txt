@@ -9,7 +9,6 @@ state={
 		}
 		owner = SOV
 		buildings = {
-			industrial_complex = 2
 			infrastructure = 5
 			air_base = 5
 		}

@@ -217,7 +217,7 @@ ideas = {
 
             modifier = {
                 production_speed_arms_factory_factor = 0.10
-                consumer_goods_factor = -0.02
+                consumer_goods_factor = -0.045
             }
         }
 		Order_227 = {

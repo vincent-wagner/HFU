@@ -196,7 +196,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 1000
+	amount = 750
 	producer = GER
 }
 add_equipment_to_stockpile = {
@@ -205,8 +205,8 @@ add_equipment_to_stockpile = {
 	producer = GER
 }
 add_equipment_to_stockpile = {
-	type = light_tank_equipment_1
-	amount = 720
+	type = light_tank_equipment_2
+	amount = 700
 	producer = GER
 }
 add_equipment_to_stockpile = {
@@ -222,11 +222,6 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = tac_bomber_equipment_1
 	amount = 400
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = heavy_fighter_equipment_1
-	amount = 100
 	producer = GER
 }
 add_equipment_to_stockpile = {
