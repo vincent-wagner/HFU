@@ -662,7 +662,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.5
+				production_speed_synthetic_refinery_factor = 0.1
 			}
 		}
 		USA_national_employment_strategy = {
