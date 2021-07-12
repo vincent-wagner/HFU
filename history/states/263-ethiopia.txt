@@ -4,7 +4,6 @@ state=
 	name="STATE_271"
 	manpower = 1000002
 	resources={
-		rubber=10
 	}
 	state_category = town
 	history=
