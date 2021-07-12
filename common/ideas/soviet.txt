@@ -360,7 +360,7 @@ ideas = {
 			}
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.15
+				research_speed_factor = 0.1
 			}
 		}
 		socialist_science_focus = {
@@ -401,7 +401,7 @@ ideas = {
 			}
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.8
+				production_speed_synthetic_refinery_factor = 1
 			}
 		}
 		peoples_commissariat_focus = {

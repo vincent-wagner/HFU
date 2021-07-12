@@ -3239,7 +3239,6 @@ focus = {
 		id = GER_alta
 		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_around_maginot }
-		available = {date > 1940.01.01}
 		bypass = {
 			NOT = {FRA = {has_full_control_of_state =16}}
 		}
@@ -4314,8 +4313,7 @@ focus = {
 	cost = 5
 	completion_reward = {
 		add_tech_bonus = {
-		bonus = 0.5
-		ahead_reduction = 0.5
+		bonus = 1
 		uses = 1
 	    technology = advanced_infantry_weapons
 		}	
@@ -4347,7 +4345,7 @@ focus = {
 	relative_position_id = GER_get_better_advisors
 	cost = 5
 	completion_reward = {
-		custom_effect_tooltip = "This focus will automatically bypass if not taken before June 1936."
+		custom_effect_tooltip = "This focus will automatically bypass if not taken before July 1936."
 		add_tech_bonus = {
 			bonus = 4.5
 			uses = 3

@@ -1715,24 +1715,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_carrier_planes
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = FRA_carrier_focus }
-		x = -1
-		y = 1
-		relative_position_id = FRA_carrier_focus
-		cost = 5
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_carrier_focus
-				bonus = 1.0
-				uses = 2
-				category = naval_air
-			}
-		}
-	}
-	focus = {
 		id = FRA_rush_the_richelieus
 		icon = GFX_focus_generic_cruiser2
 		prerequisite = { focus = FRA_capital_ship_focus }
@@ -2059,7 +2041,7 @@ focus_tree = {
 					}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 40000
+				amount = 45000
 				producer = FRA
 					}
 			add_equipment_to_stockpile = {
@@ -2278,6 +2260,68 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = FRA_the_maquis
+		icon = GFX_focus_focus_fra_maquis
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = FRA_form_the_national_committee
+		}
+		relative_position_id = FRA_form_the_national_committee
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = FRA_arty1
+		icon = GFX_goal_generic_army_artillery2
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = FRA_the_maquis
+		}
+		relative_position_id = FRA_the_maquis
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 	focus = {
@@ -2516,46 +2560,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_the_maquis
-		icon = GFX_focus_focus_fra_maquis
-		x = -2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_refus_absurde
-		}
-		relative_position_id = FRA_refus_absurde
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_ideas = { FRA_maquis }
-			every_state = {
-				limit = {
-					is_core_of = ROOT
-					not = { is_controlled_by = ROOT }
-					infrastructure < 7
-				}
-				add_resistance_target = {
-					amount = 10
-					tooltip = FRA_the_maquis
-				}
-			}
-		}
-	}
-	focus = {
 		id = FRA_reach_out_to_trade_unions
 		icon = GFX_goal_generic_major_alliance
 		x = 0
@@ -2623,102 +2627,51 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_connections_to_industrialists
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_refus_absurde
-		}
-		relative_position_id = FRA_refus_absurde
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_ideas = FRA_industrialist_connections
-		}
-	}
-	focus = {
-		id = FRA_the_civil_and_military_organization
-		icon = GFX_goal_generic_military_deal
+		id = FRA_infantry_focus
+		icon = GFX_goal_generic_army_artillery
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
 		prerequisite = {
-			focus = FRA_connections_to_industrialists
+			focus = FRA_arty1
 		}
-		relative_position_id = FRA_connections_to_industrialists
+		relative_position_id = FRA_arty1
 		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FRA_industrialist_connections
-				add_idea = FRA_civil_and_military_organization
-			}
+			add_ideas = FRA_mass_production
 		}
 	}
 	focus = {
-		id = FRA_national_council_of_the_resistance
+		id = FRA_tank_modernization
 		icon = GFX_focus_focus_fra_national_resistance_council
-		x = 1
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_the_civil_and_military_organization
-		}
-		prerequisite = {
-			focus = FRA_cooperation_with_the_communists
-		}
 		prerequisite = {
 			focus = FRA_form_the_national_committee
 		}
-		relative_position_id = FRA_the_civil_and_military_organization
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
+		relative_position_id = FRA_form_the_national_committee
+		x = -2
+		y = 1
+		cost = 5
 		available = {
-		}
-		bypass = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FRA_civil_and_military_organization
-				add_idea = FRA_national_council_of_the_resistance
+			add_tech_bonus = {
+            ahead_reduction = 1.2
+            bonus = 1
+            uses = 1
+            technology = advanced_medium_tank
 			}
+			add_tech_bonus = {
+				ahead_reduction = 1.2
+				bonus = 1
+				uses = 1
+				technology = advanced_heavy_tank
+				}
 		}
 	}
 	focus = {
@@ -2731,10 +2684,10 @@ focus_tree = {
 			y = 0
 		}
 		prerequisite = {
-			focus = FRA_national_council_of_the_resistance
+			focus = FRA_tank_modernization
 		}
-		relative_position_id = FRA_national_council_of_the_resistance
-		cost = 10
+		relative_position_id = FRA_tank_modernization
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
