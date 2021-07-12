@@ -4,7 +4,6 @@ state={
 	manpower = 3694611
 	state_category = french_colony
 	resources={
-		rubber=4
 	}
 	history={
 		owner = FRA
