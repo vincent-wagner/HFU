@@ -107,6 +107,7 @@ ideas = {
 			picture = generic_production_bonus
 			modifier = {
 				consumer_goods_factor = -0.02
+				production_speed_industrial_complex_factor = 0.2
 			}
 		}
 		SOV_research_institutes1 = {
@@ -1265,23 +1266,19 @@ ideas = {
 					defense = 1
 					hard_attack = 0.1
 					soft_attack = 0.1
-					build_cost_ic = -0.05
 				}
 				medium_tank_destroyer_equipment = {
 					defense = 1
 					hard_attack = 0.15
 					ap_attack = 0.2
-					build_cost_ic = -0.05
 				}
 				medium_tank_artillery_equipment = {
 					defense = 1
 					soft_attack = 0.15
-					build_cost_ic = -0.05
 				}
 				medium_tank_aa_equipment = {
 					defense = 1
 					air_attack = 0.1
-					build_cost_ic = -0.05
 				}
 				light_tank_equipment = {
 					build_cost_ic = -0.125

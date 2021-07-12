@@ -2414,7 +2414,7 @@ focus = {
 		category = infantry_weapons
 		}
 		add_tech_bonus = {
-			bonus = 1.0
+			bonus = 0.5
 			ahead_reduction = 0.5
 			uses = 1
 			technology = advanced_infantry_weapons

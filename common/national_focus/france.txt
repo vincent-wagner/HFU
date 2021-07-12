@@ -2059,7 +2059,7 @@ focus_tree = {
 					}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 25000
+				amount = 40000
 				producer = FRA
 					}
 			add_equipment_to_stockpile = {
@@ -2069,7 +2069,7 @@ focus_tree = {
 					}
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment
-				amount = 800
+				amount = 1000
 				producer = FRA
 					}		
 			if = {
