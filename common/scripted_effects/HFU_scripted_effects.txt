@@ -244,7 +244,6 @@ update_pacific_war = {
 		limit = {date <1944.1.1}
 		set_variable={Global.pacific_days=GLOBAL.num_days}
 		subtract_from_variable={Global.pacific_days=709560}
-		set_variable{Global.pacific_days2=Global.pacific_days}
 		divide_variable={Global.pacific_days=3650}
 		subtract_from_variable={GER.pacific_status=Global.pacific_days}
 	}
@@ -263,6 +262,10 @@ update_pacific_war = {
 	if= { 
 		limit = {2= {is_controlled_by_GER_or_ally=no}}
 		add_to_variable={GER.pacific_status=-0.1}
+	}
+	if= { 
+		limit = {47= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={GER.pacific_status=-0.05}
 	}
 }
 anti_cross_faction_trade_axis = {
