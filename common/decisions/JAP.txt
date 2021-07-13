@@ -24,12 +24,16 @@ foreign_politics = {
 	}
   
     suprise_attack = {
-        visible = {
+        allowed = {
+			tag = JAP
+		}
+		visible = {
             has_completed_focus = JAP_strike_on_the_southern_resource_area
         }
         available = {
             always = no
         }
+		fire_only_once = yes
         days_remove = 15
         remove_effect = {
          RAJ = {
