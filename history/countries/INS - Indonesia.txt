@@ -24,6 +24,7 @@ set_popularities = {
 add_ideas=no_surrender
 add_ideas=neutrality_idea
 add_ideas=neutral_idea
+add_ideas=INS_defense_of_homeland
 create_country_leader = {
 	name = "A. T. van Starkenborgh Stachouwer"
 	desc = ""

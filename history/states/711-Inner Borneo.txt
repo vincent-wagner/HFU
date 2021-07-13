@@ -1,15 +1,21 @@
 state={
 	id=711
 	name="STATE_798"
-	state_category = wasteland
+	state_category=rural
 	history={
 		owner = INS
 		add_core_of = INS
+		buildings = {
+			infrastructure = 2
+			9500 = {
+				naval_base = 1
+			}
+		}
 	}
 	provinces={
-		1925 1979 2022 2047 4766 4790 6764 6886 6905
+		1197 1349 1925 1979 2022 2047 3967 4052 4766 4790 6696 6764 6886 6877 6905 9358 9500 11079 11125
 	}
-	manpower=3000
+	manpower=1003000
 	buildings_max_level_factor=1.000
 }
 
