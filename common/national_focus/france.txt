@@ -1888,48 +1888,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_refus_absurde
-		icon = GFX_goal_generic_demand_territory
-		x = 11
-		y = 7
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-		}
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			remove_ideas = { FRA_defeatism }
-		}
-	}
-	focus = {
 		id = FRA_appeal_to_the_french_nation
 		icon = GFX_goal_generic_propaganda
-		x = 6
-		y = 0
-		offset = {
-			x = 0
-			y = 0
-		}
+		x = 13
+		y = 7
 		prerequisite = {}
 		mutually_exclusive = { }
-		relative_position_id = FRA_refus_absurde
 		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
 		available = {
 			hidden_trigger={NOT={has_idea=FRA_no_training_queue}}
 			has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
@@ -1999,6 +1964,31 @@ focus_tree = {
 					}
 	}
 }	
+	focus = {
+		id = FRA_refus_absurde
+		icon = GFX_goal_generic_demand_territory
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = FRA_appeal_to_the_french_nation
+		}
+		relative_position_id = FRA_appeal_to_the_french_nation
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = { FRA_defeatism }
+		}
+	}
 	focus = {
 		id = FRA_appeal_to_overseas_territories
 		icon = GFX_goal_generic_radar
@@ -2124,7 +2114,7 @@ focus_tree = {
 			focus = FRA_appeal_to_overseas_territories
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2164,10 +2154,7 @@ focus_tree = {
 			focus = FRA_appeal_to_overseas_territories
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
+		cost = 3
 		available = {
 			478 = {
 				is_controlled_by = EFR
@@ -2201,10 +2188,7 @@ focus_tree = {
 			focus = FRA_appeal_to_overseas_territories
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
+		cost = 3
 		available = {
 			469 = {
 				is_controlled_by = EFR
@@ -2258,6 +2242,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			add_ideas = { FRA_colonial_recruitment }
 			add_war_support = 0.1
 			add_stability = 0.1
 		}
@@ -2445,8 +2430,8 @@ focus_tree = {
 	focus = {
 		id = FRA_the_free_french_navy
 		icon = GFX_goal_generic_build_navy
-		x = -2
-		y = 2
+		x = -1
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -2484,57 +2469,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_colonial_recruitment
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_continue_the_fight
-		}
-		relative_position_id = FRA_continue_the_fight
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			any_owned_state = {
-				is_controlled_by = ROOT
-				NOT = {
-					is_core_of = ROOT
-				}
-			}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {
-			add_ideas = { FRA_colonial_recruitment }
-		}
-	}
-	focus = {
 		id = FRA_the_regiment_normandie
 		icon = GFX_focus_fra_regiment_normandie
-		x = 2
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
+		x = 1
+		y = 1
 		prerequisite = {
 			focus = FRA_continue_the_fight
 		}
 		relative_position_id = FRA_continue_the_fight
 		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
 		available = {
 			any_enemy_country = {
 				has_war_with = SOV
@@ -2676,30 +2619,24 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_national_uprising
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_generic_army_motorized
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
 		prerequisite = {
 			focus = FRA_tank_modernization
 		}
 		relative_position_id = FRA_tank_modernization
 		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
 		available = {
 		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_timed_idea = { idea = FRA_national_uprising days = 90 }
+			add_tech_bonus = {
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				technology = mechanised_infantry2
+				}
 		}
 	}
 }
