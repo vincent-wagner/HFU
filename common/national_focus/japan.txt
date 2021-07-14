@@ -1699,7 +1699,7 @@ focus_tree = {
 			}
 		}
 		available = {
-			date > 1940.12.31
+			date > 1940.12.01
 		}  
 		cancel_if_invalid = yes
 		continue_if_invalid = no
