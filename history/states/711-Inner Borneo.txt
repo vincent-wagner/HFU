@@ -6,6 +6,7 @@ state={
 		owner = INS
 		add_core_of = INS
 		buildings = {
+			air_base = 5
 			infrastructure = 2
 			9500 = {
 				naval_base = 1
