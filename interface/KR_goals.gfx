@@ -1,113 +1,113 @@
-spriteTypes = {
+SpriteTypes = {
 
 	#### Generic continuous goal icons
-	spriteType = {
-		name = "goal_italy_Ultranationalism_2"
-		textureFile = "gfx/interface/goals/Ultranationalism_2.dds"
+	SpriteType = {
+		name = "GFX_ITA_italy_Ultranationalism_2"
+		texturefile = "gfx/interface/goals/Ultranationalism_2.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GOAL_equpiment"
-		textureFile = "gfx/interface/goals/GOAL_equpiment.dds"
+		texturefile = "gfx/interface/goals/GOAL_equpiment.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "ger_alliance_with_italy"
-		textureFile = "gfx/interface/goals/ger_alliance_with_italy.dds"
+		texturefile = "gfx/interface/goals/ger_alliance_with_italy.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "goal_italy_bring_industry_to_the_mezzogiorno"
-		textureFile = "gfx/interface/goals/goal_italy_bring_industry_to_the_mezzogiorno.dds"
+		texturefile = "gfx/interface/goals/goal_italy_bring_industry_to_the_mezzogiorno.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "ITA_italian_highways"
-		textureFile = "gfx/interface/goals/ITA_italian_highways.dds"
+		texturefile = "gfx/interface/goals/ITA_italian_highways.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "goal_italy_increase_settlements_in_eritrea"
-		textureFile = "gfx/interface/goals/goal_italy_increase_settlements_in_eritrea.dds"
+		texturefile = "gfx/interface/goals/goal_italy_increase_settlements_in_eritrea.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "goal_italy_increase_marble_production"
-		textureFile = "gfx/interface/goals/goal_italy_increase_marble_production.dds"
+		texturefile = "gfx/interface/goals/goal_italy_increase_marble_production.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_generic_construct_infrastructure2"
-		textureFile = "gfx/interface/goals/goal_generic_construct_infrastructure2.dds"
+		texturefile = "gfx/interface/goals/goal_generic_construct_infrastructure2.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_learn_from_ethiopian_war"
-		textureFile = "gfx/interface/goals/goal_ita_learn_from_ethiopian_war.tga"
+		texturefile = "gfx/interface/goals/goal_ita_learn_from_ethiopian_war.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_military_land_survey"
-		textureFile = "gfx/interface/goals/goal_military_land_survey.dds"
+		texturefile = "gfx/interface/goals/goal_military_land_survey.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_HUN_revisions"
-		textureFile = "gfx/interface/goals/goal_hun_revisionism.dds"
+		texturefile = "gfx/interface/goals/goal_hun_revisionism.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_factories_must_grow"
-		textureFile = "gfx/interface/goals/sov/SOV_factories_must_grow.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_factories_must_grow.dds"
 	}
-	spriteType = {
+	SpriteType = {
 	    name = "GFX_focus_SOV_road_quality"
-		textureFile = "gfx/interface/goals/sov/SOV_road_quality.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_road_quality.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_industrial_revolution"
-		textureFile = "gfx/interface/goals/sov/SOV_industrial_revolution.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_industrial_revolution.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_develop_modern_guns"
-		textureFile = "gfx/interface/goals/sov/SOV_develop_modern_guns.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_develop_modern_guns.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_people_work"
-		textureFile = "gfx/interface/goals/sov/SOV_people_work.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_people_work.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_research_institutes"
-		textureFile = "gfx/interface/goals/sov/SOV_research_institutes.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_research_institutes.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_the_great_terror"
-		textureFile = "gfx/interface/goals/sov/SOV_terror.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_terror.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_get_better_advisors"
-		textureFile = "gfx/interface/goals/ger/GER_get_better_advisors.dds"
+		texturefile = "gfx/interface/goals/ger/GER_get_better_advisors.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_technology_lead"
-		textureFile = "gfx/interface/goals/ger/GER_technology_lead.dds"
+		texturefile = "gfx/interface/goals/ger/GER_technology_lead.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_adjust"
-		textureFile = "gfx/interface/goals/ger/GER_adjust.dds"
+		texturefile = "gfx/interface/goals/ger/GER_adjust.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_determine_the_investment"
-		textureFile = "gfx/interface/goals/ger/GER_determine_the_investment.dds"
+		texturefile = "gfx/interface/goals/ger/GER_determine_the_investment.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_reinforce_the_line"
-		textureFile = "gfx/interface/goals/ger/GER_reinforce_the_line.dds"
+		texturefile = "gfx/interface/goals/ger/GER_reinforce_the_line.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_GER_ground_support2"
-		textureFile = "gfx/interface/goals/ger/GER_ground_support2.dds"
+		texturefile = "gfx/interface/goals/ger/GER_ground_support2.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_GER_advanced_radar"
-		textureFile = "gfx/interface/goals/ger/GER_advanced_radar.dds"
+		texturefile = "gfx/interface/goals/ger/GER_advanced_radar.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_marine"
-		textureFile = "gfx/interface/goals/ger/GER_marine.dds"
+		texturefile = "gfx/interface/goals/ger/GER_marine.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_new_weapons"
-		textureFile = "gfx/interface/goals/ger/GER_new_weapons.dds"
+		texturefile = "gfx/interface/goals/ger/GER_new_weapons.dds"
 	}
 	SpriteType = {
 		name = "GFX_GOAL_GER_standard_panzer"
@@ -142,139 +142,139 @@ spriteTypes = {
 		name = "GFX_RAJ_swaraj"
 		texturefile = "gfx/interface/goals/raj/RAJ_peninsular_unity.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_aviation_cult"
 		texturefile = "gfx/interface/goals/SOV_aviation_cult.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_sparta"
 		texturefile = "gfx/interface/goals/FRA_focus_sparta.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_operation_sealion"
 		texturefile = "gfx/interface/goals/GER_operation_sealion.dds"
 		}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_air_innovation_2"
 		texturefile = "gfx/interface/goals/GER_air_innovation_2.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_army_innovation_2"
 		texturefile = "gfx/interface/goals/GER_army_innovation_2.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_USA_tank_experiments"
 		texturefile = "gfx/interface/goals/USA_tank_experiments.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "Ger_goal_air_armada"
 		texturefile = "gfx/interface/goals/Ger_goal_air_armada.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_USA_liberty_ships"
 		texturefile = "gfx/interface/goals/USA_liberty_ships.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_cas"
 		texturefile = "gfx/interface/goals/SOV_cas.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_closed_city_network"
 		texturefile = "gfx/interface/goals/SOV_closed_city_network.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_defense_of_moscow"
 		texturefile = "gfx/interface/goals/SOV_defense_of_moscow.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_defense_of_stalingrad"
 		texturefile = "gfx/interface/goals/SOV_defense_of_stalingrad.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_expand_red_fleet"
 		texturefile = "gfx/interface/goals/SOV_expand_red_fleet.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_extra_tech_slot_early"
 		texturefile = "gfx/interface/goals/SOV_extra_tech_slot_early.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_finish_five_year_plan"
 		texturefile = "gfx/interface/goals/SOV_finish_five_year_plan.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_improve_railway"
 		texturefile = "gfx/interface/goals/SOV_improve_railway.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_infrastructrure_effort"
 		texturefile = "gfx/interface/goals/SOV_infrastructrure_effort.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_mass_deployment_of_t34"
 		texturefile = "gfx/interface/goals/SOV_mass_deployment_of_t34.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_militarized_schools"
 		texturefile = "gfx/interface/goals/SOV_militarized_schools.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_military_reoganization"
 		texturefile = "gfx/interface/goals/SOV_military_reoganization.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_mobilization"
 		texturefile = "gfx/interface/goals/SOV_mobilization.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_nkvd_divisions"
 		texturefile = "gfx/interface/goals/SOV_nkvd_divisions.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_nkvd_primacy"
 		texturefile = "gfx/interface/goals/SOV_nkvd_primacy.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_production_effort"
 		texturefile = "gfx/interface/goals/SOV_production_effort.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_progress_cult"
 		texturefile = "gfx/interface/goals/SOV_progress_cult.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_southern_thrust"
 		texturefile = "gfx/interface/goals/SOV_southern_thrust.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_transpolar_flights"
 		texturefile = "gfx/interface/goals/SOV_transpolar_flights.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_workers_culture"
 		texturefile = "gfx/interface/goals/SOV_workers_culture.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_air_innovation_3"
 		texturefile = "gfx/interface/goals/ITA_air_innovation_3.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_h_class"
 		texturefile = "gfx/interface/goals/ITA_h_class.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_naval_air_effort_2"
 		texturefile = "gfx/interface/goals/ITA_naval_air_effort_2.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_oil"
 		texturefile = "gfx/interface/goals/ITA_oil.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_pact_of_steel"
 		texturefile = "gfx/interface/goals/ITA_pact_of_steel.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_trade_interdiction"
 		texturefile = "gfx/interface/goals/ITA_trade_interdiction.dds"
 	}
@@ -282,7 +282,7 @@ spriteTypes = {
 		name = "GFX_GER_endsieg"
 		texturefile = "gfx/interface/goals/GER_hitlers_meddling.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_GER_total_war"
 		texturefile = "gfx/interface/goals/GER_total_war.dds"
 	}
@@ -350,123 +350,123 @@ spriteTypes = {
 		name = "GFX_USA_lend_lease_act_2"
 		texturefile = "gfx/interface/goals/USA_lend_lease_act_2.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_all_options"
 		texturefile = "gfx/interface/goals/GER_all_options.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_anschluss"
 		texturefile = "gfx/interface/goals/GER_anschluss.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_ardennenoffensive"
 		texturefile = "gfx/interface/goals/GER_ardennenoffensive.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_atlantikschlacht"
 		texturefile = "gfx/interface/goals/GER_atlantikschlacht.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_atlantikwall"
 		texturefile = "gfx/interface/goals/GER_atlantikwall.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_autarky"
 		texturefile = "gfx/interface/goals/GER_autarky.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_autobahn"
 		texturefile = "gfx/interface/goals/GER_autobahn.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_end_of_czechslovakia"
 		texturefile = "gfx/interface/goals/GER_end_of_czechslovakia.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_extra_tech_slot"
 		texturefile = "gfx/interface/goals/GER_extra_tech_slot.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_flak_36"
 		texturefile = "gfx/interface/goals/GER_flak_36.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_german_war_economy"
 		texturefile = "gfx/interface/goals/GER_german_war_economy.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_germaniawerft"
 		texturefile = "gfx/interface/goals/GER_germaniawerft.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_grosraumwirtschaft"
 		texturefile = "gfx/interface/goals/GER_grosraumwirtschaft.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_h_class"
 		texturefile = "gfx/interface/goals/GER_h_class.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_king_tiger"
 		texturefile = "gfx/interface/goals/GER_king_tiger.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_mol_rib_pact"
 		texturefile = "gfx/interface/goals/GER_mol_rib_pact.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_pressure_sweden"
 		texturefile = "gfx/interface/goals/GER_pressure_sweden.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_south"
 		texturefile = "gfx/interface/goals/GER_south.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_soviet_treaty"
 		texturefile = "gfx/interface/goals/GER_soviet_treaty.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_SS"
 		texturefile = "gfx/interface/goals/GER_SS.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_synthetic_rubber"
 		texturefile = "gfx/interface/goals/GER_synthetic_rubber.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_unternehmen_zitadelle"
 		texturefile = "gfx/interface/goals/GER_unternehmen_zitadelle.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_vampir"
 		texturefile = "gfx/interface/goals/GER_vampir.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_german_air_cooperation"
 		texturefile = "gfx/interface/goals/ITA_german_air_cooperation.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_JAP_australia"
 		texturefile = "gfx/interface/goals/JAP_australia.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_JAP_burma_attack"
 		texturefile = "gfx/interface/goals/JAP_burma_attack.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_JAP_fortify_dei"
 		texturefile = "gfx/interface/goals/JAP_fortify_dei.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_JAP_hawaii"
 		texturefile = "gfx/interface/goals/JAP_hawaii.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_JAP_its_time_for_africa"
 		texturefile = "gfx/interface/goals/JAP_its_time_for_africa.tga"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_JAP_tank"
 		texturefile = "gfx/interface/goals/JAP_tank.tga"
 	}
@@ -486,27 +486,27 @@ spriteTypes = {
 		name = "GFX_goal_JAP_the_korean_question"
 		texturefile = "gfx/interface/goals/r56_goal_JAP_the_korean_question.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_SOV_soviet_women"
 		texturefile = "gfx/interface/goals/SOV_women.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_SOV_red_army"
 		texturefile = "gfx/interface/goals/SOV_red_army.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_SOV_protect_the_east"
 		texturefile = "gfx/interface/goals/SOV_protect_the_east.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_SOV_infantry_development"
 		texturefile = "gfx/interface/goals/SOV_infantry_development.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_georgy_zhukov_hero"
 		texturefile = "gfx/interface/goals/SOV_georgy_zhukov_hero.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_SOV_lessons_of_the_winter_war"
 		texturefile = "gfx/interface/goals/SOV_lessons_of_the_winter_war.dds"
 	}
@@ -514,12 +514,12 @@ spriteTypes = {
 		name = "GFX_SOV_nkvd_deportation_2"
 		texturefile = "gfx/interface/goals/SOV_nkvd_deportation_2.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_SOV_tractor_factories"
 		texturefile = "gfx/interface/goals/SOV_tractor_factories.dds"
 	}
 
-	spriteType = {
+	SpriteType = {
 		name = "GFX_SOV_tankograd"
 		texturefile = "gfx/interface/goals/SOV_tankograd.dds"
 	}
@@ -533,7 +533,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_ita_vittorio_ambrosio.tga"
 	}
 
-	spriteType = {
+	SpriteType = {
 		name = "GFX_ITA_Generic_Ultranat_Eagle"
 		texturefile = "gfx/interface/goals/Generic_Ultranat_Eagle.tga"
 	}
@@ -553,12 +553,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_italy_campioni.dds"
 	}
 
-	spriteType = {
+	SpriteType = {
 		name = "GFX_GER_SS_armed_branch"
 		texturefile = "gfx/interface/goals/ger_waffen_ss.dds"
 	}
 
-	spriteType = {
+	SpriteType = {
 		name = "GFX_GER_mobile_fortresses"
 		texturefile = "gfx/interface/goals/GER_tigers_in_the_east.dds"
 	}
@@ -2883,227 +2883,227 @@ spriteTypes = {
 
 	## Putting this Here so a new Countrystateview.GFX doesn't have to be moved from Vanilla
 
-	spriteType = {
+	SpriteType = {
 		name = "GFX_modifiers_soviet_hero_city_icon"
-		textureFile = "gfx/interface/modifiers_soviet_hero_city_icon.dds"
+		texturefile = "gfx/interface/modifiers_soviet_hero_city_icon.dds"
 	}
 
 
 
 
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_moscow"
 		texturefile = "gfx/interface/goals/GER_moscow.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_Focus_industry"
 		texturefile = "gfx/interface/goals/Focus_industry.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_goal_Operation_Schwarzes_Gold"
 		texturefile = "gfx/interface/goals/GER_goal_Operation_Schwarzes_Gold.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_Manstein"
 		texturefile = "gfx/interface/goals/GER_Manstein.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_New_Missile_Designs"
 		texturefile = "gfx/interface/goals/GER_New_Missile_Designs.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_balkan_initiative"
 		texturefile = "gfx/interface/goals/GER_balkan_initiative.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_leningrad"
 		texturefile = "gfx/interface/goals/GER_leningrad.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_first_things_first"
 		texturefile = "gfx/interface/goals/GER_first_things_first.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_the_new_draft"
 		texturefile = "gfx/interface/goals/GER_the_new_draft.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_money"
 		texturefile = "gfx/interface/goals/GER_money.dds"
-		}spriteType = {
+		}SpriteType = {
 		name = "GFX_focus_GER_aux"
 		texturefile = "gfx/interface/goals/GER_aux.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_germania"
 		texturefile = "gfx/interface/goals/GER_germania.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_Amerika_Bomber"
 		texturefile = "gfx/interface/goals/GER_Amerika_Bomber.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_Me262"
 		texturefile = "gfx/interface/goals/GER_Me262.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_Schwerer_Panzer"
 		texturefile = "gfx/interface/goals/GER_Schwerer_Panzer.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_Standardpanzer"
 		texturefile = "gfx/interface/goals/GER_Standardpanzer.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_The_Genius_Organizer"
 		texturefile = "gfx/interface/goals/GER_The_Genius_Organizer.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_Vergeltungswaffen"
 		texturefile = "gfx/interface/goals/GER_Vergeltungswaffen.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_Wunderwaffe"
 		texturefile = "gfx/interface/goals/GER_Wunderwaffe.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_Greater_Hungary"
 		texturefile = "gfx/interface/goals/HUN_Greater_Hungary.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_volkssturm"
 		texturefile = "gfx/interface/goals/ger_volkssturm.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_implement_scorched_earth_tactics"
 		texturefile = "gfx/interface/goals/GER_implement_scorched_earth_tactics.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_underground_industry"
 		texturefile = "gfx/interface/goals/GER_underground_industry.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_peenemunde_research_jet_engine"
 		texturefile = "gfx/interface/goals/GER_peenemunde_research_jet_engine.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_peenemunde_research_facility"
 		texturefile = "gfx/interface/goals/GER_peenemunde_research_facility.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_festung_principle"
 		texturefile = "gfx/interface/goals/GER_festung_principle.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_winter_of_1941"
 		texturefile = "gfx/interface/goals/GER_winter_of_1941.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_summon_fritz_todt"
 		texturefile = "gfx/interface/goals/GER_summon_fritz_todt.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_modern_infantry"
 		texturefile = "gfx/interface/goals/GER_modern_infantry.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ger_final_crusade"
 		texturefile = "gfx/interface/goals/ger_final_crusade.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ger_achtung_panzer"
 		texturefile = "gfx/interface/goals/ger_achtung_panzer.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_new_weapons"
 		texturefile = "gfx/interface/goals/GER_new_weapons.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_anti_tank"
 		texturefile = "gfx/interface/goals/anti_tank.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_JAP_industry"
 		texturefile = "gfx/interface/goals/JAP_industry.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_JAP_samurai"
 		texturefile = "gfx/interface/goals/JAP_samurai.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_JAP_yen"
 		texturefile = "gfx/interface/goals/JAP_yen.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_leningrad_designs"
-		textureFile = "gfx/interface/goals/sov/SOV_leningrad_designs.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_leningrad_designs.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_mechanization_effort"
-		textureFile = "gfx/interface/goals/sov/SOV_mechanization_effort.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_mechanization_effort.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_winter_camps"
-		textureFile = "gfx/interface/goals/sov/SOV_winter_camps.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_winter_camps.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_technology_advancment"
-		textureFile = "gfx/interface/goals/sov/SOV_technology_advancment.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_technology_advancment.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_short_term"
-		textureFile = "gfx/interface/goals/sov/SOV_short_term.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_short_term.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_long_term"
-		textureFile = "gfx/interface/goals/sov/SOV_long_term.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_long_term.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_modernize_tank"
-		textureFile = "gfx/interface/goals/sov/SOV_modernize_tank.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_modernize_tank.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_order"
-		textureFile = "gfx/interface/goals/ger/GER_order.dds"
+		texturefile = "gfx/interface/goals/ger/GER_order.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_transvolga"
-		textureFile = "gfx/interface/goals/sov/SOV_transvolga_railways.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_transvolga_railways.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_SOV_work_faster"
-		textureFile = "gfx/interface/goals/sov/SOV_work_faster.dds"
+		texturefile = "gfx/interface/goals/sov/SOV_work_faster.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_hermann_goering"
-		textureFile = "gfx/interface/goals/ger/GER_hermann_goering.dds"
+		texturefile = "gfx/interface/goals/ger/GER_hermann_goering.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_rethink_our_plans"
-		textureFile = "gfx/interface/goals/ger/GER_rethink_our_plans.dds"
+		texturefile = "gfx/interface/goals/ger/GER_rethink_our_plans.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_GER_rebuild_our_glory"
-		textureFile = "gfx/interface/goals/ger/GER_rebuild_our_glory.dds"
+		texturefile = "gfx/interface/goals/ger/GER_rebuild_our_glory.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_viva_il_duce"
-		textureFile = "gfx/interface/goals/ita/ITA_viva_il_duce.dds"
+		texturefile = "gfx/interface/goals/ita/ITA_viva_il_duce.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_sparta"
-		textureFile = "gfx/interface/goals/ita/ITA_sparta.dds"
+		texturefile = "gfx/interface/goals/ita/ITA_sparta.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_escape_the_cage"
-		textureFile = "gfx/interface/goals/ita/ITA_escape_the_cage.dds"
+		texturefile = "gfx/interface/goals/ita/ITA_escape_the_cage.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_strike_1"
-		textureFile = "gfx/interface/goals/ita/ITA_strike_1.dds"
+		texturefile = "gfx/interface/goals/ita/ITA_strike_1.dds"
 	}
-	spriteType = {
+	SpriteType = {
 		name = "GFX_focus_ITA_spqr"
-		textureFile = "gfx/interface/goals/ita/spqr.dds"
+		texturefile = "gfx/interface/goals/ita/spqr.dds"
 	}
 }	
