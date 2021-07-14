@@ -14,6 +14,19 @@ ideas = {
 				industry_air_damage_factor=-0.9
 			}
 		}
+		SPR_industrial_growth = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
 		SPA_preparing_for_war = {
 			allowed = {
 				always = yes
@@ -525,7 +538,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
 		SPA_national_recovery_1 = {
@@ -656,7 +669,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.10
 			}
 		}
 		SPA_a_methodical_approach = {
