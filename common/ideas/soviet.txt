@@ -1315,7 +1315,7 @@ ideas = {
 					reliability = 0.1 soft_attack =0.15 hard_attack= 0.1 breakthrough = 0.075
 				}
 				medium_tank_destroyer_equipment = {
-					reliability = 0.1 soft_attack =0.15 hard_attack= 0.15 breakthrough = 0.075
+					reliability = 0.1 soft_attack =0.15 hard_attack= 0.2 breakthrough = 0.075
 				}
 				medium_tank_artillery_equipment = {
 					reliability = 0.1 soft_attack =0.2 hard_attack= 0.1 
