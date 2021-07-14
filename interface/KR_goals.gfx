@@ -3106,4 +3106,21 @@ SpriteTypes = {
 		name = "GFX_focus_ITA_spqr"
 		texturefile = "gfx/interface/goals/ita/spqr.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_SPR_motorization"
+		texturefile = "gfx/interface/goals/spr/SPR_motorization.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SPR_military_training"
+		texturefile = "gfx/interface/goals/spr/SPR_military_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SPR_apoyo"
+		texturefile = "gfx/interface/goals/spr/SPR_apoyo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SPR_pistolas"
+		texturefile = "gfx/interface/goals/spr/SPR_pistolas.dds"
+	}
+
 }	

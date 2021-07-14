@@ -204,31 +204,10 @@ on_actions = {
 			}
 		}
 	}
-	
-	
-	
-	on_monthly_ITA={
-		effect={
-			if={limit={has_country_flag=ll_enabled}
-				set_temp_variable={airxp=num_equipment@fighter_equipment}
-				add_to_temp_variable={airxp=num_equipment@CAS_equipment}
-				add_to_temp_variable={airxp=num_equipment@CAS_equipment}
-				add_to_temp_variable={airxp=num_equipment@tac_bomber_equipment}
-				add_to_temp_variable={airxp=num_equipment@heavy_fighter_equipment}
-				add_to_variable = {total_planes_ll = airxp}
-				multiply_temp_variable = {airxp=0.11}
-				air_experience = airxp
-				send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
-				send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
-				send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
-				send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
-			}
-		}
-	}
 	on_monthly={
 		effect={
 		    every_state = {
-                limit= {AND = { air_base > 5 OR= {state = 591  state = 713 state = 300 state = 301 state = 302 state = 712 state = 711 state = 592 state = 586 state = 639 state = 656 state = 587 state = 629}}}
+                limit= {AND = { air_base > 5 OR= {state = 588 state = 450 state = 447 state = 448 state = 714 state = 591  state = 713 state = 300 state = 301 state = 302 state = 712 state = 711 state = 592 state = 555 state = 586 state = 639 state = 655 state = 656 state = 587 state = 629}}}
                 set_building_level = {
                     type = air_base
                     level = 0

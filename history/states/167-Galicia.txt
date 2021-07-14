@@ -11,7 +11,6 @@ state={
 		buildings = {
 			infrastructure = 6
 			anti_air_building = 10
-			arms_factory = 1
 		}
 		add_core_of = SPR
 	}
