@@ -7,7 +7,6 @@ state={
 		owner = SPR
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 1
 			anti_air_building = 10
 		}
 		add_core_of = SPR

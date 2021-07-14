@@ -14,6 +14,19 @@ ideas = {
 				industry_air_damage_factor=-0.9
 			}
 		}
+		SPR_industrial_growth = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
 		SPA_preparing_for_war = {
 			allowed = {
 				always = yes
@@ -311,6 +324,18 @@ ideas = {
 				no_supply_grace = 72
 			}
 		}
+		SPA_resources1 = {
+			picture = GFX_goal_generic_construction
+			allowed = {
+				original_tag = SPR
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
 		SPA_spanish_civil_war_commitments = {
 			picture = generic_manpower_bonus
 			allowed = {
@@ -380,6 +405,42 @@ ideas = {
 			}
 			modifier = {
 				conscription = 0.02
+			}
+		}
+		SPA_military_training1 = {
+			picture = GFX_goal_generic_army_doctrines
+			allowed = {
+				original_tag = SPR
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				experience_gain_army = 0.15
+			}
+		}
+		SPA_support_guns1 = {
+			picture = GFX_goal_generic_army_doctrines
+			allowed = {
+				original_tag = SPR
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+				medium_sp_artillery = {
+					build_cost_ic = -0.05
+				}
+			}
+			equipment_bonus = {
+				medium_tank_destroyer_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			equipment_bonus = {
+				medium_sp_anti_air_brigade = {
+					build_cost_ic = -0.05
+				}
 			}
 		}
 		SPA_regional_agrarian_commissions = {
@@ -477,7 +538,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
 		SPA_national_recovery_1 = {
@@ -506,7 +567,19 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.002
 				consumer_goods_factor = -0.05
-				production_speed_infrastructure_factor = 0.1
+				production_speed_infrastructure_factor = 0.4
+			}
+		}
+		SPA_infra = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = SPR
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.4
 			}
 		}
 		SPA_national_recovery_3 = {
@@ -596,7 +669,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.10
 			}
 		}
 		SPA_a_methodical_approach = {

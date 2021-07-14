@@ -12,6 +12,8 @@ set_variable = {
 }
 set_research_slots = 3
 set_technology = {
+	amphibious_mechanized_infantry = 1
+	armored_car1 = 1
 	desertinfantry_at = 1
 	shocktroops = 1
 	tech_mountaineers = 1
@@ -121,7 +123,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Davila Arrondo"
 	portrait_path = "gfx/leaders/SPR/Davila_Arrondo.tga"
-	traits = { panzer_leader infantry_leader ranger }
+	traits = { panzer_leader infantry_leader ranger trickster }
 	skill = 5
 	attack_skill = 5
 	defense_skill = 3
