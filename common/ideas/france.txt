@@ -826,8 +826,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				conscription_factor = -0.5
-				resistance_growth_on_our_occupied_states  = -0.25
 				legitimacy_gain_factor = -0.5
+                local_resources_factor = -0.1
 			}
 		}
 		FRA_maquis = {
@@ -903,13 +903,13 @@ ideas = {
 			removal_cost = -1
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.075 instant = yes
 				                     }
 			    artillery = {
-				build_cost_ic = -0.1 instant = yes
+				build_cost_ic = -0.075 instant = yes
 			                         }
 		        anti_tank = {
-			    build_cost_ic = -0.1 instant = yes
+			    build_cost_ic = -0.075 instant = yes
 		                             }
 		}
 		}	
@@ -970,6 +970,20 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				non_core_manpower = 0.05
+			}
+		}
+		FRA_colonial_soldiers1 = {
+			picture = generic_manpower_bonus
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				non_core_manpower = 0.1
 			}
 		}
 		FRA_victors_of_wwi = {

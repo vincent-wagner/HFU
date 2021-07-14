@@ -2249,7 +2249,7 @@ focus = {
 	relative_position_id = SOV_start_five_year_plan
 	prerequisite = { focus = SOV_long_term focus = SOV_short_term }
 	available = {
-		date > 1940.3.1
+		date > 1940.4.1
 	}
 		x = 6
 		y = 1
@@ -2400,11 +2400,6 @@ focus = {
 	x = 0
 	y = 1
 	completion_reward = { 
-		add_tech_bonus = {
-        bonus = 1.5
-		uses = 2
-		category = infantry_weapons
-		}
 		add_tech_bonus = {
 			bonus = 1
 			uses = 1

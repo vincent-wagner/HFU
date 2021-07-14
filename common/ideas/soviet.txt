@@ -120,7 +120,7 @@ ideas = {
 			}
 			picture = generic_production_bonus
 			modifier = {
-				research_speed_factor = 0.10
+				research_speed_factor = 0.075
 			}
 		}
 		SOV_snakemodding = {

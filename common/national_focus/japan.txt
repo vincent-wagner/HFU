@@ -341,10 +341,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			459 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_zaibatsus_factories
@@ -378,10 +378,10 @@ focus_tree = {
 		completion_reward = {
 			457 = {
 				
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = JAP_zaibatsus_factories
@@ -894,7 +894,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = JAP_bypass_the_philippines
+		id = JAP_naval_quality_control
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = JAP_modern_artillery }
 		prerequisite = { focus = JAP_national_research_policy }
@@ -902,23 +902,25 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_modern_artillery
 		cost = 10
-		ai_will_do = {
-			factor = 3
-		}
-		available = {
-		}
-		bypass = {
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
-				name = JAP_bypass_the_philippines
-				bonus = 2.0
-				uses = 2
-				category = tp_tech
+				bonus = 1
+				uses = 1
+				technology = damage_control_3
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				technology = fire_control_methods_3
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1141,45 +1143,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = JAP_the_zero
-		icon = GFX_focus_jap_zero
-		prerequisite = { focus = JAP_first_air_fleet }
-		prerequisite = { focus = JAP_agility_focus }
-		x = 2
-		y = 1
-		relative_position_id = JAP_agility_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_purge_the_kodoha_faction
-			}
-		}
-		available = {
-		}
-		bypass = {
-			#has_tech = fighter2
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			custom_effect_tooltip = JAP_the_zero_tt
-			hidden_effect = { set_technology = { fighter2 = 1 } }
-			
-			create_equipment_variant = {
-					name = "A6M Zero-sen Kai A"
-					type = fighter_equipment_2
-					upgrades = {
-						plane_range_upgrade = 5
-						plane_engine_upgrade = 5
-						}
-			}
-		}
-	}
-	focus = {
 		id = JAP_bomber_modernization
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = JAP_range_focus focus = JAP_agility_focus }
@@ -1237,7 +1200,7 @@ focus_tree = {
 	focus = {
 		id = JAP_new_naval_estimates
 		icon = GFX_focus_JAP_new_naval
-		x = 9
+		x = 8
 		y = 0
 		relative_position_id = JAP_army_expansion_law
 		cost = 10
@@ -1256,95 +1219,25 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = JAP_new_naval_estimates_DY1
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = JAP_new_naval_estimates_DY2
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-				}
+		completion_reward = {
+		455 = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+		type = dockyard
+		level = 3
+		instant_build = yes
 			}
 		}
-		completion_reward = {
-			if = {
-				limit = {
-					not = { has_dlc = "Man the Guns" }
-				}
-				add_tech_bonus = {
-					name = JAP_supremacy_of_the_battlefleet
-					bonus = 1.0
-					uses = 1
-					category = shbb_tech
-				}
-			}
-			else = {
-				navy_experience = 50
-			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT
-					not = {
-						OR = {
-							state = 567
-							state = 566
-							state = 479
-						}
-					}
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-				set_state_flag = JAP_new_naval_estimates_DY1
-			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT
-					not = {
-						OR = {
-							state = 567
-							state = 566
-							state = 479
-						}
-					}
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-				set_state_flag = JAP_new_naval_estimates_DY2
-			}
+		270 = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+		type = dockyard
+		level = 3
+		instant_build = yes
 		}
 	}
+	}
+}	
 	focus = {
 		id = JAP_carrier_warfare_experiments
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -1391,16 +1284,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_new_naval_estimates
 		cost = 5
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = JAP_purge_the_kodoha_faction
-			}
-		}
 		available = {
-		}
-		bypass = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1409,17 +1293,22 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = JAP_expand_the_snlf
 			add_tech_bonus = {
-				name = tp_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 3
-				category = tp_tech
+				name = JAP_expand_the_snlf
+				bonus = 2.0
+				uses = 1
+				technology = extreme_environment_training
 			}
 			add_tech_bonus = {
 				name = JAP_expand_the_snlf
 				bonus = 2.0
-				uses = 2
-				category = marine_tech
+				uses = 1
+				technology = survival_training 
+			}
+			add_tech_bonus = {
+				name = JAP_expand_the_snlf
+				bonus = 2.0
+				uses = 1
+				technology = elite_forces 
 			}
 			hidden_effect={
 				division_template = {
@@ -2561,9 +2450,8 @@ focus_tree = {
 					NOT={has_idea=JAP_non_aggression_pact_with_sov}
 					count_triggers = {
 						amount = 2
-						Or={AST={has_capitulated=yes} AST={exists=no}}
-						Or={RAJ={has_capitulated=yes} RAJ={exists=no}}
-						Or={SAF={has_capitulated=yes} SAF={exists=no}}
+						AST={has_capitulated=yes}
+						RAJ={has_capitulated=yes}
 						}}
 			}
 		}

@@ -2294,10 +2294,6 @@ focus_tree = {
 		}
 		relative_position_id = FRA_the_maquis
 		cost = 5
-		available = {
-		}
-		bypass = {
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -2305,7 +2301,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = artillery
 				bonus = 1
-				uses = 2
+				uses = 3
 			}
 		}
 	}
@@ -2503,72 +2499,58 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_reach_out_to_trade_unions
-		icon = GFX_goal_generic_major_alliance
+		id = FRA_resources
+		icon = GFX_goal_generic_construct_civilian
 		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+		y = 1	
 		prerequisite = {
 			focus = FRA_refus_absurde
 		}
 		relative_position_id = FRA_refus_absurde
 		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_ideas = FRA_connections_to_trade_unions
+				add_resource = {
+					type = steel
+					amount = 50
+					state = 466
+				}
+				add_resource = {
+					type = chromium
+					amount = 30
+					state = 466
+				}
+				add_resource = {
+					type = tungsten
+					amount = 30
+					state = 466
+				}
 		}
 	}
 	focus = {
-		id = FRA_cooperation_with_the_communists
-		icon = GFX_focus_generic_soviet_politics
+		id = FRA_colonial_soldiers
+		icon = GFX_focus_generic_manpower
 		x = 0
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
 		prerequisite = {
-			focus = FRA_reach_out_to_trade_unions
+			focus = FRA_resources
 		}
-		relative_position_id = FRA_reach_out_to_trade_unions
+		relative_position_id = FRA_resources
 		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			if = {
-				limit = {
-					communism < 0.14
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = 0.05
-				}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
 			}
-			add_ideas = FRA_communist_cooperation_2
-		}
+			add_ideas = FRA_colonial_soldiers1
 	}
+}	
 	focus = {
 		id = FRA_infantry_focus
 		icon = GFX_goal_generic_army_artillery
@@ -2618,14 +2600,35 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_national_uprising
-		icon = GFX_goal_generic_army_motorized
+		id = FRA_doctrine
+		icon = GFX_goal_generic_army_doctrines
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = FRA_tank_modernization
 		}
 		relative_position_id = FRA_tank_modernization
+		cost = 5
+		available = {
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = land_doctrine
+				}
+		}
+	}
+	focus = {
+		id = FRA_mechanized
+		icon = GFX_goal_generic_army_motorized
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_doctrine
+		}
+		relative_position_id = FRA_doctrine
 		cost = 5
 		available = {
 		}
