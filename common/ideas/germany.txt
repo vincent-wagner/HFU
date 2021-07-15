@@ -11,8 +11,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-				consumer_goods_factor = 0.01
-				production_speed_synthetic_refinery_factor = 1
+				consumer_goods_factor = 0.005
+				production_speed_synthetic_refinery_factor = 0.9
 			}
 		}
 		GER_strategic_air_effort_idea = {
