@@ -2106,30 +2106,7 @@ guiTypes = {
 				}				
 				
 			}
-			instantTextBoxType = {
-					name = "datelock_research_lock"
-					position = { x = 1450 y = 620 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "Datelocked 1941"
-					maxWidth = 600
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-				instantTextBoxType = {
-					name = "armour_subtitle_medium_research_lock"
-					position = { x = -20 y = 550 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = -100 y = 4}
-					text = "-----------------------------------------------------------------------------------------"
-					maxWidth = 2000
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
+
 			instantTextBoxType = {
 				name = "airtech_year2"
 				position = { x = 30 y = 160 }
@@ -2175,15 +2152,28 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1943"
+				text = "1941"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
-
+			
 			instantTextBoxType = {
 				name = "airtech_year6"
+				position = { x = 30 y = 720 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1942"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+ 
+			instantTextBoxType = {
+				name = "airtech_year7"
 				position = { x = 30 y = 858 }
 				textureFile = ""
 				font = "hoi_36header"
@@ -2196,7 +2186,7 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "airtech_year7"
+				name = "airtech_year8"
 				position = { x = 30 y = 998 }
 				textureFile = ""
 				font = "hoi_36header"
@@ -2395,7 +2385,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "tiled_research_bg"
-				position = { x=250 y=807 }
+				position = { x=250 y=907 }
 				size = { width = 1475 height = 350 }
 				clipping = no
 	
@@ -2474,30 +2464,7 @@ guiTypes = {
 				}				
 				
 			}
-			instantTextBoxType = {
-					name = "datelock_research_lock"
-					position = { x = 1450 y = 620 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "Datelocked 1941"
-					maxWidth = 600
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-				instantTextBoxType = {
-					name = "armour_subtitle_medium_research_lock"
-					position = { x = -20 y = 550 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = -100 y = 4}
-					text = "-----------------------------------------------------------------------------------------"
-					maxWidth = 2000
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
+	
 			instantTextBoxType = {
 				name = "airtech_year2"
 				position = { x = 30 y = 160 }
@@ -2543,7 +2510,20 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1943"
+				text = "1941"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "airtech_year6"
+				position = { x = 30 y = 720 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1942"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -2551,7 +2531,7 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "airtech_year6"
+				name = "airtech_year7"
 				position = { x = 30 y = 858 }
 				textureFile = ""
 				font = "hoi_36header"
@@ -2564,7 +2544,7 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "airtech_year7"
+				name = "airtech_year8"
 				position = { x = 30 y = 998 }
 				textureFile = ""
 				font = "hoi_36header"
@@ -2760,10 +2740,9 @@ guiTypes = {
 				pdx_tooltip = "scout_plane_equipment_1_desc"
 			}			
 			
-			
 			containerWindowType = {
 				name = "tiled_research_bg"
-				position = { x=250 y=807 }
+				position = { x=250 y=907 }
 				size = { width = 1475 height = 350 }
 				clipping = no
 	
