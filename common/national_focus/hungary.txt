@@ -654,7 +654,7 @@ focus_tree = {
 				set_state_flag = HUN_expand_the_manfred_weiss_steel_works_IC
 				add_resource = {
 					type = steel
-					amount = 30
+					amount = 20
 				}
 			}
 		}
@@ -720,6 +720,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_political_power = 150
 			add_research_slot = 1
 		}
 	}
