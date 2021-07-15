@@ -2,6 +2,10 @@ SpriteTypes = {
 
 	#### Generic continuous goal icons
 	SpriteType = {
+		name = "GFX_ITA_Innovative_theories"
+		texturefile = "gfx/interface/goals/ita/ITA_innovative_theories.dds"
+	}
+	SpriteType = {
 		name = "GFX_ITA_italy_Ultranationalism_2"
 		texturefile = "gfx/interface/goals/Ultranationalism_2.dds"
 	}

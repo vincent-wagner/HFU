@@ -2339,7 +2339,7 @@ focus = {
 	focus = {
 		id = ITA_8_Million_Bayonets
 		prerequisite = { focus = ITA_rommel}
-		icon = goal_italy_Ultranationalism_2
+		icon = GOAL_equpiment
 		available = {NOT = {has_full_control_of_state = 582 has_full_control_of_state = 413}}
 		relative_position_id = ITA_rommel
 		x = 2
@@ -2354,7 +2354,7 @@ focus = {
 	}
 	focus = {
 		id = ITA_Fiat_26
-		icon = GOAL_equpiment
+		icon = GFX_ITA_Innovative_theories
 		prerequisite = { focus = ITA_8_Million_Bayonets}
 		available = {
 		}
