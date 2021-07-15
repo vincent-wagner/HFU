@@ -281,7 +281,26 @@ ideas = {
 				consumer_goods_factor = 0.10
 			}
 		}
-		
+		JAP_hi_hi = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = USA_war_plan_orange
+				targeted_modifier = {
+					tag = JAP
+					defense_bonus_against  = -0.3
+					attack_bonus_against = -0.3
+
+				}
+				modifier = {
+					army_core_defence_factor = 0.3
+					army_core_attack_factor = 0.3
+				}
+		}
 		JAP_zaibatsus_challenged = {
 			allowed = {
 				always = no

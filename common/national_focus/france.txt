@@ -700,7 +700,6 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = FRA_firepower
-			add_ideas = FRA_infantry_focus
 		}
 	}
 	focus = {
@@ -807,7 +806,6 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_fusiliers_marine
-				category = tp_tech
 				category = marine_tech
 				uses = 2
 				bonus = 1
@@ -1097,9 +1095,6 @@ focus_tree = {
 		}
 		relative_position_id = FRA_form_the_popular_front
 		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
 		available = {
 		}
 		bypass = {
@@ -1112,7 +1107,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = FRA_laissez_faire
 				uses = 2
-				bonus = 1.5
+				bonus = 1
 				technology = advanced_machine_tools
 				technology = flexible_line
 				technology = assembly_line_production
@@ -2334,6 +2329,23 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FRA_economy1
+		icon = GFX_goal_generic_construction_shine
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_form_the_provisional_government_of_the_republic
+		}
+		relative_position_id = FRA_form_the_provisional_government_of_the_republic
+		cost = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = FRA_inefficient_economy_2
+		}
+	}
+	focus = {
 		id = FRA_katyusha
 		icon = GFX_focus_sparta
 		x = 0
@@ -2343,9 +2355,9 @@ focus_tree = {
 			y = 0
 		}
 		prerequisite = {
-			focus = FRA_form_the_provisional_government_of_the_republic
+			focus = FRA_economy1
 		}
-		relative_position_id = FRA_form_the_provisional_government_of_the_republic
+		relative_position_id = FRA_economy1
 		cost = 5
 		ai_will_do = {
 			factor = 1

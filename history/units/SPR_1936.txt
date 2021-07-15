@@ -66,8 +66,8 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Divizia de Munte"
-	division_names_group = ROM_MTN_01
+	name = "Mountain Division"
+	division_names_group = SPR_MNT_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -97,7 +97,7 @@ division_template = {
 }
 division_template = {
 	name = "Shock Troopers"
-	division_names_group = SPR_INF_01
+	division_names_group = SPR_SHOCK_01
 	regiments = {
 		shocktroop = { x = 0 y = 0 }
 		shocktroop = { x = 0 y = 1 }
@@ -126,8 +126,8 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Marines"
-	division_names_group = SPR_INF_01
+	name = "Marine Division"
+	division_names_group = SPR_MAR_01
 	regiments = {
 		marine = { x = 0 y = 0 }
 		marine = { x = 0 y = 1 }
@@ -157,7 +157,7 @@ division_template = {
 }
 division_template = {
 	name = "Desert Troopers"
-	division_names_group = SPR_INF_01
+	division_names_group = SPR_DEZERT_01
 	regiments = {
 		desertinfantry = { x = 0 y = 0 }
 		desertinfantry = { x = 0 y = 1 }

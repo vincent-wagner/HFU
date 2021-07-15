@@ -20,7 +20,7 @@ add_ideas = tradeback_is_cancer
 add_ideas = peace_training
 add_timed_idea = {
 	idea = FRA_civs
-	days = 365
+	days = 546
 }
 # Starting tech
 set_technology = {
