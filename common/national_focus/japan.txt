@@ -1706,6 +1706,12 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			CAN = {
+				add_ideas = JAP_hi_hi
+			}
+			FRA = {
+				add_ideas = JAP_hi_hi
+			}
 		    activate_decision = suprise_attack
 			declare_war_on = {
                 target = INS
