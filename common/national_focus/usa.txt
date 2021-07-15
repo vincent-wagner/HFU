@@ -1628,7 +1628,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = USA_war_plan_black
 		cost = 1
 		completion_reward = {
@@ -1728,18 +1728,52 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_prepare_for_japan
-		icon = GFX_USA_appoint_mcaurther_as_commander
+		id = USA_asian_theatre
 		x = 0
 		y = 1
+		icon = GFX_focus_USA_asian_theatre
 		prerequisite = { focus = USA_a_date_which_will_live_in_infamy }
 		relative_position_id = USA_a_date_which_will_live_in_infamy
 		cost = 2
+		available = {
+			has_war_with = JAP
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = USA_war_time
+		}
+	}
+	focus = {
+		id = USA_war_plans_division
+		icon = GFX_USA_semper_fi
+		prerequisite = { focus = USA_asian_theatre }
+		relative_position_id = USA_asian_theatre
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+		}
+		completion_reward = {
+			add_ideas = USA_islands
+					}
+		}	
+	focus = {
+		id = USA_prepare_for_japan
+		icon = GFX_USA_appoint_mcaurther_as_commander
+		x = 0
+		y = 2
+		prerequisite = { focus = USA_war_plans_division }
+		relative_position_id = USA_war_plans_division
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			has_war_with = JAP
+			date > 1941.4.1
 		}
 		bypass = {
 		}
@@ -1751,11 +1785,11 @@ focus_tree = {
 				name = "Douglas MacArthur"
 				id =56
 				picture = "Portrait_USA_Douglas_MacArthur.dds"
-				traits = {  offensive_doctrine brilliant_strategist media_personality politically_connected infantry_leader naval_invader jungle_rat skilled_staffer}
+				traits = { media_personality politically_connected infantry_leader infantry_expert naval_invader jungle_rat skilled_staffer trait_engineer fortress_buster }
 				skill = 7
-				attack_skill = 8
-				defense_skill = 3
-				planning_skill = 2
+				attack_skill = 7
+				defense_skill = 4
+				planning_skill = 4
 				logistics_skill = 4
 			}
 		}
@@ -1770,7 +1804,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		x = 0
-		y = 4
+		y = 1
 		relative_position_id = USA_prepare_for_japan
 		cost = 1
 		completion_reward = {
@@ -1787,14 +1821,14 @@ focus_tree = {
 	focus = {
 		id = USA_iwo_jima
 		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_war_plan_orange }
+		prerequisite = { focus = USA_prepare_for_japan }
 		available = {
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		x = 0
 		y = 1
-		relative_position_id = USA_war_plan_orange
+		relative_position_id = USA_prepare_for_japan
 		cost = 2
 		completion_reward = {
 			every_state = {
@@ -1826,65 +1860,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_war_plans_division
-		icon = GFX_USA_semper_fi
-		prerequisite = { focus = USA_prepare_for_japan }
-		relative_position_id = USA_prepare_for_japan
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-			NOT ={ 550 = {is_fully_controlled_by = USA} }
-		}
-		completion_reward = {
-			custom_effect_tooltip=USA_war_plans_division_tt
-			division_template = {
-				name = "US-Marines"
-				regiments = {
-					marine = { x = 0 y = 0 }
-					marine = { x = 0 y = 1 }
-					marine = { x = 0 y = 2 }
-					marine = { x = 0 y = 3 }
-					marine = { x = 1 y = 0 }
-					marine = { x = 1 y = 1 }
-					marine = { x = 1 y = 2 }
-					marine = { x = 1 y = 3 }
-					marine = { x = 2 y = 0 }
-					marine = { x = 2 y = 1 }
-					marine = { x = 2 y = 2 }
-					marine = { x = 2 y = 3 }
-					marine = { x = 3 y = 0 }
-					marine = { x = 3 y = 1 }
-					artillery_brigade = { x = 4 y = 0 }
-					artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 4 y = 2 }
-					artillery_brigade = { x = 4 y = 3 }
-				}
-				support = {
-					recon = { x = 0 y = 0 }
-					engineer = { x = 0 y = 1 }
-					artillery = { x = 0 y = 2 }
-					logistics_company = { x = 0 y = 3 }
-					signal_company = { x = 0 y = 4 }
-					anti_tank = {x = 0 y = 5}
-				}
-			}
-			550 = {
-				for_loop_effect = {
-					end = 8
-					create_unit = {
-						division = "name = \"US-Marines\" division_template = \"US-Marines\" start_experience_factor = 2.0 start_equipment_factor = 0.25"
-						owner = USA
-					}
-					}}
-		}
-	}
-	focus = {
 		id = USA_reinforce_oceania
 		icon = GFX_USA_bases_in_anzac
 		x = 3
@@ -1896,7 +1871,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			date>1941.6.1
 			273={is_controlled_by_ROOT_or_ally=yes}
 		}
 		bypass = {
@@ -1955,9 +1929,6 @@ focus_tree = {
 		prerequisite = { focus =USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
 		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
 		available = {
 			has_war_with = JAP
 			date >1941.7.01
@@ -2013,7 +1984,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			date>1942.1.1
 		}
 		bypass = {
 		}
@@ -2066,7 +2036,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_timed_idea={idea=USA_navy_recovery days=120}
+			add_timed_idea={idea=USA_navy_recovery days=100}
 		}
 	}
 	focus = {

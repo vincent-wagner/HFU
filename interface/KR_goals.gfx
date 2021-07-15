@@ -3126,5 +3126,9 @@ SpriteTypes = {
 		name = "GFX_focus_SPR_pistolas"
 		texturefile = "gfx/interface/goals/spr/SPR_pistolas.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_USA_asian_theatre"
+		texturefile = "gfx/interface/goals/USA_asian_theatre.dds"
+	}
 
 }	

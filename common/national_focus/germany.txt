@@ -906,7 +906,7 @@
 			add_tech_bonus = {
 				name = GER_autarky
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				technology = excavation1
 				technology = excavation2
 				technology = excavation3
@@ -4376,15 +4376,12 @@ focus = {
 	id = GER_determine_the_investment
 	icon = GFX_focus_GER_determine_the_investment
 	prerequisite = {  focus = GER_adjust_the_building_plans }
-	available = {
-		date > 1940.1.1
-	}
 	x = 0
 	y = 1
 	relative_position_id = GER_adjust_the_building_plans
 	cost = 5
 	completion_reward = {
-		add_timed_idea = { idea = GER_determine_the_investment1 days = 90 }
+		add_ideas = GER_determine_the_investment1
 						}	
 	    }
 focus = {
@@ -4572,8 +4569,8 @@ focus = {
 			}
 	available_if_capitulated = no
 	completion_reward = {
-	unlock_decision_tooltip = GER_underground_mills
-	unlock_decision_tooltip = GER_underground_refs
+    add_ideas = GER_training
+	add_ideas = GER_longer_shifts
 			}
 		}	
 }	

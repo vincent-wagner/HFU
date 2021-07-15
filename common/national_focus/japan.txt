@@ -2241,41 +2241,14 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
 			every_state = {
-				limit={OR={state=591 state=713 state=712 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 state=294 state=548 state=544}}
-				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
-		}
-	}
-	focus = {
-		id = JAP_hawaii
-		icon = GFX_focus_JAP_hawaii
-		prerequisite = { focus = JAP_eastern_expansion }
-		x = 0
-		y = 2
-		relative_position_id = JAP_eastern_expansion
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT={has_idea=main_focus_set_idea}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
-			every_state = {
-				limit={OR={state=550 state=552 state=592 state=588 state=553 state=645 }}
+				limit={OR={state = 544 state = 294 state = 547 state = 545 state = 549 state = 546 state = 548}}
 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
 		}
 	}
 	focus = {
 		id = JAP_australia
 		icon = GFX_focus_JAP_australia
-		prerequisite = { focus = JAP_southern_expansion }
+		prerequisite = { focus = JAP_fortify_dei }
 		x = 0
 		y = 2
 		relative_position_id = JAP_southern_expansion
@@ -2304,7 +2277,7 @@ focus_tree = {
 	focus = {
 		id = JAP_fortify_dei
 		icon = GFX_focus_JAP_fortify_dei
-		prerequisite = { focus = JAP_eastern_expansion focus = JAP_southern_expansion}
+		prerequisite = { focus = JAP_eastern_expansion focus = JAP_southern_expansion }
 		x = 1
 		y = 1
 		relative_position_id = JAP_eastern_expansion
@@ -2355,8 +2328,8 @@ focus_tree = {
 		id = JAP_reconquest_of_dei
 		icon = GFX_focus_JAP_samurai
 		prerequisite = { focus = JAP_fortify_dei }
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = JAP_fortify_dei
 		cost = 5
 		ai_will_do = {
@@ -2439,10 +2412,37 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = JAP_hawaii
+		icon = GFX_focus_JAP_hawaii
+		prerequisite = { focus = JAP_develop_the_bejing_area }
+		x = -1
+		y = 1
+		relative_position_id = JAP_develop_the_bejing_area
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			NOT={has_idea=main_focus_set_idea}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
+			every_state = {
+				limit={OR={state=550 state=552 state=592 state=588 state=553 state=645 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	focus = {
 		id = JAP_ussr_war_goal
 		icon = GFX_focus_generic_attack_communists
 		prerequisite = { focus = JAP_develop_the_bejing_area}
-		x = 0
+		x = 1
 		y = 1
 		available = {OR={
 				date>1944.1.1

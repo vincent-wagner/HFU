@@ -11,8 +11,35 @@ ideas = {
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-				consumer_goods_factor = 0.005
-				production_speed_synthetic_refinery_factor = 0.9
+				production_speed_synthetic_refinery_factor = 0.2
+			}
+		}
+		GER_training = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				training_time_factor = -0.25
+			}
+		}
+		GER_longer_shifts = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
 			}
 		}
 		GER_strategic_air_effort_idea = {
@@ -746,8 +773,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_central_management
 			modifier = {
-				production_speed_arms_factory_factor = 0.25
-				consumer_goods_factor = 0.015
+				production_speed_arms_factory_factor = 0.20
+				consumer_goods_factor = 0.01
 			}
 		}
 		GER_adjust_building_plans= {

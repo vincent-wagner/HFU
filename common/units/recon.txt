@@ -204,15 +204,16 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Support nerfs to combat abilities
-		breakthrough 	= 1
-		defense 		= 5
-		soft_attack = 10
+		breakthrough = 0
+		defense = 0
+		soft_attack = 12.5
+		hard_attack = 39
 		essential = {
 			armored_car_equipment
 		}
 
 		need = {
-			armored_car_equipment = 24
+			armored_car_equipment = 30
 		}
 
 		forest = {
@@ -285,15 +286,15 @@ sub_units = {
 
 		# Support nerfs to combat abilities
 		defense = -0.5
-		breakthrough = -0.85
+		breakthrough = -1.2
 		soft_attack = -0.9
-		hard_attack = 1.8
+		hard_attack = 1.3
 		essential = {
 			light_tank_equipment
 		}
 
 		need = {
-			light_tank_equipment = 24
+			light_tank_equipment = 20
 		}
 
 		forest = {

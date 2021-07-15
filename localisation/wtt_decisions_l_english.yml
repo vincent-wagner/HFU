@@ -416,7 +416,7 @@
  JAP_ichi_go_desc:0 "The end of the war is in sight. With a final push and determined effort we can bring the conflict to a swift conclusion. However, should we not be able to grasp victory within the next year, we may suffer internal instability as public opinion rises against the increased war effort..."
  JAP_conquer_china:0 "Conquer China"
  JAP_release_korea:0 "Korean Independence"
- JAP_southern_expansion:0 "Southern Expansion"
+ JAP_southern_expansion:0 "Conquer Philipines"
  JAP_sue_for_peace_CHI:1 "Offer Surrender Terms to [From.GetNameDef]"
  JAP_sue_for_peace_TT:0 "No mainland §YChinese§! or §YKorean§! cores are controlled by §YJapan§! or any of its subjects."
  JAP_sue_for_peace_CHI_desc:0 "We have lost our hold on the mainland. The Military thinks it is unlikely that we will be able to recover the lost territories. The civilian government suggests that we should seek terms to at least keep our soverignity over the islands."
