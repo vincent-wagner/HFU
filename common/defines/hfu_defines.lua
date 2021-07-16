@@ -253,8 +253,6 @@ NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 1
 NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.8
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.02
---NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0 --not sure yet
---Halving overall fuel
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.22 --0.5
 NDefines.NAir.FUEL_COST_MULT = 0.15 --0.35
 NDefines.NNavy.FUEL_COST_MULT = 0.04 --0.1
@@ -299,7 +297,7 @@ NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.144	-- How
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                        -- WAS 10, lowered to prevent some exploits with aces | biggest bonus we can get from having a small wing with an ace on
 NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
 NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.003 
-NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.2
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.15
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1

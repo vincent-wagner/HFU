@@ -4,6 +4,9 @@ debug_decisions = {
 		is_debug = yes
 	}
 }
+hoi_guide = {
+icon = generic_propaganda
+}
 spy_agency = {
 	icon = generic_propaganda
 	visible = {

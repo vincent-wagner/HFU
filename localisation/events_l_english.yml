@@ -1,4 +1,8 @@
 ﻿l_english:
+ guide.1.t:0 "Special Forces Hints"
+ guide.1.d:0 "Special forces need another special type of equipment. \n\nMarines: Marines need 10 Amtracs per Battalion. \nMountaineers need 25 Support Eq. per Battalion. \nDesert Inf need 15 Armored Cars per Battalion. \nShook Inf need 15 Light SPG´s per Battalion."
+ guide.1.a:0 "ok"
+ 
  MINIMIZE_EVENT:0 "§GClick§! to Minimize. Event will be placed in the Event Queue under §HEvents and Decisions§!."
  news.iran.t:0 "Axis attacks Iran"
  news.iran.d:0 "Axis will attack Iran in 30 days"

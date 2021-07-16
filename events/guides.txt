@@ -1,0 +1,10 @@
+add_namespace = guide
+country_event = {
+	id = guide.1
+	title = guide.1.t
+	desc = guide.1.d
+	is_triggered_only = yes
+	option = {
+	    name = guide.1.a
+	}
+}

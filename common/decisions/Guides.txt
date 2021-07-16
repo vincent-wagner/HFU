@@ -1,0 +1,28 @@
+hoi_guide = {
+
+    special_forces_guide = {
+	    
+		allowed = {
+		is_playable_country = yes
+		}
+		visible = {
+           always = yes
+        }
+		complete_effect = {
+            country_event = {
+                id =  guide.1
+               
+            }    
+        }
+	}
+
+
+
+
+
+
+
+
+
+
+}

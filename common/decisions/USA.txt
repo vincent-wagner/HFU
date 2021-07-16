@@ -335,69 +335,6 @@ USA_aid_britain = {
 	}
 }
 foreign_support = {
-	USA_guns_for_the_anti_fascist_war = {
-		icon = generic_prepare_civil_war
-		allowed = {
-			original_tag = USA
-		}
-		available = {
-			has_equipment = { infantry_equipment > 999 }
-			FROM = {
-				has_completed_focus = CHI_mission_to_the_us
-				has_idea = CHI_soong_mei_ling
-				has_war_with = JAP
-			}
-		}
-		targets = { CHI D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
-		target_trigger = {
-			FROM = {
-				has_completed_focus = CHI_mission_to_the_us
-				has_idea = CHI_soong_mei_ling
-				has_war_with = JAP
-			}
-		}
-		visible = {
-			has_government = democratic
-			FROM = {
-				has_completed_focus = CHI_mission_to_the_us
-				has_idea = CHI_soong_mei_ling
-				has_war_with = JAP
-			}
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 3
-				FROM = {
-					has_completed_focus = CHI_mission_to_the_us
-					has_idea = CHI_soong_mei_ling
-					surrender_progress > 0.2
-					has_defensive_war = yes
-				}
-			}
-			modifier = {
-				factor = 0.5
-				has_war_support < 0.6
-			}
-			modifier = {
-				factor = 2
-				has_war_with = JAP
-			}
-		}
-		fire_only_once = no
-		days_re_enable = 180
-		complete_effect = {
-			ROOT = {
-				send_equipment = {
-					target = FROM
-					type = infantry_equipment
-					amount = 1000
-					old_prioritised = yes
-				}
-			}
-		}
-	}
 }
 USA_war_plans = {
 	USA_execute_war_plan_silver = {
