@@ -522,12 +522,12 @@ focus = {
 		413 = {
 				add_resource = {
 					type = steel
-					amount = 100
+					amount = 70
 					state = 413
 				}
 				add_resource = {
 					type = chromium
-					amount = 100
+					amount = 70
 					state = 413
 				}
 			}					

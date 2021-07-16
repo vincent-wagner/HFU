@@ -535,14 +535,14 @@
 				country_event = { id = germany.75 days = 1 }
 			}
 			add_tech_bonus = {
-				name = GER_soviet_treaty
+				name = med_armor_bonus
 				ahead_reduction = 2
-				technology = basic_medium_tank
+				category = cat_medium_armor
 			}
 			add_tech_bonus = {
-				name = GER_soviet_treaty
+				name = armor_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = armor
 			}
 		}
