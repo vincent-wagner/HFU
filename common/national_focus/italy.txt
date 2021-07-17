@@ -45,8 +45,8 @@ focus_tree = {
 			navy_experience = 50
 			add_tech_bonus = {
 					name = naval_doctrine
-					bonus = 1.0
-					uses = 2
+					bonus = 2.0
+					uses = 3
 					category = naval_doctrine
 				}
 			2 = {
@@ -86,8 +86,8 @@ focus_tree = {
 			navy_experience = 50
 			add_tech_bonus = {
 				name = naval_doctrine
-				bonus = 1.0
-				uses = 2
+				bonus = 2.0
+				uses = 3
 				category = naval_doctrine
 			}
 			add_timed_idea = { idea = ITA_dockyard_building days = 90 }
@@ -700,7 +700,7 @@ focus = {
 		}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
@@ -1060,7 +1060,7 @@ focus = {
 			air_experience = 50
 			112 = {	add_building_construction = {
 					type = air_base
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1072,7 +1072,7 @@ focus = {
 			}
 			160 = {	add_building_construction = {
 					type = air_base
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}

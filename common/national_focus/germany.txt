@@ -542,7 +542,7 @@
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = armor
 			}
 		}
