@@ -5,6 +5,7 @@ state={
 	state_category = large_city
 	history={
 		owner = BUL
+		
 		victory_points = {
 			8995 5
 		}
@@ -16,9 +17,9 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			}
+		add_core_of = BUL	
 		}
-		add_core_of = BUL
-	}
+	
 	provinces={
 		614 6443 8834 8982 8995 9082 9093 9108
 	}
