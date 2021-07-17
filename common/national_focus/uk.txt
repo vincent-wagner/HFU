@@ -2804,9 +2804,11 @@ focus_tree = {
 						signal_company = { x = 0 y = 4 }
 					}
 				}
-				124 = {
-				create_unit = {
-							division = "name = \"Royal Tank Division\" division_template = \"Royal Tank Division\" start_experience_factor = 0.3"
+				476 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"Royal Tank Division\" division_template = \"Royal Tank Division\" start_experience_factor = 1"
 							owner = ENG
 						}}}}
 
