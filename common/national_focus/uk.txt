@@ -2676,7 +2676,7 @@ focus_tree = {
 	focus = {
 		id = ENG_pressure_axis
 		available = {
-			date>1940.9.1
+			date>1939.9.1
 		}
 		prerequisite = { focus = ENG_prepare_for_the_inevitable }
 		icon = GFX_goal_generic_construct_military
