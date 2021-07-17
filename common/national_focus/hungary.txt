@@ -986,7 +986,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_motorized_logistics
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_focus_anti_tank
 		prerequisite = { focus = HUN_mobile_corps_doctrine }
 		x = 1
 		y = 1

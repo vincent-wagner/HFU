@@ -15,12 +15,6 @@ state={
 			infrastructure = 6
 			arms_factory = 3
 			air_base = 3
-			622 = {
-				naval_base = 8
-			}
-			650 = {
-				naval_base = 1
-			}
 			dockyard = 1
 		}
 		add_core_of = ROM
