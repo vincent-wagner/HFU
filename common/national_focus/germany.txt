@@ -2261,7 +2261,7 @@ focus = {
 						}
 						set_state_flag = shadow_scheme_2AF
 					}
-					#add_ideas = ENG_shadow_scheme
+					add_ideas = ENG_shadow_scheme
 				}
 			}
 		}

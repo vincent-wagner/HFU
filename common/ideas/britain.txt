@@ -48,7 +48,7 @@ ideas = {
 			picture = eng_the_sun_never_sets
 			removal_cost = -1
 		}
-		ENG_shadow_sheme = {
+		ENG_shadow_scheme = {
 			allowed = {
 				always = yes
 			}
