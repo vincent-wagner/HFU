@@ -11,7 +11,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.2
+				production_speed_synthetic_refinery_factor = 0.15
 			}
 		}
 		GER_training = {

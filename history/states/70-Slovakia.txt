@@ -5,7 +5,6 @@ state={
 	state_category = megalopolis
 	resources={
 		tungsten = 10
-		steel = 10
 	}
 	history={
 		owner = CZE

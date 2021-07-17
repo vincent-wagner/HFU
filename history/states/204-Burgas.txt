@@ -15,11 +15,6 @@ state={
 			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 1
-			8995 = {
-				naval_base = 3
-			}
-			9093 = {
-				naval_base = 1
 			}
 		}
 		add_core_of = BUL
