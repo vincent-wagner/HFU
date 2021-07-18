@@ -292,10 +292,10 @@ ideas = {
 			picture = generic_air_bonus
 			equipment_bonus = {
 				fighter_equipment = {
-					air_attack = 0.1 instant=yes
+					air_attack = 0.05 instant=yes
 				}
 				jet_fighter_equipment = {
-					air_attack = 0.1 instant=yes
+					air_attack = 0.05 instant=yes
 				}
 			}
 			modifier= {
