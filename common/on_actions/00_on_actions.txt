@@ -323,6 +323,66 @@ on_actions = {
 				}
 				
 			}
+		    if = {
+				limit = {
+					NOT = {GER ={has_country_flag = sos}}
+					GER = {has_completed_focus = GER_atlantikwall}
+					count_triggers = {
+						amount = 3
+						14 = { NOT={is_controlled_by = GER}}
+						15 = { NOT={is_controlled_by = GER}}
+						30 = { NOT={is_controlled_by = GER}}
+						23 = { NOT={is_controlled_by = GER}}
+						16 = { NOT={is_controlled_by = GER}}
+						24 = { NOT={is_controlled_by = GER}}
+						699 = { NOT={is_controlled_by = GER}}
+						29 = { NOT={is_controlled_by = GER}}
+					}
+				}
+				GER = {division_template = {
+					name = "SS-Grenadier"
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						medium_armor = { x = 0 y = 2 }
+						medium_armor = { x = 0 y = 3 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 1 y = 1 }
+						medium_armor = { x = 1 y = 2 }
+						medium_armor = { x = 1 y = 3 }
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_tank_destroyer_brigade = { x = 2 y = 2 }
+						medium_sp_anti_air_brigade = { x = 2 y = 3 }
+						medium_sp_anti_air_brigade = { x = 2 y = 4 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 4 y = 0 }
+						motorized = { x = 4 y = 1 }
+						motorized = { x = 4 y = 2 }
+						motorized = { x = 4 y = 3 }
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						signal_company = { x = 0 y = 4 }
+					}
+				}
+				5 = {
+					for_loop_effect = {
+						end = 4
+						create_unit = {
+							division = "name = \"SS-Grenadier\" division_template = \"SS-Grenadier\" start_experience_factor = 0.5"
+							owner = GER
+						}
+					}
+				}
+				set_country_flag =sos
+			}}
 			if = {
 				limit = {
 					FROM.FROM = { state = 16 }
