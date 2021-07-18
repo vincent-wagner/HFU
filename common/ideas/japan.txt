@@ -647,7 +647,8 @@ ideas = {
 			allowed = {
 				original_tag = "JAP"
 			}
-			traits = { captain_of_industry }
+			traits = { industrial_genius }
+			cost = 75
 			
 			ai_will_do = {
 				factor = 0

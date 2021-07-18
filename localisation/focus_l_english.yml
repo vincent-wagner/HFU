@@ -753,7 +753,7 @@
  ENG_ROYAL_ORDNANCE_FACTORIES_DESC_COMMUNIST:0 "The Revolutionary Arsenal at Woolwich is woefully insufficient to produce all the munitions and small arms we need. We should establish many more factories around the country, preferably in relatively safe areas."
  shadow_scheme_focus:0 "The Shadow Scheme"
  shadow_scheme_focus_desc:0 "The Air Ministry has come up with a brilliant suggestion for easier conversion of civilian factories into military ones. With the appropriate grants and loans to various key companies, their factories can be extended and adapted in advance to make the transition to military applications much smoother."
- shadow_scheme_focus_tt:1 "Grants §G8§! Building Slots and §Y8 Civilian Factories§! in total in two states when entering a war and gives 20% efficiency growth .\n"
+ shadow_scheme_focus_tt:1 "Grants §G8§! Building Slots and §Y8 Civilian Factories§! in total in two states when entering a war and gives 20% efficiency growth and construction speed for Military factories .\n"
  uk_small_arms_focus:0 "BSA Company"
  uk_small_arms_focus_desc:1 "The Royal Ordnance Factories are not producing enough small arms, but, like we did in the Great War, we could contract the Birmingham Small Arms Company and expand their capacity."
   ENG_churchill:0 "Prepare for the Second Battle of El-Alamein"

@@ -1006,5 +1006,60 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = SAF_seaward_defence_force
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 17
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			navy_experience = 25
+			637={set_building_level = {
+					type = naval_base
+					level =20
+					instant_build = yes
+					province =1412
+					}}
+			random_owned_controlled_state = {
+				prioritize = { 600 637 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SAF_seaward_defence_force_DY
+			}
+			add_tech_bonus = {
+				name = SAF_seaward_defence_force
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
 }
 
