@@ -1621,6 +1621,13 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			291={
+				set_building_level = {
+					type = naval_base
+					level = 15
+					instant_build = yes
+					province =1218
+				}
 			396={
 				set_building_level = {
 					type = naval_base
@@ -1643,6 +1650,7 @@ completion_reward = {
 			}
 		}
 	}
+}
 	
 	focus = {
 		id = RAJ_east_india_railways
