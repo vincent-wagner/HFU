@@ -34,8 +34,8 @@ ideas = {
 			removal_cost = -1
 			picture = great_depression
 			modifier = {
-				industrial_capacity_factory = -0.20
-				industrial_capacity_dockyard = -0.20
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
 			}
 		}
 		CAN_conscription_crisis = {
@@ -161,7 +161,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_manpower_bonus
 			modifier = {
-				conscription_factor = 0.05
+				local_resources_factor = 0.1
+				conscription_factor = 0.1
 			}
 		}
 		CAN_send_in_the_zombies = {
@@ -493,7 +494,7 @@ ideas = {
 			allowed = {
 				original_tag = CAN
 			}
-			traits = { army_artillery_2 }
+			traits = { army_infantry_2 }
 			ai_will_do = {
 				factor = 1
 			}
@@ -504,7 +505,7 @@ ideas = {
 			allowed = {
 				original_tag = CAN
 			}
-			traits = { air_air_superiority_2 }
+			traits = { army_regrouping_2 }
 			ai_will_do = {
 				factor = 1
 			}
