@@ -55,6 +55,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
 		}
 	}
  
@@ -869,7 +870,7 @@ ideas = {
 			allowed = {
 				original_tag = ENG
 			}
-			traits = { captain_of_industry  }
+			traits = { industrial_genius  }
 			available = {
 				has_completed_focus = shadow_scheme_focus
 			}}
