@@ -2,7 +2,10 @@
 state={
 	id=714
 	name="Northern Queensland"
-	
+	resources={
+		rubber=5
+		oil=5
+	}
 	history={
 		victory_points = {
 			1576 1

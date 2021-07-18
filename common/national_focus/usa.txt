@@ -2309,6 +2309,13 @@ focus_tree = {
 				bonus = 1
 				category = armor
 			}
+			add_tech_bonus = {
+				name = USA_tank_experiments
+				uses = 1
+				ahead_reduction = 0.5
+				bonus = 1.5
+				technology = advanced_medium_tank
+			}
 		}
 	}
 	focus = {
@@ -2500,7 +2507,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_TAC }
 		relative_position_id = USA_TAC
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2515,9 +2522,15 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_command_focus
-				bonus = 1.0
+				bonus = 2
 				uses = 1
 				technology= fighter3
+			}
+			add_tech_bonus = {
+				name = fighter_command_focus
+				bonus = 2
+				uses = 1
+				technology= fighter4
 			}
 		}
 	}

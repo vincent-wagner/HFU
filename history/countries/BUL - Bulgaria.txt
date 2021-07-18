@@ -105,10 +105,10 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Konstantin Ivanov Bekyarov"
 	portrait_path = "gfx/leaders/BUL/Konstantin_Ivanov_Bekyarov.tga"
-	traits = { organizer panzer_leader infantry_leader}
+	traits = { organizer panzer_leader infantry_leader ranger trait_engineer expert_improviser }
 	skill = 5
-	attack_skill = 5
-	defense_skill = 2
+	attack_skill = 4
+	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 1
 }

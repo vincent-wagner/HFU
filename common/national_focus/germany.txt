@@ -1303,7 +1303,7 @@ focus = {
 			add_tech_bonus = {
 			technology = fighter3
 			bonus = 1
-			ahead_reduction = 1
+			ahead_reduction = 0.5
 			uses = 1
 			}
 		}
@@ -4342,7 +4342,7 @@ focus = {
 	completion_reward = {
 		custom_effect_tooltip = "This focus will automatically bypass if not taken before July 1936."
 		add_tech_bonus = {
-			bonus = 4.5
+			bonus = 3.5
 			uses = 3
 			technology = improved_machine_tools
 			technology = concentrated_industry2

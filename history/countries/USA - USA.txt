@@ -183,11 +183,11 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Mark Clark"
 	picture = "Portrait_USA_Mark_W_Clark.dds"
-	traits = { infantry_officer trait_reckless infantry_leader }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 2
+	traits = { infantry_officer trait_reckless infantry_leader naval_invader trait_engineer trickster expert_improviser }
+	skill = 6
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 3
 	logistics_skill = 3
 }
 create_corps_commander = {
