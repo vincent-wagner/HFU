@@ -285,6 +285,7 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Support nerfs to combat abilities
+		armor_value = -0.6
 		defense = -0.5
 		breakthrough = -1.2
 		soft_attack = -0.9

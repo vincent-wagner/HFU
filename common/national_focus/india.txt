@@ -345,86 +345,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RAJ_navy_funding
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = RAJ_imperial_service_troops }
-		x = 0
-		y = 2
-		relative_position_id = RAJ_princely_state_donations
-		cost = 5
-		ai_will_do = {
-			factor = 25
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			if = {
-				limit = {
-					has_tech = basic_ship_hull_cruiser
-					has_tech = basic_torpedo
-					has_tech = basic_medium_battery
-				}
-				create_equipment_variant = {
-					name = "Delhi Class"
-					type = ship_hull_cruiser_2
-					name_group = RAJ_CL_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_light_medium_battery_2
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = cruiser_ship_engine_2
-						fixed_ship_armor_slot = ship_armor_cruiser_1
-						front_1_custom_slot = empty
-						mid_1_custom_slot = ship_torpedo_1
-						mid_2_custom_slot = ship_airplane_launcher_1
-						rear_1_custom_slot = ship_light_medium_battery_2
-					}
-				}
-				custom_effect_tooltip = RAJ_navy_funding_effect_mtg
-				hidden_effect = {
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_cruiser_2
-							creator = "RAJ"
-							version_name = "Delhi Class"
-						}
-						requested_factories = 1
-						progress = 0.95
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_cruiser_2
-							creator = "RAJ"
-							version_name = "Delhi Class"
-						}
-						requested_factories = 1
-						progress = 0.95
-						amount = 1
-					}
-				}
-				else = {
-					set_technology = {
-						basic_ship_hull_cruiser = 1
-						basic_torpedo = 1
-						basic_medium_battery = 1
-					}
-					navy_experience = 20
-					custom_effect_tooltip = RAJ_navy_funding_effect
-				}
-			}
-		}
-	}
-	
-	focus = {
 		id = RAJ_lessons_of_the_great_war
 		icon = GFX_goal_generic_small_arms
 		x = 16
@@ -581,8 +501,8 @@ focus_tree = {
 	focus = {
 		id = RAJ_jungle_training
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = RAJ_chindits }
-		x = 1
+		prerequisite = { focus = RAJ_chindits focus = RAJ_red_eagle_division }
+		x = 0
 		y = 2
 		relative_position_id = RAJ_british_army_support
 		cost = 10
@@ -1444,8 +1364,8 @@ completion_reward = {
 	focus = {
 		id = RAJ_borneo_2
 		icon =GFX_goal_generic_defence
-		prerequisite = { focus = RAJ_borneo }
-		x = 0
+		prerequisite = { focus = RAJ_borneo focus = RAJ_singa }
+		x = -1
 		y = 1
 		relative_position_id =  RAJ_borneo
 		cost = 5
@@ -1706,9 +1626,6 @@ completion_reward = {
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 		cost = 5
-		ai_will_do = {
-			factor = 25
-		}
 		available = {
 		}
 		bypass = {
@@ -1718,11 +1635,7 @@ completion_reward = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		
-		 add_timed_idea = {
-           idea =  RAJ_finanz
-           days = 180
-         }
+		add_ideas = RAJ_finanz
 		}
 	}
 	focus = {
@@ -1734,9 +1647,6 @@ completion_reward = {
 		y = 1
 		relative_position_id = RAJ_research
 		cost = 5
-		ai_will_do = {
-			factor = 25
-		}
 		available = {
 		}
 		bypass = {

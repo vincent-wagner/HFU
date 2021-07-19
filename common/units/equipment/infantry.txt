@@ -13,7 +13,7 @@
     		reliability = 0.9
     		maximum_speed = 4
     		#Defensive Abilities
-    		defense = 14
+    		defense = 13
     		breakthrough = 3
     		hardness = 0
     		armor_value = 0
@@ -44,7 +44,7 @@
     		priority = 10
     		visual_level = 1
     		#Defensive Abilities
-    		defense = 16
+    		defense = 15
     		breakthrough = 4
     		#Offensive Abilities
     		soft_attack = 5
@@ -63,7 +63,7 @@
     		priority = 10
     		visual_level = 2
     		#Defensive Abilities
-    		defense = 20
+    		defense = 19
     		breakthrough = 5
     		#Offensive Abilities
     		soft_attack = 8
@@ -84,7 +84,7 @@
     		priority = 10
     		visual_level = 3
     		#Defensive Abilities
-    		defense = 23
+    		defense = 22
 			maximum_speed = 6
 			#maximum_speed = 6 doesnt work anyways
     		breakthrough = 6

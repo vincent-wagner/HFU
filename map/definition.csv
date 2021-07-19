@@ -6049,7 +6049,7 @@
 6048;86;126;191;land;false;plains;1
 6049;86;129;6;land;false;hills;1
 6050;86;129;51;land;false;plains;1
-6051;86;132;71;land;false;jungle;1
+6051;86;132;71;land;false;plains;1
 6052;86;135;36;land;false;plains;1
 6053;86;135;186;land;false;hills;1
 6054;86;138;1;land;true;plains;7
@@ -9250,7 +9250,7 @@
 9249;131;144;214;land;true;plains;5
 9250;131;147;29;land;false;jungle;5
 9251;131;147;179;land;false;hills;6
-9252;131;150;94;land;false;plains;5
+9252;131;150;94;land;false;hills;5
 9253;131;150;144;land;true;urban;1
 9254;131;150;199;land;false;mountain;6
 9255;131;153;59;land;true;urban;6

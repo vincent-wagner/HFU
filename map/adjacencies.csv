@@ -1,4 +1,12 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+741;576;impassable;-1;-1;-1;-1;-1;;Savoy-Piedmont
+8962;576;impassable;-1;-1;-1;-1;-1;;Savoy-Piedmont-2
+8962;6282;impassable;-1;-1;-1;-1;-1;;Savoy-Piedmont-3
+8962;8955;impassable;-1;-1;-1;-1;-1;;Savoy-Piedmont-4
+727;8955;impassable;-1;-1;-1;-1;-1;;Savoy-Piedmont-5
+3535;8955;impassable;-1;-1;-1;-1;-1;;Savoy-Piedmont-6
+3535;10643;impassable;-1;-1;-1;-1;-1;;Savoy-Piedmont-7
+6451;10643;impassable;-1;-1;-1;-1;-1;;Savoy-Piedmont-8
 2619;2595;;-1;-1;-1;-1;-1;ADEN_STRAIT;ADEN STRAIT
 5420;5394;sea;6452;-1;-1;-1;-1;Adriatic Strait;adriatic
 3685;6026;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid

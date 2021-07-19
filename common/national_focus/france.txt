@@ -2519,7 +2519,7 @@ focus_tree = {
 			focus = FRA_refus_absurde
 		}
 		relative_position_id = FRA_refus_absurde
-		cost = 10
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes

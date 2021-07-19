@@ -105,7 +105,7 @@ if = {
 set_convoys = 300
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 35000
+	amount = 25000
 	producer = ITA
 }
 add_equipment_to_stockpile = {
@@ -115,7 +115,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 1000
+	amount = 800
 	producer =ITA
 }
 add_equipment_to_stockpile = {
@@ -125,7 +125,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1500
+	amount = 1000
 	producer = ITA
 }
 add_equipment_to_stockpile = {
@@ -218,7 +218,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Italo Balbo"
 	picture = "portrait_italy_italo_balbo.dds"
-	traits = { inflexible_strategist hill_fighter trait_mountaineer infantry_leader }
+	traits = { inflexible_strategist hill_fighter infantry_leader trickster }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 5
@@ -258,9 +258,9 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Rodolfo Graziani"
 	picture = "portrait_italy_radolfo_graziani.dds"
-	traits = { offensive_doctrine organizer panzer_leader trickster hill_fighter desert_fox expert_improviser }
+	traits = { offensive_doctrine organizer panzer_leader trickster hill_fighter expert_improviser panzer_expert }
 	skill = 7
-	attack_skill = 5
+	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 1

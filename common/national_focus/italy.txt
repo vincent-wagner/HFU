@@ -76,10 +76,7 @@ focus_tree = {
 		x = 30
 		y = 1
 		relative_position_id = ITA_triumph_in_africa
-		cost = 3
-		ai_will_do = {
-			factor = 1
-		}
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -473,7 +470,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			154 = {
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -525,12 +522,12 @@ focus = {
 		413 = {
 				add_resource = {
 					type = steel
-					amount = 70
+					amount = 50
 					state = 413
 				}
 				add_resource = {
 					type = chromium
-					amount = 70
+					amount = 50
 					state = 413
 				}
 			}					
@@ -982,8 +979,7 @@ focus = {
 			army_experience = 100
 			add_tech_bonus = {
 				name = GER_soviet_treaty
-				ahead_reduction = 1
-				bonus = 1
+				bonus = 2
 				technology = basic_medium_tank
 			}
 			add_tech_bonus = {

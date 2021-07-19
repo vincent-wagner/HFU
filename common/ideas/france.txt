@@ -1378,6 +1378,7 @@ ideas = {
 			allowed = {
 				original_tag = "FRA"
 			}
+			cost = 75
 			picture = generic_political_advisor_europe_5
 			traits = { silent_workhorse }
 			on_add = {
