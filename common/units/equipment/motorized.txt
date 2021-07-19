@@ -17,7 +17,7 @@ equipments = {
 		maximum_speed = 11
 		reliability = 0.8
 		hardness = 0.2
-		defense = 12.5
+		defense = 10
 
 		#Space taken in convoy
 		lend_lease_cost = 0.5

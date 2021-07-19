@@ -67,7 +67,7 @@ equipments = {
     		armor_value = 15
     		#Offensive Abilities
     		ap_attack = 16
-    		    build_cost_ic = 9
+    		    build_cost_ic = 8
 	 	lend_lease_cost = 1.5   
     		resources = {
     			steel = 3

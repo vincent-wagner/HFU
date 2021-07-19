@@ -285,6 +285,9 @@ focus = {
 	id = ITA_graf_zeppelin
 	icon = GFX_goal_generic_wolf_pack
 	prerequisite = { focus= ITA_h_class }
+	available = {
+		date > 1939.1.1
+	}
 	x = 0
 	y = 1
 	relative_position_id = ITA_h_class
