@@ -35,7 +35,7 @@ technologies = {
 	}
 	africa_hp_off = {
 		motorized = {
-			max_strength = -16
+			max_strength = -12
 		}
 		mechanized = {
 			max_strength = -12

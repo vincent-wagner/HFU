@@ -139,9 +139,7 @@ ideas = {
 				416={is_controlled_by = eng}
 			}
 			picture = HUN_treaty_of_triannon
-			modifier = {
-				production_factory_max_efficiency_factor = -0.05
-			}
+			custom_effect_tooltip = "You are an idiot ahahahahahah."
 		}
 		ENG_Tank_upgrade_cost={
 			allowed = {
