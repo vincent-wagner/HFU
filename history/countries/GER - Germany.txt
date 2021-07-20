@@ -71,6 +71,7 @@ add_ideas = peace_training
 add_to_tech_sharing_group = axis_research
 # Starting tech
 set_technology = {
+	improved_light_tank = 1
 	airfield_allowed = 1
 	naval_base_allowed = 1
 	desertinfantry_at = 1
@@ -90,7 +91,8 @@ set_technology = {
 	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
-	improved_light_tank = 1
+	improved_light_td = 1
+	improved_light_spaa = 1
 	early_fighter = 1
 	fighter1 = 1
 	scout_plane1 = 1
@@ -207,6 +209,16 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = light_tank_equipment_2
 	amount = 800
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = light_tank_destroyer_equipment_2
+	amount = 300
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = light_tank_aa_equipment_2
+	amount = 300
 	producer = GER
 }
 add_equipment_to_stockpile = {

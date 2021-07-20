@@ -9,9 +9,9 @@ state=
 	}
 	history=
 	{
-		
 		owner = ENG
 		add_core_of=SWE
+		add_state_modifier = {modifier = { local_org_regain = 0.15 } }
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 4
@@ -21,6 +21,9 @@ state=
 				naval_base = 2
 			}
 			3812 = {
+				naval_base = 8
+			}
+			3809 = {
 				naval_base = 8
 			}
 		}

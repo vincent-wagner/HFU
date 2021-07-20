@@ -473,7 +473,7 @@ technologies = {
 			year_1942
 		}
 		allow = {
-			date > 1941.1.1
+			date > 1941.6.1
 		}
 		folder = {
 			name = air_techs_folder
@@ -856,7 +856,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		allow = {
-			date > 1941.1.1
+			date > 1941.6.1
 		}
 		research_cost = 2
 		start_year = 1942
@@ -1242,7 +1242,7 @@ technologies = {
 			position = { x = -2 y = 10 }
 		}
 		allow = {
-			date > 1941.1.1
+			date > 1941.6.1
 		}
 		categories = {
 			medium_air

@@ -292,7 +292,7 @@
     			medium_tank_artillery_equipment_2
     		}
     		#Misc Abilities
-    		maximum_speed = 9
+    		maximum_speed = 10
     		#Defensive Abilities
     		defense = 6
     		breakthrough = 15

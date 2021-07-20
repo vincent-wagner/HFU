@@ -19,17 +19,17 @@
     		maximum_speed = 10
     		reliability = 0.8
     		#Defensive Abilities
-    		defense = 4.5
-    		breakthrough = 28.6
+    		defense = 4
+    		breakthrough = 30
     		hardness = 0.9
     		armor_value = 55
     		#Offensive Abilities
-    		soft_attack = 11
-    		hard_attack = 5.5
-    		ap_attack = 11
+    		soft_attack = 12
+    		hard_attack = 6
+    		ap_attack = 25
     		air_attack = 0
     		#Space taken in convoy
-    		    build_cost_ic = 10 
+    		build_cost_ic = 12
 	 	lend_lease_cost = 1.8   
     		resources = {
     			#oil = 1
@@ -80,7 +80,7 @@
     		hard_attack = 5
     		ap_attack = 15
     		air_attack = 0
-    		    build_cost_ic = 8 
+    		build_cost_ic = 8 
 	 	lend_lease_cost = 1.6    #gw tanks are clunky
     		fuel_consumption = 1.0
     	}
@@ -120,16 +120,16 @@
     		#Misc Abilities
     		maximum_speed = 12
     		#Defensive Abilities
-    		defense = 5.5
+    		defense = 5
     		breakthrough = 44
     		armor_value = 65
     		#Offensive Abilities
-    		soft_attack = 18.7
-    		hard_attack = 6.6
-    		ap_attack = 33
+    		soft_attack = 19
+    		hard_attack = 6
+    		ap_attack = 40
     		air_attack = 0
-    		    build_cost_ic = 12
-	 	lend_lease_cost = 2.2   
+    		build_cost_ic = 14
+	 	    lend_lease_cost = 2.2   
     		resources = {
     			#oil = 1
     			steel = 3
@@ -149,16 +149,16 @@
     			light_tank_equipment_2
     		}
     		#Defensive Abilities
-    		defense = 5.5
+    		defense = 5
     		breakthrough = 44
     		armor_value = 65
     		#Offensive Abilities
-    		soft_attack = 18.7
-    		hard_attack = 6.6
-    		ap_attack = 33
+    		soft_attack = 19
+    		hard_attack = 6
+    		ap_attack = 40
     		air_attack = 0
-    		    build_cost_ic = 12
-	 	lend_lease_cost = 2.2   
+    		build_cost_ic = 14
+	 	    lend_lease_cost = 2.2   
     		resources = {
     			#oil = 1
     			steel = 3
@@ -177,7 +177,7 @@
     		#Misc Abilities
     		maximum_speed = 14
     		#Defensive Abilities
-    		defense = 7
+    		defense = 6
     		breakthrough = 51
     		armor_value = 75
     		#Offensive Abilities
@@ -185,8 +185,8 @@
     		hard_attack = 10
     		ap_attack = 55
     		air_attack = 0
-    		    build_cost_ic = 14
-	 	lend_lease_cost = 2.4   
+    		build_cost_ic = 16
+	 	    lend_lease_cost = 2.4   
     		resources = {
     			#oil = 2
     			steel = 4
@@ -206,7 +206,7 @@
     		#Misc Abilities
     		maximum_speed = 14
     		#Defensive Abilities
-    		defense = 7
+    		defense = 6
     		breakthrough = 51
     		armor_value = 75
     		#Offensive Abilities
@@ -214,8 +214,8 @@
     		hard_attack = 10
     		ap_attack = 55
     		air_attack = 0
-    		    build_cost_ic = 14
-	 	lend_lease_cost = 2.4   
+    	    build_cost_ic = 16
+	 	    lend_lease_cost = 2.4   
     		resources = {
     			#oil = 2
     			steel = 4
