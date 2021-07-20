@@ -656,7 +656,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			air_experience = 150
+			air_experience = 200
 			add_ideas = british_fighter_discount
 		}
 	}
@@ -676,6 +676,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			air_experience = 200
 			create_equipment_variant = {
 				name = "Spitfire Mk XIV"
 				type = fighter_equipment_2

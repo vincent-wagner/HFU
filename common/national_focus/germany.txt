@@ -1269,10 +1269,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = GER_army_innovation_2
-		cost = 4
-		ai_will_do = {
-			factor = 1
-		}
+		cost = 2
 		available = { date > 1941.10.1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1302,10 +1299,14 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 			technology = fighter3
-			bonus = 1
-			ahead_reduction = 0.5
+			bonus = 2
 			uses = 1
 			}
+			add_tech_bonus = {
+				technology = fighter4
+				bonus = 2
+				uses = 1
+				}
 		}
 	}
 	focus = {
@@ -3242,13 +3243,10 @@ focus = {
 		y = 1
 		relative_position_id = GER_around_maginot
 		cost = 1
-		ai_will_do = {
-			factor = 10
-		}
 		completion_reward = {
 			add_timed_idea = {
 				idea = GER_fall_rot
-				days = 30
+				days = 60
 			}
 		}
 	}
@@ -4247,11 +4245,16 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = bomber_bonus
-			ahead_reduction = 1
-			bonus = 1
+			bonus = 2
 			uses = 1
 			technology = CAS3
-		}	
+		}
+		add_tech_bonus = {
+			name = bomber_bonus
+			bonus = 2
+			uses = 1
+			technology = CAS4
+		}		
 						}	
 		}
 focus = {
@@ -4280,7 +4283,7 @@ focus = {
 	x = 0
 	y = 1
 	relative_position_id = GER_panzer_4_ausfg
-	cost = 5
+	cost = 2
 	completion_reward = {
 	    add_ideas = GER_reinforce_the_line_idea
 		                }	

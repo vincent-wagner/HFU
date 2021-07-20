@@ -13,10 +13,10 @@ technologies = {
 	}
 	africa_hp = {
 		motorized = {
-			max_strength = 14
+			max_strength = 10
 		}
 		mechanized = {
-			max_strength = 7
+			max_strength = 6
 		}
 		category_all_infantry = {
 			max_strength = 4

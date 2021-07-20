@@ -814,20 +814,13 @@ focus_tree = {
 		x = 4
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
-		cost = 10
-		ai_will_do = {
-			factor = 25
-		}
-		available = {
-			has_war = yes
-		}
-		bypass = {
-		}
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+			add_ideas = extensive_conscription
 			add_ideas = CAN_commit_to_the_war
 		}
 	}
@@ -1167,10 +1160,7 @@ focus_tree = {
 		x = 3
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
-		cost = 10
-		ai_will_do = {
-			factor = 25
-		}
+		cost = 5
 		available = {
 		}
 		bypass = {

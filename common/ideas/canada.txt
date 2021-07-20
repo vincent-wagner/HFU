@@ -162,7 +162,6 @@ ideas = {
 			picture = generic_manpower_bonus
 			modifier = {
 				local_resources_factor = 0.1
-				conscription_factor = 0.1
 			}
 		}
 		CAN_send_in_the_zombies = {
@@ -175,7 +174,7 @@ ideas = {
 			removal_cost = -1
 			picture = can_send_in_the_zombies
 			modifier = {
-				conscription_factor = 0.15
+				conscription_factor = 0.25
 				conscription = 0.02
 			}
 		}

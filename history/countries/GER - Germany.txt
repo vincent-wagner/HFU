@@ -206,7 +206,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = light_tank_equipment_2
-	amount = 700
+	amount = 800
 	producer = GER
 }
 add_equipment_to_stockpile = {
@@ -317,9 +317,9 @@ create_corps_commander = {
 	traits = { panzer_leader panzer_expert desert_fox trait_engineer fortress_buster trickster }
 	skill = 8
 	id = 4
-	attack_skill = 7
+	attack_skill = 6
 	defense_skill = 4
-	planning_skill = 5
+	planning_skill = 4
 	logistics_skill = 5
 }
 create_field_marshal = {

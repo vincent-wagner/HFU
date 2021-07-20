@@ -470,6 +470,7 @@ ideas = {
 				max_dig_in = -7
 				production_speed_air_base_factor=0.15
 				production_speed_infrastructure_factor=0.25
+				air_attack_factor = 0.05
 			}
 			targeted_modifier = {
 				tag = SOV
@@ -1402,7 +1403,6 @@ ideas = {
 			cost = 100
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.125
 					air_agility = 0.1
 					air_attack = 0.1
 					maximum_speed = 0.1
