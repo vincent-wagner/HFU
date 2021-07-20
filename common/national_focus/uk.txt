@@ -581,20 +581,6 @@ focus_tree = {
 				category = light_fighter
 				category = cat_heavy_fighter
 			}
-			if= {limit={NOT={has_idea=supermarine}}
-				add_ideas=supermarine
-				if= {limit={NOT={
-					amount_taken_ideas = {
-   				 		amount > 0
-    						slots = {
-        						aircraft_manufacturer
-   			 			}
-					} 
-				}}
-				add_political_power=-100
-			}
-			}
-
 		}
 	}
 	focus = {
@@ -664,9 +650,6 @@ focus_tree = {
 		id = uk_jet_focus
 		prerequisite = { focus = aircraft_production_focus }
 		icon = GFX_goal_generic_build_airforce
-		available = {
-			date > 1942.3.1
-		}
 		x = 0
 		y = 1
 		relative_position_id = aircraft_production_focus
@@ -676,16 +659,11 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			air_experience = 200
-			create_equipment_variant = {
-				name = "Spitfire Mk XIV"
-				type = fighter_equipment_2
-				upgrades = {
-    					plane_range_upgrade = 5
-    					plane_engine_upgrade = 8
-					}}
+			add_tech_bonus{ bonus =1.5 
+							uses = 1
+							technology = fighter4
 		}
-	}
+	}}
 	focus = {
 		id = naval_rearmament_focus
 		mutually_exclusive = { focus = royal_navy_focus}
@@ -859,7 +837,7 @@ focus_tree = {
 			}	
 			add_tech_bonus = {
 				bonus = 1
-				uses = 2
+				uses = 5
 				category = naval_doctrine
 				}
 		}

@@ -295,7 +295,7 @@ technologies = {
 	concentrated_industry = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		path = {
 			leads_to_tech = concentrated_industry2
 			research_cost_coeff = 1
@@ -358,7 +358,7 @@ technologies = {
 	concentrated_industry2 = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		path = {
 			leads_to_tech = concentrated_industry3
 			research_cost_coeff = 1
@@ -398,7 +398,7 @@ technologies = {
 	concentrated_industry3 = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		path = {
 			leads_to_tech = concentrated_industry4
 			research_cost_coeff = 1
@@ -438,7 +438,7 @@ technologies = {
 	concentrated_industry4 = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		path = {
 			leads_to_tech = concentrated_industry5
 			research_cost_coeff = 1
@@ -478,7 +478,7 @@ technologies = {
 	concentrated_industry5 = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		research_cost = 2
 		start_year = 1943
 		categories = {
@@ -516,7 +516,7 @@ technologies = {
 		}
 	}
 	dispersed_industry = {
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
@@ -585,7 +585,7 @@ technologies = {
 		}
 	}
 	dispersed_industry2 = {
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
@@ -630,7 +630,7 @@ technologies = {
 		}
 	}
 	dispersed_industry3 = {
-		industrial_capacity_factory = 0.10
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
@@ -675,7 +675,7 @@ technologies = {
 		}
 	}
 	dispersed_industry4 = {
-		industrial_capacity_factory = 0.10
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
@@ -720,7 +720,7 @@ technologies = {
 		}
 	}
 	dispersed_industry5 = {
-		industrial_capacity_factory = 0.10
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
