@@ -34,8 +34,8 @@ ideas = {
 			picture = king_edward
 
 			modifier = {
-				production_speed_naval_base_factor = 0.1
-				supply_consumption_factor = -0.05
+				production_speed_naval_base_factor = 0.3
+				supply_consumption_factor = -0.1
 			}
 			removal_cost = -1
 		}
@@ -47,7 +47,7 @@ ideas = {
 			targeted_modifier = {
 				tag = JAP
 				defense_bonus_against  = -0.05
-				breakthrough_bonus_against  = 0.05
+				breakthrough_bonus_against  = 0.1
 			}
 			removal_cost = -1
 		}
@@ -126,7 +126,7 @@ ideas = {
 			}
 			modifier = {
 				industrial_capacity_factory = -0.20
-				industrial_capacity_dockyard = 0.20
+				industrial_capacity_dockyard = 0.25
 				production_speed_dockyard_factor = 1
 			}
 		}

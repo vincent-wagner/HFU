@@ -1799,9 +1799,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			date>1941.6.1
-		}
 		bypass = {
 		}
 		cancel_if_invalid = yes
@@ -1828,9 +1825,6 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
-		}
-		available = {
-			date>1942.1.1
 		}
 		bypass = {
 		}
@@ -2172,9 +2166,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2
 		}
-		available = {
-			date>1941.6.1
-		}
 		bypass = {
 		}
 		cancel_if_invalid = yes
@@ -2198,9 +2189,6 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 2
-		}
-		available = {
-			date>1941.6.1
 		}
 		bypass = {
 		}
