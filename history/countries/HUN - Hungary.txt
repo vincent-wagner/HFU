@@ -9,6 +9,8 @@ capital = 43
  }
  set_rule = {can_be_spymaster = no}
  set_technology = {
+	basic_light_tank = 1
+	improved_light_tank = 1
 	amphibious_mechanized_infantry = 1
 	armored_car1 = 1
 	airfield_allowed = 1

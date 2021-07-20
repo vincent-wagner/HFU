@@ -2088,7 +2088,7 @@ focus = {
 					}
 					add_building_construction = {
 						type = naval_base
-						level = 6
+						level = 10
 						province =10843
 						instant_build = yes
 					}
@@ -2112,6 +2112,12 @@ focus = {
 						level = 10
 						instant_build = yes
 					}
+					add_building_construction = {
+						type = naval_base
+						level = 5
+						province =10843
+						instant_build = yes
+					}
 				}
 			}
 			414 = {
@@ -2124,7 +2130,7 @@ focus = {
 					}
 					add_building_construction = {
 						type = anti_air_building
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					set_building_level = {

@@ -688,6 +688,9 @@ ideas = {
 					original_tag = SWE
 				}
 			}
+			available = {
+				has_completed_focus = ITA_air_innovation_2
+			}
 			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			cost = 100
 			research_bonus = {
@@ -695,6 +698,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				fighter_equipment_alt = {
+					build_cost_ic = -0.1
 					air_agility = 0.1
 					air_attack = 0.1
 					maximum_speed = 0.1
@@ -714,6 +718,9 @@ ideas = {
 		savoia_marchetti = {
 			allowed = {
 				original_tag = ITA
+			}
+			available = {
+				has_completed_focus = ITA_air_innovation_2
 			}
 			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			cost = 100

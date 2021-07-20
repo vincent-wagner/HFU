@@ -1299,12 +1299,12 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 			technology = fighter3
-			bonus = 2
+			bonus = 1
 			uses = 1
 			}
 			add_tech_bonus = {
 				technology = fighter4
-				bonus = 2
+				bonus = 1
 				uses = 1
 				}
 		}
@@ -4245,13 +4245,13 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = bomber_bonus
-			bonus = 2
+			bonus = 1
 			uses = 1
 			technology = CAS3
 		}
 		add_tech_bonus = {
 			name = bomber_bonus
-			bonus = 2
+			bonus = 1
 			uses = 1
 			technology = CAS4
 		}		

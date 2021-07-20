@@ -204,6 +204,22 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_GER = {
+		effect = {
+		  if = {
+			  limit = {
+				  date > 1941.1.1
+				  every_country = {
+					is_in_faction_with = ENG
+					OR = { controls_state = 14 control_state = 15 control_state = 30 control_state = 23 control_state = 19 control_state = 699 control_state = 29 control_state = 6 control_state = 35 control_state = 7 control_state = 36 control_state = 59 control_state = 58 }
+				  }
+			  }
+			  GER = {	
+				  country_event = { id = germany.357 }
+					}
+			  }
+		  }
+		}
 	on_monthly={
 		effect={
 		    every_state = {

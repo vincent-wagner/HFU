@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = ITA
+		add_state_modifier = {modifier = { local_org_regain = 0.15 } }
 		victory_points = {
 			1075 35 
 		}

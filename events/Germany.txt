@@ -99,6 +99,61 @@ country_event = {
 	}
 }
 country_event = {
+	id = germany.357
+	title = germany.357.t
+	desc = germany.357.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	option = {
+		name = germany.357.a
+        custom_effect_tooltip = "Get 4 Medium Tank Divisions spawned in Bourgogne."
+			division_template = {
+				name = "Panzer Lehr Division"
+				regiments = {
+					medium_armor = { x = 0 y = 0 }
+					medium_armor = { x = 0 y = 1 }
+					medium_armor = { x = 0 y = 2 }
+					medium_armor = { x = 0 y = 3 }
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					medium_armor = { x = 1 y = 3 }
+					medium_armor = { x = 2 y = 0 }
+					medium_armor = { x = 2 y = 1 }
+					medium_armor = { x = 2 y = 2 }
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					mechanized = { x = 4 y = 0 }
+					mechanized = { x = 4 y = 1 }
+					mechanized = { x = 4 y = 2 }
+					mechanized = { x = 4 y = 3 }
+					medium_sp_anti_air_brigade = { x = 3 y = 4 }
+					medium_sp_anti_air_brigade = { x = 4 y = 4 }
+				}
+				support = {
+					mot_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					medium_sp_artillery = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }
+					maintenance_company = {x = 0 y = 5}
+				}
+			}
+			27 = {
+				for_loop_effect = {
+					end = 4
+					create_unit = {
+						division = "name = \"Panzer Lehr Division\" division_template = \"Panzer Lehr Division\" start_experience_factor = 0.3"
+						owner = GER
+					}
+					}}
+	}
+}
+country_event = {
 	id = germany.8541
 	title = germany.8541.t
 	desc = germany.8541.d

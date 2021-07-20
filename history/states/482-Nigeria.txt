@@ -9,6 +9,7 @@ state={
 	history={
 		owner = ENG
 		add_core_of=SWE
+		add_state_modifier = {modifier = { local_org_regain = 0.2 } }
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0
