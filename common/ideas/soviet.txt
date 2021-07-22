@@ -877,7 +877,7 @@ ideas = {
 				original_tag = "SOV"
 			}
 			available = {
-				has_completed_focus = SOV_great_terror
+				has_completed_focus = SOV_road_quality
 			}
 			traits = { infrastructure_expert }
 			do_effect = {
