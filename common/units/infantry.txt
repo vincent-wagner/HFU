@@ -70,9 +70,6 @@ sub_units = {
 
 		combat_width = 2
 
-		#offensive abilities
-		#soft_attack = 0.2
-
 		#Size Definitions
 		max_strength = 20
 		max_organisation = 70
@@ -92,7 +89,7 @@ sub_units = {
 		transport = infantry_equipment
 		need = {
 			infantry_equipment = 100
-			light_tank_artillery_equipment = 15
+			light_tank_artillery_equipment = 12
 		}
 		urban = {
 			attack = 0.15
