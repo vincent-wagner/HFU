@@ -574,9 +574,14 @@ technologies = {
 			max_organisation=5
 			default_morale = 0.1
 		}
-
 		category_support_battalions = {
 			max_organisation=5
+		}
+		category_line_artillery = {
+			max_strength = 4
+		}
+		category_anti_air = {
+			max_strength = 4
 		}
 		path = {
 			leads_to_tech = nd_conscription

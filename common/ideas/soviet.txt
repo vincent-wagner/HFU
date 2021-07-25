@@ -39,7 +39,7 @@ ideas = {
 			}
 			picture = generic_manpower_bonus
 			modifier = {
-				conscription = 0.075
+				conscription = 0.04
 			}
 		}
 		SOV_improve_stalin_line = {
@@ -389,6 +389,19 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				global_building_slots_factor = 0.2
+			}
+		}
+		SOV_manpower1 = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = generic_production_bonus
+			modifier = {
+				conscription = 0.02
 			}
 		}
 		SOV_build_refs = {

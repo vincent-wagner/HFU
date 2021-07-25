@@ -105,7 +105,7 @@ if = {
 set_convoys = 300
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 30000
+	amount = 40000
 	producer = ITA
 }
 add_equipment_to_stockpile = {
@@ -115,7 +115,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 800
+	amount = 1000
 	producer =ITA
 }
 add_equipment_to_stockpile = {
@@ -125,7 +125,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1000
+	amount = 1200
 	producer = ITA
 }
 add_equipment_to_stockpile = {

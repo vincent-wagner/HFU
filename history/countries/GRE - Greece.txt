@@ -21,7 +21,7 @@ set_technology = {
 add_timed_idea = { idea = no_training days= 1095 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 20000
+	amount = 15000
 }
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1

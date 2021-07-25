@@ -30,6 +30,19 @@ ideas = {
 				conscription_factor = -0.25
 			}
 		}
+		FRA_lend_lease = { #so you can't lend lease EQ for others to use in Asia
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			modifier = {
+				lend_lease_tension = -1
+			}
+		}
 		FRA_no_training_queue = {
 			picture = generic_production_bonus
 			allowed = {
