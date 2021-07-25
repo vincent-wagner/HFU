@@ -18,7 +18,7 @@ set_stability = 0.55
 set_war_support = 0.15
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
-add_ideas = CAN_lend_lease
+add_timed_idea = { idea = CAN_lend_lease days = 2150 }
 # Starting tech
 set_technology = {
 	airfield_allowed = 1

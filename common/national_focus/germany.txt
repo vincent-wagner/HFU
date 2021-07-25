@@ -3294,7 +3294,7 @@ focus = {
 			LUX = {
 				country_event = { id = wtt_germany.64 }
 			}
-			custom_effect_tooltip = "Every axis controlled state in europe will gain 30% compliance"
+			custom_effect_tooltip = "Every axis controlled state in europe will gain 40% compliance"
 			every_country = {
 				limit = {
 					is_in_faction_with = GER
@@ -3307,7 +3307,7 @@ focus = {
 						}
 						is_on_continent = europe
 					}
-					add_compliance = 30
+					add_compliance = 40
 				}
 			}
 		}

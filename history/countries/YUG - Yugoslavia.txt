@@ -55,7 +55,7 @@ set_technology = {
 add_ideas = peace_training
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 5000
+	amount = 2500
 }
 add_equipment_to_stockpile = {
 	type = support_equipment

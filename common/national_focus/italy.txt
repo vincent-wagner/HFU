@@ -193,7 +193,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_ideas= GER_germaniawerft
+			add_ideas= ITA_small_ship_focus
 			156 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -251,7 +251,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = ITA_small_ship_focus
+			add_ideas = GER_germaniawerft
 			154 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -523,12 +523,17 @@ focus = {
 		413 = {
 				add_resource = {
 					type = steel
-					amount = 50
+					amount = 60
 					state = 413
 				}
 				add_resource = {
 					type = chromium
-					amount = 50
+					amount = 40
+					state = 413
+				}
+				add_resource = {
+					type = tungsten
+					amount = 40
 					state = 413
 				}
 			}					

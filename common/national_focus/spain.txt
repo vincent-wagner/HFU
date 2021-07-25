@@ -377,7 +377,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPA_an_armored_corps
-				bonus = 1.0
+				bonus = 1.1
 				uses = 2
 				category = armor
 			}
