@@ -195,6 +195,14 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
+					NOT = { has_idea = HUN_manpower_cap }
+				}
+				if = {
+					limit = {
+						original_tag = ROM
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_manpower_cap }
 				}
 			}
 			ai_will_do = {
