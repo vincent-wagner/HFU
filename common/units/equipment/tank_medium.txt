@@ -399,7 +399,7 @@
     		armor_value = 70
     		#Offensive Abilities
     		soft_attack = 2.5
-    		hard_attack = 37
+    		hard_attack = 40
     		ap_attack = 88
     		air_attack = 0
     		    build_cost_ic = 16
@@ -458,7 +458,7 @@
     		hardness = 0.9
     		#Offensive Abilities
     		soft_attack = 3
-    		hard_attack = 40
+    		hard_attack = 44
     		ap_attack = 110
     		    build_cost_ic = 17.6
 	 	lend_lease_cost = 2.8   
@@ -491,7 +491,7 @@
     		hardness = 0.9
     		#Offensive Abilities
     		soft_attack = 3
-    		hard_attack = 40
+    		hard_attack = 44
     		ap_attack = 110
     		    build_cost_ic = 17.6
 	 	lend_lease_cost = 2.8   
@@ -525,7 +525,7 @@
     		hardness = 0.9
     		#Offensive Abilities
     		soft_attack = 4
-    		hard_attack = 44
+    		hard_attack = 49
     		ap_attack = 120
     		    build_cost_ic = 19.25
 	 	lend_lease_cost = 3   
@@ -558,7 +558,7 @@
     		hardness = 0.9
     		#Offensive Abilities
     		soft_attack = 4
-    		hard_attack = 44
+    		hard_attack = 49
     		ap_attack = 120
     		    build_cost_ic = 19.25
 	 	lend_lease_cost = 3   
