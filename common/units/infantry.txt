@@ -92,7 +92,7 @@ sub_units = {
 			light_tank_artillery_equipment = 12
 		}
 		urban = {
-			attack = 0.15
+			attack = 0.20
 			movement = 0.1
 			defence = 0.05
 		}
@@ -211,8 +211,8 @@ sub_units = {
 		}
 
 		desert = {
-			attack = 0.2
-			defence = 0.25
+			attack = 0.25
+			defence = 0.3
 			movement = 0.3
 		}
 		hills = {
@@ -345,16 +345,16 @@ sub_units = {
 			amphibious_mechanized_equipment = 10
 		}
 		jungle = {
-			attack = 0.15
+			attack = 0.2
 		}
 		marsh = {
-			attack = 0.35
+			attack = 0.4
 		}
 		river = {
-			attack = 0.3
+			attack = 0.35
 		}
 		amphibious = {
-			attack = 0.5
+			attack = 0.6
 		}
 	}
 
@@ -410,7 +410,7 @@ sub_units = {
 			movement = 0.1
 		}
 		mountain = {
-			attack = 0.4
+			attack = 0.45
 			defence = 0.05
 			movement = 0.2
 		}
