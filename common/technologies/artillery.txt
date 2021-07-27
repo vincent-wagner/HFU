@@ -540,6 +540,10 @@ technologies = {
 				factor = 5
 			}
 		}
+		categories = {
+			artillery
+			cat_anti_air
+		}
 	}
 	antiair2 = {
 		enable_equipments = {
