@@ -2,22 +2,15 @@ state={
 	id=309
 	name="STATE_342"
 	manpower = 1
-	resources={
-		chromium=35
-	}
 	state_category = rural
 	history={
-		owner = TUR
-		victory_points = {
-			951 1
-		}
+		owner = USA
+		add_state_modifier = {modifier = { production_speed_air_base_factor = -0.95 } }
+		add_state_modifier = {modifier = { production_speed_naval_base_factor = -0.95 } }
 		buildings = {
-			infrastructure = 3
-			951 = {
-				naval_base = 4
-			}
+			infrastructure = 8
 		}
-		add_core_of = TUR
+		add_core_of = SWE
 	}
 	provinces={
 		951

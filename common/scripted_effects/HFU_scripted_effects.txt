@@ -213,10 +213,10 @@ update_pacific_war = {
 		if={
 			limit={is_controlled_by_ENG_or_ally=yes }
 			if={
-				limit={NOT={OR={state=591 state = 712 state = 713 state=300 state=302 state=303 state=450 state=388 state= 550 state=588 state=273 state=272 state=405}}}
+				limit={NOT={OR={state=591 state = 712 state = 713 state=300 state=302 state=303 state=388 state= 550 state=273 state=272 state=405}}}
 				add_to_variable={GLOBAL.pacific_status=1}
 				else_if={
-					limit={NOT={OR={state=273 state=272 state=405}}}
+					limit={NOT={OR={state=273 state=272 state=405 state=450 state=588}}}
 					add_to_variable={GLOBAL.pacific_status=5}
 				}
 				else={
