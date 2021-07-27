@@ -64,50 +64,6 @@ units= {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_1
-			creator = "FRA"
-			version_name = "Le Fantasque Class"
-		}
-		name = "Le Malin"
-		requested_factories = 1
-		progress = 0.60
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "FRA"
-			version_name = "Le Fantasque Class"
-		}
-		name = "L'Indomptable"
-		requested_factories = 1
-		progress = 0.85
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "FRA"
-			version_name = "Le Fantasque Class"
-		}
-		name = "Le Fantasque"
-		requested_factories = 1
-		progress = 0.75
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_1
-			creator = "FRA"
-			version_name = "Le Fantasque Class"
-		}
-		name = "Le Triomphant"
-		requested_factories = 1
-		progress = 0.60
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
 			type = ship_hull_heavy_2
 			creator = "FRA"
 			version_name = "Dunkerque Class"
@@ -135,7 +91,7 @@ instant_effect = {
 		}
 		name = "Jean de Vienne"
 		requested_factories = 1
-		progress = 0.35
+		progress = 0.40
 		amount = 1
 	}
 	add_equipment_production = {
@@ -146,60 +102,8 @@ instant_effect = {
 		}
 		name = "Marseillaise"
 		requested_factories = 1
-		progress = 0.15
+		progress = 0.40
 		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_cruiser_1
-			creator = "FRA"
-			version_name = "La Galissonnière Class"
-		}
-		name = "Gloire"
-		requested_factories = 1
-		progress = 0.15
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_cruiser_1
-			creator = "FRA"
-			version_name = "La Galissonnière Class"
-		}
-		name = "Montcalm"
-		requested_factories = 1
-		progress = 0.15
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.20
-		amount = 3
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.20
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "FRA"
-			version_name = "Redoutable Class"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 2
 	}
 }
 

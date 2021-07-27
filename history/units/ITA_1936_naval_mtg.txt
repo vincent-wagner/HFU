@@ -234,37 +234,6 @@ instant_effect = {
 			progress = 0.45
 			amount = 1
 		}
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_light_1
-				creator = "ITA"
-				version_name = "Maestrale Class"
-			}
-			requested_factories = 20
-			progress = 0.70
-			amount = 1
-		}
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_light_1
-				creator = "ITA"
-				version_name = "Maestrale Class"
-			}
-			requested_factories = 20
-			progress = 0.60
-			amount = 1
-		}
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_submarine_2
-				creator = "ITA"
-				version_name = "Calvi Class"
-			}
-			name = "RSmg Enrico Tazzoli"
-			requested_factories = 20
-			progress = 0.50
-			amount = 1
-		}
 	}
 }
 

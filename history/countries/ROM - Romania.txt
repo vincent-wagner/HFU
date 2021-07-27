@@ -99,6 +99,10 @@ set_popularities = {
 add_ideas = {
 	partial_economic_mobilisation
 }
+add_timed_idea = {
+	idea = HUN_manpower_cap
+	days = 2000
+}
 create_country_leader = {
 	name = "Gheorghe Tatarescu"
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"

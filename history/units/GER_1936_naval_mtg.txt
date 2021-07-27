@@ -55,7 +55,7 @@ instant_effect = {
 			version_name = "Zerstörer 1934 Class"
 		}
 		requested_factories = 20
-		progress = 0.75
+		progress = 0.65
 		amount = 1
 	}
 	add_equipment_production = {
@@ -75,7 +75,7 @@ instant_effect = {
 			version_name = "Admiral Hipper Class"
 		}
 		requested_factories = 20
-		progress = 0.95
+		progress = 0.80
 		amount = 1
 	}
 	add_equipment_production = {
@@ -85,7 +85,7 @@ instant_effect = {
 			version_name = "Admiral Hipper Class"
 		}
 		requested_factories = 20
-		progress = 0.25
+		progress = 0.80
 		amount = 1
 	}
 	add_equipment_production = {
@@ -106,36 +106,6 @@ instant_effect = {
 		}
 		requested_factories = 20
 		progress = 0.60
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 20
-		progress = 0.25
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 20
-		progress = 0.25
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 20
-		progress = 0.25
 		amount = 1
 	}
 }

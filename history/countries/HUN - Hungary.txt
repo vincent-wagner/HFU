@@ -44,6 +44,10 @@ capital = 43
  		HUN_treaty_of_triannon
 		peace_training
  	}
+	add_timed_idea = {
+		 idea = HUN_manpower_cap
+		 days = 2000
+	 }
  
  set_politics = {
  	ruling_party = neutrality
