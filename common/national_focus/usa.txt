@@ -1375,6 +1375,15 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = Pacific_focus
+			transfer_state = 309
+						309 = {
+				add_building_construction = {
+					type = naval_base
+					province = 951
+					level = 20
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
