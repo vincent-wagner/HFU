@@ -13,9 +13,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			2035 = {
-				naval_base = 2
-			}
 		}
 	}
 	provinces={

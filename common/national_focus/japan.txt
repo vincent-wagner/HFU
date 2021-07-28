@@ -922,6 +922,11 @@ focus_tree = {
 				uses = 1
 				category = naval_doctrine
 			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = radar_tech
+			}
 		}
 	}
 	focus = {

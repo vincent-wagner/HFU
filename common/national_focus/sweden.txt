@@ -14,7 +14,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		x = 10
 		y = 0
-		cost = 15
+		cost =0
 		
 		available_if_capitulated = yes
 		completion_reward = {
@@ -157,13 +157,32 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = NDA_resource55
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 26
+		prerequisite = { focus = NDA_resource11 }
+		relative_position_id = NDA_resource11
+		available_if_capitulated = yes
+		completion_reward = {
+			every_country={
+				limit={is_playable_country=yes}
+				swap_ideas={
+					remove_idea = research_39
+					add_idea = research_39_mid
+				}
+			}
+		}
+	}
+	focus = {
 		id = NDA_resource5
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
 		cost = 26.2
-		prerequisite = { focus = NDA_resource11 }
-		relative_position_id = NDA_resource11
+		prerequisite = { focus = NDA_resource55 }
+		relative_position_id = NDA_resource55
 		available_if_capitulated = yes
 		completion_reward = {
 			412 = {add_state_modifier = {
@@ -183,25 +202,6 @@ focus_tree = {
 				swap_ideas={
 					remove_idea = research_39_mid
 					add_idea = research_40
-				}
-			}
-		}
-	}
-	focus = {
-		id = NDA_resource55
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 26
-		prerequisite = { focus = NDA_resource5 }
-		relative_position_id = NDA_resource5
-		available_if_capitulated = yes
-		completion_reward = {
-			every_country={
-				limit={is_playable_country=yes}
-				swap_ideas={
-					remove_idea = research_39
-					add_idea = research_39_mid
 				}
 			}
 		}

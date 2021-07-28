@@ -12,10 +12,6 @@ state=
 		}
 		buildings = {
 			infrastructure = 3
-			air_base = 1
-			11662 = {
-				naval_base = 2
-			}
 		}
 	}
 	provinces=
