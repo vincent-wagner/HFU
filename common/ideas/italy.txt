@@ -279,7 +279,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				political_advisor_cost_factor = 0.15
-				consumer_goods_factor = 0.025
+				production_speed_infrastructure_factor = -0.1
 			}
 		}
 		ITA_calm_the_masses = {
