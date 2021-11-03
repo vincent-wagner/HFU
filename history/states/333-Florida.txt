@@ -9,18 +9,6 @@ state={
 			infrastructure = 4
 			industrial_complex = 3
 			air_base = 8
-			1512 = {
-				naval_base = 2
-			}
-			1748 = {
-				naval_base = 5
-			}
-			6851 = {
-				naval_base = 3
-			}
-			9524 = {
-				naval_base = 1
-			}
 		}
 		add_core_of = USA
 		victory_points = {

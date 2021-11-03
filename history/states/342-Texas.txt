@@ -13,12 +13,6 @@ state={
 			infrastructure = 6
 			industrial_complex = 9
 			air_base = 3
-			9511 = {
-				naval_base = 3
-			}
-			6287 = {
-				naval_base = 1
-			}
 		}
 		add_core_of = USA
 		victory_points = {
