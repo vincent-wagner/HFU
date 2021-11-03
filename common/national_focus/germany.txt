@@ -2268,59 +2268,11 @@ focus = {
 		}
 	}
 	focus = {
-		id = GER_weserubung
-		icon = GFX_focus_ger_weserubung2
-		prerequisite = { focus = GER_danzig_or_war }
-		bypass = {
-		}
-		available = {
-		}
-		x = 1
-		y = 1
-		relative_position_id = GER_danzig_or_war
-		cost = 1
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			unlock_decision_tooltip=GER_operation_weserubung
-			hidden_effect = {
-				157 = {
-					add_resource = {
-						type=aluminium
-						amount=-30
-					}
-				}
-				50 = {
-					add_resource = {
-						type=aluminium
-						amount=-30
-					}
-				}
-			}
-			add_tech_bonus = {
-				name = tp_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = tp_tech
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.233 }
-			}
-		}
-	}
-	focus = {
 		id = GER_pressure_sweden
 		icon = GFX_focus_GER_pressure_sweden
-		prerequisite = { focus = GER_weserubung }
-		relative_position_id = GER_weserubung
-		x = 0
+		prerequisite = { focus = GER_danzig_or_war }
+		relative_position_id = GER_danzig_or_war
+		x = -1
 		y = 1
 		cost = 1
 		available = {
@@ -2343,29 +2295,6 @@ focus = {
 		}
 	}
 	focus = {
-		id = GER_around_maginot
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_danzig_or_war }
-		available = {
-		}
-		bypass = {
-		}
-		historical_ai = {
-		}
-		x = -1
-		y = 1
-		relative_position_id = GER_danzig_or_war
-		cost = 1
-		ai_will_do = {
-		}
-		completion_reward = {
-			unlock_decision_tooltip=GER_fall_gelb
-			hidden_effect = {
-				news_event = { hours = 6 id = news.234 }
-			}
-		}
-	}
-	focus = {
 		id = GER_anti_comitern_pact
 		icon = GFX_goal_anti_comintern_pact
 		available = {
@@ -2373,7 +2302,7 @@ focus = {
 		}
 		prerequisite = { focus = GER_Greater_Germany }
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = GER_danzig_or_war
 		cost = 1
 		available = {
@@ -3234,14 +3163,14 @@ focus = {
 	focus = {
 		id = GER_alta
 		icon = GFX_goal_generic_SS_focus
-		prerequisite = { focus = GER_around_maginot }
+		prerequisite = { focus = GER_danzig_or_war }
 		bypass = {
 			NOT = {FRA = {has_full_control_of_state =16}}
 		}
 		cancel_if_invalid = yes
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = GER_around_maginot
+		relative_position_id = GER_danzig_or_war
 		cost = 1
 		completion_reward = {
 			add_timed_idea = {
@@ -3262,9 +3191,9 @@ focus = {
 		bypass = {
 		}
 		cancel_if_invalid = yes
-		x = 1
+		x = 0
 		y = 2
-		relative_position_id = GER_around_maginot
+		relative_position_id = GER_danzig_or_war
 		cost = 1
 		ai_will_do = {
 			factor = 10
