@@ -707,6 +707,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_fascist_economic_aid
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 			remove_ideas = SPA_recovering_from_civil_war_3
 			add_ideas = SPA_the_duty_to_work
 		}

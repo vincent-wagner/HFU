@@ -15,7 +15,7 @@ focus_tree = {
 		icon = GFX_focus_rom_preserve_romania
 		x = 0
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 9
 		}
@@ -94,9 +94,9 @@ focus_tree = {
 	focus = {
 		id = ROM_civil_works
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = ROM_preserve_greater_romania }
+		prerequisite = { focus = ROM_agrarian_reform }
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = ROM_preserve_greater_romania
 		cost = 10
 		ai_will_do = {
@@ -130,10 +130,10 @@ focus_tree = {
 	focus = {
 		id = ROM_agrarian_reform
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = ROM_civil_works }
-		x = 0
+		prerequisite = { focus = ROM_preserve_greater_romania }
+		x = 1
 		y = 1
-		relative_position_id = ROM_civil_works
+		relative_position_id = ROM_preserve_greater_romania
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -145,16 +145,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
+		completion_reward = { 
 			add_ideas = ROM_agrarian_reform
 		}
 	}
 	focus = {
 		id = ROM_danubian_transport_network
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = ROM_agrarian_reform }
+		prerequisite = { focus = ROM_civil_works }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ROM_civil_works
 		cost = 5
 		ai_will_do = {
@@ -252,7 +252,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ROM_danubian_transport_network }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = ROM_civil_works
 		cost = 10
 		ai_will_do = {
@@ -291,7 +291,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = ROM_malaxa }
 		x = -1
-		y = 4
+		y = 3
 		relative_position_id = ROM_civil_works
 		cost = 10
 		ai_will_do = {
@@ -338,7 +338,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ROM_malaxa }
 		x = 1
-		y = 4
+		y = 3
 		relative_position_id = ROM_civil_works
 		cost = 10
 		ai_will_do = {
@@ -380,7 +380,7 @@ focus_tree = {
 		prerequisite = { focus = ROM_invest_in_the_iar }
 		prerequisite = { focus = ROM_hunedoara_steel_works }
 		x = 0
-		y = 5
+		y = 4
 		relative_position_id = ROM_civil_works
 		cost = 10
 		ai_will_do = {
@@ -408,7 +408,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = { focus = ROM_expand_ploiesti_oil_production }
 		x = 0
-		y = 6
+		y = 5
 		relative_position_id = ROM_civil_works
 		cost = 10
 		ai_will_do = {
@@ -740,7 +740,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		x = 11
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 9
 		}

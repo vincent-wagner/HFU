@@ -6,6 +6,7 @@ state={
 	resources={
 		rubber=8
 		oil=10
+		aluminium = 8
 	}
 	history={
 		owner = AST

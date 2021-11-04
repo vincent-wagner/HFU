@@ -1,4 +1,16 @@
 ideas = {
+    country = {
+	BUL_two_year_plan = {
+		picture = generic_foreign_capital
+			allowed_civil_war = {
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	}
+
 	political_advisor = {
 		BUL_konstantin_muraviev = {
 			picture = generic_political_advisor_europe_1

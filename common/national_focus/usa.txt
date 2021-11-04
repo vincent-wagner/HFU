@@ -1755,6 +1755,27 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = USA_war_time
+				AST = {
+					add_ideas = free_trade
+				}
+				273 = {
+					add_resource = {
+						type = steel
+						amount = 20
+					}
+				}
+				444 = {
+					add_resource = {
+						type = steel
+						amount = 10
+					}
+				}
+				448 = {
+					add_resource = {
+						type = tungsten
+						amount = 15
+					}
+				}
 		}
 	}
 	focus = {
