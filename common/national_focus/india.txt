@@ -1894,7 +1894,7 @@ completion_reward = {
 			RAJ = {
 				modify_tech_sharing_bonus = {
 					id = commonwealth_research
-					bonus = 0.4
+					bonus = 0.35
 				}
 			}
 		}

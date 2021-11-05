@@ -280,7 +280,7 @@ ideas = {
 			}
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_industrial_complex_factor = 0.10
+				production_speed_industrial_complex_factor = 0.075
 			}
 		}
 		SOV_work_faster = {
