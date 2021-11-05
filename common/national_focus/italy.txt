@@ -2352,7 +2352,7 @@ focus = {
 		id = ITA_8_Million_Bayonets
 		prerequisite = { focus = ITA_rommel}
 		icon = GOAL_equpiment
-		available = {NOT = {has_full_control_of_state = 582 has_full_control_of_state = 413}}
+		available = {has_full_control_of_state = 582 has_full_control_of_state = 413}
 		relative_position_id = ITA_rommel
 		x = 2
 		y = 1
@@ -2361,7 +2361,7 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-		add_timed_idea = {days = 120 idea = GER_reinforce_the_line_idea }
+		add_ideas = GER_reinforce_the_line_idea
 		}
 	}
 	focus = {
