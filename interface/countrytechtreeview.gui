@@ -2074,7 +2074,7 @@ guiTypes = {
 			name = "air_techs_folder_f"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 0 bottom = 24 right = 25}
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
@@ -2158,6 +2158,8 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
+
+
 			
 			instantTextBoxType = {
 				name = "airtech_year6"
@@ -2432,7 +2434,7 @@ guiTypes = {
 			name = "air_techs_folder"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 0 bottom = 24 right = 25}
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
@@ -2514,6 +2516,19 @@ guiTypes = {
 				maxWidth = 170
 				maxHeight = 32
 				format = left
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "armour_subtitle_medium_research_lock"
+				position = { x = 100 y = 50 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = " 1941 planes are locked behind June 1939, while 1942 planes are locked behind June 1941"
+				maxWidth = 1500
+				maxHeight = 62
+				format = center
 				Orientation = "UPPER_LEFT"
 			}
 			
