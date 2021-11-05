@@ -109,13 +109,23 @@ add_equipment_to_stockpile = {
 	producer = ITA
 }
 add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 500
+	producer =ITA
+}
+add_equipment_to_stockpile = {
+	type = armored_car_equipment_1
+	amount = 500
+	producer =ITA
+}
+add_equipment_to_stockpile = {
 	type = motorized_equipment_1
 	amount = 500
 	producer =ITA
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 1000
+	amount = 2000
 	producer =ITA
 }
 add_equipment_to_stockpile = {
@@ -125,7 +135,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1200
+	amount = 2000
 	producer = ITA
 }
 add_equipment_to_stockpile = {
