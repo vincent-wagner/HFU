@@ -4,9 +4,6 @@ state={
 	history={
 		owner = SPR
 		victory_points = {
-			994 3
-		}
-		victory_points = {
 			6648 10
 		}
 		buildings = {
