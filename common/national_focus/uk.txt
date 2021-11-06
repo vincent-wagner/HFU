@@ -1466,8 +1466,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_india_focus
-		prerequisite = { focus = uk_commonwealth_focus 
-				focus = uk_exploit_commonwealth}
+		prerequisite = { focus = uk_commonwealth_focus }
 		mutually_exclusive = { focus = uk_exploit_india_focus }
 		ai_will_do = {
 			factor = 9
