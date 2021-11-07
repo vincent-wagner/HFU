@@ -36,8 +36,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2548;2227;sea;5771;2949;1598;2962;1612;KIEL_CANAL;Kiel
 1440;2735;sea;7368;-1;-1;-1;-1;IRAN_CANAL;Countenance
 3867;9242;impassable;-1;-1;-1;-1;-1;;gibraltarspain
-3867;11884;impassable;-1;-1;-1;-1;-1;;gibraltarspain
-3867;11883;impassable;-1;-1;-1;-1;-1;;gibraltarspain
+11884;9242;impassable;-1;-1;-1;-1;-1;;gibraltarspain
+11884;3687;impassable;-1;-1;-1;-1;-1;;gibraltarspain
+11883;3687;impassable;-1;-1;-1;-1;-1;;gibraltarspain
 11685;9395;sea;4971;-1;-1;-1;-1;;Portugese Timor-Lesser Sunda
 9358;1044;sea;8104;-1;-1;-1;-1;;Kalimantan-Sulawesi
 9331;1364;sea;4853;-1;-1;-1;-1;;Kalimantan-Sulawesi-2
