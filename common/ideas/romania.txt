@@ -310,6 +310,7 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = -0.025
+				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 		ROM_exploit_the_baita_mines = {
