@@ -1,10 +1,10 @@
 ﻿units = {
 	fleet = {
 		name = "Royal Canadian Atlantic Squadron"
-		naval_base =6826
+		naval_base =11033
 		task_force = {
 			name = "Atlantic Squadron"
-			location =6826
+			location =11033
 			ship = { name = "HMCS Saguenay" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
 			ship = { name = "HMCS Skeena" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
 			ship = { name = "HMCS Assiniboine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }

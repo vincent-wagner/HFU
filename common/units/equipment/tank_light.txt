@@ -50,7 +50,7 @@
     		reliability = 0.8
     		#Defensive Abilities
     		defense = 4
-    		breakthrough = 18
+    		breakthrough = 20
     		armor_value = 5
     		#Offensive Abilities
     		soft_attack = 8
@@ -73,7 +73,7 @@
     		reliability = 0.8
     		#Defensive Abilities
     		defense = 4
-    		breakthrough = 18
+    		breakthrough = 20
     		armor_value = 5
     		#Offensive Abilities
     		soft_attack = 8
@@ -121,7 +121,7 @@
     		maximum_speed = 12
     		#Defensive Abilities
     		defense = 5
-    		breakthrough = 44
+    		breakthrough = 41
     		armor_value = 65
     		#Offensive Abilities
     		soft_attack = 19
@@ -150,7 +150,7 @@
     		}
     		#Defensive Abilities
     		defense = 5
-    		breakthrough = 44
+    		breakthrough = 41
     		armor_value = 65
     		#Offensive Abilities
     		soft_attack = 19
@@ -178,7 +178,7 @@
     		maximum_speed = 14
     		#Defensive Abilities
     		defense = 6
-    		breakthrough = 51
+    		breakthrough = 50
     		armor_value = 75
     		#Offensive Abilities
     		soft_attack = 21
@@ -207,7 +207,7 @@
     		maximum_speed = 14
     		#Defensive Abilities
     		defense = 6
-    		breakthrough = 51
+    		breakthrough = 50
     		armor_value = 75
     		#Offensive Abilities
     		soft_attack = 21

@@ -3130,5 +3130,13 @@ SpriteTypes = {
 		name = "GFX_focus_USA_asian_theatre"
 		texturefile = "gfx/interface/goals/USA_asian_theatre.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_SOV_novikov_blueprints"
+		texturefile = "gfx/interface/goals/sov/SOV_novikov_blueprints.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SOV_iron_fist"
+		texturefile = "gfx/interface/goals/sov/SOV_iron_fist.dds"
+	}
 
 }	

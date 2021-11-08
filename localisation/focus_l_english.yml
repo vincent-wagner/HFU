@@ -11,6 +11,8 @@
  SOV_research_institutes:0 "Research Institutes"
  SOV_develop_modern_guns:0 "Develop Modern Guns"
  SOV_great_terror:0 "Great Terror"
+ SOV_wartime_industry:0 "Wartime Industry"
+ SOV_novikov_blueprint:0 "Novikov's Blueprints"
  SOV_road_quality:0 "Improve Our Road Quality"
  SOV_people_work:0 "The People Work For Us"
  GER_reinforce_the_line:0 "Reinforce The Line"

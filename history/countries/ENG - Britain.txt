@@ -101,6 +101,8 @@ if = {
 		improved_secondary_battery = 1
 		basic_fire_control_system = 1
 		improved_light_art = 1
+		improved_light_td = 1
+		improved_light_spaa = 1
 	}
 }
 if = {
@@ -127,6 +129,11 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
 	amount = 200
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = light_tank_equipment_2
+	amount = 800
 	producer = ENG
 }
 add_equipment_to_stockpile = {

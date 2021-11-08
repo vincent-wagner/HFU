@@ -406,8 +406,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_X
-		icon = GFX_Goal_Positive_heroism
+		id = SOV_novikov_blueprint
+		icon = GFX_focus_SOV_novikov_blueprints
 		relative_position_id = SOV_move_industry_to_urals
 		x = -1
 		y = 3
@@ -424,12 +424,12 @@ focus_tree = {
 	}
 }
 	focus = {
-		id = SOV_Y
-		icon = GFX_Goal_Positive_heroism
+		id = SOV_wartime_industry
+		icon = GFX_focus_SOV_iron_fist
 		relative_position_id = SOV_move_industry_to_urals
 		x = 0 
 		y = 4
-		prerequisite = { focus = SOV_X }
+		prerequisite = { focus = SOV_novikov_blueprint }
 		prerequisite = { focus = SOV_modifiers }
 		cost = 5
 		ai_will_do = {
@@ -641,7 +641,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = SOV_great_patriotic_general  }
 		prerequisite = { focus = SOV_barb_2  }
-		prerequisite = { focus = SOV_Y  }
+		prerequisite = { focus = SOV_wartime_industry  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
