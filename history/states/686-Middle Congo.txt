@@ -10,7 +10,7 @@ state={
 		owner = FRA
 		add_core_of=SWE
 		victory_points = {
-			7515 3
+			7515 5
 		}
 		buildings = {
 			infrastructure = 3

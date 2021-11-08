@@ -71,6 +71,7 @@
  	fuel_silos = 1
  	synth_oil_experiments = 1
  	fuel_refining = 1
+	improved_light_art = 1
  }
  if = {
  	limit = {
