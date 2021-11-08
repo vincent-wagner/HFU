@@ -63,8 +63,6 @@ steel = 2
 rubber = 1
 		}
 		
-		
-fuel_consumption = 4.0
 	}
 
 	

@@ -153,8 +153,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3179;6594;sea;6303;-1;-1;-1;-1;;Cyclades-Greece
 7718;748;sea;6912;-1;-1;-1;-1;;Lesbos-Turkey
 6054;881;sea;6691;-1;-1;-1;-1;;Chios-Turkey
-6471;951;sea;6691;-1;-1;-1;-1;;Kos-Bodrum
-9190;951;sea;6691;-1;-1;-1;-1;;Rhodes-Turkey
+6471;9190;sea;6691;-1;-1;-1;-1;;Dodecanese-Rhodes
 9037;848;sea;4969;-1;-1;-1;-1;;Bosphorus
 8897;6243;sea;7565;-1;-1;-1;-1;;Kerch Strait
 9061;3707;sea;5502;-1;-1;-1;-1;;Tsugaru Strait

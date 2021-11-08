@@ -100,6 +100,7 @@ if = {
 		mtg_transport = 1
 		improved_secondary_battery = 1
 		basic_fire_control_system = 1
+		improved_light_art = 1
 	}
 }
 if = {
@@ -135,7 +136,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 20000
+	amount = 40000
 	producer = ENG
 }
 add_equipment_to_stockpile = {

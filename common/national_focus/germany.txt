@@ -118,14 +118,13 @@
 		x = 0
 		y = 1
 		relative_position_id = GER_german_war_economy
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 			}
 		available = {
+			date > 1939.03.01
 		}
-		bypass = {
-			}
 			completion_reward = {
 				HUN = {
 					add_timed_idea = { idea = GER_align_hungary days = 100 }
@@ -145,7 +144,7 @@
 		x = 0
 		y = 1
 		relative_position_id = GER_align_hungary
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1555,7 +1554,7 @@ focus = {
 					amount = 100
 				}
 			}
-			add_timed_idea={ idea= GER_mineraloelsicherungsplan days= 180 }
+			add_timed_idea={ idea= GER_mineraloelsicherungsplan days= 120}
 		}
 	}
 	focus = {

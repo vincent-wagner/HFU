@@ -109,7 +109,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	heavy_fighter1 =1
-	
+	improved_light_art = 1
 }
 if = {
 	limit = {

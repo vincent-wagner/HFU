@@ -48,6 +48,7 @@ sub_units = {
 
 		mountain = {
 			movement = -0.2
+			defence = -0.2
 		}
 
 		jungle = {
@@ -176,7 +177,7 @@ sub_units = {
 		manpower = 500
 		max_organisation = -16
 		default_morale = 0.1
-		max_strength = -10
+		max_strength = -1
 		training_time = 120
 		weight = 0.5
 		soft_attack = 0.04

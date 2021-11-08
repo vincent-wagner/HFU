@@ -59,7 +59,7 @@
     		year = 1939
     		archetype = infantry_equipment
     		parent = infantry_equipment_1
-			maximum_speed = 6
+			maximum_speed = 4
     		priority = 10
     		visual_level = 2
     		#Defensive Abilities
@@ -85,8 +85,7 @@
     		visual_level = 3
     		#Defensive Abilities
     		defense = 21
-			maximum_speed = 6
-			#maximum_speed = 6 doesnt work anyways
+			maximum_speed = 4
     		breakthrough = 6
     		#Offensive Abilities
     		soft_attack = 11
