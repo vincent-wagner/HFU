@@ -268,8 +268,44 @@ ideas = {
 				consumer_goods_factor=-0.15
 				industry_repair_factor = 1
 				political_power_gain = 0.5
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
+		SOV_barb_industry = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = generic_manpower_bonus
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.075
+			}
+		}
+
+		SOV_great_airforce = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = generic_manpower_bonus
+			equipment_bonus = {
+				fighter_equipment = {
+					air_attack = 0.1 instant=yes
+				}
+			}
+			modifier = {
+				air_cas_present_factor = 0.15
+
+			}
+		}
+		
 		SOV_industrial_boom = {
 			removal_cost = -1
 			allowed = {

@@ -390,7 +390,7 @@ focus_tree = {
 		x = 0
 		y = 1.5
 		prerequisite = { focus = SOV_move_industry_to_urals }
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -405,6 +405,45 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = SOV_X
+		icon = GFX_Goal_Positive_heroism
+		relative_position_id = SOV_move_industry_to_urals
+		x = -1
+		y = 3
+		prerequisite = { focus = SOV_great_figher }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+		completion_reward = {
+	}
+}
+	focus = {
+		id = SOV_Y
+		icon = GFX_Goal_Positive_heroism
+		relative_position_id = SOV_move_industry_to_urals
+		x = 0 
+		y = 4
+		prerequisite = { focus = SOV_X }
+		prerequisite = { focus = SOV_modifiers }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 20 }
+			add_ideas = SOV_barb_industry 
+	}
+}
 	focus = {
 		id = SOV_winter_offensive
 		icon = GFX_focus_attack_germany
@@ -598,10 +637,12 @@ focus_tree = {
 		id = SOV_hero_of_the_union
 		icon = GFX_georgy_zhukov_hero
 		relative_position_id = SOV_winter_offensive
-		x = -1
-		y = 1
-		prerequisite = { focus = SOV_great_figher }
-		cost = 6
+		x = -0
+		y = 3
+		prerequisite = { focus = SOV_great_patriotic_general  }
+		prerequisite = { focus = SOV_barb_2  }
+		prerequisite = { focus = SOV_Y  }
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -610,7 +651,7 @@ focus_tree = {
 			}
 		}
 		available = {
-			date>1942.7.1
+			date>1942.6.1
 		}
 		bypass = {
 		}
@@ -651,6 +692,30 @@ focus_tree = {
 				add_unit_leader_trait=scavenger
 				add_unit_leader_trait=skilled_staffer
 			}
+		}
+	}
+	focus = {
+		id = SOV_A
+		icon = GFX_Goal_Great_Purge2
+		relative_position_id = SOV_hero_of_the_union
+		x = 2
+		y = 1
+		prerequisite = { focus = SOV_hero_of_the_union }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+		available = {
+			date>1942.1.1
+		}
+		bypass = {
+		}
+		completion_reward = {
+			add_ideas = SOV_great_airforce
 		}
 	}
 	focus = {
@@ -2025,15 +2090,12 @@ focus_tree = {
 		id = SOV_uranus
 		icon = GFX_SOV_protect_the_east
 		prerequisite = { focus = SOV_great_patriotic_general }
-		prerequisite = { focus = SOV_barb_2 }
-		prerequisite = { focus = SOV_hero_of_the_union}
-		prerequisite = { focus = SOV_modifiers }
 		available = {
 			date > 1942.08.15
 			date < 1942.11.23
 		}
 		x = 0
-		y = 5
+		y = 6
 		relative_position_id = SOV_move_industry_to_urals
 		cost = 5
 		ai_will_do = {
