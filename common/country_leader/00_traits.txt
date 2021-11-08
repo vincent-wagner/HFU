@@ -1364,7 +1364,7 @@ leader_traits = {
 		random = yes
 		production_factory_max_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.1
-		line_change_production_efficiency_factor = 0.2
+		line_change_production_efficiency_factor = 0.1
 		ai_will_do = {
 			factor = 2
 		}
@@ -2180,7 +2180,7 @@ leader_traits = {
 
 			fighter_equipment = {
 				air_range = 0.20
-				air_agility = 0.25
+				air_agility = 0.2
 				maximum_speed = 0.1
 			}
 
