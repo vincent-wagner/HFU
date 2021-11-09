@@ -409,9 +409,9 @@ focus_tree = {
 		id = SOV_novikov_blueprint
 		icon = GFX_focus_SOV_novikov_blueprints
 		relative_position_id = SOV_move_industry_to_urals
-		x = -1
-		y = 3
-		prerequisite = { focus = SOV_great_figher }
+		x = 2
+		y = 6
+		prerequisite = { focus = SOV_hero_of_the_union  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -421,6 +421,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_ideas = SOV_great_airforce
 	}
 }
 	focus = {
@@ -429,7 +430,7 @@ focus_tree = {
 		relative_position_id = SOV_move_industry_to_urals
 		x = 0 
 		y = 4
-		prerequisite = { focus = SOV_novikov_blueprint }
+		prerequisite = { focus = SOV_A }
 		prerequisite = { focus = SOV_modifiers }
 		cost = 5
 		ai_will_do = {
@@ -697,10 +698,10 @@ focus_tree = {
 	focus = {
 		id = SOV_A
 		icon = GFX_Goal_Great_Purge2
-		relative_position_id = SOV_hero_of_the_union
-		x = 2
-		y = 1
-		prerequisite = { focus = SOV_hero_of_the_union }
+		relative_position_id = SOV_great_figher
+		x = -1
+		y = 2
+		prerequisite = { focus = SOV_great_figher  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -715,7 +716,7 @@ focus_tree = {
 		bypass = {
 		}
 		completion_reward = {
-			add_ideas = SOV_great_airforce
+			
 		}
 	}
 	focus = {

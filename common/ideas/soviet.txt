@@ -295,14 +295,10 @@ ideas = {
 				has_government = communism
 			}
 			picture = generic_manpower_bonus
-			equipment_bonus = {
-				fighter_equipment = {
-					air_attack = 0.1 instant=yes
-				}
-			}
 			modifier = {
 				air_cas_present_factor = 0.15
-
+                air_superiority_efficiency = 0.1
+				air_cas_efficiency = 0.1
 			}
 		}
 		
