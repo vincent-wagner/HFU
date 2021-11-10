@@ -56,10 +56,15 @@ sub_units = {
 		marsh = {
 			attack = -0.1
 			movement = -0.1
+			defence = -0.1
 		}
 		urban = {
 			attack = -0.1
-			defence = -0.1
+			defence = -0.25
+		}
+		hills = {
+			attack = -0.2
+			defence = -0.2
 		}
 		river = {
 			attack = -0.1
@@ -70,6 +75,7 @@ sub_units = {
 		}
 		desert = {
 			attack = 0.2
+			defence = 0.1
 		}
 	}
 }

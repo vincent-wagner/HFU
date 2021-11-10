@@ -406,6 +406,49 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SOV_open_old_stockpiles
+		icon = GFX_Goal_Great_Purge2
+		relative_position_id = SOV_great_figher
+		x = -1
+		y = 2
+		prerequisite = { focus = SOV_great_figher  }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = { 
+				type = infantry_equipment_1 amount = 30000 producer = SOV
+				}
+				add_equipment_to_stockpile = { 
+				type = artillery_equipment_1 amount = 3500 producer = SOV
+				}
+				add_equipment_to_stockpile = { 
+				type = anti_air_equipment_1 amount = 1500 producer = SOV
+				}
+				add_equipment_to_stockpile = { 
+				type = anti_tank_equipment_1 amount = 1000 producer = SOV
+				}
+				add_equipment_to_stockpile = { 
+				type = support_equipment_1 amount = 1600 producer = SOV
+				}
+				add_equipment_to_stockpile = { 
+					type = light_tank_equipment_2 amount = 800 producer = SOV
+			}
+			add_equipment_to_stockpile = { 
+				type = light_tank_artillery_equipment_2 amount = 300 producer = SOV
+		}		
+		}
+	}
+	focus = {
 		id = SOV_novikov_blueprint
 		icon = GFX_focus_SOV_novikov_blueprints
 		relative_position_id = SOV_move_industry_to_urals
@@ -424,13 +467,54 @@ focus_tree = {
 			add_ideas = SOV_great_airforce
 	}
 }
+focus = {
+	id = SOV_Soviet_CAS_Doctrine
+	icon = GFX_focus_SOV_novikov_blueprints
+	relative_position_id = SOV_move_industry_to_urals
+	x = -2
+	y = 6
+	prerequisite = { focus = SOV_hero_of_the_union  }
+	cost = 5
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { has_war_with = GER }
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = alexander_golovanov
+}
+}
+focus = {
+	id = SOV_Drive_them_out
+	icon = GFX_focus_SOV_novikov_blueprints
+	relative_position_id = SOV_move_industry_to_urals
+	x = 0
+	y = 7
+	prerequisite = { focus = SOV_Soviet_CAS_Doctrine  }
+	prerequisite = { focus = SOV_novikov_blueprint  }
+	prerequisite = { focus = SOV_uranus  }
+	cost = 10
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { has_war_with = GER }
+		}
+	}
+	completion_reward = {
+		add_ideas = SOV_GG_EZ
+}
+}
 	focus = {
 		id = SOV_wartime_industry
 		icon = GFX_focus_SOV_iron_fist
 		relative_position_id = SOV_move_industry_to_urals
 		x = 0 
 		y = 4
-		prerequisite = { focus = SOV_A }
+		prerequisite = { focus = SOV_open_old_stockpiles }
 		prerequisite = { focus = SOV_modifiers }
 		cost = 5
 		ai_will_do = {
@@ -617,7 +701,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		prerequisite = { focus = SOV_great_figher }
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -695,30 +779,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = SOV_A
-		icon = GFX_Goal_Great_Purge2
-		relative_position_id = SOV_great_figher
-		x = -1
-		y = 2
-		prerequisite = { focus = SOV_great_figher  }
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
-		}
-		available = {
-			date>1942.1.1
-		}
-		bypass = {
-		}
-		completion_reward = {
-			
-		}
-	}
+	
 	focus = {
 		id = SOV_defense_of_leningrad
 		icon = GFX_focus_SOV_defense_of_leningrad
@@ -2110,13 +2171,13 @@ focus_tree = {
 	focus = {
 		id = SOV_bagration
 		icon = GFX_SOV_red_army
-		prerequisite = { focus = SOV_uranus }
+		prerequisite = { focus = SOV_Drive_them_out }
 		available = {
 			NOT = {has_idea = SOV_uranus}
 			date > 1943.07.01
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SOV_uranus
 		cost = 5
 		ai_will_do = {

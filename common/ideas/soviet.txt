@@ -189,8 +189,8 @@ ideas = {
 		}
 		SOV_bagration = {
 			modifier = {
-				army_armor_attack_factor = 0.6
-				army_infantry_attack_factor = 0.6
+				army_armor_attack_factor = 0.3
+				army_infantry_attack_factor = 0.3
 				winter_attrition_factor = -1
 			}
 		}
@@ -283,6 +283,7 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor = 0.05
 				industrial_capacity_factory = 0.075
+				production_factory_start_efficiency_factor = 0.1
 			}
 		}
 
@@ -299,6 +300,45 @@ ideas = {
 				air_cas_present_factor = 0.15
                 air_superiority_efficiency = 0.1
 				air_cas_efficiency = 0.1
+			}
+		}
+		SOV_GG_EZ = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = generic_manpower_bonus
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				CAS_equipment = { 
+					build_cost_ic = -0.1 instant = yes
+				}
+				medium_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		
@@ -1552,10 +1592,13 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+			available = {
+				has_completed_focus = SOV_Soviet_CAS_Doctrine
+			}
 			research_bonus = {
 				air_doctrine = 0.10
 			}
-			traits = { air_warfare_theorist }
+			traits = { dive_bomber }
 		}
 		igor_kurchatov = {
 			ledger = army

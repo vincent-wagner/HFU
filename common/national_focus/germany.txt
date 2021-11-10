@@ -3015,7 +3015,7 @@ focus = {
 		prerequisite = { focus = GER_north focus = GER_south}
 		icon = GFX_focus_ger_reichskommisariats
 		available = {
-			date > 1943.5.15
+			date > 1943.3.15
 			NOT={has_idea=GER_blau}
 		}
 		x = 1
