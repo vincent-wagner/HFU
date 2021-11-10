@@ -40,6 +40,8 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	improved_light_tank = 1
+	improved_light_td = 1
+	improved_light_spaa = 1 
 	#basic_heavy_tank = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
@@ -130,8 +132,8 @@ add_equipment_to_stockpile = {
 	producer =ITA
 }
 add_equipment_to_stockpile = {
-	type = light_tank_equipment_1
-	amount = 500
+	type = light_tank_equipment_2
+	amount = 1000
 	producer =ITA
 }
 add_equipment_to_stockpile = {
