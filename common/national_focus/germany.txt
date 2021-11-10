@@ -9,6 +9,7 @@
 	}
 	continuous_focus_position = { x = 50 y = 1680 }
 	default = no
+
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_focus_GER_four_year_plan
@@ -1245,7 +1246,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			army_experience = 50
+			army_experience = 100
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1
@@ -1296,6 +1297,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			air_experience = 200
 			add_tech_bonus = {
 			technology = fighter3
 			bonus = 1
@@ -4171,6 +4173,7 @@ focus = {
 	relative_position_id = GER_fighter_3
 	cost = 5
 	completion_reward = {
+		air_experience = 200
 		add_tech_bonus = {
 			name = bomber_bonus
 			bonus = 1

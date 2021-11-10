@@ -2230,6 +2230,7 @@ focus = {
 		}
 		completion_reward = {
 			add_timed_idea= {idea= ITA_production_boost days=30}
+			add_ideas = military_youth_focus
 			GER = {remove_unit_leader = 4}
 			ITA={
 				create_corps_commander = {

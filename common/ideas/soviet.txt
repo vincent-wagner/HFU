@@ -1593,7 +1593,7 @@ ideas = {
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_Soviet_CAS_Doctrine
+				has_completed_focus = SOV_appoint_golovanov
 			}
 			research_bonus = {
 				air_doctrine = 0.10

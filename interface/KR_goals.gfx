@@ -3138,5 +3138,21 @@ SpriteTypes = {
 		name = "GFX_focus_SOV_iron_fist"
 		texturefile = "gfx/interface/goals/sov/SOV_iron_fist.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_SOV_appoint_golovanov"
+		texturefile = "gfx/interface/goals/sov/SOV_appoint_golovanov.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SOV_push_out"
+		texturefile = "gfx/interface/goals/sov/SOV_push_out.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SOV_push_out"
+		texturefile = "gfx/interface/goals/sov/SOV_push_out.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SOV_open_old_stockpiles"
+		texturefile = "gfx/interface/goals/sov/SOV_open_old_stockpiles.dds"
+	}
 
-}	
+}

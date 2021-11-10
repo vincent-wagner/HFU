@@ -580,6 +580,7 @@ ideas = {
 			}
 			modifier = {
 				production_speed_infrastructure_factor = 0.4
+				conversion_cost_civ_to_mil_factor = 0.4
 			}
 		}
 		SPA_national_recovery_3 = {
