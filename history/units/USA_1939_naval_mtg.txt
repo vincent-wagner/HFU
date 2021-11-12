@@ -6,7 +6,7 @@
 " "" """
 " "" fleet = {"""
 " "" name = """"Battle Force"""""""
-" "" naval_base =1503"""
+" "" naval_base =6780"""
 " "" task_force = {"""
 " "" name = """"Battleships, Battle Force"""""""
 " "" location =9022"""

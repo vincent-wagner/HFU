@@ -11,18 +11,49 @@ hoi_guide = {
 		complete_effect = {
             country_event = {
                 id =  guide.1
-               
             }    
         }
 	}
 
+    italy_guide = {
+		allowed = {
+		tag = ITA
+		}
+		visible = {
+           always = yes
+        }
+		complete_effect = {
+            country_event = {
+                id =  guide.2
+            }    
+        }
+	}
+    japan_guide = {
+		allowed = {
+		tag = JAP
+		}
+		visible = {
+           always = yes
+        }
+		complete_effect = {
+            country_event = {
+                id =  guide.3
+            }    
+        }
+	}
 
-
-
-
-
-
-
-
-
+    naval_guide = {
+	    
+		allowed = {
+		is_playable_country = yes
+		}
+		visible = {
+           OR = { tag = ENG tag = JAP tag = ITA tag = USA }
+        }
+		complete_effect = {
+            country_event = {
+                id =  guide.4
+            }    
+        }
+	}
 }

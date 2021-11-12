@@ -1,8 +1,20 @@
 ﻿l_english:
  guide.1.t:0 "Special Forces Hints"
- guide.1.d:0 "Special forces need another special type of equipment. \n\nMarines: Marines need 10 Amtracs per Battalion. \nMountaineers need 25 Support Eq. per Battalion. \nDesert Inf need 15 Armored Cars per Battalion. \nShook Inf need 15 Light SPG´s per Battalion."
- guide.1.a:0 "ok"
- 
+ guide.1.d:0 "Special forces need another special type of equipment. \n\nMarines: Marines need 10 Amtracs per Battalion. \nMountaineers need 25 Support Eq. per Battalion. \nDesert Inf need 15 Armored Cars per Battalion. \nShoock Troopers need 15 Light SPG´s per Battalion."
+ guide.1.a:0 "Ok"
+
+ guide.2.t:0 "Hints and Tips"
+ guide.2.d:0 "You will join the war as soon as Danzig hits, be prepared for an Alled push in Africa\n \n Build tanks to keep youself safe and use them later to repell the Allied invasion into africa. Build Medium 1's, don't just wait for Medium 2.\n \n Alles can attack you through Iran, Aswan and on West Africa in 1941, be prepared for it.\n \n Do not build your air until you get your Homeland Fighter 2 from your focus, remember that the focus unlocks in October 1940, save days for it and put a decent number of factories on it as well as on CAS 2. \n \n Get your free Naval Bomber 2 from focus early and produce it, you will need them for your naval battles."
+guide.2.a:0 "Nice"
+
+guide.3.t:0 "Hints and Tips"
+guide.3.d:0 "When you declare war on the Allies, you have a 30 day window to capture the DEI islands, Allies cannot defend them during this period, so use your troops and secure a part of the rubber, make sure to defend them though, the Allies might try to re-invade and take them back. Don't forget that you also get the Western part of New Guinea. Philipines can be defended by the Allies. \n \n Focus your attention on a specific front, don't spread your forces everywhere at once. \n \n You should licence German tanks as soon as they get them, produce some of them just to be safe, don't go overboard. \n \n You will need to build around 100 dockyards to be able to contest the navy, make sure to start building them early, never go above 120 dockyards. \n \n Don't do Marco Polo before Germany starts Anschluss.\n \n Every island you take and any minor on the Allies that you capitulate will contribute to the German D-Day wall defence and give allies a debuff while you get a production buff."
+guide.3.a:0 "Salvo Will Be Proud!" 
+
+guide.4.t:0 "Naval Strategy"
+guide.4.d:0 "Navy in the mod is a rock-paper-scissors type. Always pay attention to what your enemy is building and adapt accordingly. \n \n You can do 5-11 Carriers in the fleet, don't build over 11 of them. \n \n DD's lose to CL,\n CL loses to CA,\n CA loses to BC,\n BC loses to BB, \n \n SHBB is very strong and beats most of the stuff, however don't make a navy with just them in it. \n Make sure to have adequate screening, ratio is 2.5 screens for every 1 capital. \n \n Torpedoes melt capitals if the enemy screen line is dead, CV NAV's do a lot of damage to ships with very little AA on them, meaning that you should build AA modules on ships whenever you can, taking the AA ship advisor is also reccomended. However do not build AA on screens."
+guide.4.a: "Nice"
+
  MINIMIZE_EVENT:0 "§GClick§! to Minimize. Event will be placed in the Event Queue under §HEvents and Decisions§!."
  news.iran.t:0 "Axis attacks Iran"
  news.iran.d:0 "Axis will attack Iran in 30 days"

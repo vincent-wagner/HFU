@@ -11,6 +11,11 @@ state={
 			industrial_complex = 2
 			dockyard = 1
 			air_base = 5
+
+			6780 = {
+				naval_base = 10
+				coastal_bunker = 5
+			}
 		}
 		add_core_of = USA
 		victory_points = {

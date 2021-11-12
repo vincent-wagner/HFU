@@ -8,3 +8,30 @@ country_event = {
 	    name = guide.1.a
 	}
 }
+country_event = {
+	id = guide.2
+	title = guide.2.t
+	desc = guide.2.d
+	is_triggered_only = yes
+	option = {
+	    name = guide.2.a
+	}
+}
+country_event = {
+	id = guide.3
+	title = guide.3.t
+	desc = guide.3.d
+	is_triggered_only = yes
+	option = {
+	    name = guide.3.a
+	}
+}
+country_event = {
+	id = guide.4
+	title = guide.4.t
+	desc = guide.4.d
+	is_triggered_only = yes
+	option = {
+	    name = guide.4.a
+	}
+}

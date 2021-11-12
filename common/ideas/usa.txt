@@ -1447,7 +1447,8 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			available = {
+			visible = {
+				NOT = { has_idea = joseph_stilwell_2 }
 			}
 			traits = { army_armored_2 }
 			ai_will_do = {
