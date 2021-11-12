@@ -118,4 +118,4 @@ NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 0.5
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.4		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5 --was 2.5 but i increased overall naval damage        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
-NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 3.0
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 1.5

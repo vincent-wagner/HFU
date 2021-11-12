@@ -114,6 +114,9 @@ country_event = {
 		hidden_effect = {
 			country_event = { days = 1 id = news.22 }
 		}
+		44 = {
+		add_compliance = 100
+		}
 	}
 }
 country_event = {
