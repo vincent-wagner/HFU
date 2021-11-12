@@ -103,6 +103,7 @@
 		}
 		completion_reward = {
 			add_war_support = 0.1
+			add_ideas = war_economy
 			52 = {
 			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
@@ -1329,6 +1330,10 @@ focus = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = todt
 			add_ideas = GER_organisation_todt
+
+			ITA = {
+				add_ideas = ITA_infantry1
+			}
 		}
 	}
 	focus = {
@@ -1466,7 +1471,7 @@ focus = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
-			add_war_support = -0.2
+			add_war_support = -0.25
 			add_equipment_to_stockpile = { 
 			type = infantry_equipment_1 amount = 60000 producer = GER
 			}
@@ -1603,7 +1608,7 @@ focus = {
 						engineer = { x = 0 y = 1 }
 						artillery = { x = 0 y = 2 }
 						anti_tank = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }
+						logistics_company = { x = 0 y = 4 }
 						anti_air = { x = 0 y = 5 }
 					}
 				}

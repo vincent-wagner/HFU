@@ -838,7 +838,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 50
+			army_experience = 100
 			add_tech_bonus = {
 				name = SAF_special_service_battalion
 				bonus = 1
@@ -926,7 +926,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 5
+			army_experience = 50
 			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
 				bonus = 1

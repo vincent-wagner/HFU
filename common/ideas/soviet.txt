@@ -120,7 +120,7 @@ ideas = {
 			}
 			picture = generic_production_bonus
 			modifier = {
-				research_speed_factor = 0.075
+				research_speed_factor = 0.05
 			}
 		}
 		SOV_snakemodding = {
@@ -446,7 +446,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			modifier = {
 				mobilization_speed = 0.2
-				global_building_slots_factor = 0.2
+				global_building_slots_factor = 0.15
 			}
 		}
 		SOV_factories_must_grow1 = {

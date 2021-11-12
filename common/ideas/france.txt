@@ -458,7 +458,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				air_cas_present_factor=0.15
+				air_cas_present_factor=0.1
 			}
 		}
 		FRA_flying_artillery = {

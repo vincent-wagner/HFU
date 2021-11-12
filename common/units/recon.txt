@@ -179,6 +179,8 @@ sub_units = {
 			support
 		}
 
+		affects_speed = no
+		
 		group = support
 
 		categories = {

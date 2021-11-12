@@ -63,6 +63,34 @@ ideas = {
 			global_building_slots_factor = 0.1
 			}
 		}
+		ITA_infantry1 = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = ita_german_assistance
+			equipment_bonus = {
+				anti_air_equipment = {
+					build_cost_ic = -0.05 
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
 		ITA_naval_advancement= {
 			removal_cost = -1
 			allowed = {

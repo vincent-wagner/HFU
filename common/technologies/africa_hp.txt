@@ -19,7 +19,7 @@ technologies = {
 			max_strength = 6
 		}
 		category_all_infantry = {
-			max_strength = 4
+			max_strength = 5
 		}
 	}
 

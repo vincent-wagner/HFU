@@ -4709,4 +4709,8 @@ spriteTypes = {
 		name = "GFX_idea_ita_hitler_visits_rome"
 		texturefile = "gfx/interface/ideas/ita/idea_hitler_visits_rome.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_ita_german_assistance"
+		texturefile = "gfx/interface/ideas/ita/idea_german_assistance.dds"
+	}
 }
