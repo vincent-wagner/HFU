@@ -688,8 +688,8 @@ focus = {
 				name = "T-34/85"
 				type = medium_tank_equipment_2
 				upgrades = {
-					tank_gun_upgrade = 7
-					tank_reliability_upgrade = 5
+					tank_gun_upgrade = 6
+					tank_reliability_upgrade = 3
 					tank_engine_upgrade = 5
 					}}
 		}
