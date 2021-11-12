@@ -1297,21 +1297,7 @@ focus_tree = {
 				}
 				set_state_flag = USA_USACE_projects_3AF
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-						include_locked = yes
-					}
-					OR = {
-						region = 117
-						region = 118
-						region = 119
-						region = 120
-					}
-					state_population > 3000000
-				}
+          351 = { 
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -1319,21 +1305,7 @@ focus_tree = {
 				}
 				set_state_flag = USA_USACE_projects_3Inf
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 2
-						include_locked = yes
-					}
-					OR = {
-						region = 117
-						region = 118
-						region = 119
-						region = 120
-					}
-					state_population > 3000000
-				}
+			356 = { 
 				add_building_construction = {
 					type = infrastructure
 					level = 3
